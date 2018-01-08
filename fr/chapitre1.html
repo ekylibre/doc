@@ -85,7 +85,7 @@
             un compte Gmail ou Orange…
          </p>
          <div class="info-fond aerateur">
-            <div class="floating-box-info"><img src="images/commun/info.svg" width="100" height="80"></div>
+            <div class="floating-box-info"><img src="images/commun/info.svg" width="100" height="80"  alt="Info"></div>
             <div class="info-txt">
                <span class="titre-advice">Hébergement des données et sécurité<br></span>
                <p class="texte-advice">Ekylibre est très sécurisé et prend soin de garder strictement confidentielles toutes vos données.</p>
@@ -95,7 +95,12 @@
                <p>Vous constaterez également la présence d'un cadenas<img src="images/chapitre1/lock.svg" alt="Cadenas" height="20" class="align-icone icone-marge-gauche icone-marge-droite">dans la barre d’adresse de votre navigateur qui garantit la sécurité de votre connexion SSL.</p>
                <p>Vous pouvez consulter les Conditions Générales d'Utilisation à l'adresse <a href="https://ekylibre.com/terms-of-use" title="Conditions Générales d'Utilisation" target="_blank">https://ekylibre.com/terms-of-use</a>.</p>
                <p>Bien qu'Ekylibre propose d'importer des données depuis TelePAC, il n'existe aucune liaison d'aucune sorte entre Ekylibre et l'administration française.</p>
-               <img src="images/commun/sticky-note.svg" alt="Note" height="15" class="note">Pour les féru&#40;e&#41;s de technique, voir l'<a href="annexes.html#annexe1" class="avoid-clicks" id="annexe1" title="Annexe 1" target="_blank">annexe 1</a>.
+				<div class="popup-off">
+               <img src="images/commun/info-outline.svg" alt="Info" height="15" class="icone-info">Pour les féru&#40;e&#41;s de technique, voir l'<a href="annexes.html#annexe1" class="avoid-clicks" id="annexe1" title="Annexe 1" target="_blank">annexe 1</a>.
+				</div>
+				<div class="popup-on">
+				<img src="images/commun/info-outline.svg" alt="Info" height="15" class="icone-info">Pour les féru&#40;e&#41;s de technique, voir l'<a href="#" data-width="730" data-rel="popup1" class="poplight">annexe 1</a>.
+				</div>
             </div>
          </div>
          <div class="navigation">
@@ -104,8 +109,8 @@
                   <div class="divTableRow">
                      <div class="divTableCellCenter" style="width: auto">&nbsp;</div>
                      <div class="divTableCellRight" style="width: 150px"><span><a href="quickstart.html" target="_self">ACCUEIL</a></span></div>
-                     <div class="divTableCellCenter" style="width: 40px"><a href="quickstart.html" target="_self"><img src="images/commun/arrow-left.svg" width="40"></a></div>
-                     <div class="divTableCellCenter" style="width: 40px"><a href="chapitre2.html" target="_self"><img src="images/commun/arrow-right.svg" width="40"></a></div>
+                     <div class="divTableCellCenter" style="width: 40px"><a href="quickstart.html" target="_self"><img src="images/commun/arrow-left.svg" width="40" alt="Accueil"></a></div>
+                     <div class="divTableCellCenter" style="width: 40px"><a href="chapitre2.html" target="_self"><img src="images/commun/arrow-right.svg" width="40" alt="Introduction"></a></div>
                      <div class="divTableCellLeft" style="width: 150px"><span><a href="chapitre2.html" target="_self">INTRODUCTION</a></span></div>
                      <div class="divTableCellCenter" style="width: auto">&nbsp;</div>
                   </div>
@@ -113,10 +118,24 @@
             </div>
          </div>
       </div>
+	  <!-- END MAIN -->
+      <div id="popup1" class="popup_block">
+         <h2 class="info titre-annexe">Annexe 1 : la sécurisation d'Ekylibre</h2>
+         <p class="texte marge-annexe">
+            La loi &#171;informatique et libertés&#187; impose que les organismes mettant en œuvre des traitements ou disposant de fichiers de données en garantissent la sécurité. 
+         </p>
+         <p class="texte marge-annexe">
+            Par sécurité des données, on entend l&rsquo;ensemble des &#171; précautions utiles, au regard de la nature des données et des risques présentés par le traitement &#187;, pour notamment, &#171; empêcher que les données soient déformées, endommagées, ou que des tiers non autorisés y aient accès &#187; &#40;Art. 34 loi IL&#41;. Cette sécurité se conçoit pour l&rsquo;ensemble des processus relatifs à ces données, qu&rsquo;il s&rsquo;agisse de leur création, leur utilisation, leur sauvegarde, leur archivage ou leur destruction et concerne leur confidentialité, leur intégrité, leur authenticité et leur disponibilité. 
+         </p>
+         <p class="texte marge-annexe">
+            Sachez donc que nous avons pris grand soin de vous proposer une application qui fonctionne via une connexion HTTPS qui vous assure un transfert de données sécurisé. Nous nous engageons également à ne pas utiliser ou revendre d&rsquo;informations, toutes les données que vous transférez dans l&rsquo;application restent confidentielles et ne seront en aucun cas exploitées à des fins commerciales &#40;revente de fichiers ou tracking&#41;.
+         </p>
+      </div>
       <script src="js/jquery.js"></script>
       <script src="js/iscroll.js"></script>
       <script src="js/drawer.js"></script>
       <script src="js/backtotop.js"></script>
+	  <script src="js/popup.js"></script>
       <script>
          $(document).ready(function() {
          	$('.drawer').drawer();

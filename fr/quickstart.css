@@ -28,6 +28,14 @@ img, object, embed, video {
 
 /* Disposition mobile : 480px et moins. */
 
+.popup-off {
+	display: inline;
+}
+
+.popup-on {
+	display: none;
+}
+
 .avoid-clicks {
 	pointer-events: auto;
 }
@@ -97,6 +105,7 @@ img, object, embed, video {
 
 .tableau {
 	width: 646px;
+	cursor: ew-resize;
 }
 
 .aerateur {
@@ -285,6 +294,7 @@ img, object, embed, video {
 
 .tableau {
 	width: 100%;
+	cursor: default;
 }
 
 .aerateur {
@@ -392,6 +402,14 @@ img, object, embed, video {
 
 @media only screen and (min-width: 769px) {
 
+.popup-off {
+	display: none;
+}
+
+.popup-on {
+	display: inline;
+}
+
 .avoid-clicks {
 	pointer-events: auto;
 }
@@ -476,6 +494,7 @@ img, object, embed, video {
 
 .tableau {
 	width: 646px;
+	cursor: default;
 }
 
 .aerateur {

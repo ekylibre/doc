@@ -37,7 +37,7 @@ a.slice-short {
 /* BackToTop button css */
 #scroll {
     position:fixed;
-    right:10px;
+    right:20px;
     bottom:10px;
     cursor:pointer;
     width:30px;
@@ -105,8 +105,9 @@ a:link, a:visited {
   color: #476ba8;
 }
 
-.note {
-	margin-right: 4px;
+.icone-info {
+	margin-right: 5px;
+	vertical-align: 1px;
 }
 
 .browser {
@@ -226,6 +227,20 @@ a:link, a:visited {
 .texte-advice {
 	margin-top: 5px;
 	margin-bottom: -1px;
+}
+
+.texte-annexe {
+	font-size: 11px;
+}
+
+.marge-annexe {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.titre-annexe  {
+	margin-left: 15px;
+	margin-right: 15px;
 }
 	
 .info-idee {
@@ -1046,6 +1061,63 @@ a:link, a:visited {
 	background-color: #333;
 }
 
+/*--Style pour popup--*/
+
+#fade {
+	display: none;
+	background: #000; 
+	position: fixed; left: 0; top: 0; 
+	z-index: 10;
+	width: 100%; height: 100%;
+	opacity: .20;
+	z-index: 9999;
+}
+
+.popup_block{
+	display: none;
+	background: #fff;
+	padding: 20px 4px 0 4px;
+	border: 5px solid #fff;
+	float: left;
+	position: fixed;
+	top: 50%; left: 50%;
+	z-index: 99999;
+	-webkit-box-shadow: 0px 0px 5px #000;
+	-moz-box-shadow: 0px 0px 5px #000;
+	box-shadow: 0px 0px 5px #000;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+img.btn_close {
+	float: right;
+	margin: -15px 0 -10px 0;
+}
+
+.decal-image {
+	margin-top : 15px;
+}
+
+.popup p {
+	padding: 5px 10px;
+	margin: 5px 0;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/*--Making IE6 Understand Fixed Positioning--*/
+*html #fade {
+	position: absolute;
+}
+
+*html .popup_block {
+	position: absolute;
+}
+
 @media only screen and (min-width: 481px) {
 
 .divTableCellLeft, .divTableHeadLeft {
@@ -1113,6 +1185,10 @@ a:link, a:visited {
 @media print {
 
 .navigation {
-	visibility:hidden;
+	visibility: hidden;
+}
+
+.pdf {
+	display: none;
 }
 }
