@@ -31,8 +31,9 @@
                   <li><a class="drawer-menu-item" href="chapitre4.html">Exploitation</a></li>
                   <li><a class="drawer-menu-item" href="chapitre5.html">L'interface</a></li>
                   <li><a class="drawer-menu-item" href="chapitre6.html">Stock &amp; Personnel</a></li>
-                  <li><a class="drawer-menu-item" href="chapitre7.html">Production</a></li>
-                  <li><a class="drawer-menu-item" href="chapitre8.html">Accès</a></li>
+				  <li><a class="drawer-menu-item" href="chapitre7.html">Comptabilité</a></li>
+                  <li><a class="drawer-menu-item" href="chapitre8.html">Production</a></li>
+                  <li><a class="drawer-menu-item" href="chapitre9.html">Accès</a></li>
                </ul>
             </nav>
          </header>
@@ -55,9 +56,9 @@
       </div>
       <!-- !PAGE CONTENT! -->
       <div class="w3-content">
-         <div class="image-large"><img class="chapitre" src="images/chapitre8/acces.png" alt="Accès"/> </div>
-         <div class="image-carre"><img class="chapitre" src="images/chapitre8/acces-carre.png" alt="Accès" style="width:auto;"></div>
-         <h1 align="center" class="majuscule aerateur">8 - Accès</h1>
+         <div class="image-large"><img class="chapitre" src="images/chapitre8/production.png" alt="Production"/> </div>
+         <div class="image-carre"><img class="chapitre" src="images/chapitre8/production-carre.png" alt="Production" style="width:auto;"></div>
+         <h1 align="center" class="majuscule aerateur">8 - Production</h1>
          <div class="gris">
             <p><span class="rappel-sommaire">1 - Prérequis<br>
                2 - Introduction<br>
@@ -65,8 +66,9 @@
                4 - Exploitation<br>
                5 - L’interface<br>
                6 - Stock &amp; Personnel<br>
-               7 - Production</span><br>
-               8 - Accès
+			   7 - Comptabilité</span><br>
+               8 - Production<br>
+               <span class="rappel-sommaire">9 - Accès</span>
             </p>
          </div>
          <p class="texte aerateur-haut">
@@ -79,7 +81,7 @@
                      <img src="images/commun/caret-right.svg" alt="Flèche" height="15">
                   </div>
                   <div class="divTableCellListe" style="width: auto">
-                     Comment créer des utilisateurs et leur attribuer des droits dans l'application
+                     Comment définir les activités de l'exploitation pour une nouvelle campagne
                   </div>
                </div>
                <div class="divTableRow">
@@ -87,7 +89,7 @@
                      <img src="images/commun/caret-right.svg" alt="Flèche" height="15">
                   </div>
                   <div class="divTableCellListe">
-                     Comment utiliser ou créer des rôles pour des familles d'utilisateurs
+                     Comment enregistrer une intervention d'implantation de culture
                   </div>
                </div>
             </div>
@@ -97,70 +99,135 @@
             <div class="divTableBody">
                <div class="divTableRow">
                   <div class="divTableCellGlossaire1" style="width: auto">
-                     Administrateur système
+                     Activités
                   </div>
                   <div class="divTableCellGlossaire2" style="width: auto">
-                     personne chargée de gérer une ferme dans l'application et de veiller à son bon fonctionnement
+                     ensemble des productions d'un même type. Une activité est définie par l'espèce produite &#40;animale ou végétale&#41; et peut être ouverte ou fermée d'une campagne à la suivante
                   </div>
                </div>
                <div class="divTableRow">
                   <div class="divTableCellGlossaire1" style="width: auto">
-                     Droits
+                     Assolement
                   </div>
                   <div class="divTableCellGlossaire2" style="width: auto">
-                     permission accordée à un utilisateur pour lire et/ou écrire des informations dans l'application
+                     action de diviser les terres d'une exploitation agricole en plusieurs parties distinctes pour y établir des cultures différentes
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellGlossaire1" style="width: auto">
+                     Campagne
+                  </div>
+                  <div class="divTableCellGlossaire2" style="width: auto">
+                     période de 12 mois correspondant à un cycle de production sur l'exploitation agricole. Les dates de début et de fin ne sont pas imposées par l'application
                   </div>
                </div>
             </div>
          </div>
-         <h2 class="texte aerateur">a - Création des utilisateurs</h2>
+		 <p class="texte">La gestion de la production est architecturée suivant le schéma suivant :</p>
+		 <p class="texte">a - La production définit le type de culture &#40;blé dur d'hiver, orge d'hiver, maïs, etc&#41; produite durant une campagne<br>
+		 b - L'activité définit l'assolement d'une production sur tout ou partie d'une zone cultivable &#40;la zone devient alors une parcelle&#41;</p>
+         <br><img src="images/chapitre8/schema-production.svg" class="marge" alt="Schéma production">
+		  <div class="warn-fond aerateur-haut aerateur-bas">
+            <div class="floating-box-warn">
+               <img src="images/commun/attention.svg" width="100" alt="Attention"/>
+            </div>
+            <div class="info-txt">
+               <span class="titre-advice">Production et culture<br></span>
+               <p class="texte-advice">
+                  Notez que le fait de créer une production ne génère pas automatiquement une culture. Celle-ci nécessite l'enregistrement d'une intervention de semis &#40;expliqué à la fin de ce chapitre&#41;.</p>
+            </div>
+         </div>
+		 <p class="texte">La création d'une activité nécessite de définir une période : sélectionnez les dates comprenant la totalité du cycle labour-semis-récolte. Elles peuvent être à cheval sur deux années comme illustré dans le schéma ci-dessous &#40;moyennes constatées&#41;.</p>
+         <br><img src="images/chapitre8/schema-cycle.svg" class="marge" alt="Schéma période de production">
+         <a class="slice-short" id="section-a"></a>
+         <h2 class="texte aerateur">a - Activités agricoles</h2>
+		 <p class="texte">
+            À l'arrivée dans l'application, la liste des activités agricoles affichées dépend des opérations ou des saisies déja réalisées en amont &#40;notez que les activités seront automatiquement conservées d'une campagne à l'autre&#41; :
+         </p>
+         <div class="divTableActivites marge aerateur-bas">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellActivites1" style="width: auto">
+                     Activités présentes
+                  </div>
+                  <div class="divTableCellActivites2" style="width: 100%">
+                     issues de l'intégration des données TelePAC
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellActivites1">
+                     Activités présentes
+                  </div>
+                  <div class="divTableCellActivites2">
+                     issues des activités créées dans l'Assistant de démarrage
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellActivites1">
+                     Activités manquantes
+                  </div>
+                  <div class="divTableCellActivites2">
+                     vous pouvez en créer de nouvelles
+                  </div>
+               </div>
+            </div>
+         </div>
          <p class="texte">
-            Dans le cadre du travail en équipe, que ce soit pour saisir des interventions, des factures, des commandes, vous avez besoin de partager certaines informations de votre ferme Ekylibre avec d'autres personnes &#40;techniciens, ouvriers, commerciaux, etc&#41; qui représentent les utilisateurs.
+            Cliquez sur le lien "Production" dans le "Menu principal" ou sur le bouton "Production" de la page d'accueil :
+         </p>
+         <p align="center"><img src="images/chapitre8/production.svg" alt="Production" width="60"></p>
+         <p class="texte">Si vous avez intégré les données TelePAC, le &#171; Tableau de bord de la production &#187; affiche les zones cultivables de l'exploitation pour la campagne en cours. Pour rappel, les zones cultivables sont les parcelles physiques, durables dans le temps qui ne dépendent pas des campagnes. Une fois qu'elles sont bien enregistrées, il n'y a donc plus besoin de revenir dessus, sauf cas particulier pour ajout ou modification &#40;vente ou achat de terres agricoles&#41;.</p>
+         <p class="texte max-img-inline">
+            <img src="images/chapitre8/production1.png" class="contour-img" alt="Tableau de bord production">
+         </p>
+         <p align="center" class="texte legende">
+            Le &#171; Tableau de bord de la production &#187; après intégration TelePAC
          </p>
          <p class="texte">
-            Des accès peuvent être accordés par l'administrateur de la ferme à ces utilisateurs qui disposent ainsi de droits de lecture et/ou d'écriture pour tout ou partie des données gérées dans l'application.
+            Si vous n'avez pas besoin de créer de nouvelles activités, passez directement à la 
+            <a href="#section-b" class="avoid-clicks">section b</a> &#40;&#171; Procédure pour créer des productions &#187;&#41; de ce chapitre, sinon voici comment créer les nouvelles activités que vous souhaitez gérer dans l'application.
          </p>
-         <p class="texte aerateur-bas">
-            Par défaut, deux catégories d'utilisateurs existent : le gérant de la ferme (l'administrateur système) qui dispose de tous les droits et pour les autres, un statut public qui n'en possède aucun par sécurité.
+         <p align="center" class="texte aerateur procedure">A – Procédure pour créer de nouvelles activités
          </p>
-         <p align="center" class="texte aerateur procedure">A – Procédure de création des utilisateurs</p>
          <p class="texte">
-            Le processus suivant vous guide pour créer un nouvel utilisateur.
+            Si aucune activité n'est disponible dans l'application &#40;pas d'utilisation de TelePAC ou étape omise dans l'assistant de démarrage&#41;, et que vous souhaitez en ajouter de nouvelles, le processus suivant vous guide pour les créer.
          </p>
          <div class="floating-box process">
             <img src="images/commun/step1.svg" alt="1" width="52">
          </div>
          <div class="process-txt">
-            <span class="titre-advice">Accédez aux utilisateurs</span>
+            <span class="titre-advice">Accédez aux activités</span>
             <p>
-               Pour créer de nouveaux utilisateurs, allez dans le menu principal et cliquez sur la clef anglaise<img src="images/chapitre8/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">ou cliquez sur le bouton "Configuration" de la page d'accueil :
-            </p>
-            <p align="center"><img src="images/chapitre8/wrench.svg" alt="Configuration" width="60"></p>
-            <p>
-               Dans la barre latérale du module, cliquez sur "Utilisateurs" dans la rubrique "Accès" symbolisée par l'icône d'un bouclier<img src="images/chapitre8/shield.svg" alt="bouclier" height="20" class="align-icone icone-marge-gauche">. La liste des utilisateurs n'affiche que le nom de l'administrateur de la ferme avec l'indicateur<img src="images/chapitre8/check-square-o.svg" alt="case cochée" height="20" class="align-icone icone-marge-gauche icone-marge-droite">&#40;Administrateur système&#41; à droite de son nom.
+               Dans la barre latérale du module "Production", cliquez sur "Activités" dans la rubrique "Production" symbolisée par l'icône avec des engrenages<img src="images/chapitre8/cogs.svg" alt="Main" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des activités. Cliquez sur le bouton "Ouvrir" et sélectionnez "Nouvelle activité".
             </p>
             <p class="max-img-process">
-            <img src="images/chapitre8/utilisateur1.png" class="contour-img" alt="Création d'un nouvel utilisateur">
-			 </p>
+               <img src="images/chapitre8/activites10.png" class="contour-img" alt="Nouvelle activités">
+            </p>
          </div>
          <br>
          <div class="floating-box process">
             <img src="images/commun/step2.svg" alt="2" width="52">
          </div>
          <div class="process-txt">
-            <span class="titre-advice">Renseignez l'identité de l'utilisateur</span>
+            <span class="titre-advice">Renseignez la nouvelle activité</span>
             <p>
-               Cliquez sur "Nouveau". Tous les champs situés dans la zone "Informations générales" sont à renseigner. Notez que l'attribution d'un mot de passe est obligatoire même si ce n'est pas signalé par l'astérisque de couleur rouge.
+               Remplissez tous les champs obligatoires signalés par une astérisque de couleur rouge avec les informations requises pour la définir correctement.
+               Vous pouvez cocher les cases "Utiliser les comptages" et "Utiliser les agréages" pour utiliser ces outils pour cette activité. Une fois cochées, il sera possible de paramétrer ces fonctionnalités supplémentaires.
+            </p>
+            <p>Cliquez sur<img src="images/commun/creer.svg" alt="Créer" class="btn-creer">pour valider l'opération.
+            </p>
+            <p class="max-img-process">
+               <img src="images/chapitre8/activites11.png" class="contour-img" alt="Nouvelle activités">
             </p>
          </div>
-         <div class="idea-fond aerateur-haut aerateur-bas">
-            <div class="floating-box-idea">
-               <img src="images/commun/astuce.svg" width="100" alt="Astuce"/>
+         <div class="warn-fond aerateur-haut aerateur-bas">
+            <div class="floating-box-warn">
+               <img src="images/commun/attention.svg" width="100" alt="Attention"/>
             </div>
             <div class="info-txt">
-               <span class="titre-advice">Choix d'un mot de passe<br></span>
+               <span class="titre-advice">Activités pérennes<br></span>
                <p class="texte-advice">
-                  Choisissez un mot de passe facilement mémorisable mais assez difficile à trouver : ça peut être une phrase composée d'une majuscule, avec un signe de ponctuation et un chiffre comme par exemple : Vousetes2chezEkylibre!
+                  Pour les cultures pérennes (comprenant les vergers, les pépinières, les vignes), choisissez si la date de récolte est rattachée à la campagne en cours ou à la campagne de l'année suivante.
                </p>
             </div>
          </div>
@@ -168,490 +235,197 @@
             <img src="images/commun/step3.svg" alt="3" width="52">
          </div>
          <div class="process-txt">
-            <span class="titre-advice">Saisissez la fonction de l'utilisateur</span>
+            <span class="titre-advice">Sélectionnez la nouvelle activité</span>
             <p>
-               Associez le nouvel utilisateur à un tiers déjà configuré &#40;voir <a href="chapitre6.html" class="avoid-clicks" target="_self">chapitre 6 - Stock et Personnel&#41;</a> ou créez en un nouveau à la volée en sélectionnant "Ajouter un nouvel enregistrement" dans la liste déroulante. Complétez les informations du nouveau contact (n° de téléphone, adresse postale, employé, client ou fournisseur, etc) pour le définir correctement.
+               La nouvelle activité est maintenant disponible dans la liste du bouton "Ouvrir". Vous pourrez la sélectionner pour créer une nouvelle production comme décrit dans la <a href="#section-b" class="avoid-clicks">section b</a> (« Procédure pour créer des productions dans une campagne ») de ce chapitre.
             </p>
-            <p align="center" class="max-img-process">
-            <img src="images/chapitre8/utilisateur2.png" class="contour-img" width="300" alt="Création d'un nouvel utilisateur">
-			 </p>
+            <p class="max-img-process">
+               <img src="images/chapitre8/activites12.png" class="contour-img" alt="Nouvelle activités">
+            </p>
          </div>
          <br>
          <div class="floating-box process">
             <img src="images/commun/step4.svg" alt="4" width="52">
          </div>
          <div class="process-txt">
-            <span class="titre-advice">Sélectionnez les droits accordés à l'utilisateur</span>
+            <span class="titre-advice">Répétez la procédure</span>
             <p>
-               Choisissez les droits que vous octroyez à l'utilisateur. Vous pouvez partir d'un rôle d'utilisateur (voir plus loin dans ce chapitre) et étendre ou restreindre ses droits en rapport avec sa fonction dans la ferme.
+               Répétez ce processus pour chaque nouvelle activité que vous souhaitez passer en production dans l'application.
             </p>
-            <p>Liste des droits disponibles dans l'application :</p>
-            <div class="divTableListe">
-               <div class="divTableBody">
-                  <div class="divTableRow">
-                     <div class="divTableCellDroits1" style="width: 95px">
-                        <img src="images/chapitre8/lire.svg" alt="Lire" height="30">
-                     </div>
-                     <div class="divTableCellDroits2" style="width: auto">
-                        permet de lire les données affichées dans l'application
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellDroits1">
-                        <img src="images/chapitre8/ecrire.svg" alt="Écrire" height="30">
-                     </div>
-                     <div class="divTableCellDroits2">
-                        permet de saisir et d'enregistrer des données dans l'application
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellDroits1">
-                        <img src="images/chapitre8/executer.svg" alt="Exécuter" height="30">
-                     </div>
-                     <div class="divTableCellDroits2">
-                        permet d'exécuter des opérations dans l'application
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellDroits1">
-                        <img src="images/chapitre8/lier.svg" alt="Lier" height="30">
-                     </div>
-                     <div class="divTableCellDroits2">
-                        permet de créer des liens entre les tiers
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellDroits1">
-                        <img src="images/chapitre8/fermer.svg" alt="Fermer" height="30">
-                     </div>
-                     <div class="divTableCellDroits2">
-                        permet de fermer un document ou un exercice comptable
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellDroits1">
-                        <img src="images/chapitre8/reouvrir.svg" alt="Réouvrir" height="30">
-                     </div>
-                     <div class="divTableCellDroits2">
-                        permet de réouvrir un document ou un exercice comptable
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellDroits1">
-                        <img src="images/chapitre8/verrouiller.svg" alt="Verrouiller" height="30">
-                     </div>
-                     <div class="divTableCellDroits2">
-                        permet de verrouiller un utilisateur
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellDroits1">
-                        <img src="images/chapitre8/annuler.svg" alt="Annuler" height="30">
-                     </div>
-                     <div class="divTableCellDroits2">
-                        permet d'annuler une action &#40;vente&#41;
-                     </div>
-                  </div>
-               </div>
-            </div>
+            <p class="max-img-process">
+               <img src="images/chapitre8/activites13.png" class="contour-img" alt="Nouvelle activités">
+            </p>
          </div>
-         <div class="warn-fond aerateur-haut aerateur-bas saut-page">
-            <div class="floating-box-warn">
-               <img src="images/commun/attention.svg" width="100" alt="Attention"/>
-            </div>
-            <div class="info-txt">
-               <span class="titre-advice">Gestion des droits<br></span>
-               <p class="texte-advice">
-                  En tant qu'administrateur de la ferme, vous êtes le principal décideur quant aux accès dont vont disposer les utilisateurs pour travailler dans l'application. Nous vous conseillons cependant de ne pas donner trop de droits à tout le monde.
-               </p>
-            </div>
+         <a class="slice-short" id="section-b"></a>
+         <h2 class="texte aerateur">b - Création des productions dans une campagne</h2>
+         <p class="texte">
+            Vous pouvez maintenant affecter les activités aux zones cultivables qui deviendront des parcelles comme expliqué dans le <a href="chapitre3.html#tableau1" class="avoid-clicks" id="tableau1" target="_self">chapitre 3</a> (Parcellaire – Tableau 1).
+         </p>
+         <p class="texte">Visualisez une campagne en naviguant avec les flèches à gauche<img src="images/chapitre8/fleche-g.svg" alt="flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">et à droite<img src="images/chapitre8/fleche-d.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">de l'affichage de l'année<img src="images/chapitre8/year.svg" alt="Année de la campagne" height="20" class="align-icone icone-marge-gauche">.</p>
+         <a class="slice-long" name="section-b"></a>
+         <p align="center" class="texte aerateur procedure">A – Procédure pour créer des productions
+         </p>
+         <p class="texte">
+            Le processus suivant vous guide pour créer de nouvelles productions dans l'application.
+         </p>
+         <div class="floating-box process">
+            <img src="images/commun/step1.svg" alt="1" width="52">
          </div>
+         <div class="process-txt">
+            <span class="titre-advice">Sélectionnez la campagne</span>
+            <p>
+               En haut à droite du "Tableau de bord de la production", choisissez la campagne. Basculez vers l'année souhaitée, celle pour laquelle le cycle de production occupe la durée la plus significative (généralement n+1) pour afficher le "Tableau de bord de la production" correspondant.
+            </p>
+            <p class="max-img-process">
+               <img src="images/chapitre8/production2.png" class="contour-img" alt="Tableau de bord production">
+            </p>
+         </div>
+         <br>
+         <div class="floating-box process">
+            <img src="images/commun/step2.svg" alt="2" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Accédez aux activités</span>
+            <p>
+               Dans la barre latérale du module "Production", cliquez sur "Activités" dans la rubrique "Production" symbolisée par l'icône avec des engrenages<img src="images/chapitre8/cogs.svg" alt="Main" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des activités.
+            </p>
+            <p class="max-img-process">
+               <img src="images/chapitre8/activites1.png" class="contour-img" alt="Tableau de bord production">
+            </p>
+         </div>
+         <br>
+         <div class="floating-box process">
+            <img src="images/commun/step3.svg" alt="3" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Ouvrez les activités</span>
+            <p>Cliquez sur le bouton "Ouvrir". La liste affiche toutes les activités disponibles :</p>
+            <p>a - celles déclarées à la PAC si vous avez intégré les données TelePAC dans l'application<br>
+               b - celles définies dans l'assistant de démarrage<br>
+               c - celles définies dans la <a href="#section-a" class="avoid-clicks">section a</a> &#40;« Création de nouvelles activités »&#41; de ce chapitre 
+            </p>
+            <p class="max-img-process">
+               <img src="images/chapitre8/activites2.png" class="contour-img" alt="Affichage des activités">
+            </p>
+         </div>
+         <br>
+         <div class="floating-box process">
+            <img src="images/commun/step4.svg" alt="4" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Sélectionnez une activité</span>
+            <p>Choisissez dans la liste une activité et l'application affiche automatiquement celle-ci dans la fenêtre principale.<br>Vous pouvez modifier l'affichage "pavés" ou "liste" avec les boutons situés en haut à droite de la fenêtre principale</p>
+            <p class="max-img-process">
+               <img src="images/chapitre8/activites3.png" class="contour-img" alt="Sélection de l'activité">
+            </p>
+         </div>
+         <br>
          <div class="floating-box process">
             <img src="images/commun/step5.svg" alt="5" width="52">
          </div>
          <div class="process-txt">
-            <span class="titre-advice">Validez la création de l'utilisateur</span>
-            <p>
-               Cliquez sur<img src="images/commun/creer.svg" alt="Créer" height="25" class="btn-creer">en bas de la fenêtre principale pour valider la création du nouvel utilisateur.
-            </p>
-            <p>Répétez ce processus pour chaque nouvel utilisateur que vous souhaitez ajouter à votre ferme. Vous pouvez modifier, bloquer et supprimer des utilisateurs si nécessaire.</p>
+            <span class="titre-advice">Créez une activité</span>
+            <p>Cliquez sur le nom de l'activité puis, dans "Production", cliquez sur le bouton "Nouveau".</p>
             <p class="max-img-process">
-            <img src="images/chapitre8/utilisateur3.png" class="contour-img" alt="Création d'un nouvel utilisateur">
-			 </p>
+               <img src="images/chapitre8/activites4.png" class="contour-img" alt="Création de l'activité">
+            </p>
          </div>
-         <div class="idea-fond aerateur-haut aerateur-bas">
-            <div class="floating-box-idea">
-               <img src="images/commun/astuce.svg" width="100" alt="Astuce"/>
-            </div>
-            <div class="info-txt">
-               <span class="titre-advice">Expert comptable<br></span>
-               <p class="texte-advice">
-                  Vous pouvez créer un accès pour votre expert comptable qui lui permettra de visualiser et de modifier les données comptables de votre exploitation à distance.
-               </p>
-            </div>
+         <br>
+         <div class="floating-box process">
+            <img src="images/commun/step6.svg" alt="6" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Définissez la période de la production</span>
+            <p>Saisissez les dates de début et de fin de la période de production dans les champs ouvrant sur des calendriers.</p>
+            <p class="max-img-process">
+               <img src="images/chapitre8/activites5.png" class="contour-img" alt="Paramétrage de la période">
+            </p>
          </div>
          <div class="info-fond aerateur-haut aerateur-bas">
             <div class="floating-box-info">
                <img src="images/commun/info.svg" width="100" alt="Info"/>
             </div>
             <div class="info-txt">
-               <span class="titre-advice">Verrouiller un utilisateur<br></span>
+               <span class="titre-advice">Période de production<br></span>
                <p class="texte-advice">
-                  Si vous vous séparez d'un collaborateur et que vous souhaitez bloquer son accès à votre ferme tout en conservant l'historique de ses interventions, ne le supprimez pas de la liste des utilisateurs. Verrouillez plutôt son compte en cliquant sur le cadenas fermé<img src="images/chapitre8/lock.svg" alt="cadenas fermé" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de son nom. Pour déverrouiller un utilisateur, cliquez sur le cadenas ouvert<img src="images/chapitre8/unlock.svg" alt="cadenas ouvert" height="20" class="align-icone icone-marge-gauche">.
+                  Pour la période de production, sélectionnez les dates comprenant la totalité du cycle labour-semis-récolte. Elles peuvent être à cheval sur deux années comme illustré dans le schéma ci-dessous &#40;moyennes constatées&#41;.
                </p>
-               <br><img src="images/chapitre8/verrouillage.png" alt="Liste des utilisateurs">
+               <br><img src="images/chapitre8/schema-cycle.svg" alt="Schéma période de production">
             </div>
          </div>
-         <h2 class="texte aerateur">b - Utilisation des rôles d'utilisateur</h2>
-         <p class="texte">Si plusieurs personnes occupent des fonctions similaires dans votre ferme (commerciaux, techniciens, ouvriers agricoles), la création de rôles d'utilisateur permet de simplifier l'affectation de droits à ces utilisateurs grâce à des profils types.</p>
-         <p class="texte">Des rôles d'utilisateur sont déjà définis dans l'application que vous pouvez attribuer à vos utilisateurs. Si ces rôles ne répondent pas strictement à vos attentes, vous pourrez les modifier en supprimant et en ajoutant des droits, ou bien créer de nouveaux rôles.</p>
-         <div class="affichage-large"></div>
-         <div class="affichage-mobile">
-            <p align="center">
-               <img src="images/commun/drag.svg" alt="Drag" height="40" class="">
-               <br>
-               Glissez pour parcourir le tableau
+         <div class="floating-box process">
+            <img src="images/commun/step7.svg" alt="7" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Sélectionnez la zone cultivable à assoler</span>
+            <p>Dans le menu "Zone cultivable", choisissez la zone à assoler. Les zones listées sont celles issues de l'intégration du fichier TelePAC ou d'un fichier géographique, et celles dessinées à la main dans l'assistant de démarrage.</p>
+            <p class="max-img-process">
+               <img src="images/chapitre8/activites6.png" class="contour-img" alt="Sélection de la zone cultivable">
             </p>
          </div>
-         <div class="saut-page"></div>
-         <div class="contour-gris texte aerateur-haut">
-            <div class="tableaux">
-               <p align="center" class="texte titre-advice">
-                  Rôles d'utilisateurs prédéfinis et leurs droits
-               </p>
-            </div>
-            <div class="scroll">
-               <div class="tableau texte-tableau divTableFooter">
-                  <div class="divTable">
-                     <div class="divTableBody">
-                        <div class="divTableRow">
-                           <div class="divTableCellRole1" style="width: auto"></div>
-                           <div class="divTableCellRole3" style="width: 80px">Agent technico-commercial</div>
-                           <div class="divTableCellRole3" style="width: 80px">Comptable</div>
-                           <div class="divTableCellRole3" style="width: 80px">Conseiller agricole</div>
-                           <div class="divTableCellRole3" style="width: 80px">Technicien, ouvrier de l'exploitation</div>
-                           <div class="divTableCellRole3" style="width: 80px">Responsable de l'exploitation</div>
-                           <div class="divTableCellRole3" style="width: 80px">Vétérinaire</div>
-                        </div>
-                        <div class="divTableRow">
-                           <div class="divTableCellRole1">Animaux</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre8/lire.svg" alt="Lire" width="60"></div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre8/lire.svg" alt="Lire" width="60"></div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre8/lire.svg" alt="Lire" width="60"></div>
-                        </div>
-                        <div class="divTableRow">
-                           <div class="divTableCellRole1">Colis entrants</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre8/lire.svg" alt="Lire" width="60"></div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre8/lire.svg" alt="Lire" width="60"><br><img src="images/chapitre8/ecrire.svg" alt="Écrire" width="60"></div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                        </div>
-                        <div class="divTableRow">
-                           <div class="divTableCellRole1">Colis sortants</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre8/lire.svg" alt="Lire" width="60"></div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre8/lire.svg" alt="Lire" width="60"><br><img src="images/chapitre8/ecrire.svg" alt="Écrire" width="60"></div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                        </div>
-                        <div class="divTableRow">
-                           <div class="divTableCellRole1">Cultures végétales</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre8/lire.svg" alt="Lire" width="60"></div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre8/lire.svg" alt="Lire" width="60"></div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                        </div>
-                        <div class="divTableRow">
-                           <div class="divTableCellRole1">Interventions</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre8/lire.svg" alt="Lire" width="60"></div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre8/lire.svg" alt="Lire" width="60"></div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre8/lire.svg" alt="Lire" width="60"><br><img src="images/chapitre8/ecrire.svg" alt="Écrire" width="60"></div>
-                           <div class="divTableCellRole2"><img src="images/chapitre8/lire.svg" alt="Lire" width="60"></div>
-                        </div>
-                        <div class="divTableRow">
-                           <div class="divTableCellRole1">Zones cultivables</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre8/lire.svg" alt="Lire" width="60"></div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre8/lire.svg" alt="Lire" width="60"></div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                        </div>
-                        <div class="divTableRow">
-                           <div class="divTableCellRole1">Activités</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre8/lire.svg" alt="Lire" width="60"><br><img src="images/chapitre8/ecrire.svg" alt="Écrire" width="60"></div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                        </div>
-                        <div class="divTableRow">
-                           <div class="divTableCellRole1">Comptes comptables</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre8/lire.svg" alt="Lire" width="60"><br><img src="images/chapitre8/ecrire.svg" alt="Écrire" width="60"></div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                        </div>
-                        <div class="divTableRow">
-                           <div class="divTableCellRole1">Exercices comptables</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre8/lire.svg" alt="Lire" width="60"><br><img src="images/chapitre8/ecrire.svg" alt="Écrire" width="60"><br><img src="images/chapitre8/fermer.svg" alt="Fermer" width="60"><br><img src="images/chapitre8/reouvrir.svg" alt="Réouvrir" width="60"></div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                        </div>
-                        <div class="divTableRow">
-                           <div class="divTableCellRole1">Immobilisations</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre8/lire.svg" alt="Lire" width="60"><br><img src="images/chapitre8/ecrire.svg" alt="Écrire" width="60"></div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                        </div>
-                        <div class="divTableRow">
-                           <div class="divTableCellRole1">Journaux comptables</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre8/lire.svg" alt="Lire" width="60"><br><img src="images/chapitre8/ecrire.svg" alt="Écrire" width="60"><br><img src="images/chapitre8/fermer.svg" alt="Fermer" width="60"><br><img src="images/chapitre8/reouvrir.svg" alt="Réouvrir" width="60"></div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                        </div>
-                        <div class="divTableRow">
-                           <div class="divTableCellRole1">Relevés de banque</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre8/lire.svg" alt="Lire" width="60"><br><img src="images/chapitre8/ecrire.svg" alt="Écrire" width="60"></div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
+         <br>
+         <div class="floating-box process">
+            <img src="images/commun/step8.svg" alt="8" width="52">
          </div>
-         <p class="texte">Tableau 1</p>
-         <p align="center" class="texte aerateur procedure">A – Procédure pour piocher des rôles d'utilisateur</p>
+         <div class="process-txt">
+            <span class="titre-advice">Délimitez la parcelle</span>
+            <p>Vous pouvez utiliser la totalité de la zone cultivable ou vous servir des outils de dessin (les mêmes que ceux employés dans le <a href="chapitre4.html" class="avoid-clicks" target="_self">chapitre 4 - &#40;Exploitation&#41;</a> pour la modifier si vous souhaitez la diviser pour assoler des productions différentes.</p>
+            <p>Passez de préférence en mode plein écran avec le bouton "Agrandissement" pour bénéficier d'un large espace de travail et modifiez la zone avec le bouton"Crayon".
+               Si la zone est trop difficile à modifier, supprimez-la avec le bouton "Croix" et dessinez la nouvelle zone avec le bouton "Étoile". N'oubliez pas d'enregistrer vos modifications via le petit menu horizontal en cliquant sur "Terminer" ou sur "Sauver".
+               Une fois la nouvelle zone créée, pressez la touche "esc" pour revenir à un affichage normal. La nouvelle parcelle est centrée dans la carte.
+            </p>
+            <p class="max-img-process">
+               <img src="images/chapitre8/activites7.png" class="contour-img" alt="Exemple de zone découpée">
+            </p>
+         </div>
+         <br>
+         <div class="floating-box process">
+            <img src="images/commun/step9.svg" alt="9" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Enregistrez la parcelle</span>
+            <p>Cliquez sur<img src="images/commun/creer.svg" alt="Créer" class="btn-creer"> en bas de la fenêtre principale pour valider l'opération.</p>
+            <p>La nouvelle parcelle s'affiche alors en vert.</p>
+            <p>La création d'une nouvelle production entraîne automatiquement la création d'une nouvelle parcelle associée.</p>
+            <p>La liste des parcelles est automatiquement enrichie pour l'activité choisie.</p>
+            <p class="max-img-process">
+               <img src="images/chapitre8/activites8.png" class="contour-img" alt="Affichage de la nouvelle activité">
+            </p>
+         </div>
+         <h2 class="texte aerateur">c - Saisir une intervention d'implantation de culture</h2>
          <p class="texte">
-            Le processus suivant vous guide pour sélectionner des rôles d'utilisateur parmi ceux disponibles dans l'application.
+            Maintenant que la parcelle est créée, des interventions peuvent être réalisées sur celle-ci &#40;labour, semis, pulvérisation, récolte, etc&#41;.
          </p>
-         <div class="floating-box process">
-            <img src="images/commun/step1.svg" alt="1" width="52">
-         </div>
-         <div class="process-txt">
-            <span class="titre-advice">Accédez aux rôles d'utilisateur</span>
-            <p>
-               Pour accéder aux rôles d'utilisateur, allez dans le menu principal et cliquez sur la clef anglaise<img src="images/chapitre8/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">ou cliquez sur le bouton "Configuration" de la page d'acceuil :
-            </p>
-            <p align="center"><img src="images/chapitre8/wrench.svg" alt="Configuration" width="60"></p>
-            <p>
-               Dans la barre latérale du module, cliquez sur "Rôles" dans la rubrique "Accès" symbolisée par l'icône d'un bouclier<img src="images/chapitre8/shield.svg" alt="bouclier" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des rôles.
-            </p>
-         </div>
-         <br>
-         <div class="floating-box process">
-            <img src="images/commun/step2.svg" alt="2" width="52">
-         </div>
-         <div class="process-txt">
-            <span class="titre-advice">Sélectionnez un rôle d'utilisateur</span>
-            <p>
-               Cliquez sur le bouton "Piocher". Un menu "Référence" s'affiche et une liste déroulante vous permet de sélectionner un rôle d'utilisateur. Cliquez sur "Importer" pour intégrer le rôle d'utilisateur dans votre ferme.
-            </p>
-            <p class="max-img-process">
-            <img src="images/chapitre8/piocher.png" class="contour-img" alt="Piocher un rôle">
-            </p>
-            <p>Répétez l'opération pour chaque rôle d'utilisateur que vous souhaitez utiliser et la liste des rôles va s'enrichir automatiquement.</p>
-            <p class="max-img-process">
-            <img src="images/chapitre8/role1.png" class="contour-img" alt="Affichage liste des rôles">
-            </p>
-         </div>
-         <br>
-         <div class="floating-box process">
-            <img src="images/commun/step3.svg" alt="3" width="52">
-         </div>
-         <div class="process-txt">
-            <span class="titre-advice">Affichez les droits d'un rôle d'utilisateur</span>
-            <p>
-               Cliquez sur le nom d'un rôle d'utilisateur pour connaître les droits octroyés et vérifier qu'ils sont conformes à vos attentes.
-            </p>
-            <p class="max-img-process">
-            <img src="images/chapitre8/role4.png" class="contour-img" alt="Droits du rôle d'utilisateur">
-            </p>
-         </div>
-         <p class="texte">Si aucun des rôles prédéfinis ne répond à vos besoins et que vous préférez partir d'un modèle "vierge", voici comment en créer de nouveaux selon vos critères :</p>
-         <p align="center" class="texte aerateur procedure">B – Procédure de création des rôles d'utilisateur</p>
-         <p class="texte">
-            Le processus suivant vous guide pour créer des rôles d'utilisateur.
-         </p>
-         <div class="floating-box process">
-            <img src="images/commun/step1.svg" alt="1" width="52">
-         </div>
-         <div class="process-txt">
-            <span class="titre-advice">Accédez aux rôles d'utilisateur</span>
-            <p>
-               Pour accéder aux rôles d'utilisateur, allez dans le menu principal et cliquez sur la clef anglaise<img src="images/chapitre8/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">ou cliquez sur le bouton "Configuration" de la page d'accueil :
-            </p>
-            <p align="center"><img src="images/chapitre8/wrench.svg" alt="Configuration" width="60"></p>
-            <p>
-               Dans la barre latérale du module, cliquez sur "Rôles" dans la rubrique "Accès" symbolisée par l'icône d'un bouclier<img src="images/chapitre8/shield.svg" alt="bouclier" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des rôles. Elle est vide si vous n'avez pas déjà pioché de rôles dans l'application.
-            </p>
-         </div>
-         <br>
-         <div class="floating-box process">
-            <img src="images/commun/step2.svg" alt="2" width="52">
-         </div>
-         <div class="process-txt">
-            <span class="titre-advice">Définissez les droits</span>
-            <p>
-               Saisissez le nom du rôle et définissez les droits à accorder pour chaque fonctionnalité de l'application. Cliquez sur les boutons qui lui sont associés. L'activation d'un droit est symbolisée par la mise en couleur d'un ou de plusieurs boutons en fonction des liens logiques qui existent entre eux &#40;exemple : l'activation du droit "Réouvrir" entraîne automatiquement l'activation du droit "Lire"&#41;.
-            </p>
-            <p class="max-img-process">
-            <img src="images/chapitre8/role2.png" class="contour-img" alt="Création nouveau rôle">
-            </p>
-         </div>
-         <br>
-         <div class="floating-box process">
-            <img src="images/commun/step3.svg" alt="3" width="52">
-         </div>
-         <div class="process-txt">
-            <span class="titre-advice">Validez la création du rôle d'utilisateur</span>
-            <p>
-               Cliquez sur<img src="images/commun/creer.svg" alt="Créer" height="25" class="btn-creer">en bas de la fenêtre principale pour valider l'opération.
-            </p>
-            <p>Répétez ce processus pour chaque nouveau rôle que vous souhaitez ajouter à votre ferme.</p>
-         </div>
-         <p class="texte">Vous pouvez modifier et supprimer des rôles si nécessaire.</p>
-         <p align="center" class="texte aerateur procedure">C – Procédure de modification des rôles d'utilisateur</p>
-         <p class="texte">
-            Le processus suivant vous guide pour modifier les rôles d'utilisateur.
-         </p>
-         <div class="floating-box process">
-            <img src="images/commun/step1.svg" alt="1" width="52">
-         </div>
-         <div class="process-txt">
-            <span class="titre-advice">Accédez aux rôles d'utilisateur</span>
-            <p>
-               Pour accéder aux rôles d'utilisateur, allez dans le menu principal et cliquez sur la clef anglaise<img src="images/chapitre8/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">ou cliquez sur le bouton "Configuration" de la page d'accueil :
-            </p>
-            <p align="center"><img src="images/chapitre8/wrench.svg" alt="Configuration" width="60"></p>
-            <p>
-               Dans la barre latérale du module, cliquez sur "Rôles" dans la rubrique "Accès" symbolisée par l'icône d'un bouclier<img src="images/chapitre8/shield.svg" alt="bouclier" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des rôles.
-            </p>
-            <p class="max-img-process">
-            <img src="images/chapitre8/role5.png" class="contour-img" alt="Liste des rôles">
-            </p>
-         </div>
-         <br>
-         <div class="floating-box process">
-            <img src="images/commun/step2.svg" alt="2" width="52">
-         </div>
-         <div class="process-txt">
-            <span class="titre-advice">Modifiez un rôle d'utilisateur</span>
-            <p>
-               Cliquez sur l'icône "Crayon"<img src="images/chapitre8/crayon.svg" alt="crayon" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche du nom du rôle.
-            </p>
-            <p>Cliquez ensuite sur le bouton "Modifier", puis définissez les droits à accorder pour chaque fonctionnalité de l'application. Cliquez sur les boutons qui lui sont associés. L'activation d'un droit est symbolisée par la mise en couleur d'un ou de plusieurs boutons en fonction des liens logiques qui existent entre eux &#40;exemple : l'activation du droit "Réouvrir" entraîne automatiquement l'activation du droit "Lire"&#41;.
-            </p>
-            <p class="max-img-process">
-            <img src="images/chapitre8/role3.png" class="contour-img" alt="Modifier un rôle">
-            </p>
-         </div>
-         <br>
-         <div class="floating-box process">
-            <img src="images/commun/step3.svg" alt="3" width="52">
-         </div>
-         <div class="process-txt">
-            <span class="titre-advice">Validez la modification du rôle d'utilisateur</span>
-            <p>
-               Cliquez sur "Modifier" en bas de la page pour valider les changements ou sur "Annuler" pour abandonner l'opération.
-            </p>
-         </div>
-         <h2 class="texte aerateur">c - Invitation d'utilisateurs</h2>
-         <p class="texte">Il est possible de lancer des invitations afin de demander à des utilisateurs de rejoindre votre ferme.</p>
-         <p align="center" class="texte aerateur procedure">A – Procédure d'invitation d'un utilisateur</p>
-         <p class="texte">
-            Le processus suivant vous guide pour inviter un utilisateur.
-         </p>
-         <div class="floating-box process">
-            <img src="images/commun/step1.svg" alt="1" width="52">
-         </div>
-         <div class="process-txt">
-            <span class="titre-advice">Accédez aux invitations</span>
-            <p>
-               Pour créer une nouvelle invitation, allez dans le menu principal et cliquez sur la clef anglaise<img src="images/chapitre8/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">ou cliquez sur le bouton "Configuration" de la page d'accueil :
-            </p>
-            <p align="center"><img src="images/chapitre8/wrench.svg" alt="Configuration" width="60"></p>
-            <p>
-               Dans la barre latérale du module, cliquez sur "Invitations" dans la rubrique "Accès" symbolisée par l'icône d'un bouclier<img src="images/chapitre8/shield.svg" alt="bouclier" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des invités.
-            </p>
-         </div>
-         <br>
-         <div class="floating-box process">
-            <img src="images/commun/step2.svg" alt="2" width="52">
-         </div>
-         <div class="process-txt">
-            <span class="titre-advice">Créez une invitation</span>
-            <p>
-               Cliquez sur "Nouveau" puis, dans les "Informations générales"remplissez tous les champs obligatoires signalés par une astérisque de couleur rouge avec les informations requises pour la définir correctement. Affectez un rôle d'utilisateur si vous en avez déjà créé au moins un &#40;mais ce n'est pas obligatoire&#41;.
-            </p>
-            <p> Cliquez sur<img src="images/commun/creer.svg" alt="Créer" height="25" class="btn-creer">pour lancer l'invitation.</p>
-            <p>Un email est envoyé à votre contact et la liste des invités est mise à jour. Le statut de l'invitation et de l'utilisateur changent dès que votre invité a accepté votre invitation.</p>
-            <p class="max-img-process">
-            <img src="images/chapitre8/invitation1.png" class="contour-img" alt="Invitation utilisateur">
-            </p>
-         </div>
          <div class="warn-fond aerateur-haut aerateur-bas">
             <div class="floating-box-warn">
                <img src="images/commun/attention.svg" width="100" alt="Attention"/>
             </div>
             <div class="info-txt">
-               <span class="titre-advice">Droits des invités<br></span>
+               <span class="titre-advice">Implantation de culture<br></span>
                <p class="texte-advice">
-                  Notez que par défaut, les droits accordés à l'invité sont la lecture et l'écriture d'interventions, même si vous n'avez pas encore pioché ou créé de rôle d'utilisateur.
+                  Cette section du chapitre implique que vous ayez préalablement procédé à la réception d'un colis de semences commandé auprès d'un fournisseur pour son stockage afin de réaliser l'intervention de semis sur la parcelle &#40;voir <a href="chapitre8.html" class="avoid-clicks" target="_self">chapitre 6 - Production</a>&#41;.
                </p>
             </div>
          </div>
-         <h2 class="texte aerateur">d - Inscription d'utilisateurs</h2>
-         <p class="texte">Un utilisateur qui connaît l'adresse internet de votre ferme et qui souhaite accéder à vos données a la possibilité de vous soumettre son inscription en remplissant le formulaire et en cliquant sur le bouton "Inscription".</p>
-         <p class="texte aerateur-haut" align="center">
-            <img src="images/chapitre8/inscription1.png"  width="500" alt="Formulaire d'inscription">
+         <p align="center" class="texte aerateur procedure">A – Procédure pour saisir une intervention de semis
          </p>
-         <p align="center" class="texte legende aerateur-bas">Formulaire d'inscription</p>
-         <p class="texte">Une fois la demande d'inscription réalisée, vous êtes prévenu&#40;e&#41; par la réception d'un email envoyé à votre adresse d'administrateur. À vous de l'accepter ou non.</p>
-         <p align="center" class="texte aerateur procedure">A – Procédure pour valider les inscriptions</p>
          <p class="texte">
-            Le processus suivant vous guide pour accepter une inscription.
+            Le processus suivant vous guide pour saisir une intervention de semis dans l'application.
          </p>
          <div class="floating-box process">
             <img src="images/commun/step1.svg" alt="1" width="52">
          </div>
          <div class="process-txt">
-            <span class="titre-advice">Accédez aux inscriptions</span>
+            <span class="titre-advice">Accédez aux interventions</span>
             <p>
-               Pour valider l'inscription d'un nouvel utilisateur, allez dans le menu principal et cliquez sur la clef anglaise<img src="images/chapitre8/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">ou cliquez sur le bouton "Configuration" de la page d'accueil :
-            </p>
-            <p align="center"><img src="images/chapitre8/wrench.svg" alt="Configuration" width="60"></p>
+            Cliquez sur le lien "Production" dans le "Menu principal" ou sur le bouton "Production" de la page d'accueil :
+         </p>
+         <p align="center"><img src="images/chapitre8/production.svg" alt="Production" width="60"></p>
             <p>
-               Dans la barre latérale du module, cliquez sur "Inscriptions" dans la rubrique "Accès" symbolisée par l'icône d'un bouclier<img src="images/chapitre8/shield.svg" alt="bouclier" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des inscrits.
+               Dans la barre latérale du module, cliquez sur "Interventions" dans la rubrique "Production" symbolisée par l'icône avec des engrenages<img src="images/chapitre8/cogs.svg" alt="Main" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher l'écran d'accueil des interventions.
             </p>
             <p class="max-img-process">
-            <img src="images/chapitre8/inscription2.png" class="contour-img" alt="Liste des inscriptions">
+               <img src="images/chapitre8/intervention1.png" class="contour-img" alt="Écran d'accueil des interventions">
             </p>
          </div>
          <br>
@@ -659,35 +433,65 @@
             <img src="images/commun/step2.svg" alt="2" width="52">
          </div>
          <div class="process-txt">
-            <span class="titre-advice">Validez une inscription</span>
+            <span class="titre-advice">Choisissez une intervention</span>
             <p>
-               a - Cliquez sur le nom du nouvel inscrit et validez son inscription en cliquant sur "Modifier" ou :
-            </p>
-            <p>b - Après réception d'un email notifiant l'inscription d'un nouvel utilisateur, cliquez sur le lien permettant votre accord et validez celle-ci en cliquant sur "Modifier".</p>
-            <p>Dès que vous avez approuvé l'inscription, un email de confirmation est adressé au nouvel inscrit.
+               Cliquez sur le bouton "Enregistrer une intervention", puis sélectionnez "Semis" dans le menu "Implantation des cultures".
             </p>
             <p class="max-img-process">
-            <img src="images/chapitre8/inscription3.png" class="contour-img" alt="Validation inscription">
+               <img src="images/chapitre8/intervention2.png" class="contour-img" alt="Écran d'accueil des interventions">
             </p>
          </div>
-         <div class="warn-fond aerateur-haut aerateur-bas">
-            <div class="floating-box-warn">
-               <img src="images/commun/attention.svg" width="100" alt="Attention"/>
-            </div>
-            <div class="info-txt">
-               <span class="titre-advice">Droits des inscrits<br></span>
-               <p class="texte-advice">
-                  Notez que par défaut, les droits accordés au nouvel inscrit sont la lecture et l'écriture d'interventions, même si vous n'avez pas encore pioché ou créé de rôle d'utilisateur.
-               </p>
-            </div>
+         <br>
+         <div class="floating-box process">
+            <img src="images/commun/step3.svg" alt="3" width="52">
          </div>
+         <div class="process-txt">
+            <span class="titre-advice">Renseignez l'intervention</span>
+            <p>
+               Remplissez tous les champs signalés par une astérisque de couleur rouge avec les informations requises pour la définir correctement.
+            </p>
+            <p class="max-img-process">
+               <img src="images/chapitre8/intervention3.png" class="contour-img" alt="Saisie des informations de l'intervention">
+            </p>
+         </div>
+         <br>
+         <div class="floating-box process">
+            <img src="images/commun/step4.svg" alt="4" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Enregistrez l'opération</span>
+            <p>
+               Cliquez sur<img src="images/commun/creer.svg" alt="Créer" class="btn-creer">en bas de la fenêtre principale pour valider l'implantation de la culture. Répétez l'opération pour chaque intervention de semis à réaliser sur les différentes parcelles.
+            </p>
+            <p class="max-img-process">
+               <img src="images/chapitre8/intervention4.png" class="contour-img" alt="Validation de l'intervention">
+            </p>
+         </div>
+         <br>
+         <div class="floating-box process">
+            <img src="images/commun/step5.svg" alt="5" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Affichez le tableau de bord de la campagne</span>
+            <p>
+               Cliquez sur le lien "Production" dans le "Menu principal" ou sur le bouton "Production" de la page d'accueil pour afficher le "Tableau de bord de la production" mis à jour pour la campagne choisie.
+            </p>
+            <p class="max-img-process">
+               <img src="images/chapitre8/production3.png" class="contour-img" alt="Tableau de bord de la campagne">
+            </p>
+         </div>
+         <p class="texte aerateur-haut">
+            Passez au chapitre suivant de ce guide.
+         </p>
          <div class="navigation aerateur-haut">
             <div class="divTable">
                <div class="divTableBody">
                   <div class="divTableRow">
                      <div class="divTableCellCenter" style="width: auto">&nbsp;</div>
-                     <div class="divTableCellCenter" style="width: 40px"><a href="chapitre7.html" target="_self"><img src="images/commun/arrow-left.svg" width="40"  alt="Production"></a></div>
-                     <div class="divTableCellLeft" style="width: 90px"><span><a href="chapitre7.html" target="_self">PRODUCTION</a></span></div>
+                     <div class="divTableCellRight" style="width: 150px"><span><a href="chapitre7.html" target="_self">COMPTABILITÉ</a></span></div>
+                     <div class="divTableCellCenter" style="width: 40px"><a href="chapitre7.html" target="_self"><img src="images/commun/arrow-left.svg" width="40" alt="Comptabilité"></a></div>
+                     <div class="divTableCellCenter" style="width: 40px"><a href="chapitre8.html" target="_self"><img src="images/commun/arrow-right.svg" width="40" alt="Accès"></a></div>
+                     <div class="divTableCellLeft" style="width: 150px"><span><a href="chapitre8.html" target="_self">ACCÈS</a></span></div>
                      <div class="divTableCellCenter" style="width: auto">&nbsp;</div>
                   </div>
                </div>

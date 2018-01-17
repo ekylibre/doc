@@ -32,8 +32,9 @@
                   <li><a class="drawer-menu-item" href="chapitre4.html">Exploitation</a></li>
                   <li><a class="drawer-menu-item" href="chapitre5.html">L'interface</a></li>
                   <li><a class="drawer-menu-item" href="chapitre6.html">Stock &amp; Personnel</a></li>
-                  <li><a class="drawer-menu-item" href="chapitre7.html">Production</a></li>
-                  <li><a class="drawer-menu-item" href="chapitre8.html">Accès</a></li>
+				  <li><a class="drawer-menu-item" href="chapitre7.html">Comptabilité</a></li>
+                  <li><a class="drawer-menu-item" href="chapitre8.html">Production</a></li>
+                  <li><a class="drawer-menu-item" href="chapitre9.html">Accès</a></li>
                </ul>
             </nav>
          </header>
@@ -66,23 +67,16 @@
          <div class="gris">
             <p>
                <span class="rappel-sommaire">
-               1 - Prérequis
-               <br>
-               2 - Introduction
-               <br>
-               3 - Parcellaire
-               </span>
-               <br>
-               4 - Exploitation
-               <br>
+               1 - Prérequis<br>
+               2 - Introduction<br>
+               3 - Parcellaire</span><br>
+               4 - Exploitation<br>
                <span class="rappel-sommaire">
-               5 - L’interface
-               <br>
-               6 - Stock &amp; Personnel
-               <br>
-               7 - Production
-               <br>
-               8 - Accès
+               5 - L’interface<br>
+               6 - Stock &amp; Personnel<br>
+			   7 - Comptabilité<br>
+               8 - Production<br>
+               9 - Accès
                </span>
             </p>
          </div>
@@ -144,7 +138,7 @@
                   <div class="divTableCellGlossaire1" style="width: auto">
                      Fond de carte
                   </div>
-                  <div class="divTableCellGlossaire2" style="width: auto">
+                  <div class="divTableCellGlossaire2" style="width: 100%">
                      ensemble des informations géographiques, routières ou administratives affichées dans la carte
                   </div>
                </div>
@@ -158,7 +152,7 @@
                </div>
                <div class="divTableRow">
                   <div class="divTableCellGlossaire1">
-                     Zone de bâtiment
+                     Découpe de bâtiment
                   </div>
                   <div class="divTableCellGlossaire2">
                      une subdivision d'un bâtiment, une salle, un local ou une partie d'une surface
@@ -193,7 +187,7 @@
                      Oui
                   </div>
                   <div class="divTableCellActivites2">
-                     Vous trouvez, dans le panneau d'activités, celles déclarées à la PAC. Vous pouvez en ajouter d'autres si vous le souhaitez.
+                     Vous trouvez, dans le panneau d'activités, celles déclarées à la PAC. Vous pouvez en ajouter d'autres si vous le souhaitez
                   </div>
                </div>
                <div class="divTableRow">
@@ -201,7 +195,7 @@
                      Non
                   </div>
                   <div class="divTableCellActivites2">
-                     Vous pouvez créer vos activités dès maintenant.
+                     Vous pouvez créer vos activités dès maintenant
                   </div>
                </div>
             </div>
@@ -909,7 +903,7 @@
          <div class="info-txt">
             <span class="titre-advice">Zoom maximal<br></span>
             <p class="texte-advice">
-               La précision du dessin à la main peut être rendue difficile pour le dessin de petites zones cultivables en raison d'un zoom limité dépendant du fond de carte choisi.
+               La précision du dessin à la main peut être rendue difficile pour le dessin de petits bâtiments/zones de stockage en raison d'un zoom limité dépendant du fond de carte choisi.
             </p>
          </div>
       </div>
@@ -1125,7 +1119,7 @@
          <img src="images/chapitre4/barre-progression3.png" class="contour-img" alt="Barre de progression">
       </p>
       <p class="texte">
-         Le découpage des bâtiments est nécessaire à la gestion des espaces de stockage &#40;intrants, semences, récoltes&#41; et pour réaliser vos inventaires. Notez qu'une zone de bâtiment peut couvrir la surface totale d'un bâtiment et dans ce cas, il n'est pas nécessaire de dessiner une nouvelle zone &#40;exemple : un hangar&#41;.
+         Le découpage des bâtiments est nécessaire à la gestion des espaces de stockage &#40;intrants, semences, récoltes&#41; et pour réaliser vos inventaires. Notez qu'une découpe de bâtiment peut couvrir la surface totale d'un bâtiment et dans ce cas, il n'est pas nécessaire de la redessiner &#40;exemple : un hangar&#41;.
       </p>
       <p class="texte">
          Ce découpage permet donc de générer les subdivisions d'un bâtiment et la création de zones de stockage.
@@ -1155,9 +1149,9 @@
             </p>
          </div>
       </div>
-      <p align="center" class="texte aerateur procedure">A - Procédure de création des zones de bâtiment/stockage</p>
+      <p align="center" class="texte aerateur procedure">A - Procédure de création des découpes de bâtiment/stockage</p>
       <p class="texte">
-         Ce processus vous guide pour subdiviser vos bâtiments et vos zones de stockage.
+         Ce processus vous guide pour subdiviser vos bâtiments et vos aires de stockage.
       </p>
       <div class="floating-box process">
          <img src="images/commun/step1.svg" alt="1" width="52">
@@ -1182,19 +1176,19 @@
       <div class="process-txt">
          <span class="titre-advice">Sélectionnez un bâtiment</span>
          <p>
-            Au-dessus de la carte sont listés les bâtiments existants dans des onglets. Cliquez sur le nom d'un bâtiment pour masquer les autres sur la carte. Dans la carte et dans la liste, le bâtiment sélectionné prend la dénomination "Zone principale du bâtiment" car il est automatiquement une zone par défaut.
+            Au-dessus de la carte sont listés les bâtiments existants dans des onglets. Cliquez sur le nom d'un bâtiment pour masquer les autres sur la carte. Dans la carte et dans la liste, le bâtiment sélectionné prend la dénomination "Zone principale du bâtiment" car il est automatiquement une découpe par défaut.
          </p>
       </div>
       <div class="floating-box process">
          <img src="images/commun/step3.svg" alt="3" width="52">
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Dessinez la zone de bâtiment/stockage</span>
+         <span class="titre-advice">Dessinez la découpe de bâtiment/stockage</span>
          <p>
-            Dans la carte et avec les outils de dessin, tracez et fermez la nouvelle zone sur la zone principale du bâtiment.
+            Dans la carte et avec les outils de dessin, tracez et fermez la nouvelle découpe sur la zone principale du bâtiment.
          </p>
          <p>
-            La nouvelle zone s'affiche alors en violet.
+            La nouvelle découpe s'affiche alors en violet.
          </p>
          <p>
             Chaque subdivision créée vient enrichir la liste à droite.
@@ -1206,16 +1200,16 @@
          </div>
          <div class="info-txt">
             <span class="titre-advice">Attention avec les niveaux<br></span>
-            <p class="texte-advice">Vous pouvez assigner un niveau (sous-sol ou étage) à votre zone de bâtiment/stockage mais il n'est pas géré dans la version actuelle d'Ekylibre et seul le rez-de chaussée est pris en charge &#40;aucune conséquence pour les outils de gestion de l'application&#41;.</p>
+            <p class="texte-advice">Vous pouvez assigner un niveau (sous-sol ou étage) à votre découpe de bâtiment/stockage mais il n'est pas géré dans la version actuelle d'Ekylibre et seul le rez-de chaussée est pris en charge &#40;aucune conséquence pour les outils de gestion de l'application&#41;.</p>
          </div>
       </div>
       <div class="floating-box process">
          <img src="images/commun/step4.svg" alt="4" width="52">
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Répétez l'opération pour chaque nouvelle zone</span>
+         <span class="titre-advice">Répétez l'opération pour chaque nouvelle découpe</span>
          <p>
-            Notez que les chiffres dans les pastilles blanches sur un bâtiment<img src="images/chapitre4/numero-bat.svg" alt="Pastille" height="30" class="align-outil">indiquent le nombre de zones dessinées pour ce bâtiment.
+            Notez que les chiffres dans les pastilles blanches sur un bâtiment<img src="images/chapitre4/numero-bat.svg" alt="Pastille" height="30" class="align-outil">indiquent le nombre de subdivisions dessinées pour ce bâtiment.
          </p>
          <p class="max-img-process">
             <img src="images/chapitre4/decoupage.png" class="contour-img" alt="Découpage du bâtiments">
@@ -1226,8 +1220,8 @@
             <img src="images/commun/info.svg" width="100" alt="Info"/>
          </div>
          <div class="info-txt">
-            <span class="titre-advice">Simplifiez vos zones de bâtiment/stockage<br></span>
-            <p class="texte-advice">Supprimez la zone principale si elle est complètement recouverte par les zones de bâtiment/stockage qui s'y rattachent.</p>
+            <span class="titre-advice">Simplifiez vos découpes de bâtiment/stockage<br></span>
+            <p class="texte-advice">Supprimez la zone principale si elle est complètement recouverte par l'ensemble des découpages du bâtiment/stockage qui s'y rattachent.</p>
          </div>
       </div>
       <div class="affichage-large">
