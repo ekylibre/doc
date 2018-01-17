@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h3 {
-	font-size:21px;
+	font-size:19px;
 	font-weight:normal;
 }
 
@@ -345,6 +345,42 @@ a:link, a:visited {
 	background-color: #dddddd;
 	font-size: 12px;
 	line-height: 1.2;
+}
+
+.perso1 {
+	background-image: url("images/chapitre9/man-user1.svg");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.perso2 {
+	background-image: url("images/chapitre9/man-user2.svg");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.perso3 {
+	background-image: url("images/chapitre9/man-user3.svg");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.perso4 {
+	background-image: url("images/chapitre9/man-user4.svg");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.perso5 {
+	background-image: url("images/chapitre9/man-user5.svg");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.perso6 {
+	background-image: url("images/chapitre9/man-user6.svg");
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
 .divTableCellRole2 img{
@@ -1035,6 +1071,94 @@ a:link, a:visited {
 	text-align: right;
 	margin-right: 20px;
 	white-space: nowrap;
+}
+
+/*Tableau des exemples de profils - chapitre 6*/
+
+.divTableCellProfil1, .divTableHeadProfil1 {
+	height: 40px;
+	border-top-width: 3px;
+	border-top-style: solid;
+	border-top-color: #ffffff;
+	border-bottom-width: 0;
+	border-bottom-style: solid;
+	border-bottom-color: #ffffff;
+	border-left-width: 0;
+	border-left-style: solid;
+	border-left-color: #ffffff;
+	border-right-width: 3px;
+	border-right-style: solid;
+	border-right-color: #ffffff;
+	display: table-cell;
+	padding: 5px 10px;
+	text-align:center;
+	vertical-align: middle;
+	background-color: #dddddd;
+	font-weight: bold;
+}
+
+.divTableCellProfil2, .divTableHeadProfil2 {
+	height: 30px;
+	border-top-width: 3px;
+	border-top-style: solid;
+	border-top-color: #ffffff;
+	border-bottom-width: 0;
+	border-bottom-style: solid;
+	border-bottom-color: #ffffff;
+	border-left-width: 0;
+	border-left-style: solid;
+	border-left-color: #ffffff;
+	border-right-width: 3px;
+	border-right-style: solid;
+	border-right-color: #ffffff;
+	display: table-cell;
+	padding: 5px 10px;
+	text-align:center;
+	vertical-align: middle;
+	background-color: #eeeeee;
+}
+
+.divTableCellProfil3, .divTableHeadProfil3 {
+	height: 30px;
+	border-top-width: 3px;
+	border-top-style: solid;
+	border-top-color: #ffffff;
+	border-bottom-width: 0;
+	border-bottom-style: solid;
+	border-bottom-color: #ffffff;
+	border-left-width: 0;
+	border-left-style: solid;
+	border-left-color: #ffffff;
+	border-right-width: 0;
+	border-right-style: solid;
+	border-right-color: #ffffff;
+	display: table-cell;
+	padding: 5px 10px;
+	text-align:center;
+	vertical-align: middle;
+	background-color: #eeeeee;
+}
+
+.divTableCellProfil4, .divTableHeadProfil4 {
+	height: 40px;
+	border-top-width: 3px;
+	border-top-style: solid;
+	border-top-color: #ffffff;
+	border-bottom-width: 0;
+	border-bottom-style: solid;
+	border-bottom-color: #ffffff;
+	border-left-width: 0;
+	border-left-style: solid;
+	border-left-color: #ffffff;
+	border-right-width: 0;
+	border-right-style: solid;
+	border-right-color: #ffffff;
+	display: table-cell;
+	padding: 5px 10px;
+	text-align:center;
+	vertical-align: middle;
+	background-color: #dddddd;
+	font-weight: bold;
 }
 
 /* Navigation pied de page */

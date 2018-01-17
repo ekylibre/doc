@@ -73,6 +73,13 @@ img, object, embed, video {
 	margin-left: 13px;
 }
 
+.btn-creer {
+	margin-right: 5px;
+	margin-left: 5px;
+	vertical-align: -2px;
+	height: 20px;
+}
+
 .process-txt {
 	padding-right: 13px;
 	padding-left: 13px;
@@ -119,6 +126,10 @@ img, object, embed, video {
 
 .aerateur-bas {
 	margin-bottom: 18px;
+}
+
+.aerateur-glossaire {
+	margin-top: 0;
 }
 
 .debut-chapitre {
@@ -265,6 +276,13 @@ img, object, embed, video {
 	margin-left: 40px;
 }
 
+.btn-creer {
+	margin-right: 5px;
+	margin-left: 5px;
+	vertical-align: -5px;
+	height: 25px;
+}
+
 .info-fond {
 	padding: 20px 60px;
 	min-height: 80px;
@@ -308,6 +326,10 @@ img, object, embed, video {
 
 .aerateur-bas {
 	margin-bottom: 25px;
+}
+
+.aerateur-glossaire {
+	margin-top: 0;
 }
 
 .debut-chapitre {
@@ -465,6 +487,13 @@ img, object, embed, video {
 	margin-left: 60px;
 }
 
+.btn-creer {
+	margin-right: 5px;
+	margin-left: 5px;
+	vertical-align: -5px;
+	height: 25px;
+}
+
 .info-fond {
 	padding: 20px 60px;
 	min-height: 80px;
@@ -508,6 +537,10 @@ img, object, embed, video {
 
 .aerateur-bas {
 	margin-bottom: 35px;
+}
+
+.aerateur-glossaire {
+	margin-top: 6px;
 }
 
 .debut-chapitre {
@@ -711,6 +744,10 @@ html {
 
 .aerateur-bas {
 	margin-bottom: 35px;
+}
+
+.aerateur-glossaire {
+	margin-top: 6px;
 }
 
 .debut-chapitre {
