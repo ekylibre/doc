@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <title>Ekylibre : guide de démarrage rapide</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="shortcut icon" href="images/commun/favicon.ico" />
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+      <link rel="stylesheet" href="w3school.css">
+      <link rel="stylesheet" href="quickstart.css">
+      <link rel="stylesheet" href="ekylibre.css">
+      <link rel="stylesheet" href="drawer.css">
+   </head>
+   <body class="drawer drawer--top">
+      <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+      <div class="conteneur">
+         <div class="ekylibre affichage-print"><img src="images/commun/ekylibre.svg" alt="Ekylibre" width="120px" class="logo-entete"></div>
+         <header role="banner">
+            <button type="button" class="drawer-toggle drawer-hamburger">
+            <span class="sr-only">Menu</span>
+            <span class="drawer-hamburger-icon"></span>
+            </button>
+            <nav class="drawer-nav" role="navigation">
+               <ul class="drawer-menu">
+                  <li><a class="drawer-menu-item" href="quickstart.html">Accueil</a></li>
+                  <li><a class="drawer-menu-item" href="chapitre1.html">Prérequis</a></li>
+                  <li><a class="drawer-menu-item" href="chapitre2.html">Introduction</a></li>
+                  <li><a class="drawer-menu-item" href="chapitre3.html">Parcellaire</a></li>
+                  <li><a class="drawer-menu-item" href="chapitre4.html">Exploitation</a></li>
+                  <li><a class="drawer-menu-item" href="chapitre5.html">L'interface</a></li>
+                  <li><a class="drawer-menu-item" href="chapitre6.html">Stock &amp; Personnel</a></li>
+                  <li><a class="drawer-menu-item" href="chapitre7.html">Comptabilité</a></li>
+                  <li><a class="drawer-menu-item" href="chapitre8.html">Production</a></li>
+                  <li><a class="drawer-menu-item" href="chapitre9.html">Accès</a></li>
+               </ul>
+            </nav>
+         </header>
+         <div class="fill-it"></div>
+         <div class="affichage-large">
+            <div class="TableauTitre center-div w3-top">
+               <div class="divTableCellMenu w3-right w3-text-white" style="width: 364px">EKYLIBRE : GUIDE DE DÉMARRAGE RAPIDE</div>
+            </div>
+         </div>
+         <div class="affichage-mobile">
+            <div class="TableauTitre center-div w3-top">
+               <div class="divTableCellMenu w3-right w3-text-white" style="width: 250px">EKYLIBRE : DÉMARRAGE RAPIDE</div>
+            </div>
+         </div>
+         <div class="affichage-print">
+            <div class="TableauTitre center-div w3-top">
+               <div class="divTableCellMenu w3-right w3-text-white" style="width: 250px">GUIDE DE DÉMARRAGE RAPIDE</div>
+            </div>
+         </div>
+      </div>
+      <!-- !PAGE CONTENT! -->
+      <div class="w3-content">
+         <div class="image-large"><img class="chapitre" src="images/chapitre6/stock.png" alt="Stock & Personnel"/> </div>
+         <div class="image-carre"><img class="chapitre" src="images/chapitre6/stock-carre.png" alt="Stock & Personnel" style="width:auto;"></div>
+         <h1 align="center" class="majuscule aerateur">6 - Stock &amp; Personnel</h1>
+         <div class="gris">
+            <p><span class="rappel-sommaire">1 - Prérequis<br>
+               2 - Introduction<br>
+               3 - Parcellaire<br>
+               4 - Exploitation<br>
+               5 - L’interface</span><br>
+               6 - Stock &amp; Personnel<br>
+               <span class="rappel-sommaire">7 - Comptabilité<br>
+               8 - Production<br>
+               9 - Accès</span>
+            </p>
+         </div>
+         <p class="texte aerateur-haut">
+            <strong>Dans ce chapitre vous allez découvrir :</strong>
+         </p>
+         <div class="divTableListe marge">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellListe" style="width: 14px">
+                     <img src="images/commun/caret-right.svg" alt="Flèche" height="15">
+                  </div>
+                  <div class="divTableCellListe">
+                     Comment créer de nouvelles variantes &#40;articles&#41;
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellListe">
+                     <img src="images/commun/caret-right.svg" alt="Flèche" height="15">
+                  </div>
+                  <div class="divTableCellListe">
+                     Comment procéder au stockage de variantes &#40;articles&#41; et réaliser un inventaire
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellListe">
+                     <img src="images/commun/caret-right.svg" alt="Flèche" height="15">
+                  </div>
+                  <div class="divTableCellListe">
+                     Comment définir vos tiers et votre personnel
+                  </div>
+               </div>
+            </div>
+         </div>
+         <h2 class="texte aerateur">Glossaire du chapitre</h2>
+         <div class="divTableGlossaire marge saut-page aerateur-bas">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellGlossaire1" style="width: auto">
+                     Stock
+                  </div>
+                  <div class="divTableCellGlossaire2" style="width: auto">
+                     dans l'application, tous les éléments &#40;produits, produits de récoltes, équipements, animaux, végétaux,, et même bâtiments et main d’œuvre&#41; sont considérés comme faisant partie du stock de la ferme sauf les fournisseurs et les clients
+                     <p align="center"><img src="images/chapitre6/schema-stock.svg" alt="Schéma stock" width="400" class="aerateur-glossaire"/></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <p class="texte">Tous les éléments stockés dans Ekylibre sont associés à une catégorie qui est un profil de gestion applicable pour les écritures comptables &#40;les mécanismes associées à la comptabilité seront exposés dans le <a href="chapitre7.html" target="_self" class="avoid-clicks">chapitre 7 - Comptabilité</a>&#41;.</p>
+         <p class="texte">Ces éléments sont également rattachés à des types &#40;familles&#41; identifiés par un profil technique comme par exemple un service, un équipement, un produit phytosanitaire.</p>
+         <p class="texte">La variante est finalement la dénomination d'un article appartenant simultanément à une catégorie &#40;profil de gestion&#41; et à un type &#40;profil technique&#41;.</p>
+         <div class="affichage-large"></div>
+         <div class="affichage-mobile">
+            <p align="center">
+               <img src="images/commun/drag.svg" alt="Drag" height="40" class="">
+               <br>
+               Glissez pour parcourir le tableau
+            </p>
+         </div>
+         <div class="saut-page"></div>
+         <div class="contour-gris texte aerateur-haut" name="tableau2">
+            <div class="tableaux">
+               <p align="center" class="texte titre-advice">
+                  Exemples d'articles rattachés à des profils
+               </p>
+            </div>
+            <div class="scroll">
+               <div class="tableau texte-tableau">
+                  <div class="divTable">
+                     <div class="divTableBody">
+                        <div class="divTableRow">
+                           <div class="divTableCellProfil1" style="width: 25%">Profil de gestion</div>
+                           <div class="divTableCellProfil1" style="width: 25%">Profil technique</div>
+                           <div class="divTableCellProfil1" style="width: 25%">Article</div>
+                           <div class="divTableCellProfil4" style="width: 25%">Composant de l'exploitation</div>
+                        </div>
+                        <div class="divTableRow">
+                           <div class="divTableCellProfil2">Matériel agricole</div>
+                           <div class="divTableCellProfil2">Semoir autoporté &#40;SAP&#41;</div>
+                           <div class="divTableCellProfil2">SAP John Deere 750A</div>
+                           <div class="divTableCellProfil3">SAP John Deere 750A<br>n° série B8212-421</div>
+                        </div>
+                        <div class="divTableRow">
+                           <div class="divTableCellProfil2">Bovin</div>
+                           <div class="divTableCellProfil2">Bovin viande</div>
+                           <div class="divTableCellProfil2">Abondance</div>
+                           <div class="divTableCellProfil3">Titine</div>
+                        </div>
+                        <div class="divTableRow">
+                           <div class="divTableCellProfil2">Céréales</div>
+                           <div class="divTableCellProfil2">Blé tendre</div>
+                           <div class="divTableCellProfil2">Florence Aurore</div>
+                           <div class="divTableCellProfil3">Culture sur parcelle :<br>le pré</div>
+                        </div>
+                        <div class="divTableRow">
+                           <div class="divTableCellProfil2">Légumes</div>
+                           <div class="divTableCellProfil2">Tomates</div>
+                           <div class="divTableCellProfil2">Paola</div>
+                           <div class="divTableCellProfil3">Plantation serre n° 2</div>
+                        </div>
+                        <div class="divTableRow">
+                           <div class="divTableCellProfil2">Produit phytosanitaire</div>
+                           <div class="divTableCellProfil2">Désherbant</div>
+                           <div class="divTableCellProfil2">Glyphosate</div>
+                           <div class="divTableCellProfil3">Bidon dans le réduit</div>
+                        </div>
+                        <div class="divTableRow">
+                           <div class="divTableCellProfil2">Bâtiment</div>
+                           <div class="divTableCellProfil2">Installation</div>
+                           <div class="divTableCellProfil2">Salle de traite</div>
+                           <div class="divTableCellProfil3">Alpha Laval 4 griffes</div>
+                        </div>
+                        <div class="divTableRow">
+                           <div class="divTableCellProfil2">Bâtiment</div>
+                           <div class="divTableCellProfil2">Cabane</div>
+                           <div class="divTableCellProfil2">Cabane poulets</div>
+                           <div class="divTableCellProfil3">Ma cabane 6 m x 12 m</div>
+                        </div>
+                        <div class="divTableRow">
+                           <div class="divTableCellProfil2">Semence</div>
+                           <div class="divTableCellProfil2">Maïs</div>
+                           <div class="divTableCellProfil2">Inra 400</div>
+                           <div class="divTableCellProfil3">Mes sacs dans le réduit</div>
+                        </div>
+                        <div class="divTableRow">
+                           <div class="divTableCellProfil2">Fertilisant</div>
+                           <div class="divTableCellProfil2">Fumier</div>
+                           <div class="divTableCellProfil2">Fumier composté</div>
+                           <div class="divTableCellProfil3">Le tas derrière la grange</div>
+                        </div>
+                        <div class="divTableRow">
+                           <div class="divTableCellProfil2">Lait</div>
+                           <div class="divTableCellProfil2">Yahourt</div>
+                           <div class="divTableCellProfil2">Pot de yahourt</div>
+                           <div class="divTableCellProfil3">Pot de yahourt 12 cl</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="info-fond aerateur">
+            <div class="floating-box-info">
+               <img src="images/commun/info.svg" width="100" alt="Info"/>
+            </div>
+            <div class="info-txt">
+               <span class="titre-advice">Utilité de créer de nouvelles variantes<br></span>
+               <p class="texte-advice">Dans la grande majorité des cas, les variantes prédéfinies et disponibles dans l'application répondront à vos attentes pour constituer vos stocks. La création d'une nouvelle variante est utile si :<br>
+                  a - vous utilisez un équipement spécifique et/ou très récent dans votre ferme<br>
+                  b - vous souhaitez un niveau de détail précis quant à la dénomination d'un article &#40;comme par exemple pour une variété spécifique&#41;
+               </p>
+            </div>
+         </div>
+         <h2 class="texte aerateur">a - Introduction à la gestion des stocks</h2>
+         <p class="texte">Des interactions existent entre les différents modules d'Ekylibre : les stocks d'intrants permettent de réaliser des interventions sur les cultures. Les récoltes issues des cultures seront à leur tour stockées. Les colis entrants permettent de consigner des achats alors que les colis sortants permettent d'enregistrer des ventes pour enfin réaliser les décaissements et les encaissements donnant lieu à des écritures comptables.</p>
+         <p align="center" class="aerateur-haut aerateur-bas texte">
+            <img src="images/chapitre6/flux.svg" alt="Schéma parcelles et cultures" width="400">
+         </p>
+         <p align="center" class="texte legende">
+            Flux entre les modules dans Ekylibre
+         </p>
+         <h3 class="texte">1 - Différentes manières de compter</h3>
+         <p class="texte">En fonction de la variante &#40;l'article&#41; sélectionnée, l'unité utilisée pour son comptage lui est propre. Soyez attentif dans le processus des mouvements des colis entrant et sortant.</p>
+         <p class="texte">Quelques exemples :</p>
+         <div class="divTableGlossaire marge aerateur-bas">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellGlossaire1" style="width: auto">
+                     Adjuvant
+                  </div>
+                  <div class="divTableCellGlossaire2" style="width: 100%">
+                     litre
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellGlossaire1">
+                     Semences de blé
+                  </div>
+                  <div class="divTableCellGlossaire2">
+                     dose de 50.000 grains &#40;sac de 25 kg&#41;
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellGlossaire1">
+                     Engrais minéral
+                  </div>
+                  <div class="divTableCellGlossaire2">
+                     tonne
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellGlossaire1">
+                     Culture de maïs
+                  </div>
+                  <div class="divTableCellGlossaire2">
+                     hectare
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellGlossaire1">
+                     Lisier de bovins
+                  </div>
+                  <div class="divTableCellGlossaire2">
+                     mètre cube
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellGlossaire1">
+                     Semence de sarrasin
+                  </div>
+                  <div class="divTableCellGlossaire2">
+                     unité
+                  </div>
+               </div>
+            </div>
+         </div>
+         <h3 class="texte aerateur-haut">2 - Deux méthodes pour créer un stock initial</h3>
+         <p class="texte">Au démarrage dans l'application, les différents stocks &#40;intrants, récoltes&#41; sont inexistants et il est nécessaire de les créer pour qu'ils correspondent à ce que vous possédez physiquement dans vos bâtiments ou aires de stockage.</p>
+         <p class="texte">Deux méthodes sont à votre disposition. Elles diffèrent l'une par rapport à l'autre en raison de leur impact sur la traçabilité et de la facilité avec laquelle vous allez pouvoir définir vos stocks pour commencer.</p>
+         <div class="divTableGlossaire marge">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellGlossaire1">
+                     Stock &rsaquo; Colis &rsaquo; Nouveau colis entrant
+                  </div>
+                  <div class="divTableCellGlossaire2">
+                     La traçabilité est activée &#40;elle donne lieu à des écritures comptables&#41;, et vous pouvez définir plusieurs variantes avec la quantité souhaitée en une seule opération <a href="#colis-entrant" class="avoid-clicks">&#40;procédure expliquée plus loin dans ce chapitre&#41;</a>
+                  </div>
+               </div>
+			   <div class="divTableRow">
+                  <div class="divTableCellGlossaire1" style="width: auto">
+                     Stocks &rsaquo; Matières &rsaquo; Nouvelle matière
+                  </div>
+                  <div class="divTableCellGlossaire2" style="width: auto">
+                     Aucune traçabilité n'est activée, vous indiquez seulement la quantité en stock pour la variante choisie mais vous devez répéter l'opération article par article <a href="#matieres" class="avoid-clicks">&#40;procédure expliquée plus loin dans ce chapitre&#41;</a>. C'est la méthode la plus pratique pour entrer des stocks de produits de culture
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="idea-fond aerateur">
+            <div class="floating-box-idea">
+               <img src="images/commun/astuce.svg" width="100" alt="Astuce"/>
+            </div>
+            <div class="info-txt">
+               <span class="titre-advice">Affichage dans l'application<br></span>
+               <p class="texte-advice">
+                  Les informations affichées et la liste des champs à renseigner peuvent occuper une hauteur importante dans la fenêtre principale.<br>Réduisez ou développez les informations des sections avec les boutons<img src="images/commun/minus-square-o.svg" alt="moins" height="15" class="icone-marge-gauche icone-marge-droite">et<img src="images/commun/plus-square-o.svg" alt="plus" height="15" class="icone-marge-gauche icone-marge-droite">à droite de la fenêtre principale.
+               </p><p align="center"><img src="images/commun/dev-reduc.png" alt="Réduction agrandissement des sections" class="contour-img"></p>
+            </div>
+         </div>
+         <p align="center" class="texte aerateur procedure">A – Procédure pour afficher une liste dans les "Produits"
+         </p>
+         <p class="texte">
+            Le processus suivant vous guide pour mieux comprendre le système de classement utilisé dans l'application.
+         </p>
+         <div class="floating-box process">
+            <img src="images/commun/step1.svg" alt="1" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Affichez le menu des "Produits"</span>
+            <p>
+               Pour afficher les “Catégorie de produits”, les “Types de produits” ou les “Variantes de produits”, cliquez sur la clef anglaise<img src="images/chapitre6/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite"> dans le "Menu principal" ou sur le bouton "Configuration" de la page d'accueil :
+            </p>
+            <p align="center"><img src="images/chapitre6/wrench.svg" alt="Configuration" width="60"></p>
+         </div>
+         <br>
+         <div class="floating-box process">
+            <img src="images/commun/step2.svg" alt="2" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Sélectionnez la liste à afficher</span>
+            <p>Dans la barre latérale du module, cliquez sur la liste à afficher dans la rubrique "Produits" symbolisée par l'icône d'un épi<img src="images/chapitre6/wheat.svg" alt="Épi" height="20" class="align-icone icone-marge-gauche">.</p>
+            <p class="max-img-process">
+               <img src="images/chapitre6/variantes1.png" class="contour-img" alt="Variantes de produits">
+            </p>
+            <p>Notez que si vous avez supprimé par erreur une catégorie, un type ou une variante, vous pourrez l'intégrer à nouveau dans la liste en cliquant sur le bouton "Piocher" &#40;Choisir&#41;.</p>
+         </div>
+         <p class="texte">Si vous ne trouvez pas un article spécifique dans la liste proposée pour en réaliser le stockage &#40;comme par exemple une variété de semence&#41;, vous pouvez créer une nouvelle variante de produit mais vous n'allez jamais créer de nouveaux types ou de nouvelles catégories.</p>
+         <p align="center" class="texte aerateur procedure">B – Procédure pour créer une nouvelle variante
+         </p>
+         <p class="texte">Le processus suivant vous guide pour créer une nouvelle variante &#40;un nouvel article&#41;.</p>
+         <div class="floating-box process">
+            <img src="images/commun/step1.svg" alt="1" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Affichez les types de produits</span>
+            <p>
+               Cliquez sur la clef anglaise<img src="images/chapitre6/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">dans le "Menu principal" ou sur le bouton "Configuration" de la page d'accueil :
+            </p>
+            <p align="center"><img src="images/chapitre6/wrench.svg" alt="Configuration" width="60"></p>
+            <p>Dans la barre latérale du module, cliquez sur "Types de produits" dans la rubrique "Produits" symbolisée par l'icône d'un épi<img src="images/chapitre6/wheat.svg" alt="Épi" height="20" class="align-icone icone-marge-gauche">.</p>
+         </div>
+         <br>
+         <div class="floating-box process">
+            <img src="images/commun/step2.svg" alt="2" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Sélectionnez un type de produit</span>
+            <p>Parcourez la liste des types avec les flèches<img src="images/chapitre6/fleche-g2.svg" alt="Flèche gauche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">et<img src="images/chapitre6/fleche-d2.svg" alt="Flèche droite" height="20" class="align-icone icone-marge-gauche icone-marge-droite">en haut à droite de l'écran ou utilisez le champ “Rechercher” et saisissez un mot-clef comme par exemple semence. Sélectionnez dans la liste un type générique de l'article à créer, puis cliquez sur le nom du type.</p>
+            <p class="max-img-process">
+               <img src="images/chapitre6/type.png" class="contour-img" alt="Types de produits">
+            </p>
+         </div>
+         <br>
+         <div class="floating-box process">
+            <img src="images/commun/step3.svg" alt="3" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Créez la nouvelle variante</span>
+            <p>Cliquez sur le bouton "Nouveau" et saisissez les informations concernant sa dénomination et les bons indicateurs pour la définir correctement.
+            </p>
+            <p>Cliquez sur<img src="images/commun/creer.svg" alt="Créer" class="btn-creer">pour valider l'opération.</p>
+            <p class="max-img-process">
+               <img src="images/chapitre6/variantes3.png" class="contour-img" alt="Nouvelle variante de produit">
+            </p>
+         </div>
+         <p class="texte aerateur-haut">
+            La gestion des stocks représente un axe pricipal dans l'utilisation de l'application.
+         </p>
+         <p class="texte">
+            Ce qui suit vous montre comment générer le stockage d'un intrant pour pouvoir procéder plus tard à une intervention &#40;semis&#41;.
+         </p>
+         <div class="warn-fond aerateur-haut aerateur-bas">
+            <div class="floating-box-warn">
+               <img src="images/commun/attention.svg" width="100" alt="Attention"/>
+            </div>
+            <div class="info-txt">
+               <span class="titre-advice">Date de stockage<br></span>
+               <p class="texte-advice">
+                  La date de réception d'un nouveau colis doit être antérieure à la date d'intervention qui utilisera la nouvelle ressource, sinon il sera impossible de réaliser la saisie de l'intervention dans l'application.
+               </p>
+            </div>
+         </div>
+		 <a class="slice-short" name="colis-entrant"></a>
+         <p align="center" class="texte aerateur procedure">A – Procédure pour stocker une ou plusieurs variante&#40;s&#41;
+         </p>
+         <p class="texte">
+            Le processus suivant vous guide pour ajouter une ou plusieurs variante&#40;s&#41; <strong>avec</strong> une traçabilité comptable. 
+         </p>
+         <div class="floating-box process">
+            <img src="images/commun/step1.svg" alt="1" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Affichez le "Tableau de bord des stocks"</span>
+            <p>
+               Cliquez sur le lien "Stocks" dans le "Menu principal" ou sur le bouton "Stocks" de la page d'accueil :
+            </p>
+            <p align="center"><img src="images/chapitre6/stocks.svg" alt="Configuration" width="60"></p>
+         </div>
+         <br>
+         <div class="floating-box process">
+            <img src="images/commun/step2.svg" alt="2" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Accédez aux "Colis"</span>
+            <p>Dans la barre latérale du module, cliquez sur "Colis" dans la rubrique "Mouvements" symbolisée par l'icône d'un camion<img src="images/chapitre6/truck.svg" alt="Épi" height="20" class="align-icone icone-marge-gauche">.</p>
+            <p class="max-img-process">
+               <img src="images/chapitre6/colis4.png" class="contour-img" alt="Liste des colis">
+            </p>
+         </div>
+         <br>
+         <div class="floating-box process">
+            <img src="images/commun/step3.svg" alt="3" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Saisissez les informations </span>
+            <p>
+               Cliquez sur "Nouveau colis entrant", puis remplissez tous les champs signalés par une astérisque de couleur rouge avec les informations requises pour le définir correctement.
+            </p>
+         </div>
+         <div class="info-fond aerateur-haut">
+            <div class="floating-box-info">
+               <img src="images/commun/info.svg" width="100" alt="Info"/>
+            </div>
+            <div class="info-txt">
+               <span class="titre-advice">Nouveau fournisseur<br></span>
+               <p class="texte-advice">
+                  Si l'expéditeur du colis &#40;le fournisseur&#41; n'existe pas encore, créez-en un nouveau à la volée en sélectionnant "Ajouter un nouvel enregistrement" dans le menu "Expéditeur", saisissez les informations le concernant et validez l'opération en cliquant sur le bouton<img src="images/commun/creer.svg" alt="Créer" class="btn-creer">.
+               </p>
+               <p align="center">
+                  <img src="images/chapitre6/fournisseur.png" alt="Nouveau fournisseur" width="300" class="contour-img" style="margin-bottom:-16px">
+               </p>
+            </div>
+         </div>
+         <br>
+         <div class="floating-box process"></div>
+         <div class="process-txt">
+            <p>
+               Cliquez sur le bouton "Ajouter un élément". Remplissez les champs dans le panneau "Éléments". Vous pouvez ajouter plusieurs éléments dans un même colis &#40;ne pas oublier les frais de transport le cas échéant&#41;.
+            </p>
+            <p>
+               Cliquez sur<img src="images/commun/creer.svg" alt="Créer" class="btn-creer">pour valider l'opération.
+            </p>
+            <p class="max-img-process">
+               <img src="images/chapitre6/colis1.png" class="contour-img" alt="Nouveau colis entrant">
+            </p>
+         </div>
+         <br>
+         <div class="floating-box process">
+            <img src="images/commun/step5.svg" alt="5" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Modifiez le statut du "Colis entrant"</span>
+            <p>Modifiez successivement le statut du colis en cliquant sur les étapes en couleur :<br>"Brouillon"<img src="images/chapitre6/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">"Commandé"<img src="images/chapitre6/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">"En préparation"<img src="images/chapitre6/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">"Prêt"<img src="images/chapitre6/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">"Reçu".</p>
+            <p>Vous pouvez aussi valider sa réception directement en cliquant sur le bouton "Reçu".</p>
+            <p class="max-img-process"></p>
+            <p align="center"><img src="images/chapitre6/colis2.png" class="contour-img" alt="Statut du colis entrant"></p>
+         </div>
+         <br>
+         <div class="floating-box process">
+            <img src="images/commun/step6.svg" alt="6" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Contrôlez vos stocks</span>
+            <p>Cliquez sur "Matières" dans le menu des "Stocks" symbolisé par l'icône d'un sac de grains<img src="images/chapitre6/matter.svg" alt="Sac de matière" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour contrôler le bon enregistrement de votre nouveau colis entrant dans la liste des éléments en stock.</p>
+            <p class="max-img-process">
+               <img src="images/chapitre6/matieres4.png" class="contour-img" alt="Matières en stock">
+            </p>
+         </div>
+         <p class="texte">Vous pouvez maintenant réaliser une intervention comme par exemple un semis &#40;voir  <a href="chapitre8.html" class="avoid-clicks" target="_self">chapitre 8 – Production</a>&#41; et vous arrêter là si vous le souhaitez. Vous pouvez aussi procéder à la <a href="#gestion-achats" class="avoid-clicks">gestion de cet achat</a> et aux écritures comptables issues de la réception de ce colis.</p>
+         <div class="idea-fond aerateur-haut aerateur-bas">
+            <div class="floating-box-info">
+               <img src="images/commun/astuce.svg" width="100" alt="Astuce"/>
+            </div>
+            <div class="info-txt">
+               <span class="titre-advice">Stocks existants<br></span>
+               <p class="texte-advice">
+                  À la création de votre ferme, si vous souhaitez intégrer vos stocks existants dans l'application, nous vous recommandons de vous faire un colis entrant à vous-même regroupant plusieurs variantes &#40;articles&#41; avec les bonnes quantités et daté du premier jour de l'exercice en cours.
+               </p>
+            </div>
+         </div>
+		 <a class="slice-short" name="matieres"></a>
+         <p align="center" class="texte aerateur procedure">B – Procédure pour stocker une matière
+         </p>
+         <p class="texte">
+            Le processus suivant vous guide pour ajouter une matière <strong>sans</strong> traçabilité comptable &#40;et article par article&#41;.
+         </p>
+         <div class="floating-box process">
+            <img src="images/commun/step1.svg" alt="1" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Affichez le "Tableau de bord des stocks"</span>
+            <p>
+               Cliquez sur le lien "Stocks" dans le "Menu principal" ou sur le bouton "Stocks" de la page d'accueil :
+            </p>
+            <p align="center"><img src="images/chapitre6/stocks.svg" alt="Configuration" width="60"></p>
+         </div>
+         <br>
+         <div class="floating-box process">
+            <img src="images/commun/step2.svg" alt="2" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Accédez aux "Matières"</span>
+            <p>Dans la barre latérale du module, cliquez sur "Matières" dans la rubrique "Stocks" symbolisée par l'icône d'un sac de grains<img src="images/chapitre6/matter.svg" alt="Sac de matière" height="20" class="align-icone icone-marge-gauche icone-marge-droite">.</p>
+            <p class="max-img-process">
+               <img src="images/chapitre6/matieres1.png" class="contour-img" alt="Liste des matières">
+            </p>
+         </div>
+         <br>
+         <div class="floating-box process">
+            <img src="images/commun/step3.svg" alt="3" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Créez une nouvelle matière</span>
+            <p>
+               Cliquez sur "Nouveau", puis choisissez une variante dans la liste déroulante ou saisissez les premières lettres de celle-ci pour filtrer les propositions.
+            </p>
+            <p class="max-img-process">
+               <img src="images/chapitre6/matieres2.png" class="contour-img" alt="Nouvelle matière">
+            </p>
+         </div>
+         <br>
+         <div class="floating-box process">
+            <img src="images/commun/step4.svg" alt="4" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Saisissez les informations</span>
+            <p>
+               Remplissez tous les champs signalés par une astérisque de couleur rouge avec les informations requises pour la définir correctement.
+            </p>
+            <p>
+               Cliquez sur<img src="images/commun/creer.svg" alt="Créer" class="btn-creer">pour valider l'opération.
+            </p>
+            <p class="max-img-process">
+               <img src="images/chapitre6/matieres3.png" class="contour-img" alt="Nouvelle matière">
+            </p>
+         </div>
+		 <br>
+		 <div class="floating-box process">
+            <img src="images/commun/step5.svg" alt="5" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Contrôlez les indicateurs</span>
+            <p>
+               L'application affiche les indicateurs liés à la nouvelle matière : colis, interventions, lieux de stockage.
+            </p>
+            <p class="max-img-process">
+               <img src="images/chapitre6/matieres5.png" class="contour-img" alt="Nouvelle matière">
+            </p>
+         </div>
+		 <div class="info-fond aerateur-haut">
+            <div class="floating-box-info">
+               <img src="images/commun/info.svg" width="100" alt="Info"/>
+            </div>
+            <div class="info-txt">
+               <span class="titre-advice">Masse nette<br></span>
+               <p class="texte-advice">
+                  La masse nette indiquée dans le panneau des indicateurs de la matière n'indique pas le poids total de la variante en stock, mais seulement le poids unitaire de celle-ci.
+               </p>
+            </div>
+         </div>
+		 <p align="center" class="texte aerateur procedure">C – Procédure pour livrer une récolte à un tiers
+         </p>
+         <p class="texte">
+            Le processus suivant vous guide pour réaliser un colis sortant <strong>avec</strong> une traçabilité comptable. 
+         </p>
+         <div class="floating-box process">
+            <img src="images/commun/step1.svg" alt="1" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Affichez le "Tableau de bord des stocks"</span>
+            <p>
+               Cliquez sur le lien "Stocks" dans le "Menu principal" ou sur le bouton "Stocks" de la page d'accueil :
+            </p>
+            <p align="center"><img src="images/chapitre6/stocks.svg" alt="Configuration" width="60"></p>
+         </div>
+         <br>
+         <div class="floating-box process">
+            <img src="images/commun/step2.svg" alt="2" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Accédez aux "Colis"</span>
+            <p>Dans la barre latérale du module, cliquez sur "Colis" dans la rubrique "Mouvements" symbolisée par l'icône d'un camion<img src="images/chapitre6/truck.svg" alt="Épi" height="20" class="align-icone icone-marge-gauche">.</p>
+            <p class="max-img-process">
+               <img src="images/chapitre6/colis4.png" class="contour-img" alt="Liste des colis">
+            </p>
+         </div>
+         <br>
+         <div class="floating-box process">
+            <img src="images/commun/step3.svg" alt="3" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Saisissez les informations </span>
+            <p>
+               Cliquez sur "Nouveau colis sortant", puis remplissez tous les champs signalés par une astérisque de couleur rouge avec les informations requises pour le définir correctement.
+            </p>
+         </div>
+         <div class="info-fond aerateur-haut">
+            <div class="floating-box-info">
+               <img src="images/commun/info.svg" width="100" alt="Info"/>
+            </div>
+            <div class="info-txt">
+               <span class="titre-advice">Nouveau destinataire<br></span>
+               <p class="texte-advice">
+                  Si le destinataire du colis &#40;le client&#41; n'existe pas encore, créez-en un nouveau à la volée en sélectionnant "Ajouter un nouvel enregistrement" dans le menu "Destinataire", saisissez les informations le concernant et validez l'opération en cliquant sur le bouton<img src="images/commun/creer.svg" alt="Créer" class="btn-creer">.
+               </p>
+               <p align="center">
+                  <img src="images/chapitre6/destinataire.png" alt="Nouveau fournisseur" width="300" class="contour-img" style="margin-bottom:-16px">
+               </p>
+            </div>
+         </div>
+         <br>
+         <div class="floating-box process"></div>
+         <div class="process-txt">
+            <p>
+               Cliquez sur le bouton "Ajouter un élément". Remplissez les champs dans le panneau "Éléments". Vous pouvez ajouter plusieurs éléments dans un même colis &#40;ne pas oublier les frais de transport le cas échéant&#41;.
+            </p>
+            <p>
+               Cliquez sur<img src="images/commun/creer.svg" alt="Créer" class="btn-creer">pour valider l'opération.
+            </p>
+            <p class="max-img-process">
+               <img src="images/chapitre6/colis5.png" class="contour-img" alt="Nouveau colis entrant">
+            </p>
+         </div>
+         <br>
+         <div class="floating-box process">
+            <img src="images/commun/step5.svg" alt="5" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Modifiez le statut du "Colis sortant"</span>
+            <p>Modifiez successivement le statut du colis en cliquant sur les étapes en couleur :<br>"Brouillon"<img src="images/chapitre6/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">"Commandé"<img src="images/chapitre6/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">"En préparation"<img src="images/chapitre6/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">"Prêt"<img src="images/chapitre6/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">"Donné".</p>
+            <p>Vous pouvez aussi valider sa livraison directement en cliquant sur le bouton "Donné".</p>
+            <p class="max-img-process"></p>
+            <p align="center"><img src="images/chapitre6/colis6.png" class="contour-img" alt="Statut du colis sortant"></p>
+         </div>
+         <br>
+         <div class="floating-box process">
+            <img src="images/commun/step6.svg" alt="6" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Contrôlez vos stocks</span>
+            <p>Cliquez sur "Matières" dans le menu des "Stocks" symbolisé par l'icône d'un sac de grains<img src="images/chapitre6/matter.svg" alt="Sac de matière" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour contrôler le bon enregistrement de votre nouveau colis sortant dans la liste des éléments en stock.</p>
+            <p class="max-img-process">
+               <img src="images/chapitre6/matieres6.png" class="contour-img" alt="Matières en stock">
+            </p>
+         </div>
+		 <a class="slice-short" name="gestion-achats"></a>
+         <h2 class="texte aerateur">b - Gestion des achats</h2>
+         <p class="texte">
+            Les mouvements de stocks de matières &#40;colis entrant&#41; peuvent être utilisés pour réaliser la gestion des achats et la saisie automatique des écritures comptables qui en découlent.
+         </p>
+         <p align="center" class="texte aerateur procedure">A – Procédure pour régler un achat
+         </p>
+         <p class="texte">
+            Le processus suivant vous guide pour gérer l'achat d'un colis entrant.
+         </p>
+         <div class="floating-box process">
+            <img src="images/commun/step1.svg" alt="1" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Affichez le "Tableau de bord des stocks"</span>
+            <p>
+               Cliquez sur le lien "Stocks" dans le "Menu principal" ou sur le bouton "Stocks" de la page d'accueil :
+            </p>
+            <p align="center"><img src="images/chapitre6/stocks.svg" alt="Configuration" width="60"></p>
+         </div>
+         <br>
+         <div class="floating-box process">
+            <img src="images/commun/step2.svg" alt="2" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Accédez aux "Colis"</span>
+            <p>Dans la barre latérale du module, cliquez sur "Colis" dans la rubrique "Mouvements" symbolisée par l'icône d'un camion<img src="images/chapitre6/truck.svg" alt="Épi" height="20" class="align-icone icone-marge-gauche">.</p>
+         </div>
+         <br>
+         <div class="floating-box process">
+            <img src="images/commun/step3.svg" alt="3" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Passez le colis en facture d'achat</span>
+            <p>Cochez la case à gauche du nom du colis à facturer pour afficher le bouton "Facturer" au dessus de la liste, puis cliquez sur ce bouton.</p>
+            <p class="max-img-process">
+               <img src="images/chapitre6/colis3.png" class="contour-img" alt="Passage colis en facture d'achat">
+            </p>
+         </div>
+         <br>
+         <div class="floating-box process">
+            <img src="images/commun/step4.svg" alt="4" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Modifiez le statut de l'achat</span>
+            <p>Modifiez successivement le statut de l'achat en cliquant sur les étapes en couleur :<br>"Devis brouillon"<img src="images/chapitre6/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">"Devis envoyé"<img src="images/chapitre6/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">"Commande"<img src="images/chapitre6/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">"Facture".</p>
+            <p>Vous pouvez aussi valider la facturation directement en cliquant sur le bouton "Facture".</p>
+            <p class="max-img-process">
+               <img src="images/chapitre6/achat1.png" class="contour-img" alt="Parcours colis vers facture d'achat">
+            </p>
+         </div>
+         <br>
+         <div class="floating-box process">
+            <img src="images/commun/step5.svg" alt="5" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Réglez la facture au fournisseur</span>
+            <p>La nouvelle facture à payer est établie. Vous pouvez réaliser l'écriture comptable du décaissement immédiatement ou plus tard. Cliquez sur le bouton "Ajouter un décaissement" pour accéder directement aux options du règlement de la facture. Vous pourrez revenir ultérieurement aux "Décaissements" via le module "Ventes/achats".</p>
+            <p>
+               Cliquez sur<img src="images/commun/creer.svg" alt="Créer" class="btn-creer">pour valider l'opération.
+            </p>
+            <p class="max-img-process">
+               <img src="images/chapitre6/achat2.png" class="contour-img" alt="Décaissement">
+            </p>
+         </div>
+         <h2 class="texte aerateur">c - Inventaires</h2>
+         <p class="texte">Vous pouvez réaliser les inventaires dans l'application pour :</p>
+         <p class="texte">a - fixer la valeur du stock présent au sein de l’exploitation.<br>
+            b - vérifier si aucune marchandise ou équipement ne manque, en d'autres termes de constater si il y a eu perte &#40;denrées périssables&#41; ou malveillance.<br>
+            c - vérifier une éventuelle erreur de gestion.
+         </p>
+         <p class="texte">Vous êtes libre de la fréquence des inventaires : mensuel, trimestriel, annuel. <strong>Chaque inventaire doit avoir un nom unique, un exercice et une date d'achèvement</strong>.</p>
+         <p align="center" class="texte aerateur procedure">A – Procédure pour réaliser un inventaire
+         </p>
+         <p class="texte">
+            Le processus suivant vous guide pour réaliser un inventaire des matières en stock.
+         </p>
+         <div class="floating-box process">
+            <img src="images/commun/step1.svg" alt="1" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Affichez le "Tableau de bord des stocks"</span>
+            <p>
+               Cliquez sur le lien "Stocks" dans le "Menu principal" ou sur le bouton "Stocks" de la page d'accueil :
+            </p>
+            <p align="center"><img src="images/chapitre6/stocks.svg" alt="Configuration" width="60"></p>
+         </div>
+         <br>
+         <div class="floating-box process">
+            <img src="images/commun/step2.svg" alt="2" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Accédez aux "Inventaires"</span>
+            <p>Dans la barre latérale du module, cliquez sur "Inventaires" dans la rubrique "Stocks" symbolisée par l'icône d'un sac de grains<img src="images/chapitre6/matter.svg" alt="Sac de matière" height="20" class="align-icone icone-marge-gauche icone-marge-droite">.</p>
+         </div>
+         <br>
+         <div class="floating-box process">
+            <img src="images/commun/step3.svg" alt="3" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Contrôlez vos stocks</span>
+            <p>Examinez les stocks de chaque article classés par zones de stockage, corrigez, le cas échéant, les quantités comptabilisées.</p>
+            <p>Cliquez sur<img src="images/commun/creer.svg" alt="Créer" class="btn-creer">pour valider l'opération. Chaque régularisation donne lieu à une écriture comptable.</p>
+            <p class="max-img-process">
+               <img src="images/chapitre6/inventaire1.png" class="contour-img" alt="Nouvel inventaire">
+            </p>
+         </div>
+         <h2 class="texte aerateur">d - Personnel</h2>
+         <div class="config margin-config">
+            <p>
+               <img src="images/commun/parcours.svg" height="55" alt="Icône parcours"/>
+            </p>
+            <p class="majuscule">
+               configuration à faire pour
+               <img class="align-icone icone-marge-gauche" src="images/commun/tacheB.svg" width="20" alt="B">
+            </p>
+         </div>
+         <p class="texte">Vous pouvez ajouter dans l'application des tiers qui participent à l'activité générale de votre ferme : employés, clients, fournisseurs. Notez que si vous souhaitez donner des autorisations à ces tiers pour intervenir dans l'application, vous devrez créer des utilisateurs &#40;détaillé dans le <a href="chapitre9.html" class="avoid-clicks" target="_self">chapitre 9 - Accès&#41;</a>.</p>
+         <p align="center" class="texte aerateur procedure">A – Procédure de création des contacts
+         </p>
+         <p class="texte">
+            Le processus suivant vous guide pour créer de nouveaux contacts dans l'application.
+         </p>
+         <div class="floating-box process">
+            <img src="images/commun/step1.svg" alt="1" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Affichez le Tableau de bord de la gestion des relations</span>
+            <p>
+               Cliquez sur le lien "Tiers" dans le "Menu principal" ou sur le bouton "Tiers" de la page d'accueil :
+            </p>
+            <p align="center"><img src="images/chapitre6/tiers.svg" alt="Configuration" width="60"></p>
+            <p class="max-img-process">
+               <img src="images/chapitre6/personnel1.png" class="contour-img" alt="Tableau de bord de la gestion des relations">
+            </p>
+         </div>
+         <br>
+         <div class="floating-box process">
+            <img src="images/commun/step2.svg" alt="2" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Affichez les tiers</span>
+            <p>Dans la barre latérale du module, cliquez sur "Tiers" dans la rubrique "Tiers" symbolisée par des personnages<img src="images/chapitre6/users.svg" alt="Utilisateurs" height="20" class="align-icone icone-marge-gauche">.</p>
+            <p class="max-img-process">
+               <img src="images/chapitre6/personnel2.png" class="contour-img" alt="Nouvel équipier">
+            </p>
+         </div>
+         <br>
+         <div class="floating-box process">
+            <img src="images/commun/step3.svg" alt="3" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Créez un contact</span>
+            <p>Cliquez sur le bouton "Nouveau contact" ou "Nouvelle organisation" et remplissez tous les champs signalés par une astérisque de couleur rouge avec les informations requises pour le/la définir correctement.</p>
+            <p class="max-img-process">
+               <img src="images/chapitre6/personnel3.png" class="contour-img" alt="Nouvel équipier">
+            </p>
+         </div>
+         <br>
+         <div class="floating-box process">
+            <img src="images/commun/step4.svg" alt="4" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Qualifiez le contact</span>
+            <p>Choisissez si le nouveau contact est un prospect, un client, un fournisseur ou un employé en cochant la case adéquate en face de la fonction choisie.</p>
+            <p>
+               Cliquez sur<img src="images/commun/creer.svg" alt="Créer" class="btn-creer">pour valider l'opération ou sur <img src="images/commun/creer-suivant.svg" alt="Créer" class="btn-creer"> pour réaliser une nouvelle saisie.
+            </p>
+            <p class="max-img-process">
+               <img src="images/chapitre6/personnel4.png" class="contour-img" alt="Nouvel équipier">
+            </p>
+         </div>
+         <br>
+         <div class="floating-box process">
+            <img src="images/commun/step5.svg" alt="5" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Affichez le contact</span>
+            <p>Une fois créé, l'application affiche automatiquement la fiche du nouveau contact.</p>
+            <p>
+               S'il s'agit d'un prospect, d'un client ou d'un fournisseur &#40;sauf exception&#41;, vous pouvez passer au chapitre suivant de ce guide.
+            </p>
+            <p class="max-img-process">
+               <img src="images/chapitre6/personnel5.png" class="contour-img" alt="Nouvel équipier">
+            </p>
+         </div>
+         <br>
+         <div class="floating-box process">
+            <img src="images/commun/step6.svg" alt="6" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Convertir le contact en équipier</span>
+            <p>
+               Cliquez sur le bouton "Ajouter un équipier" et sélectionnez la fonction la plus adéquate dans la liste pour convertir le contact en personnel de la ferme.
+            </p>
+            <p class="max-img-process">
+               <img src="images/chapitre6/personnel6.png" class="contour-img" alt="Nouvel équipier">
+            </p>
+         </div>
+         <br>
+         <div class="floating-box process">
+            <img src="images/commun/step7.svg" alt="7" width="52">
+         </div>
+         <div class="process-txt">
+            <span class="titre-advice">Créez l'équipier</span>
+            <p>Remplissez tous les champs signalés par une astérisque de couleur rouge avec les informations requises pour le définir correctement. Vous pouvez rattacher l'équipier à sa zone principale de travail dans votre ferme.</p>
+         </div>
+         <div class="info-fond aerateur-haut aerateur-bas">
+            <div class="floating-box-info">
+               <img src="images/commun/info.svg" width="100" alt="Info"/>
+            </div>
+            <div class="info-txt">
+               <span class="titre-advice">Informations générales<br></span>
+               <p class="texte-advice">
+                  Dans les informations générales, choisissez, dans la liste "Personne" le même nom que le nouvel équipier qui est en cours de création sauf si vous avez converti un fournisseur en équipier et que vous souhaitez rattacher plusieurs personnes à celui-ci.
+               </p>
+               <p align="center">
+                  <img src="images/chapitre6/equipier2.png" class="contour-img" alt="Nouvel équipier" style="margin-bottom:-16px">
+               </p>
+            </div>
+         </div>
+         <div class="floating-box process">
+         </div>
+         <div class="process-txt">
+            <p class="max-img-process">
+               <img src="images/chapitre6/equipier1.png" class="contour-img" alt="Nouvel équipier">
+            </p>
+            <p>
+               Cliquez sur<img src="images/commun/creer.svg" alt="Créer" class="btn-creer">pour valider l'opération.
+            </p>
+         </div>
+         <p class="texte aerateur-haut">
+            Passez au chapitre suivant de ce guide.
+         </p>
+         <div class="navigation aerateur-haut">
+            <div class="divTable">
+               <div class="divTableBody">
+                  <div class="divTableRow">
+                     <div class="divTableCellCenter" style="width: auto">&nbsp;</div>
+                     <div class="divTableCellRight" style="width: 150px"><span><a href="chapitre5.html" target="_self">L'INTERFACE</a></span></div>
+                     <div class="divTableCellCenter" style="width: 40px"><a href="chapitre5.html" target="_self"><img src="images/commun/arrow-left.svg" width="40" alt="L'interface"></a></div>
+                     <div class="divTableCellCenter" style="width: 40px"><a href="chapitre7.html" target="_self"><img src="images/commun/arrow-right.svg" width="40" alt="Comptabilité"></a></div>
+                     <div class="divTableCellLeft" style="width: 150px"><span><a href="chapitre7.html" target="_self">COMPTABILITÉ</a></span></div>
+                     <div class="divTableCellCenter" style="width: auto">&nbsp;</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="js/jquery.js"></script>
+      <script src="js/iscroll.js"></script>
+      <script src="js/drawer.js"></script>
+      <script src="js/backtotop.js"></script>
+      <script>
+         $(document).ready(function() {
+         	$('.drawer').drawer();
+         });
+      </script>
+   </body>
+</html>
