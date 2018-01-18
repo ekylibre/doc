@@ -1,717 +1,650 @@
-<!DOCTYPE html>
-<html>
-   <head>
-      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-      <title>Ekylibre : guide de démarrage rapide</title>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="shortcut icon" href="images/commun/favicon.ico" />
-      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-      <link rel="stylesheet" href="w3school.css">
-      <link rel="stylesheet" href="quickstart.css">
-      <link rel="stylesheet" href="ekylibre.css">
-      <link rel="stylesheet" href="drawer.css">
-   </head>
-   <body class="drawer drawer--top">
-     <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
-      <div class="conteneur">
-         <div class="ekylibre affichage-print"><img src="images/commun/ekylibre.svg" alt="Ekylibre" width="120px" class="logo-entete"></div>
-         <header role="banner">
-            <button type="button" class="drawer-toggle drawer-hamburger">
-            <span class="sr-only">Menu</span>
-            <span class="drawer-hamburger-icon"></span>
-            </button>
-            <nav class="drawer-nav" role="navigation">
-               <ul class="drawer-menu">
-                  <li><a class="drawer-menu-item" href="quickstart.html">Accueil</a></li>
-                  <li><a class="drawer-menu-item" href="chapitre1.html">Prérequis</a></li>
-                  <li><a class="drawer-menu-item" href="chapitre2.html">Introduction</a></li>
-                  <li><a class="drawer-menu-item" href="chapitre3.html">Parcellaire</a></li>
-                  <li><a class="drawer-menu-item" href="chapitre4.html">Exploitation</a></li>
-                  <li><a class="drawer-menu-item" href="chapitre5.html">L'interface</a></li>
-                  <li><a class="drawer-menu-item" href="chapitre6.html">Stock &amp; Personnel</a></li>
-				  <li><a class="drawer-menu-item" href="chapitre7.html">Comptabilité</a></li>
-                  <li><a class="drawer-menu-item" href="chapitre8.html">Production</a></li>
-                  <li><a class="drawer-menu-item" href="chapitre9.html">Accès</a></li>
-               </ul>
-            </nav>
-         </header>
-         <div class="fill-it"></div>
-         <div class="affichage-large">
-            <div class="TableauTitre center-div w3-top">
-               <div class="divTableCellMenu w3-right w3-text-white" style="width: 364px">EKYLIBRE : GUIDE DE DÉMARRAGE RAPIDE</div>
+<div class="w3-content">
+   <div class="image-large"><img class="chapitre" src="../images/chapitre9/acces.png" alt="Accès"/> </div>
+   <div class="image-carre"><img class="chapitre" src="../images/chapitre9/acces-carre.png" alt="Accès" style="width:auto;"></div>
+   <h1 align="center" class="majuscule aerateur">9 - Accès</h1>
+   <div class="gris">
+      <p><span class="rappel-sommaire">1 - Prérequis<br>
+         2 - Introduction<br>
+         3 - Parcellaire<br>
+         4 - Exploitation<br>
+         5 - L’interface<br>
+         6 - Stock &amp; Personnel<br>
+         7 - Comptabilité<br>
+         8 - Production</span><br>
+         9 - Accès
+      </p>
+   </div>
+   <p class="texte aerateur-haut">
+      <strong>Dans ce chapitre vous allez découvrir :</strong>
+   </p>
+   <div class="divTableListe marge">
+      <div class="divTableBody">
+         <div class="divTableRow">
+            <div class="divTableCellListe" style="width: 14px">
+               <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
+            </div>
+            <div class="divTableCellListe" style="width: auto">
+               Comment créer des utilisateurs et leur attribuer des droits dans l'application
             </div>
          </div>
-         <div class="affichage-mobile">
-            <div class="TableauTitre center-div w3-top">
-               <div class="divTableCellMenu w3-right w3-text-white" style="width: 250px">EKYLIBRE : DÉMARRAGE RAPIDE</div>
+         <div class="divTableRow">
+            <div class="divTableCellListe">
+               <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
             </div>
-         </div>
-         <div class="affichage-print">
-            <div class="TableauTitre center-div w3-top">
-               <div class="divTableCellMenu w3-right w3-text-white" style="width: 250px">GUIDE DE DÉMARRAGE RAPIDE</div>
+            <div class="divTableCellListe">
+               Comment utiliser ou créer des rôles pour des familles d'utilisateurs
             </div>
          </div>
       </div>
-      <!-- !PAGE CONTENT! -->
-      <div class="w3-content">
-         <div class="image-large"><img class="chapitre" src="images/chapitre9/acces.png" alt="Accès"/> </div>
-         <div class="image-carre"><img class="chapitre" src="images/chapitre9/acces-carre.png" alt="Accès" style="width:auto;"></div>
-         <h1 align="center" class="majuscule aerateur">9 - Accès</h1>
-         <div class="gris">
-            <p><span class="rappel-sommaire">1 - Prérequis<br>
-               2 - Introduction<br>
-               3 - Parcellaire<br>
-               4 - Exploitation<br>
-               5 - L’interface<br>
-               6 - Stock &amp; Personnel<br>
-			   7 - Comptabilité<br>
-               8 - Production</span><br>
-               9 - Accès
-            </p>
-         </div>
-         <p class="texte aerateur-haut">
-            <strong>Dans ce chapitre vous allez découvrir :</strong>
-         </p>
-         <div class="divTableListe marge">
-            <div class="divTableBody">
-               <div class="divTableRow">
-                  <div class="divTableCellListe" style="width: 14px">
-                     <img src="images/commun/caret-right.svg" alt="Flèche" height="15">
-                  </div>
-                  <div class="divTableCellListe" style="width: auto">
-                     Comment créer des utilisateurs et leur attribuer des droits dans l'application
-                  </div>
-               </div>
-               <div class="divTableRow">
-                  <div class="divTableCellListe">
-                     <img src="images/commun/caret-right.svg" alt="Flèche" height="15">
-                  </div>
-                  <div class="divTableCellListe">
-                     Comment utiliser ou créer des rôles pour des familles d'utilisateurs
-                  </div>
-               </div>
+   </div>
+   <h2 class="texte aerateur">Glossaire du chapitre</h2>
+   <div class="divTableGlossaire marge saut-page aerateur-bas">
+      <div class="divTableBody">
+         <div class="divTableRow">
+            <div class="divTableCellGlossaire1" style="width: auto">
+               Administrateur système
+            </div>
+            <div class="divTableCellGlossaire2" style="width: 100%">
+               personne chargée de gérer une ferme dans l'application et de veiller à son bon fonctionnement
             </div>
          </div>
-         <h2 class="texte aerateur">Glossaire du chapitre</h2>
-         <div class="divTableGlossaire marge saut-page aerateur-bas">
-            <div class="divTableBody">
-               <div class="divTableRow">
-                  <div class="divTableCellGlossaire1" style="width: auto">
-                     Administrateur système
-                  </div>
-                  <div class="divTableCellGlossaire2" style="width: 100%">
-                     personne chargée de gérer une ferme dans l'application et de veiller à son bon fonctionnement
-                  </div>
-               </div>
-               <div class="divTableRow">
-                  <div class="divTableCellGlossaire1" style="width: auto">
-                     Droits
-                  </div>
-                  <div class="divTableCellGlossaire2" style="width: auto">
-                     permission accordée à un utilisateur pour lire et/ou écrire des informations dans l'application
-                  </div>
-               </div>
+         <div class="divTableRow">
+            <div class="divTableCellGlossaire1" style="width: auto">
+               Droits
+            </div>
+            <div class="divTableCellGlossaire2" style="width: auto">
+               permission accordée à un utilisateur pour lire et/ou écrire des informations dans l'application
             </div>
          </div>
-		 <p class="texte">
-            Dans le cadre du travail en équipe, que ce soit pour saisir des interventions, des factures, des commandes, vous avez besoin de partager certaines informations de votre ferme Ekylibre avec d'autres personnes &#40;techniciens, ouvriers, commerciaux, etc&#41; qui représentent les utilisateurs.
-         </p>
-         <p class="texte">
-            Des accès peuvent être accordés par l'administrateur de la ferme à ces utilisateurs qui disposent ainsi de droits de lecture et/ou d'écriture pour tout ou partie des données gérées dans l'application.
-         </p>
-		  <p class="texte aerateur-bas">Par défaut, le gérant de la ferme (l'administrateur système) dispose de tous les droits. </p>
-		 <p class="texte">Liste des droits disponibles dans l'application :</p>
-            <div class="divTableListe marge aerateur-bas">
-               <div class="divTableBody">
-                  <div class="divTableRow">
-                     <div class="divTableCellDroits1" style="width: 95px">
-                        <img src="images/chapitre9/lire.svg" alt="Lire" height="30">
-                     </div>
-                     <div class="divTableCellDroits2" style="width: auto">
-                        permet de lire les données affichées dans l'application
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellDroits1">
-                        <img src="images/chapitre9/ecrire.svg" alt="Écrire" height="30">
-                     </div>
-                     <div class="divTableCellDroits2">
-                        permet de saisir et d'enregistrer des données dans l'application
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellDroits1">
-                        <img src="images/chapitre9/executer.svg" alt="Exécuter" height="30">
-                     </div>
-                     <div class="divTableCellDroits2">
-                        permet d'exécuter des opérations dans l'application
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellDroits1">
-                        <img src="images/chapitre9/lier.svg" alt="Lier" height="30">
-                     </div>
-                     <div class="divTableCellDroits2">
-                        permet de créer des liens entre les tiers
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellDroits1">
-                        <img src="images/chapitre9/fermer.svg" alt="Fermer" height="30">
-                     </div>
-                     <div class="divTableCellDroits2">
-                        permet de fermer un document ou un exercice comptable
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellDroits1">
-                        <img src="images/chapitre9/reouvrir.svg" alt="Réouvrir" height="30">
-                     </div>
-                     <div class="divTableCellDroits2">
-                        permet de réouvrir un document ou un exercice comptable
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellDroits1">
-                        <img src="images/chapitre9/verrouiller.svg" alt="Verrouiller" height="30">
-                     </div>
-                     <div class="divTableCellDroits2">
-                        permet de bloquer un utilisateur
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellDroits1">
-                        <img src="images/chapitre9/annuler.svg" alt="Annuler" height="30">
-                     </div>
-                     <div class="divTableCellDroits2">
-                        permet d'annuler une action &#40;vente&#41;
-                     </div>
-                  </div>
-               </div>
+      </div>
+   </div>
+   <p class="texte">
+      Dans le cadre du travail en équipe, que ce soit pour saisir des interventions, des factures, des commandes, vous avez besoin de partager certaines informations de votre ferme Ekylibre avec d'autres personnes &#40;techniciens, ouvriers, commerciaux, etc&#41; qui représentent les utilisateurs.
+   </p>
+   <p class="texte">
+      Des accès peuvent être accordés par l'administrateur de la ferme à ces utilisateurs qui disposent ainsi de droits de lecture et/ou d'écriture pour tout ou partie des données gérées dans l'application.
+   </p>
+   <p class="texte aerateur-bas">Par défaut, le gérant de la ferme (l'administrateur système) dispose de tous les droits. </p>
+   <p class="texte">Liste des droits disponibles dans l'application :</p>
+   <div class="divTableListe marge aerateur-bas">
+      <div class="divTableBody">
+         <div class="divTableRow">
+            <div class="divTableCellDroits1" style="width: 95px">
+               <img src="../images/chapitre9/lire.svg" alt="Lire" height="30">
             </div>
-		 <p class="texte">Si plusieurs personnes occupent des fonctions similaires dans votre ferme (commerciaux, techniciens, ouvriers agricoles), la création de rôles d'utilisateur permet de simplifier l'affectation de droits à ces utilisateurs grâce à des profils types.</p>
-		 <div class="affichage-large"></div>
-         <div class="affichage-mobile">
-            <p align="center">
-               <img src="images/commun/drag.svg" alt="Drag" height="40" class="">
-               <br>
-               Glissez pour parcourir le tableau
-            </p>
-         </div>
-         <div class="saut-page"></div>
-         <div class="contour-gris texte aerateur-haut">
-            <div class="tableaux">
-               <p align="center" class="texte titre-advice">
-                  Rôles d'utilisateurs prédéfinis et leurs droits
-               </p>
-            </div>
-            <div class="scroll">
-               <div class="tableau texte-tableau divTableFooter">
-                  <div class="divTable">
-                     <div class="divTableBody">
-                        <div class="divTableRow">
-                           <div class="divTableCellRole1" style="width: auto"></div>
-                           <div class="divTableCellRole3 perso1" style="width: 80px">Agent technico-commercial</div>
-                           <div class="divTableCellRole3 perso2" style="width: 80px">Comptable</div>
-                           <div class="divTableCellRole3 perso3" style="width: 80px">Conseiller agricole</div>
-                           <div class="divTableCellRole3 perso4" style="width: 80px">Technicien, ouvrier de l'exploitation</div>
-                           <div class="divTableCellRole3 perso5" style="width: 80px">Responsable de l'exploitation</div>
-                           <div class="divTableCellRole3 perso6" style="width: 80px">Vétérinaire</div>
-                        </div>
-                        <div class="divTableRow">
-                           <div class="divTableCellRole1">Animaux</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre9/lire.svg" alt="Lire" width="60"></div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre9/lire.svg" alt="Lire" width="60"></div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre9/lire.svg" alt="Lire" width="60"></div>
-                        </div>
-                        <div class="divTableRow">
-                           <div class="divTableCellRole1">Colis entrants</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre9/lire.svg" alt="Lire" width="60"></div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre9/lire.svg" alt="Lire" width="60"><br><img src="images/chapitre9/ecrire.svg" alt="Écrire" width="60"></div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                        </div>
-                        <div class="divTableRow">
-                           <div class="divTableCellRole1">Colis sortants</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre9/lire.svg" alt="Lire" width="60"></div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre9/lire.svg" alt="Lire" width="60"><br><img src="images/chapitre9/ecrire.svg" alt="Écrire" width="60"></div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                        </div>
-                        <div class="divTableRow">
-                           <div class="divTableCellRole1">Cultures végétales</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre9/lire.svg" alt="Lire" width="60"></div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre9/lire.svg" alt="Lire" width="60"></div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                        </div>
-                        <div class="divTableRow">
-                           <div class="divTableCellRole1">Interventions</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre9/lire.svg" alt="Lire" width="60"></div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre9/lire.svg" alt="Lire" width="60"></div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre9/lire.svg" alt="Lire" width="60"><br><img src="images/chapitre9/ecrire.svg" alt="Écrire" width="60"></div>
-                           <div class="divTableCellRole2"><img src="images/chapitre9/lire.svg" alt="Lire" width="60"></div>
-                        </div>
-                        <div class="divTableRow">
-                           <div class="divTableCellRole1">Zones cultivables</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre9/lire.svg" alt="Lire" width="60"></div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre9/lire.svg" alt="Lire" width="60"></div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                        </div>
-                        <div class="divTableRow">
-                           <div class="divTableCellRole1">Activités</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre9/lire.svg" alt="Lire" width="60"><br><img src="images/chapitre9/ecrire.svg" alt="Écrire" width="60"></div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                        </div>
-                        <div class="divTableRow">
-                           <div class="divTableCellRole1">Comptes comptables</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre9/lire.svg" alt="Lire" width="60"><br><img src="images/chapitre9/ecrire.svg" alt="Écrire" width="60"></div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                        </div>
-                        <div class="divTableRow">
-                           <div class="divTableCellRole1">Exercices comptables</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre9/lire.svg" alt="Lire" width="60"><br><img src="images/chapitre9/ecrire.svg" alt="Écrire" width="60"><br><img src="images/chapitre9/fermer.svg" alt="Fermer" width="60"><br><img src="images/chapitre9/reouvrir.svg" alt="Réouvrir" width="60"></div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                        </div>
-                        <div class="divTableRow">
-                           <div class="divTableCellRole1">Immobilisations</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre9/lire.svg" alt="Lire" width="60"><br><img src="images/chapitre9/ecrire.svg" alt="Écrire" width="60"></div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                        </div>
-                        <div class="divTableRow">
-                           <div class="divTableCellRole1">Journaux comptables</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre9/lire.svg" alt="Lire" width="60"><br><img src="images/chapitre9/ecrire.svg" alt="Écrire" width="60"><br><img src="images/chapitre9/fermer.svg" alt="Fermer" width="60"><br><img src="images/chapitre9/reouvrir.svg" alt="Réouvrir" width="60"></div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                        </div>
-                        <div class="divTableRow">
-                           <div class="divTableCellRole1">Relevés de banque</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2"><img src="images/chapitre9/lire.svg" alt="Lire" width="60"><br><img src="images/chapitre9/ecrire.svg" alt="Écrire" width="60"></div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                           <div class="divTableCellRole2">&nbsp;</div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+            <div class="divTableCellDroits2" style="width: auto">
+               permet de lire les données affichées dans l'application
             </div>
          </div>
-		 <p class="texte">Tableau 1</p>
-		 <div class="idea-fond aerateur">
-            <div class="floating-box-idea">
-               <img src="images/commun/astuce.svg" width="100" alt="Astuce"/>
+         <div class="divTableRow">
+            <div class="divTableCellDroits1">
+               <img src="../images/chapitre9/ecrire.svg" alt="Écrire" height="30">
             </div>
-            <div class="info-txt">
-               <span class="titre-advice">Affichage dans l'application<br></span>
-               <p class="texte-advice">
-                  Les informations affichées et la liste des champs à renseigner peuvent occuper une hauteur importante dans la fenêtre principale.<br>Réduisez ou développez les informations des sections avec les boutons<img src="images/commun/minus-square-o.svg" alt="moins" height="15" class="icone-marge-gauche icone-marge-droite">et<img src="images/commun/plus-square-o.svg" alt="plus" height="15" class="icone-marge-gauche icone-marge-droite">à droite de la fenêtre principale.
-               </p><p align="center"><img src="images/commun/dev-reduc.png" alt="Réduction agrandissement des sections" class="contour-img"></p>
+            <div class="divTableCellDroits2">
+               permet de saisir et d'enregistrer des données dans l'application
             </div>
          </div>
-         <h2 class="texte aerateur">a - Création des utilisateurs</h2>
-         <p align="center" class="texte aerateur procedure">A – Procédure de création des utilisateurs</p>
-         <p class="texte">
-            Le processus suivant vous guide pour créer un nouvel utilisateur.
-         </p>
-         <div class="floating-box process">
-            <img src="images/commun/step1.svg" alt="1" width="52">
+         <div class="divTableRow">
+            <div class="divTableCellDroits1">
+               <img src="../images/chapitre9/executer.svg" alt="Exécuter" height="30">
+            </div>
+            <div class="divTableCellDroits2">
+               permet d'exécuter des opérations dans l'application
+            </div>
          </div>
-         <div class="process-txt">
-            <span class="titre-advice">Accédez aux utilisateurs</span>
-            <p>
-               Pour créer de nouveaux utilisateurs, allez dans le menu principal et cliquez sur la clef anglaise<img src="images/chapitre9/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">ou cliquez sur le bouton "Configuration" de la page d'accueil :
-            </p>
-            <p align="center"><img src="images/chapitre9/wrench.svg" alt="Configuration" width="60"></p>
-            <p>
-               Dans la barre latérale du module, cliquez sur "Utilisateurs" dans la rubrique "Accès" symbolisée par l'icône d'un bouclier<img src="images/chapitre9/shield.svg" alt="bouclier" height="20" class="align-icone icone-marge-gauche">. La liste des utilisateurs n'affiche que le nom de l'administrateur de la ferme avec l'indicateur<img src="images/chapitre9/check-square-o.svg" alt="case cochée" height="20" class="align-icone icone-marge-gauche icone-marge-droite">&#40;Administrateur système&#41; à droite de son nom.
-            </p>
-            <p class="max-img-process">
-            <img src="images/chapitre9/utilisateur1.png" class="contour-img" alt="Création d'un nouvel utilisateur">
-			 </p>
+         <div class="divTableRow">
+            <div class="divTableCellDroits1">
+               <img src="../images/chapitre9/lier.svg" alt="Lier" height="30">
+            </div>
+            <div class="divTableCellDroits2">
+               permet de créer des liens entre les tiers
+            </div>
          </div>
+         <div class="divTableRow">
+            <div class="divTableCellDroits1">
+               <img src="../images/chapitre9/fermer.svg" alt="Fermer" height="30">
+            </div>
+            <div class="divTableCellDroits2">
+               permet de fermer un document ou un exercice comptable
+            </div>
+         </div>
+         <div class="divTableRow">
+            <div class="divTableCellDroits1">
+               <img src="../images/chapitre9/reouvrir.svg" alt="Réouvrir" height="30">
+            </div>
+            <div class="divTableCellDroits2">
+               permet de réouvrir un document ou un exercice comptable
+            </div>
+         </div>
+         <div class="divTableRow">
+            <div class="divTableCellDroits1">
+               <img src="../images/chapitre9/verrouiller.svg" alt="Verrouiller" height="30">
+            </div>
+            <div class="divTableCellDroits2">
+               permet de bloquer un utilisateur
+            </div>
+         </div>
+         <div class="divTableRow">
+            <div class="divTableCellDroits1">
+               <img src="../images/chapitre9/annuler.svg" alt="Annuler" height="30">
+            </div>
+            <div class="divTableCellDroits2">
+               permet d'annuler une action &#40;vente&#41;
+            </div>
+         </div>
+      </div>
+   </div>
+   <p class="texte">Si plusieurs personnes occupent des fonctions similaires dans votre ferme (commerciaux, techniciens, ouvriers agricoles), la création de rôles d'utilisateur permet de simplifier l'affectation de droits à ces utilisateurs grâce à des profils types.</p>
+   <div class="affichage-large"></div>
+   <div class="affichage-mobile">
+      <p align="center">
+         <img src="../images/commun/drag.svg" alt="Drag" height="40" class="">
          <br>
-         <div class="floating-box process">
-            <img src="images/commun/step2.svg" alt="2" width="52">
-         </div>
-         <div class="process-txt">
-            <span class="titre-advice">Renseignez l'identité de l'utilisateur</span>
-            <p>
-               Cliquez sur "Nouveau". Tous les champs situés dans la zone "Informations générales" sont à renseigner. Notez que l'attribution d'un mot de passe est obligatoire même si ce n'est pas signalé par l'astérisque de couleur rouge.
-            </p>
-			<p class="max-img-process">
-            <img src="images/chapitre9/utilisateur3.png" class="contour-img" alt="Création d'un nouvel utilisateur">
-			</p>
-         </div>
-         <div class="idea-fond aerateur-haut aerateur-bas">
-            <div class="floating-box-idea">
-               <img src="images/commun/astuce.svg" width="100" alt="Astuce"/>
-            </div>
-            <div class="info-txt">
-               <span class="titre-advice">Choix d'un mot de passe<br></span>
-               <p class="texte-advice">
-                  Choisissez un mot de passe facilement mémorisable mais assez difficile à trouver : ça peut être une phrase composée d'une majuscule, avec un signe de ponctuation et un chiffre comme par exemple : Vousetes2chezEkylibre!
-               </p>
-            </div>
-         </div>
-         <div class="floating-box process">
-            <img src="images/commun/step3.svg" alt="3" width="52">
-         </div>
-         <div class="process-txt">
-            <span class="titre-advice">Saisissez la fonction de l'utilisateur</span>
-            <p>
-               Associez le nouvel utilisateur à un tiers déjà configuré &#40;voir <a href="chapitre6.html" class="avoid-clicks" target="_self">chapitre 6 - Stock et Personnel&#41;</a> ou créez en un nouveau à la volée en sélectionnant "Ajouter un nouvel enregistrement" dans la liste déroulante. Complétez les informations du nouveau contact (n° de téléphone, adresse postale, employé, client ou fournisseur, etc) pour le définir correctement.
-            </p>
-            <p align="center" class="max-img-process">
-            <img src="images/chapitre9/utilisateur2.png" class="contour-img" width="300" alt="Création d'un nouvel utilisateur">
-			 </p>
-         </div>
-         <br>
-         <div class="floating-box process">
-            <img src="images/commun/step4.svg" alt="4" width="52">
-         </div>
-         <div class="process-txt">
-            <span class="titre-advice">Sélectionnez les droits accordés à l'utilisateur</span>
-            <p>
-               Choisissez les droits que vous octroyez à l'utilisateur. Vous pouvez partir d'un rôle d'utilisateur (voir plus loin dans ce chapitre) et étendre ou restreindre ses droits en rapport avec sa fonction dans la ferme.
-            </p>
-	    </div>
-         <div class="warn-fond aerateur-haut aerateur-bas saut-page">
-            <div class="floating-box-warn">
-               <img src="images/commun/attention.svg" width="100" alt="Attention"/>
-            </div>
-            <div class="info-txt">
-               <span class="titre-advice">Attention à la sécurité<br></span>
-               <p class="texte-advice">
-                  En tant qu'administrateur de la ferme, vous êtes le principal décideur quant aux accès dont vont disposer les utilisateurs pour travailler dans l'application. Nous vous conseillons cependant de ne pas donner trop de droits à tout le monde pour éviter la destruction de données importantes suite à une mauvaise manipulation ou à de la malveillance.
-               </p>
-            </div>
-         </div>
-         <div class="floating-box process">
-            <img src="images/commun/step5.svg" alt="5" width="52">
-         </div>
-         <div class="process-txt">
-            <span class="titre-advice">Validez la création de l'utilisateur</span>
-            <p>
-               Cliquez sur<img src="images/commun/creer.svg" alt="Créer" class="btn-creer">en bas de la fenêtre principale pour valider la création du nouvel utilisateur.
-            </p>
-            <p>Répétez ce processus pour chaque nouvel utilisateur que vous souhaitez ajouter à votre ferme. Vous pouvez modifier, bloquer et supprimer des utilisateurs si nécessaire.</p>
-         </div>
-         <div class="idea-fond aerateur-haut aerateur-bas">
-            <div class="floating-box-idea">
-               <img src="images/commun/astuce.svg" width="100" alt="Astuce"/>
-            </div>
-            <div class="info-txt">
-               <span class="titre-advice">Expert comptable<br></span>
-               <p class="texte-advice">
-                  Vous pouvez créer un accès pour votre expert comptable qui lui permettra de visualiser et de modifier les données comptables de votre exploitation à distance.
-               </p>
-            </div>
-         </div>
-         <div class="info-fond aerateur-haut aerateur-bas">
-            <div class="floating-box-info">
-               <img src="images/commun/info.svg" width="100" alt="Info"/>
-            </div>
-            <div class="info-txt">
-               <span class="titre-advice">Verrouiller un utilisateur<br></span>
-               <p class="texte-advice">
-                  Si vous vous séparez d'un collaborateur et que vous souhaitez bloquer son accès à votre ferme tout en conservant l'historique de ses interventions, ne le supprimez pas de la liste des utilisateurs. Verrouillez plutôt son compte en cliquant sur le cadenas fermé<img src="images/chapitre9/lock.svg" alt="cadenas fermé" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de son nom. Pour déverrouiller un utilisateur, cliquez sur le cadenas ouvert<img src="images/chapitre9/unlock.svg" alt="cadenas ouvert" height="20" class="align-icone icone-marge-gauche">.
-               </p>
-               <br><img src="images/chapitre9/verrouillage.png" alt="Liste des utilisateurs">
-            </div>
-         </div>
-         <h2 class="texte aerateur">b - Utilisation des rôles d'utilisateur</h2>
-         <p align="center" class="texte aerateur procedure">A – Procédure pour piocher &#40;choisir&#41; des rôles d'utilisateur</p>
-         <p class="texte">
-            Le processus suivant vous guide pour sélectionner des rôles d'utilisateur parmi ceux disponibles dans l'application.
+         Glissez pour parcourir le tableau
+      </p>
+   </div>
+   <div class="saut-page"></div>
+   <div class="contour-gris texte aerateur-haut">
+      <div class="tableaux">
+         <p align="center" class="texte titre-advice">
+            Rôles d'utilisateurs prédéfinis et leurs droits
          </p>
-         <div class="floating-box process">
-            <img src="images/commun/step1.svg" alt="1" width="52">
-         </div>
-         <div class="process-txt">
-            <span class="titre-advice">Accédez aux rôles d'utilisateur</span>
-            <p>
-               Pour accéder aux rôles d'utilisateur, allez dans le menu principal et cliquez sur la clef anglaise<img src="images/chapitre9/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">ou cliquez sur le bouton "Configuration" de la page d'acceuil :
-            </p>
-            <p align="center"><img src="images/chapitre9/wrench.svg" alt="Configuration" width="60"></p>
-            <p>
-               Dans la barre latérale du module, cliquez sur "Rôles" dans la rubrique "Accès" symbolisée par l'icône d'un bouclier<img src="images/chapitre9/shield.svg" alt="bouclier" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des rôles.
-            </p>
-         </div>
-         <br>
-         <div class="floating-box process">
-            <img src="images/commun/step2.svg" alt="2" width="52">
-         </div>
-         <div class="process-txt">
-            <span class="titre-advice">Sélectionnez un rôle d'utilisateur</span>
-            <p>
-               Cliquez sur le bouton "Piocher". Un menu "Référence" s'affiche et une liste déroulante vous permet de sélectionner un rôle d'utilisateur. Cliquez sur "Importer" pour intégrer le rôle d'utilisateur dans votre ferme.
-            </p>
-            <p class="max-img-process">
-            <img src="images/chapitre9/piocher.png" class="contour-img" alt="Piocher un rôle">
-            </p>
-            <p>Répétez l'opération pour chaque rôle d'utilisateur que vous souhaitez utiliser et la liste des rôles va s'enrichir automatiquement.</p>
-            <p class="max-img-process">
-            <img src="images/chapitre9/role1.png" class="contour-img" alt="Affichage liste des rôles">
-            </p>
-         </div>
-         <br>
-         <div class="floating-box process">
-            <img src="images/commun/step3.svg" alt="3" width="52">
-         </div>
-         <div class="process-txt">
-            <span class="titre-advice">Affichez les droits d'un rôle d'utilisateur</span>
-            <p>
-               Cliquez sur le nom d'un rôle d'utilisateur pour connaître les droits octroyés et vérifier qu'ils sont conformes à vos attentes.
-            </p>
-            <p class="max-img-process">
-            <img src="images/chapitre9/role4.png" class="contour-img" alt="Droits du rôle d'utilisateur">
-            </p>
-         </div>
-         <p class="texte">Si aucun des rôles prédéfinis ne répond à vos besoins et que vous préférez partir d'un modèle "vierge", voici comment en créer de nouveaux selon vos critères :</p>
-         <p align="center" class="texte aerateur procedure">B – Procédure de création des rôles d'utilisateur</p>
-         <p class="texte">
-            Le processus suivant vous guide pour créer des rôles d'utilisateur.
-         </p>
-         <div class="floating-box process">
-            <img src="images/commun/step1.svg" alt="1" width="52">
-         </div>
-         <div class="process-txt">
-            <span class="titre-advice">Accédez aux rôles d'utilisateur</span>
-            <p>
-               Pour accéder aux rôles d'utilisateur, allez dans le menu principal et cliquez sur la clef anglaise<img src="images/chapitre9/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">ou cliquez sur le bouton "Configuration" de la page d'accueil :
-            </p>
-            <p align="center"><img src="images/chapitre9/wrench.svg" alt="Configuration" width="60"></p>
-            <p>
-               Dans la barre latérale du module, cliquez sur "Rôles" dans la rubrique "Accès" symbolisée par l'icône d'un bouclier<img src="images/chapitre9/shield.svg" alt="bouclier" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des rôles. Elle est vide si vous n'avez pas déjà pioché de rôles dans l'application.
-            </p>
-         </div>
-         <br>
-         <div class="floating-box process">
-            <img src="images/commun/step2.svg" alt="2" width="52">
-         </div>
-         <div class="process-txt">
-            <span class="titre-advice">Définissez les droits</span>
-            <p>
-               Saisissez le nom du rôle et définissez les droits à accorder pour chaque fonctionnalité de l'application. Cliquez sur les boutons qui lui sont associés. L'activation d'un droit est symbolisée par la mise en couleur d'un ou de plusieurs boutons en fonction des liens logiques qui existent entre eux &#40;exemple : l'activation du droit "Réouvrir" entraîne automatiquement l'activation du droit "Lire"&#41;.
-            </p>
-            <p class="max-img-process">
-            <img src="images/chapitre9/role2.png" class="contour-img" alt="Création nouveau rôle">
-            </p>
-         </div>
-         <br>
-         <div class="floating-box process">
-            <img src="images/commun/step3.svg" alt="3" width="52">
-         </div>
-         <div class="process-txt">
-            <span class="titre-advice">Validez la création du rôle d'utilisateur</span>
-            <p>
-               Cliquez sur<img src="images/commun/creer.svg" alt="Créer" class="btn-creer">en bas de la fenêtre principale pour valider l'opération.
-            </p>
-            <p>Répétez ce processus pour chaque nouveau rôle que vous souhaitez ajouter à votre ferme.</p>
-         </div>
-         <p class="texte">Vous pouvez modifier et supprimer des rôles si nécessaire.</p>
-         <p align="center" class="texte aerateur procedure">C – Procédure de modification des rôles d'utilisateur</p>
-         <p class="texte">
-            Le processus suivant vous guide pour modifier les rôles d'utilisateur.
-         </p>
-         <div class="floating-box process">
-            <img src="images/commun/step1.svg" alt="1" width="52">
-         </div>
-         <div class="process-txt">
-            <span class="titre-advice">Accédez aux rôles d'utilisateur</span>
-            <p>
-               Pour accéder aux rôles d'utilisateur, allez dans le menu principal et cliquez sur la clef anglaise<img src="images/chapitre9/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">ou cliquez sur le bouton "Configuration" de la page d'accueil :
-            </p>
-            <p align="center"><img src="images/chapitre9/wrench.svg" alt="Configuration" width="60"></p>
-            <p>
-               Dans la barre latérale du module, cliquez sur "Rôles" dans la rubrique "Accès" symbolisée par l'icône d'un bouclier<img src="images/chapitre9/shield.svg" alt="bouclier" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des rôles.
-            </p>
-            <p class="max-img-process">
-            <img src="images/chapitre9/role5.png" class="contour-img" alt="Liste des rôles">
-            </p>
-         </div>
-         <br>
-         <div class="floating-box process">
-            <img src="images/commun/step2.svg" alt="2" width="52">
-         </div>
-         <div class="process-txt">
-            <span class="titre-advice">Modifiez un rôle d'utilisateur</span>
-            <p>
-               Cliquez sur l'icône "Crayon"<img src="images/chapitre9/crayon.svg" alt="crayon" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche du nom du rôle.
-            </p>
-            <p>Cliquez ensuite sur le bouton "Modifier", puis définissez les droits à accorder pour chaque fonctionnalité de l'application. Cliquez sur les boutons qui lui sont associés. L'activation d'un droit est symbolisée par la mise en couleur d'un ou de plusieurs boutons en fonction des liens logiques qui existent entre eux &#40;exemple : l'activation du droit "Réouvrir" entraîne automatiquement l'activation du droit "Lire"&#41;.
-            </p>
-            <p class="max-img-process">
-            <img src="images/chapitre9/role3.png" class="contour-img" alt="Modifier un rôle">
-            </p>
-         </div>
-         <br>
-         <div class="floating-box process">
-            <img src="images/commun/step3.svg" alt="3" width="52">
-         </div>
-         <div class="process-txt">
-            <span class="titre-advice">Validez la modification du rôle d'utilisateur</span>
-            <p>
-               Cliquez sur "Modifier" en bas de la page pour valider les changements ou sur "Annuler" pour abandonner l'opération.
-            </p>
-         </div>
-         <h2 class="texte aerateur">c - Invitation d'utilisateurs</h2>
-         <p class="texte">Il est possible de lancer des invitations afin de demander à des utilisateurs de rejoindre votre ferme.</p>
-         <p align="center" class="texte aerateur procedure">A – Procédure d'invitation d'un utilisateur</p>
-         <p class="texte">
-            Le processus suivant vous guide pour inviter un utilisateur.
-         </p>
-         <div class="floating-box process">
-            <img src="images/commun/step1.svg" alt="1" width="52">
-         </div>
-         <div class="process-txt">
-            <span class="titre-advice">Accédez aux invitations</span>
-            <p>
-               Pour créer une nouvelle invitation, allez dans le menu principal et cliquez sur la clef anglaise<img src="images/chapitre9/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">ou cliquez sur le bouton "Configuration" de la page d'accueil :
-            </p>
-            <p align="center"><img src="images/chapitre9/wrench.svg" alt="Configuration" width="60"></p>
-            <p>
-               Dans la barre latérale du module, cliquez sur "Invitations" dans la rubrique "Accès" symbolisée par l'icône d'un bouclier<img src="images/chapitre9/shield.svg" alt="bouclier" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des invités.
-            </p>
-         </div>
-         <br>
-         <div class="floating-box process">
-            <img src="images/commun/step2.svg" alt="2" width="52">
-         </div>
-         <div class="process-txt">
-            <span class="titre-advice">Créez une invitation</span>
-            <p>
-               Cliquez sur "Nouveau" puis, dans les "Informations générales"remplissez tous les champs obligatoires signalés par une astérisque de couleur rouge avec les informations requises pour la définir correctement. Affectez un rôle d'utilisateur si vous en avez déjà créé au moins un &#40;mais ce n'est pas obligatoire&#41;.
-            </p>
-            <p> Cliquez sur<img src="images/commun/creer.svg" alt="Créer" class="btn-creer">pour lancer l'invitation.</p>
-            <p>Un email est envoyé à votre contact et la liste des invités est mise à jour. Le statut de l'invitation et de l'utilisateur changent dès que votre invité a accepté votre invitation.</p>
-            <p class="max-img-process">
-            <img src="images/chapitre9/invitation1.png" class="contour-img" alt="Invitation utilisateur">
-            </p>
-         </div>
-         <div class="warn-fond aerateur-haut aerateur-bas">
-            <div class="floating-box-warn">
-               <img src="images/commun/attention.svg" width="100" alt="Attention"/>
-            </div>
-            <div class="info-txt">
-               <span class="titre-advice">Droits des invités<br></span>
-               <p class="texte-advice">
-                  Notez que par défaut, les droits accordés à l'invité sont la lecture et l'écriture d'interventions, même si vous n'avez pas encore pioché ou créé de rôle d'utilisateur.
-               </p>
-            </div>
-         </div>
-         <h2 class="texte aerateur">d - Inscription d'utilisateurs</h2>
-         <p class="texte">Un utilisateur qui connaît l'adresse internet de votre ferme et qui souhaite accéder à vos données a la possibilité de vous soumettre son inscription en remplissant le formulaire et en cliquant sur le bouton "Inscription".</p>
-         <p class="texte aerateur-haut" align="center">
-            <img src="images/chapitre9/inscription1.png"  width="500" alt="Formulaire d'inscription">
-         </p>
-         <p align="center" class="texte legende aerateur-bas">Formulaire d'inscription</p>
-         <p class="texte">Une fois la demande d'inscription réalisée, vous êtes prévenu&#40;e&#41; par la réception d'un email envoyé à votre adresse d'administrateur. À vous de l'accepter ou non.</p>
-         <p align="center" class="texte aerateur procedure">A – Procédure pour valider les inscriptions</p>
-         <p class="texte">
-            Le processus suivant vous guide pour accepter une inscription.
-         </p>
-         <div class="floating-box process">
-            <img src="images/commun/step1.svg" alt="1" width="52">
-         </div>
-         <div class="process-txt">
-            <span class="titre-advice">Accédez aux inscriptions</span>
-            <p>
-               Pour valider l'inscription d'un nouvel utilisateur, allez dans le menu principal et cliquez sur la clef anglaise<img src="images/chapitre9/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">ou cliquez sur le bouton "Configuration" de la page d'accueil :
-            </p>
-            <p align="center"><img src="images/chapitre9/wrench.svg" alt="Configuration" width="60"></p>
-            <p>
-               Dans la barre latérale du module, cliquez sur "Inscriptions" dans la rubrique "Accès" symbolisée par l'icône d'un bouclier<img src="images/chapitre9/shield.svg" alt="bouclier" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des inscrits.
-            </p>
-            <p class="max-img-process">
-            <img src="images/chapitre9/inscription2.png" class="contour-img" alt="Liste des inscriptions">
-            </p>
-         </div>
-         <br>
-         <div class="floating-box process">
-            <img src="images/commun/step2.svg" alt="2" width="52">
-         </div>
-         <div class="process-txt">
-            <span class="titre-advice">Validez une inscription</span>
-            <p>
-               a - Cliquez sur le nom du nouvel inscrit et validez son inscription en cliquant sur "Modifier" ou :
-            </p>
-            <p>b - Après réception d'un email notifiant l'inscription d'un nouvel utilisateur, cliquez sur le lien permettant votre accord et validez celle-ci en cliquant sur "Modifier".</p>
-            <p>Dès que vous avez approuvé l'inscription, un email de confirmation est adressé au nouvel inscrit.
-            </p>
-            <p class="max-img-process">
-            <img src="images/chapitre9/inscription3.png" class="contour-img" alt="Validation inscription">
-            </p>
-         </div>
-         <div class="warn-fond aerateur-haut aerateur-bas">
-            <div class="floating-box-warn">
-               <img src="images/commun/attention.svg" width="100" alt="Attention"/>
-            </div>
-            <div class="info-txt">
-               <span class="titre-advice">Droits des inscrits<br></span>
-               <p class="texte-advice">
-                  Notez que par défaut, les droits accordés au nouvel inscrit sont la lecture et l'écriture d'interventions, même si vous n'avez pas encore pioché ou créé de rôle d'utilisateur.
-               </p>
-            </div>
-         </div>
-         <div class="navigation aerateur-haut">
+      </div>
+      <div class="scroll">
+         <div class="tableau texte-tableau divTableFooter">
             <div class="divTable">
                <div class="divTableBody">
                   <div class="divTableRow">
-                     <div class="divTableCellCenter" style="width: auto">&nbsp;</div>
-                     <div class="divTableCellCenter" style="width: 40px"><a href="chapitre8.html" target="_self"><img src="images/commun/arrow-left.svg" width="40"  alt="Production"></a></div>
-                     <div class="divTableCellLeft" style="width: 90px"><span><a href="chapitre8.html" target="_self">PRODUCTION</a></span></div>
-                     <div class="divTableCellCenter" style="width: auto">&nbsp;</div>
+                     <div class="divTableCellRole1" style="width: auto"></div>
+                     <div class="divTableCellRole3 perso1" style="width: 80px">Agent technico-commercial</div>
+                     <div class="divTableCellRole3 perso2" style="width: 80px">Comptable</div>
+                     <div class="divTableCellRole3 perso3" style="width: 80px">Conseiller agricole</div>
+                     <div class="divTableCellRole3 perso4" style="width: 80px">Technicien, ouvrier de l'exploitation</div>
+                     <div class="divTableCellRole3 perso5" style="width: 80px">Responsable de l'exploitation</div>
+                     <div class="divTableCellRole3 perso6" style="width: 80px">Vétérinaire</div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellRole1">Animaux</div>
+                     <div class="divTableCellRole2"><img src="../images/chapitre9/lire.svg" alt="Lire" width="60"></div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2"><img src="../images/chapitre9/lire.svg" alt="Lire" width="60"></div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2"><img src="../images/chapitre9/lire.svg" alt="Lire" width="60"></div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellRole1">Colis entrants</div>
+                     <div class="divTableCellRole2"><img src="../images/chapitre9/lire.svg" alt="Lire" width="60"></div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2"><img src="../images/chapitre9/lire.svg" alt="Lire" width="60"><br><img src="../images/chapitre9/ecrire.svg" alt="Écrire" width="60"></div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellRole1">Colis sortants</div>
+                     <div class="divTableCellRole2"><img src="../images/chapitre9/lire.svg" alt="Lire" width="60"></div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2"><img src="../images/chapitre9/lire.svg" alt="Lire" width="60"><br><img src="../images/chapitre9/ecrire.svg" alt="Écrire" width="60"></div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellRole1">Cultures végétales</div>
+                     <div class="divTableCellRole2"><img src="../images/chapitre9/lire.svg" alt="Lire" width="60"></div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2"><img src="../images/chapitre9/lire.svg" alt="Lire" width="60"></div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellRole1">Interventions</div>
+                     <div class="divTableCellRole2"><img src="../images/chapitre9/lire.svg" alt="Lire" width="60"></div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2"><img src="../images/chapitre9/lire.svg" alt="Lire" width="60"></div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2"><img src="../images/chapitre9/lire.svg" alt="Lire" width="60"><br><img src="../images/chapitre9/ecrire.svg" alt="Écrire" width="60"></div>
+                     <div class="divTableCellRole2"><img src="../images/chapitre9/lire.svg" alt="Lire" width="60"></div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellRole1">Zones cultivables</div>
+                     <div class="divTableCellRole2"><img src="../images/chapitre9/lire.svg" alt="Lire" width="60"></div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2"><img src="../images/chapitre9/lire.svg" alt="Lire" width="60"></div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellRole1">Activités</div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2"><img src="../images/chapitre9/lire.svg" alt="Lire" width="60"><br><img src="../images/chapitre9/ecrire.svg" alt="Écrire" width="60"></div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellRole1">Comptes comptables</div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2"><img src="../images/chapitre9/lire.svg" alt="Lire" width="60"><br><img src="../images/chapitre9/ecrire.svg" alt="Écrire" width="60"></div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellRole1">Exercices comptables</div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2"><img src="../images/chapitre9/lire.svg" alt="Lire" width="60"><br><img src="../images/chapitre9/ecrire.svg" alt="Écrire" width="60"><br><img src="../images/chapitre9/fermer.svg" alt="Fermer" width="60"><br><img src="../images/chapitre9/reouvrir.svg" alt="Réouvrir" width="60"></div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellRole1">Immobilisations</div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2"><img src="../images/chapitre9/lire.svg" alt="Lire" width="60"><br><img src="../images/chapitre9/ecrire.svg" alt="Écrire" width="60"></div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellRole1">Journaux comptables</div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2"><img src="../images/chapitre9/lire.svg" alt="Lire" width="60"><br><img src="../images/chapitre9/ecrire.svg" alt="Écrire" width="60"><br><img src="../images/chapitre9/fermer.svg" alt="Fermer" width="60"><br><img src="../images/chapitre9/reouvrir.svg" alt="Réouvrir" width="60"></div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellRole1">Relevés de banque</div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2"><img src="../images/chapitre9/lire.svg" alt="Lire" width="60"><br><img src="../images/chapitre9/ecrire.svg" alt="Écrire" width="60"></div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2">&nbsp;</div>
+                     <div class="divTableCellRole2">&nbsp;</div>
                   </div>
                </div>
             </div>
          </div>
       </div>
-      <script src="js/jquery.js"></script>
-      <script src="js/iscroll.js"></script>
-      <script src="js/drawer.js"></script>
-      <script src="js/backtotop.js"></script>
-      <script>
-         $(document).ready(function() {
-         	$('.drawer').drawer();
-         });
-      </script>
-   </body>
-</html>
+   </div>
+   <p class="texte">Tableau 1</p>
+   <div class="idea-fond aerateur">
+      <div class="floating-box-idea">
+         <img src="../images/commun/astuce.svg" width="100" alt="Astuce"/>
+      </div>
+      <div class="info-txt">
+         <span class="titre-advice">Affichage dans l'application<br></span>
+         <p class="texte-advice">
+            Les informations affichées et la liste des champs à renseigner peuvent occuper une hauteur importante dans la fenêtre principale.<br>Réduisez ou développez les informations des sections avec les boutons<img src="../images/commun/minus-square-o.svg" alt="moins" height="15" class="icone-marge-gauche icone-marge-droite">et<img src="../images/commun/plus-square-o.svg" alt="plus" height="15" class="icone-marge-gauche icone-marge-droite">à droite de la fenêtre principale.
+         </p>
+         <p align="center"><img src="../images/commun/dev-reduc.png" alt="Réduction agrandissement des sections" class="contour-img"></p>
+      </div>
+   </div>
+   <h2 class="texte aerateur">a - Création des utilisateurs</h2>
+   <p align="center" class="texte aerateur procedure">A – Procédure de création des utilisateurs</p>
+   <p class="texte">
+      Le processus suivant vous guide pour créer un nouvel utilisateur.
+   </p>
+   <div class="floating-box process">
+      <img src="../images/commun/step1.svg" alt="1" width="52">
+   </div>
+   <div class="process-txt">
+      <span class="titre-advice">Accédez aux utilisateurs</span>
+      <p>
+         Pour créer de nouveaux utilisateurs, allez dans le menu principal et cliquez sur la clef anglaise<img src="../images/chapitre9/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">ou cliquez sur le bouton "Configuration" de la page d'accueil :
+      </p>
+      <p align="center"><img src="../images/chapitre9/wrench.svg" alt="Configuration" width="60"></p>
+      <p>
+         Dans la barre latérale du module, cliquez sur "Utilisateurs" dans la rubrique "Accès" symbolisée par l'icône d'un bouclier<img src="../images/chapitre9/shield.svg" alt="bouclier" height="20" class="align-icone icone-marge-gauche">. La liste des utilisateurs n'affiche que le nom de l'administrateur de la ferme avec l'indicateur<img src="../images/chapitre9/check-square-o.svg" alt="case cochée" height="20" class="align-icone icone-marge-gauche icone-marge-droite">&#40;Administrateur système&#41; à droite de son nom.
+      </p>
+      <p class="max-img-process">
+         <img src="../images/chapitre9/utilisateur1.png" class="contour-img" alt="Création d'un nouvel utilisateur">
+      </p>
+   </div>
+   <br>
+   <div class="floating-box process">
+      <img src="../images/commun/step2.svg" alt="2" width="52">
+   </div>
+   <div class="process-txt">
+      <span class="titre-advice">Renseignez l'identité de l'utilisateur</span>
+      <p>
+         Cliquez sur "Nouveau". Tous les champs situés dans la zone "Informations générales" sont à renseigner. Notez que l'attribution d'un mot de passe est obligatoire même si ce n'est pas signalé par l'astérisque de couleur rouge.
+      </p>
+      <p class="max-img-process">
+         <img src="../images/chapitre9/utilisateur3.png" class="contour-img" alt="Création d'un nouvel utilisateur">
+      </p>
+   </div>
+   <div class="idea-fond aerateur-haut aerateur-bas">
+      <div class="floating-box-idea">
+         <img src="../images/commun/astuce.svg" width="100" alt="Astuce"/>
+      </div>
+      <div class="info-txt">
+         <span class="titre-advice">Choix d'un mot de passe<br></span>
+         <p class="texte-advice">
+            Choisissez un mot de passe facilement mémorisable mais assez difficile à trouver : ça peut être une phrase composée d'une majuscule, avec un signe de ponctuation et un chiffre comme par exemple : Vousetes2chezEkylibre!
+         </p>
+      </div>
+   </div>
+   <div class="floating-box process">
+      <img src="../images/commun/step3.svg" alt="3" width="52">
+   </div>
+   <div class="process-txt">
+      <span class="titre-advice">Saisissez la fonction de l'utilisateur</span>
+      <p>
+         Associez le nouvel utilisateur à un tiers déjà configuré &#40;voir <a href="../chapitre6" class="avoid-clicks" target="_self">chapitre 6 - Stock et Personnel&#41;</a> ou créez en un nouveau à la volée en sélectionnant "Ajouter un nouvel enregistrement" dans la liste déroulante. Complétez les informations du nouveau contact (n° de téléphone, adresse postale, employé, client ou fournisseur, etc) pour le définir correctement.
+      </p>
+      <p align="center" class="max-img-process">
+         <img src="../images/chapitre9/utilisateur2.png" class="contour-img" width="300" alt="Création d'un nouvel utilisateur">
+      </p>
+   </div>
+   <br>
+   <div class="floating-box process">
+      <img src="../images/commun/step4.svg" alt="4" width="52">
+   </div>
+   <div class="process-txt">
+      <span class="titre-advice">Sélectionnez les droits accordés à l'utilisateur</span>
+      <p>
+         Choisissez les droits que vous octroyez à l'utilisateur. Vous pouvez partir d'un rôle d'utilisateur (voir plus loin dans ce chapitre) et étendre ou restreindre ses droits en rapport avec sa fonction dans la ferme.
+      </p>
+   </div>
+   <div class="warn-fond aerateur-haut aerateur-bas saut-page">
+      <div class="floating-box-warn">
+         <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
+      </div>
+      <div class="info-txt">
+         <span class="titre-advice">Attention à la sécurité<br></span>
+         <p class="texte-advice">
+            En tant qu'administrateur de la ferme, vous êtes le principal décideur quant aux accès dont vont disposer les utilisateurs pour travailler dans l'application. Nous vous conseillons cependant de ne pas donner trop de droits à tout le monde pour éviter la destruction de données importantes suite à une mauvaise manipulation ou à de la malveillance.
+         </p>
+      </div>
+   </div>
+   <div class="floating-box process">
+      <img src="../images/commun/step5.svg" alt="5" width="52">
+   </div>
+   <div class="process-txt">
+      <span class="titre-advice">Validez la création de l'utilisateur</span>
+      <p>
+         Cliquez sur<img src="../images/commun/creer.svg" alt="Créer" class="btn-creer">en bas de la fenêtre principale pour valider la création du nouvel utilisateur.
+      </p>
+      <p>Répétez ce processus pour chaque nouvel utilisateur que vous souhaitez ajouter à votre ferme. Vous pouvez modifier, bloquer et supprimer des utilisateurs si nécessaire.</p>
+   </div>
+   <div class="idea-fond aerateur-haut aerateur-bas">
+      <div class="floating-box-idea">
+         <img src="../images/commun/astuce.svg" width="100" alt="Astuce"/>
+      </div>
+      <div class="info-txt">
+         <span class="titre-advice">Expert comptable<br></span>
+         <p class="texte-advice">
+            Vous pouvez créer un accès pour votre expert comptable qui lui permettra de visualiser et de modifier les données comptables de votre exploitation à distance.
+         </p>
+      </div>
+   </div>
+   <div class="info-fond aerateur-haut aerateur-bas">
+      <div class="floating-box-info">
+         <img src="../images/commun/info.svg" width="100" alt="Info"/>
+      </div>
+      <div class="info-txt">
+         <span class="titre-advice">Verrouiller un utilisateur<br></span>
+         <p class="texte-advice">
+            Si vous vous séparez d'un collaborateur et que vous souhaitez bloquer son accès à votre ferme tout en conservant l'historique de ses interventions, ne le supprimez pas de la liste des utilisateurs. Verrouillez plutôt son compte en cliquant sur le cadenas fermé<img src="../images/chapitre9/lock.svg" alt="cadenas fermé" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de son nom. Pour déverrouiller un utilisateur, cliquez sur le cadenas ouvert<img src="../images/chapitre9/unlock.svg" alt="cadenas ouvert" height="20" class="align-icone icone-marge-gauche">.
+         </p>
+         <br><img src="../images/chapitre9/verrouillage.png" alt="Liste des utilisateurs">
+      </div>
+   </div>
+   <h2 class="texte aerateur">b - Utilisation des rôles d'utilisateur</h2>
+   <p align="center" class="texte aerateur procedure">A – Procédure pour piocher &#40;choisir&#41; des rôles d'utilisateur</p>
+   <p class="texte">
+      Le processus suivant vous guide pour sélectionner des rôles d'utilisateur parmi ceux disponibles dans l'application.
+   </p>
+   <div class="floating-box process">
+      <img src="../images/commun/step1.svg" alt="1" width="52">
+   </div>
+   <div class="process-txt">
+      <span class="titre-advice">Accédez aux rôles d'utilisateur</span>
+      <p>
+         Pour accéder aux rôles d'utilisateur, allez dans le menu principal et cliquez sur la clef anglaise<img src="../images/chapitre9/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">ou cliquez sur le bouton "Configuration" de la page d'acceuil :
+      </p>
+      <p align="center"><img src="../images/chapitre9/wrench.svg" alt="Configuration" width="60"></p>
+      <p>
+         Dans la barre latérale du module, cliquez sur "Rôles" dans la rubrique "Accès" symbolisée par l'icône d'un bouclier<img src="../images/chapitre9/shield.svg" alt="bouclier" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des rôles.
+      </p>
+   </div>
+   <br>
+   <div class="floating-box process">
+      <img src="../images/commun/step2.svg" alt="2" width="52">
+   </div>
+   <div class="process-txt">
+      <span class="titre-advice">Sélectionnez un rôle d'utilisateur</span>
+      <p>
+         Cliquez sur le bouton "Piocher". Un menu "Référence" s'affiche et une liste déroulante vous permet de sélectionner un rôle d'utilisateur. Cliquez sur "Importer" pour intégrer le rôle d'utilisateur dans votre ferme.
+      </p>
+      <p class="max-img-process">
+         <img src="../images/chapitre9/piocher.png" class="contour-img" alt="Piocher un rôle">
+      </p>
+      <p>Répétez l'opération pour chaque rôle d'utilisateur que vous souhaitez utiliser et la liste des rôles va s'enrichir automatiquement.</p>
+      <p class="max-img-process">
+         <img src="../images/chapitre9/role1.png" class="contour-img" alt="Affichage liste des rôles">
+      </p>
+   </div>
+   <br>
+   <div class="floating-box process">
+      <img src="../images/commun/step3.svg" alt="3" width="52">
+   </div>
+   <div class="process-txt">
+      <span class="titre-advice">Affichez les droits d'un rôle d'utilisateur</span>
+      <p>
+         Cliquez sur le nom d'un rôle d'utilisateur pour connaître les droits octroyés et vérifier qu'ils sont conformes à vos attentes.
+      </p>
+      <p class="max-img-process">
+         <img src="../images/chapitre9/role4.png" class="contour-img" alt="Droits du rôle d'utilisateur">
+      </p>
+   </div>
+   <p class="texte">Si aucun des rôles prédéfinis ne répond à vos besoins et que vous préférez partir d'un modèle "vierge", voici comment en créer de nouveaux selon vos critères :</p>
+   <p align="center" class="texte aerateur procedure">B – Procédure de création des rôles d'utilisateur</p>
+   <p class="texte">
+      Le processus suivant vous guide pour créer des rôles d'utilisateur.
+   </p>
+   <div class="floating-box process">
+      <img src="../images/commun/step1.svg" alt="1" width="52">
+   </div>
+   <div class="process-txt">
+      <span class="titre-advice">Accédez aux rôles d'utilisateur</span>
+      <p>
+         Pour accéder aux rôles d'utilisateur, allez dans le menu principal et cliquez sur la clef anglaise<img src="../images/chapitre9/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">ou cliquez sur le bouton "Configuration" de la page d'accueil :
+      </p>
+      <p align="center"><img src="../images/chapitre9/wrench.svg" alt="Configuration" width="60"></p>
+      <p>
+         Dans la barre latérale du module, cliquez sur "Rôles" dans la rubrique "Accès" symbolisée par l'icône d'un bouclier<img src="../images/chapitre9/shield.svg" alt="bouclier" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des rôles. Elle est vide si vous n'avez pas déjà pioché de rôles dans l'application.
+      </p>
+   </div>
+   <br>
+   <div class="floating-box process">
+      <img src="../images/commun/step2.svg" alt="2" width="52">
+   </div>
+   <div class="process-txt">
+      <span class="titre-advice">Définissez les droits</span>
+      <p>
+         Saisissez le nom du rôle et définissez les droits à accorder pour chaque fonctionnalité de l'application. Cliquez sur les boutons qui lui sont associés. L'activation d'un droit est symbolisée par la mise en couleur d'un ou de plusieurs boutons en fonction des liens logiques qui existent entre eux &#40;exemple : l'activation du droit "Réouvrir" entraîne automatiquement l'activation du droit "Lire"&#41;.
+      </p>
+      <p class="max-img-process">
+         <img src="../images/chapitre9/role2.png" class="contour-img" alt="Création nouveau rôle">
+      </p>
+   </div>
+   <br>
+   <div class="floating-box process">
+      <img src="../images/commun/step3.svg" alt="3" width="52">
+   </div>
+   <div class="process-txt">
+      <span class="titre-advice">Validez la création du rôle d'utilisateur</span>
+      <p>
+         Cliquez sur<img src="../images/commun/creer.svg" alt="Créer" class="btn-creer">en bas de la fenêtre principale pour valider l'opération.
+      </p>
+      <p>Répétez ce processus pour chaque nouveau rôle que vous souhaitez ajouter à votre ferme.</p>
+   </div>
+   <p class="texte">Vous pouvez modifier et supprimer des rôles si nécessaire.</p>
+   <p align="center" class="texte aerateur procedure">C – Procédure de modification des rôles d'utilisateur</p>
+   <p class="texte">
+      Le processus suivant vous guide pour modifier les rôles d'utilisateur.
+   </p>
+   <div class="floating-box process">
+      <img src="../images/commun/step1.svg" alt="1" width="52">
+   </div>
+   <div class="process-txt">
+      <span class="titre-advice">Accédez aux rôles d'utilisateur</span>
+      <p>
+         Pour accéder aux rôles d'utilisateur, allez dans le menu principal et cliquez sur la clef anglaise<img src="../images/chapitre9/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">ou cliquez sur le bouton "Configuration" de la page d'accueil :
+      </p>
+      <p align="center"><img src="../images/chapitre9/wrench.svg" alt="Configuration" width="60"></p>
+      <p>
+         Dans la barre latérale du module, cliquez sur "Rôles" dans la rubrique "Accès" symbolisée par l'icône d'un bouclier<img src="../images/chapitre9/shield.svg" alt="bouclier" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des rôles.
+      </p>
+      <p class="max-img-process">
+         <img src="../images/chapitre9/role5.png" class="contour-img" alt="Liste des rôles">
+      </p>
+   </div>
+   <br>
+   <div class="floating-box process">
+      <img src="../images/commun/step2.svg" alt="2" width="52">
+   </div>
+   <div class="process-txt">
+      <span class="titre-advice">Modifiez un rôle d'utilisateur</span>
+      <p>
+         Cliquez sur l'icône "Crayon"<img src="../images/chapitre9/crayon.svg" alt="crayon" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche du nom du rôle.
+      </p>
+      <p>Cliquez ensuite sur le bouton "Modifier", puis définissez les droits à accorder pour chaque fonctionnalité de l'application. Cliquez sur les boutons qui lui sont associés. L'activation d'un droit est symbolisée par la mise en couleur d'un ou de plusieurs boutons en fonction des liens logiques qui existent entre eux &#40;exemple : l'activation du droit "Réouvrir" entraîne automatiquement l'activation du droit "Lire"&#41;.
+      </p>
+      <p class="max-img-process">
+         <img src="../images/chapitre9/role3.png" class="contour-img" alt="Modifier un rôle">
+      </p>
+   </div>
+   <br>
+   <div class="floating-box process">
+      <img src="../images/commun/step3.svg" alt="3" width="52">
+   </div>
+   <div class="process-txt">
+      <span class="titre-advice">Validez la modification du rôle d'utilisateur</span>
+      <p>
+         Cliquez sur "Modifier" en bas de la page pour valider les changements ou sur "Annuler" pour abandonner l'opération.
+      </p>
+   </div>
+   <h2 class="texte aerateur">c - Invitation d'utilisateurs</h2>
+   <p class="texte">Il est possible de lancer des invitations afin de demander à des utilisateurs de rejoindre votre ferme.</p>
+   <p align="center" class="texte aerateur procedure">A – Procédure d'invitation d'un utilisateur</p>
+   <p class="texte">
+      Le processus suivant vous guide pour inviter un utilisateur.
+   </p>
+   <div class="floating-box process">
+      <img src="../images/commun/step1.svg" alt="1" width="52">
+   </div>
+   <div class="process-txt">
+      <span class="titre-advice">Accédez aux invitations</span>
+      <p>
+         Pour créer une nouvelle invitation, allez dans le menu principal et cliquez sur la clef anglaise<img src="../images/chapitre9/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">ou cliquez sur le bouton "Configuration" de la page d'accueil :
+      </p>
+      <p align="center"><img src="../images/chapitre9/wrench.svg" alt="Configuration" width="60"></p>
+      <p>
+         Dans la barre latérale du module, cliquez sur "Invitations" dans la rubrique "Accès" symbolisée par l'icône d'un bouclier<img src="../images/chapitre9/shield.svg" alt="bouclier" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des invités.
+      </p>
+   </div>
+   <br>
+   <div class="floating-box process">
+      <img src="../images/commun/step2.svg" alt="2" width="52">
+   </div>
+   <div class="process-txt">
+      <span class="titre-advice">Créez une invitation</span>
+      <p>
+         Cliquez sur "Nouveau" puis, dans les "Informations générales"remplissez tous les champs obligatoires signalés par une astérisque de couleur rouge avec les informations requises pour la définir correctement. Affectez un rôle d'utilisateur si vous en avez déjà créé au moins un &#40;mais ce n'est pas obligatoire&#41;.
+      </p>
+      <p> Cliquez sur<img src="../images/commun/creer.svg" alt="Créer" class="btn-creer">pour lancer l'invitation.</p>
+      <p>Un email est envoyé à votre contact et la liste des invités est mise à jour. Le statut de l'invitation et de l'utilisateur changent dès que votre invité a accepté votre invitation.</p>
+      <p class="max-img-process">
+         <img src="../images/chapitre9/invitation1.png" class="contour-img" alt="Invitation utilisateur">
+      </p>
+   </div>
+   <div class="warn-fond aerateur-haut aerateur-bas">
+      <div class="floating-box-warn">
+         <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
+      </div>
+      <div class="info-txt">
+         <span class="titre-advice">Droits des invités<br></span>
+         <p class="texte-advice">
+            Notez que par défaut, les droits accordés à l'invité sont la lecture et l'écriture d'interventions, même si vous n'avez pas encore pioché ou créé de rôle d'utilisateur.
+         </p>
+      </div>
+   </div>
+   <h2 class="texte aerateur">d - Inscription d'utilisateurs</h2>
+   <p class="texte">Un utilisateur qui connaît l'adresse internet de votre ferme et qui souhaite accéder à vos données a la possibilité de vous soumettre son inscription en remplissant le formulaire et en cliquant sur le bouton "Inscription".</p>
+   <p class="texte aerateur-haut" align="center">
+      <img src="../images/chapitre9/inscription1.png"  width="500" alt="Formulaire d'inscription">
+   </p>
+   <p align="center" class="texte legende aerateur-bas">Formulaire d'inscription</p>
+   <p class="texte">Une fois la demande d'inscription réalisée, vous êtes prévenu&#40;e&#41; par la réception d'un email envoyé à votre adresse d'administrateur. À vous de l'accepter ou non.</p>
+   <p align="center" class="texte aerateur procedure">A – Procédure pour valider les inscriptions</p>
+   <p class="texte">
+      Le processus suivant vous guide pour accepter une inscription.
+   </p>
+   <div class="floating-box process">
+      <img src="../images/commun/step1.svg" alt="1" width="52">
+   </div>
+   <div class="process-txt">
+      <span class="titre-advice">Accédez aux inscriptions</span>
+      <p>
+         Pour valider l'inscription d'un nouvel utilisateur, allez dans le menu principal et cliquez sur la clef anglaise<img src="../images/chapitre9/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">ou cliquez sur le bouton "Configuration" de la page d'accueil :
+      </p>
+      <p align="center"><img src="../images/chapitre9/wrench.svg" alt="Configuration" width="60"></p>
+      <p>
+         Dans la barre latérale du module, cliquez sur "Inscriptions" dans la rubrique "Accès" symbolisée par l'icône d'un bouclier<img src="../images/chapitre9/shield.svg" alt="bouclier" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des inscrits.
+      </p>
+      <p class="max-img-process">
+         <img src="../images/chapitre9/inscription2.png" class="contour-img" alt="Liste des inscriptions">
+      </p>
+   </div>
+   <br>
+   <div class="floating-box process">
+      <img src="../images/commun/step2.svg" alt="2" width="52">
+   </div>
+   <div class="process-txt">
+      <span class="titre-advice">Validez une inscription</span>
+      <p>
+         a - Cliquez sur le nom du nouvel inscrit et validez son inscription en cliquant sur "Modifier" ou :
+      </p>
+      <p>b - Après réception d'un email notifiant l'inscription d'un nouvel utilisateur, cliquez sur le lien permettant votre accord et validez celle-ci en cliquant sur "Modifier".</p>
+      <p>Dès que vous avez approuvé l'inscription, un email de confirmation est adressé au nouvel inscrit.
+      </p>
+      <p class="max-img-process">
+         <img src="../images/chapitre9/inscription3.png" class="contour-img" alt="Validation inscription">
+      </p>
+   </div>
+   <div class="warn-fond aerateur-haut aerateur-bas">
+      <div class="floating-box-warn">
+         <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
+      </div>
+      <div class="info-txt">
+         <span class="titre-advice">Droits des inscrits<br></span>
+         <p class="texte-advice">
+            Notez que par défaut, les droits accordés au nouvel inscrit sont la lecture et l'écriture d'interventions, même si vous n'avez pas encore pioché ou créé de rôle d'utilisateur.
+         </p>
+      </div>
+   </div>
+   <div class="navigation aerateur-haut">
+      <div class="divTable">
+         <div class="divTableBody">
+            <div class="divTableRow">
+               <div class="divTableCellCenter" style="width: auto">&nbsp;</div>
+               <div class="divTableCellCenter" style="width: 40px"><a href="../chapitre8" target="_self"><img src="../images/commun/arrow-left.svg" width="40"  alt="Production"></a></div>
+               <div class="divTableCellLeft" style="width: 90px"><span><a href="../chapitre8" target="_self">PRODUCTION</a></span></div>
+               <div class="divTableCellCenter" style="width: auto">&nbsp;</div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
