@@ -1,179 +1,112 @@
-<!DOCTYPE html>
-<html>
-   <head>
-      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-      <title>Ekylibre : guide de démarrage rapide</title>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="shortcut icon" href="images/commun/favicon.ico" />
-      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-      <link rel="stylesheet" href="w3school.css">
-      <link rel="stylesheet" href="quickstart.css">
-      <link rel="stylesheet" href="ekylibre.css">
-      <link rel="stylesheet" href="drawer.css">
-   </head>
-   <body class="drawer drawer--top">
-     <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
-      <div class="conteneur">
-         <div class="ekylibre affichage-print"><img src="images/commun/ekylibre.svg" alt="Ekylibre" width="120px" class="logo-entete"></div>
-         <header role="banner">
-            <button type="button" class="drawer-toggle drawer-hamburger">
-            <span class="sr-only">Menu</span>
-            <span class="drawer-hamburger-icon"></span>
-            </button>
-            <nav class="drawer-nav" role="navigation">
-               <ul class="drawer-menu">
-                  <li><a class="drawer-menu-item" href="quickstart.html">Accueil</a></li>
-                  <li><a class="drawer-menu-item" href="chapitre1.html">Prérequis</a></li>
-                  <li><a class="drawer-menu-item" href="chapitre2.html">Introduction</a></li>
-                  <li><a class="drawer-menu-item" href="chapitre3.html">Parcellaire</a></li>
-                  <li><a class="drawer-menu-item" href="chapitre4.html">Exploitation</a></li>
-                  <li><a class="drawer-menu-item" href="chapitre5.html">L'interface</a></li>
-                  <li><a class="drawer-menu-item" href="chapitre6.html">Stock &amp; Personnel</a></li>
-				  <li><a class="drawer-menu-item" href="chapitre7.html">Comptabilité</a></li>
-                  <li><a class="drawer-menu-item" href="chapitre8.html">Production</a></li>
-                  <li><a class="drawer-menu-item" href="chapitre9.html">Accès</a></li>
-               </ul>
-            </nav>
-         </header>
-         <div class="fill-it"></div>
-         <div class="affichage-large">
-            <div class="TableauTitre center-div w3-top">
-               <div class="divTableCellMenu w3-right w3-text-white" style="width: 364px">EKYLIBRE : GUIDE DE DÉMARRAGE RAPIDE</div>
-            </div>
-         </div>
-         <div class="affichage-mobile">
-            <div class="TableauTitre center-div w3-top">
-               <div class="divTableCellMenu w3-right w3-text-white" style="width: 250px">EKYLIBRE : DÉMARRAGE RAPIDE</div>
-            </div>
-         </div>
-         <div class="affichage-print">
-            <div class="TableauTitre center-div w3-top">
-               <div class="divTableCellMenu w3-right w3-text-white" style="width: 250px">GUIDE DE DÉMARRAGE RAPIDE</div>
-            </div>
-         </div>
-      </div>
-      <!-- !PAGE CONTENT! -->
-      <div class="w3-content">
-         <h3 align="center" class="texte">
-            <img class="logo" src="images/commun/logo-ekylibre.svg" alt="Ekylibre" width="300">
-            <br>
-            Logiciel de gestion d'exploitation agricole
-         </h3>
-         <h1 align="center" class="majuscule aerateur">Annexes</h1>
-         <a class="slice-long" name="annexe1"></a>
-         <h2 class="texte aerateur-annexe">Annexe 1 : la sécurisation d'Ekylibre</h2>
-         <p class="texte">
-            La loi &#171;informatique et libertés&#187; impose que les organismes mettant en œuvre des traitements ou disposant de fichiers de données en garantissent la sécurité. 
-         </p>
-         <p class="texte">
-            Par sécurité des données, on entend l&rsquo;ensemble des &#171; précautions utiles, au regard de la nature des données et des risques présentés par le traitement &#187;, pour notamment, &#171; empêcher que les données soient déformées, endommagées, ou que des tiers non autorisés y aient accès &#187; &#40;Art. 34 loi IL&#41;. Cette sécurité se conçoit pour l&rsquo;ensemble des processus relatifs à ces données, qu&rsquo;il s&rsquo;agisse de leur création, leur utilisation, leur sauvegarde, leur archivage ou leur destruction et concerne leur confidentialité, leur intégrité, leur authenticité et leur disponibilité. 
-         </p>
-         <p class="texte">
-            Sachez donc que nous avons pris grand soin de vous proposer une application qui fonctionne via une connexion HTTPS qui vous assure un transfert de données sécurisé. Nous nous engageons également à ne pas utiliser ou revendre d&rsquo;informations, toutes les données que vous transférez dans l&rsquo;application restent confidentielles et ne seront en aucun cas exploitées à des fins commerciales &#40;revente de fichiers ou tracking&#41;.
-         </p>
-         <a class="slice-short" name="annexe2"></a>
-         <h2 class="texte aerateur-annexe">Annexe 2 : localisez votre fichier TelePAC</h2>
-         <p class="texte">
-            Le fichier TelePAC téléchargé se présente sous la forme :
-         </p>
-         <strong>
-            <p align="center" class="texte">
-               Dossier-PAC-20XX_dossier_064123456_20170105134432.xml
-			 </p></strong>
-         <p class="texte">
-            Par défaut, il est enregistré dans le dossier des Téléchargements. En fonction de votre système d'exploitation et du navigateur web utilisé, celui-ci a pu être stocké à des endroits différents sur votre disque. Voici comment le retrouver :
-         </p>
-         <p class="texte">
-            <img src="images/annexes/chrome.svg" alt="Google Chrome" height="20" class="align-icone icone-marge-droite">
-            <strong>Google Chrome</strong>
-            <img src="images/annexes/windows.svg" alt="Windows" height="20" class="align-icone icone-marge-gauche">
-            <img src="images/annexes/apple.svg" alt="Apple" height="20" class="align-icone icone-marge-gauche">
-            <img src="images/annexes/linux.svg" alt="Linux" height="20" class="align-icone icone-marge-gauche">
-         </p>
-         <p class="texte">
-            Une fois le téléchargement terminé, celui-ci apparaît en bas de la fenêtre Chrome. Cliquez sur la flèche à côté du nom du fichier. Ensuite, cliquez sur "Afficher dans le dossier" &#40;ou "Afficher dans le Finder"&#41; pour afficher le fichier XML sur votre ordinateur.
-         </p>
-         <p class="texte">
-            <img src="images/annexes/firefox.svg" alt="Firefox" height="20" class="align-icone icone-marge-droite">
-            <strong>Mozilla Firefox</strong>
-            <img src="images/annexes/windows.svg" alt="Windows" height="20" class="align-icone icone-marge-gauche">
-            <img src="images/annexes/apple.svg" alt="Apple" height="20" class="align-icone icone-marge-gauche">
-            <img src="images/annexes/linux.svg" alt="Linux" height="20" class="align-icone icone-marge-gauche">
-         </p>
-         <p class="texte">
-            Cliquez sur le bouton des téléchargements &#40;représenté par une flèche orientée vers le bas&#41; situé en haut à droite du champ de recherche de Firefox. En appuyant sur ce bouton, sélectionnez "Afficher tous les téléchargements". Une liste apparaît et il est possible d'ouvrir le dossier contenant le fichier XML en cliquant sur l'icône représentant un dossier &#40;ou une loupe&#41; à sa droite.
-         </p>
-         <p class="texte">
-            <img src="images/annexes/safari.svg" alt="Safari" height="20" class="align-icone icone-marge-droite">
-            <strong>Safari sous Mac OS X</strong>
-            <img src="images/annexes/apple.svg" alt="Apple" height="20" class="align-icone icone-marge-gauche">
-         </p>
-         <p class="texte">
-            Par défaut, le fichier est enregistré dans le dossier Téléchargements. Cliquez sur le bouton des téléchargements &#40;représenté par une flèche orientée vers le bas&#41; situé en haut à droite du champ de recherche de Safari pour afficher les téléchargements. Cliquez sur la loupe pour ouvrir le dossier contenant le fichier XML.
-         </p>
-         <p class="texte">
-            <img src="images/annexes/opera.svg" alt="Opera" height="20" class="align-icone icone-marge-droite">
-            <strong>Opera</strong>
-            <img src="images/annexes/Windows.svg" alt="Windows" height="20" class="align-icone icone-marge-gauche">
-            <img src="images/annexes/apple.svg" alt="Apple" height="20" class="align-icone icone-marge-gauche">
-            <img src="images/annexes/linux.svg" alt="Linux" height="20" class="align-icone icone-marge-gauche">
-         </p>
-         <p class="texte">
-            Par défaut, le fichier est enregistré dans le dossier Téléchargements. Dans le menu "Afficher", sélectionnez "Afficher les téléchargements" pour afficher le fichier XML.
-         </p>
-		 <p class="texte">
-            <img src="images/annexes/edge.svg" alt="Edge" height="20" class="align-icone icone-marge-droite">
-            <strong>Edge</strong>
-            <img src="images/annexes/windows.svg" alt="Windows" height="20" class="align-icone icone-marge-gauche">
-         </p>
-         <p class="texte">
-            Cliquez sur le Hub &#40;représenté par trois traits horizontaux&#41;, puis sur l'icône Téléchargements &#40;représentée par une flèche pointant vers le bas et un trait horizontal&#41; et enfin cliquez sur "Ouvrir le dossier".
-         </p>
-         <p class="texte">
-            <img src="images/annexes/android.svg" alt="Android" height="20" class="align-icone icone-marge-droite">
-            <strong>Android</strong>
-         </p>
-         <p class="texte">
-            Le fichier XML téléchargé est stocké dans le dossier Téléchargements &#40;Downloads en anglais&#41;. Il existe le plus souvent une icône Téléchargements/Downloads sur le bureau d'un terminal Android &#40;l'apparence et l'emplacement varient selon les versions et les marques de téléphone/tablette&#41;.
-         </p>
-         <p  class="texte">
-            <img src="images/annexes/apple.svg" alt="Apple" height="20" class="align-icone icone-marge-droite">
-            <strong>iOS 11</strong>
-         </p>
-         <p class="texte">
-            Après avoir touché le bouton "Choisir le fichier", allez dans "Explorer" : le fichier XML est enregistré dans "Documents" si vous avez suivi la note explicative au début de la Procédure de récupération du fichier TelePAC.
-         </p>
-         <div class="navigation aerateur-haut">
-            <div class="divTable">
-               <div class="divTableBody">
-                  <div class="divTableRow">
-                     <div class="divTableCellCenter" style="width: auto">
-                        &nbsp;
-                     </div>
-                     <div class="divTableCellCenter" style="width: 40px">
-                        &nbsp;
-                     </div>
-                     <div class="divTableCellLeft" style="width: 130px">
-                        &nbsp;
-                     </div>
-                     <div class="divTableCellCenter" style="width: auto">
-                        &nbsp;
-                     </div>
-                  </div>
+<div class="w3-content">
+   <h3 align="center" class="texte">
+      <img class="logo" src="../images/commun/logo-ekylibre.svg" alt="Ekylibre" width="300">
+      <br>
+      Logiciel de gestion d'exploitation agricole
+   </h3>
+   <h1 align="center" class="majuscule aerateur">Annexes</h1>
+   <a class="slice-long" name="annexe1"></a>
+   <h2 class="texte aerateur-annexe">Annexe 1 : la sécurisation d'Ekylibre</h2>
+   <p class="texte">
+      La loi &#171;informatique et libertés&#187; impose que les organismes mettant en œuvre des traitements ou disposant de fichiers de données en garantissent la sécurité. 
+   </p>
+   <p class="texte">
+      Par sécurité des données, on entend l&rsquo;ensemble des &#171; précautions utiles, au regard de la nature des données et des risques présentés par le traitement &#187;, pour notamment, &#171; empêcher que les données soient déformées, endommagées, ou que des tiers non autorisés y aient accès &#187; &#40;Art. 34 loi IL&#41;. Cette sécurité se conçoit pour l&rsquo;ensemble des processus relatifs à ces données, qu&rsquo;il s&rsquo;agisse de leur création, leur utilisation, leur sauvegarde, leur archivage ou leur destruction et concerne leur confidentialité, leur intégrité, leur authenticité et leur disponibilité. 
+   </p>
+   <p class="texte">
+      Sachez donc que nous avons pris grand soin de vous proposer une application qui fonctionne via une connexion HTTPS qui vous assure un transfert de données sécurisé. Nous nous engageons également à ne pas utiliser ou revendre d&rsquo;informations, toutes les données que vous transférez dans l&rsquo;application restent confidentielles et ne seront en aucun cas exploitées à des fins commerciales &#40;revente de fichiers ou tracking&#41;.
+   </p>
+   <a class="slice-short" name="annexe2"></a>
+   <h2 class="texte aerateur-annexe">Annexe 2 : localisez votre fichier TelePAC</h2>
+   <p class="texte">
+      Le fichier TelePAC téléchargé se présente sous la forme :
+   </p>
+   <strong>
+      <p align="center" class="texte">
+         Dossier-PAC-20XX_dossier_064123456_20170105134432.xml
+      </p>
+   </strong>
+   <p class="texte">
+      Par défaut, il est enregistré dans le dossier des Téléchargements. En fonction de votre système d'exploitation et du navigateur web utilisé, celui-ci a pu être stocké à des endroits différents sur votre disque. Voici comment le retrouver :
+   </p>
+   <p class="texte">
+      <img src="../images/annexes/chrome.svg" alt="Google Chrome" height="20" class="align-icone icone-marge-droite">
+      <strong>Google Chrome</strong>
+      <img src="../images/annexes/windows.svg" alt="Windows" height="20" class="align-icone icone-marge-gauche">
+      <img src="../images/annexes/apple.svg" alt="Apple" height="20" class="align-icone icone-marge-gauche">
+      <img src="../images/annexes/linux.svg" alt="Linux" height="20" class="align-icone icone-marge-gauche">
+   </p>
+   <p class="texte">
+      Une fois le téléchargement terminé, celui-ci apparaît en bas de la fenêtre Chrome. Cliquez sur la flèche à côté du nom du fichier. Ensuite, cliquez sur "Afficher dans le dossier" &#40;ou "Afficher dans le Finder"&#41; pour afficher le fichier XML sur votre ordinateur.
+   </p>
+   <p class="texte">
+      <img src="../images/annexes/firefox.svg" alt="Firefox" height="20" class="align-icone icone-marge-droite">
+      <strong>Mozilla Firefox</strong>
+      <img src="../images/annexes/windows.svg" alt="Windows" height="20" class="align-icone icone-marge-gauche">
+      <img src="../images/annexes/apple.svg" alt="Apple" height="20" class="align-icone icone-marge-gauche">
+      <img src="../images/annexes/linux.svg" alt="Linux" height="20" class="align-icone icone-marge-gauche">
+   </p>
+   <p class="texte">
+      Cliquez sur le bouton des téléchargements &#40;représenté par une flèche orientée vers le bas&#41; situé en haut à droite du champ de recherche de Firefox. En appuyant sur ce bouton, sélectionnez "Afficher tous les téléchargements". Une liste apparaît et il est possible d'ouvrir le dossier contenant le fichier XML en cliquant sur l'icône représentant un dossier &#40;ou une loupe&#41; à sa droite.
+   </p>
+   <p class="texte">
+      <img src="../images/annexes/safari.svg" alt="Safari" height="20" class="align-icone icone-marge-droite">
+      <strong>Safari sous Mac OS X</strong>
+      <img src="../images/annexes/apple.svg" alt="Apple" height="20" class="align-icone icone-marge-gauche">
+   </p>
+   <p class="texte">
+      Par défaut, le fichier est enregistré dans le dossier Téléchargements. Cliquez sur le bouton des téléchargements &#40;représenté par une flèche orientée vers le bas&#41; situé en haut à droite du champ de recherche de Safari pour afficher les téléchargements. Cliquez sur la loupe pour ouvrir le dossier contenant le fichier XML.
+   </p>
+   <p class="texte">
+      <img src="../images/annexes/opera.svg" alt="Opera" height="20" class="align-icone icone-marge-droite">
+      <strong>Opera</strong>
+      <img src="../images/annexes/Windows.svg" alt="Windows" height="20" class="align-icone icone-marge-gauche">
+      <img src="../images/annexes/apple.svg" alt="Apple" height="20" class="align-icone icone-marge-gauche">
+      <img src="../images/annexes/linux.svg" alt="Linux" height="20" class="align-icone icone-marge-gauche">
+   </p>
+   <p class="texte">
+      Par défaut, le fichier est enregistré dans le dossier Téléchargements. Dans le menu "Afficher", sélectionnez "Afficher les téléchargements" pour afficher le fichier XML.
+   </p>
+   <p class="texte">
+      <img src="../images/annexes/edge.svg" alt="Edge" height="20" class="align-icone icone-marge-droite">
+      <strong>Edge</strong>
+      <img src="../images/annexes/windows.svg" alt="Windows" height="20" class="align-icone icone-marge-gauche">
+   </p>
+   <p class="texte">
+      Cliquez sur le Hub &#40;représenté par trois traits horizontaux&#41;, puis sur l'icône Téléchargements &#40;représentée par une flèche pointant vers le bas et un trait horizontal&#41; et enfin cliquez sur "Ouvrir le dossier".
+   </p>
+   <p class="texte">
+      <img src="../images/annexes/android.svg" alt="Android" height="20" class="align-icone icone-marge-droite">
+      <strong>Android</strong>
+   </p>
+   <p class="texte">
+      Le fichier XML téléchargé est stocké dans le dossier Téléchargements &#40;Downloads en anglais&#41;. Il existe le plus souvent une icône Téléchargements/Downloads sur le bureau d'un terminal Android &#40;l'apparence et l'emplacement varient selon les versions et les marques de téléphone/tablette&#41;.
+   </p>
+   <p  class="texte">
+      <img src="../images/annexes/apple.svg" alt="Apple" height="20" class="align-icone icone-marge-droite">
+      <strong>iOS 11</strong>
+   </p>
+   <p class="texte">
+      Après avoir touché le bouton "Choisir le fichier", allez dans "Explorer" : le fichier XML est enregistré dans "Documents" si vous avez suivi la note explicative au début de la Procédure de récupération du fichier TelePAC.
+   </p>
+   <div class="navigation aerateur-haut">
+      <div class="divTable">
+         <div class="divTableBody">
+            <div class="divTableRow">
+               <div class="divTableCellCenter" style="width: auto">
+                  &nbsp;
+               </div>
+               <div class="divTableCellCenter" style="width: 40px">
+                  &nbsp;
+               </div>
+               <div class="divTableCellLeft" style="width: 130px">
+                  &nbsp;
+               </div>
+               <div class="divTableCellCenter" style="width: auto">
+                  &nbsp;
                </div>
             </div>
          </div>
       </div>
-      <script src="js/jquery.js"></script>
-      <script src="js/iscroll.js"></script>
-      <script src="js/drawer.js"></script>
-      <script src="js/backtotop.js"></script>
-      <script>
-         $(document).ready(function() {
-         	$('.drawer').drawer();
-         });
-      </script>
-   </body>
-</html>
+   </div>
+</div>
