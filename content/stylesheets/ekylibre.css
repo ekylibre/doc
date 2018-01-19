@@ -348,37 +348,37 @@ a:link, a:visited {
 }
 
 .perso1 {
-	background-image: url("images/chapitre9/man-user1.svg");
+	background-image: url("../fr/images/chapitre9/man-user1.svg");
 	background-repeat: no-repeat;
 	background-position: center center;
 }
 
 .perso2 {
-	background-image: url("images/chapitre9/man-user2.svg");
+	background-image: url("../fr/images/chapitre9/man-user2.svg");
 	background-repeat: no-repeat;
 	background-position: center center;
 }
 
 .perso3 {
-	background-image: url("images/chapitre9/man-user3.svg");
+	background-image: url("../fr/images/chapitre9/man-user3.svg");
 	background-repeat: no-repeat;
 	background-position: center center;
 }
 
 .perso4 {
-	background-image: url("images/chapitre9/man-user4.svg");
+	background-image: url("../fr/images/chapitre9/man-user4.svg");
 	background-repeat: no-repeat;
 	background-position: center center;
 }
 
 .perso5 {
-	background-image: url("images/chapitre9/man-user5.svg");
+	background-image: url("../fr/images/chapitre9/man-user5.svg");
 	background-repeat: no-repeat;
 	background-position: center center;
 }
 
 .perso6 {
-	background-image: url("images/chapitre9/man-user6.svg");
+	background-image: url("../fr/images/chapitre9/man-user6.svg");
 	background-repeat: no-repeat;
 	background-position: center center;
 }
@@ -435,6 +435,15 @@ a:link, a:visited {
 
 .divTableCellInter, .divTableHeadInter {
 	display: table-cell;
+	text-align:left;
+	vertical-align: middle;
+}
+
+/* Tableau chapitre 5 Options d'affichage*/
+
+.divTableCellAffichage, .divTableHeadAffichage {
+	display: table-cell;
+	padding: 5px 0 5px 0;
 	text-align:left;
 	vertical-align: middle;
 }
