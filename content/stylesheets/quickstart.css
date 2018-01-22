@@ -132,6 +132,10 @@ img, object, embed, video {
 	margin-top: 0;
 }
 
+.aerateur-formation {
+	margin-top: 16px;
+}
+
 .debut-chapitre {
 	margin-top: 35px;
 }
@@ -330,6 +334,10 @@ img, object, embed, video {
 
 .aerateur-glossaire {
 	margin-top: 0;
+}
+
+.aerateur-formation {
+	margin-top: 16px;
 }
 
 .debut-chapitre {
@@ -543,6 +551,10 @@ img, object, embed, video {
 	margin-top: 6px;
 }
 
+.aerateur-formation {
+	margin-top: 16px;
+}
+
 .debut-chapitre {
 	margin-top: 70px;
 }
@@ -628,7 +640,7 @@ img, object, embed, video {
 }
 
 .max-img-process {
-	max-width: 584px;
+	max-width: 582px;
 }
 }
 
@@ -748,6 +760,10 @@ html {
 
 .aerateur-glossaire {
 	margin-top: 6px;
+}
+
+.aerateur-formation {
+	margin-top: 16px;
 }
 
 .debut-chapitre {
