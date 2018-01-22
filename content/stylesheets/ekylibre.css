@@ -162,14 +162,6 @@ a:link, a:visited {
 	border: 1px solid #cccccc;
 }
 
-.max-img-inline {
-	max-width: 646px;
-}
-
-.max-img-process {
-	max-width: 584px;
-}
-
 .chapitre {
 	margin-top: 65px;
 }
@@ -1054,7 +1046,7 @@ a:link, a:visited {
 	margin: 10px auto;
 	border-radius: 4px;
 	background-color: #cbe1f3;
-	max-width: 646px;	
+	max-width: 548px;	
 }
 
 .bleu-ekylibre {

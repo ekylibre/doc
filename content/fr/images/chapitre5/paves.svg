@@ -13,7 +13,7 @@
 <g>
 	<g>
 		
-			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-76.7" y1="1022" x2="-76.7" y2="730" gradientTransform="matrix(-1 0 0 1 270 -730)">
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-660.7" y1="-728" x2="-660.7" y2="-436" gradientTransform="matrix(-1 0 0 -1 -314 -436)">
 			<stop  offset="0" style="stop-color:#BBBBBB"/>
 			<stop  offset="1" style="stop-color:#DCDCDC"/>
 		</linearGradient>
@@ -21,7 +21,7 @@
 			c14,0,25-11,25-25V25c0-14-11-25-25-25H25C11,0,0,11,0,25v242c0,14,11,25,25,25H668.4z"/>
 	</g>
 	
-		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-76.75" y1="284" x2="-76.75" y2="12" gradientTransform="matrix(-1 0 0 -1 270 294)">
+		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-660.75" y1="1012" x2="-660.75" y2="740" gradientTransform="matrix(-1 0 0 1 -314 -730)">
 		<stop  offset="0" style="stop-color:#E8E8E8"/>
 		<stop  offset="1" style="stop-color:#F9F9F9"/>
 	</linearGradient>
