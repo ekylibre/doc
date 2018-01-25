@@ -402,6 +402,14 @@ a:link, a:visited {
 	vertical-align: middle;
 }
 
+/*Tableau différences plans comptables*/
+
+.divTableCellPlan, .divTableHeadPlan {
+	display: table-cell;
+	text-align: left;
+	vertical-align: top;
+}
+
 .divTableOutils {
 	display: table;
 }
