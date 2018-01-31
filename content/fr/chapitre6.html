@@ -32,7 +32,15 @@
                <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
             </div>
             <div class="divTableCellListe">
-               Comment procéder au stockage de variantes &#40;produits&#41; et réaliser un inventaire
+               Comment créer un stock initial et comment procéder à l'achat ou à la vente de produits
+            </div>
+         </div>
+         <div class="divTableRow">
+            <div class="divTableCellListe">
+               <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
+            </div>
+            <div class="divTableCellListe">
+               Comment réaliser un inventaire des stocks
             </div>
          </div>
          <div class="divTableRow">
@@ -111,7 +119,7 @@
                      <div class="divTableCellProfil2">Pulvérisateur</div>
                      <div class="divTableCellProfil3">Berthoud Alto 800</div>
                   </div>
-				  <div class="divTableRow">
+                  <div class="divTableRow">
                      <div class="divTableCellProfil2">Équipement</div>
                      <div class="divTableCellProfil2">Charrue</div>
                      <div class="divTableCellProfil2">Charrue</div>
@@ -339,9 +347,9 @@
          <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
       </div>
       <div class="info-txt">
-         <span class="titre-advice">Date de stockage<br></span>
+         <span class="titre-advice">Lieux de stockage<br></span>
          <p class="texte-advice">
-            La date de réception d'un nouveau colis doit être antérieure à la date d'intervention qui utilisera le produit stocké, sinon il sera impossible de réaliser la saisie de l'intervention dans l'application.
+            La création d'un colis entrant nécessite que vous ayez auparavant défini vos bâtiments/zones de stockage dans l'assistant de démarrage. Vous pouvez toujours dessiner de nouvelles découpes de bâtiment/stockage dans l'application mais il sera beaucoup moins facile de les localiser géographiquement dans la carte.
          </p>
       </div>
    </div>
@@ -379,7 +387,10 @@
    <div class="process-txt">
       <span class="titre-advice">Saisissez les informations </span>
       <p>
-         Cliquez sur "Nouveau colis entrant", puis remplissez tous les champs signalés par une astérisque de couleur rouge avec les informations requises pour le définir correctement.
+         Cliquez sur "Nouveau colis entrant", puis remplissez tous les champs signalés par une astérisque de couleur rouge avec les informations requises pour le définir correctement et sans oublier de préciser si une livraison est prévue ou pas &#40;case à cocher<img src="../images/chapitre6/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à droite de l'option "Avec livraison"&#41;..
+      </p>
+      <p class="max-img-process">
+         <img src="../images/chapitre6/colis1.png" class="contour-img" alt="Nouveau colis entrant">
       </p>
    </div>
    <div class="info-fond aerateur-haut">
@@ -387,10 +398,11 @@
          <img src="../images/commun/info.svg" width="100" alt="Info"/>
       </div>
       <div class="info-txt">
-         <span class="titre-advice">Nouveau fournisseur<br></span>
+         <span class="titre-advice">Nouvel expéditeur<br></span>
          <p class="texte-advice">
-            Si l'expéditeur du colis &#40;le fournisseur&#41; n'existe pas encore, créez-en un nouveau à la volée en sélectionnant "Ajouter un nouvel enregistrement" dans le menu "Expéditeur", saisissez les informations le concernant et validez l'opération en cliquant sur le bouton<img src="../images/commun/creer.svg" alt="Créer" class="btn-creer">.
+            Si l'expéditeur du colis &#40;le fournisseur&#41; n'existe pas encore, créez-en un nouveau à la volée en sélectionnant "Ajouter un nouvel enregistrement" dans le menu "Expéditeur" et saisissez les informations le concernant.
          </p>
+         <p>Cliquez sur<img src="../images/commun/creer.svg" alt="Créer" class="btn-creer"> pour valider l'opération.</p>
          <p align="center">
             <img src="../images/chapitre6/fournisseur.png" alt="Nouveau fournisseur" width="300" class="contour-img" style="margin-bottom:-16px">
          </p>
@@ -405,11 +417,18 @@
       <p>
          Cliquez sur<img src="../images/commun/creer.svg" alt="Créer" class="btn-creer">pour valider l'opération ou sur <img src="../images/commun/creer-suivant.svg" alt="Créer" class="btn-creer"> pour réaliser une nouvelle saisie.
       </p>
-      <p class="max-img-process">
-         <img src="../images/chapitre6/colis1.png" class="contour-img" alt="Nouveau colis entrant">
-      </p>
    </div>
-   <br>
+   <div class="warn-fond aerateur-haut aerateur-bas">
+      <div class="floating-box-warn">
+         <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
+      </div>
+      <div class="info-txt">
+         <span class="titre-advice">Date de stockage<br></span>
+         <p class="texte-advice">
+            Veillez à ce que la date de réception d'un nouveau colis contenant un produit commandé pour la première fois soit antérieure à la date de l'intervention qui l'utilisera, sinon il sera impossible de disposer du produit au moment de saisir l'intervention dans l'application.
+         </p>
+      </div>
+   </div>
    <div class="floating-box process">
       <img src="../images/commun/step4.svg" alt="4" width="52">
    </div>
@@ -440,7 +459,7 @@
       <div class="info-txt">
          <span class="titre-advice">Stocks existants<br></span>
          <p class="texte-advice">
-            À la création de votre ferme, si vous souhaitez intégrer vos stocks existants dans l'application, nous vous recommandons de vous faire un colis entrant à vous-même regroupant plusieurs variantes &#40;produits&#41; avec les bonnes quantités et daté du premier jour de l'exercice en cours.
+            À la création de votre ferme, si vous souhaitez intégrer vos stocks existants dans l'application, nous vous recommandons de vous faire un colis entrant à vous-même regroupant plusieurs variantes &#40;produits&#41; avec les bonnes quantités et daté du premier jour de l'exercice demarré dans l'application.
          </p>
       </div>
    </div>
@@ -507,7 +526,7 @@
    <div class="process-txt">
       <span class="titre-advice">Contrôlez les indicateurs</span>
       <p>
-         L'application affiche les indicateurs liés à la nouvelle matière : mouvements,colis, interventions, lieux de stockage.
+         L'application affiche les indicateurs liés à la nouvelle matière : mouvements, colis, interventions, lieux de stockage.
       </p>
       <p class="max-img-process">
          <img src="../images/chapitre6/matieres5.png" class="contour-img" alt="Nouvelle matière">
@@ -568,7 +587,10 @@
    <div class="process-txt">
       <span class="titre-advice">Saisissez les informations </span>
       <p>
-         Cliquez sur "Nouveau colis sortant", puis remplissez tous les champs signalés par une astérisque de couleur rouge avec les informations requises pour le définir correctement et sans oublier de préciser si une livraison est prévue ou pas &#40;case à cocher&#41;.
+         Cliquez sur "Nouveau colis sortant", puis remplissez tous les champs signalés par une astérisque de couleur rouge avec les informations requises pour le définir correctement et sans oublier de préciser si une livraison est prévue ou pas &#40;case à cocher<img src="../images/chapitre6/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à droite de l'option "Avec livraison"&#41;.
+      </p>
+	  <p class="max-img-process">
+         <img src="../images/chapitre6/colis5.png" class="contour-img" alt="Nouveau colis entrant">
       </p>
    </div>
    <div class="info-fond aerateur-haut">
@@ -578,7 +600,9 @@
       <div class="info-txt">
          <span class="titre-advice">Nouveau destinataire<br></span>
          <p class="texte-advice">
-            Si le destinataire du colis &#40;le client&#41; n'existe pas encore, créez-en un nouveau à la volée en sélectionnant "Ajouter un nouvel enregistrement" dans le menu "Destinataire", saisissez les informations le concernant et validez l'opération en cliquant sur le bouton<img src="../images/commun/creer.svg" alt="Créer" class="btn-creer">.
+            Si le destinataire du colis &#40;le client&#41; n'existe pas encore, créez-en un nouveau à la volée en sélectionnant "Ajouter un nouvel enregistrement" dans le menu "Destinataire" et saisissez les informations le concernant.
+         </p>
+         <p>Cliquez sur <img src="../images/commun/creer.svg" alt="Créer" class="btn-creer"> pour valider l'opération.
          </p>
          <p align="center">
             <img src="../images/chapitre6/destinataire.png" alt="Nouveau destinataire" width="300" class="contour-img" style="margin-bottom:-16px">
@@ -593,9 +617,6 @@
       </p>
       <p>
          Cliquez sur<img src="../images/commun/creer.svg" alt="Créer" class="btn-creer">pour valider l'opération ou sur <img src="../images/commun/creer-suivant.svg" alt="Créer" class="btn-creer"> pour réaliser une nouvelle saisie.
-      </p>
-      <p class="max-img-process">
-         <img src="../images/chapitre6/colis5.png" class="contour-img" alt="Nouveau colis entrant">
       </p>
    </div>
    <br>
@@ -615,8 +636,9 @@
    </div>
    <div class="process-txt">
       <span class="titre-advice">ou Accédez aux "Livraisons"</span>
-      <p>Cliquez sur le bouton<img src="../images/chapitre6/expedier.svg" alt="Expédier" height="30" class="btn-creer">pour accéder aux "Livraisons".</p><p>Sélectionnez un ou plusieurs colis à l'aide des cases à cocher<img src="../images/chapitre6/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour procéder à une livraison unique ou groupée de plusieurs produits &#40;ou pour organiser une tournée de livraison&#41;.</p>
-	  <p>
+      <p>Cliquez sur le bouton<img src="../images/chapitre6/expedier.svg" alt="Expédier" height="30" class="btn-creer">pour accéder aux "Livraisons".</p>
+      <p>Sélectionnez un ou plusieurs colis à l'aide des cases à cocher<img src="../images/chapitre6/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour procéder à une livraison unique ou groupée de plusieurs produits &#40;ou pour organiser une tournée de livraison&#41;.</p>
+      <p>
          Cliquez sur<img src="../images/commun/creer.svg" alt="Créer" class="btn-creer">pour valider l'opération.
       </p>
       <p class="max-img-process">
@@ -624,10 +646,10 @@
       </p>
    </div>
    <br>
-	   <div class="floating-box process">
+   <div class="floating-box process">
       <img src="../images/commun/step4b.svg" alt="4b" width="52">
    </div>
-	<div class="process-txt">
+   <div class="process-txt">
       <span class="titre-advice">Modifiez le statut de la livraison</span>
       <p>Modifiez successivement le statut de la livraison en cliquant sur les étapes en couleur :<br>"Brouillon"<img src="../images/chapitre6/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">"Commandée"<img src="../images/chapitre6/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">"En préparation"<img src="../images/chapitre6/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">"Prête"<img src="../images/chapitre6/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">"Commencée"<img src="../images/chapitre6/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">"Terminée".</p>
       <p class="max-img-process">
@@ -825,7 +847,7 @@
          Pour afficher les paramètres, allez dans le menu principal et cliquez sur la clef anglaise<img src="../images/chapitre6/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite"> ou cliquez sur le bouton "Configuration" de la page d'accueil :
       </p>
       <p align="center"><img src="../images/chapitre6/wrench.svg" alt="Configuration" width="60"></p>
-	   <p>Dans la barre latérale du module, cliquez sur "Société" dans la section "Paramètres" symbolisée par l'icône d'une clef anglaise<img src="../images/chapitre6/wrench3.svg" alt="Clef anglaise" height="20" class="align-icone icone-marge-gauche">.</p>
+      <p>Dans la barre latérale du module, cliquez sur "Société" dans la section "Paramètres" symbolisée par l'icône d'une clef anglaise<img src="../images/chapitre6/wrench3.svg" alt="Clef anglaise" height="20" class="align-icone icone-marge-gauche">.</p>
    </div>
    <br>
    <div class="floating-box process">
@@ -834,7 +856,7 @@
    <div class="process-txt">
       <span class="titre-advice">Activez la fonctionnalité</span>
       <p>Dans la section "Préférences de la comptabilité", cochez la case<img src="../images/chapitre6/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à droite de "Mode stock permanent &#40;tenue des écritures comptables de stock&#41;" si vous souhaitez activer cette fonctionnalité.</p>
-	  <p>Cliquez sur<img src="../images/commun/modifier.svg" alt="Modifier" class="btn-creer">pour valider l'opération.</p>
+      <p>Cliquez sur<img src="../images/commun/modifier.svg" alt="Modifier" class="btn-creer">pour valider l'opération.</p>
       <p class="max-img-process">
          <img src="../images/chapitre6/pref-compta.png" class="contour-img" alt="Préférences de la comptabilité">
       </p>
@@ -891,7 +913,7 @@
    </div>
    <div class="process-txt">
       <span class="titre-advice">Reflétez les stocks</span>
-	  <p class="max-img-process">
+      <p class="max-img-process">
          <img src="../images/chapitre6/inventaire3.png" class="contour-img" alt="Nouvel inventaire">
       </p>
       <p>Cliquez sur<img src="../images/chapitre6/cog.svg" alt="Refléter l'inventaire" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour valider l'inventaire qui n'est alors plus modifiable et son statut passe en "Reflété".<br>Si vous avez activé "Mode stock permanent &#40;tenue des écritures comptables de stock&#41;" dans la section "Préférences de la comptabilité", chaque régularisation donne lieu à une écriture comptable.</p>
@@ -956,7 +978,7 @@
    </div>
    <div class="process-txt">
       <span class="titre-advice">Qualifiez le contact</span>
-      <p>Choisissez si le nouveau contact est un prospect, un client, un fournisseur ou un employé en cochant la case adéquate en face de la fonction choisie.</p>
+      <p>Choisissez si le nouveau contact est un prospect, un client, un fournisseur ou un employé en cochant la case adéquate<img src="../images/chapitre6/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">en face de la fonction choisie.</p>
       <p>
          Cliquez sur<img src="../images/commun/creer.svg" alt="Créer" class="btn-creer">pour valider l'opération ou sur <img src="../images/commun/creer-suivant.svg" alt="Créer" class="btn-creer"> pour réaliser une nouvelle saisie.
       </p>
@@ -1022,6 +1044,17 @@
       <p>
          Cliquez sur<img src="../images/commun/creer.svg" alt="Créer" class="btn-creer">pour valider l'opération.
       </p>
+   </div>
+    <div class="info-fond aerateur-haut">
+      <div class="floating-box-info">
+         <img src="../images/commun/info.svg" width="100" alt="Info"/>
+      </div>
+      <div class="info-txt">
+         <span class="titre-advice">Création d'une nouvelle organisation<br></span>
+         <p class="texte-advice">
+            La procédure de création d'une nouvelle organisation est sensiblement la même que pour la création d'un nouveau contact mais avec des champs propres à l'activité professionnelle &#40;numéro Siret, code APE/NAF, numéro de TVA intra-communautaire&#41;. Notez que si vous avez créé un nouvel expéditeur ou un nouveau destinataire à la volée lors de la création d'un colis entrant ou sortant, il est automatiquement devenu une organisation.
+         </p>
+      </div>
    </div>
    <p class="texte aerateur-haut">
       Passez au chapitre suivant de ce guide.
