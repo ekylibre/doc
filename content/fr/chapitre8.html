@@ -24,7 +24,7 @@
                <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
             </div>
             <div class="divTableCellListe" style="width: auto">
-               Comment définir les activités de l'exploitation pour une nouvelle campagne
+               Comment définir les activités et les productions de l'exploitation pour une nouvelle campagne
             </div>
          </div>
          <div class="divTableRow">
@@ -61,14 +61,14 @@
                Campagne
             </div>
             <div class="divTableCellGlossaire2" style="width: auto">
-               période annuelle de référence &#40;douze mois consécutifs&#41; correspondant à un cycle végétatif de production normal. Ce cycle est compris entre le début des semis et la récolte pour les cultures annuelles
+               période annuelle &#40;douze mois consécutifs&#41; correspondant à un cycle de production sur l'exploitation agricole. Ce cycle est compris entre le début des semis et la récolte pour les cultures annuelles &#40;les dates de début et de fin ne sont pas imposées par l'application&#41;<p><img src="../images/chapitre8/schema-campagne.svg" alt="Schéma campagne" class="aerateur-glossaire"></p>
             </div>
          </div>
       </div>
    </div>
    <p class="texte">La gestion de la production est architecturée suivant le schéma suivant :</p>
-   <p class="texte">a - La production définit le type de culture &#40;blé dur d'hiver, orge d'hiver, maïs, etc&#41; produite durant une campagne<br>
-      b - L'activité définit l'assolement d'une production sur tout ou partie d'une zone cultivable &#40;la zone devient alors une parcelle&#41;
+   <p class="texte">a - L'activité définit le type de culture &#40;blé dur d'hiver, orge d'hiver, maïs, etc&#41; produite durant une campagne<br>
+      b - La production définit l'assolement d'une activité sur tout ou partie d'une zone cultivable &#40;la zone devient alors une parcelle&#41;
    </p>
    <br><img src="../images/chapitre8/schema-production.svg" class="marge" alt="Schéma production">
    <div class="warn-fond aerateur-haut aerateur-bas">
@@ -78,7 +78,7 @@
       <div class="info-txt">
          <span class="titre-advice">Production et culture<br></span>
          <p class="texte-advice">
-            Notez que le fait de créer une production ne génère pas automatiquement une culture. Celle-ci nécessite l'enregistrement d'une intervention de semis &#40;expliqué à la fin de ce chapitre&#41;.
+            Notez que le fait de créer une production ne génère pas automatiquement une culture. Celle-ci nécessite l'enregistrement d'une intervention d'implantation de culture sur une parcelle &#40;l'intervention de semis est expliquée à la fin de ce chapitre&#41;.
          </p>
       </div>
    </div>
@@ -206,14 +206,13 @@
    <a class="slice-short" id="section-b"></a>
    <h2 class="texte aerateur">b - Création des productions dans une campagne</h2>
    <p class="texte">
-      Vous pouvez maintenant affecter les activités aux zones cultivables qui deviendront des parcelles comme expliqué au début de ce chapitre.
+      Vous pouvez maintenant réaliser l'assolement de vos zones cultivables &#40;ou parties des zones cultivables&#41; avec les activités ouvertes pour la campagne en cours. Les zones cultivables deviendront, dès la création des productions, des parcelles comme expliqué au début de ce chapitre.
    </p>
-   <p class="texte">Visualisez une campagne en naviguant avec les flèches à gauche<img src="../images/chapitre8/fleche-g.svg" alt="flèche" class="btn-creer">et à droite<img src="../images/chapitre8/fleche-d.svg" alt="Flèche" class="btn-creer">de l'affichage de l'année<img src="../images/chapitre8/year.svg" alt="Année de la campagne" class="btn-creer">en haut à droite de la fenêtre principale.</p>
    <a class="slice-long" name="section-b"></a>
    <p align="center" class="texte aerateur procedure">A – Procédure pour créer des productions
    </p>
    <p class="texte">
-      Le processus suivant vous guide pour créer de nouvelles productions dans l'application.
+      Le processus suivant vous guide pour créer de nouvelles productions dans une campagne.
    </p>
    <div class="floating-box process">
       <img src="../images/commun/step1.svg" alt="1" width="52">
@@ -230,10 +229,9 @@
       <img src="../images/commun/step2.svg" alt="2" width="52">
    </div>
    <div class="process-txt">
-      <span class="titre-advice">Sélectionnez la campagne</span>
-      <p>En haut à droite du "Tableau de bord de la production", choisissez la campagne. Basculez vers l'année souhaitée, celle pour laquelle le cycle de production occupe la durée la plus significative &#40;généralement n+1&#41; pour afficher le "Tableau de bord de la production" correspondant.</p>
-      <p>Cliquez sur l'année comme par exemple<img src="../images/chapitre8/year.svg" alt="Année de la campagne" class="btn-creer">en haut à droite de la fenêtre principale.</p>
-      <p>Sont affichées toutes les activités définies dans la <a href="#section-a" class="avoid-clicks">section a</a> &#40;« Création de nouvelles activités »&#41; de ce chapitre.</p>
+      <span class="titre-advice">Choisissez la campagne</span>
+      <p>Sélectionnez la campagne avec les flèches<img src="../images/chapitre8/fleche-g.svg" alt="Flèche" class="btn-creer">et<img src="../images/chapitre8/fleche-d.svg" alt="Flèche" class="btn-creer"> puis cliquez sur l'année comme par exemple<img src="../images/chapitre8/year.svg" alt="Année de la campagne" class="btn-creer">en haut à droite de la fenêtre principale.</p>
+      <p>L'application affiche toutes les activités définies dans la <a href="#section-a" class="avoid-clicks">section a</a> &#40;« Création de nouvelles activités »&#41; de ce chapitre.</p>
       <p class="max-img-process">
          <img src="../images/chapitre8/activites5.png" class="contour-img" alt="Liste des activités">
       </p>
@@ -303,7 +301,7 @@
    </div>
    <div class="process-txt">
       <span class="titre-advice">Enregistrez la production</span>
-      <p>Cliquez sur<img src="../images/commun/creer.svg" alt="Créer" class="btn-creer"> en bas de la fenêtre principale pour valider l'opération.</p>
+      <p>Cliquez sur<img src="../images/commun/creer.svg" alt="Créer" class="btn-creer">en bas de la fenêtre principale pour valider l'opération.</p>
       <p>La nouvelle parcelle s'affiche alors en vert.</p>
       <p>La création d'une nouvelle production entraîne automatiquement la création d'une nouvelle parcelle.</p>
       <p>La liste des productions est automatiquement enrichie pour l'activité choisie.</p>
