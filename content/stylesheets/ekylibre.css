@@ -243,6 +243,25 @@ a:link, a:visited {
 	overflow: hidden;
 }
 
+.step {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 12px;
+	padding: 0 1px 0 1px;
+}
+
+.step-orange {
+	background-color: #f0851f;
+}
+
+.step-vert {
+	background-color: #65a92f;
+}
+
+.step-rouge {
+	background-color: #d72116;
+}
+
 .after-box {
     clear: left;
 }
