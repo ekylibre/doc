@@ -122,12 +122,6 @@ a:link, a:visited {
 	vertical-align: -8px;
 }
 
-.btn-creer {
-	margin-right: 5px;
-	margin-left: 5px;
-	vertical-align: -5px;
-}
-
 .chat-help {
 	margin-right: 5px;
 	margin-left: 5px;
@@ -289,7 +283,7 @@ a:link, a:visited {
 	display: table-header-group;
 }
 
-/*Tableau Chapitre 8 Roles*/
+/*Tableau Chapitre 9 Roles*/
 
 .divTableCellRole1, .divTableHeadRole1 {
 	/*height: 40px;*/
@@ -356,6 +350,12 @@ a:link, a:visited {
 	background-color: #dddddd;
 	font-size: 12px;
 	line-height: 1.2;
+}
+
+.divTableCellDroit {
+	display: table-cell;
+	text-align:center;
+	vertical-align: middle;
 }
 
 .perso1 {
