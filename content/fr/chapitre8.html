@@ -32,7 +32,7 @@
                <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
             </div>
             <div class="divTableCellListe">
-               Comment enregistrer une intervention d'implantation de culture
+               Comment enregistrer une intervention sur une parcelle ou une partie de parcelle &#40;implantation de culture&#41;
             </div>
          </div>
       </div>
@@ -53,7 +53,7 @@
                Assolement
             </div>
             <div class="divTableCellGlossaire2" style="width: auto">
-               action de diviser les terres d'une exploitation agricole en plusieurs parties distinctes pour y établir des cultures différentes
+               action de diviser les zones cultivables d'une exploitation agricole en plusieurs parties distinctes pour y établir des cultures différentes
             </div>
          </div>
          <div class="divTableRow">
@@ -82,7 +82,7 @@
       <div class="info-txt">
          <span class="titre-advice">Production et culture<br></span>
          <p class="texte-advice">
-            Notez que le fait de créer une production ne génère pas automatiquement une culture. Celle-ci nécessite l'enregistrement d'une intervention d'implantation de culture sur une parcelle &#40;une intervention de semis est expliquée à la fin de ce chapitre&#41;.
+            Notez que le fait de créer une production ne génère pas automatiquement une culture. Celle-ci nécessite l'enregistrement d'une intervention d'implantation de culture sur une parcelle ou une partie de parcelle &#40;une intervention de semis est expliquée à la fin de ce chapitre&#41;.
          </p>
       </div>
    </div>
@@ -311,17 +311,17 @@
          <img src="../images/chapitre8/assolement5.png" class="contour-img" alt="Affichage de la nouvelle activité">
       </p>
    </div>
-   <h2 class="texte aerateur">c - Introduction à la création d'interventions</h2>
+   <h2 class="texte aerateur">c - Introduction à la saisie d'interventions</h2>
    <p class="texte">Maintenant que la parcelle est créée, des interventions peuvent être réalisées sur celle-ci &#40;labour, fertilisation, semis, pulvérisation, récolte, etc&#41;.</p>
-   <p class="texte">Les interventions sont classées par type dans l'application et sont enregistrées chronologiquement pour chaque parcelle.</p>
+   <p class="texte">Les interventions sont classées par famille dans l'application &#40;"Entretien des cultures", "Implantation des cultures", "Protection des cultures", Récolte", Travail du sol" etc&#41; et sont enregistrées chronologiquement pour chaque parcelle.</p>
    <div class="warn-fond aerateur-haut aerateur-bas">
       <div class="floating-box-warn">
          <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
       </div>
       <div class="info-txt">
-         <span class="titre-advice">Implantation de culture<br></span>
+         <span class="titre-advice">Stocks et interventions<br></span>
          <p class="texte-advice">
-            Cette section du chapitre implique que vous ayez préalablement procédé <strong>au moins une fois</strong> à la réception d'un colis avec la semence à implanter &#40;voir <a href="../chapitre6" class="avoid-clicks" target="_self">chapitre 6 - Stock &amp; Personnel</a>&#41;. Si la quantité utilisée pour réaliser l'intervention de semis sur la parcelle est insuffisante, son stock passera en négatif. À charge pour vous de régulariser l'approvisionnement afin d'éviter une aberration comptable.
+            Pour les interventions avec intrants, vous devez préalablement avoir procédé <strong>au moins une fois</strong> au stockage du produit utilisé &#40;voir <a href="../chapitre6" class="avoid-clicks" target="_self">chapitre 6 - Stock &amp; Personnel</a>&#41; avec la réception d'un colis entrant. Si la quantité utilisée pour réaliser l'intervention est insuffisante, son stock passera en négatif. À charge pour vous de régulariser l'approvisionnement afin d'éviter une aberration comptable.
          </p>
       </div>
    </div>
@@ -359,32 +359,65 @@
          <img src="../images/chapitre8/intervention2.png" class="contour-img" alt="Écran d'accueil des interventions">
       </p>
    </div>
-   <br>
+   <div class="warn-fond aerateur-haut aerateur-bas">
+      <div class="floating-box-warn">
+         <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
+      </div>
+      <div class="info-txt">
+         <span class="titre-advice">Intervention sur une partie de parcelle<br></span>
+         <p class="texte-advice">
+            Pour saisir une intervention sur une partie de parcelle, vous devez disposer de la carte et des outils de dessin - les mêmes que ceux employés dans le <a href="../chapitre4" class="avoid-clicks" target="_self">chapitre 4 - &#40;Exploitation&#41;</a> - vous permettant de délimiter la zone travaillée. Activez l'affichage de la carte avec la case à cocher<img src="../images/commun/check-square.svg" alt="case cochée" height="20" class="align-icone icone-marge-gauche icone-marge-droite">en bas à droite de la fenêtre principale.
+         </p>
+		 <p align="center"><img class="contour-img aerateur-glossaire" src="../images/chapitre8/carte.png" alt="Afficher le carte"/></p>
+      </div>
+   </div>
    <div class="floating-box process">
       <img src="../images/commun/step3.svg" alt="3" width="52">
    </div>
    <div class="process-txt">
       <span class="titre-advice">Renseignez l'intervention</span>
       <p>
-         Sélectionnez la parcelle dans la liste et remplissez tous les champs signalés par une astérisque de couleur rouge avec les informations requises pour la définir correctement.
+         Sélectionnez la parcelle dans la liste et remplissez tous les champs signalés par une astérisque de couleur rouge avec les informations requises pour la définir correctement &#40;quel que soit l'unité choisie pour les quantités d'intrants utilisées, l'application les convertit automatiquement dans les autres unités&#41;.
       </p>
       <p class="max-img-process">
          <img src="../images/chapitre8/intervention3.png" class="contour-img" alt="Saisie des informations de l'intervention">
       </p>
    </div>
-   <br>
+   <div class="warn-fond aerateur-haut aerateur-bas">
+      <div class="floating-box-warn">
+         <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
+      </div>
+      <div class="info-txt">
+         <span class="titre-advice">Période&#40;s&#41; de travail<br></span>
+         <p class="texte-advice">
+            Pour une traçabilité précise des coûts de l'intervention &#40;main d'œuvre et équipement&#41;, soyez rigoureux·euse quant aux périodes de travail : n'hésitez-pas à scinder la durée d'une intervention en plusieurs périodes si des pauses significatives ont été constatées pour la réaliser ou si l'intervention est étalée sur plusieurs jours.
+         </p>
+		 <p align="center"><img class="contour-img aerateur-glossaire" src="../images/chapitre8/periodes.png" alt="Périodes d'intervention"/></p>
+      </div>
+   </div>
    <div class="floating-box process">
       <img src="../images/commun/step4.svg" alt="4" width="52">
    </div>
    <div class="process-txt">
-      <span class="titre-advice">Enregistrez l'opération</span>
+      <span class="titre-advice">Enregistrez l'intervention</span>
       <p>Répétez l'opération pour chaque intervention de semis à réaliser sur les différentes parcelles.</p>
       <p class="max-img-process">
          <img src="../images/chapitre8/intervention4.png" class="contour-img" alt="Validation de l'intervention">
       </p>
 	  <p>Cliquez sur<span class="btn-blue">Créer</span>pour valider l'opération ou sur<span class="btn-blue">Créer et saisir suivant</span>pour réaliser une nouvelle saisie.</p>
    </div>
-   <br>
+   <div class="info-fond aerateur-haut aerateur-bas">
+      <div class="floating-box-info">
+         <img src="../images/commun/info.svg" width="100" alt="Info"/>
+      </div>
+      <div class="info-txt">
+         <span class="titre-advice">Création des cultures<br></span>
+         <p class="texte-advice">
+            L'intervention de semis sur une parcelle ou une partie de parcelle crée automatiquement une nouvelle culture. Cette surface travaillée devient disponible pour chaque nouvelle intervention durant la campagne en cours et vous permet de travailler culture par culture. La liste des interventions est également automatiquement enrichie &#40;pour l'année civile en cours&#41;.
+         </p>
+         <br><img class="contour-img" src="../images/chapitre8/liste-interventions.png" alt="Liste des interventions">
+      </div>
+   </div>
    <div class="floating-box process">
       <img src="../images/commun/step5.svg" alt="5" width="52">
    </div>
@@ -396,6 +429,18 @@
       <p class="max-img-process">
          <img src="../images/chapitre8/production3.png" class="contour-img" alt="Tableau de bord de la campagne">
       </p>
+   </div>
+   <div class="idea-fond aerateur-haut aerateur-bas">
+      <div class="floating-box-idea">
+         <img src="../images/commun/astuce.svg" width="100" alt="Astuce"/>
+      </div>
+      <div class="info-txt">
+         <span class="titre-advice">Interventions et produits phytosanitaires<br></span>
+         <p class="texte-advice">
+            Pour connaitre le catalogue des produits phytopharmaceutiques et de leurs usages, des matières fertilisantes et des supports de culture autorisés en France, rendez-vous sur le site web de l'ANSES à l'adresse <a href="https://ephy.anses.fr/" class="avoid-clicks" target="_blank">https://ephy.anses.fr/</a>.
+         </p>
+		 <p align="center"><img class="aerateur-glossaire" src="../images/chapitre8/logo-anses.png" alt="ANSES"/></p>
+      </div>
    </div>
    <p class="texte aerateur-haut">
       Passez au chapitre suivant de ce guide.
