@@ -1126,6 +1126,7 @@ a:link, a:visited {
 }
 
 .divTableCellProfil2, .divTableHeadProfil2 {
+	font-size: 12px;
 	height: 30px;
 	border-top-width: 3px;
 	border-top-style: solid;
@@ -1140,13 +1141,14 @@ a:link, a:visited {
 	border-right-style: solid;
 	border-right-color: #ffffff;
 	display: table-cell;
-	padding: 5px 10px;
+	padding: 3px 3px;
 	text-align:center;
 	vertical-align: middle;
 	background-color: #eeeeee;
 }
 
 .divTableCellProfil3, .divTableHeadProfil3 {
+	font-size: 12px;
 	height: 30px;
 	border-top-width: 3px;
 	border-top-style: solid;
@@ -1161,7 +1163,7 @@ a:link, a:visited {
 	border-right-style: solid;
 	border-right-color: #ffffff;
 	display: table-cell;
-	padding: 5px 10px;
+	padding: 3px 3px;
 	text-align:center;
 	vertical-align: middle;
 	background-color: #eeeeee;

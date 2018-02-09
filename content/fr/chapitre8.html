@@ -35,6 +35,14 @@
                Comment enregistrer une intervention sur une parcelle ou une partie de parcelle &#40;implantation de culture&#41;
             </div>
          </div>
+		 <div class="divTableRow">
+            <div class="divTableCellListe">
+               <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
+            </div>
+            <div class="divTableCellListe">
+               Comment intégrer les coûts d'utilisation des équipements dans une intervention
+            </div>
+         </div>
       </div>
    </div>
    <h2 class="texte aerateur">Glossaire du chapitre</h2>
@@ -44,23 +52,23 @@
             <div class="divTableCellGlossaire1" style="width: auto">
                Activité agricole
             </div>
-            <div class="divTableCellGlossaire2" style="width: auto">
+            <div class="divTableCellGlossaire2" style="width: 100%">
                ensemble des productions d'un même type. Une activité est définie par l'espèce produite &#40;animale ou végétale&#41; et peut être ouverte ou fermée d'une campagne à la suivante
             </div>
          </div>
          <div class="divTableRow">
-            <div class="divTableCellGlossaire1" style="width: auto">
+            <div class="divTableCellGlossaire1">
                Assolement
             </div>
-            <div class="divTableCellGlossaire2" style="width: auto">
+            <div class="divTableCellGlossaire2">
                action de diviser les zones cultivables d'une exploitation agricole en plusieurs parties distinctes pour y établir des cultures différentes
             </div>
          </div>
          <div class="divTableRow">
-            <div class="divTableCellGlossaire1" style="width: auto">
+            <div class="divTableCellGlossaire1">
                Campagne
             </div>
-            <div class="divTableCellGlossaire2" style="width: auto">
+            <div class="divTableCellGlossaire2">
                période annuelle &#40;douze mois consécutifs&#41; correspondant à un cycle de production sur l'exploitation agricole. Ce cycle est compris entre le début des semis et la récolte pour les cultures annuelles &#40;les dates de début et de fin ne sont pas imposées par l'application&#41;<p><img src="../images/chapitre8/schema-campagne.svg" alt="Schéma campagne" class="aerateur-glossaire"></p>
             </div>
          </div>
@@ -73,8 +81,9 @@
       b - La production définit l'assolement d'une activité sur tout ou partie d'une zone cultivable &#40;la zone devient alors une parcelle&#41;
    </p>
    <p align="center" class="aerateur-haut aerateur-bas texte">
-      <img src="../images/chapitre8/schema-production.png" alt="Schéma parcelles et cultures">
+      <img src="../images/chapitre8/schema-production.png" alt="Schéma activités et productions">
    </p>
+   <div class="saut-page"></div>
    <div class="warn-fond aerateur-haut aerateur-bas">
       <div class="floating-box-warn">
          <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
@@ -157,11 +166,10 @@
    <div class="process-txt">
       <span class="titre-advice">Créez une nouvelle activité</span>
       <p>Cliquez sur le bouton "Nouvelle activité" et remplissez tous les champs obligatoires signalés par une astérisque de couleur rouge avec les informations requises pour la définir correctement.</p>
-      <p>Cliquez sur<span class="btn-blue">Créer</span>pour valider l'opération.
-      </p>
       <p class="max-img-process">
          <img src="../images/chapitre8/activites2.png" class="contour-img" alt="Nouvelle activités">
       </p>
+	  <p>Cliquez sur<span class="btn-blue">Créer</span>pour valider l'opération.</p>
    </div>
    <div class="warn-fond aerateur-haut aerateur-bas">
       <div class="floating-box-warn">
@@ -312,6 +320,7 @@
    <h2 class="texte aerateur">c - Introduction à la saisie d'interventions</h2>
    <p class="texte">Maintenant que la parcelle est créée, des interventions peuvent être réalisées sur celle-ci &#40;labour, fertilisation, semis, pulvérisation, récolte, etc&#41;.</p>
    <p class="texte">Les interventions sont classées par famille dans l'application &#40;"Entretien des cultures", "Implantation des cultures", "Protection des cultures", Récolte", Travail du sol" etc&#41; et sont enregistrées chronologiquement pour chaque parcelle.</p>
+   <div class="saut-page"></div>
    <div class="warn-fond aerateur-haut aerateur-bas">
       <div class="floating-box-warn">
          <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
@@ -359,7 +368,7 @@
    </div>
    <div class="warn-fond aerateur-haut aerateur-bas">
       <div class="floating-box-warn">
-         <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
+         <img src="../images/commun/info.svg" width="100" alt="Info"/>
       </div>
       <div class="info-txt">
          <span class="titre-advice">Intervention sur une partie de parcelle<br></span>
@@ -393,6 +402,7 @@
 		 <p align="center"><img class="contour-img aerateur-glossaire" src="../images/chapitre8/periodes.png" alt="Périodes d'intervention"/></p>
       </div>
    </div>
+   <div class="saut-page"></div>
    <div class="warn-fond aerateur-haut aerateur-bas">
       <div class="floating-box-warn">
          <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
@@ -472,7 +482,7 @@
     <div class="process-txt">
       <span class="titre-advice">Complétez l'intervention</span>
       <p>
-         En bas de la fenêtre pricipale, cliquez sur "Ajouter un prix catalogue" à droite de l'équipement pour accéder aux "Catalogues de prix".
+         En bas de la fenêtre principale, cliquez sur "Ajouter un prix catalogue" à droite de l'équipement pour accéder aux "Catalogues de prix".
       </p>
       <p class="max-img-process">
          <img src="../images/chapitre8/intervention5.png" class="contour-img" alt="Détail de l'intervention">
@@ -526,7 +536,7 @@
     <div class="process-txt">
       <span class="titre-advice">Retournez dans l'intervention</span>
       <p>
-         La valeur du coût horaire est directement répecutée dans l'intervention. Répétez l'opération pour tous les équipements enregistrés dans celle-ci.
+         La valeur du coût horaire est directement répercutée dans l'intervention. Répétez l'opération pour tous les équipements enregistrés dans celle-ci &#40;sans créer de nouveau catalogue de prix&#41;.
       </p>
       <p class="max-img-process">
          <img src="../images/chapitre8/intervention8.png" class="contour-img" alt="Détail de l'intervention">
@@ -609,6 +619,9 @@
       <p>
          Cochez la case<img src="../images/commun/check-square.svg" alt="case cochée" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à droite de l'intitulé de l'intervention pour faire apparaître les options "Modifier l'état" et "Supprimer". Cliquez sur l'icône<img src="../images/commun/long-arrow-right.svg" alt="Modifier l'état" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour modifier l'état de l'intervention.
       </p>
+	  <p class="max-img-process">
+         <img src="../images/chapitre8/intervention11.png" class="contour-img" alt="Liste des interventions">
+      </p>
       <p class="max-img-process">
          <img src="../images/chapitre8/intervention12.png" class="contour-img" alt="Liste des interventions">
       </p>
@@ -621,7 +634,7 @@
    <div class="process-txt">
       <span class="titre-advice">Affichez les interventions</span>
       <p>
-         L'état de l'intervention est passé en "Validé". Notez que ce changement n'est pas définitif et ne vérouille pas l'intervention.
+         L'état de l'intervention est passé en "Validé". Ce changement n'est pas définitif et ne vérouille pas l'intervention qui reste modifiable le cas échéant.
       </p>
       <p class="max-img-process">
          <img src="../images/chapitre8/intervention13.png" class="contour-img" alt="Liste des interventions">
