@@ -360,7 +360,7 @@
       <div class="info-txt">
          <span class="titre-advice">Lieux de stockage<br></span>
          <p class="texte-advice">
-            La création d'un colis entrant nécessite que vous ayez auparavant défini vos bâtiments/zones de stockage dans l'assistant de démarrage. Vous pouvez toujours dessiner de nouvelles découpes de bâtiment/stockage dans l'application mais il sera beaucoup moins facile de les localiser géographiquement dans la carte.
+            La création d'un colis entrant nécessite que vous ayez auparavant défini vos découpes de bâtiment/stockage dans l'assistant de démarrage. Vous pouvez toujours dessiner de nouvelles découpes de bâtiment/stockage dans l'application mais il sera beaucoup moins facile de les localiser géographiquement dans la carte.
          </p>
       </div>
    </div>
@@ -978,7 +978,17 @@
          <img src="../images/chapitre6/equipements2.png" class="contour-img" alt="Liste des équipements">
       </p>
    </div>
-   <br>
+   <div class="warn-fond aerateur-haut aerateur-bas">
+      <div class="floating-box-warn">
+         <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
+      </div>
+      <div class="info-txt">
+         <span class="titre-advice">Équipements et coûts d'utilisation<br></span>
+         <p class="texte-advice">
+            Si vous souhaitez affecter des coûts d'utilisation différents à des équipements d'un même type dans d'une intervention, comme par exemple 2 tracteurs, prenez soin de créer auparavant une nouvelle variante de l'équipement "Tracteur" pour les différencier. Sinon, le coût d'utilisation d'un des deux tracteurs sera automatiquement récupercuté sur l'autre dans le catalogue de prix.
+         </p>
+      </div>
+   </div>
    <div class="floating-box process">
       <img src="../images/commun/step4.svg" alt="4" width="52">
    </div>
@@ -1018,7 +1028,7 @@
       <p class="max-img-process">
          <img src="../images/chapitre6/personnel1.png" class="contour-img" alt="Tableau de bord de la gestion des relations">
       </p>
-	  <p>La fenêtre principale affiche les derniers tiers créés et un calendrier dont le contenu s'étoffera progressivement avec la saisie des interventions et des ventes.</p>
+	  <p>La fenêtre principale affiche les derniers tiers créés : la ferme &#40;une organisation&#41; et son créateur &#40;un contact&#41;. Notez que le calendrier se rempliera progressivement avec les interventions saisies et les ventes.</p>
    </div>
    <br>
    <div class="floating-box process">
@@ -1037,7 +1047,7 @@
    </div>
    <div class="process-txt">
       <span class="titre-advice">Créez un contact</span>
-      <p>Cliquez sur le bouton "Nouveau contact" ou "Nouvelle organisation" et remplissez tous les champs signalés par une astérisque de couleur rouge avec les informations requises pour le/la définir correctement.</p>
+      <p>Cliquez sur le bouton "Nouveau contact" et remplissez tous les champs signalés par une astérisque de couleur rouge avec les informations requises pour le définir correctement.</p>
       <p class="max-img-process">
          <img src="../images/chapitre6/personnel3.png" class="contour-img" alt="Nouveau contact">
       </p>
@@ -1086,7 +1096,7 @@
    <div class="process-txt">
       <span class="titre-advice">Convertir le contact en équipier</span>
       <p>
-         Cliquez sur le bouton "Ajouter un équipier" et sélectionnez la fonction la plus adéquate dans la liste pour convertir le contact en personnel de la ferme.
+         Cliquez sur le bouton "Ajouter un équipier" et sélectionnez la fonction la plus adéquate dans la liste déroulante pour convertir le contact en personnel de la ferme.
       </p>
       <p class="max-img-process">
          <img src="../images/chapitre6/personnel6.png" class="contour-img" alt="Nouvel équipier">
@@ -1099,29 +1109,9 @@
    <div class="process-txt">
       <span class="titre-advice">Créez l'équipier</span>
       <p>Remplissez tous les champs signalés par une astérisque de couleur rouge avec les informations requises pour le définir correctement. Vous pouvez rattacher l'équipier à sa zone principale de travail dans votre ferme.</p>
-   </div>
-   <div class="info-fond aerateur-haut aerateur-bas">
-      <div class="floating-box-info">
-         <img src="../images/commun/info.svg" width="100" alt="Info"/>
-      </div>
-      <div class="info-txt">
-         <span class="titre-advice">Informations générales<br></span>
-         <p class="texte-advice">
-            Dans les informations générales, choisissez, dans la liste "Personne" le même nom que le nouvel équipier qui est en cours de création sauf si vous avez converti un fournisseur en équipier et que vous souhaitez rattacher plusieurs personnes à celui-ci.
-         </p>
-         <p align="center">
-            <img src="../images/chapitre6/equipier2.png" class="contour-img" alt="Nouvel équipier" style="margin-bottom:-16px">
-         </p>
-      </div>
-   </div>
-   <div class="floating-box process">
-   </div>
-   <div class="process-txt">
-      <p class="max-img-process">
+	  <p>Dans les informations générales, choisissez, dans la liste déroulante "Personne" le même contact que le nouvel équipier qui est en cours de création.</p>
+	  <p class="max-img-process">
          <img src="../images/chapitre6/equipier1.png" class="contour-img" alt="Nouvel équipier">
-      </p>
-      <p>
-         Cliquez sur<span class="btn-blue">Créer</span>pour valider l'opération.
       </p>
    </div>
     <div class="info-fond aerateur-haut">
