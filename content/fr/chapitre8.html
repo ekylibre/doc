@@ -366,7 +366,7 @@
          <img src="../images/chapitre8/intervention2.png" class="contour-img" alt="Écran d'accueil des interventions">
       </p>
    </div>
-   <div class="warn-fond aerateur-haut aerateur-bas">
+   <div class="info-fond aerateur-haut aerateur-bas">
       <div class="floating-box-warn">
          <img src="../images/commun/info.svg" width="100" alt="Info"/>
       </div>
@@ -402,8 +402,7 @@
 		 <p align="center"><img class="contour-img aerateur-glossaire" src="../images/chapitre8/periodes.png" alt="Périodes d'intervention"/></p>
       </div>
    </div>
-   
-   <div class="warn-fond aerateur-haut aerateur-bas">
+   <div class="info-fond aerateur-haut aerateur-bas">
       <div class="floating-box-warn">
          <img src="../images/commun/info.svg" width="100" alt="Info"/>
       </div>
@@ -416,7 +415,7 @@
 		 Le symbole<img src="../images/chapitre8/timer-off.svg" alt="Timer off" height="20" class="align-icone icone-marge-gauche icone-marge-droite">indique un calcul automatique des temps d'intervention des équipiers par rapport aux périodes de travail.
       </div>
    </div>
-   <div class="warn-fond aerateur-haut aerateur-bas">
+   <div class="info-fond aerateur-haut aerateur-bas">
       <div class="floating-box-warn">
          <img src="../images/commun/info.svg" width="100" alt="Info"/>
       </div>
@@ -453,14 +452,14 @@
    <p class="texte">
       Une fois la création de l'intervention terminée, l'application récapitule l'ensemble des informations saisies avec la possibilité de définir les coûts de main d'œuvre et d'utilisation des équipements. Vous pouvez réaliser cette opération à ce moment là et suivre la procédure suivante à partir de l'étape 3 ou bien modifier l'intervention en suivant l'ensemble des étapes.
    </p>
-   <p class="texte">Comme expliqué dans le <a href="../chapitre6" class="avoid-clicks" target="_self">chapitre 6 - Stocks &amp; Personnel</a>, si vous souhaitez affecter des coûts d'utilisation différents à des équipements d'un même type dans d'une intervention, comme par exemple 2 tracteurs, prenez soin de créer auparavant une nouvelle variante de l'équipement "Tracteur" pour les différencier. Sinon, le coût d'utilisation d'un des deux tracteurs sera automatiquement récupercuté sur l'autre dans le catalogue de prix. </p>
+   <p class="texte">Comme expliqué dans le <a href="../chapitre6" class="avoid-clicks" target="_self">chapitre 6 - Stocks &amp; Personnel</a>, si vous souhaitez affecter des coûts d'utilisation différents à des équipements d'un même type dans d'une intervention, comme par exemple 2 tracteurs, prenez soin de créer auparavant une nouvelle variante de l'équipement "Tracteur" pour les différencier. Sinon, le coût d'utilisation d'un des deux tracteurs sera automatiquement répercuté sur l'autre dans le catalogue de prix. </p>
    <p align="center" class="aerateur-haut aerateur-bas texte">
       <img src="../images/chapitre8/schema-couts.svg" alt="Schéma des coûts d'utilisation des équipements" width="500">
    </p>
-   <p align="center" class="texte aerateur procedure">B – Procédure pour associer un coût d'utilisation à un équipement
+   <p align="center" class="texte aerateur procedure">B – Procédure pour définir le coût d'utilisation d'un équipement
    </p>
    <p class="texte">
-      Le processus suivant vous guide pour définir le coût d'utilisation d'un équipement dans une intervention.
+      Le processus suivant vous guide pour attribuer un coût d'utilisation à un équipement dans une intervention.
    </p>
    <div class="floating-box process">
       <img src="../images/commun/step1.svg" alt="1" width="52">
@@ -509,12 +508,12 @@
       <img src="../images/commun/step4.svg" alt="4" width="52">
    </div>
    <div class="process-txt">
-      <span class="titre-advice">Créez un catalogue de prix</span>
+      <span class="titre-advice">Sélectionnez un catalogue de prix</span>
       <p>
-         Sélectionnez "Ajouter un nouvel enregistrement" dans la liste déroulante "Catalogue de prix" pour en créer un nouveau à la volée.
+         Sélectionnez "Coûts d'usage" dans la liste déroulante "Catalogue de prix". La variante est celle qui a été choisie lors de la création de l'équipement et n'est pas modifiable.
       </p>
       <p class="max-img-process">
-         <img src="../images/chapitre8/nouveau-prix1.png" class="contour-img" alt="Catalogue de prix">
+         <img src="../images/chapitre8/nouveau-prix1.png" class="contour-img" alt="Nouveau prix">
       </p>
    </div>
    <br>
@@ -522,12 +521,12 @@
       <img src="../images/commun/step5.svg" alt="5" width="52">
    </div>
    <div class="process-txt">
-      <span class="titre-advice">Définissez le nouveau catalogue de prix</span>
+      <span class="titre-advice">Validez le coût d'utilisation</span>
       <p>
-         Remplissez tous les champs signalés par une astérisque de couleur rouge avec les informations requises pour le définir correctement.
+         Saisissez le coût horaire d'utilisation de l'équipement avec le montant exprimé dans la monnaie choisie &#40;notez que les montants avec des centimes doivent être écrits avec un point et non pas avec une virgule&nbsp;: 17.5 à la place de 17,5&#41;.
       </p>
       <p class="max-img-process">
-         <img src="../images/chapitre8/nouveau-prix2.png" class="contour-img" alt="Catalogue de prix">
+         <img src="../images/chapitre8/nouveau-prix2.png" class="contour-img" alt="Nouveau prix">
       </p>
 	  <p>Cliquez sur<span class="btn-blue">Créer</span>pour valider l'opération.</p>
    </div>
@@ -535,24 +534,10 @@
    <div class="floating-box process">
       <img src="../images/commun/step6.svg" alt="6" width="52">
    </div>
-   <div class="process-txt">
-      <span class="titre-advice">Validez le coût d'utilisation</span>
-      <p>
-         Saisissez le coût horaire d'utilisation de l'équipement avec le montant exprimé dans la monnaie choisie &#40;notez que les montants avec des centimes doivent être saisis avec un point et non pas avec une virgule&nbsp;: 5.5 à la place de 5,5&#41;.
-      </p>
-      <p class="max-img-process">
-         <img src="../images/chapitre8/nouveau-prix3.png" class="contour-img" alt="Catalogue de prix">
-      </p>
-	  <p>Cliquez sur<span class="btn-blue">Créer</span>pour valider l'opération.</p>
-   </div>
-   <br>
-   <div class="floating-box process">
-      <img src="../images/commun/step7.svg" alt="7" width="52">
-   </div>
     <div class="process-txt">
-      <span class="titre-advice">Retournez dans l'intervention</span>
+      <span class="titre-advice">Visualisez l'intervention</span>
       <p>
-         La valeur du coût horaire est directement répercutée dans l'intervention. Répétez l'opération pour tous les équipements enregistrés dans celle-ci &#40;sans créer de nouveau catalogue de prix&#41;.
+         La valeur du coût horaire est directement répercutée dans l'intervention. Répétez l'opération pour tous les équipements enregistrés dans celle-ci. Vous pouvez procéder de la même manière pour les coûts de main d'œuvre.
       </p>
       <p class="max-img-process">
          <img src="../images/chapitre8/intervention8.png" class="contour-img" alt="Détail de l'intervention">
@@ -560,7 +545,7 @@
    </div>
    <br>
    <div class="floating-box process">
-      <img src="../images/commun/step8.svg" alt="8" width="52">
+      <img src="../images/commun/step7.svg" alt="7" width="52">
    </div>
     <div class="process-txt">
       <span class="titre-advice">Affichez l'intervention mise à jour</span>
@@ -606,10 +591,10 @@
       </p>
    </div>
    <p class="texte aerateur">Dans le cadre des demandes d'intervention, il est possible de suivre l'évolution de celles-ci et de modifier leur statut en fonction de l'avancement des travaux.</p>
-   <p align="center" class="texte aerateur procedure">D – Procédure pour modifier l'état d'une intervention
+   <p align="center" class="texte aerateur procedure">D – Procédure pour modifier le statut d'une intervention
    </p>
    <p class="texte">
-      Le processus suivant vous guide pour modifier l'état d'une intervention.
+      Le processus suivant vous guide pour modifier le statut d'une intervention.
    </p>
    <div class="floating-box process">
       <img src="../images/commun/step1.svg" alt="1" width="52">
