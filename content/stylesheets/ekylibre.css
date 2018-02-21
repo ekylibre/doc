@@ -1349,4 +1349,25 @@ img.btn_close {
 .pdf {
 	display: none;
 }
+
+.divTableCell8, .divTableHead8 {
+	height: 0;
+	border-top-width: 3px;
+	border-top-style: solid;
+	border-top-color: #ffffff;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #ffffff;
+	border-left-width: 0;
+	border-left-style: solid;
+	border-left-color: #ffffff;
+	border-right-width: 0;
+	border-right-style: solid;
+	border-right-color: #ffffff;
+	display: table-cell;
+	padding: 0;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #fff;
+}
 }
