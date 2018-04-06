@@ -38,25 +38,25 @@
                Comment vérifier et paramétrer certains éléments de la comptabilité dans l'application
             </div>
          </div>
-		 <!--
+         <!--
+            <div class="divTableRow">
+               <div class="divTableCellListe" style="width: 14px">
+                  <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
+               </div>
+               <div class="divTableCellListe" style="width: auto">
+                  Comment réaliser l'impression et la production de documents conformes aux obligations comptables et fiscales
+               </div>
+            </div>
+            -->
+            <div class="divTableRow">
+               <div class="divTableCellListe" style="width: 14px">
+                  <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
+               </div>
+               <div class="divTableCellListe" style="width: auto">
+                  Comment enregistrer des fichiers à destination de tiers &#40;administration, comptable&#41; et/ou intégrer des données &#40;banque&#41;
+               </div>
+            </div>
          <div class="divTableRow">
-            <div class="divTableCellListe" style="width: 14px">
-               <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
-            </div>
-            <div class="divTableCellListe" style="width: auto">
-               Comment réaliser l'impression et la production de documents conformes aux obligations comptables et fiscales
-            </div>
-         </div>
-         <div class="divTableRow">
-            <div class="divTableCellListe" style="width: 14px">
-               <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
-            </div>
-            <div class="divTableCellListe" style="width: auto">
-               Comment enregistrer des fichiers à destination de tiers &#40;administration, comptable&#41; et/ou intégrer des données &#40;banque&#41;
-            </div>
-         </div>
-         -->
-		 <div class="divTableRow">
             <div class="divTableCellListe" style="width: 14px">
                <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
             </div>
@@ -103,6 +103,7 @@
          </div>
       </div>
    </div>
+   <p class="texte aerateur-bas">Le symbole<img src="../images/commun/option-small.svg" class="align-icone icone-marge-gauche" height="30" alt="Optionnel">dans ce chapitre vous indique une procédure pour utiliser une fonctionnalité avancée dans l'application.</p>
    <p class="texte aerateur-bas">Les dispositions du plan comptable général sont applicables à toute personne physique ou morale soumise à l’obligation légale d’établir des comptes annuels, sous réserve de dispositions spécifiques.<br>Un&#40;e&#41; agriculteur·rice étant de plus en plus amené&#40;e&#41; à réaliser des opérations commerciales, l'application est capable de répondre à ses contraintes et obligations vis à vis de la tenue de la comptabilité.</p>
    <div class="affichage-large"></div>
    <div class="affichage-mobile">
@@ -597,7 +598,7 @@
    <div class="process-txt">
       <span class="titre-advice">Créez un type de vente</span>
       <p>
-         Cliquez sur le bouton “Nouveau” et remplissez tous les champs avec les bonnes informations pour le définir correctement.
+         Cliquez sur le bouton "Nouveau" et remplissez tous les champs avec les bonnes informations pour le définir correctement.
       </p>
       <p>Nommez de façon explicite le nouveau type de vente. Cochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite"> à droite de "Par défaut" si vous estimez que ce type de vente sera le plus fréquemment utilisé lors de la saisie d'une vente &#40;il s'affichera alors en premier dans la liste des types de vente&#41;.</p>
       <p>Notez que le "Délai d'expiration" est la durée de validité d'un "Devis envoyé" &#40;ce délai est fixé à un minimum de 30 jours mais vous pouvez le rallonger&#41;.
@@ -624,6 +625,185 @@
          <img src="../images/chapitre6/type-vente4.png" class="contour-img" alt="Nouveau type de vente" data-action="zoom">
       </p>
    </div>
+   <h2 class="texte aerateur">h - Échanges comptables</h2>
+   <p align="center" class="texte"><img src="../images/commun/option.svg" height="55" alt="Optionnel"></p>
+   <p class="texte">Ekylibre permet d'échanger des données comptables entre l'administrateur de la ferme et son expert comptable ou son centre de gestion en toute sécurité. Vous pouvez exporter et partager vos données sans interrompre votre travail et sans risque d'incohérence. Réciproquement, vous pouvez intégrer les validations ou corrections réalisées par un tiers.</p>
+   <div class="warn-fond aerateur-haut aerateur-bas">
+      <div class="floating-box-warn">
+         <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
+      </div>
+      <div class="info-txt">
+         <span class="titre-advice">Prérequis pour les échanges comptables<br></span>
+         <p class="texte-advice">La réalisation d'échanges comptables implique que vous ayez créé auparavant un comptable et que ayez saisi une adresse email valide pour communiquer automatiquement avec ce tiers. Référez-vous au chapitre suivant <a href="../chapitre7" class="avoid-clicks" target="_self">"Stocks &amp; Personnel"</a> pour connaitre les procédures à suivre concernant ce prérequis.</p>
+      </div>
+   </div>
+   <p align="center" class="texte aerateur procedure">A – Procédure pour paramétrer un nouveau journal
+   </p>
+   <p class="texte">
+      Le processus suivant vous guide pour créer un nouveau journal d'opérations diverses.
+   </p>
+   <div class="floating-box process">
+      <img src="../images/commun/step1.svg" alt="1" width="52">
+   </div>
+   <div class="process-txt">
+      <span class="titre-advice">Accédez aux "Journaux"</span>
+      <p>
+         Cliquez sur le lien "Comptabilité" dans le "Menu principal" ou sur le bouton "Comptabilité" de la page d'accueil&nbsp;:
+      </p>
+      <p align="center"><img src="../images/chapitre6/comptabilite.svg" alt="Comptabilité" width="60"></p>
+      <p>Dans la barre latérale du module, cliquez sur "Journaux" dans la section "Journaux" symbolisée par l'icône d'un livre<img src="../images/chapitre6/book.svg" alt="histogramme" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des journaux.</p>
+      <p class="max-img-process">
+         <img src="../images/chapitre6/journaux1.png" class="contour-img" alt="Liste des journaux" data-action="zoom">
+      </p>
+   </div>
+   <br>
+   <div class="floating-box process">
+      <img src="../images/commun/step2.svg" alt="2" width="52">
+   </div>
+   <div class="process-txt">
+      <span class="titre-advice">Créez un nouveau journal</span>
+      <p>
+         Cliquez sur le bouton "Nouveau" et remplissez tous les champs avec les bonnes informations pour le définir correctement.
+      </p>
+      <p>Nommez de façon explicite le nouveau journal. Vérifiez que le bouton radio<img src="../images/commun/radio.svg" alt="Bouton radio" height="20" class="align-icone icone-marge-gauche icone-marge-droite">est bien activé pour "Opérations diverses".</p>
+      <p>Sélectionnez, parmi les tiers, le comptable préalablement créé.</p>
+      <p class="max-img-process">
+         <img src="../images/chapitre6/journaux2.png" class="contour-img" alt="Nouveau journal" data-action="zoom">
+      </p>
+      <p>Cliquez sur<span class="btn-blue">Créer</span>pour valider l'opération.</p>
+   </div>
+   <br>
+   <div class="floating-box process">
+      <img src="../images/commun/step3.svg" alt="3" width="52">
+   </div>
+   <div class="process-txt">
+      <span class="titre-advice">Affichez le nouveau journal</span>
+      <p>L'application affiche le nouveau journal et la liste des "Journaux" est enrichie automatiquement.</p>
+      <p class="max-img-process">
+         <img src="../images/chapitre6/journaux3.png" class="contour-img" alt="Nouveau journal" data-action="zoom">
+      </p>
+   </div>
+   <p align="center" class="texte aerateur procedure">B – Procédure pour échanger des informations comptables
+   </p>
+   <p class="texte">
+      Le processus suivant vous guide pour échanger des informations comptables.
+   </p>
+   <div class="floating-box process">
+      <img src="../images/commun/step1.svg" alt="1" width="52">
+   </div>
+   <div class="process-txt">
+      <span class="titre-advice">Affichez les exercices comptables</span>
+      <p>Cliquez sur la clef anglaise<img src="../images/chapitre6/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">dans le "Menu principal" ou sur le bouton "Configuration" de la page d'accueil&nbsp;:</p>
+      <p align="center"><img src="../images/chapitre6/wrench.svg" alt="Configuration" width="60"></p>
+      <p>Dans la barre latérale du module, cliquez sur "Exercices comptables" dans la section "Comptabilité" symbolisée par l'icône d'un billet de banque<img src="../images/chapitre6/money.svg" alt="Billet de banque" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher les paramètres de la société.</p>
+      <p class="max-img-process">
+         <img src="../images/chapitre6/echange1.png" class="contour-img" alt="Liste des exercices comptables" data-action="zoom">
+      </p>
+   </div>
+   <br>
+   <div class="floating-box process">
+      <img src="../images/commun/step2.svg" alt="2" width="52">
+   </div>
+   <div class="process-txt">
+      <span class="titre-advice">Sélectionnez un exercice comptable</span>
+      <p>Cliquez sur le "Code" de l'exercice comptable, puis sur le bouton"Modifier".</p>
+      <p class="max-img-process">
+         <img src="../images/chapitre6/echange2.png" class="contour-img" alt="Modification de l'exercice comptable" data-action="zoom">
+      </p>
+   </div>
+   <br>
+   <div class="floating-box process">
+      <img src="../images/commun/step3.svg" alt="3" width="52">
+   </div>
+   <div class="process-txt">
+      <span class="titre-advice">Modifiez l'exercice comptable</span>
+      <p>Sélectionnez, parmi les tiers, le comptable préalablement créé.</p>
+      <p class="max-img-process">
+         <img src="../images/chapitre6/echange3.png" class="contour-img" alt="Affectation d'un comptable" data-action="zoom">
+      </p>
+      <p>Cliquez sur<span class="btn-blue">Modifier</span>pour valider l'opération.</p>
+   </div>
+   <br>
+   <div class="floating-box process">
+      <img src="../images/commun/step4.svg" alt="4" width="52">
+   </div>
+   <div class="process-txt">
+      <span class="titre-advice">Sélectionnez à nouveau l'exercice</span>
+      <p>Cliquez sur le "Code" de l'exercice.</p>
+      <p class="max-img-process">
+         <img src="../images/chapitre6/echange1.png" class="contour-img" alt="Création nouvel échange" data-action="zoom">
+      </p>
+   </div>
+   <br>
+   <div class="floating-box process">
+      <img src="../images/commun/step5.svg" alt="5" width="52">
+   </div>
+   <div class="process-txt">
+      <span class="titre-advice">Créez un nouvel échange</span>
+      <p>Cliquez sur le bouton "Nouvel échange".</p>
+      <p class="max-img-process">
+         <img src="../images/chapitre6/echange4.png" class="contour-img" alt="Création nouvel échange" data-action="zoom">
+      </p>
+   </div>
+   <br>
+   <div class="floating-box process">
+      <img src="../images/commun/step6.svg" alt="6" width="52">
+   </div>
+   <div class="process-txt">
+      <span class="titre-advice">Saisissez une date d'arrêté</span>
+      <p>Saisissez la date déterminant la fin de la période des écritures échangées.</p>
+      <p class="max-img-process">
+         <img src="../images/chapitre6/echange5.png" class="contour-img" alt="Création nouvel échange" data-action="zoom">
+      </p>
+      <p>Cliquez sur<span class="btn-blue">Créer</span>pour valider l'opération.</p>
+   </div>
+   <br>
+   <div class="floating-box process">
+      <img src="../images/commun/step7.svg" alt="7" width="52">
+   </div>
+   <div class="process-txt">
+      <span class="titre-advice">Options d'échanges</span>
+      <p>4 nouveaux liens sont maintenant disponibles dans la section "Échanges" de la fenêtre principale.</p>
+      <p class="max-img-process">
+         <img src="../images/chapitre6/echange6.png" class="contour-img" alt="Création nouvel échange" data-action="zoom">
+      </p>
+      <div class="divTableListe">
+         <div class="divTableBody">
+            <div class="divTableRow">
+               <div class="divTableCellInter" style="width: 30px">
+                  <img src="../images/chapitre6/cog.svg" alt="Export" height="20">
+               </div>
+               <div class="divTableCellInter" style="width: auto">
+                  <p>Le premier lien permet de fabriquer un fichier CSV &#40;zippé&#41; qui s'enregistrera dans le dossier des téléchargements de votre navigateur.</p>
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellInter">
+                  <img src="../images/chapitre6/cog.svg" alt="Import" height="20">
+               </div>
+               <div class="divTableCellInter">
+                  <p>Le deuxième lien permet de parcourir votre disque dur afin de sélectionner un fichier CSV à intégrer.</p>
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellInter">
+                  <img src="../images/chapitre6/cog.svg" alt="Notifier" height="20">
+               </div>
+               <div class="divTableCellInter">
+                  <p>Le troisième lien permet de notifier votre comptable par email qu'un fichier CSV est à sa disposition et qu'il peut le télécharger grâce au lien contenu dans le message.</p>
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellInter">
+                  <img src="../images/chapitre6/lock.svg" alt="Fermer" height="20">
+               </div>
+               <div class="divTableCellInter">
+                  <p>Le quatrième lien permet de fermer l'échange. Notez que la fermeture d'un échange vérouille les écritures comptables concernées par celui-ci. Fermez un échange avant d'en ouvrir un nouveau.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
    <p class="texte" align="center"><img class="chapitre" src="../images/chapitre6/achats.png" alt="Achats"></p>
    <h1 align="center" class="majuscule">Achats</h1>
    <div class="warn-fond aerateur-haut aerateur-bas">
@@ -649,7 +829,7 @@
          Cliquez sur le lien "Ventes/Achats" dans le "Menu principal" ou sur le bouton "Ventes/Achats" de la page d'accueil&nbsp;:
       </p>
       <p align="center"><img src="../images/chapitre6/ventes-achats.svg" alt="Ventes/Achats" width="60"></p>
-	  <p>Le tableau de bord vous permet de connaitre la valeur des ventes et achats impayés ainsi que les encaissements à déposer.</p>
+      <p>Le tableau de bord vous permet de connaitre la valeur des ventes et achats impayés ainsi que les encaissements à déposer.</p>
       <p class="max-img-process">
          <img src="../images/chapitre6/tableau-bord1.png" class="contour-img" alt="Tableau de bord des achats et ventes" data-action="zoom">
       </p>
@@ -873,7 +1053,7 @@
       <p class="max-img-process">
          <img src="../images/chapitre6/decaissement2.png" class="contour-img" alt="Nouveau décaissement" data-action="zoom">
       </p>
-	  <p>Cliquez sur<span class="btn-blue">Créer</span>pour valider l'opération.</p>
+      <p>Cliquez sur<span class="btn-blue">Créer</span>pour valider l'opération.</p>
    </div>
    <br>
    <div class="floating-box process">
@@ -884,7 +1064,7 @@
       <p>L'achat est mise à jour avec le nouveau décaissement qui lui est associé.</p>
       <p class="max-img-process">
          <img src="../images/chapitre6/decaissement3.png" class="contour-img" alt="Détail de l'achat'" data-action="zoom">
-	   </p>
+      </p>
    </div>
    <p align="center" class="texte aerateur procedure">D – Procédure pour réaliser un décaissement par lots
    </p>
@@ -925,7 +1105,7 @@
       <p class="max-img-process">
          <img src="../images/chapitre6/lots2.png" class="contour-img" alt="Création du nouveau lot" data-action="zoom">
       </p>
-	  <p>Cliquez sur<span class="btn-blue">Créer</span>pour valider l'opération.</p>
+      <p>Cliquez sur<span class="btn-blue">Créer</span>pour valider l'opération.</p>
    </div>
    <br>
    <div class="floating-box process">
@@ -937,7 +1117,7 @@
       <p class="max-img-process">
          <img src="../images/chapitre6/lots3.png" class="contour-img" alt="Création du nouveau lot" data-action="zoom">
       </p>
-	  <p>Cliquez sur<span class="btn-blue">Créer</span>pour valider l'opération.</p>
+      <p>Cliquez sur<span class="btn-blue">Créer</span>pour valider l'opération.</p>
    </div>
    <br>
    <div class="floating-box process">
@@ -961,7 +1141,6 @@
          <img src="../images/chapitre6/lots5.png" class="contour-img" alt="Création du nouveau lot" data-action="zoom">
       </p>
    </div>
-	
    <p class="texte" align="center"><img class="chapitre" src="../images/chapitre6/ventes.png" alt="Ventes"></p>
    <h1 align="center" class="majuscule">Ventes</h1>
    <div class="warn-fond aerateur-haut aerateur-bas">
@@ -987,7 +1166,7 @@
          Cliquez sur le lien "Ventes/Achats" dans le "Menu principal" ou sur le bouton "Ventes/Achats" de la page d'accueil&nbsp;:
       </p>
       <p align="center"><img src="../images/chapitre6/ventes-achats.svg" alt="Ventes/Achats" width="60"></p>
-	  <p>Le tableau de bord vous permet de connaitre la valeur des ventes et achats impayés ainsi que les encaissements à déposer.</p>
+      <p>Le tableau de bord vous permet de connaitre la valeur des ventes et achats impayés ainsi que les encaissements à déposer.</p>
       <p class="max-img-process">
          <img src="../images/chapitre6/tableau-bord1.png" class="contour-img" alt="Tableau de bord des achats et ventes" data-action="zoom">
       </p>
@@ -1224,7 +1403,7 @@
       <p class="max-img-process">
          <img src="../images/chapitre6/encaissement2.png" class="contour-img" alt="Nouvel encaissement" data-action="zoom">
       </p>
-	  <p>Cliquez sur<span class="btn-blue">Créer</span>pour valider l'opération.</p>
+      <p>Cliquez sur<span class="btn-blue">Créer</span>pour valider l'opération.</p>
    </div>
    <br>
    <div class="floating-box process">
@@ -1235,7 +1414,7 @@
       <p>La vente est mise à jour avec le nouvel encaissement qui lui est associé.</p>
       <p class="max-img-process">
          <img src="../images/chapitre6/encaissement3.png" class="contour-img" alt="Détail de la vente" data-action="zoom">
-	   </p>
+      </p>
    </div>
    <p class="texte aerateur-haut">
       Passez au chapitre suivant de ce guide.

@@ -157,7 +157,7 @@ span[data-descr]:hover::after {
     margin-left: -100px;
 	top: 20px;
 	width: 200px;
-	border-radius: 5px;
+	border-radius: 10px;
 	background-color: #1195f5;
 	padding: 2px;
 	color: #fff;
@@ -312,7 +312,6 @@ span[data-descr]:hover::after {
 	border: 0;
 	outline: 0;
 	background-color: #333;
-	background-color: #333;
 	border-top-width: 4px;
 	border-top-style: solid;
 	border-top-color: #333;
@@ -345,7 +344,7 @@ span[data-descr]:hover::after {
 	height: 3px;
 	-webkit-transition: all .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
 	transition: all .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
-	background-color: #ddd;
+	background-color: #fff;
 }
 
 .drawer-hamburger-icon:before,
@@ -372,11 +371,13 @@ span[data-descr]:hover::after {
 .drawer-open .drawer-hamburger-icon:before {
 	-webkit-transform: rotate(45deg);
 	transform: rotate(45deg);
+	background-color: #1195f5;
 }
 
 .drawer-open .drawer-hamburger-icon:after {
 	-webkit-transform: rotate(-45deg);
 	transform: rotate(-45deg);
+	background-color: #1195f5;
 }
 
 
