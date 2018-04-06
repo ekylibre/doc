@@ -210,7 +210,9 @@ img, object, embed, video {
 	display: table-cell;
 	text-align: right;
 	margin-right: 20px;
+	margin-top: -13px;
 	white-space: nowrap;
+	font-size: 10px;
 }
 
 .max-img-inline {
@@ -439,7 +441,9 @@ img, object, embed, video {
 	display: table-cell;
 	text-align: right;
 	margin-right: 20px;
+	margin-top: -13px;
 	white-space: nowrap;
+	font-size: 10px;
 }
 
 .max-img-inline {
@@ -678,7 +682,9 @@ img, object, embed, video {
 	display: table-cell;
 	text-align: right;
 	margin-right: 20px;
+	margin-top: -13px;
 	white-space: nowrap;
+	font-size: 10px;
 }
 
 .max-img-inline {
