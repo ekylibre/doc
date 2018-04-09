@@ -92,17 +92,17 @@ h3 {
 
 a {
   text-decoration: none;
-  color: #476ba8;
+  color: #1195f5;
 }
 
 a:hover, a:active {
   text-decoration: underline;
-  color: #476ba8;
+  color: #1195f5;
 }
 
 a:link, a:visited {
   text-decoration: none;
-  color: #476ba8;
+  color: #1195f5;
 }
 
 .icone-info {
@@ -152,12 +152,12 @@ a:link, a:visited {
     margin-right: 4px;
 }
 
-.contour-img {
-	border: 1px solid #cccccc;
+.align-navi {
+	vertical-align: 1px;
 }
 
-.chapitre {
-	margin-top: 65px;
+.contour-img {
+	border: 1px solid #cccccc;
 }
 
 .gris {
