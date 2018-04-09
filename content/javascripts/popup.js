@@ -9,7 +9,7 @@ jQuery(function ($) {
 		//Fade in the Popup and add close button
 		$('#' + popID).fadeIn().css({
 			'width': popWidth
-		}).prepend('<a href="#" class="close"><img src="../images/commun/close-pop-up.svg" width="20" class="btn_close" title="Close Window" alt="Close" /></a>');
+		}).prepend('<a href="#" class="close"><img src="../images/commun/close-pop-up.svg" width="20" class="btn_close" title="Fermer l&#145;annexe" alt="Fermer" /></a>');
 
 		//Define margin for center alignment (vertical + horizontal) - we add 80 to the height/width to accomodate for the padding + border width defined in the css
 		var popMargTop = ($('#' + popID).height() + 50) / 2;
