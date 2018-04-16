@@ -102,6 +102,10 @@ h3 {
 	font-weight:normal;
 }
 
+h6 {
+	visibility: hidden;
+}
+
 .procedure {
   font-size:19px;
   font-weight:normal;
@@ -1486,4 +1490,37 @@ img.zoom-img {
 .zoom-overlay-open .zoom-overlay {
   filter: "alpha(opacity=50)";
   opacity: 0.5;
+}
+
+/* Breadcrumbs */
+.post+aside {
+ display:none
+}
+@media screen and (min-width: 769px) {
+ .post+aside {
+  display: table-cell;
+  position:fixed;
+  width: 468px;
+  left: 50%;
+  margin-left: 234px;
+  top:70px;
+  -webkit-transform:translateX(-100%);
+  transform:translateX(-100%);
+  text-align:center;
+  font-size:11px;
+  color:#000;
+  background-color:#cce1df;
+  text-transform: uppercase;
+  z-index:100;
+ }
+ 
+.post+aside a {
+  position:relative;
+  display:block;
+  overflow:hidden;
+  -webkit-transition:none;
+  transition:none;
+  color:#000;
+  pointer-events: none;
+}
 }
