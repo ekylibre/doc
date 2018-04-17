@@ -1,5 +1,6 @@
-<div class="w3-content">
-	<div id="navigation">
+<div class="w3-content page-content scroll-spy-heading-breadcrumbs">
+   <article class="post">
+      <div id="navigation">
          <div class="divTable">
             <div class="divTableBody">
                <div class="divTableRow">
@@ -9,228 +10,230 @@
                </div>
             </div>
          </div>
-   </div>
-   <div class="image-large">
-      <img class="chapitre" src="../images/chapitre3/parcellaire.png" alt="Parcellaire"/>
-   </div>
-   <div class="image-carre">
-      <img class="chapitre" src="../images/chapitre3/parcellaire-carre.png" alt="Parcellaire" style="width:auto;">
-   </div>
-   <h1 align="center" class="majuscule aerateur">3 - Parcellaire</h1>
-   <div class="gris">
-      <p>
-         <span class="rappel-sommaire">1 - Prérequis<br>
-         2 - Introduction</span><br>
-         3 - Parcellaire<br>
-         <span class="rappel-sommaire">
-         4 - Exploitation<br>
-         5 - L’interface<br>
-         6 - Comptabilité<br>
-         7 - Stock &amp; Personnel<br>
-         8 - Production<br>
-         9 - Accès
-         </span>
-      </p>
-   </div>
-   <div class="config margin-config">
-      <p>
-         <img src="../images/commun/parcours.svg" height="55" alt="Icône parcours"/>
-      </p>
-      <p class="majuscule">
-         configuration à faire pour
-         <img class="align-icone icone-marge-gauche icone-marge-droite" src="../images/commun/tacheE.svg" width="20" alt="E">
-         &amp;
-         <img class="align-icone icone-marge-gauche icone-marge-droite" src="../images/commun/tacheF.svg" width="20" alt="F">
-         végétal
-      </p>
-   </div>
-   <p class="texte aerateur-haut">
-      <strong>Dans ce chapitre vous allez découvrir&nbsp;:</strong>
-   </p>
-   <div class="divTableListe marge">
-      <div class="divTableBody">
-         <div class="divTableRow">
-            <div class="divTableCellListe" style="width: 14px">
-               <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
-            </div>
-            <div class="divTableCellListe" style="width: auto">
-               Comment Ekylibre gère les cultures
-            </div>
-         </div>
-         <div class="divTableRow">
-            <div class="divTableCellListe">
-               <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
-            </div>
-            <div class="divTableCellListe">
-               Comment les configurer dans l'application, si cela est utile pour les tâches que vous envisagez de faire avec Ekylibre
-            </div>
-         </div>
-         <div class="divTableRow">
-            <div class="divTableCellListe">
-               <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
-            </div>
-            <div class="divTableCellListe">
-               Comment récupérer et utiliser le fichier de déclaration TelePAC
-            </div>
-         </div>
       </div>
-   </div>
-   <h2 class="texte aerateur">Glossaire du chapitre</h2>
-   <div class="divTableGlossaire marge">
-      <div class="divTableBody">
-		  <div class="divTableRow">
-            <div class="divTableCellGlossaire1">
-               Activité agricole
-            </div>
-            <div class="divTableCellGlossaire2">
-			   ensemble des productions d'un même type. Une activité est définie par l'espèce produite &#40;animale ou végétale&#41; et peut être ouverte ou fermée d'une campagne à la suivante
-            </div>
-         </div>
-         <div class="divTableRow">
-            <div class="divTableCellGlossaire1" style="width: auto">
-               Parcellaire
-            </div>
-            <div class="divTableCellGlossaire2" style="width: 100%">
-               culture qui se fait par parcelle pour la production agricole
-            </div>
-         </div>
-         <div class="divTableRow">
-            <div class="divTableCellGlossaire1">
-               Production
-            </div>
-            <div class="divTableCellGlossaire2">
-               action d'affecter une activité à une parcelle, à un ensemble de parcelles ou à une découpe de parcelle
-            </div>
-         </div>
-         <div class="divTableRow">
-            <div class="divTableCellGlossaire1">
-               Import
-            </div>
-            <div class="divTableCellGlossaire2">
-               action de transférer dans un logiciel des informations contenues dans un fichier que l'on a sur un disque ou une clé USB
-            </div>
-         </div>
-         <div class="divTableRow">
-            <div class="divTableCellGlossaire1">
-               Export
-            </div>
-            <div class="divTableCellGlossaire2">
-               action de transférer des informations incluses dans un logiciel vers un fichier que l'on récupère sur un disque ou une clé USB
-            </div>
-         </div>
+      <div class="image-large">
+         <img class="chapitre" src="../images/chapitre3/parcellaire.png" alt="Parcellaire"/>
       </div>
-   </div>
-   <h2 class="texte aerateur">a - La gestion des cultures dans Ekylibre</h2>
-   <p class="texte">
-      La gestion de production végétale incluant le suivi des interventions et la traçabilité, nécessite que vous déclariez vos cultures dans l'application.
-   </p>
-   <p class="texte">
-      Sur le plan du parcellaire, Ekylibre est organisé autour de "3 niveaux géographiques"&nbsp;: les zones cultivables, les parcelles qui sont des divisions des zones cultivables et les cultures, elles-mêmes des divisions des parcelles.
-      <br>
-      Notez qu'une culture peut occuper une parcelle complète qui peut elle-même occuper une zone cultivable complète.
-   </p>
-   <p align="center" class="aerateur-haut aerateur-bas texte">
-      <img src="../images/chapitre3/schema.png" alt="Schéma parcelles et cultures">
-   </p>
-   <p class="texte">
-      Si vous êtes un&#40;e&#41; agriculteur·rice français&#40;e&#41; le tableau suivant montre la correspondance des niveaux géographiques entre TelePAC et Ekylibre.
-   </p>
-   <div class="affichage-large"></div>
-   <div class="affichage-mobile">
-      <p align="center">
-         <img src="../images/commun/scroll.svg" alt="Scroll" height="40" class="">
-         <br>
-         Glissez pour parcourir le tableau
-      </p>
-   </div>
-   <a class="slice-long" id="tableau1"></a>
-   <div class="contour-gris texte aerateur-haut">
-      <div class="tableaux">
-         <p align="center" class="titre-advice">
-            Tableau de correspondance TelePAC/Ekylibre
+      <div class="image-carre">
+         <img class="chapitre" src="../images/chapitre3/parcellaire-carre.png" alt="Parcellaire" style="width:auto;">
+      </div>
+      <h1 align="center" class="majuscule aerateur">3 - Parcellaire</h1>
+      <div class="gris">
+         <p>
+            <span class="rappel-sommaire">1 - Prérequis<br>
+            2 - Introduction</span><br>
+            3 - Parcellaire<br>
+            <span class="rappel-sommaire">
+            4 - Exploitation<br>
+            5 - L’interface<br>
+            6 - Comptabilité<br>
+            7 - Stock &amp; Personnel<br>
+            8 - Production<br>
+            9 - Accès
+            </span>
          </p>
       </div>
-      <div class="scroll">
-         <div class="tableau texte-tableau">
-            <div class="divTable">
-               <div class="divTableBody">
-                  <div class="divTableRow">
-                     <div class="divTableCell37" style="width: 50%">
-                        TelePAC
-                     </div>
-                     <div class="divTableCell32" style="width: 50%">
-                        Ekylibre
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCell38">
-                        <p class="titre-advice">
-                           Îlot
-                        </p>
-                     </div>
-                     <div class="divTableCell39">
-                        <p class="titre-advice">
-                           Zone cultivable
-                        </p>
-                     </div>
-                  </div>
+      <div class="config margin-config">
+         <p>
+            <img src="../images/commun/parcours.svg" height="55" alt="Icône parcours"/>
+         </p>
+         <p class="majuscule">
+            configuration à faire pour
+            <img class="align-icone icone-marge-gauche icone-marge-droite" src="../images/commun/tacheE.svg" width="20" alt="E">
+            &amp;
+            <img class="align-icone icone-marge-gauche icone-marge-droite" src="../images/commun/tacheF.svg" width="20" alt="F">
+            végétal
+         </p>
+      </div>
+      <p class="texte aerateur-haut">
+         <strong>Dans ce chapitre vous allez découvrir&nbsp;:</strong>
+      </p>
+      <div class="divTableListe marge">
+         <div class="divTableBody">
+            <div class="divTableRow">
+               <div class="divTableCellListe" style="width: 14px">
+                  <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
+               </div>
+               <div class="divTableCellListe" style="width: auto">
+                  Comment Ekylibre gère les cultures
                </div>
             </div>
-            <div class="divTable">
-               <div class="divTableBody">
-                  <div class="divTableRow">
-                     <div class="divTableCell35" style="width: auto">
-                        Groupe de terres attenantes &#40;parcelles cadastrales&#41;
+            <div class="divTableRow">
+               <div class="divTableCellListe">
+                  <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
+               </div>
+               <div class="divTableCellListe">
+                  Comment les configurer dans l'application, si cela est utile pour les tâches que vous envisagez de faire avec Ekylibre
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellListe">
+                  <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
+               </div>
+               <div class="divTableCellListe">
+                  Comment récupérer et utiliser le fichier de déclaration TelePAC
+               </div>
+            </div>
+         </div>
+      </div>
+      <h2 class="texte aerateur">Glossaire du chapitre</h2>
+      <div class="divTableGlossaire marge">
+         <div class="divTableBody">
+            <div class="divTableRow">
+               <div class="divTableCellGlossaire1">
+                  Activité agricole
+               </div>
+               <div class="divTableCellGlossaire2">
+                  ensemble des productions d'un même type. Une activité est définie par l'espèce produite &#40;animale ou végétale&#41; et peut être ouverte ou fermée d'une campagne à la suivante
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellGlossaire1" style="width: auto">
+                  Parcellaire
+               </div>
+               <div class="divTableCellGlossaire2" style="width: 100%">
+                  culture qui se fait par parcelle pour la production agricole
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellGlossaire1">
+                  Production
+               </div>
+               <div class="divTableCellGlossaire2">
+                  action d'affecter une activité à une parcelle, à un ensemble de parcelles ou à une découpe de parcelle
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellGlossaire1">
+                  Import
+               </div>
+               <div class="divTableCellGlossaire2">
+                  action de transférer dans un logiciel des informations contenues dans un fichier que l'on a sur un disque ou une clé USB
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellGlossaire1">
+                  Export
+               </div>
+               <div class="divTableCellGlossaire2">
+                  action de transférer des informations incluses dans un logiciel vers un fichier que l'on récupère sur un disque ou une clé USB
+               </div>
+            </div>
+         </div>
+      </div>
+	  <h6>Guide de démarrage rapide • Parcellaire • Gestion des cultures</h6>
+      <h2 class="texte aerateur">a - La gestion des cultures dans Ekylibre</h2>
+      <p class="texte">
+         La gestion de production végétale incluant le suivi des interventions et la traçabilité, nécessite que vous déclariez vos cultures dans l'application.
+      </p>
+      <p class="texte">
+         Sur le plan du parcellaire, Ekylibre est organisé autour de "3 niveaux géographiques"&nbsp;: les zones cultivables, les parcelles qui sont des divisions des zones cultivables et les cultures, elles-mêmes des divisions des parcelles.
+         <br>
+         Notez qu'une culture peut occuper une parcelle complète qui peut elle-même occuper une zone cultivable complète.
+      </p>
+      <p align="center" class="aerateur-haut aerateur-bas texte">
+         <img src="../images/chapitre3/schema.png" alt="Schéma parcelles et cultures">
+      </p>
+      <p class="texte">
+         Si vous êtes un&#40;e&#41; agriculteur·rice français&#40;e&#41; le tableau suivant montre la correspondance des niveaux géographiques entre TelePAC et Ekylibre.
+      </p>
+      <div class="affichage-large"></div>
+      <div class="affichage-mobile">
+         <p align="center">
+            <img src="../images/commun/scroll.svg" alt="Scroll" height="40" class="">
+            <br>
+            Glissez pour parcourir le tableau
+         </p>
+      </div>
+      <a class="slice-long" id="tableau1"></a>
+      <div class="contour-gris texte aerateur-haut">
+         <div class="tableaux">
+            <p align="center" class="titre-advice">
+               Tableau de correspondance TelePAC/Ekylibre
+            </p>
+         </div>
+         <div class="scroll">
+            <div class="tableau texte-tableau">
+               <div class="divTable">
+                  <div class="divTableBody">
+                     <div class="divTableRow">
+                        <div class="divTableCell37" style="width: 50%">
+                           TelePAC
+                        </div>
+                        <div class="divTableCell32" style="width: 50%">
+                           Ekylibre
+                        </div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCell38">
+                           <p class="titre-advice">
+                              Îlot
+                           </p>
+                        </div>
+                        <div class="divTableCell39">
+                           <p class="titre-advice">
+                              Zone cultivable
+                           </p>
+                        </div>
                      </div>
                   </div>
                </div>
-            </div>
-            <div class="divTable">
-               <div class="divTableBody">
+               <div class="divTable">
+                  <div class="divTableBody">
+                     <div class="divTableRow">
+                        <div class="divTableCell35" style="width: auto">
+                           Groupe de terres attenantes &#40;parcelles cadastrales&#41;
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="divTable">
+                  <div class="divTableBody">
+                     <div class="divTableRow">
+                        <div class="divTableCell38" style="width: auto">
+                           <p class="titre-advice">
+                              Parcelle
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="divTable">
+                  <div class="divTableBody">
+                     <div class="divTableRow">
+                        <div class="divTableCell35" style="width: 50%">
+                           Surface couverte par une même culture de caractéristique identique &#40;exemple&nbsp;: maïs bio&#41;
+                        </div>
+                        <div class="divTableCell35" style="width: 50%">
+                           Surface de travail qui portera une ou plusieurs cultures différentes.
+                        </div>
+                     </div>
+                  </div>
                   <div class="divTableRow">
-                     <div class="divTableCell38" style="width: auto">
+                     <div class="divTableCell31">
+                        &nbsp;
+                     </div>
+                     <div class="divTableCell40">
                         <p class="titre-advice">
-                           Parcelle
+                           Culture
                         </p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="divTable">
-               <div class="divTableBody">
-                  <div class="divTableRow">
-                     <div class="divTableCell35" style="width: 50%">
-                        Surface couverte par une même culture de caractéristique identique &#40;exemple&nbsp;: maïs bio&#41;
-                     </div>
-                     <div class="divTableCell35" style="width: 50%">
-                        Surface de travail qui portera une ou plusieurs cultures différentes.
-                     </div>
-                  </div>
-               </div>
-               <div class="divTableRow">
-                  <div class="divTableCell31">
-                     &nbsp;
-                  </div>
-                  <div class="divTableCell40">
-                     <p class="titre-advice">
-                        Culture
-                     </p>
-                     <div class="divTable">
-                        <div class="divTableBody">
-                           <div class="divTableRow">
-                              <div class="divTableCellListe" style="width: 10px">
-                                 <img src="../images/commun/circle.svg" alt="Puce" height="15">
+                        <div class="divTable">
+                           <div class="divTableBody">
+                              <div class="divTableRow">
+                                 <div class="divTableCellListe" style="width: 10px">
+                                    <img src="../images/commun/circle.svg" alt="Puce" height="15">
+                                 </div>
+                                 <div class="divTableCellListe" style="width: auto">
+                                    Tout ou partie d'une parcelle d'Ekylibre qui permet, une fois subdivisée, de cultiver des variétés différentes d'une même espèce &#40;exemple&nbsp;: variétés de blé Apache et Aztec&#41;.
+                                 </div>
                               </div>
-                              <div class="divTableCellListe" style="width: auto">
-                                 Tout ou partie d'une parcelle d'Ekylibre qui permet, une fois subdivisée, de cultiver des variétés différentes d'une même espèce &#40;exemple&nbsp;: variétés de blé Apache et Aztec&#41;.
-                              </div>
-                           </div>
-                           <div class="divTableRow">
-                              <div class="divTableCellListe">
-                                 <img src="../images/commun/circle.svg" alt="Puce" height="15">
-                              </div>
-                              <div class="divTableCellListe">
-                                 Surface couverte par une même culture de caractéristique identique &#40;exemple&nbsp;: maïs bio&#41; Équivalent de la parcelle TelePAC
+                              <div class="divTableRow">
+                                 <div class="divTableCellListe">
+                                    <img src="../images/commun/circle.svg" alt="Puce" height="15">
+                                 </div>
+                                 <div class="divTableCellListe">
+                                    Surface couverte par une même culture de caractéristique identique &#40;exemple&nbsp;: maïs bio&#41; Équivalent de la parcelle TelePAC
+                                 </div>
                               </div>
                            </div>
                         </div>
@@ -240,371 +243,374 @@
             </div>
          </div>
       </div>
-   </div>
-   <p class="texte">
-      Tableau 1
-   </p>
-   <a class="slice-short" id="tableau2"></a>
-   <h2 class="texte aerateur">b - Trois manières de créer les zones cultivables</h2>
-   <p class="texte">
-      La création des zones cultivables peut être faite de 3 manières dans Ekylibre.
-   </p>
-   <a class="slice-long" id="Méthodes"></a>
-   <div class="affichage-large"></div>
-   <div class="affichage-mobile">
-      <p align="center">
-         <img src="../images/commun/scroll.svg" alt="Scroll" height="40" class="">
-         <br>
-         Glissez pour parcourir le tableau
+      <p class="texte">
+         Tableau 1
       </p>
-   </div>
-   <div class="saut-page"></div>
-   <div class="contour-gris texte aerateur-haut" id="tableau2">
-      <div class="tableaux">
-         <p align="center" class="texte titre-advice">
-            Méthodes de création des zones cultivables
+      <a class="slice-short" id="tableau2"></a>
+      <h2 class="texte aerateur">b - Trois manières de créer les zones cultivables</h2>
+      <p class="texte">
+         La création des zones cultivables peut être faite de 3 manières dans Ekylibre.
+      </p>
+      <a class="slice-long" id="Méthodes"></a>
+      <div class="affichage-large"></div>
+      <div class="affichage-mobile">
+         <p align="center">
+            <img src="../images/commun/scroll.svg" alt="Scroll" height="40" class="">
+            <br>
+            Glissez pour parcourir le tableau
          </p>
       </div>
-      <div class="scroll">
-         <div class="tableau texte-tableau">
-            <div class="divTable">
-               <div class="divTableBody">
-                  <div class="divTableRow">
-                     <div class="divTableCell33" style="width: 50%">
-                        <p>
-                           Utilisation d'un fichier de déclaration TelePAC
-                        </p>
-                        <img src="../images/chapitre3/methode1.png" alt="Import déclaration TelePAC" width="320">
+      <div class="saut-page"></div>
+      <div class="contour-gris texte aerateur-haut">
+         <div class="tableaux">
+            <p align="center" class="texte titre-advice">
+               Méthodes de création des zones cultivables
+            </p>
+         </div>
+         <div class="scroll">
+            <div class="tableau texte-tableau">
+               <div class="divTable">
+                  <div class="divTableBody">
+                     <div class="divTableRow">
+                        <div class="divTableCell33" style="width: 50%">
+                           <p>
+                              Utilisation d'un fichier de déclaration TelePAC
+                           </p>
+                           <img src="../images/chapitre3/methode1.png" alt="Import déclaration TelePAC" width="320">
+                        </div>
+                        <div class="divTableCell34" style="width: 50%">
+                           <p>
+                              Si vous êtes un&#40;e&#41; agriculteur·rice français&#40;e&#41;, c'est la méthode la plus simple. Elle permet d'intégrer directement vos zones cultivables et vos activités agricoles. Si toutes vos activités agricoles ne sont pas déclarées à la PAC vous pourrez les ajouter par l'une des deux autres méthodes. L'opération se fait généralement dans l'assistant de démarrage mais peut se faire après.
+                           </p>
+                        </div>
                      </div>
-                     <div class="divTableCell34" style="width: 50%">
-                        <p>
-                           Si vous êtes un&#40;e&#41; agriculteur·rice français&#40;e&#41;, c'est la méthode la plus simple. Elle permet d'intégrer directement vos zones cultivables et vos activités agricoles. Si toutes vos activités agricoles ne sont pas déclarées à la PAC vous pourrez les ajouter par l'une des deux autres méthodes. L'opération se fait généralement dans l'assistant de démarrage mais peut se faire après.
-                        </p>
+                     <div class="divTableRow">
+                        <div class="divTableCell33">
+                           <p>
+                              Dessin des zones à la main
+                           </p>
+                           <img src="../images/chapitre3/methode2.png" alt="Dessin des zones à la main" width="320">
+                        </div>
+                        <div class="divTableCell34">
+                           <p>
+                              Ekylibre offre un outil de dessin de zones géographiques dans les cartes permettant de dessiner directement en se repérant sur le fond de carte &#40;routier, satellitaire…&#41;. Plusieurs fonds sont à disposition pour faciliter ce repérage.
+                           </p>
+                        </div>
                      </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCell33">
-                        <p>
-                           Dessin des zones à la main
-                        </p>
-                        <img src="../images/chapitre3/methode2.png" alt="Dessin des zones à la main" width="320">
-                     </div>
-                     <div class="divTableCell34">
-                        <p>
-                           Ekylibre offre un outil de dessin de zones géographiques dans les cartes permettant de dessiner directement en se repérant sur le fond de carte &#40;routier, satellitaire…&#41;. Plusieurs fonds sont à disposition pour faciliter ce repérage.
-                        </p>
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCell33">
-                        <p>
-                           Utilisation d'un fichier géographique
-                        </p>
-                        <img src="../images/chapitre3/methode3.png" alt="Importation fichier géographique" width="320">
-                     </div>
-                     <div class="divTableCell34">
-                        <p>
-                           Ekylibre supporte les fichiers géographiques aux formats les plus classiques tels que Universel &#40;.gml&#41;, GeoJSON &#40;.json&#41; ou Google Earth &#40;.kml&#41;.
-                        </p>
+                     <div class="divTableRow">
+                        <div class="divTableCell33">
+                           <p>
+                              Utilisation d'un fichier géographique
+                           </p>
+                           <img src="../images/chapitre3/methode3.png" alt="Importation fichier géographique" width="320">
+                        </div>
+                        <div class="divTableCell34">
+                           <p>
+                              Ekylibre supporte les fichiers géographiques aux formats les plus classiques tels que Universel &#40;.gml&#41;, GeoJSON &#40;.json&#41; ou Google Earth &#40;.kml&#41;.
+                           </p>
+                        </div>
                      </div>
                   </div>
                </div>
             </div>
          </div>
       </div>
-   </div>
-   <p class="texte">
-      Tableau 2
-   </p>
-   <p class="texte">
-      Si vous ne déclarez pas à la PAC, passez directement à la 
-      <a href="#section-d" class="avoid-clicks">section d.</a>
-   </p>
-   <h2 class="texte aerateur">c - Utilisation d'un fichier TelePAC</h2>
-   <p class="texte"> Vous devez disposer du fichier TelePAC au format XML &#40;un format de fichier de données&#41;. Ekylibre ne récupère dans l'intégration du fichier TelePAC que vos surfaces agricoles ainsi que vos activités déclarées à la PAC.</p>
-   <p class="texte">Notez que ce service n’est disponible que pour les exploitations situées en France.</p>
-   <div class="info-fond aerateur-haut aerateur-bas">
-      <div class="floating-box-info">
-         <img src="../images/commun/info.svg" width="100" alt="Info"/>
+      <p class="texte">
+         Tableau 2
+      </p>
+      <p class="texte">
+         Si vous ne déclarez pas à la PAC, passez directement à la 
+         <a href="#section-d" class="avoid-clicks">section d.</a>
+      </p>
+      <h6>Guide de démarrage rapide • Parcellaire • Récupération TelePAC</h6>
+      <h2 class="texte aerateur">c - Utilisation d'un fichier TelePAC</h2>
+      <p class="texte"> Vous devez disposer du fichier TelePAC au format XML &#40;un format de fichier de données&#41;. Ekylibre ne récupère dans l'intégration du fichier TelePAC que vos surfaces agricoles ainsi que vos activités déclarées à la PAC.</p>
+      <p class="texte">Notez que ce service n’est disponible que pour les exploitations situées en France.</p>
+      <div class="info-fond aerateur-haut aerateur-bas">
+         <div class="floating-box-info">
+            <img src="../images/commun/info.svg" width="100" alt="Info"/>
+         </div>
+         <div class="info-txt">
+            <span class="titre-advice">Pour connaître le format d'un fichier</span>
+            <br>
+            <p class="texte-advice">
+               Sur Linux ou Windows&nbsp;: faites un clic droit sur le fichier et choisissez "Propriétés". Sur Mac, faites un Contrôle-clic sur le fichier et choisissez "Lire les informations".
+            </p>
+            <br>
+            Le format est indiqué tout en haut de la fenêtre d'information qui s'est ouverte.  
+         </div>
       </div>
-      <div class="info-txt">
-         <span class="titre-advice">Pour connaître le format d'un fichier</span>
-         <br>
-         <p class="texte-advice">
-            Sur Linux ou Windows&nbsp;: faites un clic droit sur le fichier et choisissez "Propriétés". Sur Mac, faites un Contrôle-clic sur le fichier et choisissez "Lire les informations".
+      <p class="texte aerateur-bas">
+         Si vous ne disposez pas d'un fichier au format XML ou que votre fichier n'est pas à jour, vous pouvez suivre la procédure suivante pour le récupérer chez TelePAC.
+      </p>
+      <p align="center" class="texte aerateur procedure">A - Procédure de récupération du fichier TelePAC</p>
+      <p class="texte">
+         En suivant les étapes ci-dessous vous serez guidé&#40;e&#41; pour récupérer votre fichier TelePAC au format XML afin d'intégrer vos zones cultivables et vos activités agricoles dans l'application.
+      </p>
+      <div class="info-fond aerateur-haut aerateur-bas">
+         <div class="floating-box-info">
+            <img src="../images/commun/info.svg" width="100" alt="Info"/>
+         </div>
+         <div class="info-txt">
+            <span class="titre-advice">Note pour les utilisateurs d'iPad ou d'iPhone sous iOS 11</span>
+            <br>
+            <p class="texte-advice">
+               Pour une meilleure praticité, téléchargez 
+               <a href="https://itunes.apple.com/fr/app/documents-par-readdle/id364901807?mt=8" title="Documents par Readdle" target="_blank">Documents de l'éditeur Readdle</a> sur l'App Store &#40;gratuit&#41;.
+            </p>
+            <p align="center"><a href="https://itunes.apple.com/fr/app/documents-par-readdle/id364901807?mt=8" title="Documents par Readdle" target="_blank"><img src="../images/chapitre3/apple-appstore-badge-fr.png" width="135" alt="App Store"/></a></p>
+            <p>
+               Lancez l'application et sélectionnez "Navigateur" dans le menu à gauche. Saisissez dans le champ l'adresse TelePAC ci-dessous, puis suivez les étapes de la récupération du fichier. Touchez le lien pour afficher le contenu du fichier XML &#40;une suite de chiffres&#41;.
+            </p>
+            Touchez l'icône de téléchargement en haut à droite de l'écran<img src="../images/chapitre3/download.svg" class="align-icone icone-download" alt="Icône téléchargement" height="15">et sélectionnez "Enregistrer la page" dans "Documents".
+         </div>
+      </div>
+      <div class="info-fond aerateur-haut aerateur-bas">
+         <div class="floating-box-info">
+            <img src="../images/commun/info.svg" width="100" alt="Info"/>
+         </div>
+         <div class="info-txt">
+            <span class="titre-advice">Note pour les utilisateurs de téléphone ou de tablette sous Android</span>
+            <br>
+            <p class="texte-advice">
+               Si vous ne l'avez pas déjà installé, téléchargez le navigateur 
+               <a href="https://play.google.com/store/apps/details?id=com.android.chrome" title="Google Chrome" target="_blank">Google Chrome</a>
+               &#40;gratuit&#41;.
+            </p>
+            <p align="center"><a href="https://play.google.com/store/apps/details?id=com.android.chrome" title="Google Chrome" target="_blank"><img src="../images/chapitre3/google-play-badge-fr.png" width="130" alt="Play Store"/></a></p>
+            Lancez l'application. Saisissez l'adresse TelePAC ci-dessous, puis suivez les étapes de récupération du fichier. Appuyez de manière prolongée sur le lien du fichier XML, puis appuyez sur "Télécharger le lien".
+         </div>
+      </div>
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Rendez-vous sur le site TelePAC</span>
+         <div class="url-bleue">
+            <a href="http://telepac.agriculture.gouv.fr/" title="TelePAC" target="_blank">http://telepac.agriculture.gouv.fr/</a>
+         </div>
+         <p class="max-img-process">
+            <img src="../images/chapitre3/telepac1.png" class="contour-img" alt="TelePAC">
          </p>
-         <br>
-         Le format est indiqué tout en haut de la fenêtre d'information qui s'est ouverte.  
       </div>
-   </div>
-   <p class="texte aerateur-bas">
-      Si vous ne disposez pas d'un fichier au format XML ou que votre fichier n'est pas à jour, vous pouvez suivre la procédure suivante pour le récupérer chez TelePAC.
-   </p>
-   <p align="center" class="texte aerateur procedure">A - Procédure de récupération du fichier TelePAC</p>
-   <p class="texte">
-      En suivant les étapes ci-dessous vous serez guidé&#40;e&#41; pour récupérer votre fichier TelePAC au format XML afin d'intégrer vos zones cultivables et vos activités agricoles dans l'application.
-   </p>
-   <div class="info-fond aerateur-haut aerateur-bas">
-      <div class="floating-box-info">
-         <img src="../images/commun/info.svg" width="100" alt="Info"/>
+      <br>
+      <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52">
       </div>
-      <div class="info-txt">
-         <span class="titre-advice">Note pour les utilisateurs d'iPad ou d'iPhone sous iOS 11</span>
-         <br>
-         <p class="texte-advice">
-            Pour une meilleure praticité, téléchargez 
-            <a href="https://itunes.apple.com/fr/app/documents-par-readdle/id364901807?mt=8" title="Documents par Readdle" target="_blank">Documents de l'éditeur Readdle</a> sur l'App Store &#40;gratuit&#41;.
-         </p>
-		  <p align="center"><a href="https://itunes.apple.com/fr/app/documents-par-readdle/id364901807?mt=8" title="Documents par Readdle" target="_blank"><img src="../images/chapitre3/apple-appstore-badge-fr.png" width="135" alt="App Store"/></a></p>
+      <div class="process-txt">
+         <span class="titre-advice">Connectez-vous</span>
          <p>
-            Lancez l'application et sélectionnez "Navigateur" dans le menu à gauche. Saisissez dans le champ l'adresse TelePAC ci-dessous, puis suivez les étapes de la récupération du fichier. Touchez le lien pour afficher le contenu du fichier XML &#40;une suite de chiffres&#41;.
+            Entrez le numéro Pacage et le mot de passe utilisé au moment de la dernière déclaration.
          </p>
-         Touchez l'icône de téléchargement en haut à droite de l'écran<img src="../images/chapitre3/download.svg" class="align-icone icone-download" alt="Icône téléchargement" height="15">et sélectionnez "Enregistrer la page" dans "Documents".
       </div>
-   </div>
-   <div class="info-fond aerateur-haut aerateur-bas">
-      <div class="floating-box-info">
-         <img src="../images/commun/info.svg" width="100" alt="Info"/>
+      <br>
+      <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52">
       </div>
-      <div class="info-txt">
-         <span class="titre-advice">Note pour les utilisateurs de téléphone ou de tablette sous Android</span>
-         <br>
-         <p class="texte-advice">
-            Si vous ne l'avez pas déjà installé, téléchargez le navigateur 
-            <a href="https://play.google.com/store/apps/details?id=com.android.chrome" title="Google Chrome" target="_blank">Google Chrome</a>
-            &#40;gratuit&#41;.
+      <div class="process-txt">
+         <span class="titre-advice">Allez dans votre dossier PAC</span>
+         <p class="max-img-process">
+            <img src="../images/chapitre3/telepac2.png" class="contour-img" alt="TelePAC">
          </p>
-		 <p align="center"><a href="https://play.google.com/store/apps/details?id=com.android.chrome" title="Google Chrome" target="_blank"><img src="../images/chapitre3/google-play-badge-fr.png" width="130" alt="Play Store"/></a></p>
-         Lancez l'application. Saisissez l'adresse TelePAC ci-dessous, puis suivez les étapes de récupération du fichier. Appuyez de manière prolongée sur le lien du fichier XML, puis appuyez sur "Télécharger le lien".
-      </div>
-   </div>
-   <div class="floating-box process">
-      <img src="../images/commun/step1.svg" alt="1" width="52">
-   </div>
-   <div class="process-txt">
-      <span class="titre-advice">Rendez-vous sur le site TelePAC</span>
-      <div class="url-bleue">
-         <a href="http://telepac.agriculture.gouv.fr/" title="TelePAC" target="_blank">http://telepac.agriculture.gouv.fr/</a>
-      </div>
-      <p class="max-img-process">
-         <img src="../images/chapitre3/telepac1.png" class="contour-img" alt="TelePAC">
-      </p>
-   </div>
-   <br>
-   <div class="floating-box process">
-      <img src="../images/commun/step2.svg" alt="2" width="52">
-   </div>
-   <div class="process-txt">
-      <span class="titre-advice">Connectez-vous</span>
-      <p>
-         Entrez le numéro Pacage et le mot de passe utilisé au moment de la dernière déclaration.
-      </p>
-   </div>
-   <br>
-   <div class="floating-box process">
-      <img src="../images/commun/step3.svg" alt="3" width="52">
-   </div>
-   <div class="process-txt">
-      <span class="titre-advice">Allez dans votre dossier PAC</span>
-      <p class="max-img-process">
-         <img src="../images/chapitre3/telepac2.png" class="contour-img" alt="TelePAC">
-      </p>
-      <p>
-         Dans la liste à gauche cliquez 1&#41; sur "Téléprocédures", puis 2&#41; sur "Dossier PAC 20XX" &#40;année de déclaration&#41;.
-      </p>
-   </div>
-   <div class="floating-box process">
-      <img src="../images/commun/step4.svg" alt="4" width="52">
-   </div>
-   <div class="process-txt">
-      <span class="titre-advice">Allez dans IMPORT/EXPORT</span>
-      <p class="max-img-process">
-         <img src="../images/chapitre3/telepac3.png" class="contour-img" alt="TelePAC">
-      </p>
-      <p>
-         Cliquez sur "IMPORT/EXPORT" dans la barre de menu en haut.
-      </p>
-   </div>
-   <div class="floating-box process">
-      <img src="../images/commun/step5.svg" alt="5" width="52">
-   </div>
-   <div class="process-txt">
-      <span class="titre-advice">Faites l'export TelePAC XML</span>
-      <p class="max-img-process">
-         <img src="../images/chapitre3/telepac4.png" class="contour-img" alt="TelePAC">
-      </p>
-      <p>
-         Cliquez 1&#41; sur "Export dossier complet &#40;XML&#41;" dans la barre en haut, puis 2&#41; sur le texte "Export dossier complet &#40;XML&#41;".
-      </p>
-      <p>
-         Le fichier va venir se placer dans vos téléchargements.
-      </p>
-   </div>
-   <div class="info-fond aerateur-haut aerateur-bas">
-      <div class="floating-box-info">
-         <img src="../images/commun/info.svg" width="100" alt="Info"/>
-      </div>
-      <div class="info-txt">
-         <span class="titre-advice">Récupérer le fichier dans vos téléchargements<br></span>
-         <p span="span" class="texte-advice">
-            Le fichier TelePAC téléchargé se présente sous la forme&nbsp;:
+         <p>
+            Dans la liste à gauche cliquez 1&#41; sur "Téléprocédures", puis 2&#41; sur "Dossier PAC 20XX" &#40;année de déclaration&#41;.
          </p>
-         <br>
-         <strong>
-            <p align="center">Dossier-PAC-20XX_dossier_064123456_20170105134432.xml</p>
-         </strong>
-         <br>
-         Par défaut, il est enregistré dans le dossier des Téléchargements. En fonction de votre système d'exploitation et du navigateur web utilisé, celui-ci a pu être stocké à des endroits différents sur votre disque.
-         <br>
-         <div class="popup-off">
-            <img src="../images/commun/info-outline.svg" alt="Info" height="15" class="icone-info">Consultez l'<a href="../annexes#annexe2" class="avoid-clicks" id="annexe2" target="_blank">annexe 2</a> pour savoir comment le localiser si nécessaire.
+      </div>
+      <div class="floating-box process">
+         <img src="../images/commun/step4.svg" alt="4" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Allez dans IMPORT/EXPORT</span>
+         <p class="max-img-process">
+            <img src="../images/chapitre3/telepac3.png" class="contour-img" alt="TelePAC">
+         </p>
+         <p>
+            Cliquez sur "IMPORT/EXPORT" dans la barre de menu en haut.
+         </p>
+      </div>
+      <div class="floating-box process">
+         <img src="../images/commun/step5.svg" alt="5" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Faites l'export TelePAC XML</span>
+         <p class="max-img-process">
+            <img src="../images/chapitre3/telepac4.png" class="contour-img" alt="TelePAC">
+         </p>
+         <p>
+            Cliquez 1&#41; sur "Export dossier complet &#40;XML&#41;" dans la barre en haut, puis 2&#41; sur le texte "Export dossier complet &#40;XML&#41;".
+         </p>
+         <p>
+            Le fichier va venir se placer dans vos téléchargements.
+         </p>
+      </div>
+      <div class="info-fond aerateur-haut aerateur-bas">
+         <div class="floating-box-info">
+            <img src="../images/commun/info.svg" width="100" alt="Info"/>
          </div>
-         <div class="popup-on">
-            <img src="../images/commun/info-outline.svg" alt="Info" height="15" class="icone-info">Consultez l'<a href="#" data-width="730" data-rel="popup1" class="poplight">annexe 2</a> pour savoir comment le localiser si nécessaire.
+         <div class="info-txt">
+            <span class="titre-advice">Récupérer le fichier dans vos téléchargements<br></span>
+            <p span="span" class="texte-advice">
+               Le fichier TelePAC téléchargé se présente sous la forme&nbsp;:
+            </p>
+            <br>
+            <strong>
+               <p align="center">Dossier-PAC-20XX_dossier_064123456_20170105134432.xml</p>
+            </strong>
+            <br>
+            Par défaut, il est enregistré dans le dossier des Téléchargements. En fonction de votre système d'exploitation et du navigateur web utilisé, celui-ci a pu être stocké à des endroits différents sur votre disque.
+            <br>
+            <div class="popup-off">
+               <img src="../images/commun/info-outline.svg" alt="Info" height="15" class="icone-info">Consultez l'<a href="../annexes#annexe2" class="avoid-clicks" id="annexe2" target="_blank">annexe 2</a> pour savoir comment le localiser si nécessaire.
+            </div>
+            <div class="popup-on">
+               <img src="../images/commun/info-outline.svg" alt="Info" height="15" class="icone-info">Consultez l'<a href="#" data-width="730" data-rel="popup1" class="poplight">annexe 2</a> pour savoir comment le localiser si nécessaire.
+            </div>
          </div>
       </div>
-   </div>
-   <p class="texte aerateur-bas">
-      Si vous disposez d'un fichier TelePAC au format XML vous pouvez suivre la procédure suivante.
-   </p>
-   <p align="center" class="texte aerateur procedure">B - Procédure de configuration des zones de cultures et activités agricoles à partir du fichier de "Déclaration TelePAC"</p>
-   <p class="texte">
-      Votre fichier de déclaration TelePAC contient les zones de culture &#40;îlots TelePAC et activités agricoles&#41; que vous déclarez à TelePAC. La procédure montre comment l'utiliser. Pour les zones ou activités non déclarées à la PAC, reportez-vous au <a href="#tableau2" class="avoid-clicks">tableau 2</a> plus haut.
-   </p>
-   <div class="warn-fond aerateur-haut aerateur-bas">
-      <div class="floating-box-warn">
-         <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
+      <p class="texte aerateur-bas">
+         Si vous disposez d'un fichier TelePAC au format XML vous pouvez suivre la procédure suivante.
+      </p>
+      <h6>Guide de démarrage rapide • Parcellaire • Intégration TelePAC</h6>
+      <p align="center" class="texte aerateur procedure">B - Procédure de configuration des zones de cultures et activités agricoles à partir du fichier de "Déclaration TelePAC"</p>
+      <p class="texte">
+         Votre fichier de déclaration TelePAC contient les zones de culture &#40;îlots TelePAC et activités agricoles&#41; que vous déclarez à TelePAC. La procédure montre comment l'utiliser. Pour les zones ou activités non déclarées à la PAC, reportez-vous au <a href="#tableau2" class="avoid-clicks">tableau 2</a> plus haut.
+      </p>
+      <div class="warn-fond aerateur-haut aerateur-bas">
+         <div class="floating-box-warn">
+            <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
+         </div>
+         <div class="info-txt">
+            <span class="titre-advice">Version du fichier TelePAC<br></span>
+            <p class="texte-advice">
+               La version du fichier XML supportée dans l'assistant de démarrage est celle de 2017. Si vous désirez intégrer les données d'une déclaration antérieure &#40;2015 ou 2016&#41;, vous devez utiliser la fonction "Imports" de l'application.
+            </p>
+         </div>
       </div>
-      <div class="info-txt">
-         <span class="titre-advice">Version du fichier TelePAC<br></span>
-         <p class="texte-advice">
-            La version du fichier XML supportée dans l'assistant de démarrage est celle de 2017. Si vous désirez intégrer les données d'une déclaration antérieure &#40;2015 ou 2016&#41;, vous devez utiliser la fonction "Imports" de l'application.
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Panneau d'Import de la Déclaration TelePAC</span>
+         <p>
+            Si vous êtes toujours sur le panneau "Bienvenue dans l'assistant de Démarrage", cliquez sur<img src="../images/commun/suivant.svg" alt="Suivant" height="25" class="btn-gris">pour arriver au panneau d'import TelePAC.
+         </p>
+         <p class="max-img-process">
+            <img src="../images/chapitre3/import-telepac1.png" class="contour-img" alt="Import déclaration TelePAC">
          </p>
       </div>
-   </div>
-   <div class="floating-box process">
-      <img src="../images/commun/step1.svg" alt="1" width="52">
-   </div>
-   <div class="process-txt">
-      <span class="titre-advice">Panneau d'Import de la Déclaration TelePAC</span>
-      <p>
-         Si vous êtes toujours sur le panneau "Bienvenue dans l'assistant de Démarrage", cliquez sur<img src="../images/commun/suivant.svg" alt="Suivant" height="25" class="btn-gris">pour arriver au panneau d'import TelePAC.
-      </p>
-      <p class="max-img-process">
-         <img src="../images/chapitre3/import-telepac1.png" class="contour-img" alt="Import déclaration TelePAC">
-      </p>
-   </div>
-   <br>
-   <div class="floating-box process">
-      <img src="../images/commun/step2.svg" alt="2" width="52">
-   </div>
-   <div class="process-txt">
-      <span class="titre-advice">Cliquez sur le bouton "Parcourir" pour sélectionner votre fichier TelePAC</span>
-      <p>
-         Sélectionnez le fichier sur votre disque ou clé USB.
-         <br>
-         Dès que vous aurez validé le choix du fichier, l'intégration des informations commencera.
-      </p>
-      <p class="max-img-process">
-         <img src="../images/chapitre3/import-telepac2.png" class="contour-img" alt="Import déclaration TelePAC">
-      </p>
-   </div>
-   <br>
-   <div class="floating-box process">
-      <img src="../images/commun/step3.svg" alt="3" width="52">
-   </div>
-   <div class="process-txt">
-      <span class="titre-advice">Fin de la récupération des informations du fichier TelePAC</span>
-      <p>
-         Une fois la récupération terminée, la carte affiche vos zones cultivables et activités agricoles.
-      </p>
-      <p class="max-img-process">
-         <img src="../images/chapitre3/import-telepac3.png" class="contour-img" alt="Import déclaration TelePAC">
-      </p>
-      <p>
-         Notez que les chiffres dans les pastilles blanches sur la carte indiquent le nombre d'activités agricoles localisées à cet endroit. Si vous zoomez sur la carte, vous pourrez voir le détail de ces zones.
-      </p>
-      <p class="max-img-process">
-         <img src="../images/chapitre3/import-telepac4.png" class="contour-img" alt="Import déclaration TelePAC">
-      </p>
-   </div>
-   <br>
-   <div class="warn-fond">
-      <div class="floating-box-warn">
-         <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
+      <br>
+      <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52">
       </div>
-      <div class="info-txt">
-         <span class="titre-advice">Vérifiez vos zones et activités agricoles<br></span>
-         <p class="texte-advice">
-            Prenez le temps de vérifier que les contours de vos îlots correspondent bien à la réalité du terrain et sont donc conformes à vos attentes.
+      <div class="process-txt">
+         <span class="titre-advice">Cliquez sur le bouton "Parcourir" pour sélectionner votre fichier TelePAC</span>
+         <p>
+            Sélectionnez le fichier sur votre disque ou clé USB.
+            <br>
+            Dès que vous aurez validé le choix du fichier, l'intégration des informations commencera.
          </p>
-         <br>
-         Il est plus facile d'intégrer les bonnes informations maintenant que de devoir les modifier une par une après.
+         <p class="max-img-process">
+            <img src="../images/chapitre3/import-telepac2.png" class="contour-img" alt="Import déclaration TelePAC">
+         </p>
       </div>
-   </div>
-   <div class="floating-box process">
-      <span class="etape"></span>
-   </div>
-   <div class="process-txt">
-      <p>
-         Si vous souhaitez remplacer les informations intégrées par celles d'un autre fichier de déclaration TelePAC vous pouvez le faire en cliquant sur "Remplacer par un autre fichier".
+      <br>
+      <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Fin de la récupération des informations du fichier TelePAC</span>
+         <p>
+            Une fois la récupération terminée, la carte affiche vos zones cultivables et activités agricoles.
+         </p>
+         <p class="max-img-process">
+            <img src="../images/chapitre3/import-telepac3.png" class="contour-img" alt="Import déclaration TelePAC">
+         </p>
+         <p>
+            Notez que les chiffres dans les pastilles blanches sur la carte indiquent le nombre d'activités agricoles localisées à cet endroit. Si vous zoomez sur la carte, vous pourrez voir le détail de ces zones.
+         </p>
+         <p class="max-img-process">
+            <img src="../images/chapitre3/import-telepac4.png" class="contour-img" alt="Import déclaration TelePAC">
+         </p>
+      </div>
+      <br>
+      <div class="warn-fond">
+         <div class="floating-box-warn">
+            <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
+         </div>
+         <div class="info-txt">
+            <span class="titre-advice">Vérifiez vos zones et activités agricoles<br></span>
+            <p class="texte-advice">
+               Prenez le temps de vérifier que les contours de vos îlots correspondent bien à la réalité du terrain et sont donc conformes à vos attentes.
+            </p>
+            <br>
+            Il est plus facile d'intégrer les bonnes informations maintenant que de devoir les modifier une par une après.
+         </div>
+      </div>
+      <div class="floating-box process">
+         <span class="etape"></span>
+      </div>
+      <div class="process-txt">
+         <p>
+            Si vous souhaitez remplacer les informations intégrées par celles d'un autre fichier de déclaration TelePAC vous pouvez le faire en cliquant sur "Remplacer par un autre fichier".
+         </p>
+         <p class="max-img-process">
+            <img src="../images/chapitre3/import-telepac5.png" class="contour-img" alt="Remplacer par un autre fichier">
+         </p>
+      </div>
+      <div class="floating-box process">
+         <img src="../images/commun/step4.svg" alt="4" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Passez au panneau "Activités"</span>
+         <p>
+            Maintenant que vos informations TelePAC sont intégrées dans l'application, vous pouvez passer au panneau "Activités" en cliquant sur "Suivant".
+         </p>
+      </div>
+      <br>
+      <a class="slice-short" id="section-d"></a>
+      <h2 class="texte aerateur">d - Création des zones cultivables sans fichier TelePAC.</h2>
+      <p class="texte">Comme évoqué dans le <a href="#tableau2" class="avoid-clicks">tableau 2</a>, il est possible de créer des zones cultivables et activités agricoles en dessinant ou à l'aide d'un fichier géographique.
       </p>
-      <p class="max-img-process">
-         <img src="../images/chapitre3/import-telepac5.png" class="contour-img" alt="Remplacer par un autre fichier">
+      <p class="texte">
+         Ces opérations se réalisent dans l'étape "Activités" de l'assistant de démarrage.
       </p>
-   </div>
-   <div class="floating-box process">
-      <img src="../images/commun/step4.svg" alt="4" width="52">
-   </div>
-   <div class="process-txt">
-      <span class="titre-advice">Passez au panneau "Activités"</span>
-      <p>
-         Maintenant que vos informations TelePAC sont intégrées dans l'application, vous pouvez passer au panneau "Activités" en cliquant sur "Suivant".
+      <p class="texte">
+         Si vous êtes toujours sur le panneau "Bienvenue dans l'assistant de démarrage", cliquez sur "Suivant" pour arriver au panneau d'import TelePAC puis à nouveau sur "Suivant" pour arriver au panneau "Activités".
       </p>
-   </div>
-   <br>
-   <a class="slice-short" id="section-d"></a>
-   <h2 class="texte aerateur">d - Création des zones cultivables sans fichier TelePAC.</h2>
-   <p class="texte">Comme évoqué dans le <a href="#tableau2" class="avoid-clicks">tableau 2</a>, il est possible de créer des zones cultivables et activités agricoles en dessinant ou à l'aide d'un fichier géographique.
-   </p>
-   <p class="texte">
-      Ces opérations se réalisent dans l'étape "Activités" de l'assistant de démarrage.
-   </p>
-   <p class="texte">
-      Si vous êtes toujours sur le panneau "Bienvenue dans l'assistant de démarrage", cliquez sur "Suivant" pour arriver au panneau d'import TelePAC puis à nouveau sur "Suivant" pour arriver au panneau "Activités".
-   </p>
-   <p class="texte max-img-inline aerateur-bas">
-      <img src="../images/chapitre3/barre-progression.png" class="contour-img" alt="Barre de progression">
-   </p>
-   <p class="texte">
-      Passez au chapitre suivant de ce guide.
-   </p>
-   <div class="navigation aerateur-haut">
-      <div class="divTable">
-         <div class="divTableBody">
-            <div class="divTableRow">
-               <div class="divTableCellCenter" style="width: auto">
-                  &nbsp;
-               </div>
-               <div class="divTableCellRight" style="width: 130px">
-                  <span><a href="../chapitre2" target="_self">INTRODUCTION</a></span>
-               </div>
-               <div class="divTableCellCenter" style="width: 40px">
-                  <a href="../chapitre2" target="_self"><img src="../images/commun/arrow-left.svg" width="40" alt="Introduction"></a>
-               </div>
-               <div class="divTableCellCenter" style="width: 40px">
-                  <a href="../chapitre4" target="_self"><img src="../images/commun/arrow-right.svg" width="40" alt="Exploitation"></a>
-               </div>
-               <div class="divTableCellLeft" style="width: 130px">
-                  <span><a href="../chapitre4" target="_self">EXPLOITATION</a></span>
-               </div>
-               <div class="divTableCellCenter" style="width: auto">
-                  &nbsp;
+      <p class="texte max-img-inline aerateur-bas">
+         <img src="../images/chapitre3/barre-progression.png" class="contour-img" alt="Barre de progression">
+      </p>
+      <p class="texte">
+         Passez au chapitre suivant de ce guide.
+      </p>
+      <div class="navigation aerateur-haut">
+         <div class="divTable">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellCenter" style="width: auto">
+                     &nbsp;
+                  </div>
+                  <div class="divTableCellRight" style="width: 130px">
+                     <span><a href="../chapitre2" target="_self">INTRODUCTION</a></span>
+                  </div>
+                  <div class="divTableCellCenter" style="width: 40px">
+                     <a href="../chapitre2" target="_self"><img src="../images/commun/arrow-left.svg" width="40" alt="Introduction"></a>
+                  </div>
+                  <div class="divTableCellCenter" style="width: 40px">
+                     <a href="../chapitre4" target="_self"><img src="../images/commun/arrow-right.svg" width="40" alt="Exploitation"></a>
+                  </div>
+                  <div class="divTableCellLeft" style="width: 130px">
+                     <span><a href="../chapitre4" target="_self">EXPLOITATION</a></span>
+                  </div>
+                  <div class="divTableCellCenter" style="width: auto">
+                     &nbsp;
+                  </div>
                </div>
             </div>
          </div>
       </div>
-   </div>
+   </article>
+   <aside></aside>
 </div>
 <div id="popup1" class="popup_block">
    <h2 class="info titre-annexe">Annexe 2&nbsp;: localisez votre fichier TelePAC</h2>

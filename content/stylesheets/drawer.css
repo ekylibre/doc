@@ -159,7 +159,8 @@ span[data-descr]:hover::after {
 	width: 550px;
 	padding: 2px;
 	color: #ccc;
-	font-size: 12px;
+	font-size: 10px;
+	text-transform: uppercase;
 	/*z-index: 1;*/
 	-webkit-animation-name: specialFadeIn;
 	animation-name: specialFadeIn;

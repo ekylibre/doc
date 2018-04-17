@@ -22,7 +22,7 @@ function headingBreadcrumbs(article, breadcrumbsContainer, options) {
   }
 
   function scrollTop() {
-    return window.scrollY;
+    return window.scrollY + 50;
   }
 
   function getHeadingsPerLevel() {
