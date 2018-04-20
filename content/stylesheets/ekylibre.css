@@ -1496,7 +1496,7 @@ img.zoom-img {
 .post+aside {
  display:none
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
  .post+aside {
   display: table-cell;
   position:fixed;

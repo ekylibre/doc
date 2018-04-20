@@ -279,7 +279,7 @@ video {
 }
 
 
-/* Disposition tablette : 481px sur 768px. Hérite des styles de : Disposition mobile */
+/* Disposition tablette */
 
 @media only screen and (min-width: 481px) {
 	.avoid-clicks {
@@ -454,9 +454,9 @@ video {
 }
 
 
-/* Disposition bureau : 769px à max. 1232px.  Hérite des styles de : Disposition mobile et disposition tablette */
+/* Disposition bureau */
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
 	#navigation {
 		width: 768px;
 		left: 50%;
