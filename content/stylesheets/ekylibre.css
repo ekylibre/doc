@@ -1262,7 +1262,7 @@ a:link, a:visited {
 
 .divTableCellModif, .divTableHeadModif {
 	display: table-cell;
-	padding: 5px 0 5px 0;
+	padding: 4px 0 4px 0;
 	text-align: left;
 	vertical-align: middle;
 }
