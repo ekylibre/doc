@@ -79,7 +79,7 @@
             </div>
          </div>
       </div>
-      <p class="texte aerateur-bas">Le symbole<img src="../images/commun/option-small.svg" class="align-icone icone-marge-gauche" height="30" alt="Optionnel">dans ce chapitre vous indique un paramétrage avancé lié au niveau de traçabilité souhaité.</p>
+      <p class="texte aerateur-bas">Les symboles<img src="../images/commun/option-small.svg" class="align-icone icone-marge-gauche" height="30" alt="Optionnel">et<img src="../images/commun/expert-small.svg" class="align-icone icone-marge-gauche" height="30" alt="Processus complexe">dans ce chapitre vous indiquent un paramétrage avancé lié au niveau de traçabilité souhaité ou bien une procédure complexe à mettre en œuvre.</p>
       <div class="aerateur-bas">
          <p>&nbsp;</p>
       </div>
@@ -1133,7 +1133,7 @@
          <p>
             Cliquez sur le lien "Tiers" dans le "Menu principal" ou sur le bouton "Tiers" de la page d'accueil&nbsp;:
          </p>
-         <p align="center"><img src="../images/chapitre7/tiers.svg" alt="Configuration" width="60"></p>
+         <p align="center"><img src="../images/chapitre7/tiers.svg" alt="Tiers" width="60"></p>
          <p class="max-img-process">
             <img src="../images/chapitre7/personnel1.png" class="contour-img" alt="Tableau de bord de la gestion des relations" data-action="zoom">
          </p>
@@ -1173,7 +1173,20 @@
          </p>
          <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération ou sur <span class="btn-blue">Créer et saisir suivant</span> pour réaliser une nouvelle saisie.</p>
       </div>
-      <br>
+      <div class="info-fond aerateur-haut aerateur-bas">
+         <div class="floating-box-info">
+            <img src="../images/commun/info.svg" width="100" alt="Info"/>
+         </div>
+         <div class="info-txt">
+            <span class="titre-advice">Comptes client ou fournisseur associé<br></span>
+            <p class="texte-advice">
+               Vous pouvez laisser le champ "Compte client associé" &#40;s'il s'agit de la création d'un nouveau client&#41; ou le champ "Compte client fournisseur" &#40;s'il s'agit de la création d'un nouveau fournisseur&#41; vide car l'application crée un nouveau compte automatiquement dès qu'une vente ou qu'un achat est passé en facture.
+            </p>
+			<p align="center">
+            <img src="../images/chapitre7/compte-client.png" class="contour-img" alt="Compte client associé" width="350">
+         </p><p align="center" style="margin-bottom:0"><img src="../images/chapitre7/compte-fournisseur.png" class="contour-img" alt="Compte fournisseur associé" width="350"></p>
+         </div>
+      </div>
       <div class="floating-box process">
          <img src="../images/commun/step5.svg" alt="5" width="52">
       </div>
@@ -1231,7 +1244,7 @@
          <div class="info-txt">
             <span class="titre-advice">Création d'une nouvelle organisation<br></span>
             <p class="texte-advice">
-               La procédure de création d'une nouvelle organisation est sensiblement la même que pour la création d'un nouveau contact mais avec des champs propres à l'activité professionnelle &#40;numéro Siret, code APE/NAF, numéro de TVA intra-communautaire&#41;. Notez que si vous avez créé un nouvel expéditeur ou un nouveau destinataire à la volée lors de la création d'un colis entrant ou sortant, il est automatiquement devenu une organisation.
+               La procédure de création d'une nouvelle organisation est sensiblement la même que pour la création d'un nouveau contact mais avec des champs propres à l'activité professionnelle &#40;numéro Siret, code APE/NAF, numéro de TVA intra-communautaire&#41;. Notez que lorsque vous créez un nouvel expéditeur ou un nouveau destinataire à la volée lors d'un achat ou d'une vente ou lors de la création d'un colis entrant ou sortant, il est automatiquement enregistré en tant que nouvelle organisation.
             </p>
          </div>
       </div>
@@ -1375,6 +1388,98 @@
          </p>
          <p>Ce schéma récapitule la succession des étapes nécessaires à la création d'un équipier défini à partir d'un nouveau type d'équipier auquel on a attribué un coût horaire. Notez que les procédures doivent être réalisées dans l'ordre indiqué.</p>
          <img src="../images/chapitre7/schema-recap.svg" alt="Schéma récapitulatif de la création d'un équipier">
+      </div>
+	  <p align="center" class="texte aerateur procedure">D – Procédure pour importer des tiers dans l'application</p>
+      <p align="center" class="texte"><img src="../images/commun/expert.svg" height="55" alt="Processus complexe"></p>
+	  <p class="texte">Il est possible d'importer des tiers &#40;personnel, fournisseurs, clients&#41; provenant d'une autre application dans Ekylibre. Cette fonctionnalité nécessite de disposer d'un fichier au format CSV dont la structure doit strictement respecter les préconisations suivantes.</p><p class="texte">Rappel&nbsp;: un fichier CSV est un fichier texte où chaque ligne du texte correspond à une ligne d'un tableau et les virgules correspondent aux séparations entre les colonnes.</p>
+	  <p class="texte">La structure de ce tableau est basée sur 21 colonnes avec les informations classées selon l'ordre suivant&nbsp;:</p>
+	  <p class="texte"><strong>Prénom, Nom, Type, Radical compte client, Radical compte fournisseur, Adresse, Code postal, Ville, Téléphone, Fax, Portable, Lien, Nom de la société, Pays, Adresse email, Actif, Prospect, Transporteur, N° de Siret, TVA, Code APE</strong></p>
+	  <p class="texte">Dans un tableur, la feuille de calcul doit ressembler à cet exemple &#40;le tableau est affiché ici par 2 captures d'écran&#41;&nbsp;:</p>
+	  <p class="texte"><img src="../images/chapitre7/tableau-import1.png" alt="Tableau imports" class="contour-img"></p>
+	  <p class="texte"><img src="../images/chapitre7/tableau-import2.png" alt="Tableau imports" class="contour-img"></p>
+	  <div class="info-fond aerateur-haut aerateur-bas">
+         <div class="floating-box-info">
+            <img src="../images/commun/info.svg" width="100" alt="Info"/>
+         </div>
+         <div class="info-txt">
+            <span class="titre-advice">Type de tiers<br></span>
+            <p class="texte-advice">
+               Dans la colonne Type, spécifiez si le tiers est un contact avec la mention <strong>person</strong> ou une organisation avec la mention <strong>legal_entity</strong>.
+            </p>
+         </div>
+      </div>
+	  <p class="texte">Adaptez les données en votre possession à l'aide d'un éditeur de texte ou d'un tableur comme par exemple Apache OpenOffice, Microsoft Excel ou Numbers. Il n'est pas obligatoire que tous les éléments soient renseignés dans les colonnes mais il est primordial que l'ordre indiqué soit respecté.</p>
+	  <p class="texte">Le processus suivant vous guide pour importer des tiers dans l'application.</p>
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez les "Imports"</span>
+         <p>
+            Cliquez sur le lien "Outils" dans le "Menu principal" ou sur le bouton "Outils" de la page d'accueil&nbsp;:
+         </p>
+         <p align="center"><img src="../images/chapitre7/magic.svg" alt="Outils" width="60"></p>
+         <p>Dans la barre latérale du module, cliquez sur "Imports" dans la section "Échange" symbolisée par l'icône représentant 2 flèches<img src="../images/chapitre7/exchange.svg" alt="Épi" height="20" class="align-icone icone-marge-gauche">.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre7/import1.png" class="contour-img" alt="Liste des imports" data-action="zoom">
+         </p>
+		 <p>Tous les "Imports" déjà réalisés sont listés, notamment ceux issus de l'intégration des données TelePAC.</p>
+      </div>
+      <br>
+      <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Créez un nouvel "Import"</span>
+         <p>Cliquez sur le bouton "Nouveau" puis sélectionnez "Tiers - Ekylibre" dans la liste déroulante des types d'imports disponibles dans l'application.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre7/import2.png" class="contour-img" alt="Sélection du type d'import" data-action="zoom">
+         </p>
+      </div>
+      <br>
+	  <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Sélectionnez le fichier CSV</span>
+         <p>Cliquez sur le bouton "Parcourir" pour sélectionnez le fichier CSV des tiers à importer dans l'application.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre7/import3.png" class="contour-img" alt="Sélection fichier CSV" data-action="zoom">
+         </p>
+		 <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
+      </div>
+      <br>
+	  <div class="floating-box process">
+         <img src="../images/commun/step4.svg" alt="4" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Lancez l'import des tiers</span>
+         <p>Cliquez sur le bouton "Exécuter" pour valider l'import des tiers dans l'application.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre7/import4.png" class="contour-img" alt="Exécution import" data-action="zoom">
+         </p>
+      </div>
+      <br>
+	  <div class="floating-box process">
+         <img src="../images/commun/step5.svg" alt="5" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Patientez quelques instants</span>
+         <p>La barre de progression vous indique l'avancée du transfert des données qui peut prendre plus ou moins de temps en fonction du nombre de tiers à traiter.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre7/import5.png" class="contour-img" alt="Progression import" data-action="zoom">
+         </p>
+      </div>
+      <br>
+	  <div class="floating-box process">
+         <img src="../images/commun/step6.svg" alt="6" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez les notifications</span>
+         <p>La cloche rouge<img src="../images/chapitre5/bell-o-red.svg" alt="cloche rouge" height="20" class="align-icone icone-marge-gauche icone-marge-droite">en haut à gauche de l'interface vous indique qu'une opération interne a été effectuée par l'application. Cliquez sur celle-ci pour afficher la notification, puis cliquez sur le bouton "Tout marquer comme lu" pour la supprimer. Vous pouvez maintenant afficher la liste des tiers pour vérifier et effectuer d'éventuelles modifications.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre7/import6.png" class="contour-img" alt="Affichage notifications" data-action="zoom">
+         </p>
       </div>
       <p class="texte aerateur-haut">
          Passez au chapitre suivant de ce guide.
