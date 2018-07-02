@@ -126,6 +126,11 @@ a:link, a:visited {
   color: #1195f5;
 }
 
+.oleft {
+    margin-left: -25px;
+    margin-bottom: -4px;
+}
+
 .icone-info {
 	margin-right: 5px;
 	vertical-align: 1px;
