@@ -62,6 +62,10 @@ video {
 	margin-top: 88px;
 }
 
+.img-chapitre {
+	margin-top: 87px;
+}
+
 /*Tableau breadcrumb*/
 .divTableCellNavi1, .divTableHeadNavi1 {
 	display: none;
