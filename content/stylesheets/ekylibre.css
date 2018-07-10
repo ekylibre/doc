@@ -44,7 +44,8 @@ a.slice-section {
 /* BackToTop button css */
 #scroll {
     position:fixed;
-    right:150px;
+    left:20px;
+    right: auto;
     bottom:10px;
     cursor:pointer;
     width:30px;
@@ -56,6 +57,14 @@ a.slice-section {
     -moz-border-radius:15px;
     border-radius:15px;
 }
+
+@media only screen and (min-width: 768px) {
+#scroll {
+	left: auto;
+    right:150px;
+}
+}
+
 #scroll span {
     position:absolute;
     top:50%;
