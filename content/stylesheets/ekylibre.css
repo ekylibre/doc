@@ -46,7 +46,7 @@ a.slice-section {
     position:fixed;
     left:20px;
     right: auto;
-    bottom:10px;
+    bottom:20px;
     cursor:pointer;
     width:30px;
     height:30px;
@@ -1537,4 +1537,32 @@ img.zoom-img {
   color:#000;
   pointer-events: none;
 }
+}
+
+.btn_pdf {
+  display:none;
+}
+
+@media only screen and (min-width: 768px) {
+.btn_pdf {
+  display:inline;
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  left: 20px;
+  right: auto;
+  bottom: 12px;
+  background-color: #476ba8;
+  border-radius: 25px;
+  background-image: url("../fr/images/commun/link-pdf.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 30px auto;
+  }
+}
+
+@media print {
+  .btn_pdf {
+  display:none;
+  }
 }
