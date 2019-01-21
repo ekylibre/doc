@@ -91,7 +91,7 @@
 }
 
 .drawer-menu-item:link {
-	font-size: 19px;
+	font-size: 17px;
 	display: block;
 	padding: .60rem;
 	text-decoration: none;
@@ -103,7 +103,7 @@
 }
 
 .drawer-menu-item:visited {
-	font-size: 19px;
+	font-size: 17px;
 	display: block;
 	padding: .60rem;
 	text-decoration: none;
@@ -115,7 +115,7 @@
 }
 
 .drawer-menu-item:focus {
-	font-size: 19px;
+	font-size: 17px;
 	display: block;
 	padding: .60rem;
 	text-decoration: none;
@@ -155,7 +155,7 @@ span[data-descr]:hover::after {
 	position: absolute;
 	left: 50%;
     margin-left: -275px;
-	top: 21px;
+	top: 19px;
 	width: 550px;
 	padding: 2px;
 	color: #ccc;

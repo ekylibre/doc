@@ -41,6 +41,48 @@ a.slice-section {
     visibility: hidden;
 }
 
+a.slice-process {
+    display: block;
+    position: relative;
+    top: -30px;
+    visibility: hidden;
+}
+
+a.slice-import {
+    display: block;
+    position: relative;
+    top: -80px;
+    visibility: hidden;
+}
+
+.download {
+	border: 2px solid #333;
+	border-radius: 10px;
+	padding: 6px;
+	background-color: #eee;
+}
+
+.cadre-dl {
+	max-width: 200px;
+	margin: 0 auto;
+}
+
+.cadre-dl a {
+  text-decoration: none;
+  color: #000;
+}
+
+.cadre-dl a:hover, a:active {
+  text-decoration: underline;
+  color: #000;
+}
+
+.cadre-dl a:link, a:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+
 /* BackToTop button css */
 #scroll {
     position:fixed;
