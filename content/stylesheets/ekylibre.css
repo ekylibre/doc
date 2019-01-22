@@ -360,6 +360,53 @@ a:link, a:visited {
 	display: table-header-group;
 }
 
+/*Tableau Chapitre 11 Variantes d'équipements*/
+
+.divTableEquipment {
+	display: table;
+}
+
+.divTableCellEquipment1, .divTableHeadEquipment1 {
+	display: table-cell;
+	padding: 1px 10px;
+	text-align: left;
+	vertical-align: top;
+	white-space: nowrap;
+	background-color: #dddddd;
+	border-top-width: 3px;
+	border-top-style: solid;
+	border-top-color: #ffffff;
+	border-bottom-width: 0;
+	border-bottom-style: solid;
+	border-bottom-color: #ffffff;
+	border-left-width: 0;
+	border-left-style: solid;
+	border-left-color: #ffffff;
+	border-right-width: 3px;
+	border-right-style: solid;
+	border-right-color: #ffffff;
+}
+
+.divTableCellEquipment2, .divTableHeadEquipment2 {
+	display: table-cell;
+	padding: 1px 10px;
+	text-align: left;
+	vertical-align: top;
+	background-color: #eeeeee;
+	border-top-width: 3px;
+	border-top-style: solid;
+	border-top-color: #ffffff;
+	border-bottom-width: 0;
+	border-bottom-style: solid;
+	border-bottom-color: #ffffff;
+	border-left-width: 0;
+	border-left-style: solid;
+	border-left-color: #ffffff;
+	border-right-width: 0;
+	border-right-style: solid;
+	border-right-color: #ffffff;
+}
+
 /*Tableau Chapitre 9 Roles*/
 
 .divTableCellRole1, .divTableHeadRole1 {
@@ -663,7 +710,7 @@ a:link, a:visited {
 	border-right-color: #ffffff;
 }
 
-/*Tableau Glossaire*/
+/*Tableau Stock*/
 
 .divTableGlossaire {
 	display: table;
