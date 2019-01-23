@@ -364,6 +364,8 @@ a:link, a:visited {
 
 .divTableEquipment {
 	display: table;
+	margin: 0 auto;
+	min-width: 500px;
 }
 
 .divTableCellEquipment1, .divTableHeadEquipment1 {
