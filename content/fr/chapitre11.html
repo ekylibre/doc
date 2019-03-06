@@ -4,16 +4,16 @@
          <div class="divTable">
             <div class="divTableBody">
                <div class="divTableRow">
-                  <div class="divTableCellNavi1"><img src="../images/commun/angle-left.svg" alt="Précédent" height="13" class="align-navi icone-marge-droite"><a href="../chapitre10" title="Accès" target="_self">Accès</a></div>
-                  <div class="divTableCellNavi2">Guide de démarrage • Imports</div>
-                  <div class="divTableCellNavi3"></div>
+                  <div class="divTableCellNavi1"><img src="../images/commun/angle-left.svg" alt="Précédent" height="13" class="align-navi icone-marge-droite"><a href="../chapitre10" title="Production" target="_self">Production</a></div>
+                  <div class="divTableCellNavi2">Guide de démarrage • Accès</div>
+                  <div class="divTableCellNavi3"><a href="../chapitre12" title="Imports" target="_self">Imports</a><img src="../images/commun/angle-right.svg" alt="Suivant" height="13" class="align-navi icone-marge-gauche"></div>
                </div>
             </div>
          </div>
       </div>
-      <div class="image-large"><img class="chapitre" src="../images/chapitre11/imports.png" alt="Imports"/> </div>
-      <div class="image-carre"><img class="chapitre" src="../images/chapitre11/imports-carre.png" alt="Imports" style="width:auto;"></div>
-      <h1 align="center" class="majuscule aerateur">11 - Imports</h1>
+      <div class="image-large"><img class="chapitre" src="../images/chapitre11/acces.png" alt="Accès"/> </div>
+      <div class="image-carre"><img class="chapitre" src="../images/chapitre11/acces-carre.png" alt="Accès" style="width:auto;"></div>
+      <h1 align="center" class="majuscule aerateur">11 - Accès</h1>
       <div class="gris">
          <p><span class="rappel-sommaire">1 - Prérequis<br>
             2 - Introduction<br>
@@ -21,11 +21,12 @@
             4 - Exploitation<br>
             5 - L’interface<br>
             6 - Comptabilité<br>
-            7 - Achats/Ventes<br>
-            8 - Stock &amp; Personnel<br>
-            9 - Production<br>
-            10 - Accès<br></span>
-            11 - Imports
+			7 - Achats<br>
+			8 - Ventes<br>
+            9 - Stock &amp; Personnel<br>
+            10 - Production</span><br>
+            11 - Accès<br>
+            <span class="rappel-sommaire">12 - Imports</span>
          </p>
       </div>
       <p class="texte aerateur-haut">
@@ -37,8 +38,8 @@
                <div class="divTableCellListe" style="width: 14px">
                   <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
                </div>
-               <div class="divTableCellListe">
-                  Comment importer un <a href="#import-plan-de-comptes" class="avoid-clicks">plan de comptes</a>
+               <div class="divTableCellListe" style="width: auto">
+                  Comment créer des utilisateurs et leur attribuer des droits dans l'application
                </div>
             </div>
             <div class="divTableRow">
@@ -46,31 +47,7 @@
                   <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
                </div>
                <div class="divTableCellListe">
-                  Comment importer des <a href="#import-tiers" class="avoid-clicks">tiers</a>
-               </div>
-            </div>
-            <div class="divTableRow">
-               <div class="divTableCellListe">
-                  <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
-               </div>
-               <div class="divTableCellListe">
-                  Comment importer des <a href="#import-variants" class="avoid-clicks">variantes</a>
-               </div>
-            </div>
-            <div class="divTableRow">
-               <div class="divTableCellListe">
-                  <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
-               </div>
-               <div class="divTableCellListe">
-                  Comment importer des <a href="#import-equipments" class="avoid-clicks">équipements</a>
-               </div>
-            </div>
-            <div class="divTableRow">
-               <div class="divTableCellListe">
-                  <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
-               </div>
-               <div class="divTableCellListe">
-                  Comment importer des <a href="#import-batiments" class="avoid-clicks">bâtiments et/ou des aires de stockage</a>
+                  Comment utiliser ou créer des rôles pour des familles d'utilisateurs
                </div>
             </div>
          </div>
@@ -80,283 +57,110 @@
          <div class="divTableBody">
             <div class="divTableRow">
                <div class="divTableCellGlossaire1" style="width: auto">
-                  CSV
+                  Administrateur système
                </div>
                <div class="divTableCellGlossaire2" style="width: 100%">
-                  un fichier CSV est un fichier texte où chaque ligne du texte correspond à une ligne d'un tableau et les virgules &#40;ou les points-virgules&#41; correspondent aux séparations entre les colonnes. Sauf pour les imports provenant d'Exacompta, le séparateur utilisé pour les fichiers importés est la virgule
+                  personne chargée de gérer une ferme dans l'application et qui peut créer des comptes d’utilisateurs
                </div>
             </div>
             <div class="divTableRow">
-               <div class="divTableCellGlossaire1" style="width: auto">
-                  ODS
+               <div class="divTableCellGlossaire1">
+                  Droits
                </div>
-               <div class="divTableCellGlossaire2" style="width: 100%">
-                  un fichier ODS &#40;Open Document Spreadsheet&#41; est un format ouvert de documents pour tableurs qui permet de gérer simultanément plurieurs feuilles de calcul &#40;plusieurs tableaux&#41;
-               </div>
-            </div>
-            <div class="divTableRow">
-               <div class="divTableCellGlossaire1" style="width: auto">
-                  UTF-8
-               </div>
-               <div class="divTableCellGlossaire2" style="width: 100%">
-                  &#40;abréviation de l’anglais Universal Character Set Transformation Format1 - 8 bits&#41; est un codage de caractères informatiques conçu pour coder l’ensemble des caractères du «&nbsp;répertoire universel de caractères codés&nbsp;»
+               <div class="divTableCellGlossaire2">
+                  permissions accordées à un utilisateur pour effectuer des tâches qui requièrent un accès dans l'application
                </div>
             </div>
          </div>
       </div>
-      <h6>Guide de démarrage • Introduction • Importation de fichiers CSV</h6>
-      <h2 class="texte aerateur">a - Importation de fichiers CSV</h2>
+      <h6>Guide de démarrage • Accès • Droits</h6>
       <p class="texte">
-         Lors de l'ouverture des fichiers CSV, veillez à ce que l'encodage sélectionné soit bien défini sur UTF-8 et que le séparateur des colonnes de la feuille de calcul soit la virgule. Prenez également soin de vérifier que le fichier ne comporte pas de caractères spéciaux.
+         Dans le cadre du travail en équipe, que ce soit pour saisir des interventions, des factures, des commandes, vous avez besoin de partager certaines informations de votre ferme Ekylibre avec d'autres personnes &#40;techniciens, ouvriers, commerciaux, etc&#41; qui représentent les utilisateurs.
       </p>
-      <p class="texte" style="text-align: center"><img src="../images/chapitre11/import-csv.png" alt="Tableau imports" class="contour-img"></p>
-      <p align="center" class="texte legende">
-         Ouverture d'un fichier CSV avec «&nbsp;LibreOffice&nbsp;»
+      <p class="texte">
+         Des accès peuvent être accordés par l'administrateur de la ferme à ces utilisateurs qui disposent ainsi de droits de lecture et/ou d'écriture pour tout ou partie des données gérées dans l'application.
       </p>
-      <h2 class="texte aerateur">b - Intégration de données dans Ekylibre</h2>
-      <p class="texte">Afin de permettre l'utilisation de données externes dans Ekylibre et d'éviter une double saisie, un moteur d'échange est disponible vous permettant de réaliser des imports spécifiques aux modules ou aux fonctionnalités de l'application. Les procédures suivantes vous expliquent comment importer différents jeux de données propres à votre ferme.</p>
-      <a class="slice-import" id="import-plan-de-comptes"></a>
-      <h6>Guide de démarrage • Imports • Import d'un plan de comptes</h6>
-      <p align="center" class="texte aerateur-bas procedure">A – Procédure pour importer un plan de comptes</p>
-      <p align="center" class="texte"><img src="../images/commun/expert.svg" height="55" alt="Processus complexe"></p>
-      <p class="texte">Il est possible d'importer un plan de comptes provenant d'une autre application dans Ekylibre. Cette fonctionnalité nécessite de disposer d'un fichier au format CSV codé en UTF-8 et dont la structure doit strictement respecter les préconisations édictées ci-après.</p>
-      <p class="texte">La structure de ce tableau est basée sur 2 colonnes avec les informations classées selon l'ordre suivant &#40;le symbole<img src="../images/chapitre11/asterisk.svg" alt="Astérisque" height="20" class="align-icone icone-marge-gauche icone-marge-droite">indique une donnée obligatoire&#41;&nbsp;:</p>
-      <p class="texte"><strong>Numéro de compte<img src="../images/chapitre11/asterisk.svg" alt="Astérisque" height="20" class="align-icone icone-marge-gauche"><br>Libellé</strong><img src="../images/chapitre11/asterisk.svg" alt="Astérisque" height="20" class="align-icone icone-marge-gauche"></p>
-      <p class="texte">Dans un tableur, la feuille de calcul doit ressembler à cet exemple &#40;un extrait du tableau est affiché ici par 3 captures d'écran&#41;&nbsp;:</p>
-      <p class="texte" style="text-align: center"><img src="../images/chapitre11/tableau-plan1.png" alt="Tableau imports" class="contour-img"></p>
-      <p class="texte" style="text-align: center"><img src="../images/chapitre11/tableau-plan2.png" alt="Tableau imports" class="contour-img"></p>
-      <p class="texte" style="text-align: center"><img src="../images/chapitre11/tableau-plan3.png" alt="Tableau imports" class="contour-img"></p>
-      <p class="texte">Adaptez les données en votre possession à l'aide d'un tableur comme par exemple <a href="https://www.openoffice.org/fr/" target="_blank">Apache OpenOffice</a> ou <a href="https://fr.libreoffice.org/" target="_blank">LibreOffice</a>. Vous pouvez télécharger un modèle en cliquant sur le lien suivant&nbsp;:</p>
-      <div class="cadre-dl">
-         <a href="../imports/accounts.csv" target="_blank">
-            <p class="aerateur-bas download" align="center"><img src="../images/chapitre11/download.svg" alt="Télécharger" height="20" class="align-icone icone-marge-droite">Télécharger un document modèle au format CSV</p>
-         </a>
-      </div>
-      <div class="warn-fond aerateur-haut aerateur-bas saut-page">
-         <div class="floating-box-warn">
-            <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
-         </div>
-         <div class="info-txt">
-            <span class="titre-advice">Attention aux libellés<br></span>
-            <p class="texte-advice">
-               Veillez, pour chaque numéro de compte, à la présence nécessaire d'au moins un caractère dans la colonne des libellés pour ne pas obtenir d'erreur lors de l'import.
-            </p>
-         </div>
-      </div>
-      <p class="texte aerateur-bas">Une fois votre fichier préparé, il est alors possible de réaliser l'intégration des nouvelles données. Le processus suivant vous guide pour importer un plan de comptes dans l'application&nbsp;:</p>
-      <div class="floating-box process">
-         <img src="../images/commun/step1.svg" alt="1" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Affichez les "Imports"</span>
-         <p>
-            Cliquez sur le lien "Outils" dans le "Menu principal" ou sur le bouton "Outils" de la page d'accueil&nbsp;:
-         </p>
-         <p align="center"><img src="../images/chapitre11/magic.svg" alt="Outils" width="60"></p>
-         <p>Dans la barre latérale du module, cliquez sur "Imports" dans la section "Échange" symbolisée par l'icône représentant 2 flèches<img src="../images/chapitre11/exchange.svg" alt="Échange" height="20" class="align-icone icone-marge-gauche">.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre11/import1.png" class="contour-img" alt="Liste des imports" data-action="zoom">
-         </p>
-         <p>Tous les "Imports" déjà réalisés sont listés, notamment ceux issus de l'intégration des données TelePAC dans l'Assistant de démarrage.</p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step2.svg" alt="2" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Créez un nouvel "Import"</span>
-         <p>Cliquez sur le bouton "Nouveau" puis sélectionnez "Plan de comptes - Ekylibre" dans la liste déroulante des types d'imports disponibles dans l'application.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre11/import-plan2.png" class="contour-img" alt="Sélection du type d'import" data-action="zoom">
-         </p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step3.svg" alt="3" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Sélectionnez le fichier CSV</span>
-         <p>Cliquez sur le bouton "Parcourir" pour sélectionner le fichier CSV du plan de comptes à importer dans l'application.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre11/import-plan3.png" class="contour-img" alt="Sélection fichier CSV" data-action="zoom">
-         </p>
-         <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step4.svg" alt="4" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Lancez l'import du plan de comptes</span>
-         <p>Cliquez sur le bouton "Exécuter" pour valider l'import du plan de comptes dans l'application. En cas d'incompatibilité, l'application vous avertit qu'une erreur est survenue.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre11/import-plan4.png" class="contour-img" alt="Exécution import" data-action="zoom">
-         </p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step5.svg" alt="5" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Patientez quelques instants</span>
-         <p>La barre de progression vous indique l'avancée du transfert des données à traiter. Une fois que la barre d'avancement disparaît, rafraîchissez votre navigateur pour afficher la notification.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre11/import-plan5.png" class="contour-img" alt="Progression import" data-action="zoom">
-         </p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step6.svg" alt="6" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Affichez les notifications</span>
-         <p>La cloche rouge<img src="../images/chapitre11/bell-o-red.svg" alt="cloche rouge" height="20" class="align-icone icone-marge-gauche icone-marge-droite">en haut à droite de l'interface vous indique qu'une opération interne a été effectuée par l'application. Cliquez sur celle-ci pour afficher la notification. En cas d'erreur, vous serez informé&#40;e&#41; de la nature de celle-ci. Cliquez sur le bouton "Tout marquer comme lu" pour la supprimer.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre11/import-plan6.png" class="contour-img" alt="Affichage notifications" data-action="zoom">
-         </p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step7.svg" alt="7" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Vérifiez le plan de comptes</span>
-         <p>Affichez le contenu des comptes comptables de votre choix pour vérifier l'intégrité des données importées &#40;procédure décrite dans le <a href="../chapitre6/#plan" target="_self">chapitre 6</a>&#41;.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre11/import-plan7.png" class="contour-img" alt="Affichage plan de comptes" data-action="zoom">
-         </p>
-      </div>
-      <a class="slice-process" id="import-tiers"></a>
-      <h6>Guide de démarrage • Imports • Import de tiers</h6>
-      <p align="center" class="texte aerateur procedure">B – Procédure pour importer des tiers dans l'application</p>
-      <p align="center" class="texte"><img src="../images/commun/expert.svg" height="55" alt="Processus complexe"></p>
-      <p class="texte">Il est possible d'importer des tiers &#40;personnel, fournisseurs, clients&#41; provenant d'un gestionnaire de contacts ou d'une autre application, dans Ekylibre. Cette fonctionnalité nécessite de disposer d'un fichier au format CSV codé en UTF-8 et dont la structure doit strictement respecter les préconisations édictées ci-après.</p>
-      <p class="texte">La structure de ce tableau est basée sur 21 colonnes avec les informations &#40;certaines propres aux entreprises&#41; classées selon l'ordre suivant&nbsp;: &#40;le symbole<img src="../images/chapitre11/asterisk.svg" alt="Astérisque" height="20" class="align-icone icone-marge-gauche icone-marge-droite">indique une donnée obligatoire&#41;.</p>
-      <p class="texte"><strong>Prénom<br>Nom<img src="../images/chapitre11/asterisk.svg" alt="Astérisque" height="20" class="align-icone icone-marge-gauche"><br>Type</strong><img src="../images/chapitre11/asterisk.svg" alt="Astérisque" height="20" class="align-icone icone-marge-gauche icone-marge-droite">&#40;<em>"person"</em> pour qualifier une personne physique ou <em>"legal_entity"</em> pour qualifier une entreprise&#41;<br><strong>Radical compte client</strong> &#40;si l'entité est un client, complétez la colonne avec votre compte radical client. Exemple : <em>"411"</em> ou <em>"431"</em> pour le compte de charges sociales&#41;<br><strong>Radical compte fournisseur</strong> &#40;si l'entité est un fournisseur, complétez la colonne avec votre compte radical fournisseur. Exemple : <em>"401"</em> ou <em>"431"</em> pour le compte de charges sociales&#41;<br><strong>Adresse<br>Code postal<br>Ville<br>Téléphone<br>Fax<br>Portable<br>Nature du lien</strong> &#40;<em>"management"</em> pour qualifier un responsable ou <em>"work"</em> pour qualifier un salarié&#41;<br><strong>Raison sociale</strong> &#40;si un lien est indiqué, il faut impérativement saisir le nom de l'entité avec laquelle la personne est liée&#41;<strong><br>Pays<img src="../images/chapitre11/asterisk.svg" alt="Astérisque" height="20" class="align-icone icone-marge-gauche icone-marge-droite"></strong>&#40;<em>"fr"</em> pour le code par défaut&#41;<br><strong>Adresse email<br>Actif</strong><img src="../images/chapitre11/asterisk.svg" alt="Astérisque" height="20" class="align-icone icone-marge-gauche icone-marge-droite">&#40;<em>"1"</em> pour qualifier un tiers actif&#41;<br><strong>Prospect<br>Transporteur<br>N° de Siret<br>N° de TVA intracommunautaire<br>Code APE</strong></p>
-      <p class="texte">Dans un tableur, la feuille de calcul doit ressembler à cet exemple &#40;le tableau est affiché ici par 2 captures d'écran&#41;&nbsp;:</p>
-      <p class="texte"><img src="../images/chapitre11/tableau-tiers1.png" alt="Tableau imports" class="contour-img" data-action="zoom"></p>
-      <p class="texte"><img src="../images/chapitre11/tableau-tiers2.png" alt="Tableau imports" class="contour-img" data-action="zoom"></p>
-      <div class="warn-fond aerateur-haut aerateur-bas saut-page">
-         <div class="floating-box-warn">
-            <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
-         </div>
-         <div class="info-txt">
-            <span class="titre-advice">Attention à l'adresse postale<br></span>
-            <p class="texte-advice">
-               Veillez à ce que l'adresse postale ne comporte aucune virgule qui pourrait être interprétée comme un séparateur et rendrait les données inutilisables ou provoquerait une erreur lors de l'import. D'une manière générale, aucune virgule ne doit figurer dans les informations du tableau. Pour vous en assurer, vous pouvez effectuer une recherche du caractère "," dans le tableur.
-            </p>
+      <p class="texte aerateur-bas">Par défaut, le gérant de la ferme &#40;l'administrateur système&#41; dispose de tous les droits. </p>
+      <p class="texte">Liste des droits disponibles dans l'application&nbsp;:</p>
+      <div class="divTableListe marge aerateur-bas">
+         <div class="divTableBody">
+            <div class="divTableRow">
+               <div class="divTableCellDroits1" style="width: 95px">
+                  <img src="../images/chapitre11/lire.svg" alt="Lire" height="30">
+               </div>
+               <div class="divTableCellDroits2" style="width: auto">
+                  permet de lire les données affichées dans l'application
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellDroits1">
+                  <img src="../images/chapitre11/ecrire.svg" alt="Écrire" height="30">
+               </div>
+               <div class="divTableCellDroits2">
+                  permet de saisir et d'enregistrer des données dans l'application
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellDroits1">
+                  <img src="../images/chapitre11/executer.svg" alt="Exécuter" height="30">
+               </div>
+               <div class="divTableCellDroits2">
+                  permet d'exécuter des opérations dans l'application
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellDroits1">
+                  <img src="../images/chapitre11/lier.svg" alt="Lier" height="30">
+               </div>
+               <div class="divTableCellDroits2">
+                  permet de créer des liens entre les tiers
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellDroits1">
+                  <img src="../images/chapitre11/fermer.svg" alt="Fermer" height="30">
+               </div>
+               <div class="divTableCellDroits2">
+                  permet de fermer les journaux et les exercices comptables
+               </div>
+            </div>
+            <!--
+               <div class="divTableRow">
+                  <div class="divTableCellDroits1">
+                     <img src="../images/chapitre11/reouvrir.svg" alt="Réouvrir" height="30">
+                  </div>
+                  <div class="divTableCellDroits2">
+                     permet de réouvrir les journaux comptables
+                  </div>
+               </div>
+               -->
+			<div class="divTableRow">
+               <div class="divTableCellDroits1">
+                  <img src="../images/chapitre11/confirmer.svg" alt="Confirmer" height="30">
+               </div>
+               <div class="divTableCellDroits2">
+                  permet de confirmer le brouillard comptable
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellDroits1">
+                  <img src="../images/chapitre11/verrouiller.svg" alt="Verrouiller" height="30">
+               </div>
+               <div class="divTableCellDroits2">
+                  permet de bloquer un utilisateur
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellDroits1">
+                  <img src="../images/chapitre11/annuler.svg" alt="Annuler" height="30">
+               </div>
+               <div class="divTableCellDroits2">
+                  permet d'annuler une action &#40;vente&#41;
+               </div>
+            </div>
          </div>
       </div>
-      <p class="texte">Adaptez les données en votre possession à l'aide d'un tableur comme par exemple <a href="https://www.openoffice.org/fr/" target="_blank">Apache OpenOffice</a> ou <a href="https://fr.libreoffice.org/" target="_blank">LibreOffice</a>. Il n'est pas nécessaire que tous les éléments soient renseignés dans les colonnes mais il est primordial que l'ordre indiqué soit respecté. Vous pouvez télécharger un modèle en cliquant sur le lien suivant&nbsp;:</p>
-      <div class="cadre-dl">
-         <a href="../imports/entities.csv" target="_blank">
-            <p class="aerateur-bas download" align="center"><img src="../images/chapitre11/download.svg" alt="Télécharger" height="20" class="align-icone icone-marge-droite">Télécharger un document modèle au format CSV</p>
-         </a>
-      </div>
-      <p class="texte aerateur-bas">Une fois votre fichier préparé, il est alors possible de réaliser l'intégration des nouvelles données. Le processus suivant vous guide pour importer des tiers dans l'application&nbsp;:</p>
-      <div class="floating-box process">
-         <img src="../images/commun/step1.svg" alt="1" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Affichez les "Imports"</span>
-         <p>
-            Cliquez sur le lien "Outils" dans le "Menu principal" ou sur le bouton "Outils" de la page d'accueil&nbsp;:
-         </p>
-         <p align="center"><img src="../images/chapitre11/magic.svg" alt="Outils" width="60"></p>
-         <p>Dans la barre latérale du module, cliquez sur "Imports" dans la section "Échange" symbolisée par l'icône représentant 2 flèches<img src="../images/chapitre11/exchange.svg" alt="Échange" height="20" class="align-icone icone-marge-gauche">.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre11/import1.png" class="contour-img" alt="Liste des imports" data-action="zoom">
-         </p>
-         <p>Tous les "Imports" déjà réalisés sont listés, notamment ceux issus de l'intégration des données TelePAC dans l'Assistant de démarrage.</p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step2.svg" alt="2" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Créez un nouvel "Import"</span>
-         <p>Cliquez sur le bouton "Nouveau" puis sélectionnez "Tiers - Ekylibre" dans la liste déroulante des types d'imports disponibles dans l'application.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre11/import-tiers2.png" class="contour-img" alt="Sélection du type d'import" data-action="zoom">
-         </p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step3.svg" alt="3" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Sélectionnez le fichier CSV</span>
-         <p>Cliquez sur le bouton "Parcourir" pour sélectionner le fichier CSV des tiers à importer dans l'application.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre11/import-tiers3.png" class="contour-img" alt="Sélection fichier CSV" data-action="zoom">
-         </p>
-         <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step4.svg" alt="4" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Lancez l'import des tiers</span>
-         <p>Cliquez sur le bouton "Exécuter" pour valider l'import des tiers dans l'application. En cas d'incompatibilité, l'application vous avertit qu'une erreur est survenue.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre11/import-tiers4.png" class="contour-img" alt="Exécution import" data-action="zoom">
-         </p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step5.svg" alt="5" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Patientez quelques instants</span>
-         <p>La barre de progression vous indique l'avancée du transfert des données qui peut prendre plus ou moins de temps en fonction du nombre de tiers à traiter. Une fois que la barre d'avancement disparaît, rafraîchissez votre navigateur pour afficher la notification.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre11/import-tiers5.png" class="contour-img" alt="Progression import" data-action="zoom">
-         </p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step6.svg" alt="6" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Affichez les notifications</span>
-         <p>La cloche rouge<img src="../images/chapitre11/bell-o-red.svg" alt="cloche rouge" height="20" class="align-icone icone-marge-gauche icone-marge-droite">en haut à droite de l'interface vous indique qu'une opération interne a été effectuée par l'application. Cliquez sur celle-ci pour afficher la notification. En cas d'erreur, vous serez informé&#40;e&#41; de la nature de celle-ci. Cliquez sur le bouton "Tout marquer comme lu" pour la supprimer.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre11/import-tiers6.png" class="contour-img" alt="Affichage notifications" data-action="zoom">
-         </p>
-      </div>
-	  <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step7.svg" alt="7" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Vérifiez les tiers</span>
-         <p>Affichez les tiers pour vérifier l'intégrité des données importées et effectuer d'éventuelles modifications.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre11/import-tiers7.png" class="contour-img" alt="Affichage tiers" data-action="zoom">
-         </p>
-      </div>
-      <a class="slice-process" id="import-variants"></a>
-      <h6>Guide de démarrage • Imports • Import de variantes</h6>
-      <p align="center" class="texte aerateur procedure">C – Procédure pour importer des variantes dans l'application</p>
-      <p align="center" class="texte"><img src="../images/commun/expert.svg" height="55" alt="Processus complexe"></p>
-      <div class="info-fond aerateur-haut aerateur-bas">
-         <div class="floating-box-info">
-            <img src="../images/commun/info.svg" width="100" alt="Info"/>
-         </div>
-         <div class="info-txt">
-            <span class="titre-advice">Ordre des imports<br></span>
-            <p class="texte-advice">
-               Il est vivement conseillé de réaliser l'import des variantes avant celui des équipements. En effet, on crée le tableau des équipements à importer en fonction de leur type et de ce fait, on les rattache à la nomenclature Ekylibre téléchargeable grâce au lien ci-dessous. Ils seront identifiés avec un numéro de travail. Pour faciliter ce travail, nous vous recommandons de préparer le tableau des équipements en même temps que celui des variantes.
-            </p>
-         </div>
-      </div>
-      <div class="cadre-dl">
-         <a href="../imports/variants.csv" target="_blank">
-            <p class="aerateur-bas download" align="center"><img src="../images/chapitre11/download.svg" alt="Télécharger" height="20" class="align-icone icone-marge-droite">Télécharger la nomenclature au format CSV</p>
-         </a>
-      </div>
-      <p class="texte">Le tableau ci-dessous présente la nomenclature utilisée pour renseigner les équipements avec leur nom et leur identifiant &#40;"<em>variant nomen</em>"&#41;&nbsp;:</p>
+      <p class="texte">Si plusieurs personnes occupent des fonctions similaires dans votre ferme &#40;commerciaux, techniciens, ouvriers agricoles&#41;, la création de rôles d'utilisateur permet de simplifier l'affectation de droits à ces utilisateurs grâce à des profils types.</p>
       <div class="affichage-large"></div>
       <div class="affichage-mobile">
          <p align="center">
@@ -365,658 +169,332 @@
             Glissez pour parcourir le tableau
          </p>
       </div>
-      <div class="scroll marge aerateur-bas">
-            <div class="divTableEquipment">
-               <div class="divTableBody">
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1" style="width: 50%">
-                        Tracteur
-                     </div>
-                     <div class="divTableCellEquipment2" style="width: 50%">
-                        tractor
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Herse
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        harrow
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Outil de préparation du lit de semences
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        vibrocultivator
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Broyeur
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        grinder
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Butteuse
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        hiller
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Bineuse
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        hoe
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Charrue
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        plow
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Rouleau
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        roll
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Décompacteur
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        soil_loosener
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Déchaumeur
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        superficial_plow
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Sous-soleuse
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        subsoil_plow
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Vibroculteur
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        vibrocultivator
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Déchaumeur à disques
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        disc_harrow
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Semoir
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        sower
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Planteuse
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        implanter
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Semoir monograines
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        airplanter
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Épandeur à engrais
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        spreader
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Tonne à lisier
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        liquid_manure_spreader
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Épandeur à fumier
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        spreader_trailer
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Désherbineuse
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        hoe_weeder
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Houe rotative
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        rotary_hoe
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Désherbeur
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        weeder
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Pulvérisateur
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        sprayer
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Presse à balles rondes
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        round_baler
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Presse à balles cubiques
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        cubic_baler
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Presse enrubanneuse
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        baler_wrapper
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Remorque
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        trailer
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Castreuse
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        corn_topper
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Ensileuse
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        forager
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Arracheuse
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        harvester
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Andaineur
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        hay_rake
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Faucheuse
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        mower
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Moissonneuse-batteuse
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        reaper
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Effaneuse
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        topper
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Écimeuse
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        trimmer
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Faucheuse conditionneuse
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        mower_conditioner
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Faneuse
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        tedder
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Enrubanneuse
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        wrapper
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Plateau
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        trailer
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Enrouleur
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        water_spreader
-                     </div>
-                  </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellEquipment1">
-                        Pivot d’irrigation
-                     </div>
-                     <div class="divTableCellEquipment2">
-                        irrigation_pivot
+      <div class="saut-page"></div>
+      <div class="contour-gris texte aerateur-haut">
+         <div class="tableaux">
+            <p align="center" class="texte titre-advice">
+               Rôles d'utilisateurs prédéfinis et leurs droits
+            </p>
+         </div>
+         <div class="scroll">
+            <div class="tableau texte-tableau divTableFooter">
+               <div class="divTable">
+                  <div class="divTableBody">
+                     <div class="divTableRow">
+                        <div class="divTableCellRole1" style="width: auto"></div>
+                        <div class="divTableCellRole3 perso1" style="width: 80px">Agent technico-commercial</div>
+                        <div class="divTableCellRole3 perso2" style="width: 80px">Comptable</div>
+                        <div class="divTableCellRole3 perso3" style="width: 80px">Conseiller agricole</div>
+                        <div class="divTableCellRole3 perso4" style="width: 80px">Technicien, ouvrier de l'exploitation</div>
+                        <div class="divTableCellRole3 perso5" style="width: 80px">Responsable de l'exploitation</div>
+                        <div class="divTableCellRole3 perso6" style="width: 80px">Vétérinaire</div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellRole1">Animaux</div>
+                        <div class="divTableCellRole2"><img src="../images/chapitre11/lire.svg" alt="Lire" width="60"></div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2"><img src="../images/chapitre11/lire.svg" alt="Lire" width="60"></div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2"><img src="../images/chapitre11/lire.svg" alt="Lire" width="60"></div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellRole1">Colis entrants</div>
+                        <div class="divTableCellRole2"><img src="../images/chapitre11/lire.svg" alt="Lire" width="60"></div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2">
+                           <div class="divTable">
+                              <div class="divTableBody">
+                                 <div class="divTableRow">
+                                    <div class="divTableCellDroit"><img src="../images/chapitre11/lire.svg" alt="Lire" width="60"></div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellDroit"><img src="../images/chapitre11/ecrire.svg" alt="Écrire" width="60"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellRole1">Colis sortants</div>
+                        <div class="divTableCellRole2"><img src="../images/chapitre11/lire.svg" alt="Lire" width="60"></div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2">
+                           <div class="divTable">
+                              <div class="divTableBody">
+                                 <div class="divTableRow">
+                                    <div class="divTableCellDroit"><img src="../images/chapitre11/lire.svg" alt="Lire" width="60"></div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellDroit"><img src="../images/chapitre11/ecrire.svg" alt="Écrire" width="60"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellRole1">Cultures végétales</div>
+                        <div class="divTableCellRole2"><img src="../images/chapitre11/lire.svg" alt="Lire" width="60"></div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2"><img src="../images/chapitre11/lire.svg" alt="Lire" width="60"></div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellRole1">Interventions</div>
+                        <div class="divTableCellRole2"><img src="../images/chapitre11/lire.svg" alt="Lire" width="60"></div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2"><img src="../images/chapitre11/lire.svg" alt="Lire" width="60"></div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2">
+                           <div class="divTable">
+                              <div class="divTableBody">
+                                 <div class="divTableRow">
+                                    <div class="divTableCellDroit"><img src="../images/chapitre11/lire.svg" alt="Lire" width="60"></div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellDroit"><img src="../images/chapitre11/ecrire.svg" alt="Écrire" width="60"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="divTableCellRole2"><img src="../images/chapitre11/lire.svg" alt="Lire" width="60"></div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellRole1">Zones cultivables</div>
+                        <div class="divTableCellRole2"><img src="../images/chapitre11/lire.svg" alt="Lire" width="60"></div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2"><img src="../images/chapitre11/lire.svg" alt="Lire" width="60"></div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellRole1">Activités</div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2">
+                           <div class="divTable">
+                              <div class="divTableBody">
+                                 <div class="divTableRow">
+                                    <div class="divTableCellDroit"><img src="../images/chapitre11/lire.svg" alt="Lire" width="60"></div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellDroit"><img src="../images/chapitre11/ecrire.svg" alt="Écrire" width="60"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellRole1">Comptes comptables</div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2">
+                           <div class="divTable">
+                              <div class="divTableBody">
+                                 <div class="divTableRow">
+                                    <div class="divTableCellDroit"><img src="../images/chapitre11/lire.svg" alt="Lire" width="60"></div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellDroit"><img src="../images/chapitre11/ecrire.svg" alt="Écrire" width="60"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellRole1">Exercices comptables</div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2">
+                           <div class="divTable">
+                              <div class="divTableBody">
+                                 <div class="divTableRow">
+                                    <div class="divTableCellDroit"><img src="../images/chapitre11/lire.svg" alt="Lire" width="60"></div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellDroit"><img src="../images/chapitre11/ecrire.svg" alt="Écrire" width="60"></div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellDroit"><img src="../images/chapitre11/fermer.svg" alt="Fermer" width="60"></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!--
+                              <br><img src="../images/chapitre11/reouvrir.svg" alt="Réouvrir" width="60">
+                              -->
+                        </div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellRole1">Immobilisations</div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2">
+                           <div class="divTable">
+                              <div class="divTableBody">
+                                 <div class="divTableRow">
+                                    <div class="divTableCellDroit"><img src="../images/chapitre11/lire.svg" alt="Lire" width="60"></div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellDroit"><img src="../images/chapitre11/ecrire.svg" alt="Écrire" width="60"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellRole1">Journaux comptables</div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2">
+                           <div class="divTable">
+                              <div class="divTableBody">
+                                 <div class="divTableRow">
+                                    <div class="divTableCellDroit"><img src="../images/chapitre11/lire.svg" alt="Lire" width="60"></div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellDroit"><img src="../images/chapitre11/ecrire.svg" alt="Écrire" width="60"></div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellDroit"><img src="../images/chapitre11/fermer.svg" alt="Fermer" width="60"></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!--
+                              <br><img src="../images/chapitre11/reouvrir.svg" alt="Réouvrir" width="60">
+                              -->
+                        </div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellRole1">Relevés de banque</div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2">
+                           <div class="divTable">
+                              <div class="divTableBody">
+                                 <div class="divTableRow">
+                                    <div class="divTableCellDroit"><img src="../images/chapitre11/lire.svg" alt="Lire" width="60"></div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellDroit"><img src="../images/chapitre11/ecrire.svg" alt="Écrire" width="60"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2">&nbsp;</div>
+                        <div class="divTableCellRole2">&nbsp;</div>
                      </div>
                   </div>
                </div>
             </div>
          </div>
-      <p class="texte">Il est possible d'importer des variantes dans Ekylibre. Cette fonctionnalité nécessite de disposer d'un fichier au format ODS dont la structure doit strictement respecter les préconisations édictées ci-après.</p>
-      <p class="texte">La structure de ce tableau est basée sur 10 colonnes avec les informations classées selon l'ordre suivant &#40;plusieurs feuilles sont autorisées dans un même document et le symbole<img src="../images/chapitre11/asterisk.svg" alt="Astérisque" height="20" class="align-icone icone-marge-gauche icone-marge-droite">indique une donnée obligatoire&#41;.</p>
-      <p class="texte"><strong>Nom</strong><img src="../images/chapitre11/asterisk.svg" alt="Astérisque" height="20" class="align-icone icone-marge-gauche icone-marge-droite">&#40;le nom de la variante&#41;<br>
-         <strong>Variant nomen</strong><img src="../images/chapitre11/asterisk.svg" alt="Astérisque" height="20" class="align-icone icone-marge-gauche icone-marge-droite">&#40;l'identifiant de la variante selon la nomenclature Ekylibre&#41;<br>
-         <strong>Code variant</strong> &#40;un numéro de travail pour identifier la variante&#41;<br><strong>
-         Variété</strong> &#40;optionnel, pour désigner par exemple un produit de récolte&#41;<br>
-         <strong>Dérivé</strong> &#40;optionnel, pour désigner l'espèce&#41;<br><strong>Prix d'achat HT<br>Prix de vente HT<br>Unité du prix<br>Indicateurs complémentaires<br>France Maaid</strong> &#40;Numéro d'AMM du produit phytosanitaire&#41;
-      </p>
-      <p class="texte">Dans un tableur, la feuille de calcul doit ressembler à cet exemple &#40;le tableau est affiché ici par 2 captures d'écran&#41;&nbsp;:</p>
-      <p class="texte"><img src="../images/chapitre11/tableau-variants1.png" alt="Tableau imports" class="contour-img" data-action="zoom"></p>
-      <p class="texte"><img src="../images/chapitre11/tableau-variants2.png" alt="Tableau imports" class="contour-img" data-action="zoom"></p>
-      <p class="texte">Adaptez les données en votre possession à l'aide d'un tableur comme par exemple <a href="https://www.openoffice.org/fr/" target="_blank">Apache OpenOffice</a> ou <a href="https://fr.libreoffice.org/" target="_blank">LibreOffice</a>. Il n'est pas nécessaire que tous les éléments soient renseignés dans les colonnes mais il est primordial que l'ordre indiqué soit respecté. Vous pouvez télécharger un modèle en cliquant sur le lien suivant&nbsp;:</p>
-      <div class="cadre-dl">
-         <a href="../imports/variants.ods" target="_blank">
-            <p class="aerateur-bas download" align="center"><img src="../images/chapitre11/download.svg" alt="Télécharger" height="20" class="align-icone icone-marge-droite">Télécharger un document modèle au format ODS</p>
-         </a>
       </div>
-      <p class="texte aerateur-bas">Une fois votre fichier préparé, il est alors possible de réaliser l'intégration des nouvelles données. Le processus suivant vous guide pour importer des variantes dans l'application&nbsp;:</p>
+      <p class="texte">Tableau 1</p>
+      <div class="idea-fond aerateur saut-page">
+         <div class="floating-box-idea">
+            <img src="../images/commun/astuce.svg" width="100" alt="Astuce"/>
+         </div>
+         <div class="info-txt">
+            <span class="titre-advice">Affichage dans l'application<br></span>
+            <p class="texte-advice">
+               Les informations affichées et la liste des champs à renseigner peuvent occuper une hauteur importante dans la fenêtre principale.<br>Réduisez ou développez les informations des sections avec les boutons<img src="../images/commun/minus-square-o.svg" alt="moins" height="15" class="icone-marge-gauche icone-marge-droite">et<img src="../images/commun/plus-square-o.svg" alt="plus" height="15" class="icone-marge-gauche icone-marge-droite">à droite de la fenêtre principale.
+            </p>
+            <p align="center"><img src="../images/commun/dev-reduc.png" alt="Réduction agrandissement des sections" class="contour-img"></p>
+         </div>
+      </div>
+      <h6>Guide de démarrage • Accès • Création des utilisateurs</h6>
+      <h2 class="texte aerateur">a - Création des utilisateurs</h2>
+      <p align="center" class="texte aerateur procedure">A – Procédure de création des utilisateurs</p>
+      <p class="texte">
+         Le processus suivant vous guide pour créer un nouvel utilisateur.
+      </p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52">
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Affichez les "Imports"</span>
+         <span class="titre-advice">Accédez aux utilisateurs</span>
          <p>
-            Cliquez sur le lien "Outils" dans le "Menu principal" ou sur le bouton "Outils" de la page d'accueil&nbsp;:
+            Pour créer de nouveaux utilisateurs, allez dans le menu principal et cliquez sur la clef anglaise<img src="../images/chapitre11/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">ou cliquez sur le bouton "Configuration" de la page d'accueil&nbsp;:
          </p>
-         <p align="center"><img src="../images/chapitre11/magic.svg" alt="Outils" width="60"></p>
-         <p>Dans la barre latérale du module, cliquez sur "Imports" dans la section "Échange" symbolisée par l'icône représentant 2 flèches<img src="../images/chapitre11/exchange.svg" alt="Échange" height="20" class="align-icone icone-marge-gauche">.</p>
+         <p align="center"><img src="../images/chapitre11/wrench.svg" alt="Configuration" width="60"></p>
+         <p>
+            Dans la barre latérale du module, cliquez sur "Utilisateurs" dans la section "Accès" symbolisée par l'icône d'un bouclier<img src="../images/chapitre11/shield.svg" alt="bouclier" height="20" class="align-icone icone-marge-gauche">. La liste des utilisateurs affiche l'administrateur de la ferme avec l'indicateur<img src="../images/chapitre11/check-square-o.svg" alt="case cochée" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à droite de son nom et tous les utilisateurs déjà créés le cas échéant.
+         </p>
          <p class="max-img-process">
-            <img src="../images/chapitre11/import1.png" class="contour-img" alt="Liste des imports" data-action="zoom">
+            <img src="../images/chapitre11/utilisateur1.png" class="contour-img" alt="Création d'un nouvel utilisateur" data-action="zoom">
          </p>
-         <p>Tous les "Imports" déjà réalisés sont listés, notamment ceux issus de l'intégration des données TelePAC dans l'Assistant de démarrage.</p>
       </div>
       <br>
       <div class="floating-box process">
          <img src="../images/commun/step2.svg" alt="2" width="52">
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Créez un nouvel "Import"</span>
-         <p>Cliquez sur le bouton "Nouveau" puis sélectionnez "Variants - Ekylibre" dans la liste déroulante des types d'imports disponibles dans l'application.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre11/import-variants2.png" class="contour-img" alt="Sélection du type d'import" data-action="zoom">
-         </p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step3.svg" alt="3" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Sélectionnez le fichier ODS</span>
-         <p>Cliquez sur le bouton "Parcourir" pour sélectionner le fichier ODS des variantes à importer dans l'application.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre11/import-variants3.png" class="contour-img" alt="Sélection fichier CSV" data-action="zoom">
-         </p>
-         <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step4.svg" alt="4" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Lancez l'import des variantes</span>
-         <p>Cliquez sur le bouton "Exécuter" pour valider l'import des variantes dans l'application. En cas d'incompatibilité, l'application vous avertit qu'une erreur est survenue.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre11/import-variants4.png" class="contour-img" alt="Exécution import" data-action="zoom">
-         </p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step5.svg" alt="5" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Patientez quelques instants</span>
-         <p>La barre de progression vous indique l'avancée du transfert des données qui peut prendre plus ou moins de temps en fonction du nombre de variantes à traiter. Une fois que la barre d'avancement disparaît, rafraîchissez votre navigateur pour afficher la notification.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre11/import-variants5.png" class="contour-img" alt="Progression import" data-action="zoom">
-         </p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step6.svg" alt="6" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Affichez les notifications</span>
-         <p>La cloche rouge<img src="../images/chapitre11/bell-o-red.svg" alt="cloche rouge" height="20" class="align-icone icone-marge-gauche icone-marge-droite">en haut à droite de l'interface vous indique qu'une opération interne a été effectuée par l'application. Cliquez sur celle-ci pour afficher la notification. En cas d'erreur, vous serez informé&#40;e&#41; de la nature de celle-ci. Cliquez sur le bouton "Tout marquer comme lu" pour la supprimer.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre11/import-variants6.png" class="contour-img" alt="Affichage notifications" data-action="zoom">
-         </p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step7.svg" alt="7" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Vérifiez les variantes</span>
-         <p>Affichez la liste des variantes pour vérifier la disponibilité des données importées et constater que les nouvelles variantes ont bien été ajoutées à celles prédéfinies dans l'application. Le nombre de variantes présentes a augmenté.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre11/import-variants7.png" class="contour-img" alt="Affichage notifications" data-action="zoom">
-         </p>
-      </div>
-      <a class="slice-process" id="import-equipments"></a>
-      <h6>Guide de démarrage • Imports • Import d'équipements</h6>
-      <p align="center" class="texte aerateur procedure">D – Procédure pour importer des équipement dans l'application</p>
-      <p align="center" class="texte"><img src="../images/commun/expert.svg" height="55" alt="Processus complexe"></p>
-      <p class="texte">Il est possible d'importer des équipements dans Ekylibre. Cette fonctionnalité nécessite de disposer d'un fichier au format CSV codé en UTF-8 et dont la structure doit strictement respecter les préconisations édictées ci-après.</p>
-      <p class="texte">La structure de ce tableau est basée sur 12 colonnes avec les informations classées selon l'ordre suivant &#40;le symbole<img src="../images/chapitre11/asterisk.svg" alt="Astérisque" height="20" class="align-icone icone-marge-gauche icone-marge-droite">indique une donnée obligatoire&#41;&nbsp;:</p>
-      <p class="texte"><strong>Nom</strong><img src="../images/chapitre11/asterisk.svg" alt="Astérisque" height="20" class="align-icone icone-marge-gauche icone-marge-droite">&#40;le nom de l'équipement&#41;<br>
-         <strong>Variant nomen</strong><img src="../images/chapitre11/asterisk.svg" alt="Astérisque" height="20" class="align-icone icone-marge-gauche icone-marge-droite">&#40;important : soit le nom de la variante en nomenclature, soit le code de la variante qui a été affecté dans le fichier variants.ods&#41;<br>
-         <strong>Code</strong> &#40;un code optionnel pour désigner l'équipement&#41;<br><strong>
-         Code place</strong> &#40;un code optionnel de la zone de bâtiment attribué au stockage de l'équipement&#41;<br>
-         <strong>Date naissance</strong> &#40;la date d'acquisition ou de mise en service de l'équipement&#41;<br><strong>Marque<br>Modèle<br>Nom du propriétaire<br>Indicateurs</strong> &#40;les caractéristiques techniques de l'équipement : puissance, volume, largeur&#41;<strong><br>Notes<br>Prix unitaire</strong> &#40;coût d'utilisation de l'équipement et non son prix d'achat&#41;<strong><br>Indicateur de prix</strong> &#40;unité de prix du coût d'utilisation - en heure par défaut&#41;
-      </p>
-      <p class="texte">Dans un tableur, la feuille de calcul doit ressembler à cet exemple &#40;le tableau est affiché ici par 4 captures d'écran&#41;&nbsp;:</p>
-      <p class="texte"><img src="../images/chapitre11/tableau-equip1.png" alt="Tableau imports" class="contour-img" data-action="zoom"></p>
-      <p class="texte"><img src="../images/chapitre11/tableau-equip2.png" alt="Tableau imports" class="contour-img" data-action="zoom"></p>
-      <p class="texte"><img src="../images/chapitre11/tableau-equip3.png" alt="Tableau imports" class="contour-img" data-action="zoom"></p>
-      <p class="texte"><img src="../images/chapitre11/tableau-equip4.png" alt="Tableau imports" class="contour-img" data-action="zoom"></p>
-      <p class="texte">Adaptez les données en votre possession à l'aide d'un tableur comme par exemple <a href="https://www.openoffice.org/fr/" target="_blank">Apache OpenOffice</a> ou <a href="https://fr.libreoffice.org/" target="_blank">LibreOffice</a>. Il n'est pas nécessaire que tous les éléments soient renseignés dans les colonnes mais il est primordial que l'ordre indiqué soit respecté. Vous pouvez télécharger un modèle en cliquant sur le lien suivant&nbsp;:</p>
-      <div class="cadre-dl">
-         <a href="../imports/equipments.csv" target="_blank">
-            <p class="aerateur-bas download" align="center"><img src="../images/chapitre11/download.svg" alt="Télécharger" height="20" class="align-icone icone-marge-droite">Télécharger un document modèle au format CSV</p>
-         </a>
-      </div>
-      <p class="texte aerateur-bas">Une fois votre fichier préparé, il est alors possible de réaliser l'intégration des nouvelles données. Le processus suivant vous guide pour importer des équipements dans l'application&nbsp;:</p>
-      <div class="floating-box process">
-         <img src="../images/commun/step1.svg" alt="1" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Affichez les "Imports"</span>
+         <span class="titre-advice">Renseignez l'identité de l'utilisateur</span>
          <p>
-            Cliquez sur le lien "Outils" dans le "Menu principal" ou sur le bouton "Outils" de la page d'accueil&nbsp;:
+            Cliquez sur "Nouveau". Tous les champs situés dans la zone "Informations générales" sont à renseigner. Notez que l'attribution d'un mot de passe est obligatoire même si ce n'est pas signalé par l'astérisque de couleur rouge.
          </p>
-         <p align="center"><img src="../images/chapitre11/magic.svg" alt="Outils" width="60"></p>
-         <p>Dans la barre latérale du module, cliquez sur "Imports" dans la section "Échange" symbolisée par l'icône représentant 2 flèches<img src="../images/chapitre11/exchange.svg" alt="Échange" height="20" class="align-icone icone-marge-gauche">.</p>
          <p class="max-img-process">
-            <img src="../images/chapitre11/import1.png" class="contour-img" alt="Liste des imports" data-action="zoom">
-         </p>
-         <p>Tous les "Imports" déjà réalisés sont listés, notamment ceux issus de l'intégration des données TelePAC dans l'Assistant de démarrage.</p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step2.svg" alt="2" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Créez un nouvel "Import"</span>
-         <p>Cliquez sur le bouton "Nouveau" puis sélectionnez "Équipements - Ekylibre" dans la liste déroulante des types d'imports disponibles dans l'application.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre11/import-equip2.png" class="contour-img" alt="Sélection du type d'import" data-action="zoom">
+            <img src="../images/chapitre11/utilisateur3.png" class="contour-img" alt="Création d'un nouvel utilisateur" data-action="zoom">
          </p>
       </div>
-      <br>
+      <div class="idea-fond aerateur-haut aerateur-bas">
+         <div class="floating-box-idea">
+            <img src="../images/commun/astuce.svg" width="100" alt="Astuce"/>
+         </div>
+         <div class="info-txt">
+            <span class="titre-advice">Choix d'un mot de passe<br></span>
+            <p class="texte-advice">
+               Choisissez un mot de passe facilement mémorisable mais assez difficile à trouver&nbsp;: ça peut être une phrase composée d'une majuscule, avec un signe de ponctuation et un chiffre comme par exemple&nbsp;: Vousetes2chezEkylibre!
+            </p>
+         </div>
+      </div>
       <div class="floating-box process">
          <img src="../images/commun/step3.svg" alt="3" width="52">
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Sélectionnez le fichier CSV</span>
-         <p>Cliquez sur le bouton "Parcourir" pour sélectionner le fichier CSV des équipements à importer dans l'application.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre11/import-equip3.png" class="contour-img" alt="Sélection fichier CSV" data-action="zoom">
-         </p>
-         <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step4.svg" alt="4" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Lancez l'import des équipements</span>
-         <p>Cliquez sur le bouton "Exécuter" pour valider l'import des équipements dans l'application. En cas d'incompatibilité, l'application vous avertit qu'une erreur est survenue.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre11/import-equip4.png" class="contour-img" alt="Exécution import" data-action="zoom">
-         </p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step5.svg" alt="5" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Patientez quelques instants</span>
-         <p>La barre de progression vous indique l'avancée du transfert des données qui peut prendre plus ou moins de temps en fonction du nombre d'équipements à traiter. Une fois que la barre d'avancement disparaît, rafraîchissez votre navigateur pour afficher la notification.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre11/import-equip5.png" class="contour-img" alt="Progression import" data-action="zoom">
-         </p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step6.svg" alt="6" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Affichez les notifications</span>
-         <p>La cloche rouge<img src="../images/chapitre11/bell-o-red.svg" alt="cloche rouge" height="20" class="align-icone icone-marge-gauche icone-marge-droite">en haut à droite de l'interface vous indique qu'une opération interne a été effectuée par l'application. Cliquez sur celle-ci pour afficher la notification. En cas d'erreur, vous serez informé&#40;e&#41; de la nature de celle-ci. Cliquez sur le bouton "Tout marquer comme lu" pour la supprimer.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre11/import-equip6.png" class="contour-img" alt="Affichage notifications" data-action="zoom">
-         </p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step7.svg" alt="7" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Vérifiez les équipements</span>
-         <p>Affichez la liste des équipements pour vérifier l'intégrité des données importées et effectuer d'éventuelles modifications.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre11/import-equip7.png" class="contour-img" alt="Liste des équipements" data-action="zoom">
-         </p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step8.svg" alt="8" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Vérifiez le catalogue de prix des coûts d'usage</span>
-         <p>Affichez le catalogue de prix des coûts d'usage pour vérifier l'intégrité des données importées et effectuer d'éventuelles modifications.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre11/import-equip8.png" class="contour-img" alt="Catalogue coûts d'usage" data-action="zoom">
-         </p>
-      </div>
-      <a class="slice-process" id="import-batiments"></a>
-      <h6>Guide de démarrage • Imports • Import de bâtiments et d'aires de stockage</h6>
-      <p align="center" class="texte aerateur procedure">E – Procédure pour importer des bâtiments dans l'application</p>
-      <p align="center" class="texte"><img src="../images/commun/expert.svg" height="55" alt="Processus complexe"></p>
-      <p class="texte">Il est possible d'importer les bâtiments, leurs subdivisions et les aires de stockage dans Ekylibre. Cette fonctionnalité nécessite de disposer d'un fichier au format CSV codé en UTF-8 et dont la structure doit strictement respecter les préconisations édictées ci-après.</p>
-      <p class="texte">La structure de ce tableau est basée sur 6 colonnes avec les informations classées selon l'ordre suivant &#40;le symbole<img src="../images/chapitre11/asterisk.svg" alt="Astérisque" height="20" class="align-icone icone-marge-gauche icone-marge-droite">indique une donnée obligatoire&#41;&nbsp;:</p>
-      <p class="texte"><strong>Nom</strong><img src="../images/chapitre11/asterisk.svg" alt="Astérisque" height="20" class="align-icone icone-marge-gauche icone-marge-droite">&#40;la dénomination de la zone&#41;<br>
-         <strong>Nature</strong><img src="../images/chapitre11/asterisk.svg" alt="Astérisque" height="20" class="align-icone icone-marge-gauche icone-marge-droite">&#40;un bâtiment, la subdivision d'un bâtiment ou d'une aire de stockage&#41;<br>
-         <strong>Code</strong> &#40;un code optionnel pour désigner la zone&#41;<br><strong>
-         Code groupe</strong> &#40;un code optionnel pour désigner l'appartenance de la zone à un groupe&#41;<br>
-         <strong>Code place</strong> &#40;un code optionnel pour désigner la situation de la découpe par rapport à une zone principale&#41;<br><strong>Description</strong> &#40;un commentaire optionnel&#41;
-      </p>
-      <p class="texte">Dans un tableur, la feuille de calcul doit ressembler à cet exemple&nbsp;:</p>
-      <p class="texte"><img src="../images/chapitre11/tableau-zones1.png" alt="Tableau imports" class="contour-img"></p>
-      <p class="texte">Adaptez les données en votre possession à l'aide d'un tableur comme par exemple <a href="https://www.openoffice.org/fr/" target="_blank">Apache OpenOffice</a> ou <a href="https://fr.libreoffice.org/" target="_blank">LibreOffice</a>. Il n'est pas nécessaire que tous les éléments soient renseignés dans les colonnes mais il est primordial que l'ordre indiqué soit respecté. Vous pouvez télécharger un modèle en cliquant sur le lien suivant&nbsp;:</p>
-      <div class="cadre-dl">
-         <a href="../imports/zones.csv" target="_blank">
-            <p class="aerateur-bas download" align="center"><img src="../images/chapitre11/download.svg" alt="Télécharger" height="20" class="align-icone icone-marge-droite">Télécharger un document modèle au format CSV</p>
-         </a>
-      </div>
-      <p class="texte aerateur-bas">Une fois votre fichier préparé, il est alors possible de réaliser l'intégration des nouvelles données. Le processus suivant vous guide pour importer des bâtiments dans l'application&nbsp;:</p>
-      <div class="floating-box process">
-         <img src="../images/commun/step1.svg" alt="1" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Affichez les "Imports"</span>
+         <span class="titre-advice">Saisissez la fonction de l'utilisateur</span>
          <p>
-            Cliquez sur le lien "Outils" dans le "Menu principal" ou sur le bouton "Outils" de la page d'accueil&nbsp;:
+            Associez le nouvel utilisateur à un tiers déjà configuré &#40;voir <a href="../chapitre8" class="avoid-clicks" target="_self">chapitre 8 - Stock et Personnel</a>&#41; ou créez-en un nouveau à la volée en sélectionnant "Ajouter un nouvel enregistrement" dans la liste déroulante. Complétez les informations du nouveau contact &#40;n° de téléphone, adresse postale, employé, client ou fournisseur, etc) pour le définir correctement.
          </p>
-         <p align="center"><img src="../images/chapitre11/magic.svg" alt="Outils" width="60"></p>
-         <p>Dans la barre latérale du module, cliquez sur "Imports" dans la section "Échange" symbolisée par l'icône représentant 2 flèches<img src="../images/chapitre11/exchange.svg" alt="Échange" height="20" class="align-icone icone-marge-gauche">.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre11/import1.png" class="contour-img" alt="Liste des imports" data-action="zoom">
+         <p align="center" class="max-img-process">
+            <img src="../images/chapitre11/utilisateur2.png" class="contour-img" width="300" alt="Création d'un nouvel utilisateur" data-action="zoom">
          </p>
-         <p>Tous les "Imports" déjà réalisés sont listés, notamment ceux issus de l'intégration des données TelePAC dans l'Assistant de démarrage.</p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step2.svg" alt="2" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Créez un nouvel "Import"</span>
-         <p>Cliquez sur le bouton "Nouveau" puis sélectionnez "Zones - Ekylibre" dans la liste déroulante des types d'imports disponibles dans l'application.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre11/import-zones2.png" class="contour-img" alt="Sélection du type d'import" data-action="zoom">
-         </p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step3.svg" alt="3" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Sélectionnez le fichier CSV</span>
-         <p>Cliquez sur le bouton "Parcourir" pour sélectionner le fichier CSV des zones à importer dans l'application.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre11/import-zones3.png" class="contour-img" alt="Sélection fichier CSV" data-action="zoom">
-         </p>
-         <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
       </div>
       <br>
       <div class="floating-box process">
          <img src="../images/commun/step4.svg" alt="4" width="52">
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Lancez l'import des zones</span>
-         <p>Cliquez sur le bouton "Exécuter" pour valider l'import des zones dans l'application. En cas d'incompatibilité, l'application vous avertit qu'une erreur est survenue.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre11/import-zones4.png" class="contour-img" alt="Exécution import" data-action="zoom">
+         <span class="titre-advice">Sélectionnez les droits accordés à l'utilisateur</span>
+         <p>
+            Choisissez les droits que vous octroyez à l'utilisateur. Vous pouvez partir d'un rôle d'utilisateur et étendre ou restreindre ses droits en rapport avec sa fonction dans la ferme, ou bien définir les accès à attribuer en cliquant successivement sur les boutons de votre choix en face de chaque tâche.
          </p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step5.svg" alt="5" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Patientez quelques instants</span>
-         <p>La barre de progression vous indique l'avancée du transfert des données qui peut prendre plus ou moins de temps en fonction du nombre de zones à traiter. Une fois que la barre d'avancement disparaît, rafraîchissez votre navigateur pour afficher la notification.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre11/import-zones5.png" class="contour-img" alt="Progression import" data-action="zoom">
-         </p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step6.svg" alt="6" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Affichez les notifications</span>
-         <p>La cloche rouge<img src="../images/chapitre11/bell-o-red.svg" alt="cloche rouge" height="20" class="align-icone icone-marge-gauche icone-marge-droite">en haut à droite de l'interface vous indique qu'une opération interne a été effectuée par l'application. Cliquez sur celle-ci pour afficher la notification. En cas d'erreur, vous serez informé&#40;e&#41; de la nature de celle-ci. Cliquez sur le bouton "Tout marquer comme lu" pour la supprimer.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre11/import-zones6.png" class="contour-img" alt="Affichage notifications" data-action="zoom">
-         </p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step7.svg" alt="7" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Vérifiez les zones de bâtiments</span>
-         <p>Affichez la liste des zones pour vérifier l'intégrité des données importées et effectuer d'éventuelles modifications.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre11/import-zones7.png" class="contour-img" alt="Zones de bâtiments" data-action="zoom">
+		 <p>
+            Vous pouvez également octroyer tous les droits à un utilisateur en cochant la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite"/>à droite de la mention "Administrateur système" mais restez prudent avec cette fonctionnalité.
          </p>
       </div>
       <div class="warn-fond aerateur-haut aerateur-bas">
@@ -1024,21 +502,844 @@
             <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
          </div>
          <div class="info-txt">
-            <span class="titre-advice">Bâtiments et aires de stockage<br></span>
+            <span class="titre-advice">Attention à la sécurité<br></span>
             <p class="texte-advice">
-               Notez que les bâtiments, découpes de bâtiments, et aires de stockage n'apparaissent pas sur la carte car les données de géolocalisation ne sont pas renseignées. Les "Zones de bâtiments" ne sont donc disponibles que lorsque vous spécifiez le lieu de stockage d'un colis entrant ou lors de la réception d'un colis suite à un achat.<br>
-               Cliquez sur la clef anglaise<img src="../images/chapitre8/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">dans le "Menu principal", puis sur "Zones de bâtiments" dans la section "Production" symbolisée par l'icône avec des engrenages<img src="../images/chapitre8/cogs.svg" alt="Main" height="20" class="align-icone icone-marge-gauche icone-marge-droite">.
-               Activez l'affichage en mode "Liste" et cliquez sur l'icône "Crayon"<img src="../images/commun/crayon.svg" alt="Modifier l'inventaire" height="20" class="align-icone icone-marge-gauche icone-marge-droite"> en face du nom de chaque zone de bâtiment pour disposer des outils décrits dans le <a href="../chapitre4/#batiments" target="_self">chapitre 4</a> afin de les dessiner.
+               En tant qu'administrateur de la ferme, vous êtes le principal décideur quant aux accès dont vont disposer les utilisateurs pour travailler dans l'application. Nous vous conseillons cependant de ne pas donner trop de droits à tout le monde pour éviter la destruction de données importantes suite à une mauvaise manipulation ou à de la malveillance.
             </p>
          </div>
       </div>
+      <div class="floating-box process">
+         <img src="../images/commun/step5.svg" alt="5" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Validez la création de l'utilisateur</span>
+         <p>
+            Cliquez sur <span class="btn-blue">Créer</span> en bas de la fenêtre principale pour valider la création du nouvel utilisateur.
+         </p>
+         <p>Répétez ce processus pour chaque nouvel utilisateur que vous souhaitez ajouter à votre ferme. Vous pouvez modifier, bloquer et supprimer des utilisateurs si nécessaire.</p>
+      </div>
+      <div class="idea-fond aerateur-haut aerateur-bas">
+         <div class="floating-box-idea">
+            <img src="../images/commun/astuce.svg" width="100" alt="Astuce"/>
+         </div>
+         <div class="info-txt">
+            <span class="titre-advice">Expert comptable<br></span>
+            <p class="texte-advice">
+               Vous pouvez créer un accès pour votre expert comptable ou votre centre de gestion qui lui permettra de visualiser et de modifier les données comptables de votre exploitation à distance. Les droits complets à activer sont détaillés dans la section "<a href="#acces-comptables" class="avoid-clicks">Accès comptables</a>" de ce chapitre.
+            </p>
+         </div>
+      </div>
+      <div class="info-fond aerateur-haut aerateur-bas">
+         <div class="floating-box-info">
+            <img src="../images/commun/info.svg" width="100" alt="Info"/>
+         </div>
+         <div class="info-txt">
+            <span class="titre-advice">Verrouiller un utilisateur<br></span>
+            <p class="texte-advice">
+               Si vous vous séparez d'un collaborateur et que vous souhaitez bloquer son accès à votre ferme tout en conservant l'historique de ses interventions, ne le supprimez pas de la liste des utilisateurs. Verrouillez plutôt son compte en cliquant sur le cadenas fermé<img src="../images/chapitre11/lock.svg" alt="cadenas fermé" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de son nom. Pour déverrouiller un utilisateur, cliquez sur le cadenas ouvert<img src="../images/chapitre11/unlock.svg" alt="cadenas ouvert" height="20" class="align-icone icone-marge-gauche">.
+            </p>
+            <br><img src="../images/chapitre11/verrouillage.png" alt="Liste des utilisateurs">
+         </div>
+      </div>
+      <h6>Guide de démarrage • Accès • Rôles d'utilisateur</h6>
+      <h2 class="texte aerateur">b - Utilisation des rôles d'utilisateur</h2>
+      <p align="center" class="texte aerateur procedure">A – Procédure pour piocher &#40;choisir&#41; des rôles d'utilisateur</p>
+      <p class="texte">
+         Le processus suivant vous guide pour sélectionner des rôles d'utilisateur parmi ceux disponibles dans l'application.
+      </p>
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Accédez aux rôles d'utilisateur</span>
+         <p>
+            Pour accéder aux rôles d'utilisateur, allez dans le menu principal et cliquez sur la clef anglaise<img src="../images/chapitre11/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">ou cliquez sur le bouton "Configuration" de la page d'accueil&nbsp;:
+         </p>
+         <p align="center"><img src="../images/chapitre11/wrench.svg" alt="Configuration" width="60"></p>
+         <p>
+            Dans la barre latérale du module, cliquez sur "Rôles" dans la section "Accès" symbolisée par l'icône d'un bouclier<img src="../images/chapitre11/shield.svg" alt="bouclier" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des rôles.
+         </p>
+      </div>
+      <br>
+      <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Sélectionnez un rôle d'utilisateur</span>
+         <p>
+            Cliquez sur le bouton "Piocher". Un menu "Référence" s'affiche et une liste déroulante vous permet de sélectionner un rôle d'utilisateur. Cliquez sur "Importer" pour intégrer le rôle d'utilisateur dans votre ferme.
+         </p>
+         <p class="max-img-process">
+            <img src="../images/chapitre11/piocher.png" class="contour-img" alt="Piocher un rôle" data-action="zoom">
+         </p>
+         <p>Répétez l'opération pour chaque rôle d'utilisateur que vous souhaitez utiliser et la liste des rôles va s'enrichir automatiquement.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre11/role1.png" class="contour-img" alt="Affichage liste des rôles" data-action="zoom">
+         </p>
+      </div>
+      <br>
+      <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez les droits d'un rôle d'utilisateur</span>
+         <p>
+            Cliquez sur le nom d'un rôle d'utilisateur pour connaître les droits octroyés et vérifier qu'ils sont conformes à vos attentes.
+         </p>
+         <p class="max-img-process">
+            <img src="../images/chapitre11/role4.png" class="contour-img" alt="Droits du rôle d'utilisateur" data-action="zoom">
+         </p>
+      </div>
+      <p class="texte">Si aucun des rôles prédéfinis ne répond à vos besoins et que vous préférez partir d'un modèle "vierge", voici comment en créer de nouveaux selon vos critères&nbsp;:</p>
+      <p align="center" class="texte aerateur procedure">B – Procédure de création des rôles d'utilisateur</p>
+      <p class="texte">
+         Le processus suivant vous guide pour créer des rôles d'utilisateur.
+      </p>
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Accédez aux rôles d'utilisateur</span>
+         <p>
+            Pour accéder aux rôles d'utilisateur, allez dans le menu principal et cliquez sur la clef anglaise<img src="../images/chapitre11/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">ou cliquez sur le bouton "Configuration" de la page d'accueil&nbsp;:
+         </p>
+         <p align="center"><img src="../images/chapitre11/wrench.svg" alt="Configuration" width="60"></p>
+         <p>
+            Dans la barre latérale du module, cliquez sur "Rôles" dans la section "Accès" symbolisée par l'icône d'un bouclier<img src="../images/chapitre11/shield.svg" alt="bouclier" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des rôles. Elle est vide si vous n'avez pas déjà pioché &#40;choisi&#41; de rôles dans l'application.
+         </p>
+      </div>
+      <br>
+      <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Définissez les droits</span>
+         <p>Saisissez le nom du rôle et définissez les droits à accorder pour les fonctionnalités de l'application en cliquant sur les boutons à droite de chacune d'entre elles.</p>
+         <p>L'activation est symbolisée par la mise en couleur d'un ou de plusieurs boutons en fonction des interactions qui existent ou pas entre certains droits&nbsp;: l'activation du droit "Écrire" entraîne automatiquement l'activation du droit "Lire" mais la réciprocité n'est pas vraie &#40;l'activation du droit "Lire" n'active pas le droit "Écrire"&#41;.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre11/role2.png" class="contour-img" alt="Création nouveau rôle" data-action="zoom">
+         </p>
+      </div>
+      <br>
+      <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Validez la création du rôle d'utilisateur</span>
+         <p>
+            Cliquez sur <span class="btn-blue">Créer</span> en bas de la fenêtre principale pour valider l'opération.
+         </p>
+         <p>Répétez ce processus pour chaque nouveau rôle que vous souhaitez ajouter à votre ferme.</p>
+      </div>
+      <p class="texte aerateur-haut">Vous pouvez modifier et supprimer des rôles si nécessaire.</p>
+      <p align="center" class="texte aerateur procedure">C – Procédure de modification des rôles d'utilisateur</p>
+      <p class="texte">
+         Le processus suivant vous guide pour modifier les rôles d'utilisateur.
+      </p>
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Accédez aux rôles d'utilisateur</span>
+         <p>
+            Pour accéder aux rôles d'utilisateur, allez dans le menu principal et cliquez sur la clef anglaise<img src="../images/chapitre11/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">ou cliquez sur le bouton "Configuration" de la page d'accueil&nbsp;:
+         </p>
+         <p align="center"><img src="../images/chapitre11/wrench.svg" alt="Configuration" width="60"></p>
+         <p>
+            Dans la barre latérale du module, cliquez sur "Rôles" dans la section "Accès" symbolisée par l'icône d'un bouclier<img src="../images/chapitre11/shield.svg" alt="bouclier" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des rôles.
+         </p>
+         <p class="max-img-process">
+            <img src="../images/chapitre11/role5.png" class="contour-img" alt="Liste des rôles" data-action="zoom">
+         </p>
+      </div>
+      <br>
+      <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Modifiez un rôle d'utilisateur</span>
+         <p>Cliquez sur l'icône "Crayon"<img src="../images/commun/crayon.svg" alt="crayon" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche du nom du rôle.</p>
+         <p>Définissez les droits à accorder pour les fonctionnalités de l'application en cliquant sur les boutons à droite de chacune d'entre elles.</p>
+         <p>L'activation est symbolisée par la mise en couleur d'un ou de plusieurs boutons en fonction des interactions qui existent ou pas entre certains droits&nbsp;: l'activation du droit "Écrire" entraîne automatiquement l'activation du droit "Lire" mais la réciprocité n'est pas vraie &#40;l'activation du droit "Lire" n'active pas le droit "Écrire"&#41;.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre11/role3.png" class="contour-img" alt="Modifier un rôle" data-action="zoom">
+         </p>
+      </div>
+      <br>
+      <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Validez la modification du rôle d'utilisateur</span>
+         <p>
+            Cliquez sur <span class="btn-blue">Modifier</span> en bas de la fenêtre principale pour valider les changements.
+         </p>
+      </div>
+      <h6>Guide de démarrage • Accès • Invitation d'utilisateurs</h6>
+      <h2 class="texte aerateur">c - Invitation d'utilisateurs</h2>
+      <p class="texte">Il est possible de lancer des invitations afin de demander à des utilisateurs de rejoindre votre ferme.</p>
+      <p align="center" class="texte aerateur procedure">A – Procédure d'invitation d'un utilisateur</p>
+      <p class="texte">
+         Le processus suivant vous guide pour inviter un utilisateur.
+      </p>
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Accédez aux invitations</span>
+         <p>
+            Pour créer une nouvelle invitation, allez dans le menu principal et cliquez sur la clef anglaise<img src="../images/chapitre11/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">ou cliquez sur le bouton "Configuration" de la page d'accueil&nbsp;:
+         </p>
+         <p align="center"><img src="../images/chapitre11/wrench.svg" alt="Configuration" width="60"></p>
+         <p>
+            Dans la barre latérale du module, cliquez sur "Invitations" dans la section "Accès" symbolisée par l'icône d'un bouclier<img src="../images/chapitre11/shield.svg" alt="bouclier" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des invités.
+         </p>
+      </div>
+      <br>
+      <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Créez une invitation</span>
+         <p>
+            Cliquez sur "Nouveau" puis, dans les "Informations générales", remplissez tous les champs obligatoires signalés par une astérisque de couleur rouge avec les informations requises pour la définir correctement. Affectez un rôle d'utilisateur si vous en avez déjà créé au moins un &#40;mais ce n'est pas obligatoire&#41;.
+         </p>
+         <p>Cliquez sur <span class="btn-blue">Créer</span> pour lancer l'invitation.</p>
+         <p>Un email est envoyé à votre contact et la liste des invités est mise à jour. Le statut de l'invitation et de l'utilisateur changent dès que votre invité a accepté votre invitation.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre11/invitation1.png" class="contour-img" alt="Invitation utilisateur" data-action="zoom">
+         </p>
+      </div>
+      <div class="warn-fond aerateur-haut">
+         <div class="floating-box-warn">
+            <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
+         </div>
+         <div class="info-txt">
+            <span class="titre-advice">Droits des invité&#40;e&#41;s<br></span>
+            <p class="texte-advice">Par défaut, les droits accordés sont la lecture et l'écriture d'interventions, même si vous n'avez pas encore pioché ou créé de rôle d'utilisateur.</p>
+            <p>Les accès aux fonctionnalités sont restreints&nbsp;: seul le module "Production" est accessible et seul le lien des "Interventions" est affiché dans la barre latérale du module.</p>
+            <p class="texte-advice">Notez également qu'il n'est pas possible de sélectionner un&#40;e&#41; invité&#40;e&#41; dans une intervention à la place d'un équipier.</p>
+         </div>
+      </div>
+      <div class="process-txt">
+         <p class="max-img-process">
+            <img src="../images/chapitre11/guest.png" class="contour-img" alt="Interface invités/inscrits" data-action="zoom">
+         </p>
+         <p align="center" class="texte legende">L'interface de l'application vue par un&#40;e&#41; invité&#40;e&#41;</p>
+      </div>
+      <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Modifiez les droits</span>
+         <p>Si vous souhaitez qu'une personne inscrite puisse saisir et renseigner correctement une intervention, nous vous conseillons d'activer des droits supplémentaires de la façon suivante&nbsp;:</p>
+         <div class="divTableListe">
+            <div class="divTableBody">
+			   <div class="divTableRow">
+                  <div class="divTableCellModif" style="width: 180px">
+                     Équipements
+                  </div>
+                  <div class="divTableCellModif" style="width: 80px">
+                     <img src="../images/chapitre11/lire.svg" alt="Lire" height="25">
+                  </div>
+                  <div class="divTableCellModif" style="width: 80px">
+                     &nbsp;
+                  </div>
+               </div>
+			   <div class="divTableRow">
+                  <div class="divTableCellModif">
+                     Étiquettes* &#40;optionnel&#41;
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/lire.svg" alt="Lire" height="25">
+                  </div>
+                  <div class="divTableCellModif">
+                     &nbsp;
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellModif">
+                     Incidents
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/lire.svg" alt="Lire" height="25">
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/ecrire.svg" alt="Écrire" height="25">
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellModif">
+                     Interventions
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/lire.svg" alt="Lire" height="25">
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/ecrire.svg" alt="Écrire" height="25">
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellModif">
+                     Produits
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/lire.svg" alt="Lire" height="25">
+                  </div>
+                  <div class="divTableCellModif">
+                     &nbsp;
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellModif">
+                     Variantes de types de produits
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/lire.svg" alt="Lire" height="25">
+                  </div>
+                  <div class="divTableCellModif">
+                     &nbsp;
+                  </div>
+               </div>
+            </div>
+         </div>
+	     <p>ou de manière plus étendue si vous voulez autoriser la création à la volée de nouveaux produits&nbsp;:</p>
+	     <div class="divTableListe">
+            <div class="divTableBody">
+			   <div class="divTableRow">
+                  <div class="divTableCellModif" style="width: 180px">
+                     Équipements
+                  </div>
+                  <div class="divTableCellModif" style="width: 80px">
+                     <img src="../images/chapitre11/lire.svg" alt="Lire" height="25">
+                  </div>
+                  <div class="divTableCellModif" style="width: 80px">
+                     &nbsp;
+                  </div>
+               </div>
+			   <div class="divTableRow">
+                  <div class="divTableCellModif">
+                     Étiquettes* &#40;optionnel&#41;
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/lire.svg" alt="Lire" height="25">
+                  </div>
+                  <div class="divTableCellModif">
+                     &nbsp;
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellModif">
+                     Incidents
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/lire.svg" alt="Lire" height="25">
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/ecrire.svg" alt="Écrire" height="25">
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellModif">
+                     Interventions
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/lire.svg" alt="Lire" height="25">
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/ecrire.svg" alt="Écrire" height="25">
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellModif">
+                     Produits
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/lire.svg" alt="Lire" height="25">
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/ecrire.svg" alt="Écrire" height="25">
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellModif">
+                     Variantes de types de produits
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/lire.svg" alt="Lire" height="25">
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/ecrire.svg" alt="Écrire" height="25">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+	  <div class="info-fond aerateur-haut aerateur-bas">
+         <div class="floating-box-info">
+            <img src="../images/commun/info.svg" width="100" alt="Info"/>
+         </div>
+         <div class="info-txt">
+            <span class="titre-advice">*Étiquettes<br></span>
+            <p class="texte-advice">
+               Rappel : les étiquettes sont des indicateurs que vous définissez dans les paramètres de la ferme et que vous pouvez personnaliser avec une couleur de votre choix. Si l'une d'entre elles est sélectionnée lors de la saisie d'une intervention &#40;il est même possible d'en choisir plusieurs&#41;, elle est affichée en bas de la fiche de l'intervention.
+            </p>
+            <br><img src="../images/chapitre11/etiquette.png" class="contour-img" alt="étiquette">
+         </div>
+      </div>
+      <h6>Guide de démarrage • Accès • Inscription d'utilisateurs</h6>
+      <h2 class="texte aerateur">d - Inscription d'utilisateurs</h2>
+      <p class="texte">Un utilisateur qui connaît l'adresse internet de votre ferme et qui souhaite accéder à vos données a la possibilité de vous soumettre son inscription en remplissant le formulaire et en cliquant sur le bouton "Inscription".</p>
+      <p class="texte aerateur-haut" align="center">
+         <img src="../images/chapitre11/inscription1.png"  width="500" alt="Formulaire d'inscription">
+      </p>
+      <p align="center" class="texte legende aerateur-bas">Formulaire d'inscription</p>
+      <p class="texte">Une fois la demande d'inscription réalisée, vous êtes prévenu&#40;e&#41; par la réception d'un email envoyé à votre adresse d'administrateur. À vous de l'accepter ou non.</p>
+      <p align="center" class="texte aerateur procedure">A – Procédure pour valider les inscriptions</p>
+      <p class="texte">
+         Le processus suivant vous guide pour accepter une inscription.
+      </p>
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Accédez aux inscriptions</span>
+         <p>
+            Pour valider l'inscription d'un nouvel utilisateur, allez dans le menu principal et cliquez sur la clef anglaise<img src="../images/chapitre11/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">ou cliquez sur le bouton "Configuration" de la page d'accueil&nbsp;:
+         </p>
+         <p align="center"><img src="../images/chapitre11/wrench.svg" alt="Configuration" width="60"></p>
+         <p>
+            Dans la barre latérale du module, cliquez sur "Inscriptions" dans la section "Accès" symbolisée par l'icône d'un bouclier<img src="../images/chapitre11/shield.svg" alt="bouclier" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des inscrits.
+         </p>
+         <p class="max-img-process">
+            <img src="../images/chapitre11/inscription2.png" class="contour-img" alt="Liste des inscriptions" data-action="zoom">
+         </p>
+      </div>
+      <br>
+      <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Validez une inscription</span>
+         <p>
+            a - Cliquez sur le nom du nouvel inscrit et validez son inscription en cliquant sur <span class="btn-blue">Modifier</span> ou&nbsp;:
+         </p>
+         <p>b - Après réception d'un email notifiant l'inscription d'un nouvel utilisateur, cliquez sur le lien permettant votre accord et validez celle-ci en cliquant sur <span class="btn-blue">Modifier</span>.</p>
+         <p>Dès que vous avez approuvé l'inscription, un email de confirmation est adressé au nouvel inscrit.
+         </p>
+         <p class="max-img-process">
+            <img src="../images/chapitre11/inscription3.png" class="contour-img" alt="Validation inscription" data-action="zoom">
+         </p>
+      </div>
+      <div class="warn-fond aerateur-haut">
+         <div class="floating-box-warn">
+            <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
+         </div>
+         <div class="info-txt">
+            <span class="titre-advice">Droits des inscrit&#40;e&#41;s<br></span>
+            <p class="texte-advice">Par défaut, les droits accordés sont la lecture et l'écriture d'interventions, même si vous n'avez pas encore pioché ou créé de rôle d'utilisateur.</p>
+            <p>Les accès aux fonctionnalités sont restreints&nbsp;: seul le module "Production" est accessible et seul le lien des "Interventions" est affiché dans la barre latérale du module.</p>
+            <p class="texte-advice">Notez également qu'il n'est pas possible de sélectionner un&#40;e&#41; inscrit&#40;e&#41; dans une intervention à la place d'un équipier.</p>
+         </div>
+      </div>
+      <div class="process-txt">
+         <p class="max-img-process">
+            <img src="../images/chapitre11/guest.png" class="contour-img" alt="Interface invités/inscrits" data-action="zoom">
+         </p>
+         <p align="center" class="texte legende">L'interface de l'application vue par un&#40;e&#41; inscrit&#40;e&#41;</p>
+      </div>
+      <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Modifiez les droits</span>
+         <p>Si vous souhaitez qu'une personne inscrite puisse saisir et renseigner correctement une intervention, nous vous conseillons d'activer des droits supplémentaires de la façon suivante&nbsp;:</p>
+         <div class="divTableListe">
+            <div class="divTableBody">
+			   <div class="divTableRow">
+                  <div class="divTableCellModif" style="width: 180px">
+                     Équipements
+                  </div>
+                  <div class="divTableCellModif" style="width: 80px">
+                     <img src="../images/chapitre11/lire.svg" alt="Lire" height="25">
+                  </div>
+                  <div class="divTableCellModif" style="width: 80px">
+                     &nbsp;
+                  </div>
+               </div>
+			   <div class="divTableRow">
+                  <div class="divTableCellModif">
+                     Étiquettes* &#40;optionnel&#41;
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/lire.svg" alt="Lire" height="25">
+                  </div>
+                  <div class="divTableCellModif">
+                     &nbsp;
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellModif">
+                     Incidents
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/lire.svg" alt="Lire" height="25">
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/ecrire.svg" alt="Écrire" height="25">
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellModif">
+                     Interventions
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/lire.svg" alt="Lire" height="25">
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/ecrire.svg" alt="Écrire" height="25">
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellModif">
+                     Produits
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/lire.svg" alt="Lire" height="25">
+                  </div>
+                  <div class="divTableCellModif">
+                     &nbsp;
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellModif">
+                     Variantes de types de produits
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/lire.svg" alt="Lire" height="25">
+                  </div>
+                  <div class="divTableCellModif">
+                     &nbsp;
+                  </div>
+               </div>
+            </div>
+         </div>
+	     <p>ou de manière plus étendue si vous voulez autoriser la création à la volée de nouveaux produits&nbsp;:</p>
+	     <div class="divTableListe">
+            <div class="divTableBody">
+			   <div class="divTableRow">
+                  <div class="divTableCellModif" style="width: 180px">
+                     Équipements
+                  </div>
+                  <div class="divTableCellModif" style="width: 80px">
+                     <img src="../images/chapitre11/lire.svg" alt="Lire" height="25">
+                  </div>
+                  <div class="divTableCellModif" style="width: 80px">
+                     &nbsp;
+                  </div>
+               </div>
+			   <div class="divTableRow">
+                  <div class="divTableCellModif">
+                     Étiquettes* &#40;optionnel&#41;
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/lire.svg" alt="Lire" height="25">
+                  </div>
+                  <div class="divTableCellModif">
+                     &nbsp;
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellModif">
+                     Incidents
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/lire.svg" alt="Lire" height="25">
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/ecrire.svg" alt="Écrire" height="25">
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellModif">
+                     Interventions
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/lire.svg" alt="Lire" height="25">
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/ecrire.svg" alt="Écrire" height="25">
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellModif">
+                     Produits
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/lire.svg" alt="Lire" height="25">
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/ecrire.svg" alt="Écrire" height="25">
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellModif">
+                     Variantes de types de produits
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/lire.svg" alt="Lire" height="25">
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/ecrire.svg" alt="Écrire" height="25">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+	  <div class="info-fond aerateur-haut aerateur-bas">
+         <div class="floating-box-info">
+            <img src="../images/commun/info.svg" width="100" alt="Info"/>
+         </div>
+         <div class="info-txt">
+            <span class="titre-advice">*Étiquettes<br></span>
+            <p class="texte-advice">
+               Rappel : les étiquettes sont des indicateurs que vous définissez dans les paramètres de la ferme et que vous pouvez personnaliser avec une couleur de votre choix. Si l'une d'entre elles est sélectionnée lors de la saisie d'une intervention &#40;il est même possible d'en choisir plusieurs&#41;, elle est affichée en bas de la fiche de l'intervention.
+            </p>
+            <br><img src="../images/chapitre11/etiquette.png" class="contour-img" alt="étiquette">
+         </div>
+      </div>
+	  <a class="slice-section" id="acces-comptables"></a>
+	  <h6>Guide de démarrage • Accès • Accès comptables</h6>
+      <h2 class="texte aerateur">e - Accès comptables</h2>
+      <p class="texte">Si vous envisagez de permettre à votre comptable ou à votre centre de gestion d'accéder à l'ensemble de vos paramètres et données comptables, voici un exemple de configuration que vous pouvez définir dans l'application.</p>
+	   <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52">
+       </div>
+	   <div class="process-txt">
+       <span class="titre-advice">Créez un nouvel utilisateur</span>
+	   <p>Créez un nouvel utilisateur et sélectionnez le rôle "Comptable" pour activer les accès de base&nbsp;:</p>
+	   <div class="divTableListe">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellModif" style="width: 180px">
+                     Comptes comptables
+                  </div>
+                  <div class="divTableCellModif" style="width: 80px">
+                     <img src="../images/chapitre11/lire.svg" alt="Lire" height="25">
+                  </div>
+                  <div class="divTableCellModif" style="width: 80px">
+                     <img src="../images/chapitre11/ecrire.svg" alt="Écrire" height="25">
+                  </div>
+				  <div class="divTableCellModif" style="width: 80px">
+                     &nbsp;
+                  </div>
+               </div>
+			   <div class="divTableRow">
+                  <div class="divTableCellModif">
+                     Exercices comptables
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/lire.svg" alt="Lire" height="25">
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/ecrire.svg" alt="Écrire" height="25">
+                  </div>
+				  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/fermer.svg" alt="Fermer" height="25">
+                  </div>
+               </div>
+			   <div class="divTableRow">
+                  <div class="divTableCellModif">
+                     Immobilisations
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/lire.svg" alt="Lire" height="25">
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/ecrire.svg" alt="Écrire" height="25">
+                  </div>
+				  <div class="divTableCellModif">
+                     &nbsp;
+                  </div>
+               </div>
+			   <div class="divTableRow">
+                  <div class="divTableCellModif">
+                     Journaux comptables
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/lire.svg" alt="Lire" height="25">
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/ecrire.svg" alt="Écrire" height="25">
+                  </div>
+				  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/fermer.svg" alt="Fermer" height="25">
+                  </div>
+               </div>
+			   <div class="divTableRow">
+                  <div class="divTableCellModif">
+                     Relevés de banque
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/lire.svg" alt="Lire" height="25">
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/ecrire.svg" alt="Écrire" height="25">
+                  </div>
+				  <div class="divTableCellModif">
+                     &nbsp;
+                  </div>
+               </div>
+            </div>
+         </div>
+	   </div>
+	   <br>
+	   <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52">
+       </div>
+	   <div class="process-txt">
+       <span class="titre-advice">Étendez les droits</span>
+	   <p>Attribuez des accès supplémentaires de la manière suivante&nbsp;:</p>
+	   <div class="divTableListe">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellModif" style="width: 180px">
+                     Brouillard comptable
+                  </div>
+                  <div class="divTableCellModif" style="width: 80px">
+                     <img src="../images/chapitre11/lire.svg" alt="Lire" height="25">
+                  </div>
+                  <div class="divTableCellModif" style="width: 80px">
+                     <img src="../images/chapitre11/confirmer.svg" alt="Confirmer" height="25">
+                  </div>
+				  <div class="divTableCellModif" style="width: 80px">
+                     &nbsp;
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellModif">
+                     Déclarations fiscales
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/lire.svg" alt="Lire" height="25">
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/ecrire.svg" alt="Écrire" height="25">
+                  </div>
+				  <div class="divTableCellModif">
+                     &nbsp;
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellModif">
+                     Échanges comptables
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/lire.svg" alt="Lire" height="25">
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/ecrire.svg" alt="Écrire" height="25">
+                  </div>
+				  <div class="divTableCellModif">
+                     &nbsp;
+                  </div>
+               </div>
+			   <div class="divTableRow">
+                  <div class="divTableCellModif">
+                     Écritures comptables
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/lire.svg" alt="Lire" height="25">
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/ecrire.svg" alt="Écrire" height="25">
+                  </div>
+				  <div class="divTableCellModif">
+                     &nbsp;
+                  </div>
+               </div>
+			   <div class="divTableRow">
+                  <div class="divTableCellModif">
+                     Emprunts
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/lire.svg" alt="Lire" height="25">
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/ecrire.svg" alt="Écrire" height="25">
+                  </div>
+				  <div class="divTableCellModif">
+                     &nbsp;
+                  </div>
+               </div>
+			   <div class="divTableRow">
+                  <div class="divTableCellModif">
+                     Paramétrage
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/lire.svg" alt="Lire" height="25">
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/ecrire.svg" alt="Écrire" height="25">
+                  </div>
+				  <div class="divTableCellModif">
+                     &nbsp;
+                  </div>
+               </div>
+			   <div class="divTableRow">
+                  <div class="divTableCellModif">
+                     Taxes
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/lire.svg" alt="Lire" height="25">
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/ecrire.svg" alt="Écrire" height="25">
+                  </div>
+				  <div class="divTableCellModif">
+                     &nbsp;
+                  </div>
+               </div>
+			   <div class="divTableRow">
+                  <div class="divTableCellModif">
+                     Trésorerie
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/lire.svg" alt="Lire" height="25">
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/ecrire.svg" alt="Écrire" height="25">
+                  </div>
+				  <div class="divTableCellModif">
+                     &nbsp;
+                  </div>
+               </div>
+			   <div class="divTableRow">
+                  <div class="divTableCellModif">
+                     Virements internes
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/lire.svg" alt="Lire" height="25">
+                  </div>
+                  <div class="divTableCellModif">
+                     <img src="../images/chapitre11/ecrire.svg" alt="Écrire" height="25">
+                  </div>
+				  <div class="divTableCellModif">
+                     &nbsp;
+                  </div>
+               </div>
+            </div>
+         </div>
+	  </div>
       <div class="navigation aerateur-haut">
          <div class="divTable">
             <div class="divTableBody">
                <div class="divTableRow">
                   <div class="divTableCellCenter" style="width: auto">&nbsp;</div>
-                  <div class="divTableCellCenter" style="width: 40px"><a href="../chapitre10" target="_self"><img src="../images/commun/arrow-left.svg" width="40"  alt="Production"></a></div>
-                  <div class="divTableCellLeft" style="width: 40px"><span><a href="../chapitre10" target="_self">ACCÈS</a></span></div>
+                  <div class="divTableCellRight" style="width: 150px"><span><a href="../chapitre10" target="_self">PRODUCTION</a></span></div>
+                  <div class="divTableCellCenter" style="width: 40px"><a href="../chapitre10" target="_self"><img src="../images/commun/arrow-left.svg" width="40" alt="Production"></a></div>
+                  <div class="divTableCellCenter" style="width: 40px"><a href="../chapitre12" target="_self"><img src="../images/commun/arrow-right.svg" width="40" alt="Imports"></a></div>
+                  <div class="divTableCellLeft" style="width: 150px"><span><a href="../chapitre12" target="_self">IMPORTS</a></span></div>
                   <div class="divTableCellCenter" style="width: auto">&nbsp;</div>
                </div>
             </div>
