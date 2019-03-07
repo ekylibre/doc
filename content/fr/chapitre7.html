@@ -73,6 +73,22 @@
                   il mentionne des données sur le contenu et le traitement de la livraison à préparer. Si le bon de livraison doit refléter certaines dispositions légales, il n'en est rien pour le bon de préparation.
                </div>
             </div>
+			<div class="divTableRow">
+               <div class="divTableCellGlossaire1">
+                  CSV
+               </div>
+               <div class="divTableCellGlossaire2">
+                  un fichier CSV est un fichier texte où chaque ligne du texte correspond à une ligne d'un tableau et les virgules correspondent aux séparations entre les colonnes
+               </div>
+            </div>
+			<div class="divTableRow">
+               <div class="divTableCellGlossaire1">
+                  ODF
+               </div>
+               <div class="divTableCellGlossaire2">
+                  OpenDocument est un format de fichier ouvert conçu pour les applications bureautiques&nbsp;: traitements de texte, tableurs, présentations
+               </div>
+            </div>
          </div>
       </div>
       <p class="texte aerateur-bas">Le symbole<img src="../images/commun/option-small.svg" class="align-icone icone-marge-gauche" height="30" alt="Optionnel">dans ce chapitre vous indique une procédure pour utiliser une fonctionnalité avancée dans l'application.</p>
@@ -88,10 +104,10 @@
             <p class="texte-advice">La saisie des achats implique que vous ayez créé auparavant vos découpes de bâtiments ou vos aires de stockage &#40;idéalement dans l'assistant de démarrage&#41;. Ce chapitre ne traite pas de la création des variantes et des fournisseurs. Référez-vous au <a href="../chapitre8" class="avoid-clicks" target="_self">chapitre 8 - Stock &amp; Personnel</a> pour connaître les procédures à suivre concernant ces deux prérequis.</p>
          </div>
       </div>
-      <p align="center" class="texte procedure">A – Procédure pour saisir un achat
+      <p align="center" class="texte procedure">A – Procédure pour saisir une commande
       </p>
       <p class="texte">
-         Le processus suivant vous guide pour saisir un achat.
+         Le processus suivant vous guide pour saisir une commande.
       </p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52">
@@ -102,18 +118,28 @@
             Cliquez sur le lien "Achats" dans le "Menu principal" ou sur le bouton "Achats" de la page d'accueil&nbsp;:
          </p>
          <p align="center"><img src="../images/chapitre7/achats.svg" alt="Achats" width="60"></p>
-         <p>Le tableau de bord vous permet de connaître la valeur des ventes et achats impayés ainsi que les encaissements à déposer.</p>
+         <p>Le tableau de bord vous permet de connaître les dernières factures et les dernières commandes à travers deux tableaux.</p>
          <p class="max-img-process">
             <img src="../images/chapitre7/tableau-bord1.png" class="contour-img" alt="Tableau de bord des achats" data-action="zoom">
          </p>
       </div>
-      <br>
+      <div class="info-fond aerateur-haut aerateur-bas">
+         <div class="floating-box-info">
+            <img src="../images/commun/info.svg" width="100" alt="Info"/>
+         </div>
+         <div class="info-txt">
+            <span class="titre-advice">Personnalisation des tableaux<br></span>
+            <p class="texte-advice">
+               Cliquez sur l'icône représentant une clef plate<img src="../images/commun/wrench.svg" alt="clef plate" height="25" class="align-icone icone-marge-gauche icone-marge-droite">en haut à droite des tableaux pour configurer leur présentation &#40;affichage et/ou masquage de certaines colonnes, nombre de lignes par page&#41; et pour réaliser des exports aux formats ODF et CSV.
+            </p>
+         </div>
+      </div>
       <div class="floating-box process">
          <img src="../images/commun/step2.svg" alt="2" width="52">
       </div>
       <div class="process-txt">
          <span class="titre-advice">Affichez les Commandes</span>
-         <p>Dans la barre latérale du module, cliquez sur "Commandes" dans la section "Achats" symbolisée par l'icône d'un chariot de supermarché<img src="../images/chapitre7/shopping-cart.svg" alt="Caddie" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des commandese.</p>
+         <p>Dans la barre latérale du module, cliquez sur "Commandes" dans la section "Achats" symbolisée par l'icône d'un chariot de supermarché<img src="../images/chapitre7/shopping-cart.svg" alt="Caddie" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des commandes.</p>
          <p class="max-img-process">
             <img src="../images/chapitre7/achat1.png" class="contour-img" alt="Liste des commandes" data-action="zoom">
          </p>
@@ -123,8 +149,8 @@
          <img src="../images/commun/step3.svg" alt="3" width="52">
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Créez une nouvelle commande</span>
-         <p>Cliquez sur le bouton "Achat standard" ou sélectionnez un type d'achat dans la liste déroulante &#40;la création d'un nouveau type d'achat n'est utile que si vous souhaitez saisir des achats dans une devise différente de celle définie dans l'application&#41;.</p>
+         <span class="titre-advice">Saisissez une nouvelle commande</span>
+         <p>Cliquez sur le bouton "Nouveau" ou sélectionnez un type d'achat dans la liste déroulante &#40;la création d'un nouveau type d'achat n'est utile que si vous souhaitez saisir des achats dans une devise différente de celle définie dans l'application&#41;.</p>
          <p class="max-img-process">
             <img src="../images/chapitre7/achat2.png" class="contour-img" alt="Créer un nouvel achat" data-action="zoom">
          </p>
@@ -134,7 +160,7 @@
          <img src="../images/commun/step4.svg" alt="4" width="52">
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Renseignez le nouvel achat</span>
+         <span class="titre-advice">Renseignez la nouvelle commande</span>
          <p>Sélectionnez le fournisseur dans la liste déroulante et renseignez les produits vendus en saisissant la quantité, le prix unitaire et le taux de TVA à appliquer.</p>
          <p>Pour ajouter d'éventuels frais de port, cliquez sur "Ajoutez un élément" et saisissez "Transport" dans le champ "Variante" pour le sélectionner.</p>
       </div>
