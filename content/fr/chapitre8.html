@@ -34,12 +34,28 @@
       </p>
       <div class="divTableListe marge">
          <div class="divTableBody">
+			<div class="divTableRow">
+               <div class="divTableCellListe" style="width: 14px">
+                  <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
+               </div>
+               <div class="divTableCellListe" style="width: auto">
+                  Comment paramétrer des <a href="#types" class="avoid-clicks">types de ventes</a>.
+               </div>
+            </div>
             <div class="divTableRow">
                <div class="divTableCellListe" style="width: 14px">
                   <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
                </div>
                <div class="divTableCellListe" style="width: auto">
-                  Comment enregistrer des <a href="#ventes" class="avoid-clicks">ventes</a>, puis générer des bons de préparation afin de produire des factures.
+                  Comment enregistrer des <a href="#ventes" class="avoid-clicks">ventes</a> à partir de devis, pour générer des <a href="#commandes" class="avoid-clicks">commandes</a> et produire des <a href="#factures" class="avoid-clicks">factures</a>.
+               </div>
+            </div>
+			<div class="divTableRow">
+               <div class="divTableCellListe" style="width: 14px">
+                  <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
+               </div>
+               <div class="divTableCellListe" style="width: auto">
+                  Comment paramétrer des <a href="#expeditions" class="avoid-clicks">expéditions</a> et organiser des <a href="#livraisons" class="avoid-clicks">livraisons</a>.
                </div>
             </div>
             <div class="divTableRow">
@@ -55,16 +71,6 @@
       <h2 class="texte aerateur">Glossaire du chapitre</h2>
       <div class="divTableGlossaire marge aerateur-bas">
          <div class="divTableBody">
-			<!--
-            <div class="divTableRow">
-               <div class="divTableCellGlossaire1" style="width: auto">
-                  Comptabilité
-               </div>
-               <div class="divTableCellGlossaire2" style="width: 100%">
-                  elle vise l’enregistrement de façon chronologique de toutes les opérations effectuées par l’exploitation agricole
-               </div>
-            </div>
-            -->
             <div class="divTableRow">
                <div class="divTableCellGlossaire1">
                   Bon de préparation
@@ -92,10 +98,19 @@
          </div>
       </div>
       <p class="texte aerateur-bas">Le symbole<img src="../images/commun/option-small.svg" class="align-icone icone-marge-gauche" height="30" alt="Optionnel">dans ce chapitre vous indique une procédure pour utiliser une fonctionnalité avancée dans l'application.</p>
-	  <h6>Guide de démarrage • Ventes • Ventes</h6>
-      <a class="slice-section" id="ventes"></a>
+	  <div class="idea-fond aerateur-haut aerateur-bas">
+         <div class="floating-box-idea">
+            <img src="../images/commun/astuce.svg" width="100" alt="Astuce"/>
+         </div>
+         <div class="info-txt">
+            <span class="titre-advice">Enregistrer une vente<br></span>
+            <p class="texte-advice">
+               Deux méthodes vous permettent d'enregistrer des ventes dans Ekylibre&nbsp;: la première est de suivre les différentes procédures décrites dans ce chapitre, la seconde est de réaliser une expédition et de facturer celle-ci comme expliqué dans le chapitre <a href="../chapitre9#expeditions" class="avoid-clicks">"Stock et personnel"</a>. Lorsque vous aurez pris en main l'application, choisissez celle qui vous convient le mieux. Notez cependant que le choix d'un type de vente n'est possible qu'avec la première méthode.
+            </p>
+         </div>
+      </div>
+	  <a class="slice-long" id="types"></a>
 	  <h6>Guide de démarrage • Ventes • Type de vente</h6>
-	  <a class="slice-long" id="type"></a>
       <h3 class="texte">1 - Type de vente</h3>
 	  <div class="saut-page"></div>
       <div class="config margin-config">
@@ -108,15 +123,15 @@
          </p>
       </div>
       <p class="texte">
-         Si vous utilisez Ekylibre pour réaliser la gestion commerciale et les opérations de facturation achats/ventes, nous vous conseillons de paramétrer vos types de vente dans l'application.
+         Si vous utilisez Ekylibre pour réaliser la gestion commerciale et l'émission des factures de ventes, nous vous conseillons de paramétrer préalablement, si nécessaire, vos différents types de vente dans l'application.
       </p>
       <p class="texte">
-         Un type de vente est déjà paramétré mais vous pouvez en créer de nouveaux en personnalisant les conditions de règlement et le mode d'encaissement.
+         Un type de vente &#40;Vente standard&#41; est déjà disponible mais vous pouvez le modifier ou en créer de nouveaux en paramétrant les conditions de règlement et le mode d'encaissement.
       </p>
       <p align="center" class="texte aerateur procedure">A – Procédure pour paramétrer un type de vente
       </p>
       <p class="texte">
-         Le processus suivant vous guide pour paramétrer un type de vente.
+         Le processus suivant vous guide pour créer un nouveau type de vente.
       </p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52">
@@ -177,8 +192,16 @@
             <p class="texte-advice">Ce chapitre ne traite pas de la création des variantes et des clients &#40;vous pouvez cependant les ajouter à la volée&#41;. Référez-vous au <a href="../chapitre9" class="avoid-clicks" target="_self">chapitre 9 - Stock &amp; Personnel</a> pour connaître les procédures à suivre concernant ces deux prérequis.</p>
          </div>
       </div>
-      <p align="center" class="texte procedure">A – Procédure pour saisir une vente
-      </p>
+	  <p class="texte">Dans Ekylibre, l'enregistrement d'une vente passe par plusieurs étapes successives qui commencent à partir de la création d'un "Devis brouillon". Ce devis &#40;une fois envoyé et s'il est accepté&#41; sera converti en "Commande" puis en "Facture" par vos soins en fonction de la conclusion ou non de la vente. L'écriture comptable d'une vente dans le brouillard des journaux concernés n'est enregistrée qu'à partir du moment ou son statut a basculé sur "Facture".</p>
+	  <p class="texte">Exemples de l'évolution du statut d'une vente&nbsp;:</p>
+	  <p class="texte"><span class="step step-orange">&nbsp;Devis brouillon&nbsp;</span><img src="../images/chapitre8/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-rouge">&nbsp;Abandonné&nbsp;</span></p>
+	  <p class="texte"><span class="step step-orange">&nbsp;Devis brouillon&nbsp;</span><img src="../images/chapitre8/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;Devis envoyé&nbsp;</span><img src="../images/chapitre8/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-rouge">&nbsp;Devis refusé&nbsp;</span></p>
+	  <p class="texte"><span class="step step-orange">&nbsp;Devis brouillon&nbsp;</span><img src="../images/chapitre8/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;Devis envoyé&nbsp;</span><img src="../images/chapitre8/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-vert">&nbsp;Commande&nbsp;</span><img src="../images/chapitre8/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-vert">&nbsp;Facture&nbsp;</span></p>
+	  <p class="texte"><span class="step step-orange">&nbsp;Devis brouillon&nbsp;</span><img src="../images/chapitre8/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-vert">&nbsp;Facture&nbsp;</span></p>
+	  <p class="texte">Nous verrons plus loin pourquoi il n'est pas strictement obligatoire de valider tous les statuts pour enregistrer une vente.</p>
+	  <a class="slice-long" id="ventes"></a>
+	  <div class="aerateur"></div>
+      <p align="center" class="texte procedure">A – Procédure pour saisir une vente</p>
       <p class="texte">
          Le processus suivant vous guide pour saisir une vente.
       </p>
@@ -191,7 +214,7 @@
             Cliquez sur le lien "Ventes" dans le "Menu principal" ou sur le bouton "Ventes" de la page d'accueil&nbsp;:
          </p>
          <p align="center"><img src="../images/chapitre8/ventes.svg" alt="Ventes/Achats" width="60"></p>
-         <p>Le tableau de bord vous permet de connaître la valeur des ventes et achats impayés ainsi que les encaissements à déposer.</p>
+         <p>Le tableau de bord des ventes vous permet de connaître les dernières ventes saisies dans l'application.</p>
          <p class="max-img-process">
             <img src="../images/chapitre8/tableau-bord1.png" class="contour-img" alt="Tableau de bord des ventes" data-action="zoom">
          </p>
@@ -203,7 +226,7 @@
          <div class="info-txt">
             <span class="titre-advice">Personnalisation du tableau<br></span>
             <p class="texte-advice">
-               Cliquez sur l'icône représentant une clef plate<img src="../images/commun/wrench.svg" alt="clef plate" height="25" class="align-icone icone-marge-gauche icone-marge-droite">en haut à droite du tableau pour configurer sa présentation &#40;affichage et/ou masquage de certaines colonnes, nombre de lignes par page&#41; et pour réaliser des exports aux formats ODF et CSV.
+               Cliquez sur l'icône représentant une clef plate<img src="../images/commun/wrench.svg" alt="clef plate" height="25" class="align-icone icone-marge-gauche icone-marge-droite">en haut à droite du tableau pour configurer sa présentation &#40;affichage et/ou masquage de certaines colonnes, choix du nombre de lignes par page&#41; et pour réaliser des exports aux formats ODF et CSV.
             </p>
          </div>
       </div>
@@ -216,6 +239,14 @@
          <p class="max-img-process">
             <img src="../images/chapitre8/vente1.png" class="contour-img" alt="Liste des ventes" data-action="zoom">
          </p>
+		 <p>Lorsque plusieurs ventes seront enregistrées, la liste sera enrichie avec plusieurs outils et indicateurs&nbsp;:</p>
+		 <p><img src="../images/commun/crayon.svg" alt="Modifier" height="20" class="align-icone icone-marge-droite">permet de modifier une vente si c'est encore possible.</p>
+		 <p><img src="../images/commun/cancel.svg" alt="Créer un avoir" height="20" class="align-icone icone-marge-droite">permet le passage en avoir de la facture si c'est encore possible.</p>
+		 <p><img src="../images/commun/delete.svg" alt="Supprimer" height="20" class="align-icone icone-marge-droite">permet de supprimer une vente si c'est encore possible.</p>
+		 <p><img src="../images/commun/statut-vert.svg" alt="Statut vert" height="20" class="align-icone icone-marge-droite">indique une vente facturée et payée.</p>
+		 <p><img src="../images/commun/statut-orange.svg" alt="Statut orange" height="20" class="align-icone icone-marge-droite">indique une vente dont l'encaissement ne correspond pas au montant de la facture.</p>
+		 <p><img src="../images/commun/statut-rouge.svg" alt="Statut rouge" height="20" class="align-icone icone-marge-droite">indique un devis expiré/abandonné ou une facture impayée.</p>
+		 <p>Notez que la couleur de ces indicateurs n'est donc pas liée au statut de la vente &#40;"Devis brouillon", "Devis envoyé", "Devis refusé", "Commande", "Facture", "Abandonné"&#41;.</p>
       </div>
       <br>
       <div class="floating-box process">
@@ -244,7 +275,7 @@
          <div class="info-txt">
             <span class="titre-advice">Adresse pour la livraison<br></span>
             <p class="texte-advice">
-               Si vous souhaitez réaliser la création d'un colis et déclencher sa livraison avec les produits commandés, la saisie d'une adresse de livraison est obligatoire.
+               Si vous souhaitez réaliser l'expédition d'une vente et déclencher sa livraison avec les produits commandés, la saisie d'une adresse de livraison est obligatoire.
             </p>
          </div>
       </div>
@@ -260,26 +291,96 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Affichez le devis</span>
-         <p>La vente possède un statut "Devis" tant qu'elle n'est pas acceptée ou passée en "Facture". Déposez vos justificatifs par glisser-déposer ou en parcourant votre disque dur après avoir cliqué sur l'icône représentant un trombone<img src="../images/chapitre8/paperclip.svg" alt="Trombonne" height="20" class="align-icone icone-marge-gauche">.</p>
+         <p>La vente possède un statut "Devis brouillon" tant qu'elle n'est pas acceptée ou passée en "Commande" ou en "Facture". Cliquez sur "Ajoutez une pièce jointe" pour parcourir votre disque dur et enregistrer un ou plusieurs justificatif&#40;s&#41;.</p>
          <p class="max-img-process">
             <img src="../images/chapitre8/vente4.png" class="contour-img" alt="Créer une nouvelle vente" data-action="zoom">
          </p>
       </div>
+      <h6>Guide de démarrage • Ventes • Transformer un devis en commande</h6>
+	  <a class="slice-long" id="commandes"></a>
+	  <div class="aerateur"></div>
+      <p align="center" class="texte procedure">B – Procédure pour transformer un devis en commande</p>
+	  <p class="texte">Le processus suivant vous guide pour transformer un devis en commande.</p>
+	  <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez le "Tableau de bord des ventes"</span>
+         <p>
+            Cliquez sur le lien "Ventes" dans le "Menu principal" ou sur le bouton "Ventes" de la page d'accueil&nbsp;:
+         </p>
+         <p align="center"><img src="../images/chapitre8/ventes.svg" alt="Ventes/Achats" width="60"></p>
+         <p class="max-img-process">
+            <img src="../images/chapitre8/tableau-bord1.png" class="contour-img" alt="Tableau de bord des ventes" data-action="zoom">
+         </p>
+      </div>
       <br>
       <div class="floating-box process">
-         <img src="../images/commun/step6.svg" alt="6" width="52">
+         <img src="../images/commun/step2.svg" alt="2" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez les ventes</span>
+         <p>Dans la barre latérale du module, cliquez sur "Ventes" dans la section "Ventes" symbolisée par l'icône d'un histogramme<img src="../images/chapitre8/bar-chart.svg" alt="histogramme" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des ventes, puis cliquez sur l'icône représentant un crayon<img src="../images/commun/crayon.svg" alt="Modifier" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour modifier la vente de votre choix.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre8/vente1.png" class="contour-img" alt="Liste des ventes" data-action="zoom">
+         </p>
+      </div>
+      <br>
+      <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52">
       </div>
       <div class="process-txt">
          <span class="titre-advice">Modifiez le statut de la vente</span>
-         <p>Modifiez le statut de la vente en cliquant successivement sur les étapes en couleur&nbsp;:<br><span class="step step-orange">&nbsp;Devis brouillon&nbsp;</span><img src="../images/chapitre8/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;Devis envoyé&nbsp;</span><img src="../images/chapitre8/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-vert">&nbsp;Commande&nbsp;</span><img src="../images/chapitre8/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-vert">&nbsp;Facture&nbsp;</span></p>
-         <p>Vous pouvez aussi valider la facturation directement en cliquant sur le bouton <span class="step step-vert">&nbsp;Facture&nbsp;</span>&nbsp;.</p>
-         <p>Utilisez les statuts <span class="step step-rouge">&nbsp;Devis refusé&nbsp;</span> ou <span class="step step-rouge">&nbsp;Abandonné&nbsp;</span> pour annuler l'enregistrement de la vente.</p>
+         <p>Modifiez le statut de la vente en cliquant successivement sur les étapes en couleur en et validant votre choix&nbsp;:<br><span class="step step-orange">&nbsp;Devis brouillon&nbsp;</span><img src="../images/chapitre8/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;Devis envoyé&nbsp;</span><img src="../images/chapitre8/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-vert">&nbsp;Commande&nbsp;</span></p>
+         <p>Utilisez les statuts <span class="step step-rouge">&nbsp;Devis refusé&nbsp;</span> &#40;actif après l'envoi du devis&#41; ou <span class="step step-rouge">&nbsp;Abandonné&nbsp;</span> pour annuler l'enregistrement de la vente.</p>
          <p class="max-img-process">
             <img src="../images/chapitre8/vente5.png" class="contour-img" alt="Passer le devis en facture" data-action="zoom">
          </p>
       </div>
-	  <h6>Guide de démarrage • Ventes • Livrer une vente</h6>
-      <p align="center" class="texte aerateur procedure">B – Procédure pour livrer une vente
+	  <h6>Guide de démarrage • Ventes • Transformer une commande en facture</h6>
+	  <a class="slice-long" id="factures"></a>
+	  <div class="aerateur"></div>
+      <p align="center" class="texte procedure">C – Procédure pour transformer une commande en facture</p>
+	  <p class="texte">Le processus suivant vous guide pour transformer une commande en facture.</p>
+	  <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez le "Tableau de bord des ventes"</span>
+         <p>
+            Cliquez sur le lien "Ventes" dans le "Menu principal" ou sur le bouton "Ventes" de la page d'accueil&nbsp;:
+         </p>
+         <p align="center"><img src="../images/chapitre8/ventes.svg" alt="Ventes/Achats" width="60"></p>
+         <p class="max-img-process">
+            <img src="../images/chapitre8/tableau-bord1.png" class="contour-img" alt="Tableau de bord des ventes" data-action="zoom">
+         </p>
+      </div>
+      <br>
+      <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez les ventes</span>
+         <p>Dans la barre latérale du module, cliquez sur "Ventes" dans la section "Ventes" symbolisée par l'icône d'un histogramme<img src="../images/chapitre8/bar-chart.svg" alt="histogramme" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des ventes, puis cliquez sur l'icône représentant un crayon<img src="../images/commun/crayon.svg" alt="Modifier" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour modifier la vente de votre choix.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre8/vente1.png" class="contour-img" alt="Liste des ventes" data-action="zoom">
+         </p>
+      </div>
+      <br>
+      <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Modifiez le statut de la vente</span>
+         <p>Modifiez le statut de la commande en cliquant sur le bouton <span class="step step-vert">&nbsp;Facture&nbsp;</span> et en validant ce choix.</p>
+         <p>Cliquez sur le bouton <span class="step step-orange">&nbsp;Devis brouillon&nbsp;</span> pour modifier la vente.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre8/vente5.png" class="contour-img" alt="Passer le devis en facture" data-action="zoom">
+         </p>
+      </div>
+	  <h6>Guide de démarrage • Ventes • Expédier une vente</h6>
+	  <a class="slice-long" id="expeditions"></a>
+      <p align="center" class="texte aerateur procedure">D – Procédure pour expédier une vente
       </p>
       <div class="warn-fond aerateur-haut">
          <div class="floating-box-warn">
@@ -293,7 +394,7 @@
          </div>
       </div>
       <p class="texte">
-         Le processus suivant vous guide pour livrer une vente.
+         Le processus suivant vous guide pour réaliser l'expédition d'une vente.
       </p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52">
@@ -325,7 +426,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Sélectionnez une vente</span>
-         <p>Cliquez sur le numéro d'une vente pour en afficher le détail, puis cliquez sur le bouton "Générer bon de préparation". Notez que ce bouton ne s'affiche que si vous avez saisi une adresse de livraison lors de la création de la vente.</p>
+         <p>Cliquez sur le numéro d'une vente pour en afficher le détail, puis cliquez sur le bouton "Créer une expédition". Notez que ce bouton ne s'affiche que si vous avez saisi une adresse de livraison lors de la création de la vente.</p>
          <p class="max-img-process">
             <img src="../images/chapitre8/vente7.png" class="contour-img" alt="Détail de la vente" data-action="zoom">
          </p>
@@ -346,20 +447,24 @@
             <img src="../images/chapitre8/vente8.png" class="contour-img" alt="Détail de la vente" data-action="zoom">
          </p>
       </div>
-      <br>
+      <h6>Guide de démarrage • Ventes • Créer une livraison</h6>
+	  <a class="slice-long" id="livraisons"></a>
+      <p align="center" class="texte aerateur procedure">E – Procédure pour créer une livraison
+      </p>
       <div class="floating-box process">
-         <img src="../images/commun/step5.svg" alt="5" width="52">
+         <img src="../images/commun/step1.svg" alt="1" width="52">
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Accédez aux livraisons</span>
-         <p>Cliquez sur "Stock" dans le "Menu principal" puis sur "Livraisons" dans la section "Mouvements" symbolisée par l'icône d'un camion<img src="../images/chapitre8/truck.svg" alt="Camion" height="20" class="align-icone icone-marge-gauche icone-marge-droite">dans la barre latérale du module.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre8/livraison1.png" class="contour-img" alt="Liste des livraisons" data-action="zoom">
+         <span class="titre-advice">Affichez le "Tableau de bord des stocks"</span>
+         <p>
+            Cliquez sur le lien "Stocks" dans le "Menu principal" ou sur le bouton "Stocks" de la page d'accueil&nbsp;:
          </p>
+         <p align="center"><img src="../images/chapitre9/stocks.svg" alt="Configuration" width="60"></p>
+         <p>Dans la barre latérale du module, cliquez sur "Livraisons" dans la section "Livraisons" symbolisée par l'icône d'un camion<img src="../images/chapitre8/truck.svg" alt="Camion" height="20" class="align-icone icone-marge-gauche icone-marge-droite">.</p>
       </div>
       <br>
       <div class="floating-box process">
-         <img src="../images/commun/step6.svg" alt="6" width="52">
+         <img src="../images/commun/step2.svg" alt="2" width="52">
       </div>
       <div class="process-txt">
          <span class="titre-advice">Créez une livraison</span>
@@ -371,7 +476,7 @@
       </div>
       <br>
       <div class="floating-box process">
-         <img src="../images/commun/step7.svg" alt="7" width="52">
+         <img src="../images/commun/step3.svg" alt="3" width="52">
       </div>
       <div class="process-txt">
          <span class="titre-advice">Affichez le statut de la livraison</span>
@@ -382,7 +487,7 @@
       </div>
       <br>
       <div class="floating-box process">
-         <img src="../images/commun/step8.svg" alt="8" width="52">
+         <img src="../images/commun/step4.svg" alt="4" width="52">
       </div>
       <div class="process-txt">
          <span class="titre-advice">Modifiez le statut de la livraison</span>
@@ -393,7 +498,7 @@
       </div>
 	  <h6>Guide de démarrage • Ventes • Réaliser un encaissement</h6>
 	  <a class="slice-long" id="encaissements"></a>
-      <p align="center" class="texte aerateur procedure">C – Procédure pour réaliser un encaissement
+      <p align="center" class="texte aerateur procedure">F – Procédure pour réaliser un encaissement
       </p>
       <p class="texte">
          Le processus suivant vous guide pour réaliser un encaissement à partir d'une vente.
