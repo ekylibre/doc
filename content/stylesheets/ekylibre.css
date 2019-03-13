@@ -222,6 +222,10 @@ a:link, a:visited {
 	vertical-align: -2px;
 }
 
+.align-btn-gris {
+	vertical-align: -6px;
+}
+
 .align-outil {
 	width: 30px;
     vertical-align: -7px;
