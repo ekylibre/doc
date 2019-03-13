@@ -55,7 +55,15 @@
                   <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
                </div>
                <div class="divTableCellListe" style="width: auto">
-                  Comment paramétrer des <a href="#expeditions" class="avoid-clicks">expéditions</a> et organiser des <a href="#livraisons" class="avoid-clicks">livraisons</a>.
+                  Comment créer des <a href="#avoirs" class="avoid-clicks">avoirs</a> sur factures.
+               </div>
+            </div>
+			<div class="divTableRow">
+               <div class="divTableCellListe" style="width: 14px">
+                  <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
+               </div>
+               <div class="divTableCellListe" style="width: auto">
+                  Comment procéder à des <a href="#expeditions" class="avoid-clicks">expéditions</a> de marchandises et organiser des <a href="#livraisons" class="avoid-clicks">livraisons</a>.
                </div>
             </div>
             <div class="divTableRow">
@@ -71,6 +79,7 @@
       <h2 class="texte aerateur">Glossaire du chapitre</h2>
       <div class="divTableGlossaire marge aerateur-bas">
          <div class="divTableBody">
+			<!--
             <div class="divTableRow">
                <div class="divTableCellGlossaire1">
                   Bon de préparation
@@ -79,6 +88,7 @@
                   il mentionne des données sur le contenu et le traitement de la livraison à préparer. Si le bon de livraison doit refléter certaines dispositions légales, il n'en est rien pour le bon de préparation.
                </div>
             </div>
+			-->
 			<div class="divTableRow">
                <div class="divTableCellGlossaire1">
                   CSV
@@ -241,7 +251,7 @@
          </p>
 		 <p>Lorsque plusieurs ventes seront enregistrées, la liste sera enrichie avec plusieurs outils et indicateurs&nbsp;:</p>
 		 <p><img src="../images/commun/crayon.svg" alt="Modifier" height="20" class="align-icone icone-marge-droite">permet de modifier une vente si c'est encore possible.</p>
-		 <p><img src="../images/commun/cancel.svg" alt="Créer un avoir" height="20" class="align-icone icone-marge-droite">permet le passage en avoir de la facture si c'est encore possible.</p>
+		 <p><img src="../images/commun/undo.svg" alt="Créer un avoir" height="20" class="align-icone icone-marge-droite">permet le passage en avoir de la facture si c'est encore possible.</p>
 		 <p><img src="../images/commun/delete.svg" alt="Supprimer" height="20" class="align-icone icone-marge-droite">permet de supprimer une vente si c'est encore possible.</p>
 		 <p><img src="../images/commun/statut-vert.svg" alt="Statut vert" height="20" class="align-icone icone-marge-droite">indique une vente facturée et payée.</p>
 		 <p><img src="../images/commun/statut-orange.svg" alt="Statut orange" height="20" class="align-icone icone-marge-droite">indique une vente dont l'encaissement ne correspond pas au montant de la facture.</p>
@@ -254,7 +264,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Créez une nouvelle vente</span>
-         <p>Cliquez sur le bouton "Vente standard" ou sélectionnez un type de vente dans la liste déroulante &#40;seulement si des types de vente ont été définis avant&#41;.</p>
+         <p>Cliquez sur le bouton "Vente standard" ou sélectionnez un type de vente dans la liste déroulante &#40;seulement si des types de vente ont été définis avant&#41; située à droite du bouton "Vente standard".</p>
          <p class="max-img-process">
             <img src="../images/chapitre8/vente2.png" class="contour-img" alt="Créer une nouvelle vente" data-action="zoom">
          </p>
@@ -291,10 +301,11 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Affichez le devis</span>
-         <p>La vente possède un statut "Devis brouillon" tant qu'elle n'est pas acceptée ou passée en "Commande" ou en "Facture". Cliquez sur "Ajoutez une pièce jointe" pour parcourir votre disque dur et enregistrer un ou plusieurs justificatif&#40;s&#41;.</p>
-         <p class="max-img-process">
+         <p>La vente possède un statut "Devis brouillon" tant qu'elle n'est pas acceptée ou passée en "Commande" ou en "Facture". Déposez vos justificatifs par glisser-déposer ou en parcourant votre disque dur après avoir cliqué sur l'icône représentant un trombone<img src="../images/chapitre7/paperclip.svg" alt="Trombonne" height="20" class="align-icone icone-marge-gauche">.</p>
+		  <p class="max-img-process">
             <img src="../images/chapitre8/vente4.png" class="contour-img" alt="Créer une nouvelle vente" data-action="zoom">
          </p>
+		 <p>Cliquez sur le bouton<img src="../images/commun/modifier2.svg" alt="Modifier" height="25" class="align-btn-gris icone-marge-gauche icone-marge-droite">pour revenir à l'étape précédente et modifier la vente &#40;client, adresse, lignes de vente&#41;.</p>
       </div>
       <h6>Guide de démarrage • Ventes • Transformer un devis en commande</h6>
 	  <a class="slice-long" id="commandes"></a>
@@ -334,7 +345,7 @@
          <p>Modifiez le statut de la vente en cliquant successivement sur les étapes en couleur en et validant votre choix&nbsp;:<br><span class="step step-orange">&nbsp;Devis brouillon&nbsp;</span><img src="../images/chapitre8/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;Devis envoyé&nbsp;</span><img src="../images/chapitre8/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-vert">&nbsp;Commande&nbsp;</span></p>
          <p>Utilisez les statuts <span class="step step-rouge">&nbsp;Devis refusé&nbsp;</span> &#40;actif après l'envoi du devis&#41; ou <span class="step step-rouge">&nbsp;Abandonné&nbsp;</span> pour annuler l'enregistrement de la vente.</p>
          <p class="max-img-process">
-            <img src="../images/chapitre8/vente5.png" class="contour-img" alt="Passer le devis en facture" data-action="zoom">
+            <img src="../images/chapitre8/commande.png" class="contour-img" alt="Passer le devis en commande" data-action="zoom">
          </p>
       </div>
 	  <h6>Guide de démarrage • Ventes • Transformer une commande en facture</h6>
@@ -371,11 +382,15 @@
          <img src="../images/commun/step3.svg" alt="3" width="52">
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Modifiez le statut de la vente</span>
-         <p>Modifiez le statut de la commande en cliquant sur le bouton <span class="step step-vert">&nbsp;Facture&nbsp;</span> et en validant ce choix.</p>
-         <p>Cliquez sur le bouton <span class="step step-orange">&nbsp;Devis brouillon&nbsp;</span> pour modifier la vente.</p>
+         <span class="titre-advice">Modifiez le statut de la commande</span>
+         <p>Cliquez sur le bouton <span class="step step-orange">&nbsp;Devis brouillon&nbsp;</span> si vous devez modifier la vente <strong>avant</strong> de la passer en facture.</p>
+		 <p>Modifiez le statut de la commande en cliquant sur le bouton <span class="step step-vert">&nbsp;Facture&nbsp;</span> et en validant ce choix.</p>
          <p class="max-img-process">
             <img src="../images/chapitre8/vente5.png" class="contour-img" alt="Passer le devis en facture" data-action="zoom">
+         </p>
+		 <p>Notez que le solde négatif affiché en rouge dans le tableau "Affaire" &#40;égal au montant total TTC de la facture&#41; exprime une créance en attente de réglement.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre8/affaire1.png" class="contour-img" alt="Créance" data-action="zoom">
          </p>
       </div>
 	  <h6>Guide de démarrage • Ventes • Expédier une vente</h6>
@@ -447,9 +462,63 @@
             <img src="../images/chapitre8/vente8.png" class="contour-img" alt="Détail de la vente" data-action="zoom">
          </p>
       </div>
+	  <h6>Guide de démarrage • Ventes • Réaliser un avoir</h6>
+	  <a class="slice-long" id="avoirs"></a>
+	  <div class="aerateur"></div>
+      <p align="center" class="texte procedure">E – Procédure pour réaliser un avoir</p>
+	  <p class="texte">Un avoir est une facture d’annulation. Faire une facture d’avoir, c’est en fait annuler la part de chiffre d’affaires réalisée à l’occasion d’une précédente facture. Il est important de bien suivre vos avoirs pour ne pas vous retrouver dans la situation gênante de déclarer du chiffre d’affaires qui n’aurait pas généré de paiement, donc de trésorerie pour votre exploitation.</p>
+	  <p class="texte">On peut aussi faire un avoir commercial pour résoudre un litige suite à un problème de livraison ou de qualité d’un produit ou d'une prestation jugée insuffisante. La marchandise a pourtant bien été livrée et facturée, mais vous jugez qu’à titre commercial, il est normal de diminuer le prix a posteriori pour garder de bonnes relations avec votre client. Vous établirez alors un avoir partiel du montant de la facture.</p>
+	  <p class="texte">Le processus suivant vous guide pour réaliser un avoir sur une facture.</p>
+	  <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez le "Tableau de bord des ventes"</span>
+         <p>
+            Cliquez sur le lien "Ventes" dans le "Menu principal" ou sur le bouton "Ventes" de la page d'accueil&nbsp;:
+         </p>
+         <p align="center"><img src="../images/chapitre8/ventes.svg" alt="Ventes/Achats" width="60"></p>
+         <p class="max-img-process">
+            <img src="../images/chapitre8/tableau-bord1.png" class="contour-img" alt="Tableau de bord des ventes" data-action="zoom">
+         </p>
+      </div>
+      <br>
+      <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez les ventes</span>
+         <p>Dans la barre latérale du module, cliquez sur "Ventes" dans la section "Ventes" symbolisée par l'icône d'un histogramme<img src="../images/chapitre8/bar-chart.svg" alt="histogramme" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des ventes, puis cliquez sur l'icône<img src="../images/commun/undo.svg" alt="Annuler" height="20" class="align-icone icone-marge-gauche icone-marge-droite">en face du numéro de la facture choisie pour créer un avoir.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre8/vente1.png" class="contour-img" alt="Liste des ventes" data-action="zoom">
+         </p>
+      </div>
+      <br>
+      <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Créez l'avoir sur facture</span>
+         <p>Saisissez soit une quantité, soit un montant HT, soit un montant TTC dans l'un des trois champs disponibles pour créer un avoir partiel ou total.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre8/vente5.png" class="contour-img" alt="Passer le devis en facture" data-action="zoom">
+         </p>
+		 <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
+      </div>
+	  <br>
+      <div class="floating-box process">
+         <img src="../images/commun/step4.svg" alt="4" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Vérifiez la création de l'avoir</span>
+         <p>Dans le tableau "Affaire", vérifiez que le montant de l'avoir a bien été pris en compte.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre8/vente5.png" class="contour-img" alt="Passer le devis en facture" data-action="zoom">
+         </p>
+      </div>
       <h6>Guide de démarrage • Ventes • Créer une livraison</h6>
 	  <a class="slice-long" id="livraisons"></a>
-      <p align="center" class="texte aerateur procedure">E – Procédure pour créer une livraison
+      <p align="center" class="texte aerateur procedure">F – Procédure pour créer une livraison
       </p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52">
@@ -459,12 +528,25 @@
          <p>
             Cliquez sur le lien "Stocks" dans le "Menu principal" ou sur le bouton "Stocks" de la page d'accueil&nbsp;:
          </p>
-         <p align="center"><img src="../images/chapitre9/stocks.svg" alt="Configuration" width="60"></p>
-         <p>Dans la barre latérale du module, cliquez sur "Livraisons" dans la section "Livraisons" symbolisée par l'icône d'un camion<img src="../images/chapitre8/truck.svg" alt="Camion" height="20" class="align-icone icone-marge-gauche icone-marge-droite">.</p>
+         <p align="center"><img src="../images/chapitre9/stocks.svg" alt="Tableau de bord des stocks" width="60"></p>
+      </div>
+	  <br>
+	   <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52">
+      </div>
+	   <div class="process-txt">
+         <span class="titre-advice">Affichez les Livraisons</span>
+         <p>Dans la barre latérale du module, cliquez sur "Livraisons" dans la section "Livraisons" symbolisée par l'icône d'un camion<img src="../images/chapitre8/truck.svg" alt="Camion" height="20" class="align-icone icone-marge-gauche icone-marge-droite">, puis cliquez sur le bouton "Nouveau".</p>
+		 <p>Lorsque plusieurs livraisons seront enregistrées, la liste sera enrichie avec plusieurs outils et indicateurs&nbsp;:</p>
+		 <p><img src="../images/commun/crayon.svg" alt="Modifier" height="20" class="align-icone icone-marge-droite">permet de modifier une livraison.</p>
+		 <p><img src="../images/commun/delete.svg" alt="Supprimer" height="20" class="align-icone icone-marge-droite">permet de supprimer une livraison.</p>
+		 <p><img src="../images/commun/statut-vert.svg" alt="Statut vert" height="20" class="align-icone icone-marge-droite">indique une livraison avec le statut "Terminée".</p>
+		 <p><img src="../images/commun/statut-orange.svg" alt="Statut orange" height="20" class="align-icone icone-marge-droite">indique une livraison avec le statut "Commandée", "En préparation", "Prête" ou "Commencée".</p>
+		 <p><img src="../images/commun/statut-rouge.svg" alt="Statut rouge" height="20" class="align-icone icone-marge-droite">indique une livraison avec le statut "Brouillon".</p>
       </div>
       <br>
       <div class="floating-box process">
-         <img src="../images/commun/step2.svg" alt="2" width="52">
+         <img src="../images/commun/step3.svg" alt="3" width="52">
       </div>
       <div class="process-txt">
          <span class="titre-advice">Créez une livraison</span>
@@ -476,18 +558,18 @@
       </div>
       <br>
       <div class="floating-box process">
-         <img src="../images/commun/step3.svg" alt="3" width="52">
+         <img src="../images/commun/step4.svg" alt="4" width="52">
       </div>
       <div class="process-txt">
          <span class="titre-advice">Affichez le statut de la livraison</span>
-         <p>Une fois créée, la livraison prend le statut de "Brouillon" et va pouvoir être mise à jour en fonction de son avancement.</p>
+         <p>Une fois créée, la livraison prend le statut de "Brouillon" et va pouvoir évoluer en fonction de son avancement.</p>
          <p class="max-img-process">
             <img src="../images/chapitre8/livraison6.png" class="contour-img" alt="Statut de la livraison" data-action="zoom">
          </p>
       </div>
       <br>
       <div class="floating-box process">
-         <img src="../images/commun/step4.svg" alt="4" width="52">
+         <img src="../images/commun/step5.svg" alt="5" width="52">
       </div>
       <div class="process-txt">
          <span class="titre-advice">Modifiez le statut de la livraison</span>
@@ -495,10 +577,11 @@
          <p class="max-img-process">
             <img src="../images/chapitre8/livraison7.png" class="contour-img" alt="Modification du statut de la livraison" data-action="zoom">
          </p>
+		 <p>Cliquez sur le bouton<img src="../images/commun/imprimer.svg" alt="Imprimer" height="25" class="align-btn-gris icone-marge-gauche icone-marge-droite">pour générer un bon de livraison au format PDF.</p>
       </div>
 	  <h6>Guide de démarrage • Ventes • Réaliser un encaissement</h6>
 	  <a class="slice-long" id="encaissements"></a>
-      <p align="center" class="texte aerateur procedure">F – Procédure pour réaliser un encaissement
+      <p align="center" class="texte aerateur procedure">G – Procédure pour réaliser un encaissement
       </p>
       <p class="texte">
          Le processus suivant vous guide pour réaliser un encaissement à partir d'une vente.
@@ -555,8 +638,8 @@
          <img src="../images/commun/step5.svg" alt="5" width="52">
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Affichez la vente</span>
-         <p>La vente est mise à jour avec le nouvel encaissement qui lui est associé.</p>
+         <span class="titre-advice">Vérifiez la création de l'encaissement</span>
+         <p>Dans le tableau "Affaire", vérifiez que le montant de l'encaissement a bien été pris en compte.</p>
          <p class="max-img-process">
             <img src="../images/chapitre8/encaissement3.png" class="contour-img" alt="Détail de la vente" data-action="zoom">
          </p>
