@@ -249,14 +249,14 @@
          <p class="max-img-process">
             <img src="../images/chapitre8/vente1.png" class="contour-img" alt="Liste des ventes" data-action="zoom">
          </p>
-		 <p>Lorsque plusieurs ventes seront enregistrées, la liste sera enrichie avec plusieurs outils et indicateurs&nbsp;:</p>
+		 <p>Lorsque plusieurs ventes sont enregistrées, la liste est enrichie avec plusieurs outils et indicateurs&nbsp;:</p>
 		 <p><img src="../images/commun/crayon.svg" alt="Modifier" height="20" class="align-icone icone-marge-droite">permet de modifier une vente si c'est encore possible.</p>
-		 <p><img src="../images/commun/undo.svg" alt="Créer un avoir" height="20" class="align-icone icone-marge-droite">permet le passage en avoir de la facture si c'est encore possible.</p>
+		 <p><img src="../images/commun/undo.svg" alt="Créer un avoir" height="20" class="align-icone icone-marge-droite">permet de créer un avoir sur une facture si c'est encore possible.</p>
 		 <p><img src="../images/commun/delete.svg" alt="Supprimer" height="20" class="align-icone icone-marge-droite">permet de supprimer une vente si c'est encore possible.</p>
 		 <p><img src="../images/commun/statut-vert.svg" alt="Statut vert" height="20" class="align-icone icone-marge-droite">indique une vente facturée et payée.</p>
 		 <p><img src="../images/commun/statut-orange.svg" alt="Statut orange" height="20" class="align-icone icone-marge-droite">indique une vente dont l'encaissement ne correspond pas au montant de la facture.</p>
 		 <p><img src="../images/commun/statut-rouge.svg" alt="Statut rouge" height="20" class="align-icone icone-marge-droite">indique un devis expiré/abandonné ou une facture impayée.</p>
-		 <p>Notez que la couleur de ces indicateurs n'est donc pas liée au statut de la vente &#40;"Devis brouillon", "Devis envoyé", "Devis refusé", "Commande", "Facture", "Abandonné"&#41;.</p>
+		 <p>Notez que la couleur de ces indicateurs n'est pas liée au statut de la vente &#40;"Devis brouillon", "Devis envoyé", "Devis refusé", "Commande", "Facture", "Abandonné"&#41;.</p>
       </div>
       <br>
       <div class="floating-box process">
@@ -409,7 +409,7 @@
          </div>
       </div>
       <p class="texte">
-         Le processus suivant vous guide pour réaliser l'expédition d'une vente.
+         Le processus suivant vous guide pour enregistrer l'expédition d'une vente.
       </p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52">
@@ -456,8 +456,16 @@
          <p class="max-img-process">
             <img src="../images/chapitre8/colis-vente.png" class="contour-img" alt="Nouveau colis" data-action="zoom">
          </p>
+		 <p>Notez que la mention affichée en italique sous "Quantité" est la quantité en stock avant l'expédition.</p>
          <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
-         <p>L'application affiche maintenant la vente avec les informations du nouveau colis associé à celui-ci en bas de la fenêtre principale.</p>
+      </div>
+	  <br>
+	   <div class="floating-box process">
+         <img src="../images/commun/step5.svg" alt="5" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez la vente</span>
+         <p>L'application affiche maintenant la vente avec les informations de la nouvelle expédition associée à celle-ci en bas de la fenêtre principale. Vous pouvez ajouter autant d'expéditions que nécessaire.</p>
          <p class="max-img-process">
             <img src="../images/chapitre8/vente8.png" class="contour-img" alt="Détail de la vente" data-action="zoom">
          </p>
@@ -499,9 +507,9 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Créez l'avoir sur facture</span>
-         <p>Saisissez soit une quantité, soit un montant HT, soit un montant TTC dans l'un des trois champs disponibles pour créer un avoir partiel ou total.</p>
+         <p>Saisissez soit une quantité, soit un montant HT, soit un montant TTC dans l'un des trois champs disponibles pour créer un avoir partiel ou total. Notez que si l'avoir est exprimé par un montant, celui-ci doit être renseigné avec une valeur <strong>négative</strong>.</p>
          <p class="max-img-process">
-            <img src="../images/chapitre8/vente5.png" class="contour-img" alt="Passer le devis en facture" data-action="zoom">
+            <img src="../images/chapitre8/avoir1.png" class="contour-img" alt="Passer le devis en facture" data-action="zoom">
          </p>
 		 <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
       </div>
@@ -510,16 +518,29 @@
          <img src="../images/commun/step4.svg" alt="4" width="52">
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Vérifiez la création de l'avoir</span>
-         <p>Dans le tableau "Affaire", vérifiez que le montant de l'avoir a bien été pris en compte.</p>
+         <span class="titre-advice">Vérifiez la création de la facture d'avoir</span>
+         <p>La nouvelle facture d'avoir est automatiquement générée et affichée par l'application avec les références de la facture de vente dont est issue la ligne de la facture d'avoir dans le tableau "Affaire".</p>
          <p class="max-img-process">
-            <img src="../images/chapitre8/vente5.png" class="contour-img" alt="Passer le devis en facture" data-action="zoom">
+            <img src="../images/chapitre8/avoir2.png" class="contour-img" alt="Passer le devis en facture" data-action="zoom">
+         </p>
+      </div>
+	  <br>
+      <div class="floating-box process">
+         <img src="../images/commun/step5.svg" alt="5" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Vérifiez la vente de vente modifiée</span>
+         <p>Affichez la vente concernée par l'avoir pour vérifiez son écriture dans le tableau "Affaire" et pour constater la création d'un tableau "Avoirs" en bas de la fenêtre principale.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre8/vente9.png" class="contour-img" alt="Facture avec avoir" data-action="zoom">
          </p>
       </div>
       <h6>Guide de démarrage • Ventes • Créer une livraison</h6>
 	  <a class="slice-long" id="livraisons"></a>
       <p align="center" class="texte aerateur procedure">F – Procédure pour créer une livraison
       </p>
+	  <p class="texte">Ekylibre permet de gérer certains aspects logistiques, de la réception des colis fournisseurs à l'expédition des commandes clients. Par une "Livraison", on considère le mouvement d'un ou de plusieurs colis entrants ou sortants de l'exploitation. Les stocks de matières ne sont pas impactées par les livraisons.</p>
+	  <p class="texte">Le processus suivant vous guide pour réaliser la livraison d'une réception &#40;lié à un achat&#41; ou d'une expédition &#40;lié à unevente&#41;.</p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52">
       </div>
@@ -537,20 +558,31 @@
 	   <div class="process-txt">
          <span class="titre-advice">Affichez les Livraisons</span>
          <p>Dans la barre latérale du module, cliquez sur "Livraisons" dans la section "Livraisons" symbolisée par l'icône d'un camion<img src="../images/chapitre8/truck.svg" alt="Camion" height="20" class="align-icone icone-marge-gauche icone-marge-droite">, puis cliquez sur le bouton "Nouveau".</p>
-		 <p>Lorsque plusieurs livraisons seront enregistrées, la liste sera enrichie avec plusieurs outils et indicateurs&nbsp;:</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre8/livraisons.png" class="contour-img" alt="Liste des livraisons" data-action="zoom">
+         </p>
+		 <p>Lorsque plusieurs livraisons sont enregistrées, la liste est enrichie avec plusieurs outils et indicateurs&nbsp;:</p>
 		 <p><img src="../images/commun/crayon.svg" alt="Modifier" height="20" class="align-icone icone-marge-droite">permet de modifier une livraison.</p>
 		 <p><img src="../images/commun/delete.svg" alt="Supprimer" height="20" class="align-icone icone-marge-droite">permet de supprimer une livraison.</p>
 		 <p><img src="../images/commun/statut-vert.svg" alt="Statut vert" height="20" class="align-icone icone-marge-droite">indique une livraison avec le statut "Terminée".</p>
 		 <p><img src="../images/commun/statut-orange.svg" alt="Statut orange" height="20" class="align-icone icone-marge-droite">indique une livraison avec le statut "Commandée", "En préparation", "Prête" ou "Commencée".</p>
 		 <p><img src="../images/commun/statut-rouge.svg" alt="Statut rouge" height="20" class="align-icone icone-marge-droite">indique une livraison avec le statut "Brouillon".</p>
       </div>
-      <br>
+      <div class="warn-fond aerateur-haut aerateur-bas">
+         <div class="floating-box-warn">
+            <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
+         </div>
+         <div class="info-txt">
+            <span class="titre-advice">Sélection des colis à livrer<br></span>
+            <p class="texte-advice">Vous ne pouvez pas créer de livraisons avec les colis souhaités tant que leur réception ou leur expédition n'a pas été enregistrée auparavant dans un "Achat" ou dans une "Vente".</p>
+         </div>
+      </div>
       <div class="floating-box process">
          <img src="../images/commun/step3.svg" alt="3" width="52">
       </div>
       <div class="process-txt">
          <span class="titre-advice">Créez une livraison</span>
-         <p>Sélectionnez un ou plusieurs colis à l'aide des cases à cocher<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour procéder à une livraison unique ou groupée de plusieurs produits &#40;ou pour organiser une tournée de livraison&#41;.</p>
+         <p>Sélectionnez un ou plusieurs colis à l'aide des cases à cocher<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour procéder à une livraison unique ou groupée de plusieurs colis &#40;ou pour organiser une tournée de livraison&#41;. Notez que chaque colis est caractérisé par son type&nbsp;: "Expédition" ou "Réception".</p>
          <p class="max-img-process">
             <img src="../images/chapitre8/livraison5.png" class="contour-img" alt="Liste des livraisons" data-action="zoom">
          </p>
@@ -562,7 +594,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Affichez le statut de la livraison</span>
-         <p>Une fois créée, la livraison prend le statut de "Brouillon" et va pouvoir évoluer en fonction de son avancement.</p>
+         <p>Une fois créée, la livraison prend le statut de "Brouillon" et va pouvoir évoluer en fonction de son avancement. Déposez vos justificatifs par glisser-déposer ou en parcourant votre disque dur après avoir cliqué sur l'icône représentant un trombone<img src="../images/chapitre7/paperclip.svg" alt="Trombonne" height="20" class="align-icone icone-marge-gauche">.</p>
          <p class="max-img-process">
             <img src="../images/chapitre8/livraison6.png" class="contour-img" alt="Statut de la livraison" data-action="zoom">
          </p>
@@ -573,7 +605,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Modifiez le statut de la livraison</span>
-         <p>Modifiez le statut de la livraison en cliquant successivement sur les étapes en couleur&nbsp;:<br><span class="step step-orange">&nbsp;Brouillon&nbsp;</span><img src="../images/chapitre8/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;Commandée&nbsp;</span><img src="../images/chapitre8/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;En préparation&nbsp;</span><img src="../images/chapitre8/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;Prête&nbsp;</span><img src="../images/chapitre8/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;Commencée&nbsp;</span><img src="../images/chapitre8/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-vert">&nbsp;Terminée&nbsp;</span></p>
+         <p>Modifiez le statut de la livraison en cliquant successivement sur les étapes en couleur et en validant chaque changement d'état&nbsp;:<br><span class="step step-orange">&nbsp;Brouillon&nbsp;</span><img src="../images/chapitre8/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;Commandée&nbsp;</span><img src="../images/chapitre8/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;En préparation&nbsp;</span><img src="../images/chapitre8/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;Prête&nbsp;</span><img src="../images/chapitre8/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;Commencée&nbsp;</span><img src="../images/chapitre8/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-vert">&nbsp;Terminée&nbsp;</span></p>
          <p class="max-img-process">
             <img src="../images/chapitre8/livraison7.png" class="contour-img" alt="Modification du statut de la livraison" data-action="zoom">
          </p>
