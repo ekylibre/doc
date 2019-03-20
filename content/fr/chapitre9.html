@@ -22,7 +22,7 @@
             5 - L’interface<br>
             6 - Comptabilité<br>
             7 - Achats<br>
-			8 - Ventes</span><br>
+            8 - Ventes</span><br>
             9 - Stock &amp; Personnel<br>
             <span class="rappel-sommaire">10 - Production<br>
             11 - Accès<br>
@@ -47,7 +47,7 @@
                   <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
                </div>
                <div class="divTableCellListe">
-                  Comment créer un <a href="#stock" class="avoid-clicks">stock initial</a> dans l'application &#40;avec des mouvements de colis ou des matières&#41;
+                  Comment créer un <a href="#stock" class="avoid-clicks">stock initial</a> dans l'application &#40;avec la création de nouvelles matières ou avec des réceptions de produits&#41;
                </div>
             </div>
             <div class="divTableRow">
@@ -63,7 +63,7 @@
                   <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
                </div>
                <div class="divTableCellListe">
-                  Comment définir vos <a href="#equipements" class="avoid-clicks">équipements</a> &#40;matériel agricole&#41;, votre <a href="#personnel" class="avoid-clicks">personnel et vos contacts</a> &#40;fournisseurs, clients, prestataires de services, etc&#41;
+                  Comment définir vos <a href="#equipements" class="avoid-clicks">équipements</a> &#40;matériel agricole&#41;, votre <a href="#personnel" class="avoid-clicks">personnel et vos contacts</a> &#40;fournisseurs, clients, prestataires de services, etc.&#41;
                </div>
             </div>
          </div>
@@ -76,7 +76,7 @@
                   Stock
                </div>
                <div class="divTableCellGlossaire2" style="width: 100%">
-                  dans l'application, tous les éléments &#40;produits, produits de récolte, équipements, animaux, végétaux, et même bâtiments et main d’œuvre&#41; sont considérés comme faisant partie du stock de la ferme sauf les fournisseurs et les clients
+                  dans l'application, tous les éléments &#40;intrants, produits de récolte, consommables, équipements, animaux, végétaux, et même bâtiments et main d’œuvre&#41; sont considérés comme faisant partie du stock de la ferme sauf les fournisseurs et les clients
                   <p align="center"><img src="../images/chapitre9/schema-stock.svg" alt="Schéma stock" width="400" class="aerateur-glossaire"/></p>
                </div>
             </div>
@@ -89,7 +89,7 @@
       <p class="texte">Tous les éléments stockés dans Ekylibre sont associés à une catégorie qui est un profil de gestion applicable pour les écritures comptables &#40;le paramétrage de plusieurs tâches associées à la comptabilité est expliqué dans le <a href="../chapitre6" target="_self" class="avoid-clicks">chapitre 6 - Comptabilité</a>&#41;.</p>
       <p class="texte">Ces éléments sont également rattachés à des types &#40;familles&#41; identifiés par un profil technique comme par exemple un service, un équipement, un produit phytosanitaire.</p>
       <p class="texte">La variante est finalement la dénomination d'un produit appartenant simultanément à une catégorie &#40;profil de gestion&#41; et à un type &#40;profil technique&#41;.</p>
-	  <p class="texte">À la création du stock initial, lors d'un achat ou d'une vente, la variante est finalement enregistrée sous la forme d'un produit avec la quantité spécifiée.</p>
+      <p class="texte">À la création du stock initial, lors d'un achat ou d'une vente, la variante est finalement enregistrée sous la forme d'un produit avec la quantité spécifiée.</p>
       <div class="affichage-large"></div>
       <div class="affichage-mobile">
          <p align="center">
@@ -266,7 +266,7 @@
       <p class="texte">Deux méthodes sont à votre disposition. Elles diffèrent l'une par rapport à l'autre en raison de leur impact sur la traçabilité &#40;écritures dans la comptabilité&#41; et de la facilité avec laquelle vous allez pouvoir définir vos stocks pour commencer.</p>
       <div class="divTableGlossaire marge">
          <div class="divTableBody">
-			<div class="divTableRow">
+            <div class="divTableRow">
                <div class="divTableCellStock1">
                   Stocks &rsaquo; Créer une nouvelle matière
                </div>
@@ -397,10 +397,7 @@
          </p>
          <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
       </div>
-      <p class="texte">
-         On vous explique maintenant comment approvisionner votre ferme avec la quantité d'intrant nécessaire pour pouvoir procéder plus tard à une intervention &#40;semis&#41;. Ce processus est valable pour tout approvisionnement
-      </p>
-	  <h6>Guide de démarrage • Stocks &amp; Personnel • Nouvelle matière</h6>
+      <h6>Guide de démarrage • Stocks &amp; Personnel • Nouvelle matière</h6>
       <a class="slice-long" name="matieres"></a>
       <p align="center" class="texte aerateur procedure">C – Procédure pour stocker une matière
       </p>
@@ -415,7 +412,39 @@
          <p>
             Cliquez sur le lien "Stocks" dans le "Menu principal" ou sur le bouton "Stocks" de la page d'accueil&nbsp;:
          </p>
-         <p align="center"><img src="../images/chapitre9/stocks.svg" alt="Configuration" width="60"></p>
+         <p align="center"><img src="../images/chapitre9/stocks.svg" alt="Stocks" width="60"></p>
+         <p>Le tableau de bord des stocks affiche par défaut trois tableaux permettant de prendre connaissance des&nbsp;:</p>
+         <div class="divTableListe">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellPlan" style="width: 10px">
+                     <img src="../images/commun/circle.svg" alt="Puce" height="15">
+                  </div>
+                  <div class="divTableCellPlan" style="width: auto">
+                     Futurs colis à expédier&nbsp;;
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellPlan">
+                     <img src="../images/commun/circle.svg" alt="Puce" height="15">
+                  </div>
+                  <div class="divTableCellPlan">
+                     Futurs colis à réceptionner&nbsp;;
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellPlan">
+                     <img src="../images/commun/circle.svg" alt="Puce" height="15">
+                  </div>
+                  <div class="divTableCellPlan">
+                     Derniers mouvements de stock.
+                  </div>
+               </div>
+            </div>
+         </div>
+         <p class="max-img-process">
+            <img src="../images/chapitre9/tableau-bord.png" class="contour-img" alt="Tableau de bord des stocks" data-action="zoom">
+         </p>
       </div>
       <br>
       <div class="floating-box process">
@@ -483,7 +512,7 @@
       <a class="slice-long" name="colis-entrant"></a>
       <p align="center" class="texte aerateur procedure">D – Procédure pour stocker une ou plusieurs variante&#40;s&#41;
       </p>
-	  <div class="warn-fond aerateur-haut aerateur-bas saut-page">
+      <div class="warn-fond aerateur-haut aerateur-bas saut-page">
          <div class="floating-box-warn">
             <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
          </div>
@@ -505,36 +534,10 @@
          <p>
             Cliquez sur le lien "Stocks" dans le "Menu principal" ou sur le bouton "Stocks" de la page d'accueil&nbsp;:
          </p>
-         <p align="center"><img src="../images/chapitre9/stocks.svg" alt="Configuration" width="60"></p>
-		 <p>Le tableau de bord des stocks affiche par défaut trois tableaux permettant de prendre connaissance des&nbsp;:</p>
-		 <div class="divTableListe">
-         <div class="divTableBody">
-            <div class="divTableRow">
-               <div class="divTableCellPlan" style="width: 10px">
-                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
-               </div>
-               <div class="divTableCellPlan" style="width: auto">
-                  Futurs colis à expédier&nbsp;;
-               </div>
-            </div>
-            <div class="divTableRow">
-               <div class="divTableCellPlan">
-                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
-               </div>
-               <div class="divTableCellPlan">
-                  Futurs colis à réceptionner&nbsp;;
-               </div>
-            </div>
-			<div class="divTableRow">
-               <div class="divTableCellPlan">
-                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
-               </div>
-               <div class="divTableCellPlan">
-                  Derniers mouvements de stock.
-               </div>
-            </div>
-         </div>
-      </div>
+         <p align="center"><img src="../images/chapitre9/stocks.svg" alt="Stocks" width="60"></p>
+         <p class="max-img-process">
+            <img src="../images/chapitre9/tableau-bord.png" class="contour-img" alt="Tableau de bord des stocks" data-action="zoom">
+         </p>
       </div>
       <br>
       <div class="floating-box process">
@@ -542,7 +545,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Accédez aux "Réceptions"</span>
-         <p>Dans la barre latérale du module, cliquez sur "Réceptions" dans la section "Réceptions" symbolisée par l'icône d'un camion<img src="../images/chapitre9/truck.svg" alt="Camion" height="20" class="align-icone icone-marge-gauche">. La fenêtre principale affiche l'ensemble des colis réceptionnés, quel que soit leur statut&nbsp;: donné, c'est à dire effectivement reçu ou en brouillon &#40;la réception du colis est prévue mais pas encore confirmée&#41;.</p>
+         <p>Dans la barre latérale du module, cliquez sur "Réceptions" dans la section "Réceptions" symbolisée par l'icône d'un camion<img src="../images/chapitre9/truck.svg" alt="Camion" height="20" class="align-icone icone-marge-gauche icone-marge-droite">. La fenêtre principale affiche l'ensemble des colis réceptionnés, quel que soit leur statut&nbsp;: donné, c'est à dire effectivement reçu ou en brouillon &#40;la réception du colis est prévue mais pas encore confirmée&#41;.</p>
          <p class="max-img-process">
             <img src="../images/chapitre9/colis4.png" class="contour-img" alt="Liste des colis" data-action="zoom">
          </p>
@@ -567,11 +570,8 @@
          <div class="info-txt">
             <span class="titre-advice">Nouvel expéditeur<br></span>
             <p class="texte-advice">
-               Si l'expéditeur du colis &#40;le fournisseur&#41; n'existe pas encore, créez-en un nouveau à la volée en sélectionnant "Ajouter un nouvel enregistrement" dans le menu "Expéditeur" et saisissez les informations le concernant.
+               Si l'expéditeur du colis &#40;le fournisseur&#41; n'existe pas encore, créez-en un nouveau à la volée en sélectionnant "Ajouter un nouvel enregistrement" dans le menu "Expéditeur" et saisissez les informations requises pour le définir correctement.
             </p>
-            <p align="center"><img src="../images/chapitre9/fournisseur1.png" alt="Nouveau fournisseur" width="300" class="contour-img" data-action="zoom"></p>
-            <p align="center"><img src="../images/chapitre9/fournisseur2.png" alt="Nouveau fournisseur" width="300" class="contour-img" data-action="zoom"></p>
-            Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.
          </div>
       </div>
       <br>
@@ -600,7 +600,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Modifiez le statut de la "Réception"</span>
-         <p>Validez la "Réception" du colis en cliquant sur le bouton <span class="step step-vert">&nbsp;Reçu&nbsp;</span> pour disposer de la "matière" en stock. La "Réception" passe au statut <span class="step step-orange">&nbsp;Brouillon&nbsp;</span> et il n'est alors plus possible de la supprimer.</p> 
+         <p>Validez la "Réception" du colis en cliquant sur le bouton <span class="step step-vert">&nbsp;Reçu&nbsp;</span> pour disposer de la "matière" en stock. La "Réception" passe au statut <span class="step step-orange">&nbsp;Brouillon&nbsp;</span> et il n'est alors plus possible de la supprimer.</p>
          <p class="max-img-process">
             <img src="../images/chapitre9/colis2.png" class="contour-img" alt="Statut du colis entrant" data-action="zoom">
          </p>
@@ -628,7 +628,7 @@
             </p>
          </div>
       </div>
-	  <a class="slice-long" id="expeditions"></a>
+      <a class="slice-long" id="expeditions"></a>
       <h6>Guide de démarrage • Stocks &amp; Personnel • Expéditions</h6>
       <p align="center" class="texte aerateur procedure">E – Procédure pour réaliser l'expédition d'un colis
       </p>
@@ -654,15 +654,18 @@
          <p>
             Cliquez sur le lien "Stocks" dans le "Menu principal" ou sur le bouton "Stocks" de la page d'accueil&nbsp;:
          </p>
-         <p align="center"><img src="../images/chapitre9/stocks.svg" alt="Configuration" width="60"></p>
+         <p align="center"><img src="../images/chapitre9/stocks.svg" alt="Stocks" width="60"></p>
+         <p class="max-img-process">
+            <img src="../images/chapitre9/tableau-bord.png" class="contour-img" alt="Tableau de bord des stocks" data-action="zoom">
+         </p>
       </div>
       <br>
       <div class="floating-box process">
          <img src="../images/commun/step2.svg" alt="2" width="52">
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Accédez aux "Colis"</span>
-         <p>Dans la barre latérale du module, cliquez sur "Colis" dans la section "Mouvements" symbolisée par l'icône d'un camion<img src="../images/chapitre9/truck.svg" alt="Épi" height="20" class="align-icone icone-marge-gauche">.</p>
+         <span class="titre-advice">Accédez aux "Expéditions"</span>
+         <p>Dans la barre latérale du module, cliquez sur "Expéditions" dans la section "Expéditions" symbolisée par l'icône d'un camion<img src="../images/chapitre9/truck.svg" alt="Camion" height="20" class="align-icone icone-marge-gauche icone-marge-droite">.</p>
          <p class="max-img-process">
             <img src="../images/chapitre9/colis9.png" class="contour-img" alt="Liste des colis" data-action="zoom">
          </p>
@@ -674,10 +677,11 @@
       <div class="process-txt">
          <span class="titre-advice">Saisissez les informations </span>
          <p>
-            Cliquez sur "Nouveau colis sortant", puis remplissez tous les champs signalés par une astérisque de couleur rouge avec les informations requises pour le définir correctement et sans oublier de préciser si une livraison est prévue ou pas &#40;case à cocher<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à droite de l'option "Avec livraison"&#41;.
+            Cliquez sur "Nouvelle expédition", puis remplissez tous les champs signalés par une astérisque de couleur rouge avec les informations requises pour la définir correctement et sans oublier de préciser si une livraison est prévue ou pas &#40;case à cocher<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à droite de l'option "Avec livraison"&#41;.
          </p>
+         <p>Cliquez sur <span class="btn-blue">Ajouter un élément</span> pour inclure un premier élément à l'expédition. Saisissez un mot-clef dans le champ "Produit" pour filtrer les résultats affichés et sélectionnez le produit à expédié avec la quantité souhaitée.</p>
          <p class="max-img-process">
-            <img src="../images/chapitre9/colis5.png" class="contour-img" alt="Nouveau colis entrant" data-action="zoom">
+            <img src="../images/chapitre9/colis5.png" class="contour-img" alt="Nouvelle expédition" data-action="zoom">
          </p>
       </div>
       <div class="info-fond aerateur-haut">
@@ -687,19 +691,14 @@
          <div class="info-txt">
             <span class="titre-advice">Nouveau destinataire<br></span>
             <p class="texte-advice">
-               Si le destinataire du colis &#40;le client&#41; n'existe pas encore, créez-en un nouveau à la volée en sélectionnant "Ajouter un nouvel enregistrement" dans le menu "Destinataire" et saisissez les informations le concernant.
+               Si le destinataire du colis &#40;le client&#41; n'existe pas encore, créez-en un nouveau à la volée en sélectionnant "Ajouter un nouvel enregistrement" dans le menu "Destinataire" et saisissez les informations requises pour le définir correctement.
             </p>
-            <p align="center"><img src="../images/chapitre9/destinataire1.png" alt="Nouveau destinataire" width="300" class="contour-img" data-action="zoom"></p>
-            <p align="center"><img src="../images/chapitre9/destinataire2.png" alt="Nouveau destinataire" width="300" class="contour-img" data-action="zoom"></p>
-            Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.
          </div>
       </div>
-      <br>
       <div class="floating-box process"></div>
       <div class="process-txt">
-         <p>
-            Cliquez sur le bouton "Ajouter un élément". Remplissez les champs dans le panneau "Éléments". Vous pouvez ajouter plusieurs éléments dans un même colis &#40;ne pas oublier les frais de transport le cas échéant&#41;.
-         </p>
+         <p>Procédez de la même manière pour ajouter successivement plusieurs éléments avec la quantité souhaitée à cette expédition.</p>
+         <p>Notez que la mention affichée en italique sous "Quantité" est la quantité en stock avant l'expédition.</p>
          <p>
             Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération ou sur <span class="btn-blue">Créer et saisir suivant</span> pour réaliser une nouvelle saisie.
          </p>
@@ -709,8 +708,8 @@
          <img src="../images/commun/step4.svg" alt="4" width="52">
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Modifiez le statut du "Colis sortant"</span>
-         <p>Modifiez le statut du colis en cliquant successivement sur les étapes en couleur&nbsp;:<br><span class="step step-orange">&nbsp;Brouillon&nbsp;</span><img src="../images/chapitre9/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;Commandé&nbsp;</span><img src="../images/chapitre9/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;En préparation&nbsp;</span><img src="../images/chapitre9/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;Prêt&nbsp;</span><img src="../images/chapitre9/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-vert">&nbsp;Donné&nbsp;</span> et passez à l'étape n° 5 de cette procédure.</p>
+         <span class="titre-advice">Modifiez le statut de l'expédition</span>
+         <p>Modifiez le statut de l'expédition en cliquant successivement sur les étapes en couleur&nbsp;:<br><span class="step step-orange">&nbsp;Brouillon&nbsp;</span><img src="../images/chapitre9/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;Commandé&nbsp;</span><img src="../images/chapitre9/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;En préparation&nbsp;</span><img src="../images/chapitre9/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;Prêt&nbsp;</span><img src="../images/chapitre9/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-vert">&nbsp;Donné&nbsp;</span> et passez à l'étape n° 5 de cette procédure.</p>
          <p class="max-img-process">
             <img src="../images/chapitre9/colis6.png" class="contour-img" alt="Statut du colis sortant" data-action="zoom">
          </p>
@@ -754,7 +753,7 @@
       <h6>Guide de démarrage • Stocks &amp; Personnel • Achats/Ventes</h6>
       <h2 class="texte aerateur">b - Introduction à la gestion des achats/ventes</h2>
       <p class="texte">
-         Les mouvements de stocks de matières &#40;colis entrant et colis sortant&#41; peuvent être utilisés pour réaliser la gestion des achats et des ventes avec un enregistrement automatique des écritures comptables qui en découlent.
+         Les mouvements de stocks de matières &#40;"Réceptions" et "Expéditions"&#41; peuvent être utilisés pour réaliser la gestion des achats et des ventes avec un enregistrement automatique des écritures comptables qui en découlent.
       </p>
       <p align="center" class="texte aerateur procedure">A – Procédure pour régler un achat
       </p>
@@ -769,7 +768,7 @@
          <p>
             Cliquez sur le lien "Stocks" dans le "Menu principal" ou sur le bouton "Stocks" de la page d'accueil&nbsp;:
          </p>
-         <p align="center"><img src="../images/chapitre9/stocks.svg" alt="Configuration" width="60"></p>
+         <p align="center"><img src="../images/chapitre9/stocks.svg" alt="Stocks" width="60"></p>
       </div>
       <br>
       <div class="floating-box process">
@@ -777,7 +776,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Accédez aux "Colis"</span>
-         <p>Dans la barre latérale du module, cliquez sur "Colis" dans la section "Mouvements" symbolisée par l'icône d'un camion<img src="../images/chapitre9/truck.svg" alt="Épi" height="20" class="align-icone icone-marge-gauche">.</p>
+         <p>Dans la barre latérale du module, cliquez sur "Colis" dans la section "Mouvements" symbolisée par l'icône d'un camion<img src="../images/chapitre9/truck.svg" alt="Camion" height="20" class="align-icone icone-marge-gauche">.</p>
       </div>
       <br>
       <div class="floating-box process">
@@ -828,7 +827,7 @@
          <p>
             Cliquez sur le lien "Stocks" dans le "Menu principal" ou sur le bouton "Stocks" de la page d'accueil&nbsp;:
          </p>
-         <p align="center"><img src="../images/chapitre9/stocks.svg" alt="Configuration" width="60"></p>
+         <p align="center"><img src="../images/chapitre9/stocks.svg" alt="Stocks" width="60"></p>
       </div>
       <br>
       <div class="floating-box process">
@@ -836,7 +835,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Accédez aux "Colis"</span>
-         <p>Dans la barre latérale du module, cliquez sur "Colis" dans la section "Mouvements" symbolisée par l'icône d'un camion<img src="../images/chapitre9/truck.svg" alt="Épi" height="20" class="align-icone icone-marge-gauche">.</p>
+         <p>Dans la barre latérale du module, cliquez sur "Colis" dans la section "Mouvements" symbolisée par l'icône d'un camion<img src="../images/chapitre9/truck.svg" alt="Camion" height="20" class="align-icone icone-marge-gauche">.</p>
       </div>
       <br>
       <div class="floating-box process">
@@ -844,7 +843,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Procédez à la livraison</span>
-         <p>Cliquez sur le camion bleu<img src="../images/chapitre9/truck-blue.svg" alt="Épi" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de la fenêtre principale pour démarrer le processus de livraison &#40;uniquement si cette option a été sélectionnée à la création du colis sortant - sinon, passez directement à l'étape n° 5 de cette procédure&#41;.</p>
+         <p>Cliquez sur le camion bleu<img src="../images/chapitre9/truck-blue.svg" alt="Camion" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de la fenêtre principale pour démarrer le processus de livraison &#40;uniquement si cette option a été sélectionnée à la création du colis sortant - sinon, passez directement à l'étape n° 5 de cette procédure&#41;.</p>
          <p class="max-img-process">
             <img src="../images/chapitre9/colis7.png" class="contour-img" alt="Passage colis en facture d'achat" data-action="zoom">
          </p>
@@ -958,7 +957,7 @@
          <p>
             Cliquez sur le lien "Stocks" dans le "Menu principal" ou sur le bouton "Stocks" de la page d'accueil&nbsp;:
          </p>
-         <p align="center"><img src="../images/chapitre9/stocks.svg" alt="Configuration" width="60"></p>
+         <p align="center"><img src="../images/chapitre9/stocks.svg" alt="Stocks" width="60"></p>
       </div>
       <br>
       <div class="floating-box process">
@@ -1066,7 +1065,8 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Renseignez l'équipement</span>
-         <p>Remplissez les champs avec les informations requises pour le définir correctement. Notez que si vous ne sélectionnez aucune entrée pour le "Contenant", l'équipement est alors considéré comme stocké en extérieur.</p><p>Vous pouvez également sélectionner un visuel pour illustrer l'équipement avec une image de votre choix, de préférence au format jpeg.</p>
+         <p>Remplissez les champs avec les informations requises pour le définir correctement. Notez que si vous ne sélectionnez aucune entrée pour le "Contenant", l'équipement est alors considéré comme stocké en extérieur.</p>
+         <p>Vous pouvez également sélectionner un visuel pour illustrer l'équipement avec une image de votre choix, de préférence au format jpeg.</p>
          <p class="max-img-process">
             <img src="../images/chapitre9/equipements3.png" class="contour-img" alt="Liste des équipements" data-action="zoom">
          </p>
@@ -1298,8 +1298,8 @@
             <img src="../images/chapitre9/equipier1.png" class="contour-img" alt="Nouvel équipier" data-action="zoom">
          </p>
          <p class="aerateur-bas">Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
-	  </div>
-	  <div class="warn-fond aerateur-haut">
+      </div>
+      <div class="warn-fond aerateur-haut">
          <div class="floating-box-warn">
             <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
          </div>
@@ -1310,7 +1310,7 @@
             </p>
          </div>
       </div>
-	  <div class="process-txt">
+      <div class="process-txt">
          <p>Si vous n'avez pas créé l'équipier dans la foulée de la création du nouveau contact, vous pouvez réaliser l'opération à tout moment en affichant la liste des tiers, puis en cliquant sur son nom ou sur son numéro, sauf si celui a déjà été sélectionné lors de la saisie d'un achat ou d'une vente en tant que fournisseur ou client.</p>
          <p class="max-img-process">
             <img src="../images/chapitre9/edit-contact1.png" class="contour-img" alt="Nouvel équipier" data-action="zoom">
