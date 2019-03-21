@@ -167,7 +167,7 @@
             Cliquez sur le bouton "Nouveau" et remplissez tous les champs avec les bonnes informations pour le définir correctement.
          </p>
          <p>Nommez de façon explicite le nouveau type de vente et cochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour l'activer.<br>Cochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à droite de "Par défaut" si vous estimez que ce type de vente sera le plus fréquemment utilisé &nbsp;: il deviendra alors le bouton principal dans la fenêtre de création d'une nouvelle vente à la place de "Vente standard".</p>
-         <p>Notez que le "<strong>Délai d'expiration</strong>" est la durée de validité d'un devis &#40;ce délai est fixé par défaut à 30 jours mais vous pouvez le modifier&#41;. Lors de la création d'une nouvelle vente, il est utilisé pour le calcul de la date d'expiration indiquée lors de l'impression d'un "Devis brouillon", d'un "Devis envoyé" et d'une "Commande".</p>
+         <p>Notez que le "<strong>Délai d'expiration</strong>" est la durée de validité d'un devis &#40;ce délai est fixé par défaut à 30 jours mais vous pouvez le modifier&#41;. Lors de la création d'une nouvelle vente, il est utilisé pour le calcul de la date d'expiration indiquée lors de l'impression d'un "Devis brouillon", d'un "Devis envoyé" ou d'une "Commande" au format PDF.</p>
 		 <p>Dans la section comptabilité, sélectionnez le journal en rapport avec le mode d'encaissement&nbsp;: "Journal des ventes" pour les encaissements par chèque ou virement, "Journal de caisse" pour les encaissements en espèces.</p>
          <p class="max-img-process">
             <img src="../images/chapitre8/type-vente2.png" class="contour-img" alt="Nouveau type de vente" data-action="zoom">
@@ -202,7 +202,7 @@
             <p class="texte-advice">Ce chapitre ne traite pas de la création des variantes et des clients &#40;vous pouvez cependant les ajouter à la volée&#41;. Référez-vous au <a href="../chapitre9" class="avoid-clicks" target="_self">chapitre 9 - Stock &amp; Personnel</a> pour connaître les procédures à suivre concernant ces deux prérequis.</p>
          </div>
       </div>
-	  <p class="texte">Dans Ekylibre, l'enregistrement d'une vente passe par plusieurs étapes successives qui commencent à partir de la création d'un "Devis brouillon". Ce devis &#40;une fois envoyé et s'il est accepté&#41; sera converti en "Commande" puis en "Facture" par vos soins en fonction de la conclusion ou non de la vente. L'écriture comptable d'une vente dans le brouillard des journaux concernés n'est enregistrée qu'à partir du moment ou son statut a basculé sur "Facture".</p>
+	  <p class="texte">Dans Ekylibre, l'enregistrement d'une vente passe par plusieurs étapes successives qui commencent à partir de la création d'un "Devis brouillon". Ce devis &#40;une fois envoyé et s'il est accepté&#41; sera converti en "Commande" puis en "Facture" par vos soins en fonction de la conclusion ou non de la vente. L'écriture comptable d'une vente dans le brouillard des journaux concernés n'est enregistrée qu'à partir du moment où son statut a basculé sur "Facture".</p>
 	  <p class="texte">Exemples de l'évolution du statut d'une vente&nbsp;:</p>
 	  <p class="texte"><span class="step step-orange">&nbsp;Devis brouillon&nbsp;</span><img src="../images/chapitre8/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-rouge">&nbsp;Abandonné&nbsp;</span></p>
 	  <p class="texte"><span class="step step-orange">&nbsp;Devis brouillon&nbsp;</span><img src="../images/chapitre8/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;Devis envoyé&nbsp;</span><img src="../images/chapitre8/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-rouge">&nbsp;Devis refusé&nbsp;</span></p>
@@ -254,11 +254,11 @@
 		 <p><img src="../images/commun/crayon.svg" alt="Modifier" height="20" class="align-icone icone-marge-droite">permet de modifier une vente.</p>
 		 <p><img src="../images/commun/undo.svg" alt="Créer un avoir" height="20" class="align-icone icone-marge-droite">permet de créer un avoir sur une facture.</p>
 		 <p><img src="../images/commun/delete.svg" alt="Supprimer" height="20" class="align-icone icone-marge-droite">permet de supprimer une vente.</p>
-		 <p>La présence ou l'absence de ces icônes dans une ligne de vente vous renseigne sur la possibilité de réaliser ou pas l'opération qui lui est associée.</p>
+		 <p>La présence ou l'absence de ces icônes dans une ligne de vente vous renseigne sur la possibilité de réaliser ou non l'opération qui lui est associée.</p>
 		 <p><img src="../images/commun/statut-vert.svg" alt="Statut vert" height="20" class="align-icone icone-marge-droite">signale une vente facturée et payée.</p>
 		 <p><img src="../images/commun/statut-orange.svg" alt="Statut orange" height="20" class="align-icone icone-marge-droite">signale une vente dont l'encaissement ne correspond pas au montant de la facture.</p>
 		 <p><img src="../images/commun/statut-rouge.svg" alt="Statut rouge" height="20" class="align-icone icone-marge-droite">signale un devis en cours/expiré/abandonné ou une facture impayée.</p>
-		 <p>Notez que la couleur de ces trois indicateurs n'est pas liée au statut de la vente &#40;"Devis brouillon", "Devis envoyé", "Devis refusé", "Commande", "Facture", "Abandonné"&#41; comme vous le verrez plus loin.</p>
+		 <p>Notez que la couleur de ces trois indicateurs n'est pas forcément liée au statut de la vente &#40;"Devis brouillon", "Devis envoyé", "Devis refusé", "Commande", "Facture", "Abandonné"&#41; comme vous le verrez plus loin.</p>
       </div>
       <br>
       <div class="floating-box process">
@@ -359,7 +359,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Modifiez le statut de la vente</span>
-         <p>Modifiez le statut de la vente en cliquant successivement sur les étapes en couleur en et validant votre choix&nbsp;:<br><span class="step step-orange">&nbsp;Devis brouillon&nbsp;</span><img src="../images/chapitre8/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;Devis envoyé&nbsp;</span><img src="../images/chapitre8/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-vert">&nbsp;Commande&nbsp;</span></p>
+         <p>Modifiez le statut de la vente en cliquant successivement sur les étapes en couleur et en validant votre choix&nbsp;:<br><span class="step step-orange">&nbsp;Devis brouillon&nbsp;</span><img src="../images/chapitre8/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;Devis envoyé&nbsp;</span><img src="../images/chapitre8/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-vert">&nbsp;Commande&nbsp;</span></p>
          <p>Utilisez les statuts <span class="step step-rouge">&nbsp;Devis refusé&nbsp;</span> &#40;actif après l'envoi du devis&#41; ou <span class="step step-rouge">&nbsp;Abandonné&nbsp;</span> pour annuler l'enregistrement de la vente.</p>
          <p class="max-img-process">
             <img src="../images/chapitre8/commande.png" class="contour-img" alt="Passer le devis en commande" data-action="zoom">
@@ -441,7 +441,7 @@
          <div class="info-txt">
             <span class="titre-advice">Matière en stock<br></span>
             <p class="texte-advice">
-               Si vous souhaitez réaliser la création d'une expédition &#40;une étape indispensable dans le processus de vente pour gérer vos stocks automatiquement&#41;, les produits doivent être préalablement stockés, c'est-à-dire soit issus d'une production végétale ou animale &#40;récolte, traite, ramassage d'œufs&#41;, soit appartenir à l'exploitation &#40;animaux&#41;.
+               Si vous souhaitez réaliser la création d'une expédition &#40;une étape indispensable dans le processus de vente pour gérer vos stocks automatiquement&#41;, les produits doivent être préalablement stockés, c'est-à-dire soit issus d'une production végétale ou animale &#40;récolte, traite, ramassage d'œufs&#41;, soit appartenir à l'exploitation &#40;animaux, engrais, semences&#41;.
             </p>
          </div>
       </div>
@@ -494,7 +494,7 @@
          <p class="max-img-process">
             <img src="../images/chapitre8/colis-vente.png" class="contour-img" alt="Nouveau colis" data-action="zoom">
          </p>
-		 <p>Notez que la mention affichée en italique sous "Quantité" est la quantité en stock avant l'expédition.</p>
+		 <p>Notez que la mention affichée en italique sous "Quantité" est la quantité disponible en stock avant l'expédition.</p>
          <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
       </div>
 	  <br>
@@ -503,7 +503,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Affichez la vente</span>
-         <p>L'application affiche maintenant la vente avec les informations de la nouvelle expédition associée à celle-ci en bas de la fenêtre principale. Vous pouvez ajouter autant d'expéditions que nécessaire.</p>
+         <p>L'application affiche maintenant la vente avec les informations de la nouvelle expédition associée à celle-ci, en bas de la fenêtre principale. Vous pouvez ajouter autant d'expéditions que nécessaire.</p>
          <p class="max-img-process">
             <img src="../images/chapitre8/vente8.png" class="contour-img" alt="Détail de la vente" data-action="zoom">
          </p>
@@ -512,7 +512,7 @@
 	  <a class="slice-long" id="avoirs"></a>
 	  <div class="aerateur"></div>
       <p align="center" class="texte procedure">E – Procédure pour réaliser un avoir</p>
-	  <p class="texte">Un avoir est une facture d’annulation. Faire une facture d’avoir, c’est en fait annuler la part de chiffre d’affaires réalisée à l’occasion d’une précédente facture. Il est important de bien suivre vos avoirs pour ne pas vous retrouver dans la situation gênante de déclarer du chiffre d’affaires qui n’aurait pas généré de paiement, donc de trésorerie pour votre exploitation.</p>
+	  <p class="texte">Un avoir est une facture d’annulation. Faire une facture d’avoir, c’est en fait annuler la part de chiffre d’affaires réalisée à l’occasion d’une précédente facture. <strong>Il est important de bien suivre vos avoirs pour ne pas vous retrouver dans la situation gênante de déclarer du chiffre d’affaires qui n’aurait pas généré de paiement, donc de trésorerie pour votre exploitation</strong>.</p>
 	  <p class="texte">On peut aussi faire un avoir commercial pour résoudre un litige suite à un problème de livraison ou de qualité d’un produit ou d'une prestation jugée insuffisante. La marchandise a pourtant bien été livrée et facturée, mais vous jugez qu’à titre commercial, il est normal de diminuer le prix a posteriori pour garder de bonnes relations avec votre client. Vous établirez alors un avoir partiel du montant de la facture.</p>
 	  <p class="texte">Le processus suivant vous guide pour réaliser un avoir sur une facture.</p>
 	  <div class="floating-box process">
@@ -577,7 +577,7 @@
 	  <a class="slice-long" id="livraisons"></a>
       <p align="center" class="texte aerateur procedure">F – Procédure pour créer une livraison
       </p>
-	  <p class="texte">Ekylibre permet de gérer certains aspects logistiques, de la réception des colis fournisseurs à l'expédition des commandes clients. On entend par "Livraison" le mouvement physique d'un ou de plusieurs colis entrants &#40;réceptions&#41; ou sortants &#40;expéditions&#41; avec une traçabilité dans les factures correspondantes. Les stocks de matières ne sont en aucun cas impactées par les livraisons de colis.</p>
+	  <p class="texte">Ekylibre permet de gérer certains aspects logistiques, de la réception des colis fournisseurs à l'expédition des commandes clients. On entend par "Livraison" le mouvement physique d'un ou de plusieurs colis entrants &#40;réceptions&#41; ou sortants &#40;expéditions&#41; avec une traçabilité dans les factures correspondantes. Les stocks de matières ne sont en aucun cas impactés par les livraisons de colis.</p>
 	  <p class="texte">Le processus suivant vous guide pour réaliser la livraison d'une expédition.</p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52">
@@ -587,7 +587,7 @@
          <p>
             Cliquez sur le lien "Stocks" dans le "Menu principal" ou sur le bouton "Stocks" de la page d'accueil&nbsp;:
          </p>
-         <p align="center"><img src="../images/chapitre9/stocks.svg" alt="Stocks" width="60"></p>
+         <p align="center"><img src="../images/chapitre8/stocks.svg" alt="Stocks" width="60"></p>
 	     <p class="max-img-process">
             <img src="../images/chapitre8/stocks.png" class="contour-img" alt="Tableau de bord des stocks" data-action="zoom">
          </p>
