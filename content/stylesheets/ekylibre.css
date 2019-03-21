@@ -337,6 +337,33 @@ a:link, a:visited {
 	background-color: #d72116;
 }
 
+.statut-recep-rouge {
+	color: #f44336;
+	border: solid 1px #f44336;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+.statut-recep-vert {
+	color: #4caf50;
+	border: solid 1px #4caf50;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+
+.statut-recep-warn {
+	color: #ffffff;
+	background-color: #ff8811;
+	text-transform: uppercase;
+	font-size: 12px;
+	white-space: nowrap;
+}
+
 .after-box {
     clear: left;
 }
