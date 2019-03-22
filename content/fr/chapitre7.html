@@ -39,7 +39,7 @@
                   <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
                </div>
                <div class="divTableCellListe" style="width: auto">
-                  Comment enregistrer des <a href="#achats" class="avoid-clicks">achats</a>, puis générer des bons de préparation afin de produire des factures
+                  Comment enregistrer des <a href="#achats" class="avoid-clicks">commandes</a> avec des marchandises et/ou des services
                </div>
             </div>
 			<div class="divTableRow">
@@ -47,7 +47,23 @@
                   <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
                </div>
                <div class="divTableCellListe" style="width: auto">
-                  Comment enregistrer des <a href="#achats" class="avoid-clicks">réceptions</a>
+                  Comment procéder à des <a href="#achats" class="avoid-clicks">réceptions</a> de marchandises et/ou de services
+               </div>
+            </div>
+			 <div class="divTableRow">
+               <div class="divTableCellListe" style="width: 14px">
+                  <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
+               </div>
+               <div class="divTableCellListe" style="width: auto">
+                  Comment produire des <a href="#achats" class="avoid-clicks">factures d'achat</a>
+               </div>
+            </div>
+			<div class="divTableRow">
+               <div class="divTableCellListe" style="width: 14px">
+                  <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
+               </div>
+               <div class="divTableCellListe" style="width: auto">
+                  Comment définir des <a href="#achats" class="avoid-clicks">livraisons</a>
                </div>
             </div>
             <div class="divTableRow">
@@ -55,7 +71,7 @@
                   <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
                </div>
                <div class="divTableCellListe" style="width: auto">
-				   Comment réaliser des <a href="#decaissements" class="avoid-clicks">décaissements</a> &#40;à l'unité et par <a href="#lots" class="avoid-clicks">lots</a>&#41;.
+				   Comment réaliser des <a href="#decaissements" class="avoid-clicks">décaissements</a> et <a href="#lots" class="avoid-clicks">décaissements par lots</a>
                </div>
             </div>
          </div>
@@ -92,6 +108,16 @@
          </div>
       </div>
       <p class="texte aerateur-bas">Le symbole<img src="../images/commun/option-small.svg" class="align-icone icone-marge-gauche" height="30" alt="Optionnel">dans ce chapitre vous indique une procédure pour utiliser une fonctionnalité avancée dans l'application.</p>
+	  <div class="idea-fond aerateur-haut aerateur-bas">
+         <div class="floating-box-idea">
+            <img src="../images/commun/astuce.svg" width="100" alt="Astuce"/>
+         </div>
+         <div class="info-txt">
+            <span class="titre-advice">Enregistrer un achat<br></span>
+            <p class="texte-advice">La gestion des achats a été conçue pour réduire significativement les temps de saisie des différentes tâches qui lui sont associées, notamment les réceptions et la facturation. Nous vous conseillons de suivre les étapes suivantes pour optimiser votre travail dans Ekylibre.</p><br>
+			<img src="../images/chapitre7/schema-achat.png" alt="Schéma achat"/>
+         </div>
+      </div>
       <h6>Guide de démarrage • Achats • Saisir une commande</h6>
 	  <a class="slice-section" id="achats"></a>
 	  <h2 class="texte aerateur">a - Création des achats</h2>
@@ -168,7 +194,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Affichez la commande</span>
-         <p>La commande possède le statut <span class="step step-vert">&nbsp;Ouverte&nbsp;</span> tant qu'elle n'a pas été cloturée par vos soins en cliquant sur <span class="step step-orange">&nbsp;Fermée&nbsp;</span> ou suite à la réception des marchandises/services. Déposez vos justificatifs par glisser-déposer ou en parcourant votre disque dur après avoir cliqué sur l'icône représentant un trombone<img src="../images/commun/paperclip.svg" alt="Trombonne" height="20" class="align-icone icone-marge-gauche">.</p>
+         <p>La commande possède le statut <span class="step step-vert">&nbsp;Ouverte&nbsp;</span> tant qu'elle n'a pas été cloturée par vos soins en cliquant sur <span class="step step-orange">&nbsp;Fermée&nbsp;</span> ou suite à une réception des marchandises/services. Déposez vos justificatifs par glisser-déposer ou en parcourant votre disque dur après avoir cliqué sur l'icône représentant un trombone<img src="../images/commun/paperclip.svg" alt="Trombonne" height="20" class="align-icone icone-marge-gauche">.</p>
          <p class="max-img-process">
             <img src="../images/chapitre7/achat4.png" class="contour-img" alt="Créer un nouvel achat" data-action="zoom">
          </p>
@@ -208,7 +234,7 @@
          <img src="../images/commun/step3.svg" alt="3" width="52">
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Créez une réception</span>
+         <span class="titre-advice">Créez une nouvelle réception</span>
          <p>Dans la barre latérale du module, cliquez sur "Réceptions" dans la section "Réceptions" symbolisée par l'icône d'un camion<img src="../images/chapitre7/truck.svg" alt="Camion" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des réceptions, puis cliquez sur "Nouvelle réception" en haut à gauche de la fenêtre principale.</p>
          <p class="max-img-process">
             <img src="../images/chapitre7/achat6.png" class="contour-img" alt="Liste des achats" data-action="zoom">
@@ -224,25 +250,107 @@
          <img src="../images/commun/step3.svg" alt="3" width="52">
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Renseignez la nouvelle réception</span>
+         <span class="titre-advice">Rapprochez la réception avec une ou des commandes</span>
+		 <p>Par défaut le statut de la nouvelle réception est défini sur <span class="statut-recep-rouge">&nbsp;À rapprocher&nbsp;</span>, c'est à dire qu'elle n'est associée à aucune commande.</p>
 		 <p>Sélectionnez un expéditeur dans la liste déroulante ou créez-en un nouveau à la volée.</p>
 		 <p>Cochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à droite de "Livraison hord délais" pour spécifier un retard de livraison. La mention <span class="statut-recep-warn">&nbsp;Hors délais&nbsp;</span> est alors affichée et le message <span class="statut-recep-warn">&nbsp;Réception en incident&nbsp;</span> apparaît en haut de la fenêtre principale.</p>
-		 <p>Dans la section "Éléments", cliquez sur la nature de l'élément à ajouter&nbsp;: une marchandise, un service ou des frais. Saisissez un mot-clef dans le champ "Marchandise" pour filtrer les résultats affichés et sélectionnez le produit. Renseignez la zone de stockage, la quantité et le mode de livraison. Notez que les champs optionnels "Conditionnement" et "Quantité" sont à votre disposition pour faciliter le calcul de la quantité totale.</p>
-		 <p>Cochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de "Non conforme" pour dénoncer une livraison qui n'est pas conforme à vos attentes. La mention <span class="statut-recep-warn">&nbsp;Non conforme&nbsp;</span> est alors affichée et le message <span class="statut-recep-warn">&nbsp;Réception en incident&nbsp;</span> apparaît en haut de la fenêtre principale.</p>
+		 <p>Le rapprochement d'une réception avec une commande permet de faciliter la gestion des marchandises ou des services reçus par rapport aux commandes passées aux fourniseurs.</p>
+		 <p>Cliquez sur le bouton "Rapprocher avec une ou des commandes" pour afficher la fenêtre modale des commandes en cours.</p>
+		 <p>Cochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de la référence fournisseur &#40;n° de commande&#41; pour rapprocher la réception avec l'ensemble des éléments commandés.</p>
+		 <p>Cochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche d'une ligne de marchandises ou de services pour rapprocher uniquement les éléments réceptionnés avec ceux commandés &#40;dans le cas d'une livraison partielle&#41;.</p>
+		 <p>Notez que vous pouvez rapprocher soit plusieurs commandes, soit des éléments appartenant à différentes commandes si un fournisseur a livré simultanément plusieurs commandes ou si les éléments de différents commandes ont été rassemblé dans une même colis.</p>
+		 <p>Dès que vous avez coché un rapprochement, deux boutons radio<img src="../images/commun/radio.svg" alt="Bouton radio" height="20" class="align-icone icone-marge-gauche"> permettent de fermer automatiquement ou non la commande en cours.</p>
+		  <p>Cliquez sur le bouton<img src="../images/chapitre7/valider.svg" alt="Valider" height="25" class="align-btn-gris icone-marge-gauche icone-marge-droite">pour enregistrer le rapprochement &#40;cliquez à l'extérieur de la fenêtre modale pour fermer celle-ci sans validation&#41;.</p>
+	  </div>
+	  <br>
+      <div class="floating-box process">
+         <img src="../images/commun/step4.svg" alt="4" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Validez la réception</span>
+		 <p>Le statut de la réception est maintenant défini sur <span class="statut-recep-vert">&nbsp;Rapprochée&nbsp;</span> et la section "Élements" est automatiquement remplie avec les produits/services commandés. Modifiez éventuellement les quantités en cas de livraison partielle, <strong>sélectionnez une zone de stockage</strong> dans la liste déroulante et un mode de livraison. Notez que vous pouvez ajouter différentes zones de stockage pour stocker plusieurs exemplaires d'un même élément.</p>
+		 <p>Cochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de "Non conforme" pour dénoncer une marchandise ou un service qui ne correspond pas à vos attentes. La mention <span class="statut-recep-warn">&nbsp;Non conforme&nbsp;</span> est alors affichée et le message <span class="statut-recep-warn">&nbsp;Réception en incident&nbsp;</span> apparaît en haut de la fenêtre principale.</p>
 		 <p>Cochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de "Fusionner avec les stocks existant" pour ajouter la quantité reçue aux marchandises ou aux services identiques déjà stockés dans l'exploitation.</p>
-		 <p>Cliquez sur <span class="btn-blue">Valider</span> pour créer la nouvelle ligne avec les éléments reçus.</p>
-		 <p>Procédez de la même manière pour ajouter successivement plusieurs lignes avec des marchandises différentes mais provenant d'un même fournisseur.</p>
+		  <p>Cliquez sur <span class="btn-blue">Valider</span> pour enregistrer la ligne de réception.</p>
+		 <p>Procédez de la même manière pour chaque élément reçu.</p>
          <p class="max-img-process">
             <img src="../images/chapitre7/achat7.png" class="contour-img" alt="Détail de l'achat" data-action="zoom">
          </p>
-	    <p>Par défaut le statut de la nouvelle réception est défini sur <span class="statut-recep-rouge">&nbsp;À rapprocher&nbsp;</span>, c'est à dire qu'elle n'est associée à aucune commande.</p>
+		 <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération ou sur <span class="btn-blue">Créer et saisir suivant</span> pour réaliser une nouvelle saisie.</p>
+		  <p>Les nouveaux éléments réceptionnés ont maintenant été ajoutés à votre stock.</p>
+      </div>
+	  <h6>Guide de démarrage • Achats • Facture d'achat</h6>
+	  <h2 class="texte aerateur">c - Facturation</h2>
+      <p align="center" class="texte aerateur procedure">A – Procédure pour enregistrer une facture d'achat
+      </p>
+      <p class="texte">
+         Le processus suivant vous guide pour enregistrer une facture d'achat.
+      </p>
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez le "Tableau de bord des achats"</span>
+         <p>
+            Cliquez sur le lien "Achats" dans le "Menu principal" ou sur le bouton "Achats" de la page d'accueil&nbsp;:
+         </p>
+         <p align="center"><img src="../images/chapitre7/achats.svg" alt="Achats" width="60"></p>
+         <p class="max-img-process">
+            <img src="../images/chapitre7/stocks.png" class="contour-img" alt="Tableau de bord des achats" data-action="zoom">
+         </p>
+      </div>
+      <br>
+      <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Créez une facture</span>
+         <p>Dans la barre latérale du module, cliquez sur "Factures" dans la section "Achats" symbolisée par l'icône d'un chariot de supermarché<img src="../images/chapitre7/shopping-cart.svg" alt="Caddie" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des factures, puis cliquez sur "Nouveau" en haut à gauche de la fenêtre principale.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre7/achat6.png" class="contour-img" alt="Liste des achats" data-action="zoom">
+         </p>
+		 <p>Lorsque plusieurs réceptions sont enregistrées, la liste est enrichie avec différentes icônes cliquables et des indicateurs en couleur&nbsp;:</p>
+		 <p><img src="../images/commun/crayon.svg" alt="Modifier" height="20" class="align-icone icone-marge-droite">permet de modifier une facture.</p>
+		 <p><img src="../images/commun/delete.svg" alt="Supprimer" height="20" class="align-icone icone-marge-droite">permet de supprimer une facture.</p>
+		 <p><img src="../images/commun/statut-vert.svg" alt="Statut vert" height="20" class="align-icone icone-marge-droite">indique une facture avec le statut "Rapprochée" ou "Acceptée pour paiement".</p>
+		 <p><img src="../images/commun/statut-rouge.svg" alt="Statut rouge" height="20" class="align-icone icone-marge-droite">indique une facture avec le statut "À rapprocher".</p>
+      </div>
+      <br>
+      <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Rapprochez la facture avec une ou des réceptions</span>
+		 <p>Par défaut le statut de la nouvelle facture est défini sur <span class="statut-recep-rouge">&nbsp;À rapprocher&nbsp;</span>, c'est à dire qu'elle n'est associée à aucune réception.</p>
+		 <p>Sélectionnez un fournisseur dans la liste déroulante, puis renseignez la date de facturation, l'échéance et le type d'exigibilité fiscale pour le réglement de la TVA.</p>
+		 <p>Cochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de "Acceptée pour paiement" pour modifier le statut de la facture. Notez que vous pouvez activer ce changement de statut après le rapprochement ou lorsque la facture sera établie. La mention <span class="statut-recep-vert">&nbsp;Acceptée&nbsp;</span> est alors affichée en haut de la fenêtre principale.</p>
+		 <p>Le rapprochement d'une facture avec une réception permet de faciliter la gestion de la facturation par rapport aux marchandises ou des services reçus.</p>
+		 <p>Cliquez sur le bouton "Rapprocher avec une ou des réceptions" pour afficher la fenêtre modale des marchandises ou des services réceptionnés.</p>
+		 <p>Cochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche du numéro du bon de réception pour rapprocher la facture avec la totalité des éléments réceptionnés.</p>
+		 <p>Cochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche d'une ligne de marchandises ou de services pour rapprocher la facture avec certains éléments réceptionnés dans le cas d'une facturation partielle.</p>
+		 <p>Notez que vous pouvez rapprocher, soit plusieurs réceptions, soit des éléments rattachés à différentes réceptions pour les regrouper dans une même facture d'achat.</p>
+		  <p>Cliquez sur le bouton<img src="../images/chapitre7/valider.svg" alt="Valider" height="25" class="align-btn-gris icone-marge-gauche icone-marge-droite">pour enregistrer le rapprochement &#40;cliquez à l'extérieur de la fenêtre modale pour fermer celle-ci sans validation&#41;.</p>
+	  </div>
+	  <br>
+      <div class="floating-box process">
+         <img src="../images/commun/step4.svg" alt="4" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Validez la facture</span>
+		 <p>Le statut de la facture d'achat est maintenant défini sur <span class="statut-recep-vert">&nbsp;Rapprochée&nbsp;</span> &#40;sauf si elle est déjà acceptée pour paiement&#41; et la section "Élements" est automatiquement remplie avec les produits/services réceptionnés. Modifiez éventuellement les quantités si vous souhaitez enregistrer une facture partielle.</p>
+		 <p>Cliquez sur <span class="btn-blue">Valider</span> pour enregistrer la ligne de facturation.</p>
+		 <p>Procédez de la même manière pour chaque élément à facturer.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre7/achat7.png" class="contour-img" alt="Détail de l'achat" data-action="zoom">
+         </p>
 		 <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération ou sur <span class="btn-blue">Créer et saisir suivant</span> pour réaliser une nouvelle saisie.</p>
       </div>
-      <p align="center" class="texte aerateur procedure">B – Procédure pour réaliser un rapprochement
+	  <h6>Guide de démarrage • Achats • Livraison</h6>
+	  <h2 class="texte aerateur">a - Livraison</h2>
+      <p align="center" class="texte aerateur procedure">A – Procédure pour enregistrer une livraison
       </p>
-	  <p class="texte">Le rapprochement d'une réception avec une commande permet de faciliter la gestion des marchandises ou des services reçus par rapport aux commandes passées aux fourniseurs.</p>
       <p class="texte">
-         Le processus suivant vous guide pour rapprocher une réception de marchandises avec une ou plusieurs commandes.
+         Le processus suivant vous guide pour enregistrer une livraison.
       </p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52">
@@ -252,72 +360,57 @@
          <p>
             Cliquez sur le lien "Stocks" dans le "Menu principal" ou sur le bouton "Stocks" de la page d'accueil&nbsp;:
          </p>
-         <p align="center"><img src="../images/chapitre7/stocks.svg" alt="Stocks" width="60"></p>
-         <p class="max-img-process">
-            <img src="../images/chapitre7/stocks.png" class="contour-img" alt="Tableau de bord des stocks" data-action="zoom">
+         <p align="center"><img src="../images/chapitre8/stocks.svg" alt="Stocks" width="60"></p>
+	     <p class="max-img-process">
+            <img src="../images/chapitre8/stocks.png" class="contour-img" alt="Tableau de bord des stocks" data-action="zoom">
          </p>
-      </div>
-      <br>
-	  <div class="floating-box process">
+		 </div>
+	  <br>
+	   <div class="floating-box process">
          <img src="../images/commun/step2.svg" alt="2" width="52">
       </div>
-      <div class="process-txt">
-         <span class="titre-advice">Sélectionnez une réception</span>
-         <p>
-            Cliquez sur l'icône représentant un crayon<img src="../images/commun/crayon.svg" alt="Modifier" height="20" class="align-icone icone-marge-droite icone-marge-gauche">pour modifier la réception de votre choix.
+	   <div class="process-txt">
+         <span class="titre-advice">Affichez les Livraisons</span>
+         <p>Dans la barre latérale du module, cliquez sur "Livraisons" dans la section "Livraisons" symbolisée par l'icône d'un camion<img src="../images/chapitre8/truck.svg" alt="Camion" height="20" class="align-icone icone-marge-gauche">, puis cliquez sur le bouton "Nouveau".</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre8/livraisons.png" class="contour-img" alt="Liste des livraisons" data-action="zoom">
          </p>
-         <p class="max-img-process">
-            <img src="../images/chapitre7/stocks.png" class="contour-img" alt="Tableau de bord des stocks" data-action="zoom">
-         </p>
+		 <p>Lorsque plusieurs livraisons sont enregistrées, la liste est enrichie avec différentes icônes cliquables et des indicateurs en couleur&nbsp;:</p>
+		 <p><img src="../images/commun/crayon.svg" alt="Modifier" height="20" class="align-icone icone-marge-droite">permet de modifier une livraison.</p>
+		 <p><img src="../images/commun/delete.svg" alt="Supprimer" height="20" class="align-icone icone-marge-droite">permet de supprimer une livraison.</p>
+		 <p><img src="../images/commun/statut-vert.svg" alt="Statut vert" height="20" class="align-icone icone-marge-droite">indique une livraison avec le statut "Terminée".</p>
+		 <p><img src="../images/commun/statut-orange.svg" alt="Statut orange" height="20" class="align-icone icone-marge-droite">indique une livraison avec le statut "Commandée", "En préparation", "Prête" ou "Commencée".</p>
+		 <p><img src="../images/commun/statut-rouge.svg" alt="Statut rouge" height="20" class="align-icone icone-marge-droite">indique une livraison avec le statut "Brouillon".</p>
       </div>
-      <br>
-	  <div class="floating-box process">
+      <div class="warn-fond aerateur-haut aerateur-bas">
+         <div class="floating-box-warn">
+            <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
+         </div>
+         <div class="info-txt">
+            <span class="titre-advice">Sélection des colis à livrer<br></span>
+            <p class="texte-advice">Vous ne pouvez pas créer de livraisons avec les colis souhaités tant que leur réception ou leur expédition n'a pas été enregistrée auparavant dans un "Achat" ou dans une "Vente".</p>
+         </div>
+      </div>
+      <div class="floating-box process">
          <img src="../images/commun/step3.svg" alt="3" width="52">
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Procédez au rapprochement</span>
-         <p>
-            Cliquez sur le bouton "Rapprocher avec une ou des commandes".
-         </p>
+         <span class="titre-advice">Créez une livraison</span>
+         <p>Sélectionnez un ou plusieurs colis à l'aide des cases à cocher<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour procéder à une livraison unique ou groupée de plusieurs colis &#40;ou pour organiser une tournée de livraison&#41;. Notez que chaque colis est caractérisé par son type&nbsp;: "Expédition" ou "Réception".</p>
          <p class="max-img-process">
-            <img src="../images/chapitre7/stocks.png" class="contour-img" alt="Tableau de bord des stocks" data-action="zoom">
+            <img src="../images/chapitre8/livraison5.png" class="contour-img" alt="Liste des livraisons" data-action="zoom">
          </p>
+         <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
       </div>
       <br>
-	  <div class="floating-box process">
-         <img src="../images/commun/step4.svg" alt="4" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Sélectionnez les éléments</span>
-         <p>Une fenêtre modale est affichée par l'application.</p>
-		 <p>Cochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de la référence fournisseur &#40;n° de commande&#41; pour rapprocher la réception avec l'ensemble des éléments commandés.</p>
-		 <p>Cochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche d'une ligne de marchandises ou de services pour rapprocher uniquement les éléments reçus avec ceux commandés &#40;dans le cas d'une livraison partielle&#41;.</p>
-		 <p>Notez que vous pouvez cocher plusieurs commandes ou plusieurs éléments appartenant à différentes commandes si un même expéditeur a réalisé une livraison totale ou partielle.</p>
-		 <p>Dès que vous avez coché un rapprochement, un bouton radio<img src="../images/commun/radio.svg" alt="Bouton radio" height="20" class="align-icone icone-marge-gauche"><em>Oui</em> permet de fermer automatiquement une commande.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre7/stocks.png" class="contour-img" alt="Tableau de bord des stocks" data-action="zoom">
-         </p>
-		 <p>Cliquez sur le bouton "Valider" pour enregistrer le rapprochement.</p>
-		 <p>Le statut de la réception est maintenant défini sur <span class="statut-recep-vert">&nbsp;Rapprochée&nbsp;</span>, c'est à dire qu'elle est associée à une commande.</p>
-      </div>
-      <br>
-	   
-	   
-	   
-	   ############################
       <div class="floating-box process">
          <img src="../images/commun/step4.svg" alt="4" width="52">
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Renseignez la nouvelle réception</span>
-         <p>Remplissez tous les champs signalés par une astérisque de couleur rouge avec les informations requises pour la définir correctement.</p>
+         <span class="titre-advice">Affichez le statut de la livraison</span>
+         <p>Une fois créée, la livraison prend le statut de "Brouillon" et va pouvoir évoluer en fonction de son avancement. Déposez vos justificatifs &#40;documents numérisés au format JPEG, fichiers PDF&#41; par glisser-déposer ou en parcourant votre disque dur après avoir cliqué sur l'icône représentant un trombone<img src="../images/commun/paperclip.svg" alt="Trombonne" height="20" class="align-icone icone-marge-gauche">.</p>
          <p class="max-img-process">
-            <img src="../images/chapitre7/colis-achat.png" class="contour-img" alt="Détail de l'achat" data-action="zoom">
-         </p>
-         <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
-         <p>L'application affiche maintenant l'achat avec les informations du nouveau colis associé à celui-ci en bas de la fenêtre principale.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre7/achat8.png" class="contour-img" alt="Détail de l'achat" data-action="zoom">
+            <img src="../images/chapitre8/livraison6.png" class="contour-img" alt="Statut de la livraison" data-action="zoom">
          </p>
       </div>
       <br>
@@ -325,44 +418,22 @@
          <img src="../images/commun/step5.svg" alt="5" width="52">
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Accédez aux livraisons</span>
-         <p>Cliquez sur "Stock" dans le "Menu principal" puis sur "Livraisons" dans la section "Mouvements" symbolisée par l'icône d'un camion<img src="../images/chapitre7/truck.svg" alt="Camion" height="20" class="align-icone icone-marge-gauche icone-marge-droite">dans la barre latérale du module.</p>
+         <span class="titre-advice">Modifiez le statut de la livraison</span>
+         <p>Modifiez le statut de la livraison en cliquant successivement sur les étapes en couleur et en validant chaque changement d'état&nbsp;:<br><span class="step step-orange">&nbsp;Brouillon&nbsp;</span><img src="../images/chapitre7/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;Commandée&nbsp;</span><img src="../images/chapitre7/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;En préparation&nbsp;</span><img src="../images/chapitre7/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;Prête&nbsp;</span><img src="../images/chapitre7/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;Commencée&nbsp;</span><img src="../images/chapitre7/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-vert">&nbsp;Terminée&nbsp;</span></p>
          <p class="max-img-process">
-            <img src="../images/chapitre7/livraison1.png" class="contour-img" alt="Liste des livraisons" data-action="zoom">
+            <img src="../images/chapitre8/livraison7.png" class="contour-img" alt="Modification du statut de la livraison" data-action="zoom">
          </p>
+		 <p>Cliquez sur le bouton<img src="../images/commun/imprimer.svg" alt="Imprimer" height="25" class="align-btn-gris icone-marge-gauche icone-marge-droite">pour générer un bon de livraison au format PDF.</p>
       </div>
-      <br>
+	  <br>
       <div class="floating-box process">
          <img src="../images/commun/step6.svg" alt="6" width="52">
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Créez une livraison</span>
-         <p>Sélectionnez un ou plusieurs colis pouvant être inclus dans cette livraison en activant la ou les case&#40;s&#41; à cocher<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">devant chaque numéro de colis.</p>
+         <span class="titre-advice">Vérifiez la facture d'achat initiale</span>
+         <p>Affichez la facture d'achat associée à la livraison pour vérifier que son enregistrement a bien été consigné dans le tableau "Expéditions".</p>
          <p class="max-img-process">
-            <img src="../images/chapitre7/livraison2.png" class="contour-img" alt="Liste des livraisons" data-action="zoom">
-         </p>
-         <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step7.svg" alt="7" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Affichez le statut de la livraison</span>
-         <p>Une fois créée, la livraison prend le statut de "Brouillon" et va pouvoir être mise à jour en fonction de son avancement.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre7/livraison3.png" class="contour-img" alt="Statut de la livraison" data-action="zoom">
-         </p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step8.svg" alt="8" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Modifiez le statut de la livraison</span>
-         <p>Modifiez le statut de la livraison en cliquant successivement sur les étapes en couleur&nbsp;:<br><span class="step step-orange">&nbsp;Brouillon&nbsp;</span><img src="../images/chapitre7/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;Commandée&nbsp;</span><img src="../images/chapitre7/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;En préparation&nbsp;</span><img src="../images/chapitre7/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;Prête&nbsp;</span><img src="../images/chapitre7/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;Commencée&nbsp;</span><img src="../images/chapitre7/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-vert">&nbsp;Terminée&nbsp;</span></p>
-         <p class="max-img-process">
-            <img src="../images/chapitre7/livraison4.png" class="contour-img" alt="Modification du statut de la livraison" data-action="zoom">
+            <img src="../images/chapitre8/livraison8.png" class="contour-img" alt="Factures avec informations de livraison" data-action="zoom">
          </p>
       </div>
 	  <h6>Guide de démarrage • Achats • Réaliser un décaissement</h6>
