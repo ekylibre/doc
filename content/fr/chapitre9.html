@@ -39,7 +39,7 @@
                   <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
                </div>
                <div class="divTableCellListe">
-                  Comment créer de nouvelles variantes &#40;produits&#41;
+				   Comment créer de <a href="#variante" class="avoid-clicks">nouvelles variantes</a> &#40;produits&#41;
                </div>
             </div>
             <div class="divTableRow">
@@ -47,7 +47,15 @@
                   <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
                </div>
                <div class="divTableCellListe">
-                  Comment créer un <a href="#stock" class="avoid-clicks">stock initial</a> dans l'application &#40;avec la création de nouvelles matières ou avec des réceptions de produits&#41;
+                  Comment définir un <a href="#stock" class="avoid-clicks">stock initial</a> dans l'application &#40;avec la création de nouvelles matières&#41;
+               </div>
+            </div>
+			<div class="divTableRow">
+               <div class="divTableCellListe">
+                  <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
+               </div>
+               <div class="divTableCellListe">
+                  Comment enregistrer une <a href="#expedition" class="avoid-clicks">expédition</a> et <a href="#facture" class="avoid-clicks">facturer une livraison</a>.
                </div>
             </div>
             <div class="divTableRow">
@@ -77,15 +85,16 @@
                </div>
                <div class="divTableCellGlossaire2" style="width: 100%">
                   dans l'application, tous les éléments &#40;intrants, produits de récolte, consommables, équipements, animaux, végétaux, et même bâtiments et main d’œuvre&#41; sont considérés comme faisant partie du stock de la ferme sauf les fournisseurs et les clients
-                  <p align="center"><img src="../images/chapitre9/schema-stock.svg" alt="Schéma stock" width="400" class="aerateur-glossaire"/></p>
+                  <p align="center"><img src="../images/chapitre9/schema-stock.png" alt="Schéma stock" height="192" class="aerateur-glossaire"/></p>
                </div>
             </div>
          </div>
       </div>
       <p class="texte aerateur-bas">Les symboles<img src="../images/commun/option-small.svg" class="align-icone icone-marge-gauche" height="30" alt="Optionnel">et<img src="../images/commun/expert-small.svg" class="align-icone icone-marge-gauche" height="30" alt="Processus complexe">dans ce chapitre vous indiquent un paramétrage avancé lié au niveau de traçabilité souhaité ou bien une procédure complexe à mettre en œuvre.</p>
       <div class="aerateur-bas">
-         <p>&nbsp;</p>
       </div>
+	  <h6>Guide de démarrage • Stocks &amp; Personnel • Notions de base</h6>
+      <h2 class="texte aerateur">a - Catégories, types et variantes</h2>
       <p class="texte">Tous les éléments stockés dans Ekylibre sont associés à une catégorie qui est un profil de gestion applicable pour les écritures comptables &#40;le paramétrage de plusieurs tâches associées à la comptabilité est expliqué dans le <a href="../chapitre6" target="_self" class="avoid-clicks">chapitre 6 - Comptabilité</a>&#41;.</p>
       <p class="texte">Ces éléments sont également rattachés à des types &#40;familles&#41; identifiés par un profil technique comme par exemple un service, un équipement, un produit phytosanitaire.</p>
       <p class="texte">La variante est finalement la dénomination d'un produit appartenant simultanément à une catégorie &#40;profil de gestion&#41; et à un type &#40;profil technique&#41;.</p>
@@ -194,17 +203,115 @@
             </ol>
          </div>
       </div>
-      <h6>Guide de démarrage • Stocks &amp; Personnel • Introduction</h6>
-      <h2 class="texte aerateur">a - Introduction à la gestion des stocks</h2>
-      <p class="texte">Des interactions existent entre les différents modules d'Ekylibre&nbsp;: les stocks d'intrants et/ou de consommables permettent de réaliser des interventions sur les productions végétales et/ou animales. Les récoltes issues des cultures seront à leur tour stockées, tout comme les produits d'élevage. Les réceptions de produits commandés sont rattachées à des achats et à la génération de factures alors que les expéditions sont associées à des ventes pour enfin réaliser des décaissements et des encaissements donnant lieu à des écritures comptables dans les journaux correspondants et les documents réglementaires.</p>
+	  <p align="center" class="texte aerateur procedure">A – Procédure pour afficher une liste dans les "Produits"
+      </p>
+      <p class="texte">
+         Le processus suivant vous guide pour mieux comprendre le système de classement utilisé dans l'application.
+      </p>
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Accédez à la section "Produit"</span>
+         <p>
+            Pour afficher les “Catégorie de produits”, les “Types de produits” ou les “Variantes de produits”, cliquez sur la clef anglaise<img src="../images/chapitre9/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite"> dans le "Menu principal" ou sur le bouton "Configuration" de la page d'accueil&nbsp;:
+         </p>
+         <p align="center"><img src="../images/chapitre9/wrench.svg" alt="Configuration" width="60"></p>
+      </div>
+      <br>
+      <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Sélectionnez la liste à afficher</span>
+         <p>Dans la barre latérale du module, cliquez sur la liste à afficher dans la section "Produit" symbolisée par l'icône d'un épi<img src="../images/chapitre9/wheat.svg" alt="Épi" height="20" class="align-icone icone-marge-gauche">.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre9/variantes1.png" class="contour-img" alt="Variantes de produits" data-action="zoom">
+         </p>
+         <p>Notez que si vous avez supprimé par erreur une catégorie, un type ou une variante, vous pourrez l'intégrer à nouveau dans la liste en cliquant sur le bouton "Piocher" &#40;Choisir&#41;.</p>
+      </div>
+      <p class="texte aerateur-haut">Si vous ne trouvez pas un produit spécifique dans la liste proposée pour en réaliser le stockage &#40;comme par exemple un équipement ou un intrant&#41;, vous pouvez définir une nouvelle variante de produit mais vous n'allez jamais créer &#40;ou de manière exceptionnelle&#41; de nouveaux types ou de nouvelles catégories.</p>
+      <div class="idea-fond aerateur-haut aerateur-bas">
+         <div class="floating-box-idea">
+            <img src="../images/commun/astuce.svg" width="100" alt="Astuce"/>
+         </div>
+         <div class="info-txt">
+            <span class="titre-advice">Interventions et produits phytosanitaires<br></span>
+            <p class="texte-advice">
+               Pour consulter le catalogue des produits phytopharmaceutiques et leurs usages, des matières fertilisantes et des supports de culture autorisés en France, rendez-vous sur le site Web de l'Anses à l'adresse <a href="https://ephy.anses.fr/" class="avoid-clicks" target="_blank">https://ephy.anses.fr/</a>.
+            </p>
+            <p align="center"><img class="aerateur-glossaire" src="../images/chapitre9/logo-anses.png" alt="ANSES"/></p>
+         </div>
+      </div>
+      <h6>Guide de démarrage • Stocks &amp; Personnel • Nouvelle variante</h6>
+	  <a class="slice-long" id="variante"></a>
+      <p align="center" class="texte aerateur procedure">B – Procédure pour créer une nouvelle variante
+      </p>
+      <p class="texte">Le processus suivant vous guide pour créer une nouvelle variante &#40;un nouveau produit&#41;.</p>
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez les types de produits</span>
+         <p>
+            Cliquez sur la clef anglaise<img src="../images/chapitre9/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">dans le "Menu principal" ou sur le bouton "Configuration" de la page d'accueil&nbsp;:
+         </p>
+         <p align="center"><img src="../images/chapitre9/wrench.svg" alt="Configuration" width="60"></p>
+         <p>Dans la barre latérale du module, cliquez sur "Types de produits" dans la section "Produit" symbolisée par l'icône d'un épi<img src="../images/chapitre9/wheat.svg" alt="Épi" height="20" class="align-icone icone-marge-gauche">.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre9/liste-types.png" class="contour-img" alt="Liste des types de produits" data-action="zoom">
+         </p>
+      </div>
+      <br>
+      <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Sélectionnez un type de produit</span>
+         <p>Parcourez la liste des types avec les flèches<img src="../images/commun/fleche-g.svg" alt="Flèche gauche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">et<img src="../images/commun/fleche-d.svg" alt="Flèche droite" height="20" class="align-icone icone-marge-gauche icone-marge-droite">en haut à droite de l'écran ou saisissez un mot-clef dans le champ de recherche et cliquez sur le bouton "Rechercher" pour afficher les résultats. Sélectionnez dans la liste le type de produit comme par exemple "Semence", puis cliquez sur son nom.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre9/type.png" class="contour-img" alt="Types de produits" data-action="zoom">
+         </p>
+      </div>
+      <br>
+      <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Définissez la nouvelle variante</span>
+         <p>Cliquez sur le bouton "Nouveau" pour définir une nouvelle variante issue du type "Semence".
+         </p>
+         <p class="max-img-process">
+            <img src="../images/chapitre9/variantes3.png" class="contour-img" alt="Nouvelle variante de produit" data-action="zoom">
+         </p>
+      </div>
+      <br>
+      <div class="floating-box process">
+         <img src="../images/commun/step4.svg" alt="4" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Créez la nouvelle variante</span>
+         <p>Sélectionnez la variété dans la liste déroulante et saisissez les informations concernant sa dénomination avec les bons indicateurs pour la définir correctement.
+         </p>
+         <p class="max-img-process">
+            <img src="../images/chapitre9/variantes4.png" class="contour-img" alt="Nouvelle variante de produit" data-action="zoom">
+         </p>
+         <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
+      </div>
+      <h6>Guide de démarrage • Stocks &amp; Personnel • Notions de stocks</h6>
+      <h2 class="texte aerateur">b - Introduction à la gestion des stocks</h2>
+      <p class="texte">Des interactions existent entre les différents modules d'Ekylibre&nbsp;: les stocks d'intrants et/ou de consommables permettent de réaliser des interventions sur les productions végétales et/ou animales. Les récoltes issues des cultures seront à leur tour stockées, tout comme les produits d'élevage. Les réceptions de produits sont rattachées à des achats pour produire des factures alors que les expéditions sont associées à des ventes pour enfin réaliser des décaissements et des encaissements.</p>
+	  <p class="texte">L'ensemble de ces opérations sont automatiquement consignées par des écritures comptables dans le brouillard des journaux concernés et dans les documents réglementaires.</p>
       <p align="center" class="aerateur-haut aerateur-bas texte">
-         <img src="../images/chapitre9/flux.svg" alt="Schéma intéractions modules" width="500">
+         <img src="../images/chapitre9/flux.svg" alt="Schéma interactions modules" width="500">
       </p>
       <p align="center" class="texte legende">
          Flux entre les modules dans Ekylibre
       </p>
+	  <p class="aerateur-haut">&nbsp;</p>
+      <p>&nbsp;</p>
       <h3 class="texte">1 - Différentes manières de compter</h3>
-      <p class="texte">En fonction de la variante &#40;le produit&#41; sélectionnée, l'unité utilisée pour son comptage lui est propre. Soyez attentif dans le processus des mouvements des colis entrant et sortant.</p>
+      <p class="texte">En fonction de la variante &#40;le produit&#41; sélectionnée, l'unité utilisée pour son comptage lui est propre. Soyez attentif dans le processus de création des réceptions et des expéditions.</p>
       <p class="texte">Quelques exemples&nbsp;:</p>
       <div class="divTableGlossaire marge aerateur-bas">
          <div class="divTableBody">
@@ -259,150 +366,22 @@
          </div>
       </div>
       <p class="aerateur-haut">&nbsp;</p>
-      <a class="slice-long" id="stock"></a>
       <p>&nbsp;</p>
-      <h3 class="texte">2 - Deux méthodes pour créer un stock initial</h3>
+      <h3 class="texte">2 - Créer un stock initial</h3>
       <p class="texte">Au démarrage dans l'application, les différents stocks &#40;intrants, consommables, produits de récolte, animaux, etc.&#41; sont inexistants et il est nécessaire de les créer pour qu'ils correspondent à ce que vous possédez physiquement dans vos bâtiments et/ou vos aires de stockage.</p>
-      <p class="texte">Deux méthodes sont à votre disposition. Elles diffèrent l'une par rapport à l'autre en raison de leur impact sur la traçabilité &#40;écritures dans la comptabilité&#41; et de la facilité avec laquelle vous allez pouvoir définir vos stocks pour commencer.</p>
-      <div class="divTableGlossaire marge">
-         <div class="divTableBody">
-            <div class="divTableRow">
-               <div class="divTableCellStock1">
-                  Stocks &rsaquo; Créer une nouvelle matière
-               </div>
-               <div class="divTableCellStock2">
-                  Aucune traçabilité n'est activée, vous indiquez seulement la quantité en stock pour la variante choisie mais vous devez répéter l'opération produit par produit <a href="#matieres" class="avoid-clicks">&#40;procédure expliquée plus loin dans ce chapitre&#41;</a>. C'est la méthode la plus pratique pour initialiser les stocks de produits de culture sans impacter la comptabilité.
-               </div>
-            </div>
-            <div class="divTableRow">
-               <div class="divTableCellStock1" style="width: 100px">
-                  Stocks &rsaquo; Créer une nouvelle réception
-               </div>
-               <div class="divTableCellStock2" style="width: auto">
-                  La traçabilité est activée et donne lieu à des écritures comptables. Vous pouvez sélectionner plusieurs variantes avec les quantités souhaitées en une seule opération et vous faire un colis à vous-même pour initialiser les stocks d'intrants <a href="#colis-entrant" class="avoid-clicks">&#40;procédure expliquée plus loin dans ce chapitre&#41;</a>. La réception entraine systématiquement son rapprochement avec une ou plusieurs commandes suite à des achats.
-               </div>
-            </div>
-         </div>
-      </div>
+      <p class="texte">La méthode la plus pratique pour initialiser les stocks sans impacter la comptabilité est de créer de nouvelles matières. Ensuite, vous pourrez utiliser le module des achats &#40;voir le <a href="../chapitre7" class="avoid-clicks" target="_self">chapitre 7 - Achats</a>&#41; pour enregistrer des commandes et procéder à des réceptions de marchandises afin d'approvisionner vos stocks.</p>
       <p align="center" class="aerateur-haut aerateur-bas texte">
          <img src="../images/chapitre9/flux2.svg" alt="Différence entre réception et nouvelle matière" width="500">
       </p>
       <p align="center" class="texte legende">
          Différence entre réception et nouvelle matière
       </p>
-      <div class="idea-fond aerateur">
-         <div class="floating-box-idea">
-            <img src="../images/commun/astuce.svg" width="100" alt="Astuce"/>
-         </div>
-         <div class="info-txt">
-            <span class="titre-advice">Affichage dans l'application<br></span>
-            <p class="texte-advice">
-               Les informations affichées et la liste des champs à renseigner peuvent occuper une hauteur importante dans la fenêtre principale.<br>Réduisez ou développez les informations des sections avec les boutons<img src="../images/commun/minus-square-o.svg" alt="moins" height="15" class="icone-marge-gauche icone-marge-droite">et<img src="../images/commun/plus-square-o.svg" alt="plus" height="15" class="icone-marge-gauche icone-marge-droite">à droite de la fenêtre principale.
-            </p>
-            <p align="center"><img src="../images/commun/dev-reduc.png" alt="Réduction agrandissement des sections" class="contour-img"></p>
-         </div>
-      </div>
-      <p align="center" class="texte aerateur procedure">A – Procédure pour afficher une liste dans les "Produits"
-      </p>
-      <p class="texte">
-         Le processus suivant vous guide pour mieux comprendre le système de classement utilisé dans l'application.
-      </p>
-      <div class="floating-box process">
-         <img src="../images/commun/step1.svg" alt="1" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Accédez à la section "Produit"</span>
-         <p>
-            Pour afficher les “Catégorie de produits”, les “Types de produits” ou les “Variantes de produits”, cliquez sur la clef anglaise<img src="../images/chapitre9/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite"> dans le "Menu principal" ou sur le bouton "Configuration" de la page d'accueil&nbsp;:
-         </p>
-         <p align="center"><img src="../images/chapitre9/wrench.svg" alt="Configuration" width="60"></p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step2.svg" alt="2" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Sélectionnez la liste à afficher</span>
-         <p>Dans la barre latérale du module, cliquez sur la liste à afficher dans la section "Produit" symbolisée par l'icône d'un épi<img src="../images/chapitre9/wheat.svg" alt="Épi" height="20" class="align-icone icone-marge-gauche">.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre9/variantes1.png" class="contour-img" alt="Variantes de produits" data-action="zoom">
-         </p>
-         <p>Notez que si vous avez supprimé par erreur une catégorie, un type ou une variante, vous pourrez l'intégrer à nouveau dans la liste en cliquant sur le bouton "Piocher" &#40;Choisir&#41;.</p>
-      </div>
-      <p class="texte aerateur-haut">Si vous ne trouvez pas un produit spécifique dans la liste proposée pour en réaliser le stockage &#40;comme par exemple un équipement ou un intrant&#41;, vous pouvez définir une nouvelle variante de produit mais vous n'allez jamais créer &#40;ou de manière exceptionnelle&#41; de nouveaux types ou de nouvelles catégories.</p>
-      <div class="idea-fond aerateur-haut aerateur-bas">
-         <div class="floating-box-idea">
-            <img src="../images/commun/astuce.svg" width="100" alt="Astuce"/>
-         </div>
-         <div class="info-txt">
-            <span class="titre-advice">Interventions et produits phytosanitaires<br></span>
-            <p class="texte-advice">
-               Pour consulter le catalogue des produits phytopharmaceutiques et leurs usages, des matières fertilisantes et des supports de culture autorisés en France, rendez-vous sur le site Web de l'Anses à l'adresse <a href="https://ephy.anses.fr/" class="avoid-clicks" target="_blank">https://ephy.anses.fr/</a>.
-            </p>
-            <p align="center"><img class="aerateur-glossaire" src="../images/chapitre9/logo-anses.png" alt="ANSES"/></p>
-         </div>
-      </div>
-      <h6>Guide de démarrage • Stocks &amp; Personnel • Nouvelle variante</h6>
-      <a class="slice-long" id="nouvelle"></a>
-      <p align="center" class="texte aerateur procedure">B – Procédure pour créer une nouvelle variante
-      </p>
-      <p class="texte">Le processus suivant vous guide pour créer une nouvelle variante &#40;un nouveau produit&#41;.</p>
-      <div class="floating-box process">
-         <img src="../images/commun/step1.svg" alt="1" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Affichez les types de produits</span>
-         <p>
-            Cliquez sur la clef anglaise<img src="../images/chapitre9/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">dans le "Menu principal" ou sur le bouton "Configuration" de la page d'accueil&nbsp;:
-         </p>
-         <p align="center"><img src="../images/chapitre9/wrench.svg" alt="Configuration" width="60"></p>
-         <p>Dans la barre latérale du module, cliquez sur "Types de produits" dans la section "Produit" symbolisée par l'icône d'un épi<img src="../images/chapitre9/wheat.svg" alt="Épi" height="20" class="align-icone icone-marge-gauche">.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre9/liste-types.png" class="contour-img" alt="Liste des types de produits" data-action="zoom">
-         </p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step2.svg" alt="2" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Sélectionnez un type de produit</span>
-         <p>Parcourez la liste des types avec les flèches<img src="../images/chapitre9/fleche-g.svg" alt="Flèche gauche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">et<img src="../images/chapitre9/fleche-d.svg" alt="Flèche droite" height="20" class="align-icone icone-marge-gauche icone-marge-droite">en haut à droite de l'écran ou saisissez un mot-clef dans le champ de recherche et cliquez sur le bouton "Rechercher" pour afficher les résultats. Sélectionnez dans la liste le type de produit comme par exemple "Semence", puis cliquez sur son nom.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre9/type.png" class="contour-img" alt="Types de produits" data-action="zoom">
-         </p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step3.svg" alt="3" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Définissez la nouvelle variante</span>
-         <p>Cliquez sur le bouton "Nouveau" pour définir une nouvelle variante issue du type "Semence".
-         </p>
-         <p class="max-img-process">
-            <img src="../images/chapitre9/variantes3.png" class="contour-img" alt="Nouvelle variante de produit" data-action="zoom">
-         </p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step4.svg" alt="4" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Créez la nouvelle variante</span>
-         <p>Sélectionnez la variété dans la liste déroulante et saisissez les informations concernant sa dénomination avec les bons indicateurs pour la définir correctement.
-         </p>
-         <p class="max-img-process">
-            <img src="../images/chapitre9/variantes4.png" class="contour-img" alt="Nouvelle variante de produit" data-action="zoom">
-         </p>
-         <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
-      </div>
       <h6>Guide de démarrage • Stocks &amp; Personnel • Nouvelle matière</h6>
-      <a class="slice-long" name="matieres"></a>
-      <p align="center" class="texte aerateur procedure">C – Procédure pour stocker une matière
+	  <a class="slice-long" id="stock"></a>
+      <p align="center" class="texte aerateur procedure">A – Procédure pour stocker une matière
       </p>
       <p class="texte">
-         Le processus suivant vous guide pour ajouter une matière <strong>sans</strong> traçabilité comptable &#40;et produit par produit&#41;.
+         Le processus suivant vous guide pour ajouter une matière en stock <strong>sans</strong> écriture comptable et produit par produit. Cela implique que le mode stock permanent &#40;tenue des écritures comptables de stock&#41; ne soit pas activé dans les paramètres de la société &#40;voir <a href="#permanent" class="avoid-clicks">Paramétrage du mode stock permanent</a>&#41;.
       </p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52">
@@ -446,7 +425,20 @@
             <img src="../images/chapitre9/tableau-bord.png" class="contour-img" alt="Tableau de bord des stocks" data-action="zoom">
          </p>
       </div>
-      <br>
+      <div class="info-fond aerateur-haut aerateur-bas">
+         <div class="floating-box-info">
+            <img src="../images/commun/info.svg" width="100" alt="Info"/>
+         </div>
+         <div class="info-txt">
+            <span class="titre-advice">Personnalisation des tableaux<br></span>
+            <p class="texte-advice">
+               Cliquez sur l'icône représentant une clef anglaise<img src="../images/commun/wrench.svg" alt="clef anglaise" height="25" class="align-icone icone-marge-gauche icone-marge-droite">en haut à droite des tableaux pour configurer leur présentation &#40;affichage et/ou masquage de certaines colonnes, sélection du nombre de lignes par page&#41; et pour réaliser des exports aux formats ODF et CSV.
+            </p>
+			<p class="texte-advice">
+               Naviguez entre les différentes pages à l'aide des flèches<img src="../images/commun/fleche-g.svg" alt="Flèche gauche" height="20" class="align-icone icone-marge-gauche"><img src="../images/commun/fleche-d.svg" alt="Flèche gauche" height="20" class="align-icone">.
+            </p>
+         </div>
+      </div>
       <div class="floating-box process">
          <img src="../images/commun/step2.svg" alt="2" width="52">
       </div>
@@ -508,82 +500,13 @@
             </p>
          </div>
       </div>
-      <h6>Guide de démarrage • Stocks &amp; Personnel • Réceptions</h6>
-      <a class="slice-long" name="colis-entrant"></a>
-      <p align="center" class="texte aerateur procedure">D – Procédure pour stocker une ou plusieurs variante&#40;s&#41;
+	  <h6>Guide de démarrage • Stocks &amp; Personnel • Expéditions</h6>
+      <a class="slice-long" id="expedition"></a>
+	  <h2 class="texte aerateur">c - Expédition d'une marchandise</h2>
+      <p align="center" class="texte procedure">A – Procédure pour enregistrer une expédition
       </p>
-      <div class="warn-fond aerateur-haut aerateur-bas saut-page">
-         <div class="floating-box-warn">
-            <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
-         </div>
-         <div class="info-txt">
-            <span class="titre-advice">Lieux de stockage<br></span>
-            <p class="texte-advice">
-               Un approvisionnement avec la création d'une réception de marchandises &#40;intrants, consommables, animaux, etc.&#41; nécessite que vous ayez préalablement défini vos découpes de bâtiment et vos aires de stockage dans l'assistant de démarrage. Vous pouvez toujours en dessiner de nouvelles dans l'application mais il sera beaucoup plus difficile de les géolocaliser dans la carte.
-            </p>
-         </div>
-      </div>
-      <p class="texte">
-         La procédure suivante vous guide pour créer le stock d'une ou plusieurs variante&#40;s&#41; <strong>avec</strong> une traçabilité comptable via la réception d'un colis. Cela permettra notamment le rapprochement de celle-ci avec la saisie d'une ou de plusieurs commandes réalisée&#40;s&#41; lors d'un processus d'achat.
-      </p>
-      <div class="floating-box process">
-         <img src="../images/commun/step1.svg" alt="1" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Affichez le "Tableau de bord des stocks"</span>
-         <p>
-            Cliquez sur le lien "Stocks" dans le "Menu principal" ou sur le bouton "Stocks" de la page d'accueil&nbsp;:
-         </p>
-         <p align="center"><img src="../images/chapitre9/stocks.svg" alt="Stocks" width="60"></p>
-         <p class="max-img-process">
-            <img src="../images/chapitre9/tableau-bord.png" class="contour-img" alt="Tableau de bord des stocks" data-action="zoom">
-         </p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step2.svg" alt="2" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Accédez aux "Réceptions"</span>
-         <p>Dans la barre latérale du module, cliquez sur "Réceptions" dans la section "Réceptions" symbolisée par l'icône d'un camion<img src="../images/chapitre9/truck.svg" alt="Camion" height="20" class="align-icone icone-marge-gauche icone-marge-droite">. La fenêtre principale affiche l'ensemble des colis réceptionnés, quel que soit leur statut&nbsp;: donné, c'est à dire effectivement reçu ou en brouillon &#40;la réception du colis est prévue mais pas encore confirmée&#41;.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre9/colis4.png" class="contour-img" alt="Liste des colis" data-action="zoom">
-         </p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step3.svg" alt="3" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Saisissez les informations </span>
-         <p>
-            Cliquez sur "Nouvelle réception", puis remplissez tous les champs signalés par une astérisque de couleur rouge avec les informations requises pour la définir correctement. Lorsque vous utiliserez la fonctionnalité de réception suite à un achat, utilisez la case à cocher<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">si la livraison doit être déclarée en incident &#40;livraison hors délais&#41;.
-         </p>
-         <p class="max-img-process">
-            <img src="../images/chapitre9/colis1.png" class="contour-img" alt="Nouveau colis entrant" data-action="zoom">
-         </p>
-      </div>
-      <div class="info-fond aerateur-haut">
-         <div class="floating-box-info">
-            <img src="../images/commun/info.svg" width="100" alt="Info"/>
-         </div>
-         <div class="info-txt">
-            <span class="titre-advice">Nouvel expéditeur<br></span>
-            <p class="texte-advice">
-               Si l'expéditeur du colis &#40;le fournisseur&#41; n'existe pas encore, créez-en un nouveau à la volée en sélectionnant "Ajouter un nouvel enregistrement" dans le menu "Expéditeur" et saisissez les informations requises pour le définir correctement.
-            </p>
-         </div>
-      </div>
-      <br>
-      <div class="floating-box process"></div>
-      <div class="process-txt">
-         <p>
-            Cliquez sur le bouton "Ajouter un élément". Remplissez les champs dans la section "Éléments". Vous pouvez ajouter plusieurs éléments dans un seul colis s'ils proviennent du même expéditeur &#40;le fournisseur&#41;. Notez que les éventuels frais de transport sont à ajouter ultérieurement dans la gestion de l'achat et non dans la création du colis.
-         </p>
-         <p>
-            Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération ou sur <span class="btn-blue">Créer et saisir suivant</span> pour réaliser une nouvelle saisie.
-         </p>
-      </div>
+	  <p class="texte">Dans le <a href="../chapitre8" class="avoid-clicks" target="_self">chapitre 8 - Ventes</a>, les différentes étapes pour enregistrer une vente ont permis d'aborder le processus complet depuis l'établissement du devis jusqu'à l'encaissement de la facture en passant par l'expédition et la livraison des marchandises. Il est également possible de suivre une méthode inverse qui consiste à enregistrer une expédition pour procéder à sa livraison et facturer ensuite les marchandises livrées.</p>
+      <p class="texte">Le processus suivant vous guide pour réaliser l'expédition d'un colis <strong>avec</strong> une traçabilité comptable.</p>
       <div class="warn-fond aerateur-haut aerateur-bas">
          <div class="floating-box-warn">
             <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
@@ -591,58 +514,7 @@
          <div class="info-txt">
             <span class="titre-advice">Date de stockage<br></span>
             <p class="texte-advice">
-               Veillez à ce que la date de réception d'un nouveau colis contenant un produit commandé pour la première fois soit antérieure à la date de l'intervention qui l'utilisera, sinon il sera impossible de disposer du produit au moment de saisir l'intervention dans l'application.
-            </p>
-         </div>
-      </div>
-      <div class="floating-box process">
-         <img src="../images/commun/step4.svg" alt="4" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Modifiez le statut de la "Réception"</span>
-         <p>Validez la "Réception" du colis en cliquant sur le bouton <span class="step step-vert">&nbsp;Reçu&nbsp;</span> pour disposer de la "matière" en stock. La "Réception" passe au statut <span class="step step-orange">&nbsp;Brouillon&nbsp;</span> et il n'est alors plus possible de la supprimer.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre9/colis2.png" class="contour-img" alt="Statut du colis entrant" data-action="zoom">
-         </p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step5.svg" alt="5" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Contrôlez vos stocks</span>
-         <p>Cliquez sur "Matières" dans la section des "Stocks" symbolisée par l'icône d'un sac de grains<img src="../images/chapitre9/matter.svg" alt="Sac de matière" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour vérifier que l'approvisionnement est conforme aux produits enregistrés dans le nouvelle "Réception".</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre9/matieres4.png" class="contour-img" alt="Matières en stock" data-action="zoom">
-         </p>
-      </div>
-      <p class="texte">Vous pouvez maintenant réaliser une intervention comme par exemple un semis &#40;voir  <a href="../chapitre10" class="avoid-clicks" target="_self">chapitre 10 – Production</a>&#41; et vous arrêter là si vous le souhaitez. Vous pouvez aussi procéder à la <a href="#gestion-achats" class="avoid-clicks">gestion de cet achat</a> et aux écritures comptables issues de la réception de ce colis.</p>
-      <div class="idea-fond aerateur-haut aerateur-bas">
-         <div class="floating-box-info">
-            <img src="../images/commun/astuce.svg" width="100" alt="Astuce"/>
-         </div>
-         <div class="info-txt">
-            <span class="titre-advice">Stocks existants<br></span>
-            <p class="texte-advice">
-               À la création de votre ferme, si vous souhaitez intégrer vos stocks existants dans l'application, nous vous recommandons de vous faire un colis entrant à vous-même regroupant plusieurs variantes &#40;produits&#41; avec les bonnes quantités et daté du premier jour de l'exercice demarré dans l'application.
-            </p>
-         </div>
-      </div>
-      <a class="slice-long" id="expeditions"></a>
-      <h6>Guide de démarrage • Stocks &amp; Personnel • Expéditions</h6>
-      <p align="center" class="texte aerateur procedure">E – Procédure pour réaliser l'expédition d'un colis
-      </p>
-      <p class="texte">
-         Le processus suivant vous guide pour réaliser l'expédition d'un colis <strong>avec</strong> une traçabilité comptable. 
-      </p>
-      <div class="warn-fond aerateur-haut aerateur-bas">
-         <div class="floating-box-warn">
-            <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
-         </div>
-         <div class="info-txt">
-            <span class="titre-advice">Date de stockage<br></span>
-            <p class="texte-advice">
-               La date d'intervention &#40;une récolte&#41; permettant le stockage du produit d'une récolte doit être antérieure à son expédition, sinon il sera impossible de réaliser la création de cette expédition avec le bon produit dans l'application.
+               La date d'une intervention &#40;récolte, traite, ramassage d'œufs&#41; permettant le stockage d'un produit issu d'une production végétale ou animale doit être antérieure à son expédition, sinon il sera impossible de disposer de la marchandise lors de l'enregistrement de l'expédition.
             </p>
          </div>
       </div>
@@ -749,75 +621,15 @@
             <img src="../images/chapitre9/matieres6.png" class="contour-img" alt="Matières en stock" data-action="zoom">
          </p>
       </div>
-      <a class="slice-short" name="gestion-achats"></a>
-      <h6>Guide de démarrage • Stocks &amp; Personnel • Achats/Ventes</h6>
-      <h2 class="texte aerateur">b - Introduction à la gestion des achats/ventes</h2>
+      <h6>Guide de démarrage • Stocks &amp; Personnel • Facturer une livraison</h6>
       <p class="texte">
-         Les mouvements de stocks de matières &#40;"Réceptions" et "Expéditions"&#41; peuvent être utilisés pour réaliser la gestion des achats et des ventes avec un enregistrement automatique des écritures comptables qui en découlent.
+         Les mouvements de stocks de matières &#40;"Expéditions"&#41; peuvent être utilisés pour réaliser la gestion des ventes avec un enregistrement automatique des écritures comptables qui en découlent.
       </p>
-      <p align="center" class="texte aerateur procedure">A – Procédure pour régler un achat
-      </p>
-      <p class="texte">
-         Le processus suivant vous guide pour procéder au règlement d'un achat.
-      </p>
-      <div class="floating-box process">
-         <img src="../images/commun/step1.svg" alt="1" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Affichez le "Tableau de bord des stocks"</span>
-         <p>
-            Cliquez sur le lien "Stocks" dans le "Menu principal" ou sur le bouton "Stocks" de la page d'accueil&nbsp;:
-         </p>
-         <p align="center"><img src="../images/chapitre9/stocks.svg" alt="Stocks" width="60"></p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step2.svg" alt="2" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Accédez aux "Colis"</span>
-         <p>Dans la barre latérale du module, cliquez sur "Colis" dans la section "Mouvements" symbolisée par l'icône d'un camion<img src="../images/chapitre9/truck.svg" alt="Camion" height="20" class="align-icone icone-marge-gauche">.</p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step3.svg" alt="3" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Passez le colis en facture d'achat</span>
-         <p>Cliquez sur l'icône<img src="../images/chapitre9/file-text-o.svg" alt="Fichier" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour convertir un colis unique en facture d'achat. Notez qu'une fois activé, ce lien ne sera plus disponible pour le colis sélectionné, même si la facture est restée en statut "Devis brouillon". Elle est accessible dans le module "Ventes/Achats".<br>Cochez une ou plusieurs cases<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour convertir un ou plusieurs colis et afficher le bouton "Facturer" au dessus de la liste, puis cliquez sur ce bouton. Notez que si plusieurs colis sont sélectionnés, la conversion n'est possible que si le fournisseur est le même pour tous les colis.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre9/colis3.png" class="contour-img" alt="Passage colis en facture d'achat" data-action="zoom">
-         </p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step4.svg" alt="4" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Modifiez le statut de l'achat</span>
-         <p>Modifiez le statut de l'achat en cliquant successivement sur les étapes en couleur&nbsp;:<br><span class="step step-orange">&nbsp;Devis brouillon&nbsp;</span><img src="../images/chapitre9/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;Devis envoyé&nbsp;</span><img src="../images/chapitre9/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-vert">&nbsp;Commande&nbsp;</span><img src="../images/chapitre9/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-vert">&nbsp;Facture&nbsp;</span></p>
-         <p>Vous pouvez aussi valider la facturation directement en cliquant sur le bouton <span class="step step-vert">&nbsp;Facture&nbsp;</span>&nbsp;.</p>
-         <p>Utilisez les statuts <span class="step step-rouge">&nbsp;Refusé&nbsp;</span> ou <span class="step step-rouge">&nbsp;Abandonné&nbsp;</span> pour annuler l'enregistrement de l'achat.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre9/achat1.png" class="contour-img" alt="Parcours colis vers facture d'achat" data-action="zoom">
-         </p>
-      </div>
-      <br>
-      <div class="floating-box process">
-         <img src="../images/commun/step5.svg" alt="5" width="52">
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Réglez la facture au fournisseur</span>
-         <p>La nouvelle facture à payer est établie. Vous pouvez réaliser l'écriture comptable du décaissement immédiatement ou plus tard. Cliquez sur le bouton "Ajouter un décaissement" pour accéder directement aux options du règlement de la facture. Vous pourrez revenir ultérieurement aux "Décaissements" via le module "Ventes/achats".</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre9/achat2.png" class="contour-img" alt="Décaissement" data-action="zoom">
-         </p>
-         <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
-      </div>
-      <p align="center" class="texte aerateur procedure">B – Procédure pour facturer une vente
+      <a class="slice-long" id="facture"></a>
+      <p align="center" class="texte aerateur procedure">B – Procédure pour facturer une livraison
       </p>
       <p class="texte">
-         Le processus suivant vous guide pour gérer la facturation d'une vente suite à une expédition.
+         Le processus suivant vous guide pour créer une facture de vente suite à une expédition.
       </p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52">
@@ -865,7 +677,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Passez le colis en facturation</span>
-         <p>Cliquez sur l'icône<img src="../images/chapitre9/file-text-o.svg" alt="Fichier" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour convertir un colis unique en facture de vente. Notez qu'une fois activé, ce lien ne sera plus disponible pour le colis sélectionné, même si la facture est restée en statut "Devis brouillon". Elle est accessible dans le module "Ventes/Achats".<br>Cochez une ou plusieurs cases<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour convertir un ou plusieurs colis et afficher le bouton "Facturer" au dessus de la liste, puis cliquez sur ce bouton. Notez que si plusieurs colis sont sélectionnés, la conversion n'est possible que si le destinataire est le même pour tous les colis.</p>
+         <p>Cliquez sur l'icône<img src="../images/chapitre9/file-text-o.svg" alt="Fichier" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour convertir un colis unique en facture de vente. Notez qu'une fois activé, ce lien ne sera plus disponible pour le colis sélectionné, même si la facture est restée en statut "Devis brouillon". Elle reste accessible dans le module "Ventes".<br>Cochez une ou plusieurs cases<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour convertir un ou plusieurs colis et afficher le bouton "Facturer" au dessus de la liste, puis cliquez sur ce bouton. Notez que si plusieurs colis sont sélectionnés, la conversion n'est possible que si le destinataire est le même pour tous les colis.</p>
          <p class="max-img-process">
             <img src="../images/chapitre9/colis8.png" class="contour-img" alt="Passage colis en facture de vente" data-action="zoom">
          </p>
@@ -889,7 +701,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Réaliser l'encaissement de la vente</span>
-         <p>La nouvelle facture est établie. Vous pouvez réaliser l'écriture comptable de l'encaissement immédiatement ou plus tard. Cliquez sur le bouton "Ajouter un encaissement" pour accéder directement aux options du règlement de la facture. Vous pourrez revenir ultérieurement aux "Encaissements" via le module "Ventes/achats".</p>
+         <p>La nouvelle facture est établie. Vous pouvez réaliser l'écriture comptable de l'encaissement immédiatement ou plus tard. Cliquez sur le bouton "Ajouter un encaissement" pour accéder directement aux options du règlement de la facture. Vous pourrez revenir ultérieurement aux "Encaissements" via le module "Ventes".</p>
          <p class="max-img-process">
             <img src="../images/chapitre9/vente2.png" class="contour-img" alt="Encaissement" data-action="zoom">
          </p>
@@ -897,7 +709,7 @@
       </div>
       <h6>Guide de démarrage • Stocks &amp; Personnel • Inventaires</h6>
       <a class="slice-long" id="inventaires"></a>
-      <h2 class="texte aerateur">c - Inventaires</h2>
+      <h2 class="texte aerateur">d - Inventaires</h2>
       <div class="config margin-config">
          <p>
             <img src="../images/commun/parcours.svg" height="55" alt="Icône parcours"/>
@@ -912,11 +724,13 @@
       <p class="texte">Vous pouvez réaliser les inventaires dans l'application pour&nbsp;:</p>
       <p class="texte">a - fixer la valeur du stock présent au sein de l’exploitation.<br>
          b - vérifier si aucune marchandise ou équipement ne manque, en d'autres termes de constater si il y a eu perte &#40;stocks périssables, produits en fin d’utilisation&#41; ou malveillance.<br>
-         c - vérifier une éventuelle erreur de gestion.
+         c - vérifier une éventuelle erreur de saisie ou de gestion.
       </p>
       <p class="texte">Vous êtes libre de la fréquence des inventaires&nbsp;: mensuel, trimestriel, annuel. Notez qu'un inventaire physique des stocks est obligatoire au moins tous les 12 mois. <strong>Chaque inventaire doit avoir un nom unique, un exercice et une date d'achèvement</strong>.</p>
       <p class="texte">L’inventaire permanent &#40;dénommé "mode stock permanent" dans Ekylibre&#41; est une organisation des comptes de stocks permettant de gérer l’enregistrement des mouvements de ces derniers et donc de connaître de façon constante à tout moment au cours de l’exercice comptable, les stocks en quantités et en valeurs.</p>
-      <p align="center" class="texte aerateur procedure">A – Procédure de paramétrage du mode stock permanent
+	  <p class="texte">Comme indiqué dans le <a href="../chapitre6" class="avoid-clicks">chapitre 6 - Comptabilité</a>, notez qu'une fois ce mode activé, la comptabilité est inondée d'écritures à chaque mouvement de stock.</p>
+	  <a class="slice-long" id="permanent"></a>
+      <p align="center" class="texte aerateur procedure">A – Paramétrage du mode stock permanent
       </p>
       <p class="texte">
          Le processus suivant vous guide pour activer ou non vos préférences de stock permanent.
@@ -937,8 +751,8 @@
          <img src="../images/commun/step2.svg" alt="2" width="52">
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Activez la fonctionnalité</span>
-         <p>Dans la section "Préférences de la comptabilité", cochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à droite de "Mode stock permanent &#40;tenue des écritures comptables de stock&#41;" si vous souhaitez activer cette fonctionnalité.</p>
+         <span class="titre-advice">Activez ou non la fonctionnalité</span>
+         <p>Dans la section "Préférences de la comptabilité", cochez ou décochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à droite de "Mode stock permanent &#40;tenue des écritures comptables de stock&#41;" si vous souhaitez activer ou non cette fonctionnalité.</p>
          <p class="max-img-process">
             <img src="../images/chapitre9/pref-compta.png" class="contour-img" alt="Préférences de la comptabilité" data-action="zoom">
          </p>
@@ -1007,7 +821,7 @@
       <h6>Guide de démarrage • Stocks &amp; Personnel • Équipements</h6>
       <a class="slice-section" id="equipements"></a>
       <p align="center"><img class="img-chapitre" src="../images/chapitre9/equipements.png" alt="Équipements"></p>
-      <h2 class="texte aerateur">d - Équipements</h2>
+      <h2 class="texte aerateur">e - Équipements</h2>
       <div class="config margin-config">
          <p>
             <img src="../images/commun/parcours.svg" height="55" alt="Icône parcours"/>
@@ -1165,7 +979,7 @@
       <h6>Guide de démarrage • Stocks &amp; Personnel • Création d'un contact</h6>
       <a class="slice-section" id="personnel"></a>
       <p align="center"><img class="img-chapitre" src="../images/chapitre9/personnel.png" alt="Personnel"></p>
-      <h2 class="texte aerateur">e - Personnel</h2>
+      <h2 class="texte aerateur">f - Personnel</h2>
       <div class="config margin-config">
          <p>
             <img src="../images/commun/parcours.svg" height="55" alt="Icône parcours"/>
@@ -1327,7 +1141,7 @@
          <div class="info-txt">
             <span class="titre-advice">Création d'une nouvelle organisation<br></span>
             <p class="texte-advice">
-               La procédure de création d'une nouvelle organisation est sensiblement la même que pour la création d'un nouveau contact mais avec des champs propres à l'activité professionnelle &#40;numéro Siret, code APE/NAF, numéro de TVA intra-communautaire&#41;. Notez que lorsque vous créez un nouvel expéditeur ou un nouveau destinataire à la volée lors d'un achat ou d'une vente ou lors de la création d'un colis entrant ou sortant, il est automatiquement enregistré en tant que nouvelle organisation.
+               La procédure de création d'une nouvelle organisation est sensiblement la même que pour la création d'un nouveau contact mais avec des champs propres à l'activité professionnelle &#40;numéro Siret, code APE/NAF, numéro de TVA intra-communautaire&#41;. Notez que lorsque vous créez un nouvel expéditeur ou un nouveau destinataire à la volée lors d'un achat ou d'une vente ou lors de la création d'une réception ou d'une expédition, il est automatiquement enregistré en tant que nouvelle organisation.
             </p>
          </div>
       </div>
