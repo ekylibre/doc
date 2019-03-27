@@ -85,7 +85,7 @@
                </div>
                <div class="divTableCellGlossaire2" style="width: 100%">
                   dans l'application, tous les éléments &#40;intrants, produits de récolte, consommables, équipements, animaux, végétaux, et même bâtiments et main d’œuvre&#41; sont considérés comme faisant partie du stock de la ferme sauf les fournisseurs et les clients
-                  <p align="center"><img src="../images/chapitre9/schema-stock.png" alt="Schéma stock" height="192" class="aerateur-glossaire"/></p>
+                  <p align="center"><img src="../images/chapitre9/schema-stock.png" alt="Schéma stock" class="aerateur-glossaire"/></p>
                </div>
             </div>
          </div>
@@ -97,8 +97,8 @@
       <h2 class="texte aerateur">a - Catégories, types et variantes</h2>
       <p class="texte">Tous les éléments stockés dans Ekylibre sont associés à une catégorie qui est un profil de gestion applicable pour les écritures comptables &#40;le paramétrage de plusieurs tâches associées à la comptabilité est expliqué dans le <a href="../chapitre6" target="_self" class="avoid-clicks">chapitre 6 - Comptabilité</a>&#41;.</p>
       <p class="texte">Ces éléments sont également rattachés à des types &#40;familles&#41; identifiés par un profil technique comme par exemple un service, un équipement, un produit phytosanitaire.</p>
-      <p class="texte">La variante est finalement la dénomination d'un produit appartenant simultanément à une catégorie &#40;profil de gestion&#41; et à un type &#40;profil technique&#41;.</p>
-      <p class="texte">À la création du stock initial, lors d'un achat ou d'une vente, la variante est finalement enregistrée sous la forme d'un produit avec la quantité spécifiée.</p>
+      <p class="texte">La variante est finalement la dénomination d'un article de catalogue appartenant simultanément à une catégorie &#40;profil de gestion&#41; et à un type &#40;profil technique&#41;.</p>
+      <p class="texte">À la création du stock initial ou lors d'un achat, la variante est finalement enregistrée sous la forme d'un produit en stock avec la quantité spécifiée.</p>
       <div class="affichage-large"></div>
       <div class="affichage-mobile">
          <p align="center">
@@ -121,7 +121,7 @@
                         <div class="divTableCellProfil1" style="width: 20%">Catégorie de produit</div>
                         <div class="divTableCellProfil1" style="width: 20%">Type de produit</div>
                         <div class="divTableCellProfil1" style="width: 20%">Variante</div>
-                        <div class="divTableCellProfil4" style="width: 20%">Produit</div>
+                        <div class="divTableCellProfil4" style="width: 20%">Produit en stock</div>
                      </div>
                      <div class="divTableRow">
                         <div class="divTableCellProfil2">Équipement</div>
@@ -195,12 +195,36 @@
          </div>
          <div class="info-txt">
             <span class="titre-advice">Utilité de créer de nouvelles variantes<br></span>
-            <p class="texte-advice">Dans la majorité des cas, les variantes prédéfinies et disponibles dans l'application doivent répondre à vos attentes pour constituer vos stocks. Cependant, la création d'une nouvelle variante est utile voire indispensable si&nbsp;:</p>
-            <ol class="oleft">
-               <li>Vous utilisez des équipements d'un même type &#40;comme par exemple plusieurs tracteurs&#41; et vous souhaitez comptabiliser leurs temps de travaux et pouvoir attribuer un coût horaire différent à chacun d'eux&nbsp;;</li>
-               <li>Vous souhaitez affecter différents coûts de main d'œuvre à vos équipiers &#40;procédure expliquée plus loin dans ce chapitre&#41;&nbsp;;</li>
-               <li>Vous avez besoin de spécifier et/ou de corriger la dénomination et/ou le conditionnement d'un intrant &#40;semence disponible en sac de 30 kg au lieu de 25 kg&#41;.</li>
-            </ol>
+            <p class="texte-advice">Dans la majorité des cas, les variantes prédéfinies et disponibles dans l'application doivent répondre à vos attentes pour constituer vos stocks. Cependant, la création d'une nouvelle variante est utile voire indispensable en fonction du niveau de traçabilité que vous souhaitez obtenir.</p>
+         </div>
+      </div>
+	  <p class="texte">Quelques exemples qui doivent vous amener à créer de nouvelles variantes&nbsp;:</p>
+	  <div class="divTableListe marge">
+         <div class="divTableBody">
+            <div class="divTableRow">
+               <div class="divTableCellListe" style="width: 14px">
+                  1.
+               </div>
+               <div class="divTableCellListe">
+				   Vous avez besoin de spécifier et/ou de corriger la dénomination et/ou le conditionnement d'un intrant &#40;semence disponible en sac de 30 kg au lieu de 25 kg&#41;&nbsp;;<br><p align="center"><img src="../images/chapitre9/schema-variante1.png" height="100" alt="Variante de semence"/></p>
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellListe">
+                  2.
+               </div>
+               <div class="divTableCellListe">
+                  Vous utilisez des équipements d'un même type &#40;comme par exemple plusieurs tracteurs&#41; et vous souhaitez comptabiliser leurs temps de travaux et pouvoir attribuer un coût horaire différent à chacun d'eux&nbsp;;<br><p align="center"><img src="../images/chapitre9/schema-variante2.png" height="100" alt="Variante de tracteur"/></p>
+               </div>
+            </div>
+			<div class="divTableRow">
+               <div class="divTableCellListe">
+                  3.
+               </div>
+               <div class="divTableCellListe">
+                  Vous souhaitez affecter des coûts horaires de main-d'œuvre différents à vos équipiers pour estimer le coût des interventions &#40;procédure expliquée plus loin dans ce chapitre&#41;.<br><p align="center"><img src="../images/chapitre9/schema-variante3.png" height="100" alt="Variante d'équipier'"/></p>
+               </div>
+            </div>
          </div>
       </div>
 	  <p align="center" class="texte aerateur procedure">A – Procédure pour afficher une liste dans les "Produits"
@@ -297,6 +321,77 @@
             <img src="../images/chapitre9/variantes4.png" class="contour-img" alt="Nouvelle variante de produit" data-action="zoom">
          </p>
          <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
+      </div>
+	  <h6>Guide de démarrage • Stocks &amp; Personnel • Nouveau type</h6>
+	  <p class="texte">Dans cet exemple, nous allons créer de A à Z une nouvelle catégorie, un nouveau type et enfin une nouvelle variante pour répondre aux besoins d'un producteur de camemberts.</p>
+	  <a class="slice-long" id="catégorie"></a>
+      <p align="center" class="texte aerateur procedure">C – Procédure pour créer un nouveau type de produit
+      </p>
+      <p class="texte">Le processus suivant vous guide pour créer un nouveau type de produit.</p>
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez les catégories de produits</span>
+         <p>
+            Cliquez sur la clef anglaise<img src="../images/chapitre9/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">dans le "Menu principal" ou sur le bouton "Configuration" de la page d'accueil&nbsp;:
+         </p>
+         <p align="center"><img src="../images/chapitre9/wrench.svg" alt="Configuration" width="60"></p>
+         <p>Dans la barre latérale du module, cliquez sur "Catégories de produits" dans la section "Produit" symbolisée par l'icône d'un épi<img src="../images/chapitre9/wheat.svg" alt="Épi" height="20" class="align-icone icone-marge-gauche">.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre9/categorie1.png" class="contour-img" alt="Catégories de produits" data-action="zoom">
+         </p>
+      </div>
+      <br>
+      <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Renseignez la nouvelle catégorie</span>
+		  <p>Cliquez sur le bouton "Nouveau" et nommez la nouvelle catégorie.</p><p>Cochez les cases<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">de la section "Type" en lien avec la catégorie pour la définir correctement. Pour chaque case activée, une nouvelle section apparaît avec différents champs à renseigner. Sélectionnez dans chaque liste déroulante les comptes comptables appropriés.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre9/categorie2.png" class="contour-img" alt="Nouvelle catégorie de produits" data-action="zoom">
+         </p>
+		 <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
+      </div>
+      <br>
+      <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Piochez la nouvelle catégorie</span>
+         <p>Cliquez sur le bouton "Piochez", puis sélectionnez la nouvelle catégorie dans la liste déroulante afin qu'elle deviennent ensuite disponible dans la liste des types.
+         </p>
+         <p class="max-img-process">
+            <img src="../images/chapitre9/categorie3.png" class="contour-img" alt="Piocher la nouvelle catégorie de produit" data-action="zoom">
+         </p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre9/categorie4.png" class="contour-img" alt="Importer la nouvelle catégorie de produit" data-action="zoom">
+         </p>
+		 <p>Cliquez sur <span class="btn-blue">Importer</span> pour valider l'opération.</p>
+      </div>
+      <br>
+      <div class="floating-box process">
+         <img src="../images/commun/step4.svg" alt="4" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez les types de produits</span>
+         <p>Dans la barre latérale du module, cliquez sur "Types" dans la section "Produit" symbolisée par l'icône d'un épi<img src="../images/chapitre9/wheat.svg" alt="Épi" height="20" class="align-icone icone-marge-gauche">, puis cliquez sur le bouton "Nouveau".</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre9/categorie5.png" class="contour-img" alt="Liste des types de produit" data-action="zoom">
+         </p>
+      </div>
+	  <br>
+	  <div class="floating-box process">
+         <img src="../images/commun/step5.svg" alt="5" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Renseignez le nouveau type</span>
+		  <p>Sélectionnez la catégorie dans la liste déroulante.</p><p>Cochez les cases<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">de la section "Type" en lien avec la catégorie pour la définir correctement. Pour chaque case activée, une nouvelle section apparaît avec différents champs à renseigner. Sélectionnez dans chaque liste déroulante les comptes comptables appropriés.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre9/categorie6.png" class="contour-img" alt="Nouveau type de produit" data-action="zoom">
+         </p>
+		 <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
       </div>
       <h6>Guide de démarrage • Stocks &amp; Personnel • Notions de stocks</h6>
       <h2 class="texte aerateur">b - Introduction à la gestion des stocks</h2>
