@@ -93,4 +93,4 @@ checks:
 deploy:
   default:
     kind: rsync
-    dst: "doc:/var/www/doc.ekylibre.com/v2"
+    dst: "doc:/opt/doc/app/v2"
