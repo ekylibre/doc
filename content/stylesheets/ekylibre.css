@@ -742,6 +742,101 @@ a:link, a:visited {
 	border-right-color: #ffffff;
 }
 
+/*Tableau Note de version*/
+
+.divTableNoteVersion {
+	display: table;
+	max-width: 648px;
+	width: 100%;
+}
+
+.divTableCellNoteVersion1, .divTableHeadNoteVersion1 {
+	display: table-cell;
+	padding: 0;
+	text-align: left;
+	vertical-align: top;
+	white-space: nowrap;
+	background-color: #ddd;
+	border-top-width: 3px;
+	border-top-style: solid;
+	border-top-color: #fff;
+	border-bottom-width: 0;
+	border-bottom-style: solid;
+	border-bottom-color: #fff;
+	border-left-width: 0;
+	border-left-style: solid;
+	border-left-color: #fff;
+	border-right-width: 3px;
+	border-right-style: solid;
+	border-right-color: #fff;
+}
+
+.divTableCellNoteVersion2, .divTableHeadNoteVersion2 {
+	display: table-cell;
+	padding: 0 10px;
+	line-height: 0.8;
+	text-align: left;
+	vertical-align: top;
+	background-color: #eee;
+	border-top-width: 3px;
+	border-top-style: solid;
+	border-top-color: #fff;
+	border-bottom-width: 0;
+	border-bottom-style: solid;
+	border-bottom-color: #fff;
+	border-left-width: 0;
+	border-left-style: solid;
+	border-left-color: #fff;
+	border-right-width: 0;
+	border-right-style: solid;
+	border-right-color: #fff;
+}
+
+.divTableCellNoteVersion3, .divTableHeadNoteVersion3 {
+	display: table-cell;
+	padding: 0;
+	text-align: left;
+	vertical-align: top;
+	background-color: #fff;
+}
+
+.divTableCellNoteVersion4, .divTableHeadNoteVersion4 {
+	display: table-cell;
+	text-align: left;
+	vertical-align: top;
+	background-color: #eee;
+	padding: 0 10px 0 0;
+	border-top-width: 1;
+	border-top-style: dotted;
+	border-top-color: #ccc;
+}
+
+.divTableCellNoteVersion4 li {
+	margin-left: -18px;
+	padding-right: 10px;
+}
+
+.improve {
+	margin-left: 8px;
+}
+
+.notes-version {
+    right: 50%;
+    margin-right: -384px;
+    width: 500px;
+    height: 44px;
+    background-color: #333;
+    z-index: 100;
+    position: fixed;
+    float: right;
+}
+
+.link-notes {
+	color: #ccc;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
 /*Tableau Stock*/
 
 .divTableGlossaire {
@@ -1664,13 +1759,17 @@ img.zoom-img {
   display:none;
 }
 
+.btn_notes-version {
+  display:none;
+}
+
 @media only screen and (min-width: 768px) {
 .btn_pdf {
   display:inline;
   position: fixed;
   height: 50px;
   width: 50px;
-  left: 20px;
+  left: 40px;
   right: auto;
   bottom: 12px;
   background-color: #476ba8;
@@ -1680,12 +1779,32 @@ img.zoom-img {
   background-position: center center;
   background-size: 30px auto;
   }
+  
+.btn_notes-version {
+  display:inline;
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  left: 110px;
+  right: auto;
+  bottom: 12px;
+  background-color: #476ba8;
+  border-radius: 25px;
+  background-image: url("../fr/images/commun/notes-version.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50px auto;
+}
 }
 
 @media print {
   .btn_pdf {
   display:none;
   }
+  
+  .btn_notes-version {
+  display:none;
+}
 }
 
 /*Tooltip*/
@@ -1719,8 +1838,8 @@ img.zoom-img {
 .tooltip .tooltiptext2 {
     visibility: hidden;
     position: absolute;
-    width: 100px;
-    margin-left: -50px;
+    width: 110px;
+    margin-left: -55px;
     left: 50%;
     background-color: #476ba8;
     color: #fff;
@@ -1728,9 +1847,12 @@ img.zoom-img {
     padding: 5px 0;
     border-radius: 5px;
     z-index: 1;
+    opacity: 0;
+    transition: opacity .6s;
 }
 .tooltip:hover .tooltiptext2 {
     visibility: visible;
+    opacity: 1;
 }
 .tooltip-right {
   top: -5px;
