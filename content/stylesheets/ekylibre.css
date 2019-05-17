@@ -774,7 +774,7 @@ a:link, a:visited {
 
 .divTableCellNoteVersion2, .divTableHeadNoteVersion2 {
 	display: table-cell;
-	padding: 15px 10px;
+	padding: 14px 10px;
 	line-height: 0.7;
 	text-align: left;
 	vertical-align: top;
@@ -2069,7 +2069,6 @@ img.zoom-img {
 }
 
 .accordion-container .panel .content {
-	/*padding: 0px 20px;*/
 	background-color: #fff;
 	max-height: 0;
 	overflow: hidden;
@@ -2077,24 +2076,22 @@ img.zoom-img {
 }
 
 .accordion-container .panel .heading {
-	padding: 15px 0;
+	padding: 15px 0 15px 10px;
 	background: url("../fr/images/notes-version/keyboard_arrow_up.svg") no-repeat right;
-	background-position: 100% 30px !important;
+	background-position: 99% 30px !important;
 	background-size: 28px !important;
+	cursor: pointer;
+}
+
+.accordion-container .panel .heading:hover{
+	background-color: #dddddd;
+	transition: 0.2s;
+	border-radius: 5px;
 }
 
 .accordion-container .panel a {
 	text-decoration: none;
 }
-
-/*.accordion-container .panel .content p {
-	font-size: 0.8em;
-	line-height: 1.5em;
-	font-weight: 300;
-	color: #6f6f6f;
-	padding: 10px 0;
-	margin: 0;
-}*/
 
 .accordion-container .panel .content p:first-child {
 	padding-top: 0;
@@ -2104,19 +2101,6 @@ img.zoom-img {
 	margin-left: 5px;
 	padding-left: 20px;
 }
-
-/*.accordion-container .panel .content ul li {
-	list-style-type: none;
-	font-size: 0.8em;
-	line-height: 1.5em;
-	color: #6f6f6f;
-}*/
-
-/*.accordion-container .panel .content ul li:before {
-	content: "—";
-	padding-right: 4px;
-	display: inline;
-}*/
 
 .accordion-container .panel p:last-child {
 	padding-bottom: 20px;
@@ -2133,6 +2117,12 @@ img.zoom-img {
 
 .accordion-container .panel.active {
 	background: #fff !important;
+}
+
+.accordion-container .panel.active .heading:hover{
+	background-color: #dddddd;
+	transition: 0.2s;
+	border-radius: 5px;
 }
 
 .accordion-container .panel.active .heading {

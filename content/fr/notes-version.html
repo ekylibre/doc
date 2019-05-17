@@ -3,9 +3,17 @@
       <div class="divTable">
          <div class="divTableBody">
             <div class="divTableRow">
-               <div class="divTableCellNavi1"><img src="../images/commun/angle-left.svg" alt="Précédent" height="13" class="align-navi icone-marge-droite"><a href="../demarrage" title="Accueil" target="_self">Accueil</a></div>
+               <div class="divTableCellNavi1">
+			   <!--
+			   <img src="../images/commun/angle-left.svg" alt="Précédent" height="13" class="align-navi icone-marge-droite"><a href="../demarrage" title="Accueil" target="_self">Accueil</a>
+			   -->
+			   </div>
                <div class="divTableCellNavi2">Guide de démarrage • Notes de version</div>
-               <div class="divTableCellNavi3"><a href="../chapitre2" title="Introduction" target="_self">Introduction</a><img src="../images/commun/angle-right.svg" alt="Suivant" height="13" class="align-navi icone-marge-gauche"></div>
+               <div class="divTableCellNavi3">
+			   <!--
+			   <a href="../chapitre2" title="Introduction" target="_self">Introduction</a><img src="../images/commun/angle-right.svg" alt="Suivant" height="13" class="align-navi icone-marge-gauche">
+			   -->
+			   </div>
             </div>
          </div>
       </div>
@@ -17,18 +25,37 @@
    <div class="accordion-container marge">
       <div class="panel">
          <div class="heading">
-            <h2>Note de version du jj/mm/aaaa</h2>
+            <h2>Note de version du 22/05/2019</h2>
          </div>
          <div class="content">
             <div class="divTableNoteVersion">
                <div class="divTableBody">
+				  <div class="divTableRow">
+                     <div class="divTableCellNoteVersion1">
+                        <img src="../images/notes-version/ventes.svg" alt="Ventes" width="60">
+                     </div>
+                     <div class="divTableCellNoteVersion2">
+                        <strong>Ventes</strong><br><br>
+                        1 amélioration
+                     </div>
+                  </div>
+				  <div class="divTableRow">
+                     <div class="divTableCellNoteVersion3" style="width: 60px">
+                     </div>
+                     <div class="divTableCellNoteVersion4" style="width: auto">
+                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                        <ul>
+                           <li>Changement de l'intitulé du bouton "Générer bon de préparation" par "Créer une expédition" dans l'interface de facturation des ventes.</li>
+                        </ul>
+                     </div>
+                  </div>
                   <div class="divTableRow">
                      <div class="divTableCellNoteVersion1">
                         <img src="../images/notes-version/achats.svg" alt="Achats" width="60">
                      </div>
                      <div class="divTableCellNoteVersion2">
                         <strong>Achats</strong><br><br>
-                        4 améliorations et 1 bug corrigé
+                        7 améliorations
                      </div>
                   </div>
 				  <div class="divTableRow">
@@ -37,10 +64,13 @@
                      <div class="divTableCellNoteVersion4" style="width: auto">
                         <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                         <ul>
-                           <li>Mise à disposition d'un nouveau module "Achats" dissocié du module des "Ventes"&nbsp;;</li>
+                           <li>Disponibilité d'un nouveau module "Achats" dissocié du module des "Ventes" &#40;les décaissements et les encaissements sont respectivement rattachés à chacun des 2 modules&#41;&nbsp;;</li>
 						   <li>Possibilité de réaliser un rapprochement entre les factures d'achat et les réceptions&nbsp;;</li>
-						   <li>Filtrage automatique des marchandises, des services et des frais lors de la saisie d'une ligne d'achat&nbsp;;</li>
-						   <li>Possibilité d'associer une commande à une activité, un budget interne, une équipe ou un équipement&nbsp;;</li>
+						   <li>Filtrage automatique des marchandises, des services et des frais lors de la saisie d'une ligne d'achat grâce à 3 listes déroulantes&nbsp;;</li>
+						   <li>Nouveaux champs "Conditionnement" et "Quantité" destinés à faciliter le calcul des quantités totales commandées&nbsp;;</li>
+						   <li>Affichage dynamique du stock actuel et du stock après commande durant la saisie des lignes d'achat&nbsp;;</li>
+						   <li>Possibilité d'associer une commande ou une facture à une activité, un budget interne, une équipe ou un équipement&nbsp;;</li>
+						   <li>Mise à disposition d'un nouveau sélecteur de date plus ergonomique.</li>
                         </ul>
                      </div>
                   </div>
@@ -50,7 +80,7 @@
                      </div>
                      <div class="divTableCellNoteVersion2">
                         <strong>Stocks</strong><br><br>
-                        4 améliorations et 1 bug corrigé
+                        10 améliorations
                      </div>
                   </div>
 				  <div class="divTableRow">
@@ -59,9 +89,16 @@
                      <div class="divTableCellNoteVersion4" style="width: auto">
                         <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                         <ul>
+						   <li>Remplacement des termes "Colis entrant" et "Colis sortant" par "Réceptions" et "Expéditions"&nbsp;;</li>
 						   <li>Possibilité de réaliser un rapprochement entre les réceptions et les commandes&nbsp;;</li>
-						   <li>Possibilité de définir plusieurs zones de stockage lors d'une réception de marchandises&nbsp;;</li>
-						   <li>Affichage d'une nouvelle liste des prestations de service avec les quantitées commandées, utilisées et en stock&nbsp;;</li>
+						   <li>Fermeture optionnelle et automatique d'une commande suite au rapprochement d'une réception&nbsp;;</li>
+						   <li>Possibilité de renseigner plusieurs zones de stockage lors d'une réception de marchandises&nbsp;;</li>
+						   <li>Possibilité de définir un statut "Hors délais" ou "Réception en incident" lors d'une réception de marchandises ou d'une prestation de service&nbsp;;</li>
+						   <li>Possibilité d'associer une réception à une activité, un budget interne, une équipe ou un équipement&nbsp;;</li>
+						   <li>Affichage d'une nouvelle liste des prestations de service avec les quantitées commandées, utilisées et disponibles en stock&nbsp;;</li>
+						   <li>Affichage d'une nouvelle liste des commandes à réceptionner&nbsp;;</li>
+						   <li>Fonctionnalité de création de livraisons réservée maintenant exclusivement aux expéditions&nbsp;;</li>
+						   <li>Mise à disposition d'un nouveau sélecteur de date plus ergonomique.</li>
                         </ul>
                      </div>
                   </div>
@@ -71,16 +108,17 @@
                      </div>
                      <div class="divTableCellNoteVersion2">
                         <strong>Production</strong><br><br>
-                        1 amélioration et 1 bug corrigé
+                        2 améliorations et 1 bug corrigé
                      </div>
                   </div>
 				  <div class="divTableRow">
                      <div class="divTableCellNoteVersion3" style="width: 60px">
                      </div>
                      <div class="divTableCellNoteVersion4" style="width: auto">
-                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                         <ul>
-						   <li>Possibilité d'utiliser des prestations de service en stock lors de l'enregistrement d'une intervention.</li>
+						   <li>Possibilité d'utiliser des prestations de service en stock lors de l'enregistrement d'une intervention&nbsp;;</li>
+						   <li>Mise à disposition d'un nouveau sélecteur de date et d'heure plus ergonomique.</li>
                         </ul>
 						<p class="improve"><img src="../images/notes-version/bug.svg" alt="Correction bug" height="20" class="align-icone icone-marge-droite">Correction&nbsp;:</p>
                         <ul>
@@ -101,7 +139,7 @@
                      <div class="divTableCellNoteVersion3" style="width: 60px">
                      </div>
                      <div class="divTableCellNoteVersion4" style="width: auto">
-                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                         <ul>
 						   <li>Import du fichier de la déclaration TelePAC 2019&nbsp;;</li>
                            <li>Import de fiches parcellaires DAPLOS AGRO-EDI.</li>
@@ -114,7 +152,7 @@
                      </div>
                      <div class="divTableCellNoteVersion2">
                         <strong>Configuration</strong><br><br>
-                        4 améliorations et 1 bug corrigé
+                        1 amélioration
                      </div>
                   </div>
 				  <div class="divTableRow">
@@ -123,7 +161,7 @@
                      <div class="divTableCellNoteVersion4" style="width: auto">
                         <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                         <ul>
-						   <li>Possibilité de définir des budgets internes pour les associer à des commandes &#40;rôle informatif&#41;.</li>
+						   <li>Possibilité de définir des budgets internes pour les associer à des commandes, des réceptions et des factures.</li>
                         </ul>
                      </div>
                   </div>
@@ -131,6 +169,7 @@
             </div>
          </div>
       </div>
+	  <!--
       <div class="panel">
          <div class="heading">
             <h2>Note de version du jj/mm/aaaa</h2>
@@ -238,6 +277,7 @@
             </div>
          </div>
       </div>
+	  -->
    </div>
    <div class="aerateur-bas"></div>
    <div class="navigation">
@@ -245,10 +285,12 @@
          <div class="divTableBody">
             <div class="divTableRow">
                <div class="divTableCellCenter" style="width: auto">&nbsp;</div>
-               <div class="divTableCellRight" style="width: 150px"><span><a href="../demarrage" target="_self">ACCUEIL</a></span></div>
+               <div class="divTableCellRight" style="width: 150px"><span><a href="../demarrage" target="_self">&nbsp;</a></span></div>
+			   <!--
                <div class="divTableCellCenter" style="width: 40px"><a href="../demarrage" target="_self"><img src="../images/commun/arrow-left.svg" width="40" alt="Accueil"></a></div>
                <div class="divTableCellCenter" style="width: 40px"><a href="../chapitre2" target="_self"><img src="../images/commun/arrow-right.svg" width="40" alt="Introduction"></a></div>
-               <div class="divTableCellLeft" style="width: 150px"><span><a href="../chapitre2" target="_self">INTRODUCTION</a></span></div>
+			   -->
+               <div class="divTableCellLeft" style="width: 150px"><span><a href="../chapitre2" target="_self">&nbsp;</a></span></div>
                <div class="divTableCellCenter" style="width: auto">&nbsp;</div>
             </div>
          </div>
