@@ -806,7 +806,7 @@ a:link, a:visited {
 	text-align: left;
 	vertical-align: top;
 	background-color: #eee;
-	border-top-width: 1;
+	border-top-width: 2px;
 	border-top-style: dotted;
 	border-top-color: #ccc;
 }
@@ -2138,4 +2138,28 @@ img.zoom-img {
 .info a {
 	color: #1ac3b4 !important;
 	text-decoration: none;
+}
+
+@media screen {
+	.heading-print {
+		display: none;
+	}
+	.content-print {
+		display: none;
+	}
+	accordion-container {
+		display: inline;
+	}
+}
+
+@media print {
+	.heading-print {
+		display: block;
+	}
+	.content-print {
+		display: block;
+	}
+	.accordion-container {
+		display: none;
+	}
 }
