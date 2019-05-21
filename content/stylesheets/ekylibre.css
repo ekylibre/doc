@@ -2055,13 +2055,12 @@ img.zoom-img {
 .accordion-container .panel {
 	margin-top: 0;
 	border: none;
-	border-bottom: 1px solid #efefef;
+	border-bottom: 1px solid #ccc;
 	border-radius: 0;
 	background: #fff !important;
 	width: 100%;
 	text-align: left;
 	transition: 0.5s;
-	border-bottom: 1px solid #e3e3e3;
 }
 
 .accordion-container .panel:last-child {
@@ -2077,10 +2076,20 @@ img.zoom-img {
 
 .accordion-container .panel .heading {
 	padding: 15px 0 15px 10px;
-	background: url("../fr/images/notes-version/keyboard_arrow_up.svg") no-repeat right;
-	background-position: 99% 30px !important;
-	background-size: 28px !important;
+	position: relative;
+	display: block;
 	cursor: pointer;
+}
+
+.accordion-container .panel .heading i {
+	position: absolute;
+	top: 34px;
+	left: 12px;
+	font-size: 20px;
+	color: #4c4c4c;
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
 }
 
 .accordion-container .panel .heading:hover{
@@ -2106,15 +2115,6 @@ img.zoom-img {
 	padding-bottom: 20px;
 }
 
-.accordion-container .panel table {
-	width: 100%;
-}
-
-.accordion-container .panel table tr td {
-	padding: 5px 10px;
-	border: 1px solid #ececec;
-}
-
 .accordion-container .panel.active {
 	background: #fff !important;
 }
@@ -2125,19 +2125,17 @@ img.zoom-img {
 	border-radius: 5px;
 }
 
-.accordion-container .panel.active .heading {
-	background: url("../fr/images/notes-version/keyboard_arrow_down.svg") no-repeat right;
+.accordion-container .panel .heading i.fa-chevron-down {
+	right: 12px;
+	left: auto;
+	font-size: 20px;
 }
 
-.info {
-	font-size: 0.70em;
-	font-weight: 300;
-	color: #b5b5b5;
-}
-
-.info a {
-	color: #1ac3b4 !important;
-	text-decoration: none;
+.accordion-container .panel.active .heading i.fa-chevron-down {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 @media screen {
