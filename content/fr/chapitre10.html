@@ -362,6 +362,36 @@
       <h2 class="texte aerateur">c - Saisie d'interventions</h2>
       <p class="texte">Maintenant que la parcelle est créée, des interventions peuvent être réalisées sur celle-ci &#40;labour, fertilisation, semis, pulvérisation, récolte, etc&#41;.</p>
       <p class="texte">Les interventions pour la production végétale sont classées par famille dans l'application &#40;"Entretien des cultures", "Implantation des cultures", "Protection des cultures", "Récolte", "Travail du sol", etc&#41; et sont enregistrées chronologiquement pour chaque parcelle.</p>
+	  <p class="texte">La planification d'interventions est également possible. Elle permet de programmer une intervention et de visualiser d'un seul coup d'œil son état de réalisation.</p>
+	  <p class="texte">En mode d'affichage "Pavés" et lorsque la case à cocher<img src="../images/commun/check-square.svg" alt="case cochée" height="20" class="align-icone icone-marge-gauche icone-marge-droite">est activée à gauche de "Comparer avec les interventions planifiées", des indicateurs renseignent l'utilisateur sur le statut de chaque intervention de la manière suivante&nbsp;:</p>
+	  <div class="divTableListe marge aerateur-bas">
+         <div class="divTableBody">
+			<div class="divTableRow">
+               <div class="divTableCellDroits1" style="width: 28px">
+                  <img src="../images/chapitre10/comp-na.svg" alt="Confirmer" height="30">
+               </div>
+               <div class="divTableCellDroits2">
+                  sans objet, l'intervention a été enregistrée sans planification
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellDroits1">
+                  <img src="../images/chapitre10/comp-ok.svg" alt="Verrouiller" height="30">
+               </div>
+               <div class="divTableCellDroits2">
+                  l'intervention en cours ou terminée est conforme à sa planification
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellDroits1">
+                  <img src="../images/chapitre10/comp-no.svg" alt="Annuler" height="30">
+               </div>
+               <div class="divTableCellDroits2">
+                  l'intervention en cours ou terminée n'est pas conforme à sa planification &#40;zone travaillée, équipier ou sa période de travail, équipement ou son temps de travail, intrant ou quantité d'intrant utilisée&#41;
+               </div>
+            </div>
+         </div>
+      </div>
       <div class="warn-fond aerateur-haut aerateur-bas">
          <div class="floating-box-warn">
             <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
@@ -459,7 +489,7 @@
          <div class="info-txt">
             <span class="titre-advice">Main d'œuvre<br></span>
             <p class="texte-advice">
-               Ajoutez tous les personnels qui participent à l'intervention &#40;notez que <strong>seuls les équipiers</strong> - voir <a href="../chapitre8" class="avoid-clicks" target="_self">chapitre 8 - Stock &amp; Personnel</a> - apparaissent dans les listes déroulantes "Conducteur" et "Opérateur"&#41;.
+               Ajoutez tous les personnels qui participent à l'intervention &#40;notez que <strong>seuls les équipiers</strong> - voir <a href="../chapitre9" class="avoid-clicks" target="_self">chapitre 9 - Stock &amp; Personnel</a> - apparaissent dans les listes déroulantes "Conducteur" et "Opérateur"&#41;.
             </p>
             <p align="center"><img class="contour-img" src="../images/chapitre10/conducteur.png" alt="Conducteur"/></p>
             Le symbole<img src="../images/chapitre10/timer-off.svg" alt="Timer off" height="20" class="align-icone icone-marge-gauche icone-marge-droite">indique un calcul automatique des temps d'intervention des équipiers par rapport aux périodes de travail.
@@ -504,7 +534,7 @@
       <p class="texte">
          Une fois la création de l'intervention terminée, l'application récapitule l'ensemble des informations saisies avec la possibilité de définir les coûts de main d'œuvre et d'utilisation des équipements s'ils n'ont pas encore été créés. Vous pouvez réaliser cette opération à ce moment-là et suivre la procédure suivante à partir de l'étape 3 ou bien modifier l'intervention en suivant l'ensemble des étapes.
       </p>
-      <p class="texte">Comme expliqué dans le <a href="../chapitre8" class="avoid-clicks" target="_self">chapitre 8 - Stock &amp; Personnel</a>, si vous souhaitez appliquer des coûts d'usage différents à des variantes d'un même type dans une intervention, comme par exemple 2 tracteurs, prenez soin de créer auparavant une nouvelle variante de l'équipement "Tracteur" pour les différencier. Sinon, le coût d'utilisation d'un des deux tracteurs sera automatiquement répercuté sur l'autre.</p>
+      <p class="texte">Comme expliqué dans le <a href="../chapitre9" class="avoid-clicks" target="_self">chapitre 9 - Stock &amp; Personnel</a>, si vous souhaitez appliquer des coûts d'usage différents à des variantes d'un même type dans une intervention, comme par exemple 2 tracteurs, prenez soin de créer auparavant une nouvelle variante de l'équipement "Tracteur" pour les différencier. Sinon, le coût d'utilisation d'un des deux tracteurs sera automatiquement répercuté sur l'autre.</p>
 	  <p class="texte">Ce schéma récapitule la succession des étapes nécessaires à la création d'un nouveau tracteur défini à partir d'une nouvelle variante d'équipement auquel on a attribué un coût d'usage &#40;un coût horaire&#41;. Notez que les procédures doivent être réalisées dans l'ordre indiqué.</p>
       <p align="center" class="aerateur-haut aerateur-bas texte">
          <img src="../images/chapitre10/schema-couts.png" alt="Schéma des coûts d'utilisation des équipements" width="500px">
@@ -522,10 +552,14 @@
          </p>
          <p align="center"><img src="../images/chapitre10/production.svg" alt="Production" width="60"></p>
          <p>
-            Dans la barre latérale du module, cliquez sur "Interventions" dans la section "Production" symbolisée par l'icône avec des engrenages<img src="../images/chapitre10/cogs.svg" alt="Main" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des interventions.
+            Dans la barre latérale du module, cliquez sur "Interventions" dans la section "Production" symbolisée par l'icône avec des engrenages<img src="../images/chapitre10/cogs.svg" alt="Main" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des interventions, puis cliquez sur le bouton "Pavés" pour activer ce mode d'affichage le cas échéant.
          </p>
          <p class="max-img-process">
             <img src="../images/chapitre10/intervention6.png" class="contour-img" alt="Liste des interventions" data-action="zoom">
+         </p>
+		 <p>Notez que si la case à cocher<img src="../images/commun/check-square.svg" alt="case cochée" height="20" class="align-icone icone-marge-gauche icone-marge-droite">est activée à gauche de "Comparer avec les interventions planifiées", l'affichage sera sensiblement différent&nbsp;:</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre10/comp-inter1.png" class="contour-img" alt="Liste des interventions" data-action="zoom">
          </p>
       </div>
       <br>
