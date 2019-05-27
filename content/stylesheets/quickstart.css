@@ -167,6 +167,11 @@ video {
 	cursor: ew-resize;
 }
 
+.schema500 {
+	width: 500px;
+	cursor: ew-resize;
+}
+
 .aerateur {
 	margin-top: 35px;
 	margin-bottom: 18px;
@@ -216,7 +221,7 @@ video {
 }
 
 .logo {
-	margin-top: 90px;
+	margin-top: 78px;
 }
 
 .affichage-large {
@@ -357,6 +362,10 @@ video {
 		width: 100%;
 		cursor: default;
 	}
+	.schema500 {
+		width: 100%;
+		cursor: default;
+	}
 	.aerateur {
 		margin-top: 50px;
 		margin-bottom: 25px;
@@ -398,7 +407,7 @@ video {
 		padding: 10px;
 	}
 	.logo {
-		margin-top: 90px;
+		margin-top: 82px;
 	}
 	.affichage-large {
 		display: inline;
@@ -570,6 +579,10 @@ video {
 		width: 646px;
 		cursor: default;
 	}
+	.schema500 {
+		width: 100%;
+		cursor: default;
+	}
 	.aerateur {
 		margin-top: 70px;
 		margin-bottom: 35px;
@@ -611,7 +624,7 @@ video {
 		padding: 10px;
 	}
 	.logo {
-		margin-top: 105px;
+		margin-top: 89px;
 	}
 	.affichage-large {
 		display: inline;
@@ -761,6 +774,9 @@ video {
 	.tableau {
 		width: 100%;
 	}
+	.schema500 {
+		width: 100%;
+	}
 	.aerateur {
 		margin-top: 70px;
 		margin-bottom: 35px;
@@ -802,7 +818,7 @@ video {
 		padding: 10px;
 	}
 	.logo {
-		margin-top: 90px;
+		margin-top: 72px;
 	}
 	.affichage-large {
 		display: none;
