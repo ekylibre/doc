@@ -34,6 +34,13 @@ a.slice-short {
     visibility: hidden;
 }
 
+a.slice-config {
+    display: block;
+    position: relative;
+    top: -56px;
+    visibility: hidden;
+}
+
 a.slice-section {
     display: block;
     position: relative;
@@ -1994,8 +2001,8 @@ img.zoom-img {
     position: absolute;
     top: 100%;
     left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
+    margin-left: -8px;
+    border-width: 8px;
     border-style: solid;
     border-color: #476ba8 transparent transparent transparent;
 }
