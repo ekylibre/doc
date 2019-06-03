@@ -639,6 +639,104 @@ a:link, a:visited {
 	background-position: center center;
 }
 
+.cogs-green {
+	background: url("../fr/images/commun/cogs-green.svg") no-repeat right;;
+	background-position: 98% 15px !important;
+	background-size: 28px !important;
+	background-color: #eee;
+}
+
+.cogs-orange {
+	background: url("../fr/images/commun/cogs-orange.svg") no-repeat right;;
+	background-position: 98% 15px !important;
+	background-size: 28px !important;
+	background-color: #eee;
+}
+
+.cart-green {
+	background: url("../fr/images/commun/cart-green.svg") no-repeat right;;
+	background-position: 98% 15px !important;
+	background-size: 28px !important;
+	background-color: #eee;
+}
+
+.cart-orange {
+	background: url("../fr/images/commun/cart-orange.svg") no-repeat right;;
+	background-position: 98% 15px !important;
+	background-size: 28px !important;
+	background-color: #eee;
+}
+
+.bar-green {
+	background: url("../fr/images/commun/bar-green.svg") no-repeat right;;
+	background-position: 98% 15px !important;
+	background-size: 28px !important;
+	background-color: #eee;
+}
+
+.bar-orange {
+	background: url("../fr/images/commun/bar-orange.svg") no-repeat right;;
+	background-position: 98% 15px !important;
+	background-size: 28px !important;
+	background-color: #eee;
+}
+
+.wrench-green {
+	background: url("../fr/images/commun/wrench-green.svg") no-repeat right;;
+	background-position: 98% 15px !important;
+	background-size: 28px !important;
+	background-color: #eee;
+}
+
+.wrench-orange {
+	background: url("../fr/images/commun/wrench-orange.svg") no-repeat right;;
+	background-position: 98% 15px !important;
+	background-size: 28px !important;
+	background-color: #eee;
+}
+
+.truck-green {
+	background: url("../fr/images/commun/truck-green.svg") no-repeat right;;
+	background-position: 98% 15px !important;
+	background-size: 28px !important;
+	background-color: #eee;
+}
+
+.truck-orange {
+	background: url("../fr/images/commun/truck-orange.svg") no-repeat right;;
+	background-position: 98% 15px !important;
+	background-size: 28px !important;
+	background-color: #eee;
+}
+
+.money-green {
+	background: url("../fr/images/commun/money-green.svg") no-repeat right;;
+	background-position: 98% 15px !important;
+	background-size: 28px !important;
+	background-color: #eee;
+}
+
+.money-orange {
+	background: url("../fr/images/commun/money-orange.svg") no-repeat right;;
+	background-position: 98% 15px !important;
+	background-size: 28px !important;
+	background-color: #eee;
+}
+
+.users-green {
+	background: url("../fr/images/commun/users-green.svg") no-repeat right;;
+	background-position: 98% 15px !important;
+	background-size: 28px !important;
+	background-color: #eee;
+}
+
+.users-orange {
+	background: url("../fr/images/commun/users-orange.svg") no-repeat right;;
+	background-position: 98% 15px !important;
+	background-size: 28px !important;
+	background-color: #eee;
+}
+
 .divTableCellRole2 img{
 	padding-bottom: 1px;
 	margin-top: 1px;
@@ -735,6 +833,28 @@ a:link, a:visited {
 
 .culture {
 	padding-bottom: 10px;
+}
+
+.divTableCellLegend, .divTableHeadLegend {
+	display: table-cell;
+	padding: 5px 0 5px 5px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.divTableCellLegend1, .divTableHeadLegend1 {
+	display: table-cell;
+	padding: 5px 0 5px 0;
+	text-align: left;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+.divTableCellLegend2, .divTableHeadLegend2 {
+	display: table-cell;
+	padding: 5px 0 5px 0;
+	text-align: center;
+	vertical-align: middle;
 }
 
 /*Tableau Activités*/
