@@ -344,7 +344,7 @@ a:link, a:visited {
 }
 
 .tableaux {
-	background-color: #f7e889;
+	background-color: #f4e8a8;
 	text-align: center;
 	padding: 5px;
 	color: #000;
@@ -457,7 +457,7 @@ a:link, a:visited {
 }
 
 .texte-tableau1 {
-	font-size:16px;
+	font-size:14px;
 }
 
 .texte-tableau2 {
@@ -1190,7 +1190,7 @@ a:link, a:visited {
 /*Tableau Chapitre 2 Informations à collecter*/
 
 .divTableCell4, .divTableHead4 {
-	height: 40px;
+	height: 35px;
 	border-top-width: 3px;
 	border-top-style: solid;
 	border-top-color: #ffffff;
@@ -1229,6 +1229,90 @@ a:link, a:visited {
 	text-align:center;
 	vertical-align: middle;
 	background-color: #dddddd;
+}
+
+.divTableCellGs, .divTableHeadGs {
+	height: 40px;
+	border-top-width: 3px;
+	border-top-style: solid;
+	border-top-color: #ffffff;
+	border-bottom-width: 0;
+	border-bottom-style: solid;
+	border-bottom-color: #ffffff;
+	border-left-width: 3px;
+	border-left-style: solid;
+	border-left-color: #ffffff;
+	border-right-width: 0;
+	border-right-style: solid;
+	border-right-color: #ffffff;
+	display: table-cell;
+	padding: 0;
+	text-align:center;
+	vertical-align: middle;
+	background-color: #eeeeee;
+}
+
+.divTableCellOr, .divTableHeadOr {
+	height: 40px;
+	border-top-width: 3px;
+	border-top-style: solid;
+	border-top-color: #ffffff;
+	border-bottom-width: 0;
+	border-bottom-style: solid;
+	border-bottom-color: #ffffff;
+	border-left-width: 3px;
+	border-left-style: solid;
+	border-left-color: #ffffff;
+	border-right-width: 0;
+	border-right-style: solid;
+	border-right-color: #ffffff;
+	display: table-cell;
+	padding: 0;
+	text-align:center;
+	vertical-align: middle;
+	background-color: #ff9933;
+}
+
+.divTableCellRe, .divTableHeadRe {
+	height: 40px;
+	border-top-width: 3px;
+	border-top-style: solid;
+	border-top-color: #ffffff;
+	border-bottom-width: 0;
+	border-bottom-style: solid;
+	border-bottom-color: #ffffff;
+	border-left-width: 3px;
+	border-left-style: solid;
+	border-left-color: #ffffff;
+	border-right-width: 0;
+	border-right-style: solid;
+	border-right-color: #ffffff;
+	display: table-cell;
+	padding: 0;
+	text-align:center;
+	vertical-align: middle;
+	background-color: #ff0000;
+}
+
+.divTableCellVt, .divTableHeadVt {
+	height: 40px;
+	border-top-width: 3px;
+	border-top-style: solid;
+	border-top-color: #ffffff;
+	border-bottom-width: 0;
+	border-bottom-style: solid;
+	border-bottom-color: #ffffff;
+	border-left-width: 3px;
+	border-left-style: solid;
+	border-left-color: #ffffff;
+	border-right-width: 0;
+	border-right-style: solid;
+	border-right-color: #ffffff;
+	display: table-cell;
+	padding: 0;
+	text-align:center;
+	vertical-align: middle;
+	background-color: #83e054;
 }
 
 /*Tableau Chapitre 3 Tableau de correspondances*/
@@ -1491,33 +1575,59 @@ a:link, a:visited {
 
 /*Tableau Chapitre 2 Parcours de configuration*/
 
+.divTableCellStep, .divTableHeadStep {
+	border-top-width: 3px;
+	border-top-style: solid;
+	border-top-color: #f4e8a8;
+	border-bottom-width: 0;
+	border-bottom-style: solid;
+	border-bottom-color: #f4e8a8;
+	border-left-width: 3px;
+	border-left-style: solid;
+	border-left-color: #f4e8a8;
+	border-right-width: 3px;
+	border-right-style: solid;
+	border-right-color: #f4e8a8;
+	display: table-cell;
+	padding: 0 10px;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #f4e8a8;
+}
+
 .divTableCell6, .divTableHead6 {
 	border-top-width: 3px;
 	border-top-style: solid;
-	border-top-color: #ffffff;
-	border-bottom-width: 3px;
+	border-top-color: #f4e8a8;
+	border-bottom-width: 0;
 	border-bottom-style: solid;
-	border-bottom-color: #ffffff;
+	border-bottom-color: #f4e8a8;
 	border-left-width: 0;
 	border-left-style: solid;
 	border-left-color: #ffffff;
 	border-right-width: 3px;
 	border-right-style: solid;
-	border-right-color: #ffffff;
+	border-right-color: #f4e8a8;
 	display: table-cell;
-	padding: 5px 10px;
+	padding: 0 10px 0 0;
 	text-align: center;
 	vertical-align: middle;
-	background-color: #fff;
+	background-color: #f4e8a8;
+}
+
+.tablemarge {
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #f4e8a8;
 }
 
 .divTableCell7, .divTableHead7 {
 	border-top-width: 3px;
 	border-top-style: solid;
-	border-top-color: #ffffff;
-	border-bottom-width: 3px;
+	border-top-color: #f4e8a8;
+	border-bottom-width: 0;
 	border-bottom-style: solid;
-	border-bottom-color: #ffffff;
+	border-bottom-color: #f4e8a8;
 	border-left-width: 0;
 	border-left-style: solid;
 	border-left-color: #ffffff;
@@ -1525,31 +1635,50 @@ a:link, a:visited {
 	border-right-style: solid;
 	border-right-color: #ffffff;
 	display: table-cell;
-	padding: 2px 10px 6px;
+	padding: 0;
 	text-align: left;
 	vertical-align: middle;
-	background-color: #fff;
+	background-color: #f4e8a8;
 }
 
-.divTableCell8, .divTableHead8 {
-	height: 40px;
-	border-top-width: 3px;
-	border-top-style: solid;
-	border-top-color: #ffffff;
+.divTableCell8d, .divTableHead8d {
+	border-top-width: 1px;
+	border-top-style: dashed;
+	border-top-color: #333;
 	border-bottom-width: 3px;
 	border-bottom-style: solid;
-	border-bottom-color: #ffffff;
+	border-bottom-color: #c3e0c6;
 	border-left-width: 0;
 	border-left-style: solid;
-	border-left-color: #ffffff;
+	border-left-color: #c3e0c6;
 	border-right-width: 0;
 	border-right-style: solid;
-	border-right-color: #ffffff;
+	border-right-color: #c3e0c6;
 	display: table-cell;
-	padding: 5px 10px;
+	padding: 5px 10px 3px;
 	text-align: center;
 	vertical-align: middle;
-	background-color: #fff;
+	background-color: #c3e0c6;
+}
+
+.divTableCell8f, .divTableHead8f {
+	border-top-width: 3px;
+	border-top-style: solid;
+	border-top-color: #c3e0c6;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #333;
+	border-left-width: 0;
+	border-left-style: solid;
+	border-left-color: #c3e0c6;
+	border-right-width: 0;
+	border-right-style: solid;
+	border-right-color: #c3e0c6;
+	display: table-cell;
+	padding: 3px 10px 5px;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #c3e0c6;
 }
 
 .divTableHeading {
