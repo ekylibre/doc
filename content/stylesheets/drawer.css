@@ -55,7 +55,7 @@
 	display: block;
 	padding: .60rem;
 	text-decoration: none;
-	color: #ccc;
+	color: #fff;
 }
 
 .angle {
@@ -95,7 +95,7 @@
 	display: block;
 	padding: .60rem;
 	text-decoration: none;
-	color: #ccc;
+	color: #fff;
 }
 
 .drawer-menu-item:link .angle {
@@ -107,7 +107,7 @@
 	display: block;
 	padding: .60rem;
 	text-decoration: none;
-	color: #ccc;
+	color: #fff;
 }
 
 .drawer-menu-item:visited .angle {
@@ -119,7 +119,7 @@
 	display: block;
 	padding: .60rem;
 	text-decoration: none;
-	color: #ccc;
+	color: #fff;
 }
 
 .drawer-menu-item:focus .angle {
@@ -164,7 +164,7 @@ span[data-descr]:hover::after {
 	top: 19px;
 	width: 550px;
 	padding: 2px;
-	color: #ccc;
+	color: #fff;
 	font-size: 10px;
 	text-transform: uppercase;
 	/*z-index: 1;*/

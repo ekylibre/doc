@@ -89,6 +89,10 @@ a.slice-import {
   color: #000;
 }
 
+img.loading {
+    background: transparent url("../fr/images/commun/loader.gif") no-repeat scroll center center;
+}
+
 /* Réseaux sociaux */
 .rs {
 	display: flex;
