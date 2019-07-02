@@ -315,6 +315,10 @@ a:link, a:visited {
 	vertical-align: -2px;
 }
 
+.align-produit {
+	vertical-align: -3px;
+}
+
 .align-btn-gris {
 	vertical-align: -6px;
 }
@@ -349,6 +353,13 @@ a:link, a:visited {
 
 .tableaux {
 	background-color: #f4e8a8;
+	text-align: center;
+	padding: 5px;
+	color: #000;
+}
+
+.tableau-produits {
+	background-color: #fcd79e;
 	text-align: center;
 	padding: 5px;
 	color: #000;
@@ -1742,6 +1753,7 @@ a:link, a:visited {
 /*Tableau des exemples de profils - chapitre 6*/
 
 .divTableCellProfil1, .divTableHeadProfil1 {
+	font-size: 12.5px;
 	height: 40px;
 	border-top-width: 3px;
 	border-top-style: solid;
@@ -1756,7 +1768,7 @@ a:link, a:visited {
 	border-right-style: solid;
 	border-right-color: #ffffff;
 	display: table-cell;
-	padding: 5px 10px;
+	padding: 5px 5px;
 	text-align:center;
 	vertical-align: middle;
 	background-color: #dddddd;
@@ -1804,10 +1816,11 @@ a:link, a:visited {
 	padding: 3px 3px;
 	text-align:center;
 	vertical-align: middle;
-	background-color: #eeeeee;
+	background-color: #f4e8a8;
 }
 
 .divTableCellProfil4, .divTableHeadProfil4 {
+	font-size: 12.5px;
 	height: 40px;
 	border-top-width: 3px;
 	border-top-style: solid;
@@ -1822,10 +1835,10 @@ a:link, a:visited {
 	border-right-style: solid;
 	border-right-color: #ffffff;
 	display: table-cell;
-	padding: 5px 10px;
+	padding: 5px 5px;
 	text-align:center;
 	vertical-align: middle;
-	background-color: #dddddd;
+	background-color: #fcd79d;
 	font-weight: bold;
 }
 
