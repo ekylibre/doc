@@ -62,6 +62,13 @@ a.slice-import {
     visibility: hidden;
 }
 
+a.slice-sommaire {
+    display: block;
+    position: relative;
+    top: -20px;
+    visibility: hidden;
+}
+
 .download {
 	border: 2px solid #333;
 	border-radius: 10px;
@@ -747,6 +754,20 @@ a:link, a:visited {
 
 .users-orange {
 	background: url("../fr/images/commun/users-orange.svg") no-repeat right;;
+	background-position: 98% 15px !important;
+	background-size: 28px !important;
+	background-color: #eee;
+}
+
+.magic-green {
+	background: url("../fr/images/commun/magic-green.svg") no-repeat right;;
+	background-position: 98% 15px !important;
+	background-size: 28px !important;
+	background-color: #eee;
+}
+
+.magic-orange {
+	background: url("../fr/images/commun/magic-orange.svg") no-repeat right;;
 	background-position: 98% 15px !important;
 	background-size: 28px !important;
 	background-color: #eee;
@@ -2595,12 +2616,25 @@ span.the-btn{
 
 #toggle ul li{
 	padding:0;
-	margin:0;
+	margin: 0 0 0 4px;
+	position: relative;
+}
+
+#toggle ul li:before {
+ position: absolute;
+ left: -15px;
+ content: counter(alist, lower-latin) ".";
+ counter-increment: alist;
+}
+
+#toggle ul {
+	list-style: none;
+	counter-reset: alist 0;
 }
 
 #toggle a{
 	text-decoration:none;
-	color:#1195f6;
+	color:#000;
 }
 
 .rond-orange {
@@ -2622,7 +2656,7 @@ span.the-btn{
 	padding-right: 20px;
 	margin-left: 10px;
 	margin-bottom: 10px;
-	list-style-type: lower-alpha;
+	list-style-type: none;
 	color: #333;
 }
 
