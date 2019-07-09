@@ -62,13 +62,6 @@ a.slice-import {
     visibility: hidden;
 }
 
-a.slice-sommaire {
-    display: block;
-    position: relative;
-    top: -20px;
-    visibility: hidden;
-}
-
 .download {
 	border: 2px solid #333;
 	border-radius: 10px;
@@ -2550,7 +2543,7 @@ img.zoom-img {
 }
 }
 
-.content {
+.sommaire-content {
     height: 100%;
 }
 
@@ -2635,6 +2628,11 @@ span.the-btn{
 #toggle a{
 	text-decoration:none;
 	color:#000;
+}
+
+#toggle a:hover{
+	text-decoration:none;
+	color: #1195f5;
 }
 
 .rond-orange {
