@@ -16,7 +16,7 @@
       <h1 align="center" class="majuscule aerateur">12 - Imports et exports</h1>
       <div class="sommaire">
       <div class="gris">
-         <div class="sommaire-content">
+         <div class="contenu">
             <ul id="toggle">
                <li>
                   <div>
@@ -29,7 +29,7 @@
                   </div>
                   <ul style="display: none;">
                      <div class="bloc">
-                        <li>Ce dont il faut disposer pour démarrer</li>
+                        <li><a href="../chapitre1#prerequis" target="_self">Ce dont il faut disposer pour démarrer</a></li>
                      </div>
                   </ul>
                </li>
@@ -275,6 +275,14 @@
                </div>
                <div class="divTableCellListe">
                   Comment importer une <a href="#import-agroedi" class="avoid-clicks">fiche parcellaire Daplos Agro-EDI</a>
+               </div>
+            </div>
+			<div class="divTableRow">
+               <div class="divTableCellListe">
+                  <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
+               </div>
+               <div class="divTableCellListe">
+                  Comment importer un <a href="#import-telepac" class="avoid-clicks">fichier TelePAC</a>
                </div>
             </div>
 			<div class="divTableRow">
@@ -1252,7 +1260,7 @@
       <h6>Guide de prise en main • Imports • Import parcellaire Daplos Agro-EDI</h6>
       <p align="center" class="texte aerateur procedure">F – Procédure pour importer une fiche parcellaire Daplos Agro-EDI</p>
 	  <p class="texte">Pour favoriser le transfert des données et l’interopérabilité entre les différents systèmes d’information liés aux pratiques agricoles, de nombreux partenaires ont créé dès 1992 l’association Agro-EDI Europe pour élaborer une fiche parcellaire normalisée. La fonctionnalité d'import d'Ekylibre permet à l'agriculteur de récupérer l'ensemble des informations des interventions enregistrées dans un autre logiciel afin de charger les données historiques de sa ferme.</p>
-      <p align="center" class="texte"><img src="../images/commun/option.svg" height="55" alt="Processus optionnel"></p>
+      <p align="center" class="texte"><img src="../images/commun/cool.svg" height="55" alt="Processus simple"></p>
 	  <div class="saut-page"></div>
 	  <div class="warn-fond aerateur-haut aerateur-bas">
          <div class="floating-box-warn">
@@ -1289,7 +1297,7 @@
          <span class="titre-advice">Créez un nouvel "Import"</span>
          <p>Cliquez sur le bouton "Nouveau" puis sélectionnez "Fiche parcellaire Daplos - AGROEDI" dans la liste déroulante des types d'imports disponibles dans l'application.</p>
          <p class="max-img-process">
-            <img src="../images/chapitre12/agro-edi1.png" class="contour-img" alt="Sélection du type d'import" data-action="zoom">
+            <img src="../images/chapitre12/agro-edi2.png" class="contour-img" alt="Sélection du type d'import" data-action="zoom">
          </p>
       </div>
 	  <br />
@@ -1361,6 +1369,96 @@
             <img src="../images/chapitre12/agro-edi8.png" class="contour-img" alt="Liste des interventions" data-action="zoom">
          </p>
 		 <p>Cliquez sur le nom d'une intervention pour en afficher le détail. Les parcelles &#40;cibles d’intervention&#41;, engrais, produits phytosanitaires &#40;intrants d’intervention&#41; et produits de récolte &#40;extrants d’intervention&#41; sont maintenant tous consignés dans Ekylibre et vous permettent d'éditer le registre des interventions, le cahier de traçabilité et le registre phytosanitaire.</p>
+      </div>
+	  <a class="slice-process" id="import-telepac"></a>
+      <h6>Guide de prise en main • Imports • Import fichier TelePAC</h6>
+      <p align="center" class="texte aerateur procedure">G – Procédure pour importer un fichier TelePAC</p>
+	  <p class="texte">La création des zones cultivables et des activités agricoles grâce à l'import d'un fichier TelePAC se fait généralement dans l'assistant de démarrage mais vous pouvez avoir passé cette étape et décidé d'intégrer vos données plus tard dans l'application. Vous pouvez aussi avoir importé une déclaration TelePAC et décidé d'en intégrer d'autres complémentaires.</p><p class="texte">La fonctionnalité d'import d'Ekylibre permet à l'agriculteur de récupérer l'ensemble des informations de la gestion parcellaire de son exploitation et des activités déclarées à la PAC à partir de 2015.</p>
+      <p align="center" class="texte aerateur-haut"><img src="../images/commun/cool.svg" height="55" alt="Processus simple"></p>
+      <p class="texte">Le processus suivant vous guide pour importer un fichier TelePAC dans l'application.</p>
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez les "Imports"</span>
+         <p>
+            Cliquez sur le lien "Outils" dans le "Menu principal" ou sur le bouton "Outils" de la page d'accueil&nbsp;:
+         </p>
+         <p align="center"><img src="../images/chapitre12/magic.svg" alt="Outils" width="60"></p>
+         <p>Dans la barre latérale du module, cliquez sur "Imports" dans la section "Échange" symbolisée par l'icône représentant 2 flèches<img src="../images/chapitre12/exchange.svg" alt="Échange" height="20" class="align-icone icone-marge-gauche">.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre12/telepac1.png" class="contour-img" alt="Liste des imports" data-action="zoom">
+         </p>
+         <p>Tous les "Imports" déjà réalisés sont listés, notamment ceux issus de l'intégration des données TelePAC dans l'Assistant de démarrage.</p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52">
+      </div>
+	  <div class="process-txt">
+         <span class="titre-advice">Créez un nouvel "Import"</span>
+         <p>Cliquez sur le bouton "Nouveau" puis sélectionnez "Déclaration TelePAC 20XX &#40;XML&#41;" dans la liste déroulante des types d'imports disponibles dans l'application.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre12/telepac2.png" class="contour-img" alt="Sélection du type d'import" data-action="zoom">
+         </p>
+      </div>
+	  <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52">
+      </div>
+	  <div class="process-txt">
+         <span class="titre-advice">Sélectionnez le fichier TelePAC</span>
+         <p>Cliquez sur le bouton "Parcourir" pour sélectionner le fichier XML de la déclaration à importer dans l'application.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre12/telepac3.png" class="contour-img" alt="Sélection import TelePAC" data-action="zoom">
+         </p>
+		 <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
+      </div>
+	  <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step4.svg" alt="4" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Lancez l'import de la déclaration</span>
+         <p>Cliquez sur le bouton "Exécuter" pour valider l'import de la déclaration dans l'application. En cas d'incompatibilité, l'application vous avertit qu'une erreur est survenue.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre12/telepac4.png" class="contour-img" alt="Exécution import" data-action="zoom">
+         </p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step5.svg" alt="5" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Patientez quelques instants</span>
+         <p>La barre de progression vous indique l'avancée du transfert des données qui peut prendre plus ou moins de temps en fonction du nombre de parcelles et d'activités à traiter. Une fois que la barre d'avancement disparaît, rafraîchissez votre navigateur pour afficher la notification.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre12/telepac5.png" class="contour-img" alt="Progression import" data-action="zoom">
+         </p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step6.svg" alt="6" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez les notifications</span>
+         <p>La cloche rouge<img src="../images/chapitre12/bell-o-red.svg" alt="cloche rouge" height="20" class="align-icone icone-marge-gauche icone-marge-droite">en haut à droite de l'interface vous indique qu'une opération interne a été effectuée par l'application. Cliquez sur celle-ci pour afficher la notification. En cas d'erreur, vous serez informé&#40;e&#41; de la nature de celle-ci. Cliquez sur le bouton "Tout marquer comme lu" pour la supprimer.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre12/telepac6.png" class="contour-img" alt="Affichage notifications" data-action="zoom">
+         </p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step7.svg" alt="7" width="52">
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Vérifiez les productions</span>
+		 <p>Cliquez sur le lien "Production" dans le "Menu principal" ou sur le bouton "Production" de la page d'accueil pour afficher le "Tableau de bord de la production" pour une campagne donnée&nbsp;:</p>
+         <p align="center"><img src="../images/chapitre12/production.svg" alt="Production" width="60"></p><p>Assurez-vous d'être sur la bonne campagne de production en la sélectionnant avec les flèches<img src="../images/chapitre12/fleche-g.svg" alt="Flèche" class="btn-gris">et<img src="../images/chapitre12/fleche-d.svg" alt="Flèche" class="btn-gris"> en haut à droite de la fenêtre principale.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre12/telepac7.png" class="contour-img" alt="Tableau de bord de la production" data-action="zoom">
+         </p>
+		 <p>Répétez la procédure pour importer successivement plusieurs déclarations TelePAC &#40;issues de différentes campagnes ou de différentes fermes&#41;.</p>
       </div>
 	  <h6>Guide de prise en main • Imports et exports • Documents réglementaires</h6>
 	  <a class="slice-long" id="exports"></a>
