@@ -2,7 +2,8 @@
 
 body {
 	max-width: 768px;
-	background-color: #ffffff;
+	background-color: #fff;
+	color:#000;
 	margin: 0 auto;
 	font-family: "Lato", "Open Sans", "Droid Sans", "Liberation Sans", Helvetica, sans-serif;
 }
@@ -23,8 +24,17 @@ html {
 a.slice-long {
     display: block;
     position: relative;
+    top: -90px;
+    visibility: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+a.slice-long {
+    display: block;
+    position: relative;
     top: -70px;
     visibility: hidden;
+}
 }
 
 a.slice-short {
@@ -546,7 +556,6 @@ a:link, a:visited {
 /*Tableau Chapitre 9 Roles*/
 
 .divTableCellRole1, .divTableHeadRole1 {
-	/*height: 40px;*/
 	border-top-width: 3px;
 	border-top-style: solid;
 	border-top-color: #ffffff;
@@ -566,10 +575,10 @@ a:link, a:visited {
 	background-color: #dddddd;
 	font-size: 12px;
 	line-height: 1.2;
+	font-weight: bold;
 }
 
 .divTableCellRole2, .divTableHeadRole2 {
-	/*height: 40px;*/
 	border-top-width: 3px;
 	border-top-style: solid;
 	border-top-color: #ffffff;
@@ -590,7 +599,6 @@ a:link, a:visited {
 }
 
 .divTableCellRole3, .divTableHeadRole3 {
-	/*height: 40px;*/
 	border-top-width: 3px;
 	border-top-style: solid;
 	border-top-color: #ffffff;
@@ -604,12 +612,11 @@ a:link, a:visited {
 	border-right-style: solid;
 	border-right-color: #ffffff;
 	display: table-cell;
-	padding: 5px 5px;
+	padding: 52px 1px 5px;
 	text-align:center;
 	vertical-align: middle;
-	background-color: #dddddd;
 	font-size: 12px;
-	line-height: 1.2;
+	line-height: 1.1;
 }
 
 .divTableCellDroit {
@@ -619,39 +626,51 @@ a:link, a:visited {
 }
 
 .perso1 {
-	background-image: url("../fr/images/chapitre11/man-user1.svg");
+	background-image: url("../fr/images/chapitre11/man-user.svg");
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center top;
+	background-color: #d2ffa6;
+	background-size: 54px;
 }
 
 .perso2 {
-	background-image: url("../fr/images/chapitre11/man-user2.svg");
+	background-image: url("../fr/images/chapitre11/man-user.svg");
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center top;
+	background-color: #ffeb74;
+	background-size: 54px;
 }
 
 .perso3 {
-	background-image: url("../fr/images/chapitre11/man-user3.svg");
+	background-image: url("../fr/images/chapitre11/man-user.svg");
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center top;
+	background-color: #efc4ff;
+	background-size: 54px;
 }
 
 .perso4 {
-	background-image: url("../fr/images/chapitre11/man-user4.svg");
+	background-image: url("../fr/images/chapitre11/man-user.svg");
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center top;
+	background-color: #c2f1ff;
+	background-size: 54px;
 }
 
 .perso5 {
-	background-image: url("../fr/images/chapitre11/man-user5.svg");
+	background-image: url("../fr/images/chapitre11/man-user.svg");
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center top;
+	background-color: #ffd5b6;
+	background-size: 54px;
 }
 
 .perso6 {
-	background-image: url("../fr/images/chapitre11/man-user6.svg");
+	background-image: url("../fr/images/chapitre11/man-user.svg");
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center top;
+	background-color: #c2cbff;
+	background-size: 54px;
 }
 
 .cogs-green {
@@ -2567,7 +2586,7 @@ h3 {
 	font-size: 14px;
 	margin: 0;
 	padding: 0;
-	color: #333;
+	color: #000;
 	line-height: 36px;
 	font-weight: normal;
 	height: 36px;
@@ -2597,14 +2616,14 @@ span.the-btn{
 	margin-top: -45px;
 	margin-right: -10px;
 	padding: 15px 0 0 0;
-	color: #333;
+	color: #000;
 	cursor: pointer;
 }
 
 #toggle ul{
 	list-style:none;
 	display:none;
-	color: #333;
+	color: #000;
 }
 
 #toggle ul li{
@@ -2655,7 +2674,7 @@ span.the-btn{
 	margin-left: 10px;
 	margin-bottom: 10px;
 	list-style-type: none;
-	color: #333;
+	color: #000;
 }
 
 .marge-basse {
