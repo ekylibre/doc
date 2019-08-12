@@ -2442,8 +2442,8 @@ img.zoom-img {
 
 .accordion-container .panel {
 	margin-top: 0;
+	margin-bottom: 20px;
 	border: none;
-	border-bottom: 1px solid #ccc;
 	border-radius: 0;
 	background: #fff !important;
 	width: 100%;
@@ -2464,6 +2464,8 @@ img.zoom-img {
 
 .accordion-container .panel .heading {
 	padding: 15px 0 15px 10px;
+	background-color: #eee;
+	border-radius: 5px;
 	position: relative;
 	display: block;
 	cursor: pointer;
@@ -2481,7 +2483,7 @@ img.zoom-img {
 }
 
 .accordion-container .panel .heading:hover{
-	background-color: #dddddd;
+	background-color: #ddd;
 	transition: 0.2s;
 	border-radius: 5px;
 }
