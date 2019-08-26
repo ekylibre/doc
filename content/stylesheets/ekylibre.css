@@ -258,6 +258,8 @@ h3 {
 
 h6 {
 	visibility: hidden;
+	line-height:0;
+	font-size:0;
 }
 
 .procedure {
