@@ -1590,7 +1590,7 @@ a:link, a:visited {
 	border-bottom-width: 0;
 	border-bottom-style: solid;
 	border-bottom-color: #ffffff;
-	border-left-width: 0;
+	border-left-width: 3px;
 	border-left-style: solid;
 	border-left-color: #ffffff;
 	border-right-width: 3px;
@@ -1599,7 +1599,7 @@ a:link, a:visited {
 	display: table-cell;
 	padding: 0;
 	text-align:center;
-	background-color: #eee;
+	background-color: #fff;
 }
 
 .divTableCellBat2, .divTableHeadBat2 {
@@ -1619,7 +1619,49 @@ a:link, a:visited {
 	display: table-cell;
 	padding: 0 10px;
 	text-align:left;
-	vertical-align: top;
+	vertical-align: middle;
+	background-color: #eee;
+}
+
+.divTableCellBat3, .divTableHeadBat3 {
+	height: auto;
+	border-top-width: 3px;
+	border-top-style: solid;
+	border-top-color: #ffffff;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #ffffff;
+	border-left-width: 3px;
+	border-left-style: solid;
+	border-left-color: #ffffff;
+	border-right-width: 3px;
+	border-right-style: solid;
+	border-right-color: #ffffff;
+	display: table-cell;
+	padding: 0;
+	text-align:center;
+	background-color: #fff;
+	margin-bottom:3px;
+}
+
+.divTableCellBat4, .divTableHeadBat4 {
+	height: auto;
+	border-top-width: 3px;
+	border-top-style: solid;
+	border-top-color: #ffffff;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #ffffff;
+	border-left-width: 0;
+	border-left-style: solid;
+	border-left-color: #ffffff;
+	border-right-width: 0;
+	border-right-style: solid;
+	border-right-color: #ffffff;
+	display: table-cell;
+	padding: 0 10px;
+	text-align:left;
+	vertical-align: middle;
 	background-color: #eee;
 }
 
