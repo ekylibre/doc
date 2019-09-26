@@ -325,7 +325,7 @@
       <h2 class="texte aerateur">a - Catégories, types et variantes</h2>
       <p class="texte">Tous les éléments stockés dans Ekylibre sont associés à une catégorie qui est un profil de gestion applicable pour les écritures comptables &#40;le paramétrage de plusieurs tâches associées à la comptabilité est expliqué dans le <a href="../chapitre6" target="_self" class="avoid-clicks">chapitre 6 - Comptabilité</a>&#41;.</p>
       <p class="texte">Ces éléments sont également rattachés à des types &#40;familles&#41; identifiés par un profil technique comme par exemple un service, un équipement, un produit phytosanitaire.</p>
-      <p class="texte">La variante est finalement la dénomination d'un article de catalogue appartenant simultanément à une catégorie &#40;profil de gestion&#41; et à un type &#40;profil technique&#41;.</p>
+      <p class="texte">La variante coorespond à un article de catalogue appartenant simultanément à une catégorie &#40;profil de gestion&#41; et à un type de produit &#40;profil technique&#41;.</p>
       <p class="texte">À la création du stock initial ou lors d'un achat, la variante est finalement enregistrée sous la forme d'un produit en stock avec la quantité spécifiée.</p>
 	  <div class="saut-page"></div>
       <div class="affichage-large"></div>
@@ -887,9 +887,9 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Accédez aux "Expéditions"</span>
-         <p>Dans la barre latérale du module, cliquez sur "Expéditions" dans la section "Expéditions" symbolisée par l'icône d'un camion<img src="../images/chapitre9/truck.svg" alt="Camion" height="20" class="align-icone icone-marge-gauche icone-marge-droite">.</p>
+         <p>Dans la barre latérale du module, cliquez sur "Expéditions" dans la section "Expéditions" symbolisée par l'icône d'un camion<img src="../images/chapitre9/truck.svg" alt="Camion" height="20" class="align-icone icone-marge-gauche icone-marge-droite">, puis cliquez sur le bouton "Nouvelle expédition".</p>
          <p class="max-img-process">
-            <img src="../images/chapitre9/colis9.png" class="contour-img" alt="Liste des colis" data-action="zoom" />
+            <img src="../images/chapitre9/colis1-2019.png" class="contour-img" alt="Liste des colis" data-action="zoom" />
          </p>
       </div>
       <br />
@@ -897,16 +897,32 @@
          <img src="../images/commun/step3.svg" alt="3" width="52" />
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Saisissez les informations </span>
+         <span class="titre-advice">Renseignez l'expédition</span>
          <p>
-            Cliquez sur "Nouvelle expédition", puis remplissez tous les champs signalés par une astérisque de couleur rouge avec les informations requises pour la définir correctement et sans oublier de préciser si une livraison est prévue ou pas &#40;case à cocher<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à droite de l'option "Avec livraison"&#41;.
+            Remplissez tous les champs signalés par une astérisque de couleur rouge avec les informations requises pour la définir correctement et sans oublier de préciser si une livraison est prévue ou pas &#40;case à cocher<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à droite de l'option "Avec livraison"&#41;.
          </p>
-         <p>Cliquez sur <span class="btn-blue">Ajouter un élément</span> pour inclure un premier élément à l'expédition. Saisissez un mot-clef dans le champ "Produit" pour filtrer les résultats affichés et sélectionnez le produit à expédié avec la quantité souhaitée.</p>
+         <p>Cliquez sur <span class="btn-blue">Ajouter un élément</span> pour inclure un premier élément à l'expédition. Saisissez un mot-clef dans le champ "Produit" pour filtrer les résultats affichés et sélectionnez le produit à expédier avec la quantité souhaitée.</p>
          <p class="max-img-process">
-            <img src="../images/chapitre9/colis5.png" class="contour-img" alt="Nouvelle expédition" data-action="zoom" />
+            <img src="../images/chapitre9/colis2-2019.png" class="contour-img" alt="Nouvelle expédition" data-action="zoom" />
+         </p>
+		 <p>Procédez de la même manière pour ajouter successivement plusieurs éléments avec la quantité souhaitée à cette expédition.</p>
+         <p>Notez que la mention affichée en italique sous "Quantité" est la quantité en stock avant l'expédition.</p>
+         <p>
+            Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.
          </p>
       </div>
-      <div class="info-fond aerateur-haut">
+	  <div class="warn-fond aerateur-haut aerateur-bas">
+         <div class="floating-box-warn">
+            <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
+         </div>
+         <div class="info-txt">
+            <span class="titre-advice">Produits disponibles<br /></span>
+            <p class="texte-advice">
+               Dans la liste déroulante "Produit", ne pas utiliser le lien "Ajouter un nouvel enregistrement" car cela générerait la création d'une "Nouvelle matière" sans rapport avec les stocks existants et sans aucun lien avec la traçabilité comptable de la production végétale ou animale de l'exploitation.
+            </p>
+         </div>
+       </div>
+      <div class="info-fond aerateur-haut aerateur-bas">
          <div class="floating-box-info">
             <img src="../images/commun/info.svg" width="100" alt="Info"/>
          </div>
@@ -917,69 +933,99 @@
             </p>
          </div>
       </div>
-      <div class="floating-box process"></div>
+      <div class="floating-box process">
+         <img src="../images/commun/step4.svg" alt="4" width="52" />
+      </div>
       <div class="process-txt">
-         <p>Procédez de la même manière pour ajouter successivement plusieurs éléments avec la quantité souhaitée à cette expédition.</p>
-         <p>Notez que la mention affichée en italique sous "Quantité" est la quantité en stock avant l'expédition.</p>
-         <p>
-            Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération ou sur <span class="btn-blue">Créer et saisir suivant</span> pour réaliser une nouvelle saisie.
+         <span class="titre-advice">Modifiez le statut de l'expédition</span>
+         <p>Modifiez le statut de l'expédition en cliquant successivement sur les étapes en couleur&nbsp;:<br /><span class="step step-orange">&nbsp;Brouillon&nbsp;</span><img src="../images/chapitre9/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;Commandé&nbsp;</span><img src="../images/chapitre9/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;En préparation&nbsp;</span><img src="../images/chapitre9/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;Prêt&nbsp;</span><img src="../images/chapitre9/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-vert">&nbsp;Donné&nbsp;</span></p>
+         <p class="max-img-process">
+            <img src="../images/chapitre9/colis3-2019.png" class="contour-img" alt="Statut de l'expédition" data-action="zoom" />
          </p>
+      </div>
+	  <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step5.svg" alt="5" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Contrôlez vos stocks</span>
+         <p>Cliquez sur "Matières" dans la section des "Stocks" symbolisée par l'icône d'un sac de grains<img src="../images/chapitre9/matter.svg" alt="Sac de matière" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour contrôler la nouvelle quantité restant en stock après la création de l'expédition.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre9/colis4-2019.png" class="contour-img" alt="Matières en stock" data-action="zoom" />
+         </p>
+      </div>
+	  <h6>Guide de prise en main • Stock et tiers • Enregistrer une livraison</h6>
+      <a class="slice-long" id="livraison"></a>
+      <p align="center" class="texte aerateur procedure">B – Procédure pour enregistrer une livraison
+      </p>
+      <p class="texte">
+         Le processus suivant vous guide pour créer une livraison suite à une expédition.
+      </p>
+	  <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Accédez aux "Expéditions"</span>
+         <p>
+            Cliquez sur le lien "Stocks" dans le "Menu principal" ou sur le bouton "Stocks" de la page d'accueil&nbsp;:
+         </p>
+         <p align="center"><img src="../images/chapitre9/stocks.svg" alt="Stocks" width="60"></p>
+         <p>Puis, dans la barre latérale du module, cliquez sur "Expéditions" dans la section "Expéditions" symbolisée par l'icône d'un camion<img src="../images/chapitre9/truck.svg" alt="Camion" height="20" class="align-icone icone-marge-gauche">.</p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Créez la livraison</span>
+		 <p>Cliquez sur le camion bleu<img src="../images/chapitre9/truck-blue.svg" alt="Camion" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de la fenêtre principale pour démarrer le processus de création d'une livraison unique &#40;disponible uniquement si l'option "Avec livraison" a été activée dans l'expédition&#41;.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre9/livraison1-2019.png" class="contour-img" alt="Création livraison" data-action="zoom" />
+         </p>
+		 <p>Cochez une ou plusieurs cases<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour livrer une ou plusieurs expéditions et afficher le bouton <img src="../images/chapitre9/expedier.svg" alt="Expédier" height="30" class="btn-gris"> au dessus de la liste, puis cliquez sur ce bouton.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre9/livraison2-2019.png" class="contour-img" alt="Création livraison" data-action="zoom" />
+         </p>
+         <p>Si vous affichez le statut d'une expédition &#40;après avoir cliqué sur son numéro dans la liste des expéditions&#41;, cliquez sur le bouton<img src="../images/chapitre9/expedier.svg" alt="Expédier" height="30" class="btn-gris">pour créer une nouvelle livraison.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre9/livraison3-2019.png" class="contour-img" alt="Création livraison" data-action="zoom" />
+         </p>
+      </div>
+	  <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Renseignez la livraison</span>
+         <p>Sélectionnez un ou plusieurs colis à l'aide des cases à cocher<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour procéder à une livraison unique ou groupée de plusieurs produits &#40;ou pour organiser une tournée de livraison&#41;.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre9/livraison4-2019.png" class="contour-img" alt="Création livraison" data-action="zoom" />
+         </p>
+         <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
       </div>
       <br />
       <div class="floating-box process">
          <img src="../images/commun/step4.svg" alt="4" width="52" />
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Modifiez le statut de l'expédition</span>
-         <p>Modifiez le statut de l'expédition en cliquant successivement sur les étapes en couleur&nbsp;:<br /><span class="step step-orange">&nbsp;Brouillon&nbsp;</span><img src="../images/chapitre9/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;Commandé&nbsp;</span><img src="../images/chapitre9/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;En préparation&nbsp;</span><img src="../images/chapitre9/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;Prêt&nbsp;</span><img src="../images/chapitre9/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-vert">&nbsp;Donné&nbsp;</span> et passez à l'étape n° 5 de cette procédure.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre9/colis6.png" class="contour-img" alt="Statut du colis sortant" data-action="zoom" />
-         </p>
-      </div>
-      <br />
-      <div class="floating-box process">
-         <img src="../images/commun/step4a.svg" alt="4a" width="52" />
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">ou Accédez aux "Livraisons"</span>
-         <p>Cliquez sur le bouton<img src="../images/chapitre9/expedier.svg" alt="Expédier" height="30" class="btn-gris">pour accéder aux "Livraisons".</p>
-         <p>Sélectionnez un ou plusieurs colis à l'aide des cases à cocher<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour procéder à une livraison unique ou groupée de plusieurs produits &#40;ou pour organiser une tournée de livraison&#41;.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre9/livraison1.png" class="contour-img" alt="Livraison" data-action="zoom" />
-         </p>
-         <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
-      </div>
-      <br />
-      <div class="floating-box process">
-         <img src="../images/commun/step4b.svg" alt="4b" width="52" />
-      </div>
-      <div class="process-txt">
          <span class="titre-advice">Modifiez le statut de la livraison</span>
          <p>Modifiez le statut de la livraison en cliquant successivement sur les étapes en couleur&nbsp;:<br /><span class="step step-orange">&nbsp;Brouillon&nbsp;</span><img src="../images/chapitre9/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;Commandée&nbsp;</span><img src="../images/chapitre9/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;En préparation&nbsp;</span><img src="../images/chapitre9/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;Prête&nbsp;</span><img src="../images/chapitre9/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;Commencée&nbsp;</span><img src="../images/chapitre9/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-vert">&nbsp;Terminée&nbsp;</span></p>
          <p class="max-img-process">
-            <img src="../images/chapitre9/livraison2.png" class="contour-img" alt="Livraison" data-action="zoom" />
+            <img src="../images/chapitre9/livraison5-2019.png" class="contour-img" alt="Statut de la livraison" data-action="zoom" />
+         </p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre9/livraison6-2019.png" class="contour-img" alt="Statut de la livraison" data-action="zoom" />
          </p>
       </div>
-      <br />
-      <div class="floating-box process">
-         <img src="../images/commun/step5.svg" alt="5" width="52" />
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Contrôlez vos stocks</span>
-         <p>Cliquez sur "Matières" dans la section des "Stocks" symbolisée par l'icône d'un sac de grains<img src="../images/chapitre9/matter.svg" alt="Sac de matière" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour contrôler la nouvelle quantité restant en stock après la livraison du produit.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre9/matieres6.png" class="contour-img" alt="Matières en stock" data-action="zoom" />
-         </p>
-      </div>
-      <h6>Guide de prise en main • Stock et tiers • Facturer une livraison</h6>
-      <p class="texte">
+      <h6>Guide de prise en main • Stock et tiers • Facturer une expédition</h6>
+      <p class="texte aerateur-haut">
          Les mouvements de stocks de matières &#40;"Expéditions"&#41; peuvent être utilisés pour réaliser la gestion des ventes avec un enregistrement automatique des écritures comptables qui en découlent.
       </p>
       <a class="slice-long" id="facture"></a>
-      <p align="center" class="texte aerateur procedure">B – Procédure pour facturer une livraison
+      <p align="center" class="texte aerateur procedure">C – Procédure pour facturer une expédition
       </p>
       <p class="texte">
-         Le processus suivant vous guide pour créer une facture de vente suite à une expédition.
+         Le processus suivant vous guide pour générer une facture de vente à partir d'une expédition.
       </p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
@@ -990,24 +1036,37 @@
             Cliquez sur le lien "Stocks" dans le "Menu principal" ou sur le bouton "Stocks" de la page d'accueil&nbsp;:
          </p>
          <p align="center"><img src="../images/chapitre9/stocks.svg" alt="Stocks" width="60"></p>
+         <p>Puis, dans la barre latérale du module, cliquez sur "Expéditions" dans la section "Expéditions" symbolisée par l'icône d'un camion<img src="../images/chapitre9/truck.svg" alt="Camion" height="20" class="align-icone icone-marge-gauche">.</p>
       </div>
       <br />
       <div class="floating-box process">
          <img src="../images/commun/step2.svg" alt="2" width="52" />
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Accédez aux "Colis"</span>
-         <p>Dans la barre latérale du module, cliquez sur "Colis" dans la section "Mouvements" symbolisée par l'icône d'un camion<img src="../images/chapitre9/truck.svg" alt="Camion" height="20" class="align-icone icone-marge-gauche">.</p>
+         <span class="titre-advice">Enregistrez la facture</span>
+         <p>Cliquez sur l'icône représentant un document<img src="../images/chapitre9/file-text-o.svg" alt="Fichier" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour convertir une expédition unique en devis. Notez qu'une fois activé, ce lien ne sera plus disponible pour cette réception et il faudra utiliser la seconde méthode ci-après pour modifier le statut du devis afin de le convertir en facture.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre9/facture1-2019.png" class="contour-img" alt="Conversion expédition en devis" data-action="zoom" />
+         </p>
+		 <p>Cochez une ou plusieurs cases<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour convertir une ou plusieurs expéditions et afficher le bouton "Facturer" au dessus de la liste, puis cliquez sur ce bouton. Notez que si plusieurs éléments sont sélectionnés, la conversion n'est possible que si le destinataire à facturer est le même pour toutes les expéditions.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre9/facture2-2019.png" class="contour-img" alt="Conversion expédition en devis" data-action="zoom" />
+         </p>
       </div>
       <br />
       <div class="floating-box process">
          <img src="../images/commun/step3.svg" alt="3" width="52" />
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Procédez à la livraison</span>
-         <p>Cliquez sur le camion bleu<img src="../images/chapitre9/truck-blue.svg" alt="Camion" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de la fenêtre principale pour démarrer le processus de livraison &#40;uniquement si cette option a été sélectionnée à la création du colis sortant - sinon, passez directement à l'étape n° 5 de cette procédure&#41;.</p>
+         <span class="titre-advice">Modifiez le statut du devis</span>
+         <p>Modifiez le statut du devis en cours en cliquant successivement sur les étapes en couleur&nbsp;:<br /><span class="step step-orange">&nbsp;Devis brouillon&nbsp;</span><img src="../images/chapitre9/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;Devis envoyé&nbsp;</span><img src="../images/chapitre9/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-vert">&nbsp;Commande&nbsp;</span><img src="../images/chapitre9/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-vert">&nbsp;Facture&nbsp;</span></p>
+         <p>Vous pouvez aussi valider la facturation directement en cliquant sur le bouton <span class="step step-vert">&nbsp;Facture&nbsp;</span>&nbsp;.</p>
+         <p>Utilisez les statuts <span class="step step-rouge">&nbsp;Devis refusé&nbsp;</span> ou <span class="step step-rouge">&nbsp;Abandonné&nbsp;</span> pour annuler l'enregistrement de la facture.</p>
          <p class="max-img-process">
-            <img src="../images/chapitre9/colis7.png" class="contour-img" alt="Passage colis en facture d'achat" data-action="zoom" />
+            <img src="../images/chapitre9/facture3-2019.png" class="contour-img" alt="Statut de la vente" data-action="zoom" />
+         </p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre9/facture4-2019.png" class="contour-img" alt="Statut de la vente" data-action="zoom" />
          </p>
       </div>
       <br />
@@ -1015,45 +1074,10 @@
          <img src="../images/commun/step4.svg" alt="4" width="52" />
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Modifiez le statut de la livraison</span>
-         <p>Modifiez le statut de la livraison en cliquant successivement sur les étapes en couleur&nbsp;:<br /><span class="step step-orange">&nbsp;Brouillon&nbsp;</span><img src="../images/chapitre9/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;Commandée&nbsp;</span><img src="../images/chapitre9/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;En préparation&nbsp;</span><img src="../images/chapitre9/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;Prête&nbsp;</span><img src="../images/chapitre9/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;Commencée&nbsp;</span><img src="../images/chapitre9/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-vert">&nbsp;Terminée&nbsp;</span></p>
+         <span class="titre-advice">Réalisez l'encaissement de la vente</span>
+         <p>La nouvelle facture est établie. Vous pouvez réaliser l'écriture comptable de l'encaissement immédiatement ou plus tard. Cliquez sur le bouton "Ajouter un encaissement" pour accéder directement aux options du règlement de la facture. Vous pourrez revenir ultérieurement aux "Encaissements" via le module "Ventes" &#40;voir le <a href="../chapitre8" class="avoid-clicks" target="_self">chapitre 8 - Ventes</a>&#41;.</p>
          <p class="max-img-process">
-            <img src="../images/chapitre9/livraison2.png" class="contour-img" alt="Parcours colis vers facture d'achat" data-action="zoom" />
-         </p>
-      </div>
-      <br />
-      <div class="floating-box process">
-         <img src="../images/commun/step5.svg" alt="5" width="52" />
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Passez le colis en facturation</span>
-         <p>Cliquez sur l'icône<img src="../images/chapitre9/file-text-o.svg" alt="Fichier" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour convertir un colis unique en facture de vente. Notez qu'une fois activé, ce lien ne sera plus disponible pour le colis sélectionné, même si la facture est restée en statut "Devis brouillon". Elle reste accessible dans le module "Ventes".<br />Cochez une ou plusieurs cases<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour convertir un ou plusieurs colis et afficher le bouton "Facturer" au dessus de la liste, puis cliquez sur ce bouton. Notez que si plusieurs colis sont sélectionnés, la conversion n'est possible que si le destinataire est le même pour tous les colis.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre9/colis8.png" class="contour-img" alt="Passage colis en facture de vente" data-action="zoom" />
-         </p>
-      </div>
-      <br />
-      <div class="floating-box process">
-         <img src="../images/commun/step6.svg" alt="6" width="52" />
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Modifiez le statut de la vente</span>
-         <p>Modifiez le statut de la vente en cliquant successivement sur les étapes en couleur&nbsp;:<br /><span class="step step-orange">&nbsp;Devis brouillon&nbsp;</span><img src="../images/chapitre9/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-orange">&nbsp;Devis envoyé&nbsp;</span><img src="../images/chapitre9/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-vert">&nbsp;Commande&nbsp;</span><img src="../images/chapitre9/arrow-right.svg" alt="Flèche" height="20" class="align-icone icone-marge-gauche icone-marge-droite"><span class="step step-vert">&nbsp;Facture&nbsp;</span></p>
-         <p>Vous pouvez aussi valider la facturation directement en cliquant sur le bouton <span class="step step-vert">&nbsp;Facture&nbsp;</span>&nbsp;.</p>
-         <p>Utilisez les statuts <span class="step step-rouge">&nbsp;Devis refusé&nbsp;</span> ou <span class="step step-rouge">&nbsp;Abandonné&nbsp;</span> pour annuler l'enregistrement de la vente.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre9/vente1.png" class="contour-img" alt="Statut de la vente" data-action="zoom" />
-         </p>
-      </div>
-      <br />
-      <div class="floating-box process">
-         <img src="../images/commun/step7.svg" alt="7" width="52" />
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Réaliser l'encaissement de la vente</span>
-         <p>La nouvelle facture est établie. Vous pouvez réaliser l'écriture comptable de l'encaissement immédiatement ou plus tard. Cliquez sur le bouton "Ajouter un encaissement" pour accéder directement aux options du règlement de la facture. Vous pourrez revenir ultérieurement aux "Encaissements" via le module "Ventes".</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre9/vente2.png" class="contour-img" alt="Encaissement" data-action="zoom" />
+            <img src="../images/chapitre9/facture5-2019.png" class="contour-img" alt="Encaissement" data-action="zoom" />
          </p>
          <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
       </div>
@@ -1087,7 +1111,7 @@
                   <img src="../images/commun/circle.svg" alt="Puce" height="15">
                </div>
                <div class="divTableCellPlan">
-                  vérifier si aucune marchandise ou équipement ne manque, en d'autres termes de constater si il y a eu perte &#40;stocks périssables, produits en fin d’utilisation&#41; ou malveillance&nbsp;;
+                  vérifier si aucune marchandise ou équipement ne manque, en d'autres termes de constater s'il y a eu perte &#40;stocks périssables, produits en fin d’utilisation&#41; ou malveillance&nbsp;;
                </div>
             </div>
 			<div class="divTableRow">
