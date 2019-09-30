@@ -1678,6 +1678,125 @@
          </p>
 		 <p>Notez que le document reste accessible à tout moment via le lien "Gestion électronique des documents" dans la section "Archives"<img src="../images/chapitre12/archive.svg" alt="Archives" height="20" class="align-icone icone-marge-gauche icone-marge-droite">du module "Outils".</p>
       </div>
+	  <h6>Guide de prise en main • Imports et exports • Extractions</h6>
+	  <a class="slice-long" id="extractions"></a>
+	  <h2 class="texte aerateur">d - Extractions de données</h2>
+	  <p class="texte">Ekylibre permet de réaliser l'extraction de données sous la forme de feuilles de calcul &#40;tableaux&#41; au format CSV.</p>
+	  <p class="texte">Grâce à des recherches croisées et à des filtres avancés entre les différentes tables de l'application, vous pouvez facilement récupérer vos données pour les visualiser ou les exploiter dans un tableur comme par exemple <a href="https://www.openoffice.org/fr/" target="_blank">Apache OpenOffice</a> ou <a href="https://fr.libreoffice.org/" target="_blank">LibreOffice</a>.</p>
+	  <p class="texte">Dans l'exemple suivant, on vous décrit la procédure pour filtrer et extraire la liste des facture supérieures à 100 euros qui auraient dû être payées à une date donnée.</p>
+	  <p align="center" class="texte aerateur procedure">A – Procédure pour extraire une liste de factures impayées</p>
+	  <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez les "Extractions"</span>
+         <p>
+            Cliquez sur le lien "Outils" dans le "Menu principal" ou sur le bouton "Outils" de la page d'accueil&nbsp;:
+         </p>
+         <p align="center"><img src="../images/chapitre12/magic.svg" alt="Outils" width="60"></p>
+         <p>Dans la barre latérale du module, cliquez sur "Extractions" dans la section "Échange" symbolisée par l'icône représentant 2 flèches<img src="../images/chapitre12/exchange.svg" alt="Échange" height="20" class="align-icone icone-marge-gauche"> &#40;par défaut, la liste des processus d'extraction des données est vide&#41;, puis cliquez sur le bouton "Nouveau".</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre12/extractions1.png" class="contour-img" alt="Liste des extractions" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Créer un nouveau processus</span>
+         <p>Nommez le nouveau processus et sélectionnez la fonction parente dans la liste déroulante "Racine". Dans l'application, les factures de vente sont rattachées aux "Ventes", il est donc nécessaire de sélectionner cette fonction.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre12/extractions2.png" class="contour-img" alt="Sélection de la racine" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Validez le processus</span>
+         <p>Renseignez enfin de manière explicite la description du rôle du nouveau processus.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre12/extractions3.png" class="contour-img" alt="Validation du processus d'extractions" data-action="zoom" />
+         </p>
+		 <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
+      </div>
+	  <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step4.svg" alt="4" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Construisez le processus</span>
+         <p>La fonction parente "Vente" permet de choisir le premier critère de tri dans la liste déroulante. Sélectionnez "Montant HT", puis cliquez sur le bouton "Ajouter".</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre12/extractions4.png" class="contour-img" alt="Construction de l'extraction" data-action="zoom" />
+         </p>
+      </div>
+	  <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step5.svg" alt="5" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Paramétrez un premier critère de tri</span>
+         <p>Cliquez sur le bouton "Ajouter un filtre", puis définissez la condition "supérieur à" avec le montant désiré &#40;100&#41; et cliquez sur le bouton "Valider" pour enregistrer le filtre.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre12/extractions5.png" class="contour-img" alt="Paramétrage d'un filtre" data-action="zoom" />
+         </p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre12/extractions6.png" class="contour-img" alt="Paramétrage d'un filtre" data-action="zoom" />
+         </p>
+      </div>
+	  <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step6.svg" alt="6" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Paramétrez un second critère de tri</span>
+         <p>Sélectionnez "À régler au plus tard le" dans la liste déroulante "Vente", puis cliquez sur le bouton "Ajouter". Ajoutez un filtre et définissez la condition "inférieure ou égale à" ainsi que la date d'encaissement souhaitée.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre12/extractions7.png" class="contour-img" alt="Nouveau critère" data-action="zoom" />
+         </p>
+      </div>
+	  <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step7.svg" alt="7" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Associez les informations complémentaires</span>
+         <p>Sélectionnez "Client" dans la liste déroulante "Vente" et cliquez sur le bouton "Ajouter".</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre12/extractions8.png" class="contour-img" alt="Récupération nom client" data-action="zoom" />
+         </p>
+		 <p>Sélectionnez "Nom complet" dans la liste déroulante "Clients" et cliquez sur le bouton "Ajouter" pour récupérer le nom du client dans l'extraction.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre12/extractions9.png" class="contour-img" alt="Récupération nom client" data-action="zoom" />
+         </p>
+		 <p>Notez la présence du symbole<img src="../images/chapitre12/share-alt.svg" alt="Table" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de "Client" indiquant que l'information extraite est située dans une table différente de la base de données parente "Vente".</p>
+      </div>
+	  <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step8.svg" alt="8" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Terminez la construction du processus</span>
+         <p>Sélectionnez finalement "Numéro" dans la liste déroulante "Vente" pour ajouter les numéros des factures impayées dans l'extraction.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre12/extractions10.png" class="contour-img" alt="Récupération nom client" data-action="zoom" />
+         </p>
+		 <p>Cliquez sur <span class="btn-blue">Modifier</span> pour valider l'opération.</p>
+      </div>
+	  <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step9.svg" alt="9" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Lancez l'extraction</span>
+         <p>Cliquez sur le lien "Extractions" dans la barre latérale du module, puis cliquez sur le symbole<img src="../images/chapitre12/download.svg" alt="Table" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche du nom du processus pour lancer la création du fichier CSV avec les informations attendues. En fonction de la quantité de données à traiter, patientez quelques instants avant l'obtention du fichier.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre12/extractions11.png" class="contour-img" alt="Récupération nom client" data-action="zoom" />
+		 </p>
+      </div>
       <div class="navigation aerateur-haut">
          <div class="divTable">
             <div class="divTableBody">
