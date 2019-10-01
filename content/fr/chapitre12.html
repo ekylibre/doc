@@ -249,6 +249,7 @@
                         <li><a href="../chapitre12#fichiers" target="_self">Préparation des fichiers CSV</a></li>
                         <li><a href="../chapitre12#imports" target="_self">Intégration de données dans Ekylibre</a></li>
                         <li><a href="../chapitre12#exports" target="_self">Édition de documents réglementaires</a></li>
+						<li><a href="../chapitre12#extractions" target="_self">Extraction de données au format CSV</a></li>
                      </div>
                   </ul>
                </li>
@@ -293,6 +294,14 @@
                   Comment éditer le <a href="#interventions" class="avoid-clicks">registre des interventions</a>, le <a href="#cahier" class="avoid-clicks">cahier de traçabilité</a> et le <a href="#phyto" class="avoid-clicks">registre phytosanitaire</a>
                </div>
             </div>
+			<div class="divTableRow">
+               <div class="divTableCellListe">
+                  <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
+               </div>
+               <div class="divTableCellListe">
+                  Comment réaliser des <a href="#extractions" class="avoid-clicks">extractions de données</a> sous la forme de tableaux au format CSV
+               </div>
+            </div>
          </div>
       </div>
       <h2 class="texte aerateur">Glossaire du chapitre</h2>
@@ -312,6 +321,14 @@
                </div>
                <div class="divTableCellGlossaire2" style="width: 100%">
                   un fichier ODS &#40;Open Document Spreadsheet&#41; est un format ouvert de documents pour tableurs qui permet de gérer simultanément plurieurs feuilles de calcul &#40;plusieurs tableaux&#41;
+               </div>
+            </div>
+			<div class="divTableRow">
+               <div class="divTableCellGlossaire1" style="width: auto">
+                  table
+               </div>
+               <div class="divTableCellGlossaire2" style="width: 100%">
+                  dans une base de données relationnelle, une table est un ensemble de données organisées sous forme d'un tableau où les colonnes correspondent à des catégories d'information et les lignes à des enregistrements, également appelés entrées
                </div>
             </div>
             <div class="divTableRow">
@@ -1682,9 +1699,10 @@
 	  <a class="slice-long" id="extractions"></a>
 	  <h2 class="texte aerateur">d - Extractions de données</h2>
 	  <p class="texte">Ekylibre permet de réaliser l'extraction de données sous la forme de feuilles de calcul &#40;tableaux&#41; au format CSV.</p>
-	  <p class="texte">Grâce à des recherches croisées et à des filtres avancés entre les différentes tables de l'application, vous pouvez facilement récupérer vos données pour les visualiser ou les exploiter dans un tableur comme par exemple <a href="https://www.openoffice.org/fr/" target="_blank">Apache OpenOffice</a> ou <a href="https://fr.libreoffice.org/" target="_blank">LibreOffice</a>.</p>
-	  <p class="texte">Dans l'exemple suivant, on vous décrit la procédure pour filtrer et extraire la liste des facture supérieures à 100 euros qui auraient dû être payées à une date donnée.</p>
-	  <p align="center" class="texte aerateur procedure">A – Procédure pour extraire une liste de factures impayées</p>
+	  <p class="texte">Grâce à des recherches croisées et à des filtres avancés entre les différentes <span class="tooltip">tables<span class="tooltiptext tooltip-top">Voir glossaire</span></span> de l'application, vous pouvez facilement récupérer vos données pour les visualiser ou les exploiter dans un tableur comme par exemple <a href="https://www.openoffice.org/fr/" target="_blank">Apache OpenOffice</a> ou <a href="https://fr.libreoffice.org/" target="_blank">LibreOffice</a>.</p>
+	  <p class="texte">Dans l'exemple suivant, sur la base des factures supérieures à 100 euros qui auraient dû être payées à une date donnée, on souhaite obtenir le nom et l'adresse email des tiers afin de réaliser une campagne de relance avec une solution d'emailing tierce.</p>
+	  <p align="center" class="texte aerateur procedure">A – Procédure pour extraire un tableau de tiers</p>
+	  <p class="texte">Le processus suivant vous guide pour réaliser un nouveau processus d'extraction.</p>
 	  <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
       </div>
@@ -1694,7 +1712,7 @@
             Cliquez sur le lien "Outils" dans le "Menu principal" ou sur le bouton "Outils" de la page d'accueil&nbsp;:
          </p>
          <p align="center"><img src="../images/chapitre12/magic.svg" alt="Outils" width="60"></p>
-         <p>Dans la barre latérale du module, cliquez sur "Extractions" dans la section "Échange" symbolisée par l'icône représentant 2 flèches<img src="../images/chapitre12/exchange.svg" alt="Échange" height="20" class="align-icone icone-marge-gauche"> &#40;par défaut, la liste des processus d'extraction des données est vide&#41;, puis cliquez sur le bouton "Nouveau".</p>
+         <p>Dans la barre latérale du module, cliquez sur "Extractions" dans la section "Échange" symbolisée par l'icône représentant 2 flèches<img src="../images/chapitre12/exchange.svg" alt="Échange" height="20" class="align-icone icone-marge-gauche"> &#40;par défaut, la liste des processus d'extraction de données est vide&#41;, puis cliquez sur le bouton "Nouveau".</p>
          <p class="max-img-process">
             <img src="../images/chapitre12/extractions1.png" class="contour-img" alt="Liste des extractions" data-action="zoom" />
          </p>
@@ -1704,8 +1722,8 @@
          <img src="../images/commun/step2.svg" alt="2" width="52" />
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Créer un nouveau processus</span>
-         <p>Nommez le nouveau processus et sélectionnez la fonction parente dans la liste déroulante "Racine". Dans l'application, les factures de vente sont rattachées aux "Ventes", il est donc nécessaire de sélectionner cette fonction.</p>
+         <span class="titre-advice">Créez un nouveau processus</span>
+         <p>Nommez le nouveau processus et sélectionnez la <span class="tooltip">table<span class="tooltiptext tooltip-top">Voir glossaire</span></span> principale dans la liste déroulante "Racine". Dans l'application, les factures de vente sont rattachées à la <span class="tooltip">table<span class="tooltiptext tooltip-top">Voir glossaire</span></span> "Ventes", il faut donc sélectionner celle-ci en premier.</p>
          <p class="max-img-process">
             <img src="../images/chapitre12/extractions2.png" class="contour-img" alt="Sélection de la racine" data-action="zoom" />
          </p>
@@ -1716,7 +1734,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Validez le processus</span>
-         <p>Renseignez enfin de manière explicite la description du rôle du nouveau processus.</p>
+         <p>Renseignez enfin de manière explicite la description du rôle du nouveau processus comme par exemple "Liste les factures impayées au 1 septembre 2019".</p>
          <p class="max-img-process">
             <img src="../images/chapitre12/extractions3.png" class="contour-img" alt="Validation du processus d'extractions" data-action="zoom" />
          </p>
@@ -1728,17 +1746,18 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Construisez le processus</span>
-         <p>La fonction parente "Vente" permet de choisir le premier critère de tri dans la liste déroulante. Sélectionnez "Montant HT", puis cliquez sur le bouton "Ajouter".</p>
+         <p>La <span class="tooltip">table<span class="tooltiptext tooltip-top">Voir glossaire</span></span> racine "Vente" permet de définir le premier critère de recherche. Sélectionnez "Montant HT" dans la liste déroulante, puis cliquez sur le bouton "Ajouter". Notez que la liste déroulante est scindée en 2 parties&nbsp;: une première dont les éléments appartiennent à la table "Vente" et une seconde qui regroupe des "Tables liées".</p>
          <p class="max-img-process">
             <img src="../images/chapitre12/extractions4.png" class="contour-img" alt="Construction de l'extraction" data-action="zoom" />
          </p>
+		 <p>Le critère "Montant HT" est alors affiché à droite du symbole<img src="../images/chapitre12/columns.svg" alt="Table" height="20" class="align-icone icone-marge-gauche icone-marge-droite">ainsi que la case à cocher<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">permettant d'activer ou non celui-ci lors d'une extraction.</p>
       </div>
 	  <br />
 	  <div class="floating-box process">
          <img src="../images/commun/step5.svg" alt="5" width="52" />
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Paramétrez un premier critère de tri</span>
+         <span class="titre-advice">Paramétrez un premier filtre de tri</span>
          <p>Cliquez sur le bouton "Ajouter un filtre", puis définissez la condition "supérieur à" avec le montant désiré &#40;100&#41; et cliquez sur le bouton "Valider" pour enregistrer le filtre.</p>
          <p class="max-img-process">
             <img src="../images/chapitre12/extractions5.png" class="contour-img" alt="Paramétrage d'un filtre" data-action="zoom" />
@@ -1752,8 +1771,8 @@
          <img src="../images/commun/step6.svg" alt="6" width="52" />
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Paramétrez un second critère de tri</span>
-         <p>Sélectionnez "À régler au plus tard le" dans la liste déroulante "Vente", puis cliquez sur le bouton "Ajouter". Ajoutez un filtre et définissez la condition "inférieure ou égale à" ainsi que la date d'encaissement souhaitée.</p>
+         <span class="titre-advice">Ajoutez un second critère de recherche</span>
+         <p>Sélectionnez "À régler au plus tard le" dans la liste déroulante "Vente", puis cliquez sur le bouton "Ajouter". Appliquez un nouveau filtre en définissant la condition "inférieure ou égale à" avec la date butoir d'encaissement souhaitée et cliquez sur le bouton "Valider".</p>
          <p class="max-img-process">
             <img src="../images/chapitre12/extractions7.png" class="contour-img" alt="Nouveau critère" data-action="zoom" />
          </p>
@@ -1763,39 +1782,107 @@
          <img src="../images/commun/step7.svg" alt="7" width="52" />
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Associez les informations complémentaires</span>
-         <p>Sélectionnez "Client" dans la liste déroulante "Vente" et cliquez sur le bouton "Ajouter".</p>
+         <span class="titre-advice">Extrayez les informations clients</span>
+		 <p>Dans la liste déroulante "Vente", sélectionnez "Client" dans la partie "Tables liées" et cliquez sur le bouton "Ajouter".</p>
          <p class="max-img-process">
             <img src="../images/chapitre12/extractions8.png" class="contour-img" alt="Récupération nom client" data-action="zoom" />
          </p>
-		 <p>Sélectionnez "Nom complet" dans la liste déroulante "Clients" et cliquez sur le bouton "Ajouter" pour récupérer le nom du client dans l'extraction.</p>
+		 <p>Sélectionnez "Nom complet" dans la liste déroulante "Client" et cliquez sur le bouton "Ajouter" pour récupérer le nom du client dans l'extraction.</p>
 		 <p class="max-img-process">
             <img src="../images/chapitre12/extractions9.png" class="contour-img" alt="Récupération nom client" data-action="zoom" />
          </p>
-		 <p>Notez la présence du symbole<img src="../images/chapitre12/share-alt.svg" alt="Table" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de "Client" indiquant que l'information extraite est située dans une table différente de la base de données parente "Vente".</p>
+		 <p>Notez la présence du symbole<img src="../images/chapitre12/share-alt.svg" alt="Table" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de "Client" indiquant que l'information extraite est située dans une <span class="tooltip">table<span class="tooltiptext tooltip-top">Voir glossaire</span></span> différente de la table "Vente" dans la base de données.</p>
       </div>
 	  <br />
 	  <div class="floating-box process">
          <img src="../images/commun/step8.svg" alt="8" width="52" />
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Terminez la construction du processus</span>
-         <p>Sélectionnez finalement "Numéro" dans la liste déroulante "Vente" pour ajouter les numéros des factures impayées dans l'extraction.</p>
+         <span class="titre-advice">Récupérez les adresses email</span>
+         <p>Dans la liste déroulante "Client", sélectionnez "Courriels &#40;e-mails&#41;" dans la partie "Tables liées" et cliquez sur le bouton "Ajouter".</p>
          <p class="max-img-process">
-            <img src="../images/chapitre12/extractions10.png" class="contour-img" alt="Récupération nom client" data-action="zoom" />
+            <img src="../images/chapitre12/extractions10.png" class="contour-img" alt="Récupération email client" data-action="zoom" />
          </p>
-		 <p>Cliquez sur <span class="btn-blue">Modifier</span> pour valider l'opération.</p>
+		 <p>Sélectionnez "Coordonnée" dans la liste déroulante "Courriels &#40;e-mails&#41;" et cliquez sur le bouton "Ajouter" pour récupérer l'adresse email du client dans l'extraction. Ajoutez un nouveau filtre en définissant la condition "Contient" et le symbole "@" &#40;arobace&#41; pour exclure les adresses postales, puis cliquez sur le bouton "Valider".</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre12/extractions11.png" class="contour-img" alt="Filtre arobace" data-action="zoom" />
+         </p>
+		 <p>Notez la présence du symbole<img src="../images/chapitre12/share-alt.svg" alt="Table" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de "Courriels &#40;e-mails&#41;" indiquant que l'information extraite est située dans une <span class="tooltip">table<span class="tooltiptext tooltip-top">Voir glossaire</span></span> différente de la table "Client" dans la base de données.</p>
       </div>
 	  <br />
 	  <div class="floating-box process">
          <img src="../images/commun/step9.svg" alt="9" width="52" />
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Lancez l'extraction</span>
-         <p>Cliquez sur le lien "Extractions" dans la barre latérale du module, puis cliquez sur le symbole<img src="../images/chapitre12/download.svg" alt="Table" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche du nom du processus pour lancer la création du fichier CSV avec les informations attendues. En fonction de la quantité de données à traiter, patientez quelques instants avant l'obtention du fichier.</p>
+         <span class="titre-advice">Terminez la construction du processus</span>
+         <p>Sélectionnez finalement "Numéro" dans la liste déroulante "Vente" &#40;comme dans l'étape n° 4&#41; pour ajouter les numéros des factures impayées dans l'extraction.</p>
          <p class="max-img-process">
-            <img src="../images/chapitre12/extractions11.png" class="contour-img" alt="Récupération nom client" data-action="zoom" />
+            <img src="../images/chapitre12/extractions12.png" class="contour-img" alt="Récupération nom client" data-action="zoom" />
+         </p>
+		 <p>Cliquez sur <span class="btn-blue">Modifier</span> pour valider l'opération.</p>
+      </div>
+	  <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step10.svg" alt="10" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Lancez l'extraction</span>
+         <p>Cliquez sur le lien "Extractions" dans la barre latérale du module, puis cliquez sur le symbole<img src="../images/chapitre12/download.svg" alt="Télécharger" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche du nom du processus pour lancer la création du fichier CSV avec les informations attendues. En fonction de la quantité de données à traiter, patientez quelques instants avant l'obtention du fichier.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre12/extractions13.png" class="contour-img" alt="Récupération nom client" data-action="zoom" />
 		 </p>
+		 <p>Cliquez sur le symbole<img src="../images/chapitre12/files-o.svg" alt="Dupliquer" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour dupliquer le processus d'extraction ou sur le crayon<img src="../images/chapitre12/crayon.svg" alt="Modifier" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour le modifier.</p>
+		 <div class="divTableListe">
+         <div class="divTableBody">
+            <div class="divTableRow">
+               <div class="divTableCellAffichage" style="width: 116px">
+                  <img src="../images/chapitre12/extraire.svg" alt="Extraire" height="30" class="btn-affichage">
+               </div>
+               <div class="divTableCellAffichage">
+                  Le bouton "Extraire" est maintenant disponible en haut de certaines fenêtres pour vous permettre de déclencher une extraction en rapport avec sa <span class="tooltip">table<span class="tooltiptext tooltip-top">Voir glossaire</span></span> "Racine".
+               </div>
+            </div>
+         </div>
+	  </div>
+	  <p class="max-img-process">
+            <img src="../images/chapitre12/extractions14.png" class="contour-img" alt="Bouton extraire" data-action="zoom" />
+		 </p>
+      </div>
+	  <div class="info-fond aerateur-haut">
+         <div class="floating-box-info">
+            <img src="../images/commun/info.svg" width="100" alt="Info"/>
+         </div>
+         <div class="info-txt">
+            <span class="titre-advice">Extractions complexes<br /></span>
+            <p span="span" class="texte-advice">
+               Si vous souhaitez réaliser une extraction complexe et que vous n'y parvenez pas, nous vous recommandons de faire appel au service support en le joignant&nbsp;:
+            </p>
+            <div class="divTableListe">
+               <div class="divTableBody">
+                  <div class="divTableRow">
+                     <div class="divTableCellListe" style="width: 10px">
+                        <img src="../images/commun/circle.svg" alt="Puce" height="15">
+                     </div>
+                     <div class="divTableCellListe" style="width: auto">
+                        Par email à l'adresse 
+                        <a href="mailto:support@ekylibre.com">support@ekylibre.com</a>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellListe">
+                        <img src="../images/commun/circle.svg" alt="Puce" height="15">
+                     </div>
+                     <div class="divTableCellListe">
+                        Par le service de discussion instantanée accessible en cliquant sur le bouton "Chat" situé en bas à droite des pages du site 
+                        <a href="https://ekylibre.com" title="Ekylibre" target="_blank">Ekylibre</a> &#40;ou sur "Aide" en dehors des heures de bureau pour laisser un message&#41;
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="centre">
+               <img src="../images/commun/chat.svg" width="80" alt="Chat" class="chat-help"><img src="../images/commun/aide.svg" width="80" alt="Aide" class="chat-help">
+            </div>
+         </div>
       </div>
       <div class="navigation aerateur-haut">
          <div class="divTable">
