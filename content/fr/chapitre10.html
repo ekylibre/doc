@@ -287,6 +287,14 @@
                   Comment <a href="#planification" class="avoid-clicks">planifier</a> une intervention et visualiser facilement la concordance avec sa réalisation
                </div>
             </div>
+			<div class="divTableRow">
+               <div class="divTableCellListe">
+                  <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
+               </div>
+               <div class="divTableCellListe">
+                  Comment obtenir le <a href="#cahier" class="avoid-clicks">cahier de traçabilité</a> pour une ou pour l'ensemble des activités
+               </div>
+            </div>
             <div class="divTableRow">
                <div class="divTableCellListe">
                   <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
@@ -354,7 +362,9 @@
             <p align="center" class="aerateur-haut aerateur-bas"><img src="../images/chapitre10/schema-activites1.png" alt="Schéma activités"></p>
          </div>
       </div>
-	  <p class="texte">L'application permet également la gestion des productions maraichères et fruitières de plein champ ainsi que de certaines plantes comme par exemple &#40;liste non exhaustive&#41;&nbsp;:</p>
+	  <p class="texte">Notez que pour une même plante, comme par exemple le maïs, vous pourrez sélectionner un type de production particulier lors de la création des activités&nbsp;:</p>
+	  <p class="texte" align="center"><img src="../images/chapitre10/production-mais.png" width="400" alt="Types de production maïs"/></p>
+	  <p class="texte aerateur-haut">L'application permet également la gestion des productions maraichères et fruitières de plein champ ainsi que de certaines plantes comme par exemple &#40;liste non exhaustive&#41;&nbsp;:</p>
       <div class="affichage-mobile">
          <p align="center">
             <img src="../images/commun/scroll.svg" alt="Scroll" height="40" class="">
@@ -404,9 +414,26 @@
 	  <p class="texte" align="center"><img src="../images/chapitre10/nouvelle-activite3.png" width="400" alt="Nouvelle activité"/></p>
 	  <p class="aerateur-haut">&nbsp;</p>
       <p class="texte">La gestion de la production végétale est architecturée dans Ekylibre suivant le schéma suivant&nbsp;:</p>
-      <p class="texte">a - L'activité définit le type de culture &#40;blé dur d'hiver, orge d'hiver, maïs, etc.&#41; produit durant une campagne<br />
-         b - La production définit l'assolement d'une activité sur tout ou partie d'une zone cultivable &#40;la zone devient alors une parcelle&#41;
-      </p>
+	  <div class="divTableListe marge">
+         <div class="divTableBody">
+            <div class="divTableRow">
+               <div class="divTableCellPlan" style="width: 10px">
+                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
+               </div>
+               <div class="divTableCellPlan" style="width: auto">
+                  L'activité définit le type de culture produit durant une campagne&nbsp;: blé tendre d'hiver, orge d'hiver, maïs grain, etc.&nbsp;;
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellPlan">
+                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
+               </div>
+               <div class="divTableCellPlan">
+                  La production définit l'assolement d'une activité sur tout ou partie d'une zone cultivable &#40;la zone devient alors une parcelle&#41;.
+               </div>
+            </div>
+         </div>
+      </div>
       <p align="center" class="aerateur-haut aerateur-bas texte"><img src="../images/chapitre10/schema-production.png" alt="Schéma activités et productions"></p>
       <div class="warn-fond aerateur-haut aerateur-bas">
          <div class="floating-box-warn">
@@ -724,7 +751,7 @@
          <div class="info-txt">
             <span class="titre-advice">Documents réglementaires<br /></span>
             <p class="texte-advice">
-               Pour obtenir l'édition automatique du registre des interventions, du cahier de traçabilité ou du registre phytosanitaire à partir des différentes interventions enregistrées dans l'application, consultez le <a href="../chapitre12#documents" class="avoid-clicks" target="_self">chapitre 12 "Imports et exports"</a>.
+                Pour savoir comment générer le cahier de traçabilité, consultez la <a href="#cahier" target="_self">section d</a> de ce chapitre. Pour obtenir l'édition automatique du registre des interventions ou du registre phytosanitaire à partir des différentes interventions enregistrées dans l'application, consultez le <a href="../chapitre12#documents" class="avoid-clicks" target="_self">chapitre 12 "Imports et exports"</a>.
             </p>
          </div>
       </div>
@@ -1373,7 +1400,7 @@
 	  <p class="texte">La traçabilité des interventions parcellaires est une exigence, soit définie réglementairement, soit liée aux contrats de production.</p>
 	  <p class="texte">À partir des interventions enregistrées dans votre ferme Ekylibre, l'application permet d'éditer automatiquement ce document réglementaire.</p>
 	  <p class="texte">Le cahier de traçabilité &#40;cahier de culture&#41; consigne l'ensemble des interventions réalisées dans l'ordre chronologique, par activité, sur les différentes parcelles &#40;implantation d'une culture&#41; et sur les différentes cultures.</p>
-      <p align="center" class="texte aerateur procedure">A – Générer le cahier de traçabilité</p>
+      <p align="center" class="texte aerateur procedure">A – Générer le cahier de traçabilité pour une campagne</p>
       <p class="texte">Le processus suivant vous guide pour obtenir le cahier de traçabilité pour une campagne donnée.</p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
@@ -1432,7 +1459,7 @@
          <p class="max-img-process">
             <img src="../images/chapitre10/cahier6.png" class="contour-img" alt="Affichage du cahier de culture" data-action="zoom" />
          </p>
-		 <p>Notez que ce document reste accessible à tout moment via le lien "Gestion électronique des documents" dans la section "Archives"<img src="../images/chapitre12/archive.svg" alt="Archives" height="20" class="align-icone icone-marge-gauche icone-marge-droite">du module "Outils" tant qu'il n'a pas été supprimé.</p>
+		 <p>Notez que ce document reste accessible à tout moment via le lien "Gestion électronique des documents" dans la section "Archives"<img src="../images/chapitre12/archive.svg" alt="Archives" height="20" class="align-icone icone-marge-gauche icone-marge-droite">du module "Outils", tant qu'il n'a pas été supprimé.</p>
       </div>
 	  <p class="texte aerateur">Le cahier de traçabilité &#40;cahier de culture&#41; peut être généré pour une seule activité. Il consigne l'ensemble des interventions réalisées dans l'ordre chronologique, sur les différentes parcelles &#40;implantation d'une culture&#41; et sur les différentes cultures.</p>
 	  <p align="center" class="texte aerateur procedure">B – Générer le cahier de traçabilité pour une activité unique</p>
@@ -1505,7 +1532,7 @@
          <p class="max-img-process">
             <img src="../images/chapitre10/cahier6.png" class="contour-img" alt="Affichage du cahier de culture" data-action="zoom" />
          </p>
-		 <p>Notez que ce document reste accessible à tout moment via le lien "Gestion électronique des documents" dans la section "Archives"<img src="../images/chapitre12/archive.svg" alt="Archives" height="20" class="align-icone icone-marge-gauche icone-marge-droite">du module "Outils" tant qu'il n'a pas été supprimé.</p>
+		 <p>Notez que ce document reste accessible à tout moment via le lien "Gestion électronique des documents" dans la section "Archives"<img src="../images/chapitre12/archive.svg" alt="Archives" height="20" class="align-icone icone-marge-gauche icone-marge-droite">du module "Outils", tant qu'il n'a pas été supprimé.</p>
       </div>
       <h6>Guide de prise en main • Production • Création des étiquettes</h6>
       <a class="slice-long" id="etiquettes"></a>
