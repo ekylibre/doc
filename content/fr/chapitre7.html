@@ -145,6 +145,7 @@
                   </div>
                   <ul style="display: block;">
                      <div class="bloc">
+                        <li><a href="../chapitre7#types" target="_self">Types d'achat</a></li>
                         <li><a href="../chapitre7#achats" target="_self">Enregistrement des commandes</a></li>
                         <li><a href="../chapitre7#reception" target="_self">Réception des commandes</a></li>
                         <li><a href="../chapitre7#facturation" target="_self">Facturation des achats</a></li>
@@ -165,7 +166,7 @@
                   </div>
                   <ul style="display: none;">
                      <div class="bloc">
-                        <li><a href="../chapitre8#types" target="_self">Type de vente</a></li>
+                        <li><a href="../chapitre8#types" target="_self">Types de vente</a></li>
                         <li><a href="../chapitre8#ventes" target="_self">Enregistrer une vente</a></li>
                         <li><a href="../chapitre8#factures" target="_self">Facturer une vente</a></li>
                         <li><a href="../chapitre8#expeditions" target="_self">Expédier une vente</a></li>
@@ -263,6 +264,14 @@
       </p>
       <div class="divTableListe marge">
          <div class="divTableBody">
+			<div class="divTableRow">
+               <div class="divTableCellListe" style="width: 14px">
+                  <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
+               </div>
+               <div class="divTableCellListe" style="width: auto">
+                  Comment créer des <a href="#types" class="avoid-clicks">types d'achat</a> avec sélection d'un journal comptable
+               </div>
+            </div>
             <div class="divTableRow">
                <div class="divTableCellListe" style="width: 14px">
                   <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
@@ -284,7 +293,7 @@
                   <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
                </div>
                <div class="divTableCellListe" style="width: auto">
-                  Comment produire des <a href="#facturation" class="avoid-clicks">factures d'achat</a>
+                  Comment produire des <a href="#facturation" class="avoid-clicks">factures d'achat</a> avec sélection ou non d'un type d'achat
                </div>
             </div>
 			<div class="divTableRow">
@@ -337,9 +346,104 @@
 			<img src="../images/chapitre7/schema-achat.png" alt="Schéma achat"/>
          </div>
       </div>
+	  <h6>Guide de prise en main • Achats • Types d'achat</h6>
+	  <a class="slice-long" id="types"></a>
+	  <h2 class="texte aerateur">a - Types d'achat</h2>
+	  <div class="config margin-config">
+         <p>
+            <img src="../images/commun/parcours.svg" height="55" alt="Icône parcours"/>
+         </p>
+         <p class="majuscule">
+            procédure à savoir pour
+            <img class="align-icone icone-marge-gauche icone-marge-droite" src="../images/commun/tacheA.svg" width="20" alt="A">
+            &amp;
+            <img class="align-icone icone-marge-gauche" src="../images/commun/tacheC.svg" width="20" alt="C">
+         </p>
+      </div>
+	  <p class="texte">Associés à l'affectation des écritures dans les journaux comptables, les types d'achat sont principalement utiles dans les cas suivants&nbsp;:</p>
+      <div class="divTableListe marge">
+         <div class="divTableBody">
+            <div class="divTableRow">
+               <div class="divTableCellPlan" style="width: 10px">
+                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
+               </div>
+               <div class="divTableCellPlan" style="width: auto">
+                  Vous souhaitez dissociez les écritures comptables enregistrées pour les activités végétales et les activités animales&nbsp;;
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellPlan">
+                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
+               </div>
+               <div class="divTableCellPlan">
+                  Vous souhaitez rassembler dans un même journal comptable les achats et les ventes réalisés auprès d'une même coopérative&nbsp;;
+               </div>
+            </div>
+			<div class="divTableRow">
+               <div class="divTableCellPlan">
+                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
+               </div>
+               <div class="divTableCellPlan">
+                  Vous souhaitez utiliser un journal particulier pour des achats ou des ventes réalisés dans une devise autre que l'euro &#40;devise sélectionnée lors de la création d'un nouveau journal&#41;.
+               </div>
+            </div>
+         </div>
+      </div>
+      <p align="center" class="texte aerateur procedure">A – Procédure pour paramétrer un type d'achat
+      </p>
+      <p class="texte">
+         Le processus suivant vous guide pour créer un nouveau type d'achat.
+      </p>
+	  <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez les types d'achat</span>
+         <p>
+            Cliquez sur la clef anglaise<img src="../images/chapitre8/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite"> dans le "Menu principal" ou sur le bouton "Configuration" de la page d'accueil&nbsp;:
+         </p>
+         <p align="center"><img src="../images/chapitre8/wrench.svg" alt="Configuration" width="60"></p>
+         <p>Dans la barre latérale du module, cliquez sur "Types d'achat" dans la section "Ventes/Achats" symbolisée par l'icône d'un histogramme<img src="../images/chapitre8/bar-chart.svg" alt="histogramme" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des types d'achat.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre7/type-achat1.png" class="contour-img" alt="Types d'achat" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Créez un type d'achat</span>
+         <p>
+            Cliquez sur le bouton "Nouveau" et nommez de façon explicite le nouveau type d'achat. Cochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour l'activer. Cochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à droite de "Par défaut" si vous estimez que ce type d'achat sera le plus fréquemment utilisé &nbsp;: il deviendra alors le bouton principal dans la fenêtre de création d'une nouvelle facture à la place de celui par défaut "Achat standard".</p>
+		 <p>Dans la section comptabilité, sélectionnez un journal comptable. Notez que dans cet exemple, le journal a été créé avant la création du nouveau type d'achat.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre7/type-achat2.png" class="contour-img" alt="Nouveau type d'achat" data-action="zoom" />
+         </p>
+         <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Vérifiez le type d'achat</span>
+         <p>Vérifiez le récapitulatif des éléments définissant le nouveau type d'achat. Vous pouvez le modifier le cas échéant.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre7/type-achat3.png" class="contour-img" alt="Nouveau type d'achat" data-action="zoom" />
+         </p>
+		 <p>Lors de l'enregistrement d'une nouvelle facture, vous pourrez sélectionner ce type d'achat dans la liste déroulante&nbsp;:</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre7/type-achat4.png" class="contour-img" alt="Nouvelle facture" data-action="zoom" />
+         </p>
+		 <p>Notez que si ce type d'achat a été défini comme celui par défaut lors de sa création, il apparaîtra comme type principal dans la liste&nbsp;:</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre7/type-achat5.png" class="contour-img" alt="Nouvelle facture" data-action="zoom" />
+         </p>
+      </div>
       <h6>Guide de prise en main • Achats • Enregistrer une commande</h6>
 	  <a class="slice-long" id="achats"></a>
-	  <h2 class="texte aerateur">a - Enregistrement des commandes</h2>
+	  <h2 class="texte aerateur">b - Enregistrement des commandes</h2>
 	  <div class="config margin-config">
          <p>
             <img src="../images/commun/parcours.svg" height="55" alt="Icône parcours"/>
@@ -413,7 +517,7 @@
       </div>
 	  <h6>Guide de prise en main • Achats • Réception des commandes</h6>
 	  <a class="slice-long" id="reception"></a>
-	  <h2 class="texte aerateur">b - Réception des commandes</h2>
+	  <h2 class="texte aerateur">c - Réception des commandes</h2>
 	  <div class="saut-page"></div>
 	  <div class="config margin-config">
          <p>
@@ -643,7 +747,7 @@
       </div>
 	  <h6>Guide de prise en main • Achats • Facture d'achat</h6>
 	  <a class="slice-long" id="facturation"></a>
-	  <h2 class="texte aerateur">c - Facturation des achats</h2>
+	  <h2 class="texte aerateur">d - Facturation des achats</h2>
 	  <div class="config margin-config">
          <p>
             <img src="../images/commun/parcours.svg" height="55" alt="Icône parcours"/>
@@ -679,7 +783,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Créez une facture</span>
-         <p>Dans la barre latérale du module, cliquez sur "Factures" dans la section "Achats" symbolisée par l'icône d'un chariot de supermarché<img src="../images/chapitre7/shopping-cart.svg" alt="Caddie" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des factures, puis cliquez sur "Nouveau" en haut à gauche de la fenêtre principale.</p>
+         <p>Dans la barre latérale du module, cliquez sur "Factures" dans la section "Achats" symbolisée par l'icône d'un chariot de supermarché<img src="../images/chapitre7/shopping-cart.svg" alt="Caddie" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des factures, puis cliquez sur "Achat standard" ou sélectionnez un autre type d'achat dans la liste déroulante en haut à gauche de la fenêtre principale.</p>
          <p class="max-img-process">
             <img src="../images/chapitre7/facture1.png" class="contour-img" alt="Liste des factures" data-action="zoom" />
          </p>
@@ -739,7 +843,7 @@
       </div>
 	  <h6>Guide de prise en main • Achats • Réaliser un décaissement</h6>
 	  <a class="slice-long" id="decaissements"></a>
-	  <h2 class="texte aerateur">d - Décaissements et lots de décaissements</h2>
+	  <h2 class="texte aerateur">e - Décaissements et lots de décaissements</h2>
       <p align="center" class="texte aerateur procedure">A – Procédure pour réaliser un décaissement</p>
 	  <p class="texte">
          Le processus suivant vous guide pour réaliser un décaissement à partir d'une facture.
@@ -896,7 +1000,7 @@
       </div>
 	  <h6>Guide de prise en main • Achats • Zones de stockage</h6>
 	  <a class="slice-long" id="stockage"></a>
-	  <h2 class="texte aerateur">e - Zones de stockage</h2>
+	  <h2 class="texte aerateur">f - Zones de stockage</h2>
 	  <p class="texte">Si vous avez omis l'étape de création des bâtiments et des aires de stockage dans l'assistant de démarrage, il est toujours possible d'en ajouter pour permettre les réceptions de marchandises. Il n'est pas nécessaire de dessiner de nouveaux bâtiments mais seulement leurs subdivisions ainsi que les emplacements présentant une importance significative dans l'exploitation &#40;ces zones permettront également l'enregistrement de certaines interventions&#41;.</p><p class="texte">Notez que La précision des surfaces dessinées n'est pas primordiale car elle n'impacte pas directement les outils de gestion d'Ekylibre.</p>
       <p align="center" class="texte aerateur procedure">A – Procédure pour créer une zone de stockage</p>
 	  <p class="texte">Le processus suivant vous guide pour définir une zone de bâtiment ou une aire de stockage.</p>
