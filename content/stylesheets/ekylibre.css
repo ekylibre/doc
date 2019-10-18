@@ -2052,25 +2052,31 @@ a:visited {
 
 .navigation {
 	width: 100%;
-	margin: 6px 0 0;
 	background-color: #333;
 	display: none;
 }
 
 @media only screen and (min-width: 768px) {
 	.navigation {
-		width: 100%;
-		margin: 6px 0 0;
-		background-color: #333;
+		margin-bottom: -3px;
 		display: inline-block;
+		padding-bottom: 60px;
+		}
+}
+
+@media only screen and (min-width: 1200px) {
+	.navigation {
+		display: inline-block;
+		padding-bottom: 0;
 		}
 }
 
 .navishort {
 	width: 100%;
-	margin: 6px 0 0;
+	margin-bottom: -2px;
 	background-color: #333;
-	display: inline-block;
+	display: block;
+	padding: 10px 0;
 }
 
 .navishort a {
@@ -2165,7 +2171,7 @@ img.btn_close {
 	position: absolute;
 }
 
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 576px) {
 	.divTableCellLeft,
 	.divTableHeadLeft {
 		white-space: nowrap;
@@ -2197,7 +2203,7 @@ img.btn_close {
 	}
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
 	.divTableCellLeft,
 	.divTableHeadLeft {
 		white-space: nowrap;
@@ -2366,6 +2372,7 @@ img.zoom-img {
 		background-repeat: no-repeat;
 		background-position: center center;
 		background-size: 30px auto;
+		z-index: 1;
 	}
 	.btn_notes-version {
 		display: inline;
@@ -2381,6 +2388,7 @@ img.zoom-img {
 		background-repeat: no-repeat;
 		background-position: center center;
 		background-size: 50px auto;
+		z-index: 1;
 	}
 }
 
@@ -2917,7 +2925,8 @@ span.the-btn {
 
 ul.breadcrumb {
 	margin-left: 10px;
-	display: inline-block;
+	/*display: inline-block;*/
+	float:left;
 	list-style: none;
 }
 
@@ -2996,13 +3005,16 @@ ul.breadcrumb li:last-child:hover a {
 	line-height: 34px;
 }
 
-/*
-ul.breadcrumb li:first-child {
-	position: fixed;
-	right: 50%;
-	bottom: 25px;
-	margin-right: -366px;
+#breadcrumb:hover + #spinner {
+	display: inline-block;
+}
+
+#spinner {
+	float: right;
+	position: relative;
+	margin-top: 27px;
+	margin-right: 16px;
 	color: #fff;
 	background-color: #333;
+	display: none;
 }
-*/
