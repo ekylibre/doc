@@ -469,6 +469,10 @@ a:visited {
 	background-color: #d72116;
 }
 
+.step-fushia {
+	background-color: #d81e08;
+}
+
 .statut-recep-rouge {
 	color: #f44336;
 	border: solid 1px #f44336;
@@ -3005,11 +3009,11 @@ ul.breadcrumb li:last-child:hover a {
 	line-height: 34px;
 }
 
-#breadcrumb:hover + #spinner {
+#breadcrumb:hover + #arrow {
 	display: inline-block;
 }
 
-#spinner {
+#arrow {
 	float: right;
 	position: relative;
 	margin-top: 27px;
