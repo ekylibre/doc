@@ -23,6 +23,153 @@
    <h1 align="center" class="majuscule aerateur">Notes de version</h1>
    <p class="texte">Les notes de version décrivent les nouvelles fonctionnalités, les améliorations, les modifications et les correctifs apportés à chaque évolution significative d'Ekylibre.</p>
    <div class="accordion-container marge">
+	  <div class="panel">
+         <div class="heading">
+            <h2>Note de version 3.00 du 24/10/2019</h2>
+            <i class="fa fa-chevron-down"></i>
+         </div>
+         <div class="content">
+            <div class="divTableNoteVersion">
+               <div class="divTableBody">
+				  <div class="divTableRow">
+                     <div class="divTableCellNoteVersion1" style="width: 60px">
+                        <img src="../images/notes-version/first-run.svg" alt="Assistant de démarrage" width="60">
+                     </div>
+                     <div class="divTableCellNoteVersion2" style="width: auto">
+                        <strong>Assistant de démarrage</strong><br /><br />
+                        4 améliorations
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellNoteVersion3" style="width: 60px">
+                     </div>
+                     <div class="divTableCellNoteVersion4" style="width: auto">
+                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                        <ul>
+                           <li>Nouveau champ permettant de définir la date de clôture du premier exercice comptable&nbsp;</li>
+						   <li>Nouveau sélecteur du régime fiscal adopté par l'entreprise pour définir automatiquement le plan de compte approprié à son activité principale&nbsp;</li>
+						   <li>Nouveau sélecteur permettant de choisir et d'homogénéiser le nombre de caractères des comptes comptables généraux &#40;8 ou 10&#41;&nbsp;</li>
+						   <li>Nouveau sélecteur permettant de choisir la campagne du fichier TelePAC importé dans l'application &#40;2015 à 2019&#41;.</li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellNoteVersion1" style="width: 60px">
+                        <img src="../images/notes-version/ekylibre.svg" alt="Ekylibre" width="60">
+                     </div>
+                     <div class="divTableCellNoteVersion2" style="width: auto">
+                        <strong>Commun à tous les modules</strong><br /><br />
+                        2 améliorations
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellNoteVersion3" style="width: 60px">
+                     </div>
+                     <div class="divTableCellNoteVersion4" style="width: auto">
+                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                        <ul>
+                           <li>Nouveau service de notification avec rafraîchissement en temps réel et affichage du nombre d'opérations internes réalisées par l'application&nbsp;;</li>
+						   <li>Dans la liste des notifications, celles-ci sont maintenant caractérisées avec des indicateurs selon leur nature : opération réussie ou en échec, information et avertissement.</li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellNoteVersion1">
+                        <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
+                     </div>
+                     <div class="divTableCellNoteVersion2">
+                        <strong>Comptabilité</strong><br /><br />
+                        26 améliorations et 3 bugs corrigés
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellNoteVersion3" style="width: 60px">
+                     </div>
+                     <div class="divTableCellNoteVersion4" style="width: auto">
+                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+						<p class="improve"><em>TVA</em></p>
+                        <ul>
+                           <li>Agencement optimisé des lignes du tableau des déclarations de TVA. Les sections TVA standard et TVA intra-communautaire sont maintenant dissociées pour une meilleure lecture des montants déclarés&nbsp;;</li>
+                           <li>Suppression des taux de TVA qui ne sont plus en vigueur en France métropolitaine.</li>
+                        </ul>
+						<p class="improve"><em>Journaux comptables</em></p>
+                        <ul>
+                           <li>Ajout des nouvelles colonnes "Variante"  et "N<sup>o</sup> référence" pour le numéro de la pièce dans les journaux&nbsp;;</li>
+                           <li>Suppression de l'élément "Brouillard" du menu "Journaux" permettant de consulter les écritures non validées. Celui-ci est remplacé par un nouveau bouton permettant, depuis les journaux, de consulter ces écritures&nbsp;;</li>
+						   <li>Suppression du bouton "Comptabiliser" dans les journaux. Les écritures non validées sont systématiquement conservées dans le brouillard. Leur bascule comptable est réalisée lors de leur validation&nbsp;;</li>
+						   <li>Nouveau filtre permettant d'afficher les écritures à valider dans le brouillard de tous les journaux ou seulement d'un journal parmi ceux disponibles et jusqu'à une date donnée&nbsp;;</li>
+						   <li>Nouveau bouton permettant de générer au format PDF un journal centralisateur avant clôture récapitulant pour chaque mois et par journal les totaux des mouvements des écritures validées&nbsp;;</li>
+						   <li>Homogénéisation de la présentation des journaux et des brouillards comptables&nbsp;;</li>
+						   <li>Nouveau modèle d'impression des journaux.</li>
+                        </ul>
+						<p class="improve"><em>Exercices comptables</em></p>
+                        <ul>
+                           <li>Limitation à deux du nombre d'exercices comptables ouverts simultanément&nbsp;;</li>
+                           <li>Nouveaux indicateurs permettant de connaître le statut d'un exercice comptable : "Ouvert", "Clôture en préparation" et "Clôturé"&nbsp;;</li>
+						   <li>Possibilité de "Verrouiller" un exercice si la comptabilité n'est pas gérée dans l'application&nbsp;;</li>
+						   <li>Mise à disposition d'un nouveau mode de clôture préparatoire d'un exercice comptable&nbsp;;</li>
+						   <li>Restriction à un seul et unique utilisateur des accès aux écritures comptables d'un exercice durant sa clôture préparatoire&nbsp;;</li>
+						   <li>Nouvelles vérifications préalables permettant de valider la clôture d'un exercice : exercices précédents clôturés ou verrouillés, échanges comptables clôturés, écritures enregistrées dans le brouillard validées, équilibre de l'ensemble des écritures, absence d'écritures dans les comptes de classes radicales&nbsp;;</li>
+						   <li>À la clôture, possibilité d'affecter tout ou partie du résultat de l'exercice &#40;bénéfice ou perte&#41; aux comptes appropriés&nbsp;;</li>
+						   <li>Nouveaux sélecteurs permettant de générer le "Journal de résultat", le "Journal de clôture" et le "Journal des reports à nouveaux" lors de la clôture d'un exercice&nbsp;;</li>
+						   <li>Nouvelle barre de progression permettant de connaître l'avancée d'une opération de clôture en cours de réalisation&nbsp;;</li>
+						   <li>Mise à disposition des archives FEC du bilan et du compte de résultat signées numériquement avant et après clôture en conformité avec les exigences de l'administration fiscale.</li>
+                        </ul>
+						<p class="improve"><em>Immobilisations</em></p>
+                        <ul>
+                           <li>Possibilité de passer les immobilisations sur un compte d'attente avant leur mise en service&nbsp;;</li>
+						   <li>Nouvelle gestion des immobilisations avec amélioration de la prise en charge de la date de cession ou de mise au rebut.</li>
+                        </ul>
+						<p class="improve"><em>Emprunts</em></p>
+                        <ul>
+                           <li>Ajout d'une colonne "Comptabilisable" dans le tableau de remboursement d'un emprunt.</li>
+                        </ul>
+						<p class="improve"><em>Balance</em></p>
+                        <ul>
+                           <li>Présentation des comptes uniquement mouvementés au cours de la période dans la "Balance"&nbsp;;</li>
+						   <li>L'édition de la "Balance" est maintenant possible avec les tous les comptes, soldés ou non.</li>
+                        </ul>
+						<p class="improve"><em>Grand-livre</em></p>
+                        <ul>
+                           <li>Ajout d'une nouvelle colonne "N<sup>o</sup> référence" pour le numéro de la pièce et "Journal" pour le nom du journal d’origine du mouvement&nbsp;;</li>
+						   <li>Normalisation de la présentation : détail des écritures par compte comptable et présentation du solde par compte, avec sous-totaux et total général.</li>
+                        </ul>
+                        <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
+                        <ul>
+                           <li>Un exercice comptable verrouillé ou clôturé ne peut désormais plus être réouvert&nbsp;;</li>
+						   <li>Changement de certaines icônes améliorant la visibilité du statut d'un échange comptable&nbsp;;</li>
+						   <li>La saisie d'écritures dans les comptes de classes radicales est désormais interdite.</li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellNoteVersion1">
+                        <img src="../images/notes-version/configuration.svg" alt="Configuration" width="60">
+                     </div>
+                     <div class="divTableCellNoteVersion2">
+                        <strong>Configuration</strong><br /><br />
+                        6 améliorations
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellNoteVersion3" style="width: 60px">
+                     </div>
+                     <div class="divTableCellNoteVersion4" style="width: auto">
+                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                        <ul>
+                           <li>Dans les "Préférences de la comptabilité", suppression de l'option permettant d'activer ou pas la bascule automatique des données comptables&nbsp;;</li>
+						   <li>Dans les "Préférences de la comptabilité", suppression de l'option permettant d'enregistrer ou pas les pièces dans le brouillard comptable lors de la bascule automatique&nbsp;;</li>
+						   <li>Il n'est plus possible de changer le plan de comptes défini dans l'assistant de démarrage après la configuration de la ferme&nbsp;;</li>
+						   <li>Dans la section "Plan de comptes", remplacement de l'intitulé du bouton "Nouveau" par "Ajouter un compte"&nbsp;;</li>
+						   <li>La création d'un nouveau compte peut maintenant être défini sur principal ou auxiliaire&nbsp;;</li>
+                           <li>Suppression du lien de menu permettant de créer ou de supprimer un exercice comptable &#40;la fonctionnalité est déplacée dans le module "Comptabilité"&#41;.</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
       <div class="panel">
          <div class="heading">
             <h2>Note de version 2.60 du 3/10/2019</h2>
@@ -146,7 +293,7 @@
                <div class="divTableBody">
                   <div class="divTableRow">
                      <div class="divTableCellNoteVersion1" style="width: 60px">
-                        <img src="../images/notes-version/ekylibre.svg" alt="Tiers" width="60">
+                        <img src="../images/notes-version/ekylibre.svg" alt="Ekylibre" width="60">
                      </div>
                      <div class="divTableCellNoteVersion2" style="width: auto">
                         <strong>Commun à tous les modules</strong><br /><br />
@@ -260,7 +407,7 @@
                <div class="divTableBody">
                   <div class="divTableRow">
                      <div class="divTableCellNoteVersion1" style="width: 60px">
-                        <img src="../images/notes-version/ekylibre.svg" alt="Tiers" width="60">
+                        <img src="../images/notes-version/first-run.svg" alt="Assistant de démarrage" width="60">
                      </div>
                      <div class="divTableCellNoteVersion2" style="width: auto">
                         <strong>Assistant de démarrage</strong><br /><br />
@@ -649,7 +796,7 @@
          <div class="divTableBody">
             <div class="divTableRow">
                <div class="divTableCellNoteVersion1" style="width: 60px">
-                  <img src="../images/notes-version/ekylibre.svg" alt="Tiers" width="60">
+                  <img src="../images/notes-version/ekylibre.svg" alt="Ekylibre" width="60">
                </div>
                <div class="divTableCellNoteVersion2" style="width: auto">
                   <strong>Commun à tous les modules</strong><br /><br />
@@ -761,7 +908,7 @@
          <div class="divTableBody">
             <div class="divTableRow">
                <div class="divTableCellNoteVersion1">
-                  <img src="../images/notes-version/ekylibre.svg" alt="Ekylibre" width="60">
+                  <img src="../images/notes-version/first-run.svg" alt="Assistant de démarrage" width="60">
                </div>
                <div class="divTableCellNoteVersion2">
                   <strong>Assistant de démarrage</strong><br /><br />
