@@ -916,6 +916,14 @@ a:visited {
 	vertical-align: middle;
 }
 
+/* Tableau chapitre 6 Échanges copmtables*/
+.divTableCellExch,
+.divTableHeadExch {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	padding-right: 5px;
+}
 
 /* Tableau sommaire accueil*/
 
