@@ -1,4 +1,3 @@
-vér
 <div class="w3-content page-content scroll-spy-heading-breadcrumbs">
    <article class="post">
       <div id="navigation">
@@ -125,11 +124,13 @@ vér
                         <div class="bloc">
                            <li><a href="../chapitre6#introduction" target="_self">Introduction</a></li>
                            <li><a href="../chapitre6#societe" target="_self">Paramétrage de l'exploitation</a></li>
-                           <li><a href="../chapitre6#exercice" target="_self">Exercice comptable</a></li>
+						   <li><a href="../chapitre6#journaux" target="_self">Journaux</a></li>
+                           <li><a href="../chapitre6#exercice" target="_self">Exercices comptables</a></li>
                            <li><a href="../chapitre6#plan" target="_self">Plan de comptes</a></li>
-                           <li><a href="../chapitre6#tva" target="_self">TVA</a></li>
+                           <li><a href="../chapitre6#tva" target="_self">Taux et déclaration de TVA</a></li>
                            <li><a href="../chapitre6#compte" target="_self">Compte bancaire</a></li>
                            <li><a href="../chapitre6#echanges" target="_self">Échanges comptables</a></li>
+						   <li><a href="../chapitre6#balance" target="_self">Balance</a></li>
                            <li><a href="../chapitre6#grand-livre" target="_self">Grand-livre</a></li>
                         </div>
                      </ul>
@@ -279,7 +280,7 @@ vér
                   <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
                </div>
                <div class="divTableCellListe" style="width: auto">
-                  Comment vérifier et paramétrer certains éléments de la comptabilité dans l'application &#40;<a href="#exercice" class="avoid-clicks">exercice comptable</a>, <a href="#plan" class="avoid-clicks">plan de comptes</a>, <a href="#tva" class="avoid-clicks">TVA</a>, <a href="#compte" class="avoid-clicks">compte bancaire</a>&#41;
+                  Comment paramétrer certains éléments de la comptabilité dans l'application &#40;<a href="#journaux" class="avoid-clicks">journaux</a>, <a href="#exercice" class="avoid-clicks">exercice comptable</a>, <a href="#plan" class="avoid-clicks">plan de comptes</a>, <a href="#tva" class="avoid-clicks">TVA</a>, <a href="#compte" class="avoid-clicks">compte bancaire</a>&#41;
                </div>
             </div>
             <!--
@@ -335,6 +336,14 @@ vér
                </div>
                <div class="divTableCellGlossaire2">
                   Open Financial Exchange est un format de données financières qui permet des échanges entre différents systèmes et logiciels
+               </div>
+            </div>
+			<div class="divTableRow">
+               <div class="divTableCellGlossaire1">
+                  PDF
+               </div>
+               <div class="divTableCellGlossaire2">
+                  Portable Document Format est un langage de description de page qui préserve la mise en page d’un document quels que soient le logiciel, le système d'exploitation et l'ordinateur utilisés pour l’imprimer ou le visualiser
                </div>
             </div>
          </div>
@@ -419,9 +428,9 @@ vér
       </div>
       <div class="process-txt">
          <span class="titre-advice">Renseignez les paramètres de votre exploitation</span>
-         <p>Cliquez sur la clef anglaise<img src="../images/chapitre6/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">dans le "Menu principal" ou sur le bouton "Configuration" de la page d'accueil&nbsp;:</p>
+         <p>Cliquez sur la clef anglaise<img src="../images/chapitre6/wrench2.svg" alt="Clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">dans le "Menu principal" ou sur le bouton "Configuration" de la page d'accueil&nbsp;:</p>
          <p align="center"><img src="../images/chapitre6/wrench.svg" alt="Configuration" width="60"></p>
-         <p>Dans la barre latérale du module, cliquez sur "Société" dans la section "Paramètres" symbolisée par l'icône d'une clef anglaise<img src="../images/chapitre6/wrench3.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher les paramètres de la société.</p>
+         <p>Dans la barre latérale du module, cliquez sur "Société" dans la section "Paramètres" symbolisée par l'icône d'une clef anglaise<img src="../images/chapitre6/wrench3.svg" alt="Clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher les paramètres de la société.</p>
          <p>Remplissez tous les champs pour définir correctement votre exploitation.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/societe1.png" class="contour-img" alt="Paramétrage société" data-action="zoom" />
@@ -472,9 +481,94 @@ vér
          </p>
          <p>Cliquez sur <span class="btn-blue">Modifier</span> pour valider l'opération.</p>
       </div>
-      <h6>Guide de prise en main • Comptabilité • Exercice comptable</h6>
+	   
+	  <h6>Guide de prise en main • Comptabilité • Journaux</h6>
+      <a class="slice-long" id="journaux"></a>
+      <h2 class="texte aerateur">c - Journaux</h2>
+	  <p class="texte">La création d'un nouveau journal peut s'avérer utile voire indispensable dans les cas suivants&nbsp;:</p>
+	  <div class="divTableListe marge">
+         <div class="divTableBody">
+            <div class="divTableRow">
+               <div class="divTableCellPlan" style="width: 10px">
+                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
+               </div>
+               <div class="divTableCellPlan" style="width: auto">
+                  vous souhaitez rassembler dans un même journal les achats et les ventes réalisés auprès d'une même coopérative&nbsp;;
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellPlan">
+                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
+               </div>
+               <div class="divTableCellPlan">
+                  vous souhaitez utiliser un journal particulier pour des achats ou des ventes réalisés dans une devise autre que l'euro &#40;devise sélectionnée lors de la création d'un nouveau journal&#41;&nbsp;;
+               </div>
+            </div>
+			<div class="divTableRow">
+               <div class="divTableCellPlan">
+                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
+               </div>
+               <div class="divTableCellPlan">
+                  vous souhaitez disposer d'un journal pour les ventes réalisées en France et un second pour les ventes effectuées à l'étranger&nbsp;;
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellPlan">
+                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
+               </div>
+               <div class="divTableCellPlan">
+                  vous souhaitez réaliser des <a href="../chapitre6#echanges" target="_self">échanges comptables</a> nécessitant l'utilisation d'un journal des opérations diverses réservé à cet effet.
+               </div>
+            </div>
+         </div>
+      </div>
+      <p align="center" class="texte aerateur procedure">A – Procédure pour créer un journal
+      </p>
+      <p class="texte">
+         Le processus suivant vous guide pour créer un nouveau journal pour les transactions réalisées avec une même coopérative.
+      </p>
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Accédez aux "Journaux"</span>
+         <p>Cliquez sur le lien "Comptabilité" dans le "Menu principal" ou sur le bouton "Comptabilité" de la page d'accueil&nbsp;:</p>
+         <p align="center"><img src="../images/chapitre6/comptabilite.svg" alt="Comptabilité" width="60"></p>
+         <p>Dans la barre latérale du module, cliquez sur "Journaux" dans la section "Journaux" symbolisée par l'icône d'un livre<img src="../images/chapitre6/book.svg" alt="histogramme" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des journaux.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/journal2019-1.png" class="contour-img" alt="Liste des journaux" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Créez un nouveau journal</span>
+         <p>
+            Cliquez sur le bouton "Nouveau" et remplissez tous les champs avec les bonnes informations pour le définir correctement.
+         </p>
+         <p>Nommez de façon explicite le nouveau journal. Vérifiez que le bouton radio<img src="../images/commun/radio.svg" alt="Bouton radio" height="20" class="align-icone icone-marge-gauche icone-marge-droite">est bien activé pour "Ventes".</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/journal2019-2.png" class="contour-img" alt="Nouveau journal" data-action="zoom" />
+         </p>
+         <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez le nouveau journal</span>
+         <p>L'application affiche le nouveau journal et la liste des "Journaux" est également automatiquement enrichie avec celui-ci.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/journal2019-3.png" class="contour-img" alt="Nouveau journal" data-action="zoom" />
+         </p>
+      </div>
+	  
+      <h6>Guide de prise en main • Comptabilité • Exercices comptables</h6>
       <a class="slice-long" id="exercice"></a>
-      <h2 class="texte aerateur">c - Exercice comptable</h2>
+      <h2 class="texte aerateur">d - Exercices comptables</h2>
 	  <p class="texte">À la création de votre ferme, aucun exercice comptable n'est ouvert. Si vous souhaitez gérér votre comptabilité dans Ekylibre, la création d'un premier exercice comptable est requis.</p>
 	  <div class="warn-fond aerateur-haut aerateur-bas">
          <div class="floating-box-warn">
@@ -521,7 +615,7 @@ vér
       </div>
       <div class="process-txt">
          <span class="titre-advice">Renseignez le nouvel exercice comptable</span>
-         <p>Remplissez tous les champs obligatoires signalés par une astérisque de couleur rouge avec les informations requises pour le définir correctement.</p>
+         <p>Remplissez tous les champs obligatoires signalés par une astérisque de couleur rouge avec les informations requises pour le définir correctement. Sélectionnez un comptable ou créez-en un à la volée en sélectionnant "Ajouter un nouvel enregistrement" dans la liste déroulante si vous envisagez de réaliser des <a href="../chapitre6#echanges" target="_self">échanges comptables</a>.</p>
          <p class="max-img-process"><img src="../images/chapitre6/exo2019-4.png" class="contour-img" alt="Liste des exercices comptables" data-action="zoom" /></p>
 		 <p>L'article 73 du code général des impôts fixe à douze mois la durée de l'exercice comptable des exploitants agricoles soumis à un régime réel d'imposition, sans que cet exercice soit nécessairement aligné sur l'année civile.</p>
       	 <p>Généralement, la date de clôture de l'exercice comptable retenue &#40;31 décembre&#41; coïncide avec la fin de l'année civile, mais ce n'est pas une obligation. Une date clôturant un trimestre civil &#40;31 mars, 30 juin…&#41; est également souvent choisie pour des raisons de simplicité.</p>
@@ -556,7 +650,7 @@ vér
 	  -->
       <h6>Guide de prise en main • Comptabilité • Plan de comptes</h6>
       <a class="slice-long" id="plan"></a>
-      <h2 class="texte aerateur">d - Plan de comptes</h2>
+      <h2 class="texte aerateur">e - Plan de comptes</h2>
       <div class="config margin-config">
          <p>
             <img src="../images/commun/parcours.svg" height="55" alt="Icône parcours"/>
@@ -665,10 +759,10 @@ vér
       <div class="process-txt">
          <span class="titre-advice">Affichez le plan de comptes</span>
          <p>
-            Cliquez sur la clef anglaise<img src="../images/chapitre6/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite"> dans le "Menu principal" ou sur le bouton "Configuration" de la page d'accueil&nbsp;:
+            Cliquez sur la clef anglaise<img src="../images/chapitre6/wrench2.svg" alt="Clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite"> dans le "Menu principal" ou sur le bouton "Configuration" de la page d'accueil&nbsp;:
          </p>
          <p align="center"><img src="../images/chapitre6/wrench.svg" alt="Configuration" width="60"></p>
-         <p>Dans la barre latérale du module, cliquez sur "Plan de comptes" dans la section "Comptabilité" symbolisée par l'icône d'un billet<img src="../images/chapitre6/money.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des comptes comptables.</p>
+         <p>Dans la barre latérale du module, cliquez sur "Plan de comptes" dans la section "Comptabilité" symbolisée par l'icône d'un billet<img src="../images/chapitre6/money.svg" alt="Billet" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des comptes comptables.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/plan1.png" class="contour-img" alt="Plan de comptes" data-action="zoom" />
          </p>
@@ -699,7 +793,7 @@ vér
       </div>
       <h6>Guide de prise en main • Comptabilité • TVA</h6>
       <a class="slice-long" id="tva"></a>
-      <h2 class="texte aerateur">e - TVA</h2>
+      <h2 class="texte aerateur">f - TVA</h2>
       <div class="config margin-config">
          <p>
             <img src="../images/commun/parcours.svg" height="55" alt="Icône parcours"/>
@@ -806,10 +900,10 @@ vér
       <div class="process-txt">
          <span class="titre-advice">Affichez les taxes</span>
          <p>
-            Cliquez sur la clef anglaise<img src="../images/chapitre6/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite"> dans le "Menu principal" ou sur le bouton "Configuration" de la page d'accueil&nbsp;:
+            Cliquez sur la clef anglaise<img src="../images/chapitre6/wrench2.svg" alt="Clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite"> dans le "Menu principal" ou sur le bouton "Configuration" de la page d'accueil&nbsp;:
          </p>
          <p align="center"><img src="../images/chapitre6/wrench.svg" alt="Configuration" width="60"></p>
-         <p>Dans la barre latérale du module, cliquez sur "Taxes" dans la section "Comptabilité" symbolisée par l'icône d'un billet<img src="../images/chapitre6/money.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des taux de TVA, puis cliquez sur le bouton "Nouveau".</p>
+         <p>Dans la barre latérale du module, cliquez sur "Taxes" dans la section "Comptabilité" symbolisée par l'icône d'un billet<img src="../images/chapitre6/money.svg" alt="Billet" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des taux de TVA, puis cliquez sur le bouton "Nouveau".</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/tva1-2019.png" class="contour-img" alt="Taux de TVA" data-action="zoom" />
          </p>
@@ -843,10 +937,10 @@ vér
       <div class="process-txt">
          <span class="titre-advice">Affichez les taxes</span>
          <p>
-            Cliquez sur la clef anglaise<img src="../images/chapitre6/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite"> dans le "Menu principal" ou sur le bouton "Configuration" de la page d'accueil&nbsp;:
+            Cliquez sur la clef anglaise<img src="../images/chapitre6/wrench2.svg" alt="Clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite"> dans le "Menu principal" ou sur le bouton "Configuration" de la page d'accueil&nbsp;:
          </p>
          <p align="center"><img src="../images/chapitre6/wrench.svg" alt="Configuration" width="60"></p>
-         <p>Dans la barre latérale du module, cliquez sur "Taxes" dans la section "Comptabilité" symbolisée par l'icône d'un billet<img src="../images/chapitre6/money.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des taux de TVA.</p>
+         <p>Dans la barre latérale du module, cliquez sur "Taxes" dans la section "Comptabilité" symbolisée par l'icône d'un billet<img src="../images/chapitre6/money.svg" alt="Billet" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des taux de TVA.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/tva4-2019.png" class="contour-img" alt="Taux de TVA" data-action="zoom" />
          </p>
@@ -864,16 +958,112 @@ vér
             <img src="../images/chapitre6/tva5-2019.png" class="contour-img" alt="Taux de TVA" data-action="zoom" />
          </p>
       </div>
+	  <h6>Guide de prise en main • Comptabilité • Déclaration de TVA</h6>
+      <a class="slice-long" id="declaration"></a>
+	  <p align="center" class="texte aerateur procedure">C – Procédure pour produire une déclaration de TVA
+      </p>
+      <p class="texte">
+         Le processus suivant vous guide pour pour produire une déclaration de TVA.
+      </p>
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez les taxes</span>
+         <p>Cliquez sur le lien "Comptabilité" dans le "Menu principal" ou sur le bouton "Comptabilité" de la page d'accueil&nbsp;:</p>
+         <p align="center"><img src="../images/chapitre6/comptabilite.svg" alt="Comptabilité" width="60"></p>
+         <p>Dans la barre latérale du module, cliquez sur "Déclarations TVA" dans la section "TVA" symbolisée par l'icône d'un engrenage<img src="../images/chapitre6/cog-black.svg" alt="Engrenage" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des déclarations de TVA.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/declar-tva1.png" class="contour-img" alt="Déclarations TVA" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Créez une nouvelle déclaration</span>
+         <p>Cliquez sur le bouton "Nouveau" et sélectionnez l'exercice comptable de votre choix dans la liste déroulante, puis patientez quelques instants.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/declar-tva2.png" class="contour-img" alt="Création nouvelle déclaration de TVA" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez la nouvelle déclaration</span>
+         <p>La pastille rouge<img src="../images/commun/marker.svg" alt="Notification" height="20" class="align-icone icone-marge-gauche icone-marge-droite">en haut à droite de la cloche<img src="../images/commun/bell-o-blue.svg" alt="Cloche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">vous indique qu'une opération interne a été effectuée par l'application. Cliquez sur celle-ci pour afficher la notification, puis cliquez sur le lien "La déclaration de TVA a été générée avec succès" pour afficher la déclaration.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/declar-tva3.png" class="contour-img" alt="Création nouvelle déclaration de TVA" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step4.svg" alt="4" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Validez la nouvelle déclaration</span>
+         <p>La nouvelle déclaration de TVA est présentée en mode "Brouillon". À ce stade, elle est encore modifiable par l'utilisateur.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/declar-tva4.png" class="contour-img" alt="Déclaration de TVA" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step5.svg" alt="5" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Modifiez le statut de la déclaration</span>
+         <p>Modifiez son statut en cliquant sur <span class="step step-orange">&nbsp;Validée&nbsp;</span> dès validation par vos soins ou par votre comptable. À ce stade, elle est encore supprimable par l'utilisateur.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/declar-tva5.png" class="contour-img" alt="Modification statut déclaration" data-action="zoom" />
+         </p>
+		 <p>Modifiez son statut en cliquant sur <span class="step step-orange">&nbsp;Envoyée&nbsp;</span> dès que la déclaration à été transmise à l'administration fiscale. Elle est alors verrouillée et ne peut plus être supprimée. La déclaration est alors enregistrée en comptabilité avec une nouvelle écriture &#40;à valider&#41; dans le brouillard du journal des taxes.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre6/declar-tva6.png" class="contour-img" alt="Modification statut déclaration" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step6.svg" alt="6" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Générez la déclaration de TVA</span>
+         <p>Cliquez sur le bouton "Exporter" et sélectionnez le format de fichier &#40;PDF ou CSV&#41; dans la liste déroulante.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/declar-tva7.png" class="contour-img" alt="Export déclaration de TVA" data-action="zoom" />
+         </p>
+		 <p>Patientez quelques instants, la pastille rouge<img src="../images/commun/marker.svg" alt="Notification" height="20" class="align-icone icone-marge-gauche icone-marge-droite">en haut à droite de la cloche<img src="../images/commun/bell-o-blue.svg" alt="Cloche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">vous indique qu'une opération interne a été effectuée par l'application. Cliquez sur celle-ci pour afficher la notification, puis cliquez sur le lien "Votre fichier a été généré avec succès" pour afficher la déclaration.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre6/declar-tva8.png" class="contour-img" alt="Notification export déclaration" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step7.svg" alt="7" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Téléchargez la déclaration de TVA</span>
+         <p>Cliquez sur la vignette pour afficher le document au format PDF dans votre navigateur ou pour enregistrer le déclaration au format CSV dans le dossier des téléchargements de votre navigateur.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/declar-tva9.png" class="contour-img" alt="Export déclaration de TVA" data-action="zoom" />
+         </p>
+		 <p>Notez que le document reste accessible à tout moment via le lien "Gestion électronique des documents" dans la section "Archives"<img src="../images/commun/archive.svg" alt="Archives" height="20" class="align-icone icone-marge-gauche icone-marge-droite">du module "Outils".</p>
+      </div>
       <h6>Guide de prise en main • Comptabilité • Compte bancaire</h6>
       <a class="slice-long" id="compte"></a>
-      <h2 class="texte aerateur">f - Compte bancaire</h2>
+      <h2 class="texte aerateur">g - Compte bancaire</h2>
       <div class="config margin-config">
          <p>
             <img src="../images/commun/parcours.svg" height="55" alt="Icône parcours"/>
          </p>
          <p class="majuscule">
             configuration à faire pour
-            <img class="align-icone icone-marge-gauche" src="../images/commun/tacheC.svg" width="20" alt="C">
+            <img class="align-icone icone-marge-gauche icone-marge-droite" src="../images/commun/tacheA.svg" width="20" alt="A">
+            &amp;
+            <img class="align-icone icone-marge-gauche" src="../images/commun/tacheC.svg" width="20" alt="D">
          </p>
       </div>
       <p class="texte">
@@ -893,7 +1083,7 @@ vér
             Cliquez sur le lien "Comptabilité" dans le "Menu principal" ou sur le bouton "Comptabilité" de la page d'accueil&nbsp;:
          </p>
          <p align="center"><img src="../images/chapitre6/comptabilite.svg" alt="Comptabilité" width="60"></p>
-         <p>Dans la barre latérale du module, cliquez sur "Trésoreries" dans la section "Trésorerie" symbolisée par l'icône d'un billet<img src="../images/chapitre6/money.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des moyens d'encaissement/décaissement.</p>
+         <p>Dans la barre latérale du module, cliquez sur "Trésoreries" dans la section "Trésorerie" symbolisée par l'icône d'un billet<img src="../images/chapitre6/money.svg" alt="Billet" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des moyens d'encaissement/décaissement.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/tresorerie1.png" class="contour-img" alt="Moyens d'encaissement/décaissement" data-action="zoom" />
          </p>
@@ -939,7 +1129,7 @@ vér
       </div>
       <h6>Guide de prise en main • Comptabilité • Échanges comptables</h6>
       <a class="slice-long" id="echanges"></a>
-      <h2 class="texte aerateur">g - Échanges comptables</h2>
+      <h2 class="texte aerateur">h - Échanges comptables</h2>
       <p align="center" class="texte"><img src="../images/commun/option.svg" height="55" alt="Optionnel"></p>
       <p class="texte">Ekylibre permet d'échanger des données comptables entre l'administrateur de la ferme et son expert comptable ou son centre de gestion en toute sécurité. Vous pouvez exporter et partager vos données sans interrompre votre travail et sans risque d'incohérence. Réciproquement, vous pouvez intégrer les validations ou corrections réalisées par un tiers.</p>
       <div class="warn-fond users-orange aerateur-haut aerateur-bas">
@@ -1008,7 +1198,7 @@ vér
       <div class="process-txt">
          <span class="titre-advice">Affichez les exercices comptables</span>
          <p>Cliquez sur le lien "Comptabilité" dans le "Menu principal" ou sur le bouton "Comptabilité" de la page d'accueil&nbsp;:</p>
-         <p align="center"><img src="../images/chapitre6/comptabilite.svg" alt="Cmptabilité" width="60"></p>
+         <p align="center"><img src="../images/chapitre6/comptabilite.svg" alt="Comptabilité" width="60"></p>
          <p>Dans la barre latérale du module, cliquez sur "Exercices comptables" dans la section "Synthèses" symbolisée par l'icône d'un tableau<img src="../images/chapitre6/table.svg" alt="Tableau" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des exercices comptables.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/echange1.png" class="contour-img" alt="Liste des exercices comptables" data-action="zoom" />
@@ -1031,7 +1221,7 @@ vér
       </div>
       <div class="process-txt">
          <span class="titre-advice">Modifiez l'exercice comptable</span>
-         <p>Sélectionnez, parmi les tiers disponibles dans la liste déroulante, votre comptable ou créez en un à la volée en choisissant "Ajouter un nouvel enregistrement".</p>
+         <p>Sélectionnez, parmi les tiers disponibles dans la liste déroulante, votre comptable ou créez-en un à la volée en choisissant "Ajouter un nouvel enregistrement".</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/echange3.png" class="contour-img" alt="Affectation d'un comptable" data-action="zoom" />
          </p>
@@ -1126,9 +1316,72 @@ vér
             <p class="texte-advice">Vous pouvez créer un accès pour votre expert comptable ou votre centre de gestion avec les autorisations nécessaires pour lui permettre de visualiser et de modifier les données comptables de votre exploitation à distance. Référez-vous au <a href="../chapitre11" class="avoid-clicks" target="_self">chapitre 11 - Accès</a> pour connaître les procédures à suivre.</p>
          </div>
       </div>
+	  <h6>Guide de prise en main • Comptabilité • Balance</h6>
+      <a class="slice-long" id="balance"></a>
+      <h2 class="texte aerateur">i - Balance</h2>
+      <p class="texte">La balance comptable est un état d'une période, établi à partir de la liste de tous les comptes du Grand-livre, le grand journal de l'entreprise &#40;qu'ils soient de bilan ou de gestion&#41; et regroupant tous les totaux &#40;ou masses&#41; en débit et crédit de ces comptes et par différence tous les soldes débiteurs et créditeurs.</p>
+	  <p align="center" class="texte aerateur procedure">A – Procédure pour produire la balance
+      </p>
+      <p class="texte">
+         Le processus suivant vous guide pour produire la balance pour une période donnée.
+      </p>
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Accédez aux options de la balance</span>
+         <p>Cliquez sur le lien "Comptabilité" dans le "Menu principal" ou sur le bouton "Comptabilité" de la page d'accueil&nbsp;:</p>
+         <p align="center"><img src="../images/chapitre6/comptabilite.svg" alt="Comptabilité" width="60"></p>
+         <p>Dans la barre latérale du module, cliquez sur "Balance" dans la section "Synthèses" symbolisée par l'icône d'un tableau<img src="../images/chapitre6/table.svg" alt="Tableau" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher le filtre d'obtention de la nouvelle balance sur une période&nbsp;:</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/balance1.png" class="contour-img" alt="Balance sur période" data-action="zoom" />
+         </p>
+		 <p>ou pour un mois donné&nbsp;:</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre6/balance2.png" class="contour-img" alt="Balance sur un mois" data-action="zoom" />
+         </p>
+		 <p>Notez que pouvez affiner vos critères de recherche en dépliant les options grâce au bouton<img src="../images/commun/plus-square-o.svg" alt="moins" height="15" class="icone-marge-gauche icone-marge-droite">à droite de la fenêtre&nbsp;:</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre6/balance3.png" class="contour-img" alt="Recherche avancée" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Sélectionnez la période</span>
+         <p>Dans la liste déroulante, sélectionnez la période de votre choix parmi celles disponibles.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/balance4.png" class="contour-img" alt="Balance sur période" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Obtenez la balance</span>
+         <p>Cliquez sur le bouton "Rechercher" pour afficher la balance.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/balance5.png" class="contour-img" alt="Balance sur période" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step4.svg" alt="4" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Exportez la balance</span>
+         <p>Cliquez sur le bouton "Exporter" et sélectionnez le format de fichier &#40;ODS, CSV, CSV pour Excel ou PDF&#41; dans la liste déroulante pour télécharger le nouveau document dans le format de votre choix.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/balance6.png" class="contour-img" alt="Balance sur période" data-action="zoom" />
+         </p>
+      </div>
+      <br />
       <h6>Guide de prise en main • Comptabilité • Grand-Livre</h6>
       <a class="slice-long" id="grand-livre"></a>
-      <h2 class="texte aerateur">h - Grand-livre</h2>
+      <h2 class="texte aerateur">j - Grand-livre</h2>
       <p class="texte">Un grand-livre est la transcription sur un document unique de la totalité des mouvements de comptabilité d’une exploitation. Ces mouvements sont classés par compte, dans l'ordre de numéro prévu par le plan comptable.</p>
       <p class="texte"><strong>Que doit contenir le grand-livre&nbsp;?</strong></p>
       <p class="texte">Le grand-livre doit obligatoirement faire mention de plusieurs éléments. Il doit établir la liste des comptes, classés dans l'ordre de leurs numéros, en donnant pour chacun d'eux les informations suivantes&nbsp;:</p>
