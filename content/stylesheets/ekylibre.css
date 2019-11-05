@@ -943,6 +943,16 @@ a:visited {
 	vertical-align: middle;
 }
 
+/*Tableau statut exercices comptables*/
+
+.divTableCellExo,
+.divTableHeadExo {
+	display: table-cell;
+	padding: 5px 0;
+	text-align: left;
+	vertical-align: top;
+}
+
 
 /*Tableau listes diverses*/
 

@@ -294,12 +294,12 @@
                   </div>
                </div>
                -->
-			<div class="divTableRow">
+            <div class="divTableRow">
                <div class="divTableCellListe" style="width: 14px">
                   <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
                </div>
                <div class="divTableCellListe" style="width: auto">
-				  Comment enregistrer des <a href="#immobilisations" class="avoid-clicks">immobilisations</a> et passer les amortissements en écriture
+                  Comment enregistrer des <a href="#emprunts" class="avoid-clicks">emprunts</a> et passer les remboursements en écriture
                </div>
             </div>
             <div class="divTableRow">
@@ -307,15 +307,39 @@
                   <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
                </div>
                <div class="divTableCellListe" style="width: auto">
-                  Comment enregistrer des fichiers à destination de tiers &#40;administration, <a href="#echanges" class="avoid-clicks">comptable</a>&#41; et/ou intégrer des données &#40;banque&#41;
+                  Comment enregistrer des <a href="#immobilisations" class="avoid-clicks">immobilisations</a> et passer les amortissements en écriture
                </div>
             </div>
-			<div class="divTableRow">
+            <div class="divTableRow">
                <div class="divTableCellListe" style="width: 14px">
                   <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
                </div>
                <div class="divTableCellListe" style="width: auto">
-				  Comment produite la <a href="../chapitre6#balance" target="_self">balance</a> et le <a href="../chapitre6#grand-livre" target="_self">Grand-livre</a>
+                  Comment produire des <a href="#declaration" class="avoid-clicks">déclarations de TVA</a> à destination de l'administration fiscale
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellListe" style="width: 14px">
+                  <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
+               </div>
+               <div class="divTableCellListe" style="width: auto">
+                  Comment réaliser des <a href="#echanges" class="avoid-clicks">échanges comptables</a> afin de faire valider les écritures par un organisme tiers
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellListe" style="width: 14px">
+                  <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
+               </div>
+               <div class="divTableCellListe" style="width: auto">
+                  Comment procéder à la <a href="#cloture" class="avoid-clicks">clôture</a> d'un exercice comptable
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellListe" style="width: 14px">
+                  <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
+               </div>
+               <div class="divTableCellListe" style="width: auto">
+                  Comment produite la <a href="../chapitre6#balance" target="_self">balance</a> et le <a href="../chapitre6#grand-livre" target="_self">Grand-livre</a>
                </div>
             </div>
          </div>
@@ -333,6 +357,14 @@
             </div>
             <div class="divTableRow">
                <div class="divTableCellGlossaire1">
+                  CSV
+               </div>
+               <div class="divTableCellGlossaire2">
+                  un fichier CSV est un fichier texte où chaque ligne du texte correspond à une ligne d'un tableau et les virgules correspondent aux séparations entre les colonnes
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellGlossaire1">
                   FEC
                </div>
                <div class="divTableCellGlossaire2" style="width: 100%">
@@ -341,10 +373,10 @@
             </div>
             <div class="divTableRow">
                <div class="divTableCellGlossaire1">
-                  CSV
+                  Fenêtre modale
                </div>
-               <div class="divTableCellGlossaire2">
-                  un fichier CSV est un fichier texte où chaque ligne du texte correspond à une ligne d'un tableau et les virgules correspondent aux séparations entre les colonnes
+               <div class="divTableCellGlossaire2" style="width: 100%">
+                  dans une interface graphique, c'est une fenêtre qui prend le contrôle total du clavier et de l'écran. Elle est en général associée à une question ou à une sélection à laquelle il est impératif que l'utilisateur réponde avant de poursuivre, ou de modifier quoi que ce soit
                </div>
             </div>
             <div class="divTableRow">
@@ -366,7 +398,7 @@
          </div>
       </div>
       <p class="texte aerateur-bas">Le symbole<img src="../images/commun/option-small.svg" class="align-icone icone-marge-gauche" height="30" alt="Optionnel">dans ce chapitre vous indique une procédure pour utiliser une fonctionnalité avancée dans l'application.</p>
-      <p class="texte aerateur-bas">Les dispositions du plan comptable général sont applicables à toute personne physique ou morale soumise à l’obligation légale d’établir des comptes annuels, sous réserve de dispositions spécifiques.<br />Un&#40;e&#41; agriculteur·rice étant de plus en plus amené&#40;e&#41; à réaliser des opérations commerciales, l'application est capable de répondre à ses contraintes et obligations vis-à-vis de la tenue de la comptabilité.</p>
+      <p class="texte aerateur-bas">Les dispositions du plan comptable général et du plan comptable agricole sont applicables à toute personne physique ou morale soumise à l’obligation légale d’établir des comptes annuels, sous réserve de dispositions spécifiques.<br />Un&#40;e&#41; agriculteur·rice étant de plus en plus amené&#40;e&#41; à réaliser des opérations commerciales, l'application est capable de répondre à ses contraintes et obligations vis-à-vis de la tenue de la comptabilité.</p>
       <div class="affichage-large"></div>
       <div class="affichage-mobile">
          <p align="center">
@@ -596,8 +628,7 @@
             <img src="../images/chapitre6/verroux-exo.png" class="contour-img" alt="Verrouillage création exercice" data-action="zoom" />
          </div>
       </div>
-      <p align="center" class="texte aerateur procedure">A – Procédure pour ouvrir un exercice comptable
-      </p>
+      <p align="center" class="texte aerateur procedure">A – Procédure pour ouvrir un exercice comptable</p>
       <p class="texte">
          Le processus suivant vous guide pour créer un nouvel exercice comptable.
       </p>
@@ -672,7 +703,134 @@
             <img src="../images/chapitre6/exo2019-6.png" class="contour-img" alt="Activation déclarations fiscales" data-action="zoom" />
          </p>
          <p>En fonction de l'évolution de votre comptabilité dans Ekylibre, un exercice peut avoir le statut&nbsp;:</p>
-         <p><span class="statut-vert">&nbsp;Ouvert&nbsp;</span>, <span class="statut-orange">&nbsp;Clôture en préparation&nbsp;</span>, <span class="statut-rouge">&nbsp;Clôturé&nbsp;</span> ou <span class="statut-rouge">&nbsp;Verrouillé&nbsp;</span>.</p>
+         <div class="divTableListe">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellExo">
+                     <span class="statut-vert">&nbsp;Ouvert&nbsp;</span>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellExo">
+                     <span class="statut-orange">&nbsp;Clôture en préparation&nbsp;</span>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellExo">
+                     <span class="statut-orange">&nbsp;Clôture en cours&nbsp;</span>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellExo">
+                     <span class="statut-rouge">&nbsp;Clôturé&nbsp;</span>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellExo">
+                     <span class="statut-rouge">&nbsp;Verrouillé&nbsp;</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <h6>Guide de prise en main • Comptabilité • Clôture d'un exercice</h6>
+      <a class="slice-long" id="cloture"></a>
+      <p align="center" class="texte aerateur procedure">B – Procédure pour clôturer un exercice comptable</p>
+      <p class="texte">Par la clôture des comptes, nommée clôture comptable, vous enregistrez des écritures comptables. Ces écritures comptables définissent et actent la fin de votre exercice comptable, afin de pouvoir commencer votre exercice de l’année suivante. C’est seulement en déposant, en présentant vos comptes annuels que vous pouvez passer d’un exercice comptable à l’autre.</p>
+      <p class="texte">
+         Le processus suivant vous guide pour clôturer un exercice comptable.
+      </p>
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Accédez aux exercices comptables</span>
+         <p>
+            Cliquez sur le lien "Comptabilité" dans le "Menu principal" ou sur le bouton "Comptabilité" de la page d'accueil&nbsp;:
+         </p>
+         <p align="center"><img src="../images/chapitre6/comptabilite.svg" alt="Comptabilité" width="60"></p>
+         <p>Dans la barre latérale du module, cliquez sur "Exercices comptables" dans la section "Synthèses" symbolisée par l'icône d'un tableau<img src="../images/chapitre6/table.svg" alt="Tableau" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des exercices.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/cloture1.png" class="contour-img" alt="Exercices comptables" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Préparez la clôture</span>
+         <p>Cliquez sur le bouton "Préparer la clôture de EX20XX". Notez qu'il n'est pas possible de clôturer un exercice si le précédent n'a pas été clôturé ou verrouillé. Il n'est évidemment pas possible non plus de clôturer un exercice avant sa date de fin.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/cloture2.png" class="contour-img" alt="Préparation de la clôture" data-action="zoom" />
+         </p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/cloture3.png" class="contour-img" alt="Préparation de la clôture" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Lancez la clôture de l'exercice</span>
+         <p>Cliquez sur le bouton "Clôturer EX20XX" pour afficher le tableau de bord de la clôture.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/cloture4.png" class="contour-img" alt="Clôture de l'exercice" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step4.svg" alt="4" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Contrôlez les indicateurs de clôture</span>
+         <p>Une liste d'alertes et de messages vous informent automatiquement des éventuelles vérifications et corrections à faire pour permettre à la clôture de se dérouler correctement. Notez qu'ils ne sont pas tous bloquants mais une fois l'opération terminée, il ne sera plus possible de faire marche arrière.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/cloture5.png" class="contour-img" alt="Exercices comptables" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step5.svg" alt="5" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Paramétrez la clôture</span>
+         <p>Une fois que les indicateurs confirment l'absence de données bloquantes &#40;aucun indicateur de couleur rouge&#41;, vous pouvez terminer le paramétrage de la clôture&nbsp;:</p>
+         <p>Affectez le résultat de l'exercice &#40;perte ou bénéfice&#41; aux comptes prévus à cet effet selon les dispositions légales &#40;nécessite d'avoir sélectionné la forme juridique de l'entreprise ou de l'exploitation dans les <a href="#societe" class="avoid-clicks">paramètres de la société</a>&#41;.</p>
+         <p>Demandez la création optionnelle des journaux de résultat, de clôture et de reports à nouveaux via les listes déroulantes de la section "Paramètres de clôture".</p>
+         <p>Cochez enfin la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">devant la mention "Je certifie que mes comptes ont été révisés par la personne compétente."</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/cloture6.png" class="contour-img" alt="Exercices comptables" data-action="zoom" />
+         </p>
+         <p>Cliquez sur <span class="btn-blue">Clôturer l'exercice</span> pour valider l'opération.</p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step6.svg" alt="6" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Clôturez l'exercice</span>
+         <p>Patientez quelques instants, la barre de progression vous informe de l'avancée et affiche les stades de la clôture en cours de réalisation.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/cloture7.png" class="contour-img" alt="Clôture en progression" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step7.svg" alt="7" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Téléchargez les archives</span>
+         <p>Une fois l'exercice clôturé, la pastille rouge<img src="../images/commun/marker.svg" alt="Notification" height="20" class="align-icone icone-marge-gauche icone-marge-droite">en haut à droite de la cloche<img src="../images/commun/bell-o-blue.svg" alt="Cloche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">vous indique qu'une opération interne a été effectuée par l'application.</p>
+         <p>Vous pouvez télécharger les archives ZIP avant et après clôture, signées numériquement. Ces archives comprennent les documents obligatoires de la clôture que sont la balance, le Grand-livre et les journaux.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/cloture8.png" class="contour-img" alt="Exercice clôturé" data-action="zoom" />
+         </p>
+         <p>Dépliez l'accordéon et cliquez sur le lien "Vérifier la signature" pour contrôler sur le site ekylibre.com l'authenticité et l'intégrité des documents comptables &#40;avec copie automatique de la clé de sécurité&#41;.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/cloture9.png" class="contour-img" alt="Mise à disposition des archives" data-action="zoom" />
+         </p>
       </div>
       <!--
          <p class="texte aerateur-haut">Les exercices comptables créés dans Ekylibre dépendent des informations renseignées dans l'assistant de démarrage. Si vous avez saisi la date de création de l'exploitation, l'application a créé autant d'exercices comptables que d'années d'ancienneté. Si vous n'avez pas renseigné la date de création, l'application a créé automatiquement dix exercices &#40;un pour l'année en cours et neuf pour les années précédentes&#41;. Vous pouvez supprimer les exercices inutiles mais nous vous conseillons d'en conserver quand même un ou deux pour prendre en main certaines fonctionnalités de l'application.</p>
@@ -777,6 +935,17 @@
          </div>
       </div>
       <p class="texte">Ces différences sont adaptées aux besoins des comptables et des centres de gestion pour un type d'activité spécifique qu'est le secteur agricole.</p>
+      <div class="info-fond magic-green aerateur">
+         <div class="floating-box-info">
+            <img src="../images/commun/info.svg" width="100" alt="Info"/>
+         </div>
+         <div class="info-txt">
+            <span class="titre-advice">Import de plan de compte<br /></span>
+            <p class="texte-advice">
+               La préparation des fichiers et la procédure pour réaliser l'import d'un plan de comptes dans l'application est expliqué à la fin de ce guide au <a href="../chapitre12" class="avoid-clicks">chapitre 12 - Outils</a>.
+            </p>
+         </div>
+      </div>
       <p align="center" class="texte aerateur procedure">A – Procédure pour ajouter un ou plusieurs comptes
       </p>
       <p class="texte">
@@ -1156,10 +1325,12 @@
          </p>
          <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
       </div>
-	  <p align="center" class="texte aerateur procedure">B – Procédure pour paramétrer un emprunt bancaire
+      <h6>Guide de prise en main • Comptabilité • Emprunts</h6>
+      <a class="slice-long" id="emprunts"></a>
+      <p align="center" class="texte aerateur procedure">B – Procédure pour enregistrer un emprunt bancaire
       </p>
       <p class="texte">
-         Le processus suivant vous guide pour paramétrer un emprunt bancaire.
+         Le processus suivant vous guide pour enregistrer un emprunt bancaire.
       </p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
@@ -1175,31 +1346,31 @@
             <img src="../images/chapitre6/emprunt1.png" class="contour-img" alt="Liste des emprunts" data-action="zoom" />
          </p>
       </div>
-	  <br />
-	  <div class="floating-box process">
+      <br />
+      <div class="floating-box process">
          <img src="../images/commun/step2.svg" alt="2" width="52" />
       </div>
       <div class="process-txt">
          <span class="titre-advice">Renseignez le nouvel emprunt</span>
-         <p>Remplissez tous les champs avec les bonnes informations pour le définir correctement. </p>
+         <p>Remplissez tous les champs avec les bonnes informations et cochez les cases appropriées pour le définir correctement. Si besoin, consultez l'organisme prêteur pour obtenir de plus amples précisions si des doutes subsistent quant à la sélection de certaines options.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/emprunt2.png" class="contour-img" alt="Nouvel emprunt" data-action="zoom" />
          </p>
       </div>
-	  <br />
-	  <div class="floating-box process">
+      <br />
+      <div class="floating-box process">
          <img src="../images/commun/step3.svg" alt="3" width="52" />
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Renseignez le informations comptables</span>
-         <p>Remplissez tous les champs avec les bonnes informations pour le définir correctement. </p>
+         <span class="titre-advice">Sélectionnez les informations comptables</span>
+         <p>Choisissez dans les listes déroulantes les comptes comptables qui seront impactés par le nouvel emprunt. </p>
          <p class="max-img-process">
             <img src="../images/chapitre6/emprunt3.png" class="contour-img" alt="Nouvel emprunt" data-action="zoom" />
          </p>
-		 <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
+         <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
       </div>
-	  <br />
-	  <div class="floating-box process">
+      <br />
+      <div class="floating-box process">
          <img src="../images/commun/step4.svg" alt="4" width="52" />
       </div>
       <div class="process-txt">
@@ -1208,36 +1379,45 @@
          <p class="max-img-process">
             <img src="../images/chapitre6/emprunt4.png" class="contour-img" alt="Nouvel emprunt en mode brouillon" data-action="zoom" />
          </p>
-		 <p>Vous êtes également informé via un tableau des remboursements et un graphique de l'évolution chronologique des sommes dues.</p>
-		 <p class="max-img-process">
+         <p>Vous êtes également informé&#40;e&#41; via un tableau des remboursements et grâce à un graphique de l'évolution chronologique des sommes dues.</p>
+         <p class="max-img-process">
             <img src="../images/chapitre6/emprunt5.png" class="contour-img" alt="Nouvel emprunt en mode brouillon" data-action="zoom" />
          </p>
       </div>
-	  <br />
-	  <div class="floating-box process">
+      <br />
+      <div class="floating-box process">
          <img src="../images/commun/step5.svg" alt="5" width="52" />
       </div>
       <div class="process-txt">
          <span class="titre-advice">Modifiez le statut de l'emprunt</span>
-         <p>Cliquez sur le bouton <span class="step step-vert">&nbsp;En cours&nbsp;</span> pour modifier le statut de l'emprunt et validez votre choix.</p>
+         <p>Cliquez sur le bouton <span class="step step-vert">&nbsp;En cours&nbsp;</span> pour modifier le statut de l'emprunt et validez votre choix dans la <span class="tooltip">fenêtre modale<span class="tooltiptext tooltip-top">Voir glossaire</span></span>.</p>
          <p class="max-img-process">
-            <img src="../images/chapitre6/emprunt6.png" class="contour-img" alt="Nouvel emprunt en cours" data-action="zoom" />
+            <img src="../images/chapitre6/emprunt6.png" class="contour-img" alt="Validation du statut" data-action="zoom" />
          </p>
-      </div>
-	  <br />
-	  <div class="floating-box process">
-         <img src="../images/commun/step5.svg" alt="5" width="52" />
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Passez les écritures comptables</span>
-         <p>Aux dates adéquates et pour chaque exercice comptable, revenez à la liste des emprunts et cochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">devant le nom de l'emprunt pour le sélectionner. Cliquez ensuite sur le bouton "Passer en comptabilité" pour passer les écritures de l'emprunt dans le brouillard du journal de banque.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/emprunt7.png" class="contour-img" alt="Nouvel emprunt en cours" data-action="zoom" />
          </p>
-		 <p>Dans le tableau des remboursements et suite à chaque passage en comptabilité, les cases<img src="../images/commun/check-square-o.svg" alt="Case cochée" height="20" class="align-icone icone-marge-gauche icone-marge-droite">de la colonne "Comptabilisable" seront progressivement cochées.</p><p>La clôture ou le verrouillage d'un exercice comptable verrouille les écritures des remboursements qui est indiqué par la case cochée<img src="../images/commun/check-square-o.svg" alt="Case cochée" height="20" class="align-icone icone-marge-gauche icone-marge-droite">dans la colonne "Verrouillé".</p>
-		 <p class="max-img-process">
-            <img src="../images/chapitre6/emprunt8.png" class="contour-img" alt="Tableau des remboursements" data-action="zoom" />
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step6.svg" alt="6" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Passez les écritures comptables</span>
+         <p>Pour chaque exercice comptable &#40;présent et à venir&#41;, revenez à la liste des emprunts et cochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">devant le nom de l'emprunt pour le sélectionner. Cliquez ensuite sur le bouton "Passer en comptabilité" pour passer les écritures de l'emprunt dans le brouillard du journal de banque.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/emprunt8.png" class="contour-img" alt="Nouvel emprunt en cours" data-action="zoom" />
          </p>
+         <p>Un message de confirmation vous informe de la bonne exécution de la tâche.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/emprunt9.png" class="contour-img" alt="Message de confirmation" data-action="zoom" />
+         </p>
+         <p>Dans le tableau des remboursements et suite à chaque passage en comptabilité, les cases de la colonne "Comptabilisable" seront progressivement cochées<img src="../images/commun/check-square-o.svg" alt="Case cochée" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour indiquer les écritures dans le brouillard du journal de banque.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/emprunt10.png" class="contour-img" alt="Tableau des remboursements" data-action="zoom" />
+         </p>
+         <p>Dès qu'un exercice comptable est verrouillé ou clôturé, les cases dans la colonne "Verrouillé" des remboursements concernés sont alors cochées<img src="../images/commun/check-square-o.svg" alt="Case cochée" height="20" class="align-icone icone-marge-gauche">, indiquant que les écritures dans le brouillard du journal de banque ont été définitivement validées.</p>
+         <p>Cliquez sur le bouton <span class="step step-vert">&nbsp;Remboursé&nbsp;</span> dès que l'emprunt est remboursé pour modifier son statut et validez votre choix dans la <span class="tooltip">fenêtre modale<span class="tooltiptext tooltip-top">Voir glossaire</span></span>.</p>
       </div>
       <h6>Guide de prise en main • Comptabilité • Immobilisations</h6>
       <a class="slice-long" id="immobilisations"></a>
@@ -1357,8 +1537,8 @@
             <img src="../images/chapitre6/immo-attente1.png" class="contour-img" alt="Immobilisation en attente" data-action="zoom" />
          </p>
          <p>Cliquez sur <span class="btn-blue">Modifier</span> pour valider l'opération.</p>
-		 <p>Un message de confirmation vous informe de la bonne exécution de la tâche.</p>
-		 <p class="max-img-process">
+         <p>Un message de confirmation vous informe de la bonne exécution de la tâche.</p>
+         <p class="max-img-process">
             <img src="../images/chapitre6/immo-attente2.png" class="contour-img" alt="Immobilisation en attente" data-action="zoom" />
          </p>
          <p>Cliquez à nouveau sur <span class="step step-orange">&nbsp;En attente&nbsp;</span> pour mettre l'immobilisation en attente et validez votre choix.</p>
@@ -1388,8 +1568,8 @@
          <p class="max-img-process">
             <img src="../images/chapitre6/immo-service2.png" class="contour-img" alt="Immobilisation en service" data-action="zoom" />
          </p>
-		 <p>Un message de confirmation vous informe de la bonne exécution de la tâche.</p>
-		 <p class="max-img-process">
+         <p>Un message de confirmation vous informe de la bonne exécution de la tâche.</p>
+         <p class="max-img-process">
             <img src="../images/chapitre6/immo-compta1.png" class="contour-img" alt="Message de confirmation" data-action="zoom" />
          </p>
          <p>Dans le tableau des dépréciations de l'immobilisation, vérifiez que la case<img src="../images/commun/check-square-o.svg" alt="Case cochée" height="20" class="align-icone icone-marge-gauche icone-marge-droite">de la colonne "Comptabilisable" pour la période concernée est cochée et que l'écriture est renseignée dans la colonne "Écriture".</p>
@@ -1397,7 +1577,7 @@
             <img src="../images/chapitre6/immo-compta2.png" class="contour-img" alt="Tableau des dépréciations" data-action="zoom" />
          </p>
          <p>Dans le brouillard comptable, vérifiez que l'écriture est bien passée avec les bons montants.</p>
-		 <!--<p>Dans le brouillard du journal des "Achats", vérifiez que l'écriture est bien passée en comptabilité avec les bons montants.</p>-->
+         <!--<p>Dans le brouillard du journal des "Achats", vérifiez que l'écriture est bien passée en comptabilité avec les bons montants.</p>-->
          <p class="max-img-process">
             <img src="../images/chapitre6/immo-compta3.png" class="contour-img" alt="Journal des achats" data-action="zoom" />
          </p>
@@ -1898,7 +2078,7 @@
       <p class="texte"><strong>Qu’est-ce qu’un Grand-livre auxiliaire&nbsp;?</strong></p>
       <p class="texte">Les Grands-livres auxiliaires sont formés par l'ensemble des comptes individuels de même type &#40;clients, fournisseurs, etc.&#41;. Ils permettent ainsi d'établir un relevé nominatif de la position de chaque compte avec le détail des mouvements.</p>
       <p class="texte">Les comptes auxiliaires font partie intégrante du Grand-livre général. Néanmoins, il n'est retranscrit dans le Grand-livre général que le solde total des comptes sous le numéro correspondant. Par exemple 411 pour les clients et 401 pour les fournisseurs.</p>
-	  <p align="center" class="texte aerateur procedure">A – Procédure pour exporter le Grand-livre
+      <p align="center" class="texte aerateur procedure">A – Procédure pour exporter le Grand-livre
       </p>
       <p class="texte">
          Le processus suivant vous guide pour produire le Grand-livre.
@@ -1914,7 +2094,6 @@
          <p class="max-img-process">
             <img src="../images/chapitre6/grand-livre1.png" class="contour-img" alt="Grand-livre" data-action="zoom" />
          </p>
-         
       </div>
       <br />
       <div class="floating-box process">
