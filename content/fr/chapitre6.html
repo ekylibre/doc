@@ -281,7 +281,7 @@
                   <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
                </div>
                <div class="divTableCellListe" style="width: auto">
-                  Comment paramétrer certains éléments de la comptabilité dans l'application &#40;<a href="#journaux" class="avoid-clicks">journaux</a>, <a href="#exercice" class="avoid-clicks">exercice comptable</a>, <a href="#plan" class="avoid-clicks">plan de comptes</a>, <a href="#tva" class="avoid-clicks">TVA</a>, <a href="#compte" class="avoid-clicks">compte bancaire</a>&#41;
+                  Comment paramétrer certains éléments de la comptabilité dans l'application &#40;<a href="#journaux" class="avoid-clicks">journaux</a>, <a href="#exercice" class="avoid-clicks">exercice comptable</a>, <a href="#plan" class="avoid-clicks">plan de comptes</a>, <a href="#tva" class="avoid-clicks">taux de TVA</a>, <a href="#tresorerie" class="avoid-clicks">compte bancaire</a>&#41;
                </div>
             </div>
             <!--
@@ -300,6 +300,14 @@
                </div>
                <div class="divTableCellListe" style="width: auto">
                   Comment enregistrer des <a href="#emprunts" class="avoid-clicks">emprunts</a> et passer les remboursements en écriture
+               </div>
+            </div>
+			<div class="divTableRow">
+               <div class="divTableCellListe" style="width: 14px">
+                  <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
+               </div>
+               <div class="divTableCellListe" style="width: auto">
+                  Comment enregistrer des <a href="#virements" class="avoid-clicks">virements</a> entre deux comptes bancaires
                </div>
             </div>
             <div class="divTableRow">
@@ -331,7 +339,15 @@
                   <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
                </div>
                <div class="divTableCellListe" style="width: auto">
-                  Comment procéder à la <a href="#cloture" class="avoid-clicks">clôture</a> d'un exercice comptable
+                  Comment procéder à la <a href="#cloture" class="avoid-clicks">clôture</a> ou au <a href="#verrouillage" class="avoid-clicks">verrouillage</a> d'un exercice comptable
+               </div>
+            </div>
+			<div class="divTableRow">
+               <div class="divTableCellListe" style="width: 14px">
+                  <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
+               </div>
+               <div class="divTableCellListe" style="width: auto">
+                  Comment valider les écritures enregistrées dans le <a href="../chapitre6#brouillard" target="_self">brouillard</a> comptable
                </div>
             </div>
             <div class="divTableRow">
@@ -339,7 +355,15 @@
                   <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
                </div>
                <div class="divTableCellListe" style="width: auto">
-                  Comment produite la <a href="../chapitre6#balance" target="_self">balance</a> et le <a href="../chapitre6#grand-livre" target="_self">Grand-livre</a>
+                  Comment produire la <a href="../chapitre6#balance" target="_self">balance</a> et le <a href="../chapitre6#grand-livre" target="_self">Grand-livre</a>
+               </div>
+            </div>
+			<div class="divTableRow">
+               <div class="divTableCellListe">
+                  <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
+               </div>
+               <div class="divTableCellListe">
+                  Comment obtenir le <a href="#exportfec" class="avoid-clicks">fichier des écritures comptables &#40;FEC&#41;</a> destiné à l'administration fiscale
                </div>
             </div>
          </div>
@@ -368,7 +392,7 @@
                   FEC
                </div>
                <div class="divTableCellGlossaire2" style="width: 100%">
-                  Fichier des Écritures Comptables. Ce fichier informatique comporte, sous forme dématérialisée, l'ensemble des écritures enregistrées dans tous les journaux comptables au titre d'un exercice fiscal &#40;obligation en vigueur depuis le 1er janvier 2014&#41;
+                  Fichier des Écritures Comptables. Ce fichier informatique comporte, sous forme dématérialisée, l'ensemble des écritures enregistrées dans tous les journaux comptables au titre d'un exercice fiscal &#40;obligation en vigueur depuis le 1<sup>er</sup> janvier 2014&#41;
                </div>
             </div>
             <div class="divTableRow">
@@ -613,10 +637,83 @@
             <img src="../images/chapitre6/journal2019-3.png" class="contour-img" alt="Nouveau journal" data-action="zoom" />
          </p>
       </div>
+	  <h6>Guide de prise en main • Comptabilité • Brouillard comptable</h6>
+      <a class="slice-long" id="brouillard"></a>
+	  <p align="center" class="texte aerateur procedure">B – Procédure pour valider les écritures du brouillard comptable</p>
+	  <p class="texte">Comme expliqué en introduction de ce chapitre, chaque écriture est enregistrée en mode brouillard. La validation des écritures est donc une étape incoutournable, notamment pour réaliser la clôture d'un exercice comptable.</p>
+      <p class="texte">
+         Le processus suivant vous guide pour valider les écritures du brouillard comptable.
+      </p>
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Accédez aux "Journaux"</span>
+         <p>Cliquez sur le lien "Comptabilité" dans le "Menu principal" ou sur le bouton "Comptabilité" de la page d'accueil&nbsp;:</p>
+         <p align="center"><img src="../images/chapitre6/comptabilite.svg" alt="Comptabilité" width="60"></p>
+         <p>Dans la barre latérale du module, cliquez sur "Journaux" dans la section "Journaux" symbolisée par l'icône d'un livre<img src="../images/chapitre6/book.svg" alt="histogramme" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des journaux.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/brouillard1.png" class="contour-img" alt="Liste des journaux" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Consultez le brouillard</span>
+         <p>Cliquez sur le bouton "Consulter le brouillard &#40;X écriture|s&#41;" pour consulter les écritures de tous les journaux…</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/brouillard2.png" class="contour-img" alt="Liste des écritures" data-action="zoom" />
+         </p>
+		 <p>… ou cliquez sur le nom d'un journal, puis cliquez sur le bouton "Consulter le brouillard &#40;X écriture|s&#41;" pour consulter uniquement le brouillard de celui-ci.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre6/brouillard3.png" class="contour-img" alt="Liste des écritures" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Consultez les écritures</span>
+         <p>Les écritures à valider sont listées pour l'ensemble des journaux ou seulement pour le journal sélectionné.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/brouillard4.png" class="contour-img" alt="Liste des écritures" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step4.svg" alt="4" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Validez une ou plusieurs écritures</span>
+         <p>Cliquez sur le bouton de validation dans la <span class="tooltip">fenêtre modale<span class="tooltiptext tooltip-top">Voir glossaire</span></span> pour confirmer l'opération et figer l'écriture. Notez que toute modification ultérieure de l'un de ses éléments devient alors impossible.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/brouillard5.png" class="contour-img" alt="Liste des écritures" data-action="zoom" />
+         </p>
+		 <p>Un message de confirmation vous informe de la bonne exécution de la tâche&nbsp;:</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/brouillard6.png" class="contour-img" alt="Liste des écritures" data-action="zoom" />
+         </p>
+		 
+      </div>
+      <br />
       <h6>Guide de prise en main • Comptabilité • Exercices comptables</h6>
       <a class="slice-long" id="exercice"></a>
       <h2 class="texte aerateur">d - Exercices comptables</h2>
-      <p class="texte">À la création de votre ferme, aucun exercice comptable n'est ouvert. Si vous souhaitez gérér votre comptabilité dans Ekylibre, la création d'un premier exercice comptable est requis.</p>
+	  <div class="config margin-config">
+         <p>
+            <img src="../images/commun/parcours.svg" height="55" alt="Icône parcours"/>
+         </p>
+         <p class="majuscule">
+            configuration à faire pour
+            <img class="align-icone icone-marge-gauche icone-marge-droite" src="../images/commun/tacheA.svg" width="20" alt="A">
+            &amp;
+            <img class="align-icone icone-marge-gauche" src="../images/commun/tacheC.svg" width="20" alt="C">
+         </p>
+      </div>
+      <p class="texte">À la création de votre ferme, aucun exercice comptable n'est ouvert. Si vous souhaitez gérér votre comptabilité et/ou enregistrer vos activités commerciales dans Ekylibre, la création d'un premier exercice comptable est requis.</p>
       <div class="warn-fond aerateur-haut aerateur-bas">
          <div class="floating-box-warn">
             <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
@@ -835,6 +932,124 @@
       <!--
          <p class="texte aerateur-haut">Les exercices comptables créés dans Ekylibre dépendent des informations renseignées dans l'assistant de démarrage. Si vous avez saisi la date de création de l'exploitation, l'application a créé autant d'exercices comptables que d'années d'ancienneté. Si vous n'avez pas renseigné la date de création, l'application a créé automatiquement dix exercices &#40;un pour l'année en cours et neuf pour les années précédentes&#41;. Vous pouvez supprimer les exercices inutiles mais nous vous conseillons d'en conserver quand même un ou deux pour prendre en main certaines fonctionnalités de l'application.</p>
          -->
+	  <h6>Guide de prise en main • Comptabilité • Verrouillage d'un exercice</h6>
+      <a class="slice-long" id="verrouillage"></a>
+	  <p align="center" class="texte aerateur procedure">C – Procédure pour verrouiller un exercice comptable</p>
+	  <p class="texte">La gestion commerciale dans l'application nécessite qu'un exercice comptable soit déjà ouvert à la date d'enregistrement d'une nouvelle commande ou d'une nouvelle vente, même si vous ne gérez pas votre comptabilité dans Ekylibre. Dans la mesure où seulement 2 exercices peuvent être ouverts simultanément, l'ouverture d'un nouvel exercice oblige à verrouiller le plus ancien. Exemple&nbsp;: si les exercices 2018 et 2019 sont ouverts et que vous souhaitez ouvrir l'exercice 2020 sans procéder à une clôture, il faut verrouiller l'exercice 2018.</p>
+      <p class="texte">
+         Le processus suivant vous guide pour verrouiller un nouvel exercice comptable.
+      </p>
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Accédez aux exercices comptables</span>
+         <p>
+            Cliquez sur le lien "Comptabilité" dans le "Menu principal" ou sur le bouton "Comptabilité" de la page d'accueil&nbsp;:
+         </p>
+         <p align="center"><img src="../images/chapitre6/comptabilite.svg" alt="Comptabilité" width="60"></p>
+         <p>Dans la barre latérale du module, cliquez sur "Exercices comptables" dans la section "Synthèses" symbolisée par l'icône d'un tableau<img src="../images/chapitre6/table.svg" alt="Tableau" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des exercices.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/verrouillage1.png" class="contour-img" alt="Exercices comptables" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Sélectionnez l'exercice à verrouiller</span>
+         <p>Cliquez sur le nom de l'exercice comme par exemple EX2018, puis cliquez sur le bouton "Verrouiller EX2018".</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/verrouillage2.png" class="contour-img" alt="Exercice comptable" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Verrouillez l'exercice</span>
+         <p>Cochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">devant la mention "Je certifie que mes comptes ont été révisés par la personne compétente."</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/verrouillage3.png" class="contour-img" alt="Verrouillage de l'exercice" data-action="zoom" />
+         </p>
+		 <p>Cliquez sur <span class="btn-blue">Verrouiller l'exercice</span> pour valider l'opération.</p>
+      </div>
+	  <h6>Guide de prise en main • Comptabilité • Export FEC</h6>
+      <a class="slice-long" id="exportfec"></a>
+	  <p align="center" class="texte aerateur procedure">D – Procédure pour obtenir les écritures comptables &#40;FEC&#41;</p>
+	  <p class="texte">Le fichier des écritures comptables &#40;FEC&#41; comporte, sous forme dématérialisée, l'ensemble des écritures enregistrées dans tous les journaux comptables au titre d'un exercice fiscal. C'est une obligation en vigueur depuis le 1<sup>er</sup> janvier 2014.</p>
+      <p class="texte">Le processus suivant vous guide pour obtenir le fichier des écritures comptables pour un exercice donné.</p>
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Accédez aux exercices comptables</span>
+         <p>
+            Cliquez sur le lien "Comptabilité" dans le "Menu principal" ou sur le bouton "Comptabilité" de la page d'accueil&nbsp;:
+         </p>
+         <p align="center"><img src="../images/chapitre6/comptabilite.svg" alt="Comptabilité" width="60"></p>
+         <p>Dans la barre latérale du module, cliquez sur "Exercices comptables" dans la section "Synthèses" symbolisée par l'icône d'un tableau<img src="../images/chapitre6/table.svg" alt="Tableau" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des exercices.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/exportfec1.png" class="contour-img" alt="Exercices comptables" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Choisissez un exercice comptable</span>
+         <p>Sélectionnez un exercice comptable dans la liste et cliquez sur son code pour l'afficher.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/exportfec2.png" class="contour-img" alt="Affichage de l'exercice" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Réalisez l'export FEC</span>
+         <p>Cliquez sur le bouton "Export FEC", puis sélectionnez le type de fichier dans la liste déroulante.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/exportfec3.png" class="contour-img" alt="Sélection Export FEC" data-action="zoom" />
+         </p>
+		 <p>Notez que si vous souhaitez un découpage semestriel, trimestriel ou mensuel des données, vous devez créer un nouvel export en suivant la procédure décrite dans le <a class="avoid-clicks" href="../chapitre12#fec">chapitre 12 - Outils</a>.</p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step4.svg" alt="4" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez les notifications</span>
+         <p>Patientez quelques instants. La pastille rouge<img src="../images/commun/marker.svg" alt="Notification" height="20" class="align-icone icone-marge-gauche icone-marge-droite">en haut à droite de la cloche<img src="../images/commun/bell-o-blue.svg" alt="Cloche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">vous indique qu'une opération interne a été effectuée par l'application. Cliquez sur celle-ci pour afficher la notification. En cas d'erreur, vous serez informé&#40;e&#41; de la nature de celle-ci.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/exportfec4.png" class="contour-img" alt="Affichage de la notification" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step5.svg" alt="5" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Obtenez le fichier des écritures comptables</span>
+         <p>Cliquez sur le lien "Votre fichier a été généré avec succès" pour obtenir les informations du nouveau document. Cliquez sur la vignette pour afficher le document au format texte dans votre navigateur ou pour télécharger le document au format XML.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/exportfec5.png" class="contour-img" alt="Récupération du fichier" data-action="zoom" />
+         </p>
+         <p>Notez que le fichier reste accessible à tout moment via le lien "Gestion électronique des documents" dans la section "Archives"<img src="../images/commun/archive.svg" alt="Archives" height="20" class="align-icone icone-marge-gauche icone-marge-droite">du module "Outils".</p>
+		 <p>Les fichiers d'écritures comptables doivent être accompagnés d'un descriptif technique qui doit indiquer l'ensemble des informations nécessaires au traitement des fichiers par l'administration fiscale. Ce document descriptif faisant office de notice, il doit présenter la manière dont il est rempli avec notamment le nom des champs, le type d'information présente dans chaque champ et un exemple de valeur.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre6/exportfec6.png" class="contour-img" alt="Fichier de description" data-action="zoom" />
+         </p>
+         <div class="cadre-dl">
+         <a href="../exports/description_fec.ods" target="_blank">
+            <p class="aerateur-bas download" align="center"><img src="../images/chapitre12/download.svg" alt="Télécharger" height="20" class="align-icone icone-marge-droite">Télécharger le fichier de description au format ODS</p>
+         </a>
+         </div>
+      </div>
       <h6>Guide de prise en main • Comptabilité • Plan de comptes</h6>
       <a class="slice-long" id="plan"></a>
       <h2 class="texte aerateur">e - Plan de comptes</h2>
@@ -1123,7 +1338,7 @@
          <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
       </div>
       <div class="aerateur"></div>
-      <p class="texte aerateur-haut">Si votre ferme a été créée avant le 24 octobre 2019, plusieurs taux de TVA sont définis dans l'application qui sont inutiles ou qui ne sont plus en vigueur depuis la dernière modification intervenue au 1er janvier 2014. Vous pouvez donc en supprimer pour faciliter la saisie des achats et des ventes ainsi que pour simplifier les déclarations de TVA.</p>
+      <p class="texte aerateur-haut">Si votre ferme a été créée avant le 24 octobre 2019, plusieurs taux de TVA sont définis dans l'application qui sont inutiles ou qui ne sont plus en vigueur depuis la dernière modification intervenue au 1<sup>er</sup> janvier 2014. Vous pouvez donc en supprimer pour faciliter la saisie des achats et des ventes ainsi que pour simplifier les déclarations de TVA.</p>
       <p align="center" class="texte aerateur procedure">B – Procédure pour supprimer des taux de TVA
       </p>
       <p class="texte">
@@ -1317,9 +1532,8 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Créez un compte bancaire</span>
-         <p>
-            Cliquez sur le bouton “Nouveau”, sélectionnez le type de “Trésorie” et remplissez tous les champs obligatoires signalés par une astérisque de couleur rouge avec les informations requises pour la définir correctement. Vous pouvez également partir du “Compte bancaire” déjà défini dans l'application et le modifier.
-         </p>
+         <p>Cliquez sur le bouton “Nouveau”, sélectionnez le "Type" de trésorie et remplissez tous les champs obligatoires signalés par une astérisque de couleur rouge avec les informations requises pour la définir correctement. Vous pouvez également partir du “Compte bancaire” déjà défini dans l'application et le modifier.</p>
+		 <p>Renseignez les informations pour l'enregistrement des écritures comptables.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/tresorerie2.png" class="contour-img" alt="Nouvelle trésorerie" data-action="zoom" />
          </p>
@@ -1418,6 +1632,50 @@
          </p>
          <p>Dès qu'un exercice comptable est verrouillé ou clôturé, les cases dans la colonne "Verrouillé" des remboursements concernés sont alors cochées<img src="../images/commun/check-square-o.svg" alt="Case cochée" height="20" class="align-icone icone-marge-gauche">, indiquant que les écritures dans le brouillard du journal de banque ont été définitivement validées.</p>
          <p>Cliquez sur le bouton <span class="step step-vert">&nbsp;Remboursé&nbsp;</span> dès que l'emprunt est remboursé pour modifier son statut et validez votre choix dans la <span class="tooltip">fenêtre modale<span class="tooltiptext tooltip-top">Voir glossaire</span></span>.</p>
+      </div>
+	  <h6>Guide de prise en main • Comptabilité • Virements internes</h6>
+      <a class="slice-long" id="virements"></a>
+      <p align="center" class="texte aerateur procedure">C – Procédure pour enregistrer un virement interne
+      </p>
+      <p class="texte">
+         Le processus suivant vous guide pour enregistrer un nouveau virement interne.
+      </p>
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez la liste des virements internes</span>
+         <p>
+            Cliquez sur le lien "Comptabilité" dans le "Menu principal" ou sur le bouton "Comptabilité" de la page d'accueil&nbsp;:
+         </p>
+         <p align="center"><img src="../images/chapitre6/comptabilite.svg" alt="Comptabilité" width="60"></p>
+         <p>Dans la barre latérale du module, cliquez sur "Virements internes" dans la section "Trésorerie" symbolisée par l'icône d'un billet<img src="../images/chapitre6/money.svg" alt="Billet" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des virements, puis cliquez sur le bouton "Nouveau".</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/virement1.png" class="contour-img" alt="Liste des virements" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Renseignez le nouveau virement interne</span>
+         <p>Sélectionnez la trésorerie émettrice et la trésorerie réceptrice. Renseignez le montant ainsi que le taux de change &#40;généralement 1 entre deux comptes de trésorerie fonctionnant avec la même devise&#41;.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/virement2.png" class="contour-img" alt="Nouvel emprunt" data-action="zoom" />
+         </p>
+		 <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez le nouveau virement interne</span>
+         <p>L'application affiche automatiquement le nouveau virement interne avec les informations d'écritures comptables dans le brouillard du journal de banque.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/virement3.png" class="contour-img" alt="Nouvel emprunt" data-action="zoom" />
+         </p>
       </div>
       <h6>Guide de prise en main • Comptabilité • Immobilisations</h6>
       <a class="slice-long" id="immobilisations"></a>
