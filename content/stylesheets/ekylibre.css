@@ -953,6 +953,15 @@ a:visited {
 	vertical-align: top;
 }
 
+/*Tableau icônes pointage*/
+
+.divTableCellIcn,
+.divTableHeadIcn {
+	display: table-cell;
+	padding: 5px 0;
+	text-align: center;
+	vertical-align: top;
+}
 
 /*Tableau listes diverses*/
 
