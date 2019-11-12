@@ -268,7 +268,7 @@
          </div>
          <div class="info-txt">
             <span class="titre-advice">Comptabilité 2019<br /></span>
-            <p class="texte-advice">Le module "Comptabilité" a été récemment profondément remanié afin d'offrir aux utilisateurs un outil complet, fiable et performant dans une présentation plus intuitive. Ce chapitre est encore en cours de rédaction et des informations complémentaires seront ajoutées progressivement.</p>
+            <p class="texte-advice">Le module "Comptabilité" a été récemment profondément remanié afin d'offrir aux utilisateurs un outil complet, fiable et performant avec une présentation plus intuitive. Ce chapitre est encore en cours de rédaction et des informations complémentaires seront ajoutées progressivement.</p>
          </div>
       </div>
       <p class="texte aerateur-haut">
@@ -362,6 +362,14 @@
                </div>
                <div class="divTableCellListe">
                   Comment obtenir le <a href="#exportfec" class="avoid-clicks">fichier des écritures comptables &#40;FEC&#41;</a> destiné à l'administration fiscale
+               </div>
+            </div>
+			<div class="divTableRow">
+               <div class="divTableCellListe">
+                  <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
+               </div>
+               <div class="divTableCellListe">
+                  Comment obtenir le <a href="#bilan" class="avoid-clicks">bilan et le compte de résultat</a>
                </div>
             </div>
          </div>
@@ -503,6 +511,7 @@
          <p align="center"><img src="../images/chapitre6/wrench.svg" alt="Configuration" width="60"></p>
          <p>Dans la barre latérale du module, cliquez sur "Société" dans la section "Paramètres" symbolisée par l'icône d'une clef anglaise<img src="../images/chapitre6/wrench3.svg" alt="Clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher les paramètres de la société.</p>
          <p>Remplissez tous les champs pour définir correctement votre exploitation.</p>
+		 <p>Renseignez notamment la forme juridique de la société&nbsp;: elle déterminera les comptes appropriés pour affecter votre résultat lors de la clôture comptable.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/societe1.png" class="contour-img" alt="Paramétrage société" data-action="zoom" />
          </p>
@@ -587,7 +596,15 @@
                   <img src="../images/commun/circle.svg" alt="Puce" height="15">
                </div>
                <div class="divTableCellPlan">
-                  vous souhaitez réaliser des <a href="../chapitre6#echanges" target="_self">échanges comptables</a> nécessitant l'utilisation d'un journal des opérations diverses réservé à cet effet.
+                  vous souhaitez réaliser des <a href="../chapitre6#echanges" target="_self">échanges comptables</a> nécessitant l'utilisation d'un journal des opérations diverses réservé à cet effet&nbsp;;
+               </div>
+            </div>
+			<div class="divTableRow">
+               <div class="divTableCellPlan">
+                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
+               </div>
+               <div class="divTableCellPlan">
+                  vous souhaitez consigner dans un journal d'opérations diverses les écritures des factures non parvenues et des écarts de réglement.
                </div>
             </div>
          </div>
@@ -623,6 +640,10 @@
             <img src="../images/chapitre6/journal2019-2.png" class="contour-img" alt="Nouveau journal" data-action="zoom" />
          </p>
          <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
+		 <p>Notez que si vous envisagez de réaliser des rapprochements bancaires à l'aide de fichiers OFX, il faudra créer un nouveau journal des opération diverses et cocher la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">devant "Utilisé pour les écarts". Ce journal peut également servir pour les factures non parvenues.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre6/journal2019-3.png" class="contour-img" alt="Nouveau journal" data-action="zoom" />
+         </p>
       </div>
       <br />
       <div class="floating-box process">
@@ -632,7 +653,7 @@
          <span class="titre-advice">Affichez le nouveau journal</span>
          <p>L'application affiche le nouveau journal. La liste des "Journaux" est également automatiquement enrichie avec celui-ci.</p>
          <p class="max-img-process">
-            <img src="../images/chapitre6/journal2019-3.png" class="contour-img" alt="Nouveau journal" data-action="zoom" />
+            <img src="../images/chapitre6/journal2019-4.png" class="contour-img" alt="Nouveau journal" data-action="zoom" />
          </p>
       </div>
 	  <h6>Guide de prise en main • Comptabilité • Brouillard comptable</h6>
@@ -944,10 +965,25 @@
       </div>
       <div class="scroll marge">
          <div class="tableau">
-            <p align="center" class="aerateur-haut aerateur-bas"><img src="../images/chapitre6/schema-verrouillage.png" alt="Schéma verrouillage" data-action="zoom" width="600"/></p>
+            <p align="center" class="aerateur-haut aerateur-bas"><img src="../images/chapitre6/schema-verrouillage1.png" alt="Schéma verrouillage" width="500"/></p>
+			<p class="legende" align="center">Gestion commerciale en n+2 bloquée</p>
          </div>
       </div>
-      <p class="texte">
+	  <div class="affichage-large"></div>
+      <div class="affichage-mobile">
+         <p align="center">
+            <img src="../images/commun/scroll.svg" alt="Scroll" height="40" class="">
+            <br />
+            Glissez pour parcourir le schéma
+         </p>
+      </div>
+      <div class="scroll marge">
+         <div class="tableau">
+            <p align="center" class="aerateur-haut aerateur-bas"><img src="../images/chapitre6/schema-verrouillage2.png" alt="Schéma verrouillage" width="500"/></p>
+			<p class="legende" align="center">Gestion commerciale en n+2 autorisée</p>
+         </div>
+      </div>
+      <p class="texte aerateur-haut">
          Le processus suivant vous guide pour verrouiller un nouvel exercice comptable.
       </p>
       <div class="floating-box process">
@@ -1060,6 +1096,69 @@
             <p class="aerateur-bas download" align="center"><img src="../images/chapitre12/download.svg" alt="Télécharger" height="20" class="align-icone icone-marge-droite">Télécharger le fichier de description au format ODS</p>
          </a>
          </div>
+      </div>
+	  <h6>Guide de prise en main • Comptabilité • Bilan/Compte de résultat</h6>
+      <a class="slice-long" id="bilan"></a>
+	  <p align="center" class="texte aerateur procedure">E – Procédure pour obtenir le bilan/compte de résultat</p>
+      <p class="texte">Le processus suivant vous guide pour obtenir le bilan et le compte de résultat pour un exercice donné.</p>
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Accédez aux exercices comptables</span>
+         <p>
+            Cliquez sur le lien "Comptabilité" dans le "Menu principal" ou sur le bouton "Comptabilité" de la page d'accueil&nbsp;:
+         </p>
+         <p align="center"><img src="../images/chapitre6/comptabilite.svg" alt="Comptabilité" width="60"></p>
+         <p>Dans la barre latérale du module, cliquez sur "Exercices comptables" dans la section "Synthèses" symbolisée par l'icône d'un tableau<img src="../images/chapitre6/table.svg" alt="Tableau" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des exercices.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/bilan-cr1.png" class="contour-img" alt="Exercices comptables" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Choisissez un exercice comptable</span>
+         <p>Sélectionnez un exercice comptable dans la liste et cliquez sur son code pour l'afficher.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/bilan-cr2.png" class="contour-img" alt="Affichage de l'exercice" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Réalisez l'export Bilan/Compte de résultat</span>
+         <p>Cliquez sur le bouton "Export Bilan/Compte de résultat", puis sélectionnez le document désiré dans la liste déroulante.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/bilan-cr3.png" class="contour-img" alt="Sélection Export FEC" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step4.svg" alt="4" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez les notifications</span>
+         <p>Patientez quelques instants. La pastille rouge<img src="../images/commun/marker.svg" alt="Notification" height="20" class="align-icone icone-marge-gauche icone-marge-droite">en haut à droite de la cloche<img src="../images/commun/bell-o-blue.svg" alt="Cloche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">vous indique qu'une opération interne a été effectuée par l'application. Cliquez sur celle-ci pour afficher la notification. En cas d'erreur, vous serez informé&#40;e&#41; de la nature de celle-ci.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/bilan-cr4.png" class="contour-img" alt="Affichage de la notification" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step5.svg" alt="5" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Obtenez le fichier des écritures comptables</span>
+         <p>Cliquez sur le lien "Votre fichier a été généré avec succès" pour obtenir les informations du nouveau document. Cliquez sur la vignette pour afficher le document au format PDF dans votre navigateur pour le télécharger et/ou l'imprimer.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/bilan-cr5.png" class="contour-img" alt="Récupération du fichier" data-action="zoom" />
+         </p>
+         <p>Notez que le fichier reste accessible à tout moment via le lien "Gestion électronique des documents" dans la section "Archives"<img src="../images/commun/archive.svg" alt="Archives" height="20" class="align-icone icone-marge-gauche icone-marge-droite">du module "Outils".</p>
       </div>
       <h6>Guide de prise en main • Comptabilité • Plan de comptes</h6>
       <a class="slice-long" id="plan"></a>
@@ -1828,6 +1927,10 @@
 		 <p class="max-img-process">
             <img src="../images/chapitre6/rapprochement13.png" class="contour-img" alt="Lignes lettrées" data-action="zoom" />
          </p>
+		 <p>Si 2 lignes à rapprocher présentent un écart, sélectionnez ces lignes, puis cliquez sur le bouton "Écart de réglement" et choisissez un journal d'opérations diverses pour enregistrer une nouvelle écriture de régularisation dans le brouillard de ce journal.</p>
+		  <p class="max-img-process">
+            <img src="../images/chapitre6/rapprochement14.png" class="contour-img" alt="Écart de réglement" data-action="zoom" />
+         </p>
       </div>
       <br />
 	  <div class="floating-box process">
@@ -1837,23 +1940,23 @@
          <span class="titre-advice">Ajoutez un achat ou une vente</span>
          <p>Si vous n’avez pas saisi toutes vos pièces, vous pouvez sélectionner une ou plusieurs lignes du relevé de comptes et saisir directement un achat avec son décaissement ou une vente avec son encaissement.</p>
          <p class="max-img-process">
-            <img src="../images/chapitre6/rapprochement14.png" class="contour-img" alt="Sélection ligne de relevé" data-action="zoom" />
+            <img src="../images/chapitre6/rapprochement15.png" class="contour-img" alt="Sélection ligne de relevé" data-action="zoom" />
          </p>
 		 <p>Sélectionnez la ligne et cliquez sur le bouton "Nouvel achat" ou "Nouvel vente" en fonction du rapprochement en débit ou en crédit à réaliser.</p>
 		 <p class="max-img-process">
-            <img src="../images/chapitre6/rapprochement15.png" class="contour-img" alt="Ajout du nouvel achat" data-action="zoom" />
+            <img src="../images/chapitre6/rapprochement16.png" class="contour-img" alt="Ajout du nouvel achat" data-action="zoom" />
          </p>
 		 <p>Renseignez l'opération en spécifiant s'il est nécessaire ou non d'enregistrer une nouvelle facture d'achat/de vente et un nouveau décaissement/encaissement.</p>
 		 <p class="max-img-process">
-            <img src="../images/chapitre6/rapprochement16.png" class="contour-img" alt="Création du nouvel achat" data-action="zoom" />
+            <img src="../images/chapitre6/rapprochement17.png" class="contour-img" alt="Création du nouvel achat" data-action="zoom" />
          </p>
 		 <p>Cliquez sur <span class="btn-blue">Enregistrer</span> pour valider l'opération.</p>
 		 <p class="max-img-process">
-            <img src="../images/chapitre6/rapprochement17.png" class="contour-img" alt="Écritures lettrées" data-action="zoom" />
+            <img src="../images/chapitre6/rapprochement18.png" class="contour-img" alt="Écritures lettrées" data-action="zoom" />
          </p>
 		 <p>Vous retrouvez ensuite directement les écritures d'encaissements/de décaissements rapprochées avec les lignes de votre relevé de comptes.</p><p>Vous avez le cas échéant la possibilité d'ajouter de nouvelles lignes avec une saisie manuelle des éléments.</p>
 		 <p class="max-img-process">
-            <img src="../images/chapitre6/rapprochement18.png" class="contour-img" alt="Écritures lettrées" data-action="zoom" />
+            <img src="../images/chapitre6/rapprochement19.png" class="contour-img" alt="Écritures lettrées" data-action="zoom" />
          </p>
 		 <p>Répétez successivement les opérations jusqu'au pointage de toutes les écritures afin de purger complètement le tableau des relevés.</p>
 	  </div>
@@ -1866,15 +1969,15 @@
 		 <p>Vous pouvez toujours poursuivre un rapprochement en cours par l'une des 2 méthodes suivantes&nbsp;:</p>
 		 <p>A - Cliquez sur le nom d'un compte bancaire dans le liste des trésoreries, puis cliquez sur le bouton "Rapprocher".</p>
 		 <p class="max-img-process">
-            <img src="../images/chapitre6/rapprochement19.png" class="contour-img" alt="Rapprochement" data-action="zoom" />
+            <img src="../images/chapitre6/rapprochement20.png" class="contour-img" alt="Rapprochement" data-action="zoom" />
          </p>
 		 <p>Sélectionnez ensuite la période correspondant à un ou plusieurs relevé&#40;s&#41; de comptes déjà importé&#40;s&#41; dans l'application, puis cliquez sur le bouton "Valider".</p>
 		 <p class="max-img-process">
-            <img src="../images/chapitre6/rapprochement20.png" class="contour-img" alt="Sélection de la période" data-action="zoom" />
+            <img src="../images/chapitre6/rapprochement21.png" class="contour-img" alt="Sélection de la période" data-action="zoom" />
          </p>
 		 <p>B - Cliquez sur le nom d'un compte bancaire dans le liste des trésoreries, puis cliquez sur l'icône<img src="../images/chapitre6/compress.svg" alt="Rapprocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche du numéro du relevé.</p>
 		 <p class="max-img-process">
-            <img src="../images/chapitre6/rapprochement21.png" class="contour-img" alt="Rapprochement" data-action="zoom" />
+            <img src="../images/chapitre6/rapprochement22.png" class="contour-img" alt="Rapprochement" data-action="zoom" />
          </p>
       </div>
       <h6>Guide de prise en main • Comptabilité • Immobilisations</h6>
