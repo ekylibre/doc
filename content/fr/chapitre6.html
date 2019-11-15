@@ -307,7 +307,7 @@
                            <option selected value="">Journaux</option>
                            <option value="#journaux">- Créer un nouveau journal</option>
                            <option value="#brouillard">- Valider le brouillard comptable</option>
-						   <option value="#lettrage">- Contrôler le lettrage de comptes</option>
+						   <option value="#lettrage">- Réaliser le lettrage de comptes</option>
                         </select>
                      </form>
                   </div>
@@ -612,7 +612,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Désactivez le mode stock permanent</span>
-         <p>Dans la section "Préférences de la comptabilité", nous vous conseillons de laisser désactivé le "Mode stock permanent", sinon la comptabilité sera inondée d'écritures à chaque mouvement de stock.
+         <p>Dans la section "Préférences de la comptabilité", nous vous conseillons de laisser désactivé le "Mode stock permanent", sinon une écriture sera générée à chaque mouvement de stock.
          </p>
          <p class="max-img-process">
             <img src="../images/chapitre6/societe2.png" class="contour-img" alt="Paramétrage société" data-action="zoom" />
@@ -644,7 +644,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Préférences analytiques</span>
-         <p>Dans la section "Préférences de la comptabilité", cochez les cases de répartition des achats et des ventes sur les activités et les équipes pour analyser la rentabilité de chaque activité et de chaque équipe le cas échéant.
+         <p>Dans la section "Préférences de la comptabilité", cochez les cases de répartition des achats et des ventes sur les activités pour analyser la rentabilité de chaque activité le cas échéant &#40;la fonctionnalité n'est pas encore disponible pour les équipes&#41;.
          </p>
          <p class="max-img-process">
             <img src="../images/chapitre6/societe4.png" class="contour-img" alt="Paramétrage société" data-action="zoom" />
@@ -808,12 +808,12 @@
       </div>
 	  <h6>Guide de prise en main • Comptabilité • Lettrage de comptes</h6>
       <a class="slice-long" id="lettrage"></a>
-      <p align="center" class="texte aerateur procedure">C – Procédure pour contrôler le lettrage de comptes</p>
-      <p class="texte">Le lettrage comptable d'un compte &#40;généralement un compte de tiers&#41; est une opération qui consiste à affecter un seul repère à 2 ou plusieurs entrées comptables dans ce compte, la somme des entrées au crédit devant être égale à la somme des entrées au débit. Il permet donc d'isoler les factures restant à payer pour les fournisseurs, mais également, les factures restant à encaisser pour les clients.</p>
-	  <p class="texte">Ce rapprochement est réalisé grâce à une codification composée d'une ou plusieurs «&nbsp;lettres&nbsp;» permettant ainsi de visualiser plus rapidement les factures non réglées. Souvent chronophage s'il est réalisé manuellement, Ekylibre permet d'automatiser le lettrage en détectant les factures et les règlements pour les lier.</p>
-	  <p class="texte">Notez que le <a href="#rapprochement" class="avoid-clicks" target="_self">rapprochement bancaire</a>, qui utilise également des lettres lorsque vous pointez les écritures passées en banque avec les écritures passées en comptabilité, est une opération indépendante du lettrage de comptes.</p>
+      <p align="center" class="texte aerateur procedure">C – Procédure pour réaliser le lettrage de comptes</p>
+      <p class="texte">Le lettrage comptable d'un compte &#40;généralement un compte de tiers&#41; est une opération qui consiste à affecter un seul repère à 2 ou plusieurs entrées comptables dans ce compte, la somme des entrées au crédit devant être égale à la somme des entrées au débit. Il permet donc d'isoler les factures restant à payer pour les fournisseurs et les factures restant à encaisser pour les clients.</p>
+	  <p class="texte">Ce rapprochement est réalisé grâce à une codification composée d'une ou plusieurs «&nbsp;lettres&nbsp;» permettant ainsi de visualiser plus rapidement les factures non réglées. Ekylibre réalise automatiquement le lettrage en détectant les factures et les règlements pour les lier s'ils sont équilibrés. Dans le cas contraire, il sera possible de corriger le lettrage et éventuellement d'ajouter des écritures de compensation.</p>
+	  <p class="texte">Notez que le <a href="#rapprochement" class="avoid-clicks" target="_self">rapprochement bancaire</a>, qui utilise également des lettres lorsque vous pointez les écritures passées en banque avec les écritures passées en comptabilité, est une opération différente et indépendante du lettrage de comptes.</p>
       <p class="texte aerateur-haut">
-         Le processus suivant vous guide pour contrôler le lettrage de comptes.
+         Le processus suivant vous guide pour réaliser le lettrage de comptes.
       </p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
@@ -823,9 +823,9 @@
          <p>Cliquez sur le lien "Comptabilité" dans le "Menu principal" ou sur le bouton "Comptabilité" de la page d'accueil&nbsp;:</p>
          <p align="center"><img src="../images/chapitre6/comptabilite.svg" alt="Comptabilité" width="60"></p>
          <p>Dans la barre latérale du module, cliquez sur "Lettrage de comptes" dans la section "Journaux" symbolisée par l'icône d'un livre<img src="../images/chapitre6/book.svg" alt="histogramme" height="20" class="align-icone icone-marge-gauche">.</p>
-		 <p>L'application affiche les fournisseurs &#40;comptes débutant par 401&#41; et les clients &#40;comptes débutant par 411&#41;. Notez que pour une même raison sociale, celle-ci peut-être présente à la fois dans la liste des fournisseurs et dans la liste des clients.</p>
+		 <p>L'application affiche les comptes de tiers &#40;comptes débutant par 401 et par 411&#41;. Notez que pour un même tiers, celui-ci peut-être présent à la fois dans la liste des fournisseurs et dans la liste des clients.</p>
          <p class="max-img-process">
-            <img src="../images/chapitre6/brouillard1.png" class="contour-img" alt="Liste des journaux" data-action="zoom" />
+            <img src="../images/chapitre6/lettrage1.png" class="contour-img" alt="Liste fournisseurs-clients" data-action="zoom" />
          </p>
       </div>
       <br />
@@ -834,34 +834,46 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Contrôlez un compte fournisseur ou client</span>
-         <p>Cliquez sur le nom d'un fournisseur ou d'un client pour afficher les écritures liées à ce compte.</p>
-		 <p>Les écritures non équilibrées en débit ou en crédit sont indiquées avec une astérisque à droite de la lettre.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre6/lettrage2.png" class="contour-img" alt="Liste des journaux" data-action="zoom" />
+         <p>Cliquez sur le nom d'un fournisseur ou d'un client afin d'afficher les écritures enregistrées pour ce tiers.</p>
+		 <p>Si les encaissements et les décaissements ont bien été enregistrés dans la facture d'achat ou de vente, le lettrage est réalisé automatiquement par l'application. Le même code est correctement associé à chaque écriture.</p>
+		 <p>Décochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de l'option "Masquer les lignes lettrées" en haut à droite de la liste pour afficher le lettrage.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre6/lettrage2.png" class="contour-img" alt="Lettrage automatique" data-action="zoom" />
          </p>
-		 <p>Notez que vous pouvez afficher ou non les lignes lettrées à l'aide de la case à cocher<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de l'option "Masquer les lignes lettrées".</p>
+		 <p>Notez que les écritures qui ne sont pas équilibrées sont indiquées avec une astérisque à droite de la lettre. Les écritures figées après clôture ou verrouillage d'un exercice apparaissent grisées dans la liste.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/lettrage3.png" class="contour-img" alt="Liste des écritures" data-action="zoom" />
+         </p>
       </div>
       <br />
 	  <div class="floating-box process">
          <img src="../images/commun/step3.svg" alt="3" width="52" />
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Ajoutez une écriture de compensation</span>
-		 <p>Tant qu'une écriture n'a pas été figée par le validation du brouillard, il est possible de délettrer l'écriture en cliquant sur la gomme<img src="../images/chapitre6/eraser.svg" alt="Gomme" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à droite de la lettre.</p>
-		 <p>Vous pouvez également ajouter une écriture de compensation. Sélectionnez 2 ou plusieurs écritures, puis cliquez sur le bouton "Ajouter une écriture de compensation". Dans cet exemple, une facture d'achat a été enregistrée avec une erreur de décaissement.</p>
-         <p class="max-img-process">
+         <span class="titre-advice">Réalisez le lettrage manuellement</span>
+		 <p>Si un encaissement ou un décaissement a été enregistré au profit d'un tiers sans être lié à une facture, le lettrage est alors incorrect et il faut le corriger.</p>
+		 <p>Délettrez les écritures en cliquant sur la gomme<img src="../images/chapitre6/eraser.svg" alt="Gomme" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à droite de chaque lettre pour préparer le nouveau lettrage.</p>
+		 <p>Sélectionnez successivement 2 ou plusieurs écritures en cochant les cases<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">devant la lettre de chaque écriture pour réaliser un nouveau lettrage manuellement.</p>
+		  <p class="max-img-process">
             <img src="../images/chapitre6/lettrage4.png" class="contour-img" alt="Liste des journaux" data-action="zoom" />
+         </p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/lettrage5.png" class="contour-img" alt="Liste des journaux" data-action="zoom" />
+         </p>
+		 <p>Une fois les écritures sélectionnées &#40;3 dans cet exemple&#41; et équilibrées, les lignes disparaissent automatiquement de la liste. Décochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de l'option "Masquer les lignes lettrées" en haut à droite de la liste pour afficher le nouveau lettrage avec un nouveau code unique pour chacune des écritures.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre6/lettrage6.png" class="contour-img" alt="Liste des journaux" data-action="zoom" />
          </p>
       </div>
       <br />
 	  <div class="floating-box process">
          <img src="../images/commun/step4.svg" alt="4" width="52" />
       </div>
-	  <div class="process-txt">
-         <span class="titre-advice">Sélectionnez un journal</span>
-         <p>Sélectionnez un journal de banque &#40;ou de caisse&#41; parmi ceux disponibles en cliquant sur son nom.</p>
+      <div class="process-txt">
+         <span class="titre-advice">Ajoutez une écriture de compensation</span>
+		 <p>Le cas échéant, vous pouvez également ajouter une écriture de compensation. Sélectionnez une ou plusieurs écritures en cochant la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">devant la lettre , puis cliquez sur le bouton "Ajouter une écriture de compensation". Dans cet exemple, une facture d'achat a été enregistrée avec une erreur de décaissement.</p>
          <p class="max-img-process">
-            <img src="../images/chapitre6/lettrage5.png" class="contour-img" alt="Liste des journaux" data-action="zoom" />
+            <img src="../images/chapitre6/lettrage7.png" class="contour-img" alt="Ajouter une écriture" data-action="zoom" />
          </p>
       </div>
       <br />
@@ -869,25 +881,35 @@
          <img src="../images/commun/step5.svg" alt="5" width="52" />
       </div>
 	  <div class="process-txt">
-         <span class="titre-advice">Renseignez la nouvelle écriture</span>
-         <p>Saisissez les libellés de l'écriture et renseignez le compte de décaissement d'achat.</p>
+         <span class="titre-advice">Sélectionnez un journal</span>
+         <p>Sélectionnez un journal de banque &#40;ou de caisse&#41; parmi ceux disponibles en cliquant sur le bouton correspondant.</p>
          <p class="max-img-process">
-            <img src="../images/chapitre6/lettrage6.png" class="contour-img" alt="Nouvelle écriture de compensation" data-action="zoom" />
+            <img src="../images/chapitre6/lettrage8.png" class="contour-img" alt="Liste des journaux" data-action="zoom" />
          </p>
-		 <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
       </div>
       <br />
 	  <div class="floating-box process">
          <img src="../images/commun/step6.svg" alt="6" width="52" />
       </div>
 	  <div class="process-txt">
-         <span class="titre-advice">Affichez le nouveau lettrage</span>
-         <p>Le nouveau lettrage est affiche avec la nouvelle écriture enregistrée dans le brouillard du journal de banque. Notez que la lettre a également été modifiée en face des écritures.</p>
+         <span class="titre-advice">Renseignez la nouvelle écriture</span>
+         <p>Saisissez les libellés de l'écriture et renseignez le compte de décaissement d'achat.</p>
          <p class="max-img-process">
-            <img src="../images/chapitre6/lettrage7.png" class="contour-img" alt="Nouveau lettrage" data-action="zoom" />
+            <img src="../images/chapitre6/lettrage9.png" class="contour-img" alt="Nouvelle écriture de compensation" data-action="zoom" />
+         </p>
+		 <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step7.svg" alt="7" width="52" />
+      </div>
+	  <div class="process-txt">
+         <span class="titre-advice">Affichez le nouveau lettrage</span>
+         <p>Le nouveau lettrage est affiché avec la nouvelle écriture enregistrée dans le brouillard du journal de banque. Notez qu'une nouveau code unique a également remplacé l'ancien lettrage pour chacune des écritures concernées par l'opération.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/lettrage10.png" class="contour-img" alt="Nouveau lettrage" data-action="zoom" />
          </p>
       </div>
-	  
       <h6>Guide de prise en main • Comptabilité • Exercices comptables</h6>
       <a class="slice-long" id="exercice"></a>
       <h2 class="texte aerateur">d - Exercices comptables</h2>
@@ -2309,7 +2331,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Passez les amortissements en écriture</span>
-         <p>Revenez à liste des immobilisations et cliquez sur le bouton "Passer en comptabilité" pour passer les amortissements en écriture.</p>
+         <p>Revenez à la liste des immobilisations et cliquez sur le bouton "Passer en comptabilité" pour passer les amortissements en écriture.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/immo-service3.png" class="contour-img" alt="Immobilisation en service" data-action="zoom" />
          </p>
@@ -2374,7 +2396,7 @@
          </div>
          <div class="info-txt">
             <span class="titre-advice">Prérequis pour les échanges comptables<br /></span>
-            <p class="texte-advice">La réalisation d'échanges comptables implique que vous ayez créé auparavant un comptable &#40;un nouveau contact&#41; et que vous ayez associé une adresse email valide à ce tiers pour permettre à l'application de communiquer automatiquement avec lui. Référez-vous au <a href="../chapitre8" class="avoid-clicks" target="_self">chapitre 8 - Stocks et tiers</a> pour connaitre les procédures à suivre concernant ce prérequis.</p>
+            <p class="texte-advice">La réalisation d'échanges comptables implique que vous ayez créé auparavant un comptable &#40;un nouveau contact&#41; et que vous ayez associé une adresse email valide à ce tiers pour permettre à l'application de communiquer automatiquement avec lui. Référez-vous au <a href="../chapitre8" class="avoid-clicks" target="_self">chapitre 8 - Stocks et tiers</a> pour connaître les procédures à suivre concernant ce prérequis.</p>
          </div>
       </div>
       <p class="texte">Le journal des opérations diverses en comptabilité, appelé aussi journal des OD, est un document auxiliaire au journal général de comptabilité. Il permet d’enregistrer les opérations comptables qui ne concernent ni le journal des achats, ni le journal des ventes, ni les journaux de trésorerie. Le journal des opérations diverses &#40;OD&#41; permet d’enregistrer des opérations concernant les mouvements de TVA, les provisions, la paie ou encore les écritures rectificatrices des différentes erreurs de saisie qui ont été commises. Notez que le journal comptable est une obligation légale pour les entreprises soumises au régime du réel, afin de suivre toutes ses opérations.</p>
@@ -2491,7 +2513,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Choisissez une date d'arrêté</span>
-         <p>Sélectionnez la date déterminant la fin de la période des écritures échangées.</p>
+         <p>Sélectionnez la date déterminant la fin de la période des écritures échangées &#40;la fréquence des échanges reste à la discrétion de l'utilisateur&#41;.</p>
          <p class="max-img-process"><img src="../images/chapitre6/echange5.png" class="contour-img" alt="Création nouvel échange" data-action="zoom" /></p>
          <p class="max-img-process"><img src="../images/chapitre6/echange6.png" class="contour-img" alt="Création nouvel échange" data-action="zoom" /></p>
          <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
@@ -2548,7 +2570,7 @@
             <img src="../images/commun/info.svg" width="100" alt="Attention"/>
          </div>
          <div class="info-txt">
-            <span class="titre-advice">Accès de votre ferme à votre comptable<br /></span>
+            <span class="titre-advice">Accès à votre ferme par votre comptable<br /></span>
             <p class="texte-advice">Vous pouvez créer un accès pour votre expert comptable ou votre centre de gestion avec les autorisations nécessaires pour lui permettre de visualiser et de modifier les données comptables de votre exploitation à distance. Référez-vous au <a href="../chapitre11" class="avoid-clicks" target="_self">chapitre 11 - Accès</a> pour connaître les procédures à suivre.</p>
          </div>
       </div>
@@ -2576,7 +2598,7 @@
          <p class="max-img-process">
             <img src="../images/chapitre6/balance2.png" class="contour-img" alt="Balance sur un mois" data-action="zoom" />
          </p>
-         <p>Notez que pouvez affiner vos critères de recherche en dépliant les options grâce au bouton<img src="../images/commun/plus-square-o.svg" alt="moins" height="15" class="icone-marge-gauche icone-marge-droite">à droite de la fenêtre&nbsp;:</p>
+         <p>Notez que vous pouvez affiner vos critères de recherche en dépliant les options grâce au bouton<img src="../images/commun/plus-square-o.svg" alt="moins" height="15" class="icone-marge-gauche icone-marge-droite">à droite de la fenêtre&nbsp;:</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/balance3.png" class="contour-img" alt="Recherche avancée" data-action="zoom" />
          </p>
@@ -2822,7 +2844,7 @@
       <p class="texte">Les exploitations doivent conserver leur Grand-livre pendant une période de 10 ans minimum à compter de la date de la dernière inscription.</p>
       <p class="texte"><strong>Qu’est-ce qu’un Grand-livre auxiliaire&nbsp;?</strong></p>
       <p class="texte">Les Grands-livres auxiliaires sont formés par l'ensemble des comptes individuels de même type &#40;clients, fournisseurs, etc.&#41;. Ils permettent ainsi d'établir un relevé nominatif de la position de chaque compte avec le détail des mouvements.</p>
-      <p class="texte">Les comptes auxiliaires font partie intégrante du Grand-livre général. Néanmoins, il n'est retranscrit dans le Grand-livre général que le solde total des comptes sous le numéro correspondant. Par exemple 411 pour les clients et 401 pour les fournisseurs.</p>
+      <p class="texte">Les comptes auxiliaires font partie intégrante du Grand-livre général. Néanmoins, il n'est retranscrit dans le Grand-livre général que le solde total des comptes avec le numéro correspondant. Par exemple 411 pour les clients et 401 pour les fournisseurs.</p>
       <p align="center" class="texte aerateur procedure">A – Procédure pour exporter le Grand-livre
       </p>
       <p class="texte">

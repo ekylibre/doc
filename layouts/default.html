@@ -119,11 +119,12 @@
   function ChangeUrl(formulaire)
    {
    if (formulaire.ListeUrl.selectedIndex != 0)
-      {
+     {
      var url ;
      url = formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value;
      window.open(url,'_self');
-       }
+	 $(formulaire.ListeUrl).val(""); 
+	 }
    }
 </script>
 </html>
