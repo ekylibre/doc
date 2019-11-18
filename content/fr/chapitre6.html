@@ -262,9 +262,9 @@
             </div>
          </div>
       </div>
-      <div class="warn-fond aerateur-haut aerateur-bas">
-         <div class="floating-box-warn">
-            <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
+      <div class="info-fond aerateur">
+         <div class="floating-box-info">
+            <img src="../images/commun/info.svg" width="100" alt="Info"/>
          </div>
          <div class="info-txt">
             <span class="titre-advice">Comptabilité 2019<br /></span>
@@ -272,9 +272,7 @@
          </div>
       </div>
       <div class="compta-large">
-         <p class="texte aerateur-haut">
-            <strong>Dans ce chapitre, on vous explique comment</strong> &#40;sélectionnez le lien dans les listes déroulantes&#41;&nbsp;<strong>:</strong>
-         </p>
+         <p class="texte aerateur-haut"><strong>Dans ce chapitre, on vous explique comment</strong> &#40;sélectionnez le lien dans les listes déroulantes&#41;&nbsp;<strong>:</strong></p>
          <div class="divTableCompta texte aerateur-bas">
             <div class="divTableBody">
                <div class="divTableRow">
@@ -286,7 +284,7 @@
                   <div class="divTableCellCompta2">
                      <form>
                         <select name="ListeUrl" SIZE="1" onChange="ChangeUrl(this.form)" style="width:210px">
-                           <option selected value="">Configuration société</option>
+                           <option selected value="">Configuration</option>
                            <option value="#societe">- Paramétrer la comptabilité</option>
                            <option value="#plan">- Créer un compte comptable</option>
                         </select>
@@ -307,12 +305,12 @@
                            <option selected value="">Journaux</option>
                            <option value="#journaux">- Créer un nouveau journal</option>
                            <option value="#brouillard">- Valider le brouillard comptable</option>
-						   <option value="#lettrage">- Réaliser le lettrage de comptes</option>
+                           <option value="#lettrage">- Réaliser le lettrage de comptes</option>
                         </select>
                      </form>
                   </div>
                </div>
-			   <div class="divTableRow">
+               <div class="divTableRow">
                   <div class="divTableCellCompta2">&nbsp;</div>
                </div>
                <div class="divTableRow">
@@ -360,9 +358,47 @@
          </div>
       </div>
       <div class="compta-short">
-         <p class="texte aerateur-haut">
-            <strong>Dans ce chapitre vous allez découvrir&nbsp;:</strong>
-         </p>
+         <p class="texte aerateur-haut"><strong>Dans ce chapitre, on vous explique comment</strong> &#40;sélectionnez le lien dans la liste déroulante&#41;&nbsp;<strong>:</strong></p>
+         <form class="texte">
+            <select name="ListeUrl" SIZE="1" onChange="ChangeUrl(this.form)" style="width:210px">
+               <option selected value="">Documentation comptabilité&nbsp;:</option>
+               <optgroup label="Configuration">
+                  <option value="#societe">- Paramétrer la comptabilité</option>
+                  <option value="#plan">- Créer un compte comptable</option>
+               </optgroup>
+               <optgroup label="TVA">
+                  <option value="#tva">- Créer un nouveau taux de TVA</option>
+                  <option value="#declaration">- Produire une déclaration de TVA</option>
+               </optgroup>
+               <optgroup label="Journaux">
+                  <option value="#journaux">- Créer un nouveau journal</option>
+                  <option value="#brouillard">- Valider le brouillard comptable</option>
+                  <option value="#lettrage">- Réaliser le lettrage de comptes</option>
+               </optgroup>
+               <optgroup label="Exercices comptables">
+                  <option value="#exercice">- Ouvrir un nouvel exercice</option>
+                  <option value="#echanges">- Réaliser un échange comptable</option>
+                  <option value="#cloture">- Clôturer un exercice</option>
+                  <option value="#verrouillage">- Verrouiller un exercice</option>
+                  <option value="#balance">- Produire la balance</option>
+                  <option value="#grand-livre">- Produire le Grand-livre</option>
+                  <option value="#exportfec">- Obtenir le fichier des écritures comptables</option>
+                  <option value="#bilan">- Obtenir le bilan et le compte de résultat</option>
+               </optgroup>
+               <optgroup label="Immobilisations">
+                  <option value="#immobilisations">- Enregistrer une immobilisation</option>
+               </optgroup>
+               <optgroup label="Trésorerie">
+                  <option value="#tresorerie">- Créer un compte bancaire</option>
+                  <option value="#rapprochement">- Procéder au rapprochement bancaire</option>
+                  <option value="#emprunts">- Enregistrer un emprunt</option>
+                  <option value="#virements">- Réaliser un virement interne</option>
+               </optgroup>
+            </select>
+         </form>
+      </div>
+      <div class="compta-print">
+         <p class="texte aerateur-haut"><strong>Dans ce chapitre vous allez découvrir&nbsp;:</strong></p>
          <div class="divTableListe marge">
             <div class="divTableBody">
                <div class="divTableRow">
@@ -434,7 +470,7 @@
                      <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
                   </div>
                   <div class="divTableCellListe" style="width: auto">
-                     Comment réaliser le <a href="#rapprochement" class="avoid-clicks" target="_self">rapprochement bancaire</a> avec import d'un fichier OFX
+                     Comment réaliser le <a href="#lettrage" class="avoid-clicks" target="_self">lettrage de comptes</a> et le <a href="#rapprochement" class="avoid-clicks" target="_self">rapprochement bancaire</a> avec import d'un fichier OFX
                   </div>
                </div>
                <div class="divTableRow">
@@ -806,12 +842,12 @@
             <img src="../images/chapitre6/brouillard6.png" class="contour-img" alt="Liste des écritures" data-action="zoom" />
          </p>
       </div>
-	  <h6>Guide de prise en main • Comptabilité • Lettrage de comptes</h6>
+      <h6>Guide de prise en main • Comptabilité • Lettrage de comptes</h6>
       <a class="slice-long" id="lettrage"></a>
       <p align="center" class="texte aerateur procedure">C – Procédure pour réaliser le lettrage de comptes</p>
       <p class="texte">Le lettrage comptable d'un compte &#40;généralement un compte de tiers&#41; est une opération qui consiste à affecter un seul repère à 2 ou plusieurs entrées comptables dans ce compte, la somme des entrées au crédit devant être égale à la somme des entrées au débit. Il permet donc d'isoler les factures restant à payer pour les fournisseurs et les factures restant à encaisser pour les clients.</p>
-	  <p class="texte">Ce rapprochement est réalisé grâce à une codification composée d'une ou plusieurs «&nbsp;lettres&nbsp;» permettant ainsi de visualiser plus rapidement les factures non réglées. Ekylibre réalise automatiquement le lettrage en détectant les factures et les règlements pour les lier s'ils sont équilibrés. Dans le cas contraire, il sera possible de corriger le lettrage et éventuellement d'ajouter des écritures de compensation.</p>
-	  <p class="texte">Notez que le <a href="#rapprochement" class="avoid-clicks" target="_self">rapprochement bancaire</a>, qui utilise également des lettres lorsque vous pointez les écritures passées en banque avec les écritures passées en comptabilité, est une opération différente et indépendante du lettrage de comptes.</p>
+      <p class="texte">Ce rapprochement est réalisé grâce à une codification composée d'une ou plusieurs «&nbsp;lettres&nbsp;» permettant ainsi de visualiser plus rapidement les factures non réglées. Ekylibre réalise automatiquement le lettrage en détectant les factures et les règlements pour les lier s'ils sont équilibrés. Dans le cas contraire, il sera possible de corriger le lettrage et éventuellement d'ajouter des écritures de compensation.</p>
+      <p class="texte">Notez que le <a href="#rapprochement" class="avoid-clicks" target="_self">rapprochement bancaire</a>, qui utilise également des lettres lorsque vous pointez les écritures passées en banque avec les écritures passées en comptabilité, est une opération différente et indépendante du lettrage de comptes.</p>
       <p class="texte aerateur-haut">
          Le processus suivant vous guide pour réaliser le lettrage de comptes.
       </p>
@@ -823,64 +859,64 @@
          <p>Cliquez sur le lien "Comptabilité" dans le "Menu principal" ou sur le bouton "Comptabilité" de la page d'accueil&nbsp;:</p>
          <p align="center"><img src="../images/chapitre6/comptabilite.svg" alt="Comptabilité" width="60"></p>
          <p>Dans la barre latérale du module, cliquez sur "Lettrage de comptes" dans la section "Journaux" symbolisée par l'icône d'un livre<img src="../images/chapitre6/book.svg" alt="histogramme" height="20" class="align-icone icone-marge-gauche">.</p>
-		 <p>L'application affiche les comptes de tiers &#40;comptes débutant par 401 et par 411&#41;. Notez que pour un même tiers, celui-ci peut-être présent à la fois dans la liste des fournisseurs et dans la liste des clients.</p>
+         <p>L'application affiche les comptes de tiers &#40;comptes débutant par 401 et par 411&#41;. Notez que pour un même tiers, celui-ci peut-être présent à la fois dans la liste des fournisseurs et dans la liste des clients.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/lettrage1.png" class="contour-img" alt="Liste fournisseurs-clients" data-action="zoom" />
          </p>
       </div>
       <br />
-	  <div class="floating-box process">
+      <div class="floating-box process">
          <img src="../images/commun/step2.svg" alt="2" width="52" />
       </div>
       <div class="process-txt">
          <span class="titre-advice">Contrôlez un compte fournisseur ou client</span>
          <p>Cliquez sur le nom d'un fournisseur ou d'un client afin d'afficher les écritures enregistrées pour ce tiers.</p>
-		 <p>Si les encaissements et les décaissements ont bien été enregistrés dans la facture d'achat ou de vente, le lettrage est réalisé automatiquement par l'application. Le même code est correctement associé à chaque écriture.</p>
-		 <p>Décochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de l'option "Masquer les lignes lettrées" en haut à droite de la liste pour afficher le lettrage.</p>
-		 <p class="max-img-process">
+         <p>Si les encaissements et les décaissements ont bien été enregistrés dans la facture d'achat ou de vente, le lettrage est réalisé automatiquement par l'application. Le même code est correctement associé à chaque écriture.</p>
+         <p>Décochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de l'option "Masquer les lignes lettrées" en haut à droite de la liste pour afficher le lettrage.</p>
+         <p class="max-img-process">
             <img src="../images/chapitre6/lettrage2.png" class="contour-img" alt="Lettrage automatique" data-action="zoom" />
          </p>
-		 <p>Notez que les écritures qui ne sont pas équilibrées sont indiquées avec une astérisque à droite de la lettre. Les écritures figées après clôture ou verrouillage d'un exercice apparaissent grisées dans la liste.</p>
+         <p>Notez que les écritures qui ne sont pas équilibrées sont indiquées avec une astérisque à droite de la lettre. Les écritures figées après clôture ou verrouillage d'un exercice apparaissent grisées dans la liste. Il en est de même pour les écritures qui sont verrouillées automatiquement sur une période après fermeture d'un <a href="#echanges" class="avoid-clicks">échange comptable</a>.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/lettrage3.png" class="contour-img" alt="Liste des écritures" data-action="zoom" />
          </p>
       </div>
       <br />
-	  <div class="floating-box process">
+      <div class="floating-box process">
          <img src="../images/commun/step3.svg" alt="3" width="52" />
       </div>
       <div class="process-txt">
          <span class="titre-advice">Réalisez le lettrage manuellement</span>
-		 <p>Si un encaissement ou un décaissement a été enregistré au profit d'un tiers sans être lié à une facture, le lettrage est alors incorrect et il faut le corriger.</p>
-		 <p>Délettrez les écritures en cliquant sur la gomme<img src="../images/chapitre6/eraser.svg" alt="Gomme" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à droite de chaque lettre pour préparer le nouveau lettrage.</p>
-		 <p>Sélectionnez successivement 2 ou plusieurs écritures en cochant les cases<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">devant la lettre de chaque écriture pour réaliser un nouveau lettrage manuellement.</p>
-		  <p class="max-img-process">
+         <p>Si un encaissement ou un décaissement a été enregistré au profit d'un tiers sans être lié à une facture, le lettrage est alors incorrect et il faut le corriger.</p>
+         <p>Délettrez les écritures en cliquant sur la gomme<img src="../images/chapitre6/eraser.svg" alt="Gomme" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à droite de chaque lettre pour préparer le nouveau lettrage.</p>
+         <p>Sélectionnez successivement 2 ou plusieurs écritures en cliquant sur leur libellé ou en cochant les cases<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">devant la lettre de chaque écriture pour réaliser un nouveau lettrage manuellement.</p>
+         <p class="max-img-process">
             <img src="../images/chapitre6/lettrage4.png" class="contour-img" alt="Liste des journaux" data-action="zoom" />
          </p>
          <p class="max-img-process">
             <img src="../images/chapitre6/lettrage5.png" class="contour-img" alt="Liste des journaux" data-action="zoom" />
          </p>
-		 <p>Une fois les écritures sélectionnées &#40;3 dans cet exemple&#41; et équilibrées, les lignes disparaissent automatiquement de la liste. Décochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de l'option "Masquer les lignes lettrées" en haut à droite de la liste pour afficher le nouveau lettrage avec un nouveau code unique pour chacune des écritures.</p>
-		 <p class="max-img-process">
+         <p>Une fois les écritures sélectionnées &#40;3 dans cet exemple&#41; et équilibrées, les lignes disparaissent automatiquement de la liste. Décochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de l'option "Masquer les lignes lettrées" en haut à droite de la liste pour afficher le nouveau lettrage avec un nouveau code unique pour chacune des écritures.</p>
+         <p class="max-img-process">
             <img src="../images/chapitre6/lettrage6.png" class="contour-img" alt="Liste des journaux" data-action="zoom" />
          </p>
       </div>
       <br />
-	  <div class="floating-box process">
+      <div class="floating-box process">
          <img src="../images/commun/step4.svg" alt="4" width="52" />
       </div>
       <div class="process-txt">
          <span class="titre-advice">Ajoutez une écriture de compensation</span>
-		 <p>Le cas échéant, vous pouvez également ajouter une écriture de compensation. Sélectionnez une ou plusieurs écritures en cochant la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">devant la lettre , puis cliquez sur le bouton "Ajouter une écriture de compensation". Dans cet exemple, une facture d'achat a été enregistrée avec une erreur de décaissement.</p>
+         <p>Le cas échéant, vous pouvez également ajouter une écriture de compensation. Sélectionnez une ou plusieurs écritures en cochant la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">devant la lettre , puis cliquez sur le bouton "Ajouter une écriture de compensation". Dans cet exemple, une facture d'achat a été enregistrée avec une erreur de décaissement.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/lettrage7.png" class="contour-img" alt="Ajouter une écriture" data-action="zoom" />
          </p>
       </div>
       <br />
-	  <div class="floating-box process">
+      <div class="floating-box process">
          <img src="../images/commun/step5.svg" alt="5" width="52" />
       </div>
-	  <div class="process-txt">
+      <div class="process-txt">
          <span class="titre-advice">Sélectionnez un journal</span>
          <p>Sélectionnez un journal de banque &#40;ou de caisse&#41; parmi ceux disponibles en cliquant sur le bouton correspondant.</p>
          <p class="max-img-process">
@@ -888,22 +924,22 @@
          </p>
       </div>
       <br />
-	  <div class="floating-box process">
+      <div class="floating-box process">
          <img src="../images/commun/step6.svg" alt="6" width="52" />
       </div>
-	  <div class="process-txt">
+      <div class="process-txt">
          <span class="titre-advice">Renseignez la nouvelle écriture</span>
          <p>Saisissez les libellés de l'écriture et renseignez le compte de décaissement d'achat.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/lettrage9.png" class="contour-img" alt="Nouvelle écriture de compensation" data-action="zoom" />
          </p>
-		 <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
+         <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
       </div>
       <br />
-	  <div class="floating-box process">
+      <div class="floating-box process">
          <img src="../images/commun/step7.svg" alt="7" width="52" />
       </div>
-	  <div class="process-txt">
+      <div class="process-txt">
          <span class="titre-advice">Affichez le nouveau lettrage</span>
          <p>Le nouveau lettrage est affiché avec la nouvelle écriture enregistrée dans le brouillard du journal de banque. Notez qu'une nouveau code unique a également remplacé l'ancien lettrage pour chacune des écritures concernées par l'opération.</p>
          <p class="max-img-process">
@@ -953,7 +989,7 @@
             <img src="../images/chapitre6/exo2019-1.png" class="contour-img" alt="Tableau de bord comptable" data-action="zoom" />
          </p>
          <p>Notez qu'aucune donnée n'est affichée dans ce tableau de bord puisqu'aucun exercice n'est ouvert. Lorsque vous aurez enregistré des écritures durant un exercice, le "Tableau de bord comptable" se présentera avec les indicateurs suivants&nbsp;:</p>
-		 <p class="max-img-process">
+         <p class="max-img-process">
             <img src="../images/chapitre6/exo2019-2.png" class="contour-img" alt="Tableau de bord comptable" data-action="zoom" />
          </p>
       </div>
@@ -975,6 +1011,7 @@
       <div class="process-txt">
          <span class="titre-advice">Renseignez le nouvel exercice comptable</span>
          <p>Remplissez tous les champs obligatoires signalés par une astérisque de couleur rouge avec les informations requises pour le définir correctement. Sélectionnez un comptable ou créez-en un à la volée en sélectionnant "Ajouter un nouvel enregistrement" dans la liste déroulante si vous envisagez de réaliser des <a href="../chapitre6#echanges" target="_self">échanges comptables</a>.</p>
+		 <p>Veillez impérativement à ce que la date de clôture soit bien le dernier jour du mois.</p>
          <p class="max-img-process"><img src="../images/chapitre6/exo2019-5.png" class="contour-img" alt="Liste des exercices comptables" data-action="zoom" /></p>
          <p>L'article 73 du code général des impôts fixe à douze mois la durée de l'exercice comptable des exploitants agricoles soumis à un régime réel d'imposition, sans que cet exercice soit nécessairement aligné sur l'année civile.</p>
          <p>Généralement, la date de clôture de l'exercice comptable retenue &#40;31 décembre&#41; coïncide avec la fin de l'année civile, mais ce n'est pas une obligation. Une date clôturant un trimestre civil &#40;31 mars, 30 juin…&#41; est également souvent choisie pour des raisons de simplicité.</p>
@@ -1001,7 +1038,7 @@
                Toutes les entreprises assujetties à la TVA doivent déclarer et reverser, suivant une certaine périodicité &#40;mensuelle, trimestrielle ou annuelle&#41;, la TVA collectée qu’elles facturent auprès de leurs clients lorsque celle-ci devient exigible.
             </p>
             <br />
-            Le paiement de la TVA d’après les débits signifie que la TVA collectée est exigible à compter de la date d’émission de la facture. Le paiement de la TVA d’après les encaissements signifie que la TVA collectée est exigible lors de l’encaissement des acomptes et du prix.
+            La TVA collectée n’a pas la même date d’exigibilité, selon qu’elle concerne des livraisons de biens ou des prestations de services. La TVA sur les prestations de services est à déclarer en fonction de la date d’encaissement de la prestation &#40;TVA sur les encaissements&#41; tandis qu’en cas de livraison de biens, &#40;TVA sur les débits&#41; l’exigibilité de la TVA tombe le jour de la livraison.
          </div>
       </div>
       <div class="floating-box process">
@@ -1047,7 +1084,7 @@
       <h6>Guide de prise en main • Comptabilité • Clôture d'un exercice</h6>
       <a class="slice-long" id="cloture"></a>
       <p align="center" class="texte aerateur procedure">B – Procédure pour clôturer un exercice comptable</p>
-      <p class="texte">Par la clôture des comptes, nommée clôture comptable, vous enregistrez des écritures comptables. Ces écritures comptables définissent et actent la fin de votre exercice comptable, afin de pouvoir commencer votre exercice de l’année suivante. C’est seulement en déposant, en présentant vos comptes annuels que vous pouvez passer d’un exercice comptable à l’autre.</p>
+      <p class="texte">Par la clôture des comptes, nommée clôture comptable, vous enregistrez des écritures comptables. Ces écritures comptables définissent et actent la fin de votre exercice comptable, afin de pouvoir commencer votre exercice de l’année suivante.</p>
       <p class="texte">
          Le processus suivant vous guide pour clôturer un exercice comptable.
       </p>
@@ -1071,7 +1108,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Préparez la clôture</span>
-         <p>Cliquez sur le bouton "Préparer la clôture de EX20XX". Notez qu'il n'est pas possible de clôturer un exercice si le précédent n'a pas été clôturé ou verrouillé. Il n'est évidemment pas possible non plus de clôturer un exercice avant sa date de fin.</p>
+		  <p>Cliquez sur le bouton "Préparer la clôture de EX20XX".</p><p>La phase de préparation à la clôture permet à une seule personne de modifier les écritures de l'exercice en cours de clôture, sans bloquer la saisie d'autres utilisateurs sur des périodes non concernées par celle-ci.</p><p>Notez qu'il n'est pas possible de clôturer un exercice si le précédent n'a pas été clôturé ou verrouillé. Il n'est évidemment pas possible non plus de clôturer un exercice avant sa date de fin.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/cloture2.png" class="contour-img" alt="Préparation de la clôture" data-action="zoom" />
          </p>
@@ -1096,10 +1133,13 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Contrôlez les indicateurs de clôture</span>
-         <p>Une liste d'alertes et de messages vous informe automatiquement des éventuelles vérifications et corrections à faire pour permettre à la clôture de se dérouler correctement. Notez qu'ils ne sont pas tous bloquants mais une fois l'opération terminée, il ne sera plus possible de faire marche arrière.</p>
+         <p>Une liste d'alertes et de messages vous informe automatiquement des éventuelles vérifications et corrections à faire pour permettre à la clôture de se dérouler correctement.</p>
+		 <p>Les points d'exclamation<img src="../images/chapitre6/exclamation-triangle.svg" alt="Point d'exclamation" height="20" class="align-icone icone-marge-gauche icone-marge-droite">alertent l'utilisateur sur des points de vigilance. Ils ne sont pas bloquants mais une fois l'opération terminée, il ne sera plus possible de faire marche arrière.</p>
+		 <p>La croix de couleur rouge<img src="../images/chapitre6/close.svg" alt="Croix rouge" height="20" class="align-icone icone-marge-gauche icone-marge-droite">indique que la clôture ne peut avoir lieu tant que le problème n'est pas résolu.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/cloture5.png" class="contour-img" alt="Exercices comptables" data-action="zoom" />
          </p>
+		 <p>Pour la plupart des points de blocage, des liens permettent d'ouvrir une nouvelle page avec, le cas échéant, un filtre qui isole la donnée posant problème. Lors du retour à la page de clôture, raffraîchissez votre navigateur pour mettre à jour la liste des vérifications.</p><p>La coche de couleur verte<img src="../images/chapitre6/check.svg" alt="Coche verte" height="20" class="align-icone icone-marge-gauche icone-marge-droite">indique une analyse satisfaisante des données pour permettre le bon déroulement de la clôture.</p>
       </div>
       <br />
       <div class="floating-box process">
@@ -1126,6 +1166,7 @@
          <p class="max-img-process">
             <img src="../images/chapitre6/cloture7.png" class="contour-img" alt="Clôture en progression" data-action="zoom" />
          </p>
+		 <p>Une fois l'exercice clôturé, la pastille rouge<img src="../images/commun/marker.svg" alt="Notification" height="20" class="align-icone icone-marge-gauche icone-marge-droite">en haut à droite de la cloche<img src="../images/commun/bell-o-blue.svg" alt="Cloche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">vous indique qu'une opération interne a été effectuée par l'application.</p>
       </div>
       <br />
       <div class="floating-box process">
@@ -1133,7 +1174,6 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Téléchargez les archives</span>
-         <p>Une fois l'exercice clôturé, la pastille rouge<img src="../images/commun/marker.svg" alt="Notification" height="20" class="align-icone icone-marge-gauche icone-marge-droite">en haut à droite de la cloche<img src="../images/commun/bell-o-blue.svg" alt="Cloche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">vous indique qu'une opération interne a été effectuée par l'application.</p>
          <p>Vous pouvez télécharger les archives ZIP avant et après clôture, signées numériquement. Ces archives comprennent les documents obligatoires de la clôture que sont la balance, le Grand-livre et les journaux.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/cloture8.png" class="contour-img" alt="Exercice clôturé" data-action="zoom" />
@@ -1161,7 +1201,7 @@
       <div class="scroll marge">
          <div class="tableau">
             <p align="center" class="aerateur-haut aerateur-bas"><img src="../images/chapitre6/schema-verrouillage1.png" alt="Schéma verrouillage" width="500"/></p>
-            <p class="legende" align="center">Gestion commerciale en n+2 bloquée</p>
+            <p class="legende" align="center">Gestion commerciale année n bloquée</p>
          </div>
       </div>
       <div class="affichage-large"></div>
@@ -1175,7 +1215,7 @@
       <div class="scroll marge">
          <div class="tableau">
             <p align="center" class="aerateur-haut aerateur-bas"><img src="../images/chapitre6/schema-verrouillage2.png" alt="Schéma verrouillage" width="500"/></p>
-            <p class="legende" align="center">Gestion commerciale en n+2 autorisée</p>
+            <p class="legende" align="center">Gestion commerciale année n autorisée</p>
          </div>
       </div>
       <p class="texte aerateur-haut">
@@ -1254,7 +1294,8 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Réalisez l'export FEC</span>
-         <p>Cliquez sur le bouton "Export FEC", puis sélectionnez le type de fichier dans la liste déroulante.</p>
+         <p>Cliquez sur le bouton "Export FEC", puis sélectionnez le type de fichier dans la liste déroulante. Les abbréviations utilisées sont les suivantes&nbsp;:</p>
+		  <p>BA - Bénéfices Agricoles<br />BNC - Bénéfices Non Commerciaux<br />IR - Impôt sur le Revenu</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/exportfec3.png" class="contour-img" alt="Sélection Export FEC" data-action="zoom" />
          </p>
@@ -1370,93 +1411,21 @@
             <img class="align-icone icone-marge-gauche" src="../images/commun/tacheC.svg" width="20" alt="C">
          </p>
       </div>
-      <p class="texte">Deux plans de comptes sont disponibles dans l'application&nbsp;: le Plan comptable agricole ‒ Arrêté du 11/12/1986 et le Plan comptable général de 1982 ‒ Arrêté du 14/12/2007.</p>
-      <p class="texte">C'est la sélection du régime fiscal de l'entreprise dans l'assistant de démarrage qui définit automatiquement le plan de comptes adapté à son activité principale.</p>
+      <p class="texte">C'est la sélection du régime fiscal de l'entreprise dans l'assistant de démarrage qui définit automatiquement le plan de comptes adapté à son activité principale &#40;plan comptable agricole ‒ arrêté du 11/12/1986 ou plan comptable général de 1982 ‒ arrêté du 14/12/2007&#41;.</p>
       <p class="texte">Pour une meilleure présentation des états, la longueur des comptes comptables a été homogénéisée à 8 chiffres &#40;10 si vous avez choisi cette option dans l'assistant de démarrage&#41;, comme par exemple 60120000, sauf pour les comptes de tiers &#40;clients et fournisseurs uniquement&#41; composés du numéro de compte centralisateur à 3 chiffres et du numéro auxiliaire &#40;pouvant être une chaîne de caractères alphanumériques&#41;.</p>
-	  <p align="center"><img src="../images/chapitre6/schema-compte.png" alt="Comptes de tiers" width="500"></p>
-      <h3 class="texte aerateur-haut">1 - Différences entre le plan comptable général et le plan comptable agricole</h3>
-      <p class="texte">
-         Les différences essentielles entre le plan comptable général et le plan comptable agricole se situent essentiellement sur les classes suivantes&nbsp;:
-      </p>
-      <p class="texte"><strong>Classe 2 - Comptes d'immobilisations</strong></p>
-      <p class="texte">Une distinction est réalisée au niveau des immobilisations afin d'adapter le plan comptable aux spécificités agricoles notamment au niveau&nbsp;:</p>
-      <div class="divTableListe marge">
-         <div class="divTableBody">
-            <div class="divTableRow">
-               <div class="divTableCellPlan" style="width: 10px">
-                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
-               </div>
-               <div class="divTableCellPlan" style="width: auto">
-                  des types de terrains détenus &#40;comptes 21100000&#41;&nbsp;;
-               </div>
-            </div>
-            <div class="divTableRow">
-               <div class="divTableCellPlan">
-                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
-               </div>
-               <div class="divTableCellPlan">
-                  des bâtiments détenus &#40;comptes 21300000-21400000&#41;&nbsp;;
-               </div>
-            </div>
-            <div class="divTableRow">
-               <div class="divTableCellPlan">
-                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
-               </div>
-               <div class="divTableCellPlan">
-                  des immobilisations corporelles qui concernent les biens vivants &#40;comptes 24000000&#41;.
-               </div>
-            </div>
-         </div>
+	  <div class="affichage-large"></div>
+      <div class="affichage-mobile">
+         <p align="center">
+            <img src="../images/commun/scroll.svg" alt="Scroll" height="40" class="">
+            <br />
+            Glissez pour parcourir le schéma
+         </p>
       </div>
-      <p class="texte"><strong>Classe 3 - Comptes de stocks et en-cours</strong></p>
-      <p class="texte">La différence essentielle entre les deux plans comptables porte sur les types de «&nbsp;produits&nbsp;» détenus. Le plan comptable agricole va faire référence aux animaux détenus &#40;comptes 31000000-32000000&#41;, aux végétaux &#40;33000000-34000000&#41; alors que dans le plan comptable générale les comptes 31/32 font référence aux matières premières/autres approvisionnements et les comptes 33/34 aux en-cours de production de biens et de services.</p>
-      <p class="texte"><strong>Classe 6 - Comptes de charges et Classe 7 - Comptes de produits</strong></p>
-      <p class="texte">Ces deux classes représentent l'essentiel des adaptations du plan comptable agricole comparé au plan comptable général.</p>
-      <div class="divTableListe marge">
-         <div class="divTableBody">
-            <div class="divTableRow">
-               <div class="divTableCellPlan" style="width: 10px">
-                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
-               </div>
-               <div class="divTableCellPlan" style="width: auto">
-                  les comptes 60 font référence aux achats d'intrants &#40;semences, engrais, produits phytosanitaires&#41; et d'animaux&nbsp;;
-               </div>
-            </div>
-            <div class="divTableRow">
-               <div class="divTableCellPlan">
-                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
-               </div>
-               <div class="divTableCellPlan">
-                  les comptes 61 mentionnent des fermages &#40;61310000&#41; ou encore des locations de matériels et d'animaux &#40;61320000 et 61340000&#41;&nbsp;;
-               </div>
-            </div>
-            <div class="divTableRow">
-               <div class="divTableCellPlan">
-                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
-               </div>
-               <div class="divTableCellPlan">
-                  les comptes 63 laissent apparaître des taxes spécifiques &#40;63400000&#41;&nbsp;;
-               </div>
-            </div>
-            <div class="divTableRow">
-               <div class="divTableCellPlan">
-                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
-               </div>
-               <div class="divTableCellPlan">
-                  les comptes 70 font référence aux ventes de végétaux et/ou d'animaux&nbsp;;
-               </div>
-            </div>
-            <div class="divTableRow">
-               <div class="divTableCellPlan">
-                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
-               </div>
-               <div class="divTableCellPlan">
-                  les comptes 71 font état de tous les comptes liés aux stocks spécifiques à une activité agricole selon les types de végétaux et/ou d'animaux détenus…
-               </div>
-            </div>
-         </div>
-      </div>
-      <p class="texte">Ces différences sont adaptées aux besoins des comptables et des centres de gestion pour un type d'activité spécifique qu'est le secteur agricole.</p>
+	  <div class="scroll marge">
+         <div class="tableau">
+      		 <p align="center"><img src="../images/chapitre6/schema-compte.png" alt="Comptes de tiers" width="500"></p>
+		 </div>
+	  </div>
       <div class="info-fond magic-green aerateur">
          <div class="floating-box-info">
             <img src="../images/commun/info.svg" width="100" alt="Info"/>
@@ -1495,7 +1464,7 @@
          <span class="titre-advice">Ajouter un compte</span>
          <p>Cliquez sur le bouton "Ajouter un compte".</p>
          <p class="max-img-process"><img src="../images/chapitre6/plan2.png" class="contour-img" alt="Liste des comptes" data-action="zoom" /></p>
-         <p>Renseignez tous les champs obligatoires signalés par une astérisque de couleur rouge avec les informations requises pour le définir correctement.</p>
+         <p>Renseignez tous les champs obligatoires signalés par une astérisque de couleur rouge avec les informations requises pour le définir correctement sans oublier de spécifier l'usage dans la liste déroulante "Usages".</p>
          <p>Dans cet exemple, on ajoute un compte d'honoraires pour regrouper dans un nouveau compte l'ensemble des frais d'avocats. Ce nouveau compte est associé au radical de compte 622 &#40;Honoraires&#41;&nbsp;:</p>
          <p class="max-img-process"><img src="../images/chapitre6/plan3.png" class="contour-img" alt="Création nouveau compte" data-action="zoom" /></p>
          <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
@@ -1525,7 +1494,6 @@
             <img class="align-icone icone-marge-gauche" src="../images/commun/tacheC.svg" width="20" alt="C">
          </p>
       </div>
-      <h3 class="texte">Taux de TVA applicables aux principales opérations agricoles</h3>
       <p class="texte">Les taux de TVA applicables en France métropolitaine et prédéfinis dans l'application sont les suivants&nbsp;:</p>
       <div class="divTableListe marge">
          <div class="divTableBody">
@@ -1564,51 +1532,6 @@
          </div>
       </div>
       <p class="texte">Tous les autres taux applicables notamment dans les départements d’outre-mer, en Corse ou à l'étranger doivent être ajoutés par vos soins.</p>
-      <h3 class="texte" align="center">Taux de TVA particulier de 2,10&nbsp;%</h3>
-      <p class="texte">Le <strong>taux particulier de 2,10&nbsp;%</strong> est applicable aux médicaments, préparations magistrales et produits officinaux pris en charge par la sécurité sociale et aux produits sanguins, ainsi qu’aux publications de presse. Il s'applique aussi aux ventes d'animaux vivants de boucherie à des clients non assujettis à la TVA.</p>
-      <h3 class="texte" align="center">Taux de TVA réduit de 5,50&nbsp;%</h3>
-      <p class="texte">Le <strong>taux réduit de 5,50&nbsp;%</strong> s'applique à certains produits considérés comme de première nécessité &#40;produits alimentaires, boissons sans alcool, cantine scolaire et énergie&#41; et spectacle vivant &#40;théâtre, concert, cirque&#41;.</p>
-      <p class="texte"><strong>Produits agricoles ou d'origine agricole soumis au taux de 5,50 %&nbsp;:</strong></p>
-      <p class="texte">Café, confitures, purées, gelées, marmelades, crèmes glacées, farines, fromages, fruits et légumes, huiles végétales à des fins alimentaires, jus de fruits et de légumes non fermentés qui ne comportent pas de traces d'alcool supérieures à 1,2&nbsp;% vol., lait &#40;à l'état naturel, pasteurisé, concentré, sucré ou non sucré, en poudre, aromatisé&#41;, limonades, miel, œufs, pâtisseries fraîches, pommes destinées à la production de cidre, poissons, crustacés, fruits de mer sans transformation destinés à l'alimentation humaine, pulpes de fruits, sodas, sirops de fruits, sucres sous toutes leurs formes, thé, viandes d'animaux destinées à l'alimentation humaine &#40;vendues sans transformation hormis la découpe&#41;, vinaigres comestibles, yaourts.</p>
-      <h3 class="texte" align="center">Taux de TVA intermédiaire de 10,00&nbsp;%</h3>
-      <p class="texte">Le <strong>taux intermédiaire de 10,00&nbsp;%</strong> s'applique notamment à la restauration, la vente de produits alimentaires préparés, les transports, les travaux de rénovation dans les logements anciens, les produits destinés à l'alimentation animale, ou destinés à être utilisés pour les productions agricoles et l'élevage, aux produits de l'horticulture, de la floriculture d'ornement et de la sylviculture.</p>
-      <p class="texte"><strong>Façons portant sur des produits soumis du taux de 10,00&nbsp;%&nbsp;:</strong></p>
-      <p class="texte">Abattage/déchiquetage/tronçonnage d'arbres pour un exploitant agricole, abattage/tronçonnage d'arbres pour du bois de chauffage, arrachage des produits agricoles, broyage de paille et résidus de récolte dans les cas d'alimentation animale ou pour faciliter son enfouissement, défanage des pommes de terre, coupe de fourrage, manutention des betteraves dans les champs &#40;notamment pour la mise en silo&#41;, moissonnage battage, ensilage, fenaison, andainage, ramassage, pressage, mouture des céréales, pressage à haute densité, pressage de la paille et des fourrages, pressurage des graines et fruits oléagineux, ramassage du maïs, colza, haricots secs, travaux de préparation des sols &#40;labours, binage, hersage, déchaumage, décompactage, disquage&#41;, triage, calibrage, désinfection et traitement de semences, stockage et séchage des céréales.</p>
-      <p class="texte"><strong>Façons ayant le caractère d'opérations agricoles au taux de 10,00&nbsp;%&nbsp;:</strong></p>
-      <p class="texte">Élevage à façon, insémination artificielle, transplantation embryonnaire, prestations de découpage de la viande.</p>
-      <p class="texte"><strong>Produits agricoles soumis au taux de 10,00&nbsp;%&nbsp;:</strong></p>
-      <p class="texte">Aliments du bétail &#40;pour les animaux de boucherie et charcuterie, de basse-cour, les poissons d'élevage destinés à la consommation humaine&#41;, animaux de boucherie et de charcuterie vivants ou morts &#40;bovidés, ovidés, suidés, caprins&#41; destinés à la production agricole ou utilisés dans la préparation de denrées alimentaires, arbres sur pied, betteraves sucrières, bois de chauffage &#40;quelle que soit la longueur, bois abattus ou déchets de bois&#41;, bulbes horticoles, céréales destinés à la consommation humaine, crustacés, fruits de mer non destinés à être consommés en l'état &#40;élevage&#41;, élevage équin &#40;pensions poulinières, saillies, reproduction&#41;, engrais et fertilisants utilisables en agriculture biologique, fleurs coupées, foin, gazon en plaque, gibiers vivants ou morts destinés à la production agricole ou utilisés dans la préparation de denrées alimentaires, grains, semences, lapins vivants ou morts destinés à la production agricole ou utilisés dans la préparation de denrées alimentaires, œufs à couver, paille, fourrages, plants de légumes, d'arbres fruitiers ou horticoles, pigeons vivants ou morts destinés à la production agricole ou utilisés dans la préparation de denrées alimentaires, poissons de mer, de rivière ou de lac, entiers ou en filets ou autrement présentés non destinés à être consommés en l'état &#40;élevage ou utilisés dans la préparation de denrées alimentaires&#41;, pommes de terres pour la fabrication d'amidon, poulain, cheval dans le cycle d'élevage, poulinière, étalon, raisins destinés à la production de vin ou d'alcool, tubercules horticoles, volailles vivantes ou mortes &#40;coqs, poules, chapons, poulets, poulettes, poussins, canards, oies, jars, pintades, dindes, dindons&#41; destinés à la production agricole ou utilisés dans la préparation de denrées alimentaires.</p>
-      <div class="info-fond aerateur-haut aerateur-bas">
-         <div class="floating-box-info">
-            <img src="../images/commun/info.svg" width="100" alt="Info"/>
-         </div>
-         <div class="info-txt">
-            <span class="titre-advice">Travaux forestiers<br /></span>
-            <p class="texte-advice">
-               Pour les travaux forestiers, le taux de 10,00 % s'applique s'ils sont réalisés au profit d’exploitants agricoles&nbsp;: déboisement, reboisement, taille des arbres et des haies, élagage, abattage, tronçonnage des arbres, défrichage, dessouchage, débroussaillage, brûlage.
-            </p>
-         </div>
-      </div>
-      <h3 class="texte" align="center">Taux de TVA normal de 20,00&nbsp;%</h3>
-      <p class="texte">Le <strong>taux normal</strong> qui est le taux de droit commun, est fixé à <strong>20,00&nbsp;%</strong>. Le champ d'application du taux normal n'est pas défini de manière limitative, puisqu'il s'applique à toutes les opérations imposables pour lesquelles un autre taux n'est pas spécialement prévu.</p>
-      <p class="texte"><strong>Façons portant sur des produits soumis du taux de 20,00&nbsp;%&nbsp;:</strong></p>
-      <p class="texte">Sciage des grumes en vue d'obtenir des produits bruts, travaux sylvicoles et d'exploitation forestière.</p>
-      <p class="texte"><strong>Produits agricoles soumis au taux de 20,00&nbsp;%&nbsp;:</strong></p>
-      <p class="texte">Alcools, vins, aliments des animaux autres que le bétail &#40;chiens, chats, gibier d'élevage, poissons d'aquarium…&#41;, animaux autres que les animaux de boucherie et charcuterie &#40;chiens, chats, rongeurs…&#41;, biocarburants &#40;colza, céréales…&#41;, caviar, duvets destinés à la fabrication de vêtement, de matériel de ménage ou de produits de literie, engrais, fertilisants, soufre et produits cupriques, laine destinée à la fabrication de vêtement, de matériel de ménage ou de produits de literie, peaux d'animaux destinés à la fabrication de vêtement, de matériel de ménage ou de produits de literie, plumes destinées à la fabrication de vêtement, de matériel de ménage ou de produits de literie, poissons d'ornement, produits agricoles non transformés qui ne sont utilisés ni pour l'alimentation, ni pour la production agricole, produits destinés à l'ignition &#40;allumettes, allume-feu&#41;, produits piscicoles qui ne sont pas utilisés pour la production agricole ou l'alimentation, sciures de bois sous toutes ses formes, vente de bois sur pieds ou abattus &#40;autre que le bois de chauffage&#41;.</p>
-      <p class="texte"><strong>Prestations de services soumis du taux de 20,00&nbsp;%&nbsp;:</strong></p>
-      <p class="texte">Analyses œnologiques, broyages divers, curage des fossés, curage et nettoyage des stations d’épuration, débardage des bois, défrichage, dessouchage, débroussaillage, déboisement, reboisement, désinfection et dératisation des champs, désherbage, drainage et irrigation, élagage des arbres, plantations, pose de clôture, semailles, sexage des animaux de basse-cour, taille des arbres, des haies, de la vigne, terrassements, arasements de talus, nivelage, traitement des cultures &#40;pulvérisation, défanage&#41;, travaux de fertilisation &#40;chargement, épandage de lisier, engrais, amendements calcaires&#41;.</p>
-      <div class="info-fond aerateur-haut aerateur-bas">
-         <div class="floating-box-info">
-            <img src="../images/commun/info.svg" width="100" alt="Info"/>
-         </div>
-         <div class="info-txt">
-            <span class="titre-advice">Travaux combinés<br /></span>
-            <p class="texte-advice">
-               Pour les travaux combinant à la fois, dans le cadre d'un passage unique, une façon soumise au taux de 10,00 % &#40;hersage&#41; et une autre soumise au taux de 20,00 % &#40;semis&#41;, le taux de 10,00 % s'applique à la totalité de ces travaux &#40;hersage + semis&#41;. Notez que si l’utilisation de deux matériels est facturée séparément, les taux respectifs s’appliquent.
-            </p>
-         </div>
-      </div>
-      <p class="texte aerateur-haut">Si votre activité est localisée dans un département d'outre-mer, la création de nouveaux taux de TVA peut s'avérer indispensable pour gérer votre comptabilité et vos activités commerciales dans l'application.</p>
       <p align="center" class="texte aerateur procedure">A – Procédure pour ajouter des taux de TVA
       </p>
       <p class="texte">
@@ -1638,7 +1561,7 @@
          <p class="max-img-process">
             <img src="../images/chapitre6/tva2-2019.png" class="contour-img" alt="Taux de TVA" data-action="zoom" />
          </p>
-         <p>N'oubliez pas de définir autant de nouveaux comptes que nécessaire en sélectionnant "Ajouter un nouvel enregistrement" dans les listes déroulantes des comptes de TVA et validez leur création dans la <span class="tooltip">fenêtre modale<span class="tooltiptext tooltip-top">Voir glossaire</span></span>.</p>
+         <p>N'oubliez pas de définir autant de nouveaux comptes que nécessaire en sélectionnant "Ajouter un nouvel enregistrement" dans les listes déroulantes des comptes de TVA sans oublier de spécifier l'usage et validez leur création dans la <span class="tooltip">fenêtre modale<span class="tooltiptext tooltip-top">Voir glossaire</span></span>.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/tva3-2019.png" class="contour-img" alt="Taux de TVA" data-action="zoom" />
          </p>
@@ -1683,7 +1606,7 @@
       <p align="center" class="texte aerateur procedure">C – Procédure pour produire une déclaration de TVA
       </p>
       <p class="texte">
-         Le processus suivant vous guide pour pour produire une déclaration de TVA.
+         Le processus suivant vous guide pour produire une déclaration de TVA.
       </p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
@@ -1766,7 +1689,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Téléchargez la déclaration de TVA</span>
-         <p>Cliquez sur la vignette pour afficher le document au format PDF dans votre navigateur ou pour enregistrer le déclaration au format CSV dans le dossier des téléchargements de votre navigateur.</p>
+         <p>Cliquez sur la vignette pour afficher le document au format PDF dans votre navigateur ou pour enregistrer la déclaration au format CSV dans le dossier des téléchargements de votre navigateur.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/declar-tva9.png" class="contour-img" alt="Export déclaration de TVA" data-action="zoom" />
          </p>
@@ -1839,7 +1762,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Créez un compte bancaire</span>
-         <p>Cliquez sur le bouton “Nouveau”, sélectionnez le "Type" de trésorie et remplissez tous les champs obligatoires signalés par une astérisque de couleur rouge avec les informations requises pour la définir correctement. Vous pouvez également partir du “Compte bancaire” déjà défini dans l'application et le modifier en cliquant sur le crayon<img src="../images/commun/crayon.svg" alt="Modifier l'inventaire" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de son intitulé dans la liste des trésoreries.</p>
+         <p>Cliquez sur le bouton “Nouveau”, puis sélectionnez le "Type" de trésorerie et remplissez tous les champs obligatoires signalés par une astérisque de couleur rouge avec les informations requises pour la définir correctement. Vous pouvez également partir du “Compte bancaire” déjà défini dans l'application et le modifier en cliquant sur le crayon<img src="../images/commun/crayon.svg" alt="Modifier l'inventaire" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de son intitulé dans la liste des trésoreries.</p>
          <p>Renseignez les informations pour l'enregistrement des écritures comptables.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/tresorerie2.png" class="contour-img" alt="Nouvelle trésorerie" data-action="zoom" />
@@ -1884,7 +1807,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Sélectionnez les informations comptables</span>
-         <p>Choisissez dans les listes déroulantes les comptes comptables qui seront impactés par le nouvel emprunt. </p>
+         <p>Choisissez dans les listes déroulantes les comptes comptables qui seront impactés par le nouvel emprunt &#40;ADI fait référence à l'assurance décès invalidité&#41;.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/emprunt3.png" class="contour-img" alt="Nouvel emprunt" data-action="zoom" />
          </p>
@@ -1915,6 +1838,7 @@
          <p class="max-img-process">
             <img src="../images/chapitre6/emprunt6.png" class="contour-img" alt="Validation du statut" data-action="zoom" />
          </p>
+		 <p>Lorsque le statut de l'emprunt est défini sur "En cours", il n'est plus possible de recalculer l'échéancier en automatique en modifiant l'emprunt. Néanmoins, il reste possible de modifier les échéances une par une ou d'en ajouter afin de refléter, au mieux, des changements de situation lors du remboursement.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/emprunt7.png" class="contour-img" alt="Nouvel emprunt en cours" data-action="zoom" />
          </p>
@@ -2011,7 +1935,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Paramétrez votre compte bancaire</span>
-         <p>Cliquez sur le bouton "Nouveau", puis sélectionnez le "Type" de trésorie et remplissez tous les champs obligatoires signalés par une astérisque de couleur rouge avec les informations requises pour le définir correctement.</p>
+         <p>Cliquez sur le bouton "Nouveau", puis sélectionnez le "Type" de trésorerie et remplissez tous les champs obligatoires signalés par une astérisque de couleur rouge avec les informations requises pour le définir correctement.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/rapprochement2.png" class="contour-img" alt="Paramétrage compte bancaire" data-action="zoom" />
          </p>
@@ -2031,7 +1955,7 @@
          <p><strong>Avantage</strong>&nbsp;: le solde de banque dans Ekylibre sera toujours à jour avec le solde de banque réel même si le relevé de compte n’est pas pointé entièrement.<br />
             <strong>Inconvénient</strong>&nbsp;: demande un paramétrage plus complexe au départ.
          </p>
-		 <p><strong><span class="avert">Sans compte d'attente&nbsp;:</span></strong><br />Laissez la case<img src="../images/commun/square-o.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">décochée à droite de l'option "Suspendre jusqu'à réconciliation" pour ne pas utiliser de compte d'attente. Tous les encaissements et les décaissements généreront directement une écriture dans le compte de banque.</p>
+         <p><strong><span class="avert">Sans compte d'attente&nbsp;:</span></strong><br />Laissez la case<img src="../images/commun/square-o.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">décochée à droite de l'option "Suspendre jusqu'à réconciliation" pour ne pas utiliser de compte d'attente. Tous les encaissements et les décaissements généreront directement une écriture dans le compte de banque.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/rapprochement4.png" class="contour-img" alt="Paramétrage compte bancaire" data-action="zoom" />
          </p>
