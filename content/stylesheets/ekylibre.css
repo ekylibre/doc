@@ -27,6 +27,16 @@ a.slice-long {
 	visibility: hidden;
 }
 
+.compta-large {
+	display: none;
+}
+.compta-short {
+	display: inline;
+}
+.compta-print {
+	display: none;
+}
+
 @media only screen and (min-width: 768px) {
 	a.slice-long {
 		display: block;
@@ -2312,7 +2322,10 @@ img.btn_close {
 		display: none;
 	}
 	.compta-short {
-	display: inline;
+		display: none;
+	}
+	.compta-print {
+		display: inline;
 	}
 	.divTableCell8,
 	.divTableHead8 {
@@ -2426,14 +2439,6 @@ img.zoom-img {
 	display: none;
 }
 
-.compta-large {
-	display: none;
-}
-
-.compta-short {
-	display: inline;
-}
-
 @media only screen and (min-width: 768px) {
 	.btn_pdf {
 		display: inline;
@@ -2471,6 +2476,9 @@ img.zoom-img {
 		display: inline;
 	}
 	.compta-short {
+		display: none;
+	}
+	.compta-print {
 		display: none;
 }
 }
