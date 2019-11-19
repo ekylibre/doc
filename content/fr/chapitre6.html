@@ -339,6 +339,8 @@
                         <select name="ListeUrl" SIZE="1" onChange="ChangeUrl(this.form)" style="width:210px">
                            <option selected value="">Immobilisations</option>
                            <option value="#immobilisations">- Enregistrer une immobilisation</option>
+                           <option value="#cession">- Enregistrer une cession d'immobilisation</option>
+                  		   <option value="#mise-rebut">- Mettre au rebut une immobilisation</option>
                         </select>
                      </form>
                   </div>
@@ -387,6 +389,8 @@
                </optgroup>
                <optgroup label="Immobilisations">
                   <option value="#immobilisations">- Enregistrer une immobilisation</option>
+                  <option value="#cession">- Enregistrer une cession d'immobilisation</option>
+                  <option value="#mise-rebut">- Mettre au rebut une immobilisation</option>
                </optgroup>
                <optgroup label="Trésorerie">
                   <option value="#tresorerie">- Créer un compte bancaire</option>
@@ -430,7 +434,7 @@
                      <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
                   </div>
                   <div class="divTableCellListe" style="width: auto">
-                     Comment enregistrer des <a href="#immobilisations" class="avoid-clicks">immobilisations</a> et passer les amortissements en écriture
+                     Comment enregistrer des <a href="#immobilisations" class="avoid-clicks">immobilisations</a>, réaliser une <a href="#cession" class="avoid-clicks">cession</a> d'immobilisation et la <a href="#mise-rebut" class="avoid-clicks">mise au rebut</a> d'une immobilisation
                   </div>
                </div>
                <div class="divTableRow">
@@ -672,7 +676,7 @@
          </div>
          <div class="info-txt">
             <span class="titre-advice">Les comptes de tiers<br /></span>
-            <p class="texte-advice">Par défaut les numéros de compte des clients commencent par 411 mais il est possible de modifier le radical comptable en 4111 en fonction des exigences de votre expert comptable ou de votre centre de gestion. De la même manière, les numéros de compte des fournisseurs commencent par 401 mais il est possible de modifier le radical comptable en 4011.</p>
+            <p class="texte-advice">Par défaut les numéros de compte des clients commencent par 411 mais il est possible de modifier le radical comptable en 4111 en fonction des exigences de votre expert-comptable ou de votre centre de gestion. De la même manière, les numéros de compte des fournisseurs commencent par 401 mais il est possible de modifier le radical comptable en 4011.</p>
          </div>
       </div>
       <div class="floating-box process">
@@ -2106,6 +2110,8 @@
       <h2 class="texte aerateur">h - Immobilisations</h2>
       <p align="center" class="texte"><img src="../images/commun/option.svg" height="55" alt="Optionnel"></p>
       <p class="texte">La notion d'immobilisation intègre l'ensemble des biens durables détenus par une exploitation sur plus d'un exercice comptable et qui ne sont pas destinés à la revente. Les immobilisations corporelles sont composées de plusieurs catégories&nbsp;: les terrains, les constructions, l’agencement et les installations générales, l’outillage, le matériel, les véhicules, le mobilier et les équipements informatiques.</p>
+	  <p align="center" class="texte aerateur procedure">A – Procédure pour enregistrer une immobilisation
+      </p>
       <p class="texte">Dans l'exemple suivant, certaines notions font appel à des procédures expliquées dans le "<a class="avoid-clicks" href="../chapitre7">chapitre 7 - Achats</a>".</p>
       <div class="info-fond aerateur-haut aerateur-bas">
          <div class="floating-box-info">
@@ -2118,6 +2124,7 @@
             </p>
          </div>
       </div>
+	  <p class="texte">Le processus suivant vous guide pour enregistrer une nouvelle immobilisation.</p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
       </div>
@@ -2190,7 +2197,7 @@
                      <img src="../images/commun/circle.svg" alt="Puce" height="15">
                   </div>
                   <div class="divTableCellPlan" style="width: auto">
-                     Vous avez réceptionné l'équipement mais il n'a pas encore été utilisé&nbsp;;
+                     Vous avez réceptionné l'équipement mais il n'a pas encore été mis en service&nbsp;;
                   </div>
                </div>
                <div class="divTableRow">
@@ -2198,7 +2205,7 @@
                      <img src="../images/commun/circle.svg" alt="Puce" height="15">
                   </div>
                   <div class="divTableCellPlan">
-                     Vous avez réceptionné l'équipement et il a déjà été mis en service dans le cadre d'une intervention &#40;passez alors directement à l'étape 8 de cette procédure&#41;.
+                     Vous avez réceptionné l'équipement et il a été mis en service. La date de mise en service est celle définie manuellement dans la fiche de l'équipement &#40;passez alors directement à l'étape 8 de cette procédure&#41;.
                   </div>
                </div>
             </div>
@@ -2254,8 +2261,8 @@
          <img src="../images/commun/step9.svg" alt="9" width="52" />
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Passez les amortissements en écriture</span>
-         <p>Revenez à la liste des immobilisations et cliquez sur le bouton "Passer en comptabilité" pour passer les amortissements en écriture.</p>
+         <span class="titre-advice">Passez les écritures d'amortissement</span>
+         <p>Revenez à la liste des immobilisations et cliquez sur le bouton "Passer en comptabilité" pour passer les écritures d'amortissement.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/immo-service3.png" class="contour-img" alt="Immobilisation en service" data-action="zoom" />
          </p>
@@ -2309,18 +2316,168 @@
             </div>
          </div>
       </div>
+	  <h6>Guide de prise en main • Comptabilité • Cession d'immobilisation</h6>
+      <a class="slice-long" id="cession"></a>
+	  <p align="center" class="texte aerateur procedure">B – Procédure pour enregistrer une cession d'immobilisation
+      </p>
+      <p class="texte">
+         Le processus suivant vous guide pour enregistrer une cession d'immobilisation.
+      </p>
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Accédez aux immobilisations</span>
+         <p>Cliquez sur le lien "Comptabilité" dans le "Menu principal" ou sur le bouton "Comptabilité" de la page d'accueil&nbsp;:</p>
+         <p align="center"><img src="../images/chapitre6/comptabilite.svg" alt="Comptabilité" width="60"></p>
+         <p>Dans la barre latérale du module, cliquez sur "Immobilisations" dans la section "Immobilisations" symbolisée par l'icône d'une maison<img src="../images/chapitre6/home.svg" alt="Immobilisations" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des immobilisations.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/cession1.png" class="contour-img" alt="Liste immobilisations" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Sélectionnez une immobilisation</span>
+         <p>Cliquez sur le numéro de l'immobilisation pour afficher son statut ainsi que le tableau des dépréciations.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/cession2.png" class="contour-img" alt="Affichage immobilisations" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Préparez la vente de l'immobilisation</span>
+         <p>Cliquez sur <span class="step step-rouge">&nbsp;Vendue&nbsp;</span> pour créer une nouvelle vente et validez votre choix dans la <span class="tooltip">fenêtre modale<span class="tooltiptext tooltip-top">Voir glossaire</span></span>.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/cession3.png" class="contour-img" alt="Liste immobilisations" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step4.svg" alt="4" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Renseignez la nouvelle vente</span>
+         <p>Sélectionnez un client dans la liste déroulante ou créez-en un nouveau à la volée.</p>
+		 <p>Saisissez le prix de cession de l'immobilisation. Notez que la variante a automatiquement été sélectionnée dans la ligne de vente.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/cession4.png" class="contour-img" alt="Liste immobilisations" data-action="zoom" />
+         </p>
+		 <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step5.svg" alt="5" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Modifiez le statut de la vente</span>
+		 <p>La vente est enregistrée avec le statut <span class="step step-orange">&nbsp;Devis brouillon&nbsp;</span>.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/cession5.png" class="contour-img" alt="Vente en mode devis brouillon" data-action="zoom" />
+         </p>
+		 <p>Transformez ce devis en facture en cliquant sur le bouton <span class="step step-vert">&nbsp;Facture&nbsp;</span> et en validant ce choix.</p>
+		  <p class="max-img-process">
+            <img src="../images/chapitre6/cession6.png" class="contour-img" alt="Transformation en facture" data-action="zoom" />
+         </p>
+		 <p>Notez que le solde négatif affiché dans la section "Affaire" &#40;égal au montant total TTC de la facture&#41; exprime une créance en attente de réglement.</p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step6.svg" alt="6" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Réalisez la cession</span>
+		 <p>Retournez dans les immobilisations et cliquez sur <span class="step step-rouge">&nbsp;Vendue&nbsp;</span>. Validez votre choix dans la <span class="tooltip">fenêtre modale<span class="tooltiptext tooltip-top">Voir glossaire</span></span>.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/cession7.png" class="contour-img" alt="Changement statut statut" data-action="zoom" />
+         </p>
+	  	 <p class="max-img-process">
+            <img src="../images/chapitre6/cession8.png" class="contour-img" alt="Statut immobilisation vendue" data-action="zoom" />
+         </p>
+		 <p>Notez que l'équipement n'est plus disponible pour enregistrer une intervention.</p>
+	  </div>
+	  <h6>Guide de prise en main • Comptabilité • Mise au rebut immobilisation</h6>
+      <a class="slice-long" id="mise-rebut"></a>
+	  <p align="center" class="texte aerateur procedure">C – Procédure pour mettre au rebut une immobilisation
+      </p>
+      <p class="texte">
+         Le processus suivant vous guide pour mettre au rebut une immobilisation.
+      </p>
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Accédez aux immobilisations</span>
+         <p>Cliquez sur le lien "Comptabilité" dans le "Menu principal" ou sur le bouton "Comptabilité" de la page d'accueil&nbsp;:</p>
+         <p align="center"><img src="../images/chapitre6/comptabilite.svg" alt="Comptabilité" width="60"></p>
+         <p>Dans la barre latérale du module, cliquez sur "Immobilisations" dans la section "Immobilisations" symbolisée par l'icône d'une maison<img src="../images/chapitre6/home.svg" alt="Immobilisations" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des immobilisations.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/mise-rebut1.png" class="contour-img" alt="Liste immobilisations" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Sélectionnez une immobilisation</span>
+         <p>Cliquez sur le numéro de l'immobilisation pour afficher son statut ainsi que le tableau des dépréciations.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/mise-rebut2.png" class="contour-img" alt="Affichage immobilisation" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Préparez la mise au rebut</span>
+         <p>Cliquez sur <span class="step step-rouge">&nbsp;Mise au rebut&nbsp;</span> pour préparer la mise au rebut de l'immobilisation et validez votre choix dans la <span class="tooltip">fenêtre modale<span class="tooltiptext tooltip-top">Voir glossaire</span></span>.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/mise-rebut3.png" class="contour-img" alt="Affichage immobilisation" data-action="zoom" />
+         </p>
+		 <p>Renseignez notamment la date de mise au rebut.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/mise-rebut4.png" class="contour-img" alt="Affichage immobilisation" data-action="zoom" />
+         </p>
+		 <p>Cliquez sur <span class="btn-blue">Modifier</span> pour valider l'opération.</p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step4.svg" alt="4" width="52" />
+      </div>
+	  <div class="process-txt">
+         <span class="titre-advice">Confirmez la mise au rebut</span>
+		 <p>Un message de confirmation vous informe de la bonne exécution de la tâche.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre6/mise-rebut5.png" class="contour-img" alt="Affichage immobilisation" data-action="zoom" />
+         </p>
+         <p>Cliquez à nouveau sur <span class="step step-rouge">&nbsp;Mise au rebut&nbsp;</span> pour confirmer la mise au rebut de l'immobilisation et validez votre choix dans la <span class="tooltip">fenêtre modale<span class="tooltiptext tooltip-top">Voir glossaire</span></span>.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/mise-rebut6.png" class="contour-img" alt="Affichage immobilisation" data-action="zoom" />
+         </p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre6/mise-rebut7.png" class="contour-img" alt="Affichage immobilisation" data-action="zoom" />
+         </p>
+		 <p>Notez que la date de mise au rebut est automatiquement mise à jour dans la fiche de l'équipement qui n'est plus disponible pour enregistrer une intervention.</p>
+      </div>
       <h6>Guide de prise en main • Comptabilité • Échanges comptables</h6>
       <a class="slice-long" id="echanges"></a>
       <h2 class="texte aerateur">i - Échanges comptables</h2>
       <p align="center" class="texte"><img src="../images/commun/option.svg" height="55" alt="Optionnel"></p>
-      <p class="texte">Ekylibre permet d'échanger des données comptables entre l'administrateur de la ferme et son expert comptable ou son centre de gestion en toute sécurité. Vous pouvez exporter et partager vos données sans interrompre votre travail et sans risque d'incohérence. Réciproquement, vous pouvez intégrer les validations ou corrections réalisées par un tiers.</p>
+      <p class="texte">Ekylibre permet d'échanger des données comptables entre l'administrateur de la ferme et son expert-comptable ou son centre de gestion en toute sécurité. Vous pouvez exporter et partager vos données sans interrompre votre travail et sans risque d'incohérence. Réciproquement, vous pouvez intégrer les validations ou corrections réalisées par un tiers.</p>
       <div class="warn-fond users-orange aerateur-haut aerateur-bas">
          <div class="floating-box-warn">
             <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
          </div>
          <div class="info-txt">
             <span class="titre-advice">Prérequis pour les échanges comptables<br /></span>
-            <p class="texte-advice">La réalisation d'échanges comptables implique que vous ayez créé auparavant un comptable &#40;un nouveau contact&#41; et que vous ayez associé une adresse email valide à ce tiers pour permettre à l'application de communiquer automatiquement avec lui. Référez-vous au <a href="../chapitre8" class="avoid-clicks" target="_self">chapitre 8 - Stocks et tiers</a> pour connaître les procédures à suivre concernant ce prérequis.</p>
+            <p class="texte-advice">La réalisation d'échanges comptables implique que vous ayez créé auparavant un comptable &#40;un nouveau contact&#41; et que vous ayez associé une adresse email valide à ce tiers pour permettre à l'application de communiquer automatiquement avec lui. Référez-vous au <a href="../chapitre9" class="avoid-clicks" target="_self">chapitre 9 - Stocks et tiers</a> pour connaître les procédures à suivre concernant ce prérequis.</p>
          </div>
       </div>
       <p class="texte">Le journal des opérations diverses en comptabilité, appelé aussi journal des OD, est un document auxiliaire au journal général de comptabilité. Il permet d’enregistrer les opérations comptables qui ne concernent ni le journal des achats, ni le journal des ventes, ni les journaux de trésorerie. Le journal des opérations diverses &#40;OD&#41; permet d’enregistrer des opérations concernant les mouvements de TVA, les provisions, la paie ou encore les écritures rectificatrices des différentes erreurs de saisie qui ont été commises. Notez que le journal comptable est une obligation légale pour les entreprises soumises au régime du réel, afin de suivre toutes ses opérations.</p>
@@ -2369,10 +2526,10 @@
             <img src="../images/chapitre6/journaux3.png" class="contour-img" alt="Nouveau journal" data-action="zoom" />
          </p>
       </div>
-      <p align="center" class="texte aerateur procedure">B – Procédure pour échanger des informations comptables
+      <p align="center" class="texte aerateur procedure">B – Procédure pour échanger des données comptables
       </p>
       <p class="texte">
-         Le processus suivant vous guide pour échanger des informations comptables.
+         Le processus suivant vous guide pour échanger des données comptables avec un tiers.
       </p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
@@ -2403,7 +2560,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Modifiez l'exercice comptable</span>
-         <p>Sélectionnez, parmi les tiers disponibles dans la liste déroulante, votre comptable ou créez-en un à la volée en choisissant "Ajouter un nouvel enregistrement".</p>
+         <p>Sélectionnez, parmi les tiers disponibles dans la liste déroulante, <strong>le même comptable</strong> que celui choisi pour la création du journal des opérations diverses.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/echange3.png" class="contour-img" alt="Affectation d'un comptable" data-action="zoom" />
          </p>
@@ -2459,7 +2616,7 @@
                      <img src="../images/chapitre6/download.svg" alt="Export" height="20">
                   </div>
                   <div class="divTableCellInter" style="width: auto">
-                     <p>Le premier lien permet de fabriquer un fichier CSV &#40;zippé&#41; qui s'enregistrera dans le dossier des téléchargements de votre navigateur.</p>
+                     <p>Le premier lien permet de fabriquer un fichier CSV des écritures &#40;zippé&#41; qui s'enregistrera dans le dossier des téléchargements de votre navigateur.</p>
                   </div>
                </div>
                <div class="divTableRow">
@@ -2495,7 +2652,7 @@
          </div>
          <div class="info-txt">
             <span class="titre-advice">Accès à votre ferme par votre comptable<br /></span>
-            <p class="texte-advice">Vous pouvez créer un accès pour votre expert comptable ou votre centre de gestion avec les autorisations nécessaires pour lui permettre de visualiser et de modifier les données comptables de votre exploitation à distance. Référez-vous au <a href="../chapitre11" class="avoid-clicks" target="_self">chapitre 11 - Accès</a> pour connaître les procédures à suivre.</p>
+            <p class="texte-advice">Vous pouvez créer un accès pour votre expert-comptable ou votre centre de gestion avec les autorisations nécessaires pour lui permettre de visualiser et de modifier les données comptables de votre exploitation à distance. Référez-vous au <a href="../chapitre11" class="avoid-clicks" target="_self">chapitre 11 - Accès</a> pour connaître les procédures à suivre.</p>
          </div>
       </div>
       <h6>Guide de prise en main • Comptabilité • Balance</h6>
@@ -2564,6 +2721,7 @@
       <a class="slice-long" id="grand-livre"></a>
       <h2 class="texte aerateur">k - Grand-livre</h2>
       <p class="texte">Un Grand-livre est la transcription sur un document unique de la totalité des mouvements de comptabilité d’une exploitation. Ces mouvements sont classés par compte, dans l'ordre de numéro prévu par le plan comptable.</p>
+	  <!--
       <p class="texte"><strong>Que doit contenir le Grand-livre&nbsp;?</strong></p>
       <p class="texte">Le Grand-livre doit obligatoirement faire mention de plusieurs éléments. Il doit établir la liste des comptes, classés dans l'ordre de leurs numéros, en donnant pour chacun d'eux les informations suivantes&nbsp;:</p>
       <div class="divTableListe marge">
@@ -2769,10 +2927,11 @@
       <p class="texte"><strong>Qu’est-ce qu’un Grand-livre auxiliaire&nbsp;?</strong></p>
       <p class="texte">Les Grands-livres auxiliaires sont formés par l'ensemble des comptes individuels de même type &#40;clients, fournisseurs, etc.&#41;. Ils permettent ainsi d'établir un relevé nominatif de la position de chaque compte avec le détail des mouvements.</p>
       <p class="texte">Les comptes auxiliaires font partie intégrante du Grand-livre général. Néanmoins, il n'est retranscrit dans le Grand-livre général que le solde total des comptes avec le numéro correspondant. Par exemple 411 pour les clients et 401 pour les fournisseurs.</p>
+	  -->
       <p align="center" class="texte aerateur procedure">A – Procédure pour exporter le Grand-livre
       </p>
       <p class="texte">
-         Le processus suivant vous guide pour produire le Grand-livre.
+         Le processus suivant vous guide pour produire le Grand-livre et/ou un des deux Grands-livres auxiliaires.
       </p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
