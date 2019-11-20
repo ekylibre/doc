@@ -341,6 +341,8 @@
                            <option value="#immobilisations">- Enregistrer une immobilisation</option>
                            <option value="#cession">- Enregistrer une cession d'immobilisation</option>
                   		   <option value="#mise-rebut">- Mettre au rebut une immobilisation</option>
+                  		   <option value="#etats">- Produire les états des immobilisations</option>
+                  		   <option value="#etats">- Produire les états des plus et moins values</option>
                         </select>
                      </form>
                   </div>
@@ -363,7 +365,7 @@
          <p class="texte aerateur-haut"><strong>Dans ce chapitre, on vous explique comment</strong> &#40;sélectionnez le lien dans la liste déroulante&#41;&nbsp;<strong>:</strong></p>
          <form class="texte">
             <select name="ListeUrl" SIZE="1" onChange="ChangeUrl(this.form)" style="width:210px">
-               <option selected value="">Documentation comptabilité&nbsp;:</option>
+               <option selected value="">Menu comptabilité&nbsp;:</option>
                <optgroup label="Configuration">
                   <option value="#societe">- Paramétrer la comptabilité</option>
                   <option value="#plan">- Créer un compte comptable</option>
@@ -391,6 +393,8 @@
                   <option value="#immobilisations">- Enregistrer une immobilisation</option>
                   <option value="#cession">- Enregistrer une cession d'immobilisation</option>
                   <option value="#mise-rebut">- Mettre au rebut une immobilisation</option>
+                  <option value="#etats">- Produire les états des immobilisations</option>
+                  <option value="#etats">- Produire les états des plus et moins values</option>
                </optgroup>
                <optgroup label="Trésorerie">
                   <option value="#tresorerie">- Créer un compte bancaire</option>
@@ -790,6 +794,7 @@
       <a class="slice-long" id="brouillard"></a>
       <p align="center" class="texte aerateur procedure">B – Procédure pour valider les écritures du brouillard comptable</p>
       <p class="texte">Comme expliqué en introduction de ce chapitre, chaque écriture est enregistrée en mode brouillard. La validation des écritures est donc une étape incoutournable, notamment pour réaliser la clôture d'un exercice comptable.</p>
+	  <p class="texte">Pensez à réaliser le <a href="#lettrage" class="avoid-clicks" target="_self">lettrage de comptes</a> avant de valider les écritures présentes dans le brouillard des journaux des achats et des ventes.</p>
       <p class="texte">
          Le processus suivant vous guide pour valider les écritures du brouillard comptable.
       </p>
@@ -826,24 +831,29 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Consultez les écritures</span>
-         <p>Les écritures à valider sont listées pour l'ensemble des journaux ou seulement pour le journal sélectionné.</p>
+         <p>Les écritures à valider sont listées pour une période donnée et pour l'ensemble des journaux ou seulement pour le journal sélectionné.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/brouillard4.png" class="contour-img" alt="Liste des écritures" data-action="zoom" />
          </p>
+		 <p>Cliquez sur le bouton "Valider les écritures" pour déclencher la validation.</p>
       </div>
       <br />
       <div class="floating-box process">
          <img src="../images/commun/step4.svg" alt="4" width="52" />
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Validez une ou plusieurs écritures</span>
-         <p>Cliquez sur le bouton de validation dans la <span class="tooltip">fenêtre modale<span class="tooltiptext tooltip-top">Voir glossaire</span></span> pour confirmer l'opération et figer l'écriture. Notez que toute modification ultérieure de l'un de ses éléments devient alors impossible.</p>
+         <span class="titre-advice">Validez les écritures</span>
+         <p>Cliquez sur le bouton de validation dans la <span class="tooltip">fenêtre modale<span class="tooltiptext tooltip-top">Voir glossaire</span></span> pour confirmer l'opération et figer les écritures présentes dans le brouillard. Notez que toute modification ultérieure de l'un de ses éléments devient alors impossible.</p>
          <p class="max-img-process">
-            <img src="../images/chapitre6/brouillard5.png" class="contour-img" alt="Liste des écritures" data-action="zoom" />
+            <img src="../images/chapitre6/brouillard5.png" class="contour-img" alt="Validation du brouillard" data-action="zoom" />
          </p>
-         <p>Un message de confirmation vous informe de la bonne exécution de la tâche&nbsp;:</p>
+         <p>Un message de confirmation vous informe alors de la bonne exécution de la tâche&nbsp;:</p>
          <p class="max-img-process">
-            <img src="../images/chapitre6/brouillard6.png" class="contour-img" alt="Liste des écritures" data-action="zoom" />
+            <img src="../images/chapitre6/brouillard6.png" class="contour-img" alt="Message de confirmation" data-action="zoom" />
+         </p>
+		 <p>Notez qu'il faut avoir validé au moins une écriture pour disposer du bouton permettant d'exporter le journal centralisateur au format PDF.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre6/brouillard7.png" class="contour-img" alt="Liste des journaux" data-action="zoom" />
          </p>
       </div>
       <h6>Guide de prise en main • Comptabilité • Lettrage de comptes</h6>
@@ -1297,8 +1307,8 @@
          <img src="../images/commun/step3.svg" alt="3" width="52" />
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Réalisez l'export FEC</span>
-         <p>Cliquez sur le bouton "Export FEC", puis sélectionnez le type de fichier dans la liste déroulante. Les abbréviations utilisées sont les suivantes&nbsp;:</p>
+         <span class="titre-advice">Sélectionnez l'export FEC</span>
+         <p>Cliquez sur le bouton "Export FEC", puis sélectionnez le type de fichier souhaité dans la liste déroulante. Les abbréviations utilisées sont les suivantes&nbsp;:</p>
 		  <p>BA - Bénéfices Agricoles<br />BNC - Bénéfices Non Commerciaux<br />IR - Impôt sur le Revenu</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/exportfec3.png" class="contour-img" alt="Sélection Export FEC" data-action="zoom" />
@@ -1372,8 +1382,8 @@
          <img src="../images/commun/step3.svg" alt="3" width="52" />
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Réalisez l'export bilan/compte de résultat</span>
-         <p>Cliquez sur le bouton "Export Bilan/Compte de résultat", puis sélectionnez le document désiré dans la liste déroulante.</p>
+         <span class="titre-advice">Sélectionnez le type de document</span>
+         <p>Cliquez sur le bouton "Export Bilan/Compte de résultat", puis sélectionnez le type de document souhaité dans la liste déroulante&nbsp;: "Export compte de résultat, "Export bilan" ou "Export bilan simplifié".</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/bilan-cr3.png" class="contour-img" alt="Sélection Export FEC" data-action="zoom" />
          </p>
@@ -1395,7 +1405,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Obtenez le bilan/compte de résultat</span>
-         <p>Cliquez sur le lien "Votre fichier a été généré avec succès" pour obtenir les informations du nouveau document. Cliquez sur la vignette pour afficher le document au format PDF dans votre navigateur pour le télécharger et/ou l'imprimer.</p>
+         <p>Cliquez sur le lien "Votre fichier a été généré avec succès" pour obtenir les informations du nouveau document. Cliquez sur la vignette pour afficher le document au format PDF dans votre navigateur afin de le télécharger et/ou de l'imprimer.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/bilan-cr5.png" class="contour-img" alt="Récupération du fichier" data-action="zoom" />
          </p>
@@ -2399,7 +2409,7 @@
 	  	 <p class="max-img-process">
             <img src="../images/chapitre6/cession8.png" class="contour-img" alt="Statut immobilisation vendue" data-action="zoom" />
          </p>
-		 <p>Notez que l'équipement n'est plus disponible pour enregistrer une intervention.</p>
+		 <p>Notez que, dès cette opération validée, l'équipement n'est plus disponible pour enregistrer une intervention.</p>
 	  </div>
 	  <h6>Guide de prise en main • Comptabilité • Mise au rebut immobilisation</h6>
       <a class="slice-long" id="mise-rebut"></a>
@@ -2464,7 +2474,60 @@
 		 <p class="max-img-process">
             <img src="../images/chapitre6/mise-rebut7.png" class="contour-img" alt="Affichage immobilisation" data-action="zoom" />
          </p>
-		 <p>Notez que la date de mise au rebut est automatiquement mise à jour dans la fiche de l'équipement qui n'est plus disponible pour enregistrer une intervention.</p>
+		 <p>Notez que la date de mise au rebut est automatiquement reportée dans la fiche de l'équipement qui n'est alors plus disponible pour enregistrer une intervention.</p>
+      </div>
+	  <h6>Guide de prise en main • Comptabilité • États des immobilisations</h6>
+      <a class="slice-long" id="etats"></a>
+	  <p align="center" class="texte aerateur procedure">D – Procédure pour produire les états des immobilisations
+      </p>
+      <p class="texte">
+         Le processus suivant vous guide pour produire les états des immobilisations et des plus et moins values.
+      </p>
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Accédez aux immobilisations</span>
+         <p>Cliquez sur le lien "Comptabilité" dans le "Menu principal" ou sur le bouton "Comptabilité" de la page d'accueil&nbsp;:</p>
+         <p align="center"><img src="../images/chapitre6/comptabilite.svg" alt="Comptabilité" width="60"></p>
+         <p>Dans la barre latérale du module, cliquez sur "Immobilisations" dans la section "Immobilisations" symbolisée par l'icône d'une maison<img src="../images/chapitre6/home.svg" alt="Immobilisations" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des immobilisations.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/etats1.png" class="contour-img" alt="Liste immobilisations" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Sélectionnez le type de document</span>
+         <p>Cliquez sur le bouton "Exporter", puis sélectionnez le type de document souhaité dans la liste déroulante&nbsp;: "État des immobilisations", "État des immobilisations par compte" ou "État des plus et moins values".</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/etats2.png" class="contour-img" alt="Sélection état" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez les notifications</span>
+         <p>Patientez quelques instants. La pastille rouge<img src="../images/commun/marker.svg" alt="Notification" height="20" class="align-icone icone-marge-gauche icone-marge-droite">en haut à droite de la cloche<img src="../images/commun/bell-o-blue.svg" alt="Cloche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">vous indique qu'une opération interne a été effectuée par l'application. Cliquez sur celle-ci pour afficher la notification. En cas d'erreur, vous serez informé&#40;e&#41; de la nature de celle-ci.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/etats3.png" class="contour-img" alt="Affichage de la notification" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step4.svg" alt="4" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Obtenez le fichier des états</span>
+         <p>Cliquez sur le lien "Votre fichier a été généré avec succès" pour obtenir les informations du nouveau document. Cliquez sur la vignette pour afficher le document au format PDF dans votre navigateur afin de le télécharger et/ou de l'imprimer.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/etats4.png" class="contour-img" alt="Récupération du fichier" data-action="zoom" />
+         </p>
+         <p>Notez que le fichier reste accessible à tout moment via le lien "Gestion électronique des documents" dans la section "Archives"<img src="../images/commun/archive.svg" alt="Archives" height="20" class="align-icone icone-marge-gauche icone-marge-droite">du module "Outils".</p>
       </div>
       <h6>Guide de prise en main • Comptabilité • Échanges comptables</h6>
       <a class="slice-long" id="echanges"></a>
@@ -2482,6 +2545,7 @@
       </div>
       <p class="texte">Le journal des opérations diverses en comptabilité, appelé aussi journal des OD, est un document auxiliaire au journal général de comptabilité. Il permet d’enregistrer les opérations comptables qui ne concernent ni le journal des achats, ni le journal des ventes, ni les journaux de trésorerie. Le journal des opérations diverses &#40;OD&#41; permet d’enregistrer des opérations concernant les mouvements de TVA, les provisions, la paie ou encore les écritures rectificatrices des différentes erreurs de saisie qui ont été commises. Notez que le journal comptable est une obligation légale pour les entreprises soumises au régime du réel, afin de suivre toutes ses opérations.</p>
       <p class="texte">Dans Ekylibre, les écritures issues des éventuelles corrections réalisées par votre comptable doivent être consignées dans un nouveau journal d'opérations diverses, l'existant étant réservé à l'administrateur de la ferme.</p>
+	  <a class="slice-long" id="journal-od"></a>
       <p align="center" class="texte aerateur procedure">A – Procédure pour paramétrer un nouveau journal
       </p>
       <p class="texte">
@@ -2509,7 +2573,7 @@
             Cliquez sur le bouton "Nouveau" et remplissez tous les champs avec les bonnes informations pour le définir correctement.
          </p>
          <p>Nommez de façon explicite le nouveau journal. Vérifiez que le bouton radio<img src="../images/commun/radio.svg" alt="Bouton radio" height="20" class="align-icone icone-marge-gauche icone-marge-droite">est bien activé pour "Opérations diverses".</p>
-         <p>Sélectionnez, parmi les tiers, le comptable préalablement créé.</p>
+         <p>Sélectionnez, parmi les tiers disponibles, votre comptable ou créez-en une à la volée en sélectionnant "Ajouter un nouvel enregistrement". Notez que ce comptable doit être <strong>le même</strong> que celui qui sera associé à l'exercice comptable.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/journaux2.png" class="contour-img" alt="Nouveau journal" data-action="zoom" />
          </p>
@@ -2583,7 +2647,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Créez un nouvel échange</span>
-         <p>Cliquez sur le bouton "Nouvel échange".</p>
+         <p>Cliquez sur le bouton "Nouvel échange". Si ce bouton est absent de l'interface, soit vous n'avez pas encore créé de <a href="#journal-od" class="avoid-clicks" target="_self">journal d'opérations diverses</a> destiné aux échanges, soit le comptable associé à ce journal n'est pas le même que celui lié à l'exercice.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/echange4.png" class="contour-img" alt="Création nouvel échange" data-action="zoom" />
          </p>
@@ -2645,6 +2709,10 @@
                </div>
             </div>
          </div>
+		 <p>Progressivement, la liste sera complétée par les échanges successifs ouverts au sein d'un même exercice &#40;deux échanges clôturés et un en cours dans cet exemple&#41;&nbsp;:</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre6/echange8.png" class="contour-img" alt="Liste des échanges" data-action="zoom" />
+         </p>
       </div>
       <div class="info-fond wrench-green aerateur-haut">
          <div class="floating-box-info">
@@ -2658,7 +2726,7 @@
       <h6>Guide de prise en main • Comptabilité • Balance</h6>
       <a class="slice-long" id="balance"></a>
       <h2 class="texte aerateur">j - Balance</h2>
-      <p class="texte">La balance comptable est un état d'une période, établi à partir de la liste de tous les comptes du Grand-livre, le grand journal de l'entreprise &#40;qu'ils soient de bilan ou de gestion&#41; et regroupant tous les totaux &#40;ou masses&#41; en débit et crédit de ces comptes et par différence tous les soldes débiteurs et créditeurs.</p>
+      <p class="texte">La balance comptable est un document de synthèse qui dresse la liste de tous les comptes mouvementés sur une période donnée. Elle fournit, pour chaque compte utilisé, son solde ainsi que le total des mouvements débiteurs et le total des mouvements créditeurs.</p>
       <p align="center" class="texte aerateur procedure">A – Procédure pour produire la balance
       </p>
       <p class="texte">
@@ -2721,214 +2789,9 @@
       <a class="slice-long" id="grand-livre"></a>
       <h2 class="texte aerateur">k - Grand-livre</h2>
       <p class="texte">Un Grand-livre est la transcription sur un document unique de la totalité des mouvements de comptabilité d’une exploitation. Ces mouvements sont classés par compte, dans l'ordre de numéro prévu par le plan comptable.</p>
-	  <!--
-      <p class="texte"><strong>Que doit contenir le Grand-livre&nbsp;?</strong></p>
-      <p class="texte">Le Grand-livre doit obligatoirement faire mention de plusieurs éléments. Il doit établir la liste des comptes, classés dans l'ordre de leurs numéros, en donnant pour chacun d'eux les informations suivantes&nbsp;:</p>
-      <div class="divTableListe marge">
-         <div class="divTableBody">
-            <div class="divTableRow">
-               <div class="divTableCellPlan" style="width: 10px">
-                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
-               </div>
-               <div class="divTableCellPlan" style="width: auto">
-                  Numéro du compte&nbsp;;
-               </div>
-            </div>
-            <div class="divTableRow">
-               <div class="divTableCellPlan">
-                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
-               </div>
-               <div class="divTableCellPlan">
-                  Intitulé du compte.
-               </div>
-            </div>
-         </div>
-      </div>
-      <p class="texte">Dans l'ordre chronologique des opérations effectuées, on obtient les informations suivantes&nbsp;:</p>
-      <div class="divTableListe marge">
-         <div class="divTableBody">
-            <div class="divTableRow">
-               <div class="divTableCellPlan" style="width: 10px">
-                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
-               </div>
-               <div class="divTableCellPlan" style="width: auto">
-                  Date de l'écriture&nbsp;;
-               </div>
-            </div>
-            <div class="divTableRow">
-               <div class="divTableCellPlan">
-                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
-               </div>
-               <div class="divTableCellPlan">
-                  Libellé de l'écriture&nbsp;;
-               </div>
-            </div>
-            <div class="divTableRow">
-               <div class="divTableCellPlan">
-                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
-               </div>
-               <div class="divTableCellPlan">
-                  Numéro de pièce comptable&nbsp;;
-               </div>
-            </div>
-            <div class="divTableRow">
-               <div class="divTableCellPlan">
-                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
-               </div>
-               <div class="divTableCellPlan">
-                  Journal de comptabilisation de l’opération &#40;banque, achats, ventes, opérations diverses&#41;&nbsp;;
-               </div>
-            </div>
-            <div class="divTableRow">
-               <div class="divTableCellPlan">
-                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
-               </div>
-               <div class="divTableCellPlan">
-                  Montant et sens de l’imputation &#40;en débit ou en crédit&#41;.
-               </div>
-            </div>
-         </div>
-      </div>
-      <p class="texte">Le Grand-livre permet ainsi d'entrer dans le détail des comptes et de retrouver les correspondances entre les différents mouvements. En résumé, il donne une vision simple et analytique de l'ensemble des informations.</p>
-      <p class="texte"><strong>Comment se présente un Grand-livre&nbsp;?</strong></p>
-      <p class="texte">Le Grand-livre regroupe l’ensemble des comptes qui ont été utilisés par l’entreprise dans le cadre de la tenue de sa comptabilité. Il se décline généralement en 2 formats&nbsp;:</p>
-      <div class="divTableListe marge">
-         <div class="divTableBody">
-            <div class="divTableRow">
-               <div class="divTableCellPlan" style="width: 10px">
-                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
-               </div>
-               <div class="divTableCellPlan" style="width: auto">
-                  Le Grand-livre général : comptes des classes 1 à 7&nbsp;;
-               </div>
-            </div>
-            <div class="divTableRow">
-               <div class="divTableCellPlan">
-                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
-               </div>
-               <div class="divTableCellPlan">
-                  Les Grands-livres auxiliaires&nbsp;: détail des comptes 411 &#40;Grand-livre auxiliaire clients&#41; ou détail des comptes 401 &#40;Grand-livre auxiliaire fournisseurs&#41;.
-               </div>
-            </div>
-         </div>
-      </div>
-      <p class="texte">Habituellement, les comptes qui figurent dans le Grand-livre sont&nbsp;:</p>
-      <div class="divTableListe marge">
-         <div class="divTableBody">
-            <div class="divTableRow">
-               <div class="divTableCellPlan" style="width: 10px">
-                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
-               </div>
-               <div class="divTableCellPlan" style="width: auto">
-                  les actifs à court terme&nbsp;;
-               </div>
-            </div>
-            <div class="divTableRow">
-               <div class="divTableCellPlan">
-                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
-               </div>
-               <div class="divTableCellPlan">
-                  les biens d'équipement&nbsp;;
-               </div>
-            </div>
-            <div class="divTableRow">
-               <div class="divTableCellPlan">
-                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
-               </div>
-               <div class="divTableCellPlan">
-                  le passif&nbsp;;
-               </div>
-            </div>
-            <div class="divTableRow">
-               <div class="divTableCellPlan">
-                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
-               </div>
-               <div class="divTableCellPlan">
-                  les éléments de revenus et de dépenses&nbsp;;
-               </div>
-            </div>
-            <div class="divTableRow">
-               <div class="divTableCellPlan">
-                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
-               </div>
-               <div class="divTableCellPlan">
-                  les profits&nbsp;;
-               </div>
-            </div>
-            <div class="divTableRow">
-               <div class="divTableCellPlan">
-                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
-               </div>
-               <div class="divTableCellPlan">
-                  les pertes.
-               </div>
-            </div>
-         </div>
-      </div>
-      <p class="texte">Le Grand-livre général doit présenter&nbsp;:</p>
-      <div class="divTableListe marge">
-         <div class="divTableBody">
-            <div class="divTableRow">
-               <div class="divTableCellPlan" style="width: 10px">
-                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
-               </div>
-               <div class="divTableCellPlan" style="width: auto">
-                  le solde du compte au début de la période&nbsp;;
-               </div>
-            </div>
-            <div class="divTableRow">
-               <div class="divTableCellPlan">
-                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
-               </div>
-               <div class="divTableCellPlan">
-                  l’ensemble des mouvements ayant affecté le compte au cours de l’exercice &#40;débit et crédit&#41;&nbsp;;
-               </div>
-            </div>
-            <div class="divTableRow">
-               <div class="divTableCellPlan">
-                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
-               </div>
-               <div class="divTableCellPlan">
-                  et le solde final de ce compte.
-               </div>
-            </div>
-         </div>
-      </div>
-      <p class="texte">Voici de quelle manière sont classés les comptes, opérations, et sommes des débits et crédits dans un Grand-livre général&nbsp;:</p>
-      <div class="divTableListe marge">
-         <div class="divTableBody">
-            <div class="divTableRow">
-               <div class="divTableCellPlan" style="width: 10px">
-                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
-               </div>
-               <div class="divTableCellPlan" style="width: auto">
-                  les comptes sont classés par numéro, dans l’ordre prévu par le plan comptable&nbsp;;
-               </div>
-            </div>
-            <div class="divTableRow">
-               <div class="divTableCellPlan">
-                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
-               </div>
-               <div class="divTableCellPlan">
-                  les opérations sont classées par ordre chronologique&nbsp;;
-               </div>
-            </div>
-            <div class="divTableRow">
-               <div class="divTableCellPlan">
-                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
-               </div>
-               <div class="divTableCellPlan">
-                  la somme des débits doit être égale à la somme des crédits.
-               </div>
-            </div>
-         </div>
-      </div>
-      <p class="texte">Les exploitations doivent conserver leur Grand-livre pendant une période de 10 ans minimum à compter de la date de la dernière inscription.</p>
-      <p class="texte"><strong>Qu’est-ce qu’un Grand-livre auxiliaire&nbsp;?</strong></p>
-      <p class="texte">Les Grands-livres auxiliaires sont formés par l'ensemble des comptes individuels de même type &#40;clients, fournisseurs, etc.&#41;. Ils permettent ainsi d'établir un relevé nominatif de la position de chaque compte avec le détail des mouvements.</p>
-      <p class="texte">Les comptes auxiliaires font partie intégrante du Grand-livre général. Néanmoins, il n'est retranscrit dans le Grand-livre général que le solde total des comptes avec le numéro correspondant. Par exemple 411 pour les clients et 401 pour les fournisseurs.</p>
-	  -->
-      <p align="center" class="texte aerateur procedure">A – Procédure pour exporter le Grand-livre
+	  <p class="texte">Les Grands-livres auxiliaires sont formés par l'ensemble des comptes individuels de même type &#40;clients, fournisseurs, etc.&#41;. Ils permettent ainsi d'établir un relevé nominatif de la position de chaque compte avec le détail des mouvements.</p>
+      <p class="texte">Les comptes auxiliaires font partie intégrante du Grand-livre général. Néanmoins, il n'est retranscrit dans le Grand-livre que le solde total des comptes avec le numéro correspondant. Par exemple 401 pour les fournisseurs et 411 pour les clients.</p>
+      <p align="center" class="texte aerateur procedure">A – Procédure pour produire le Grand-livre
       </p>
       <p class="texte">
          Le processus suivant vous guide pour produire le Grand-livre et/ou un des deux Grands-livres auxiliaires.
