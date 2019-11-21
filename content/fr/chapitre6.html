@@ -578,7 +578,7 @@
       </div>
       <p align="center" class="texte legende">Fonctionnement de la comptabilité dans Ekylibre</p>
       <h6>Guide de prise en main • Comptabilité • Introduction</h6>
-      <a class="slice-long" id="introduction"></a>
+      <a class="slice-process" id="introduction"></a>
       <h2 class="texte aerateur">a - Introduction à la comptabilité</h2>
       <p class="texte">Il y a lieu de distinguer trois phases dans le processus de validation d’une écriture comptable.</p>
       <p class="texte titre-advice">1. Avant la validation comptable d'une écriture &#40;saisie en mode dit brouillard&#41;</p>
@@ -617,7 +617,7 @@
          </div>
       </div>
       <h6>Guide de prise en main • Comptabilité • Paramétrage de l'exploitation</h6>
-      <a class="slice-long" id="societe"></a>
+      <a class="slice-process" id="societe"></a>
       <h2 class="texte aerateur">b - Paramétrage de l'exploitation</h2>
       <div class="config margin-config">
          <p>
@@ -688,15 +688,18 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Préférences analytiques</span>
-         <p>Dans la section "Préférences de la comptabilité", cochez les cases de répartition des achats et des ventes sur les activités pour analyser la rentabilité de chaque activité le cas échéant &#40;la fonctionnalité n'est pas encore disponible pour les équipes&#41;.
-         </p>
+         <p>Dans la section "Préférences analytiques", cochez la case de répartition des achats et des ventes sur les activités pour analyser la rentabilité de chaque activité le cas échéant &#40;la fonctionnalité n'est pas encore disponible pour les équipes&#41;.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/societe4.png" class="contour-img" alt="Paramétrage société" data-action="zoom" />
+         </p>
+		 <p>Lors de l'enregistrement d'un achat, une liste déroulante vous permettra de sélectionner une activité parmi celles ouvertes&nbsp;:</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre6/societe5.png" class="contour-img" alt="Liste activités" data-action="zoom" />
          </p>
          <p>Cliquez sur <span class="btn-blue">Modifier</span> pour valider l'opération.</p>
       </div>
       <h6>Guide de prise en main • Comptabilité • Journaux</h6>
-      <a class="slice-long" id="journaux"></a>
+      <a class="slice-process" id="journaux"></a>
       <h2 class="texte aerateur">c - Journaux</h2>
       <p class="texte">La création d'un nouveau journal peut s'avérer utile voire indispensable dans les cas suivants&nbsp;:</p>
       <div class="divTableListe marge">
@@ -766,15 +769,13 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Créez un nouveau journal</span>
-         <p>
-            Cliquez sur le bouton "Nouveau" et remplissez tous les champs avec les bonnes informations pour le définir correctement.
-         </p>
-         <p>Nommez de façon explicite le nouveau journal. Vérifiez que le bouton radio<img src="../images/commun/radio.svg" alt="Bouton radio" height="20" class="align-icone icone-marge-gauche icone-marge-droite">est bien activé pour "Ventes".</p>
+         <p>Cliquez sur le bouton "Nouveau" et remplissez tous les champs avec les bonnes informations pour le définir correctement.</p>
+		 <p>Nommez de façon explicite le nouveau journal et affectez-lui un code. La longueur de la chaîne alphanumérique pour définir le code du journal est limitée à 4 caractères. Si le code est plus long, il sera automatiquement tronqué lors de l'enregistrement du journal. Le passage du code en majuscule est également automatique lors de la création d'un nouveau journal.</p><p>Vérifiez que le bouton radio<img src="../images/commun/radio.svg" alt="Bouton radio" height="20" class="align-icone icone-marge-gauche icone-marge-droite">est bien activé pour "Ventes".</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/journal2019-2.png" class="contour-img" alt="Nouveau journal" data-action="zoom" />
          </p>
          <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
-         <p>Notez que si vous envisagez de réaliser des rapprochements bancaires à l'aide de fichiers OFX, il faudra créer un nouveau journal des opération diverses et cocher la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">devant "Utilisé pour les écarts". Ce journal peut également servir pour les factures non parvenues.</p>
+         <p>Notez que si vous envisagez de réaliser des <a href="#rapprochement" class="avoid-clicks">rapprochements bancaires</a> à l'aide de fichiers <span class="tooltip">OFX<span class="tooltiptext tooltip-top">Voir glossaire</span></span>, il faudra créer un nouveau journal des opération diverses et cocher la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">devant "Utilisé pour les écarts". Ce journal peut également servir pour les factures non parvenues.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/journal2019-3.png" class="contour-img" alt="Nouveau journal" data-action="zoom" />
          </p>
@@ -791,7 +792,7 @@
          </p>
       </div>
       <h6>Guide de prise en main • Comptabilité • Brouillard comptable</h6>
-      <a class="slice-long" id="brouillard"></a>
+      <a class="slice-process" id="brouillard"></a>
       <p align="center" class="texte aerateur procedure">B – Procédure pour valider les écritures du brouillard comptable</p>
       <p class="texte">Comme expliqué en introduction de ce chapitre, chaque écriture est enregistrée en mode brouillard. La validation des écritures est donc une étape incoutournable, notamment pour réaliser la clôture d'un exercice comptable.</p>
 	  <p class="texte">Pensez à réaliser le <a href="#lettrage" class="avoid-clicks" target="_self">lettrage de comptes</a> avant de valider les écritures présentes dans le brouillard des journaux des achats et des ventes.</p>
@@ -857,7 +858,7 @@
          </p>
       </div>
       <h6>Guide de prise en main • Comptabilité • Lettrage de comptes</h6>
-      <a class="slice-long" id="lettrage"></a>
+      <a class="slice-process" id="lettrage"></a>
       <p align="center" class="texte aerateur procedure">C – Procédure pour réaliser le lettrage de comptes</p>
       <p class="texte">Le lettrage comptable d'un compte &#40;généralement un compte de tiers&#41; est une opération qui consiste à affecter un seul repère à 2 ou plusieurs entrées comptables dans ce compte, la somme des entrées au crédit devant être égale à la somme des entrées au débit. Il permet donc d'isoler les factures restant à payer pour les fournisseurs et les factures restant à encaisser pour les clients.</p>
       <p class="texte">Ce rapprochement est réalisé grâce à une codification composée d'une ou plusieurs «&nbsp;lettres&nbsp;» permettant ainsi de visualiser plus rapidement les factures non réglées. Ekylibre réalise automatiquement le lettrage en détectant les factures et les règlements pour les lier s'ils sont équilibrés. Dans le cas contraire, il sera possible de corriger le lettrage et éventuellement d'ajouter des écritures de compensation.</p>
@@ -961,7 +962,7 @@
          </p>
       </div>
       <h6>Guide de prise en main • Comptabilité • Exercices comptables</h6>
-      <a class="slice-long" id="exercice"></a>
+      <a class="slice-process" id="exercice"></a>
       <h2 class="texte aerateur">d - Exercices comptables</h2>
       <div class="config margin-config">
          <p>
@@ -1096,7 +1097,7 @@
          </div>
       </div>
       <h6>Guide de prise en main • Comptabilité • Clôture d'un exercice</h6>
-      <a class="slice-long" id="cloture"></a>
+      <a class="slice-process" id="cloture"></a>
       <p align="center" class="texte aerateur procedure">B – Procédure pour clôturer un exercice comptable</p>
       <p class="texte">Par la clôture des comptes, nommée clôture comptable, vous enregistrez des écritures comptables. Ces écritures comptables définissent et actent la fin de votre exercice comptable, afin de pouvoir commencer votre exercice de l’année suivante.</p>
       <p class="texte">
@@ -1111,7 +1112,7 @@
             Cliquez sur le lien "Comptabilité" dans le "Menu principal" ou sur le bouton "Comptabilité" de la page d'accueil&nbsp;:
          </p>
          <p align="center"><img src="../images/chapitre6/comptabilite.svg" alt="Comptabilité" width="60"></p>
-         <p>Dans la barre latérale du module, cliquez sur "Exercices comptables" dans la section "Synthèses" symbolisée par l'icône d'un tableau<img src="../images/chapitre6/table.svg" alt="Tableau" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des exercices.</p>
+         <p>Dans la barre latérale du module, cliquez sur "Exercices comptables" dans la section "Synthèses" symbolisée par l'icône d'un tableau<img src="../images/chapitre6/table.svg" alt="Tableau" height="20" class="align-icone icone-marge-gauche">.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/cloture1.png" class="contour-img" alt="Exercices comptables" data-action="zoom" />
          </p>
@@ -1178,7 +1179,10 @@
          <span class="titre-advice">Clôturez l'exercice</span>
          <p>Patientez quelques instants, la barre de progression vous informe de l'avancée et affiche les stades de la clôture en cours de réalisation.</p>
          <p class="max-img-process">
-            <img src="../images/chapitre6/cloture7.png" class="contour-img" alt="Clôture en progression" data-action="zoom" />
+            <img src="../images/chapitre6/cloture7.png" class="contour-img" alt="Clôture en cours" data-action="zoom" />
+         </p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre6/cloture8.png" class="contour-img" alt="Clôture en cours" data-action="zoom" />
          </p>
 		 <p>Une fois l'exercice clôturé, la pastille rouge<img src="../images/commun/marker.svg" alt="Notification" height="20" class="align-icone icone-marge-gauche icone-marge-droite">en haut à droite de la cloche<img src="../images/commun/bell-o-blue.svg" alt="Cloche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">vous indique qu'une opération interne a été effectuée par l'application.</p>
       </div>
@@ -1190,18 +1194,18 @@
          <span class="titre-advice">Téléchargez les archives</span>
          <p>Vous pouvez télécharger les archives ZIP avant et après clôture, signées numériquement. Ces archives comprennent les documents obligatoires de la clôture que sont la balance, le Grand-livre et les journaux.</p>
          <p class="max-img-process">
-            <img src="../images/chapitre6/cloture8.png" class="contour-img" alt="Exercice clôturé" data-action="zoom" />
+            <img src="../images/chapitre6/cloture9.png" class="contour-img" alt="Exercice clôturé" data-action="zoom" />
          </p>
          <p>Dépliez l'accordéon et cliquez sur le lien "Vérifier la signature" pour contrôler sur le site ekylibre.com l'authenticité et l'intégrité des documents comptables &#40;avec copie automatique de la clé de sécurité&#41;.</p>
          <p class="max-img-process">
-            <img src="../images/chapitre6/cloture9.png" class="contour-img" alt="Mise à disposition des archives" data-action="zoom" />
+            <img src="../images/chapitre6/cloture10.png" class="contour-img" alt="Mise à disposition des archives" data-action="zoom" />
          </p>
       </div>
       <!--
          <p class="texte aerateur-haut">Les exercices comptables créés dans Ekylibre dépendent des informations renseignées dans l'assistant de démarrage. Si vous avez saisi la date de création de l'exploitation, l'application a créé autant d'exercices comptables que d'années d'ancienneté. Si vous n'avez pas renseigné la date de création, l'application a créé automatiquement dix exercices &#40;un pour l'année en cours et neuf pour les années précédentes&#41;. Vous pouvez supprimer les exercices inutiles mais nous vous conseillons d'en conserver quand même un ou deux pour prendre en main certaines fonctionnalités de l'application.</p>
          -->
       <h6>Guide de prise en main • Comptabilité • Verrouillage d'un exercice</h6>
-      <a class="slice-long" id="verrouillage"></a>
+      <a class="slice-process" id="verrouillage"></a>
       <p align="center" class="texte aerateur procedure">C – Procédure pour verrouiller un exercice comptable</p>
       <p class="texte">La gestion commerciale dans l'application nécessite qu'un exercice comptable soit déjà ouvert à la date d'enregistrement d'une nouvelle commande ou d'une nouvelle vente, même si vous ne gérez pas votre comptabilité dans Ekylibre. Dans la mesure où seulement 2 exercices peuvent être ouverts simultanément, l'ouverture d'un nouvel exercice oblige à verrouiller le plus ancien. Exemple&nbsp;: si les exercices 2018 et 2019 sont ouverts et que vous souhaitez ouvrir l'exercice 2020 sans procéder à une clôture, il faut verrouiller l'exercice 2018.</p>
       <div class="affichage-large"></div>
@@ -1244,7 +1248,7 @@
             Cliquez sur le lien "Comptabilité" dans le "Menu principal" ou sur le bouton "Comptabilité" de la page d'accueil&nbsp;:
          </p>
          <p align="center"><img src="../images/chapitre6/comptabilite.svg" alt="Comptabilité" width="60"></p>
-         <p>Dans la barre latérale du module, cliquez sur "Exercices comptables" dans la section "Synthèses" symbolisée par l'icône d'un tableau<img src="../images/chapitre6/table.svg" alt="Tableau" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des exercices.</p>
+         <p>Dans la barre latérale du module, cliquez sur "Exercices comptables" dans la section "Synthèses" symbolisée par l'icône d'un tableau<img src="../images/chapitre6/table.svg" alt="Tableau" height="20" class="align-icone icone-marge-gauche">.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/verrouillage1.png" class="contour-img" alt="Exercices comptables" data-action="zoom" />
          </p>
@@ -1273,7 +1277,7 @@
          <p>Cliquez sur <span class="btn-blue">Verrouiller l'exercice</span> pour valider l'opération.</p>
       </div>
       <h6>Guide de prise en main • Comptabilité • Export FEC</h6>
-      <a class="slice-long" id="exportfec"></a>
+      <a class="slice-process" id="exportfec"></a>
       <p align="center" class="texte aerateur procedure">D – Procédure pour obtenir les écritures comptables &#40;FEC&#41;</p>
       <p class="texte">Le fichier des écritures comptables &#40;FEC&#41; comporte, sous forme dématérialisée, l'ensemble des écritures enregistrées dans tous les journaux comptables au titre d'un exercice fiscal. C'est une obligation en vigueur depuis le 1<sup>er</sup> janvier 2014.</p>
       <p class="texte">Le processus suivant vous guide pour obtenir le fichier des écritures comptables pour un exercice donné.</p>
@@ -1348,7 +1352,7 @@
          </div>
       </div>
       <h6>Guide de prise en main • Comptabilité • Bilan/Compte de résultat</h6>
-      <a class="slice-long" id="bilan"></a>
+      <a class="slice-process" id="bilan"></a>
       <p align="center" class="texte aerateur procedure">E – Procédure pour obtenir le bilan/compte de résultat</p>
       <p class="texte">Un bilan comptable est un document qui synthétise à un moment donné ce que l'entreprise possède, appelé l'«&nbsp;actif&nbsp;» et ses ressources, appelées le «&nbsp;passif&nbsp;». Le bilan est l'un des documents composant les états financiers.<br />Le compte de résultat est un document comptable synthétisant l'ensemble des charges et des produits d'une entreprise ou autre organisme ayant une activité marchande, pour une période donnée, appelée exercice comptable.</p>
       <p class="texte">Le processus suivant vous guide pour obtenir le bilan et/ou le compte de résultat pour un exercice donné.</p>
@@ -1412,7 +1416,7 @@
          <p>Notez que le fichier reste accessible à tout moment via le lien "Gestion électronique des documents" dans la section "Archives"<img src="../images/commun/archive.svg" alt="Archives" height="20" class="align-icone icone-marge-gauche icone-marge-droite">du module "Outils".</p>
       </div>
       <h6>Guide de prise en main • Comptabilité • Plan de comptes</h6>
-      <a class="slice-long" id="plan"></a>
+      <a class="slice-process" id="plan"></a>
       <h2 class="texte aerateur">e - Plan de comptes</h2>
       <div class="config margin-config">
          <p>
@@ -1495,7 +1499,7 @@
          <p class="max-img-process"><img src="../images/chapitre6/plan5.png" class="contour-img" alt="Création nouveau compte" data-action="zoom" /></p>
       </div>
       <h6>Guide de prise en main • Comptabilité • Taux de TVA</h6>
-      <a class="slice-long" id="tva"></a>
+      <a class="slice-process" id="tva"></a>
       <h2 class="texte aerateur">f - TVA</h2>
       <div class="config margin-config">
          <p>
@@ -1616,7 +1620,7 @@
          </p>
       </div>
       <h6>Guide de prise en main • Comptabilité • Déclaration de TVA</h6>
-      <a class="slice-long" id="declaration"></a>
+      <a class="slice-process" id="declaration"></a>
       <p align="center" class="texte aerateur procedure">C – Procédure pour produire une déclaration de TVA
       </p>
       <p class="texte">
@@ -1677,7 +1681,7 @@
          <p class="max-img-process">
             <img src="../images/chapitre6/declar-tva5.png" class="contour-img" alt="Modification statut déclaration" data-action="zoom" />
          </p>
-         <p>Modifiez son statut en cliquant sur <span class="step step-orange">&nbsp;Envoyée&nbsp;</span> dès que la déclaration à été transmise à l'administration fiscale. Elle est alors verrouillée et ne peut plus être supprimée. La déclaration est alors enregistrée en comptabilité avec une nouvelle écriture &#40;à valider&#41; dans le brouillard du journal des taxes.</p>
+         <p>Modifiez son statut en cliquant sur <span class="step step-orange">&nbsp;Envoyée&nbsp;</span> dès que la déclaration a été transmise à l'administration fiscale. Elle est alors verrouillée et ne peut plus être supprimée. La déclaration est alors enregistrée en comptabilité avec une nouvelle écriture &#40;à valider&#41; dans le brouillard du journal des taxes.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/declar-tva6.png" class="contour-img" alt="Modification statut déclaration" data-action="zoom" />
          </p>
@@ -1710,7 +1714,7 @@
          <p>Notez que le document reste accessible à tout moment via le lien "Gestion électronique des documents" dans la section "Archives"<img src="../images/commun/archive.svg" alt="Archives" height="20" class="align-icone icone-marge-gauche icone-marge-droite">du module "Outils".</p>
       </div>
       <h6>Guide de prise en main • Comptabilité • Compte bancaire</h6>
-      <a class="slice-long" id="tresorerie"></a>
+      <a class="slice-process" id="tresorerie"></a>
       <h2 class="texte aerateur">g - Trésorerie</h2>
       <div class="config margin-config">
          <p>
@@ -1784,7 +1788,7 @@
          <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
       </div>
       <h6>Guide de prise en main • Comptabilité • Emprunts</h6>
-      <a class="slice-long" id="emprunts"></a>
+      <a class="slice-process" id="emprunts"></a>
       <p align="center" class="texte aerateur procedure">B – Procédure pour enregistrer un emprunt bancaire
       </p>
       <p class="texte">
@@ -1878,12 +1882,26 @@
          <p>Dès qu'un exercice comptable est verrouillé ou clôturé, les cases dans la colonne "Verrouillé" des remboursements concernés sont alors cochées<img src="../images/commun/check-square-o.svg" alt="Case cochée" height="20" class="align-icone icone-marge-gauche">, indiquant que les écritures dans le brouillard du journal de banque ont été définitivement validées.</p>
          <p>Cliquez sur le bouton <span class="step step-vert">&nbsp;Remboursé&nbsp;</span> dès que l'emprunt est remboursé pour modifier son statut et validez votre choix dans la <span class="tooltip">fenêtre modale<span class="tooltiptext tooltip-top">Voir glossaire</span></span>.</p>
       </div>
+	  <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step7.svg" alt="7" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Clôturez l'emprunt</span>
+         <p>Cliquez sur le bouton <span class="step step-vert">&nbsp;Remboursé&nbsp;</span> dès que l'emprunt est remboursé pour modifier son statut et validez votre choix dans la <span class="tooltip">fenêtre modale<span class="tooltiptext tooltip-top">Voir glossaire</span></span>.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/emprunt11.png" class="contour-img" alt="Fermeture emprunt" data-action="zoom" />
+         </p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre6/emprunt12.png" class="contour-img" alt="Emprunt remboursé" data-action="zoom" />
+         </p>
+      </div>
       <h6>Guide de prise en main • Comptabilité • Virements internes</h6>
-      <a class="slice-long" id="virements"></a>
+      <a class="slice-process" id="virements"></a>
       <p align="center" class="texte aerateur procedure">C – Procédure pour enregistrer un virement interne
       </p>
       <p class="texte">
-         Le processus suivant vous guide pour enregistrer un nouveau virement interne.
+         Le processus suivant vous guide pour enregistrer un nouveau virement interne entre 2 comptes bancaires.
       </p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
@@ -1909,6 +1927,7 @@
          <p class="max-img-process">
             <img src="../images/chapitre6/virement2.png" class="contour-img" alt="Nouvel emprunt" data-action="zoom" />
          </p>
+		 <p>Notez que le virement interne peut également être enregistré entre la caisse et un compte bancaire.</p>
          <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
       </div>
       <br />
@@ -1923,7 +1942,7 @@
          </p>
       </div>
       <h6>Guide de prise en main • Comptabilité • Rapprochement bancaire</h6>
-      <a class="slice-long" id="rapprochement"></a>
+      <a class="slice-process" id="rapprochement"></a>
       <p align="center" class="texte aerateur procedure">D – Procédure pour réaliser un rapprochement bancaire</p>
       <p class="texte">Le rapprochement bancaire est un contrôle, réalisé dans le but d'amener les comptes bancaires réalisés sur Ekylibre au plus proche de la réalité des relevés de comptes, c'est-à-dire vérifier la concordance des deux comptes.</p>
       <p class="texte">
@@ -2061,7 +2080,7 @@
          <p class="max-img-process">
             <img src="../images/chapitre6/rapprochement13.png" class="contour-img" alt="Lignes lettrées" data-action="zoom" />
          </p>
-         <p>Si 2 lignes à rapprocher présentent un écart, sélectionnez ces lignes, puis cliquez sur le bouton "Écart de règlement" et choisissez un journal d'opérations diverses pour enregistrer une nouvelle écriture de régularisation dans le brouillard de ce journal.</p>
+         <p>Si 2 lignes à rapprocher présentent un écart, sélectionnez ces lignes, puis cliquez sur le bouton "Écart de règlement" et choisissez un journal d'opérations diverses pour enregistrer une nouvelle écriture de régularisation dans le brouillard de ce journal &#40;la procédure de création d'un nouveau journal et son paramétrage pour les opérations diverses sont <a href="#journaux" class="avoid-clicks">expliqués ici</a>&#41;.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/rapprochement14.png" class="contour-img" alt="Écart de réglement" data-action="zoom" />
          </p>
@@ -2116,7 +2135,7 @@
          </p>
       </div>
       <h6>Guide de prise en main • Comptabilité • Immobilisations</h6>
-      <a class="slice-long" id="immobilisations"></a>
+      <a class="slice-process" id="immobilisations"></a>
       <h2 class="texte aerateur">h - Immobilisations</h2>
       <p align="center" class="texte"><img src="../images/commun/option.svg" height="55" alt="Optionnel"></p>
       <p class="texte">La notion d'immobilisation intègre l'ensemble des biens durables détenus par une exploitation sur plus d'un exercice comptable et qui ne sont pas destinés à la revente. Les immobilisations corporelles sont composées de plusieurs catégories&nbsp;: les terrains, les constructions, l’agencement et les installations générales, l’outillage, le matériel, les véhicules, le mobilier et les équipements informatiques.</p>
@@ -2187,7 +2206,7 @@
       <div class="process-txt">
          <span class="titre-advice">Modifiez l'immobilisation</span>
          <p>Cliquez sur le bouton "Modifier" pour changer la méthode d'amortissement, le pourcentage d'amortissement et/ou la périodicité. Dans cet exemple, le pourcentage d'amortissement est fixé à 12% au lieu de 15%.</p>
-         <p>Sélectionnez le journal des "Immobilisations corporelles". Notez que les autres informations des comptes comptables sont automatiquement renseignées.</p>
+         <p>Sélectionnez le journal des "Immobilisations corporelles". Notez que les autres informations des comptes comptables comme par exemple le compte d'immobilisation ou le compte d'amortissement sont automatiquement renseignées.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/immobilisations3.png" class="contour-img" alt="Immobilisation tracteur" data-action="zoom" />
          </p>
@@ -2327,7 +2346,7 @@
          </div>
       </div>
 	  <h6>Guide de prise en main • Comptabilité • Cession d'immobilisation</h6>
-      <a class="slice-long" id="cession"></a>
+      <a class="slice-process" id="cession"></a>
 	  <p align="center" class="texte aerateur procedure">B – Procédure pour enregistrer une cession d'immobilisation
       </p>
       <p class="texte">
@@ -2390,7 +2409,7 @@
          <p class="max-img-process">
             <img src="../images/chapitre6/cession5.png" class="contour-img" alt="Vente en mode devis brouillon" data-action="zoom" />
          </p>
-		 <p>Transformez ce devis en facture en cliquant sur le bouton <span class="step step-vert">&nbsp;Facture&nbsp;</span> et en validant ce choix.</p>
+		 <p>Transformez le devis en facture en cliquant sur le bouton <span class="step step-vert">&nbsp;Facture&nbsp;</span> et en validant ce choix.</p>
 		  <p class="max-img-process">
             <img src="../images/chapitre6/cession6.png" class="contour-img" alt="Transformation en facture" data-action="zoom" />
          </p>
@@ -2411,8 +2430,8 @@
          </p>
 		 <p>Notez que, dès cette opération validée, l'équipement n'est plus disponible pour enregistrer une intervention.</p>
 	  </div>
-	  <h6>Guide de prise en main • Comptabilité • Mise au rebut immobilisation</h6>
-      <a class="slice-long" id="mise-rebut"></a>
+	  <h6>Guide de prise en main • Comptabilité • Mise au rebut d'une immobilisation</h6>
+      <a class="slice-process" id="mise-rebut"></a>
 	  <p align="center" class="texte aerateur procedure">C – Procédure pour mettre au rebut une immobilisation
       </p>
       <p class="texte">
@@ -2477,7 +2496,7 @@
 		 <p>Notez que la date de mise au rebut est automatiquement reportée dans la fiche de l'équipement qui n'est alors plus disponible pour enregistrer une intervention.</p>
       </div>
 	  <h6>Guide de prise en main • Comptabilité • États des immobilisations</h6>
-      <a class="slice-long" id="etats"></a>
+      <a class="slice-process" id="etats"></a>
 	  <p align="center" class="texte aerateur procedure">D – Procédure pour produire les états des immobilisations
       </p>
       <p class="texte">
@@ -2530,7 +2549,7 @@
          <p>Notez que le fichier reste accessible à tout moment via le lien "Gestion électronique des documents" dans la section "Archives"<img src="../images/commun/archive.svg" alt="Archives" height="20" class="align-icone icone-marge-gauche icone-marge-droite">du module "Outils".</p>
       </div>
       <h6>Guide de prise en main • Comptabilité • Échanges comptables</h6>
-      <a class="slice-long" id="echanges"></a>
+      <a class="slice-process" id="echanges"></a>
       <h2 class="texte aerateur">i - Échanges comptables</h2>
       <p align="center" class="texte"><img src="../images/commun/option.svg" height="55" alt="Optionnel"></p>
       <p class="texte">Ekylibre permet d'échanger des données comptables entre l'administrateur de la ferme et son expert-comptable ou son centre de gestion en toute sécurité. Vous pouvez exporter et partager vos données sans interrompre votre travail et sans risque d'incohérence. Réciproquement, vous pouvez intégrer les validations ou corrections réalisées par un tiers.</p>
@@ -2545,7 +2564,7 @@
       </div>
       <p class="texte">Le journal des opérations diverses en comptabilité, appelé aussi journal des OD, est un document auxiliaire au journal général de comptabilité. Il permet d’enregistrer les opérations comptables qui ne concernent ni le journal des achats, ni le journal des ventes, ni les journaux de trésorerie. Le journal des opérations diverses &#40;OD&#41; permet d’enregistrer des opérations concernant les mouvements de TVA, les provisions, la paie ou encore les écritures rectificatrices des différentes erreurs de saisie qui ont été commises. Notez que le journal comptable est une obligation légale pour les entreprises soumises au régime du réel, afin de suivre toutes ses opérations.</p>
       <p class="texte">Dans Ekylibre, les écritures issues des éventuelles corrections réalisées par votre comptable doivent être consignées dans un nouveau journal d'opérations diverses, l'existant étant réservé à l'administrateur de la ferme.</p>
-	  <a class="slice-long" id="journal-od"></a>
+	  <a class="slice-process" id="journal-od"></a>
       <p align="center" class="texte aerateur procedure">A – Procédure pour paramétrer un nouveau journal
       </p>
       <p class="texte">
@@ -2569,11 +2588,9 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Créez un nouveau journal</span>
-         <p>
-            Cliquez sur le bouton "Nouveau" et remplissez tous les champs avec les bonnes informations pour le définir correctement.
-         </p>
-         <p>Nommez de façon explicite le nouveau journal. Vérifiez que le bouton radio<img src="../images/commun/radio.svg" alt="Bouton radio" height="20" class="align-icone icone-marge-gauche icone-marge-droite">est bien activé pour "Opérations diverses".</p>
-         <p>Sélectionnez, parmi les tiers disponibles, votre comptable ou créez-en une à la volée en sélectionnant "Ajouter un nouvel enregistrement". Notez que ce comptable doit être <strong>le même</strong> que celui qui sera associé à l'exercice comptable.</p>
+         <p>Cliquez sur le bouton "Nouveau" et remplissez tous les champs avec les bonnes informations pour le définir correctement.</p>
+		 <p>Nommez de façon explicite le nouveau journal et affectez-lui un code. La longueur de la chaîne alphanumérique pour définir le code du journal est limitée à 4 caractères. Si le code est plus long, il sera automatiquement tronqué lors de l'enregistrement du journal. Le passage du code en majuscule est également automatique lors de la création d'un nouveau journal.</p><p>Vérifiez enfin que le bouton radio<img src="../images/commun/radio.svg" alt="Bouton radio" height="20" class="align-icone icone-marge-gauche icone-marge-droite">est bien activé pour "Opérations diverses".</p>
+         <p>Sélectionnez, parmi les tiers disponibles, votre comptable ou créez-en un à la volée en sélectionnant "Ajouter un nouvel enregistrement". Notez que ce comptable doit être <strong>le même</strong> que celui qui sera associé à l'exercice comptable.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/journaux2.png" class="contour-img" alt="Nouveau journal" data-action="zoom" />
          </p>
@@ -2602,7 +2619,7 @@
          <span class="titre-advice">Affichez les exercices comptables</span>
          <p>Cliquez sur le lien "Comptabilité" dans le "Menu principal" ou sur le bouton "Comptabilité" de la page d'accueil&nbsp;:</p>
          <p align="center"><img src="../images/chapitre6/comptabilite.svg" alt="Comptabilité" width="60"></p>
-         <p>Dans la barre latérale du module, cliquez sur "Exercices comptables" dans la section "Synthèses" symbolisée par l'icône d'un tableau<img src="../images/chapitre6/table.svg" alt="Tableau" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des exercices comptables.</p>
+         <p>Dans la barre latérale du module, cliquez sur "Exercices comptables" dans la section "Synthèses" symbolisée par l'icône d'un tableau<img src="../images/chapitre6/table.svg" alt="Tableau" height="20" class="align-icone icone-marge-gauche">.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/echange1.png" class="contour-img" alt="Liste des exercices comptables" data-action="zoom" />
          </p>
@@ -2613,7 +2630,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Sélectionnez un exercice comptable</span>
-         <p>Cliquez sur le "Code" de l'exercice comptable. Si le bouton "Nouvel échange" n'apparaît pas à droite du bouton "Modifier", cliquez sur ce dernier, sinon passez directement à l'étape 5 de cette procédure&#41;.</p>
+         <p>Cliquez sur le "Code" de l'exercice comptable. Si le bouton "Nouvel échange" n'apparaît pas à droite du bouton "Modifier", cliquez sur ce dernier, sinon passez directement à l'étape 5 de cette procédure.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/echange2.png" class="contour-img" alt="Modification de l'exercice comptable" data-action="zoom" />
          </p>
@@ -2647,7 +2664,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Créez un nouvel échange</span>
-         <p>Cliquez sur le bouton "Nouvel échange". Si ce bouton est absent de l'interface, soit vous n'avez pas encore créé de <a href="#journal-od" class="avoid-clicks" target="_self">journal d'opérations diverses</a> destiné aux échanges, soit le comptable associé à ce journal n'est pas le même que celui lié à l'exercice.</p>
+         <p>Cliquez sur le bouton "Nouvel échange". Si ce bouton est absent de l'interface, soit vous n'avez pas encore créé de <a href="#journal-od" class="avoid-clicks" target="_self">journal d'opérations diverses</a> destiné aux échanges, soit le comptable associé à ce journal n'est pas le même que celui qui a été sélectionné pour l'exercice.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/echange4.png" class="contour-img" alt="Création nouvel échange" data-action="zoom" />
          </p>
@@ -2724,7 +2741,7 @@
          </div>
       </div>
       <h6>Guide de prise en main • Comptabilité • Balance</h6>
-      <a class="slice-long" id="balance"></a>
+      <a class="slice-process" id="balance"></a>
       <h2 class="texte aerateur">j - Balance</h2>
       <p class="texte">La balance comptable est un document de synthèse qui dresse la liste de tous les comptes mouvementés sur une période donnée. Elle fournit, pour chaque compte utilisé, son solde ainsi que le total des mouvements débiteurs et le total des mouvements créditeurs.</p>
       <p align="center" class="texte aerateur procedure">A – Procédure pour produire la balance
@@ -2786,7 +2803,7 @@
          </p>
       </div>
       <h6>Guide de prise en main • Comptabilité • Grand-Livre</h6>
-      <a class="slice-long" id="grand-livre"></a>
+      <a class="slice-process" id="grand-livre"></a>
       <h2 class="texte aerateur">k - Grand-livre</h2>
       <p class="texte">Un Grand-livre est la transcription sur un document unique de la totalité des mouvements de comptabilité d’une exploitation. Ces mouvements sont classés par compte, dans l'ordre de numéro prévu par le plan comptable.</p>
 	  <p class="texte">Les Grands-livres auxiliaires sont formés par l'ensemble des comptes individuels de même type &#40;clients, fournisseurs, etc.&#41;. Ils permettent ainsi d'établir un relevé nominatif de la position de chaque compte avec le détail des mouvements.</p>
