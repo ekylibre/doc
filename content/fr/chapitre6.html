@@ -123,7 +123,7 @@
                      <ul style="display: block;">
                         <div class="bloc">
                            <li><a href="../chapitre6#introduction" target="_self">Introduction</a></li>
-                           <li><a href="../chapitre6#societe" target="_self">Paramétrage de l'exploitation</a></li>
+                           <li><a href="../chapitre6#societe" target="_self">Paramétrage</a></li>
                            <li><a href="../chapitre6#journaux" target="_self">Journaux</a></li>
                            <li><a href="../chapitre6#exercice" target="_self">Exercices comptables</a></li>
                            <li><a href="../chapitre6#plan" target="_self">Plan de comptes</a></li>
@@ -285,7 +285,7 @@
                      <form>
                         <select name="ListeUrl" SIZE="1" onChange="ChangeUrl(this.form)" style="width:210px">
                            <option selected value="">Configuration</option>
-                           <option value="#societe">- Paramétrer la comptabilité</option>
+                           <option value="#societe">- Paramétrer la société</option>
                            <option value="#plan">- Créer un compte comptable</option>
                         </select>
                      </form>
@@ -304,8 +304,9 @@
                         <select name="ListeUrl" SIZE="1" onChange="ChangeUrl(this.form)" style="width:210px">
                            <option selected value="">Journaux</option>
                            <option value="#journaux">- Créer un nouveau journal</option>
-                           <option value="#brouillard">- Valider le brouillard comptable</option>
                            <option value="#lettrage">- Réaliser le lettrage de comptes</option>
+                           <option value="#brouillard">- Valider le brouillard comptable</option>
+                           <option value="#centralisateur">- Obtenir le journal centralisateur</option>
                         </select>
                      </form>
                   </div>
@@ -327,10 +328,10 @@
                            <option value="#echanges">- Réaliser un échange comptable</option>
                            <option value="#cloture">- Clôturer un exercice</option>
                            <option value="#verrouillage">- Verrouiller un exercice</option>
-                           <option value="#balance">- Produire la balance</option>
-                           <option value="#grand-livre">- Produire le Grand-livre</option>
                            <option value="#exportfec">- Obtenir le fichier des écritures comptables</option>
                            <option value="#bilan">- Obtenir le bilan et le compte de résultat</option>
+                           <option value="#balance">- Produire la balance</option>
+                           <option value="#grand-livre">- Produire le Grand-livre</option>
                         </select>
                      </form>
                   </div>
@@ -340,9 +341,9 @@
                            <option selected value="">Immobilisations</option>
                            <option value="#immobilisations">- Enregistrer une immobilisation</option>
                            <option value="#cession">- Enregistrer une cession d'immobilisation</option>
-                  		   <option value="#mise-rebut">- Mettre au rebut une immobilisation</option>
-                  		   <option value="#etats">- Produire les états des immobilisations</option>
-                  		   <option value="#etats">- Produire les états des plus et moins values</option>
+                           <option value="#mise-rebut">- Mettre au rebut une immobilisation</option>
+                           <option value="#etats">- Produire les états des immobilisations</option>
+                           <option value="#etats">- Produire les états des plus et moins values</option>
                         </select>
                      </form>
                   </div>
@@ -360,6 +361,8 @@
                </div>
             </div>
          </div>
+         <p class="texte"><em>Ce système de navigation est également disponible à tout moment avec le bouton en bas à gauche de la fenêtre&nbsp;:</em></p>
+		 <p class="texte" align="center"><img src="../images/chapitre6/navigation.svg" width="50" alt="Menu comptabilité" /></p>
       </div>
       <div class="compta-short">
          <p class="texte aerateur-haut"><strong>Dans ce chapitre, on vous explique comment</strong> &#40;sélectionnez le lien dans la liste déroulante&#41;&nbsp;<strong>:</strong></p>
@@ -367,7 +370,7 @@
             <select name="ListeUrl" SIZE="1" onChange="ChangeUrl(this.form)" style="width:210px">
                <option selected value="">Menu comptabilité&nbsp;:</option>
                <optgroup label="Configuration">
-                  <option value="#societe">- Paramétrer la comptabilité</option>
+                  <option value="#societe">- Paramétrer la société</option>
                   <option value="#plan">- Créer un compte comptable</option>
                </optgroup>
                <optgroup label="TVA">
@@ -376,18 +379,19 @@
                </optgroup>
                <optgroup label="Journaux">
                   <option value="#journaux">- Créer un nouveau journal</option>
-                  <option value="#brouillard">- Valider le brouillard comptable</option>
                   <option value="#lettrage">- Réaliser le lettrage de comptes</option>
+                  <option value="#brouillard">- Valider le brouillard comptable</option>
+                  <option value="#centralisateur">- Obtenir le journal centralisateur</option>
                </optgroup>
                <optgroup label="Exercices comptables">
                   <option value="#exercice">- Ouvrir un nouvel exercice</option>
                   <option value="#echanges">- Réaliser un échange comptable</option>
                   <option value="#cloture">- Clôturer un exercice</option>
                   <option value="#verrouillage">- Verrouiller un exercice</option>
-                  <option value="#balance">- Produire la balance</option>
-                  <option value="#grand-livre">- Produire le Grand-livre</option>
                   <option value="#exportfec">- Obtenir le fichier des écritures comptables</option>
                   <option value="#bilan">- Obtenir le bilan et le compte de résultat</option>
+                  <option value="#balance">- Produire la balance</option>
+                  <option value="#grand-livre">- Produire le Grand-livre</option>
                </optgroup>
                <optgroup label="Immobilisations">
                   <option value="#immobilisations">- Enregistrer une immobilisation</option>
@@ -406,104 +410,83 @@
          </form>
       </div>
       <div class="compta-print">
-         <p class="texte aerateur-haut"><strong>Dans ce chapitre vous allez découvrir&nbsp;:</strong></p>
-         <div class="divTableListe marge">
+         <p class="texte aerateur-haut">Dans ce chapitre, on vous explique comment&nbsp;:</p>
+         <div class="divTableCompta marge">
             <div class="divTableBody">
                <div class="divTableRow">
-                  <div class="divTableCellListe" style="width: 14px">
-                     <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
-                  </div>
-                  <div class="divTableCellListe" style="width: auto">
-                     Comment paramétrer certains éléments de la comptabilité dans l'application &#40;<a href="#journaux" class="avoid-clicks">journaux</a>, <a href="#exercice" class="avoid-clicks">exercice comptable</a>, <a href="#plan" class="avoid-clicks">comptes comptables</a>, <a href="#tva" class="avoid-clicks">taux de TVA</a>, <a href="#tresorerie" class="avoid-clicks">compte bancaire</a>&#41;
-                  </div>
+                  <div class="divTableCellPDF1" style="width: 234px">Configuration&nbsp;<img src="../images/chapitre6/wrench3.svg" alt="Épi" height="20" class="align-compta icone-marge-gauche"></div>
+                  <div class="divTableCellPDF1" style="width: 234px">TVA&nbsp;<img src="../images/chapitre6/cog-black.svg" alt="Épi" height="20" class="align-icone icone-marge-gauche"></div>
+                  <div class="divTableCellPDF3" style="width: 234px">Journaux&nbsp;<img src="../images/chapitre6/book.svg" alt="Épi" height="21" class="align-compta icone-marge-gauche"></div>
                </div>
                <div class="divTableRow">
-                  <div class="divTableCellListe" style="width: 14px">
-                     <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
-                  </div>
-                  <div class="divTableCellListe" style="width: auto">
-                     Comment enregistrer des <a href="#emprunts" class="avoid-clicks">emprunts</a> et passer les remboursements en écriture
-                  </div>
+                  <div class="divTableCellPDF2">- Paramétrer la société</div>
+                  <div class="divTableCellPDF2">- Créer un nouveau taux de TVA</div>
+                  <div class="divTableCellPDF4">- Créer un nouveau journal</div>
                </div>
                <div class="divTableRow">
-                  <div class="divTableCellListe" style="width: 14px">
-                     <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
-                  </div>
-                  <div class="divTableCellListe" style="width: auto">
-                     Comment enregistrer des <a href="#virements" class="avoid-clicks">virements</a> entre deux trésoreries
-                  </div>
+                  <div class="divTableCellPDF2">- Créer un compte comptable</div>
+                  <div class="divTableCellPDF2">- Produire une déclaration de TVA</div>
+                  <div class="divTableCellPDF4">- Réaliser le lettrage de comptes</div>
                </div>
                <div class="divTableRow">
-                  <div class="divTableCellListe" style="width: 14px">
-                     <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
-                  </div>
-                  <div class="divTableCellListe" style="width: auto">
-                     Comment enregistrer des <a href="#immobilisations" class="avoid-clicks">immobilisations</a>, réaliser une <a href="#cession" class="avoid-clicks">cession</a> d'immobilisation et la <a href="#mise-rebut" class="avoid-clicks">mise au rebut</a> d'une immobilisation
-                  </div>
+                  <div class="divTableCellPDF5">&nbsp;</div>
+                  <div class="divTableCellPDF5">&nbsp;</div>
+                  <div class="divTableCellPDF4">- Valider le brouillard comptable</div>
                </div>
                <div class="divTableRow">
-                  <div class="divTableCellListe" style="width: 14px">
-                     <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
-                  </div>
-                  <div class="divTableCellListe" style="width: auto">
-                     Comment produire des <a href="#declaration" class="avoid-clicks">déclarations de TVA</a> à destination de l'administration fiscale
-                  </div>
+                  <div class="divTableCellPDF5">&nbsp;</div>
+                  <div class="divTableCellPDF5">&nbsp;</div>
+                  <div class="divTableCellPDF4">- Obtenir le journal centralisateur</div>
+               </div>
+            </div>
+         </div>
+         <div class="saut-page"></div>
+         <div class="divTableCompta marge aerateur-haut">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellPDF1" style="width: 234px">Exercices comptable&nbsp;<img src="../images/chapitre6/table.svg" alt="Épi" height="20" class="align-compta icone-marge-gauche"></div>
+                  <div class="divTableCellPDF1" style="width: 234px">Immobilisations&nbsp;<img src="../images/chapitre6/home.svg" alt="Épi" height="22" class="align-compta icone-marge-gauche"></div>
+                  <div class="divTableCellPDF3" style="width: 234px">Journaux&nbsp;<img src="../images/chapitre6/money.svg" alt="Épi" height="18" class="align-icone icone-marge-gauche"></div>
                </div>
                <div class="divTableRow">
-                  <div class="divTableCellListe" style="width: 14px">
-                     <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
-                  </div>
-                  <div class="divTableCellListe" style="width: auto">
-                     Comment réaliser des <a href="#echanges" class="avoid-clicks">échanges comptables</a> afin de faire valider les écritures par un organisme tiers
-                  </div>
+                  <div class="divTableCellPDF2">- Ouvrir un nouvel exercice</div>
+                  <div class="divTableCellPDF2">- Enregistrer une immobilisation</div>
+                  <div class="divTableCellPDF4">- Créer un compte bancaire</div>
                </div>
                <div class="divTableRow">
-                  <div class="divTableCellListe" style="width: 14px">
-                     <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
-                  </div>
-                  <div class="divTableCellListe" style="width: auto">
-                     Comment procéder à la <a href="#cloture" class="avoid-clicks">clôture</a> ou au <a href="#verrouillage" class="avoid-clicks">verrouillage</a> d'un exercice comptable
-                  </div>
+                  <div class="divTableCellPDF2">- Réaliser un échange comptable</div>
+                  <div class="divTableCellPDF2">- Cession d'immobilisation</div>
+                  <div class="divTableCellPDF4">- Faire un rapprochement bancaire</div>
                </div>
                <div class="divTableRow">
-                  <div class="divTableCellListe" style="width: 14px">
-                     <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
-                  </div>
-                  <div class="divTableCellListe" style="width: auto">
-                     Comment valider les écritures enregistrées dans le <a href="#brouillard" class="avoid-clicks" target="_self">brouillard</a> comptable
-                  </div>
+                  <div class="divTableCellPDF2">- Clôturer un exercice</div>
+                  <div class="divTableCellPDF2">- Mise au rebut d'une immobilisation</div>
+                  <div class="divTableCellPDF4">- Enregistrer un emprunt</div>
                </div>
                <div class="divTableRow">
-                  <div class="divTableCellListe" style="width: 14px">
-                     <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
-                  </div>
-                  <div class="divTableCellListe" style="width: auto">
-                     Comment réaliser le <a href="#lettrage" class="avoid-clicks" target="_self">lettrage de comptes</a> et le <a href="#rapprochement" class="avoid-clicks" target="_self">rapprochement bancaire</a> avec import d'un fichier OFX
-                  </div>
+                  <div class="divTableCellPDF2">- Verrouiller un exercice</div>
+                  <div class="divTableCellPDF2">- États des immobilisations</div>
+                  <div class="divTableCellPDF4">- Réaliser un virement interne</div>
                </div>
                <div class="divTableRow">
-                  <div class="divTableCellListe" style="width: 14px">
-                     <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
-                  </div>
-                  <div class="divTableCellListe" style="width: auto">
-                     Comment produire la <a href="#balance" class="avoid-clicks" target="_self">balance</a> et le <a href="#grand-livre" class="avoid-clicks" target="_self">Grand-livre</a>
-                  </div>
+                  <div class="divTableCellPDF2">- Fichier des écritures comptables</div>
+                  <div class="divTableCellPDF2">- États des plus et moins values</div>
+                  <div class="divTableCellPDF5">&nbsp;</div>
                </div>
                <div class="divTableRow">
-                  <div class="divTableCellListe">
-                     <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
-                  </div>
-                  <div class="divTableCellListe">
-                     Comment obtenir le <a href="#exportfec" class="avoid-clicks">fichier des écritures comptables &#40;FEC&#41;</a> destiné à l'administration fiscale
-                  </div>
+                  <div class="divTableCellPDF2">- Bilan et compte de résultat</div>
+                  <div class="divTableCellPDF5">&nbsp;</div>
+                  <div class="divTableCellPDF5">&nbsp;</div>
                </div>
                <div class="divTableRow">
-                  <div class="divTableCellListe">
-                     <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
-                  </div>
-                  <div class="divTableCellListe">
-                     Comment obtenir le <a href="#bilan" class="avoid-clicks">bilan et le compte de résultat</a>
-                  </div>
+                  <div class="divTableCellPDF2">- Produire la balance</div>
+                  <div class="divTableCellPDF5">&nbsp;</div>
+                  <div class="divTableCellPDF5">&nbsp;</div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellPDF2">- Produire le Grand-livre</div>
+                  <div class="divTableCellPDF5">&nbsp;</div>
+                  <div class="divTableCellPDF5">&nbsp;</div>
                </div>
             </div>
          </div>
@@ -616,9 +599,9 @@
             </div>
          </div>
       </div>
-      <h6>Guide de prise en main • Comptabilité • Paramétrage de l'exploitation</h6>
+      <h6>Guide de prise en main • Comptabilité • Paramétrage</h6>
       <a class="slice-process" id="societe"></a>
-      <h2 class="texte aerateur">b - Paramétrage de l'exploitation</h2>
+      <h2 class="texte aerateur">b - Paramétrage</h2>
       <div class="config margin-config">
          <p>
             <img src="../images/commun/parcours.svg" height="55" alt="Icône parcours"/>
@@ -634,7 +617,7 @@
       <p align="center" class="texte aerateur procedure">A – Procédure pour paramétrer la société
       </p>
       <p class="texte">
-         Le processus suivant vous guide pour enregistrer les paramètres de votre exploitation.
+         Le processus suivant vous guide pour configurer votre exploitation et les préférences de comptabilité.
       </p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
@@ -692,8 +675,8 @@
          <p class="max-img-process">
             <img src="../images/chapitre6/societe4.png" class="contour-img" alt="Paramétrage société" data-action="zoom" />
          </p>
-		 <p>Lors de l'enregistrement d'un achat, une liste déroulante vous permettra de sélectionner une activité parmi celles ouvertes&nbsp;:</p>
-		 <p class="max-img-process">
+         <p>Lors de l'enregistrement d'un achat, une liste déroulante vous permettra de sélectionner une activité parmi celles ouvertes&nbsp;:</p>
+         <p class="max-img-process">
             <img src="../images/chapitre6/societe5.png" class="contour-img" alt="Liste activités" data-action="zoom" />
          </p>
          <p>Cliquez sur <span class="btn-blue">Modifier</span> pour valider l'opération.</p>
@@ -770,7 +753,8 @@
       <div class="process-txt">
          <span class="titre-advice">Créez un nouveau journal</span>
          <p>Cliquez sur le bouton "Nouveau" et remplissez tous les champs avec les bonnes informations pour le définir correctement.</p>
-		 <p>Nommez de façon explicite le nouveau journal et affectez-lui un code. La longueur de la chaîne alphanumérique pour définir le code du journal est limitée à 4 caractères. Si le code est plus long, il sera automatiquement tronqué lors de l'enregistrement du journal. Le passage du code en majuscule est également automatique lors de la création d'un nouveau journal.</p><p>Vérifiez que le bouton radio<img src="../images/commun/radio.svg" alt="Bouton radio" height="20" class="align-icone icone-marge-gauche icone-marge-droite">est bien activé pour "Ventes".</p>
+         <p>Nommez de façon explicite le nouveau journal et affectez-lui un code. La longueur de la chaîne alphanumérique pour définir le code du journal est limitée à 4 caractères. Si le code est plus long, il sera automatiquement tronqué lors de l'enregistrement du journal. Le passage du code en majuscule est également automatique lors de la création d'un nouveau journal.</p>
+         <p>Vérifiez que le bouton radio<img src="../images/commun/radio.svg" alt="Bouton radio" height="20" class="align-icone icone-marge-gauche icone-marge-droite">est bien activé pour "Ventes".</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/journal2019-2.png" class="contour-img" alt="Nouveau journal" data-action="zoom" />
          </p>
@@ -791,75 +775,9 @@
             <img src="../images/chapitre6/journal2019-4.png" class="contour-img" alt="Nouveau journal" data-action="zoom" />
          </p>
       </div>
-      <h6>Guide de prise en main • Comptabilité • Brouillard comptable</h6>
-      <a class="slice-process" id="brouillard"></a>
-      <p align="center" class="texte aerateur procedure">B – Procédure pour valider les écritures du brouillard comptable</p>
-      <p class="texte">Comme expliqué en introduction de ce chapitre, chaque écriture est enregistrée en mode brouillard. La validation des écritures est donc une étape incoutournable, notamment pour réaliser la clôture d'un exercice comptable.</p>
-	  <p class="texte">Pensez à réaliser le <a href="#lettrage" class="avoid-clicks" target="_self">lettrage de comptes</a> avant de valider les écritures présentes dans le brouillard des journaux des achats et des ventes.</p>
-      <p class="texte">
-         Le processus suivant vous guide pour valider les écritures du brouillard comptable.
-      </p>
-      <div class="floating-box process">
-         <img src="../images/commun/step1.svg" alt="1" width="52" />
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Accédez aux "Journaux"</span>
-         <p>Cliquez sur le lien "Comptabilité" dans le "Menu principal" ou sur le bouton "Comptabilité" de la page d'accueil&nbsp;:</p>
-         <p align="center"><img src="../images/chapitre6/comptabilite.svg" alt="Comptabilité" width="60"></p>
-         <p>Dans la barre latérale du module, cliquez sur "Journaux" dans la section "Journaux" symbolisée par l'icône d'un livre<img src="../images/chapitre6/book.svg" alt="histogramme" height="20" class="align-icone icone-marge-gauche">.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre6/brouillard1.png" class="contour-img" alt="Liste des journaux" data-action="zoom" />
-         </p>
-      </div>
-      <br />
-      <div class="floating-box process">
-         <img src="../images/commun/step2.svg" alt="2" width="52" />
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Consultez le brouillard</span>
-         <p>Cliquez sur le bouton "Consulter le brouillard &#40;X écriture|s&#41;" pour consulter les écritures de tous les journaux…</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre6/brouillard2.png" class="contour-img" alt="Liste des écritures" data-action="zoom" />
-         </p>
-         <p>… ou cliquez sur le nom d'un journal, puis cliquez sur le bouton "Consulter le brouillard &#40;X écriture|s&#41;" pour consulter uniquement le brouillard de celui-ci.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre6/brouillard3.png" class="contour-img" alt="Liste des écritures" data-action="zoom" />
-         </p>
-      </div>
-      <br />
-      <div class="floating-box process">
-         <img src="../images/commun/step3.svg" alt="3" width="52" />
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Consultez les écritures</span>
-         <p>Les écritures à valider sont listées pour une période donnée et pour l'ensemble des journaux ou seulement pour le journal sélectionné.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre6/brouillard4.png" class="contour-img" alt="Liste des écritures" data-action="zoom" />
-         </p>
-		 <p>Cliquez sur le bouton "Valider les écritures" pour déclencher la validation.</p>
-      </div>
-      <br />
-      <div class="floating-box process">
-         <img src="../images/commun/step4.svg" alt="4" width="52" />
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Validez les écritures</span>
-         <p>Cliquez sur le bouton de validation dans la <span class="tooltip">fenêtre modale<span class="tooltiptext tooltip-top">Voir glossaire</span></span> pour confirmer l'opération et figer les écritures présentes dans le brouillard. Notez que toute modification ultérieure de l'un de ses éléments devient alors impossible.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre6/brouillard5.png" class="contour-img" alt="Validation du brouillard" data-action="zoom" />
-         </p>
-         <p>Un message de confirmation vous informe alors de la bonne exécution de la tâche&nbsp;:</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre6/brouillard6.png" class="contour-img" alt="Message de confirmation" data-action="zoom" />
-         </p>
-		 <p>Notez qu'il faut avoir validé au moins une écriture pour disposer du bouton permettant d'exporter le journal centralisateur au format PDF.</p>
-		 <p class="max-img-process">
-            <img src="../images/chapitre6/brouillard7.png" class="contour-img" alt="Liste des journaux" data-action="zoom" />
-         </p>
-      </div>
       <h6>Guide de prise en main • Comptabilité • Lettrage de comptes</h6>
       <a class="slice-process" id="lettrage"></a>
-      <p align="center" class="texte aerateur procedure">C – Procédure pour réaliser le lettrage de comptes</p>
+      <p align="center" class="texte aerateur procedure">B – Procédure pour réaliser le lettrage de comptes</p>
       <p class="texte">Le lettrage comptable d'un compte &#40;généralement un compte de tiers&#41; est une opération qui consiste à affecter un seul repère à 2 ou plusieurs entrées comptables dans ce compte, la somme des entrées au crédit devant être égale à la somme des entrées au débit. Il permet donc d'isoler les factures restant à payer pour les fournisseurs et les factures restant à encaisser pour les clients.</p>
       <p class="texte">Ce rapprochement est réalisé grâce à une codification composée d'une ou plusieurs «&nbsp;lettres&nbsp;» permettant ainsi de visualiser plus rapidement les factures non réglées. Ekylibre réalise automatiquement le lettrage en détectant les factures et les règlements pour les lier s'ils sont équilibrés. Dans le cas contraire, il sera possible de corriger le lettrage et éventuellement d'ajouter des écritures de compensation.</p>
       <p class="texte">Notez que le <a href="#rapprochement" class="avoid-clicks" target="_self">rapprochement bancaire</a>, qui utilise également des lettres lorsque vous pointez les écritures passées en banque avec les écritures passées en comptabilité, est une opération différente et indépendante du lettrage de comptes.</p>
@@ -961,6 +879,125 @@
             <img src="../images/chapitre6/lettrage10.png" class="contour-img" alt="Nouveau lettrage" data-action="zoom" />
          </p>
       </div>
+      <h6>Guide de prise en main • Comptabilité • Brouillard comptable</h6>
+      <a class="slice-process" id="brouillard"></a>
+      <p align="center" class="texte aerateur procedure">C – Procédure pour valider les écritures du brouillard comptable</p>
+      <p class="texte">Comme expliqué en introduction de ce chapitre, chaque écriture est enregistrée en mode brouillard. La validation des écritures est donc une étape incoutournable, notamment pour réaliser la clôture d'un exercice comptable.</p>
+      <p class="texte">Pensez à réaliser le <a href="#lettrage" class="avoid-clicks" target="_self">lettrage de comptes</a> avant de valider les écritures présentes dans le brouillard des journaux des achats et des ventes.</p>
+      <p class="texte">
+         Le processus suivant vous guide pour valider les écritures du brouillard comptable.
+      </p>
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Accédez aux "Journaux"</span>
+         <p>Cliquez sur le lien "Comptabilité" dans le "Menu principal" ou sur le bouton "Comptabilité" de la page d'accueil&nbsp;:</p>
+         <p align="center"><img src="../images/chapitre6/comptabilite.svg" alt="Comptabilité" width="60"></p>
+         <p>Dans la barre latérale du module, cliquez sur "Journaux" dans la section "Journaux" symbolisée par l'icône d'un livre<img src="../images/chapitre6/book.svg" alt="histogramme" height="20" class="align-icone icone-marge-gauche">.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/brouillard1.png" class="contour-img" alt="Liste des journaux" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Consultez le brouillard</span>
+         <p>Cliquez sur le bouton "Consulter le brouillard &#40;X écriture|s&#41;" pour consulter les écritures de tous les journaux…</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/brouillard2.png" class="contour-img" alt="Liste des écritures" data-action="zoom" />
+         </p>
+         <p>… ou cliquez sur le nom d'un journal, puis cliquez sur le bouton "Consulter le brouillard &#40;X écriture|s&#41;" pour consulter uniquement le brouillard de celui-ci.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/brouillard3.png" class="contour-img" alt="Liste des écritures" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Consultez les écritures</span>
+         <p>Les écritures à valider sont listées pour une période donnée et pour l'ensemble des journaux ou seulement pour le journal sélectionné.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/brouillard4.png" class="contour-img" alt="Liste des écritures" data-action="zoom" />
+         </p>
+         <p>Cliquez sur le bouton "Valider les écritures" pour déclencher la validation.</p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step4.svg" alt="4" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Validez les écritures</span>
+         <p>Cliquez sur le bouton de validation dans la <span class="tooltip">fenêtre modale<span class="tooltiptext tooltip-top">Voir glossaire</span></span> pour confirmer l'opération et figer les écritures présentes dans le brouillard. Notez que toute modification ultérieure de l'un de ses éléments devient alors impossible.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/brouillard5.png" class="contour-img" alt="Validation du brouillard" data-action="zoom" />
+         </p>
+         <p>Un message de confirmation vous informe alors de la bonne exécution de la tâche&nbsp;:</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/brouillard6.png" class="contour-img" alt="Message de confirmation" data-action="zoom" />
+         </p>
+         <p>Notez qu'il faut avoir validé au moins une écriture pour disposer du bouton permettant d'exporter le journal centralisateur au format PDF.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/brouillard7.png" class="contour-img" alt="Liste des journaux" data-action="zoom" />
+         </p>
+      </div>
+      <h6>Guide de prise en main • Comptabilité • Journal centralisateur</h6>
+      <a class="slice-process" id="centralisateur"></a>
+      <p align="center" class="texte aerateur procedure">D – Procédure pour obtenir le journal centralisateur</p>
+      <p class="texte">Le journal centralisateur est un document comptable dans lequel on trouve le total de tous les journaux &#40;le journal des ventes, le journal des achats, le journal de banque, de caisse, etc.&#41;.</p>
+      <p class="texte">
+         Le processus suivant vous guide pour exporter le journal centralisateur.
+      </p>
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Accédez aux "Journaux"</span>
+         <p>Cliquez sur le lien "Comptabilité" dans le "Menu principal" ou sur le bouton "Comptabilité" de la page d'accueil&nbsp;:</p>
+         <p align="center"><img src="../images/chapitre6/comptabilite.svg" alt="Comptabilité" width="60"></p>
+         <p>Dans la barre latérale du module, cliquez sur "Journaux" dans la section "Journaux" symbolisée par l'icône d'un livre<img src="../images/chapitre6/book.svg" alt="histogramme" height="20" class="align-icone icone-marge-gauche">.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/centralisateur1.png" class="contour-img" alt="Liste des journaux" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Exportez le journal centralisateur</span>
+         <p>CLiquez sur le bouton "Exportez le journal centralisateur".</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/centralisateur2.png" class="contour-img" alt="Sélection du Grand-livre" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez les notifications</span>
+         <p>Patientez quelques instants. La pastille rouge<img src="../images/commun/marker.svg" alt="Notification" height="20" class="align-icone icone-marge-gauche icone-marge-droite">en haut à droite de la cloche<img src="../images/commun/bell-o-blue.svg" alt="Cloche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">vous indique qu'une opération interne a été effectuée par l'application. Cliquez sur celle-ci pour afficher la notification. En cas d'erreur, vous serez informé&#40;e&#41; de la nature de celle-ci.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/centralisateur3.png" class="contour-img" alt="Affichage de la notification" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step4.svg" alt="4" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Obtenez le journal centralisateur</span>
+         <p>Cliquez sur le lien "Votre fichier a été généré avec succès" pour obtenir les informations du nouveau document. Cliquez sur la vignette pour afficher le document au format PDF dans votre navigateur afin de le télécharger et/ou de l'imprimer.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/centralisateur4.png" class="contour-img" alt="Récupération du fichier" data-action="zoom" />
+         </p>
+         <p>Notez que le fichier reste accessible à tout moment via le lien "Gestion électronique des documents" dans la section "Archives"<img src="../images/commun/archive.svg" alt="Archives" height="20" class="align-icone icone-marge-gauche icone-marge-droite">du module "Outils".</p>
+      </div>
       <h6>Guide de prise en main • Comptabilité • Exercices comptables</h6>
       <a class="slice-process" id="exercice"></a>
       <h2 class="texte aerateur">d - Exercices comptables</h2>
@@ -1026,7 +1063,7 @@
       <div class="process-txt">
          <span class="titre-advice">Renseignez le nouvel exercice comptable</span>
          <p>Remplissez tous les champs obligatoires signalés par une astérisque de couleur rouge avec les informations requises pour le définir correctement. Sélectionnez un comptable ou créez-en un à la volée en sélectionnant "Ajouter un nouvel enregistrement" dans la liste déroulante si vous envisagez de réaliser des <a href="../chapitre6#echanges" target="_self">échanges comptables</a>.</p>
-		 <p>Veillez impérativement à ce que la date de clôture soit bien le dernier jour du mois.</p>
+         <p>Veillez impérativement à ce que la date de clôture soit bien le dernier jour du mois.</p>
          <p class="max-img-process"><img src="../images/chapitre6/exo2019-5.png" class="contour-img" alt="Liste des exercices comptables" data-action="zoom" /></p>
          <p>L'article 73 du code général des impôts fixe à douze mois la durée de l'exercice comptable des exploitants agricoles soumis à un régime réel d'imposition, sans que cet exercice soit nécessairement aligné sur l'année civile.</p>
          <p>Généralement, la date de clôture de l'exercice comptable retenue &#40;31 décembre&#41; coïncide avec la fin de l'année civile, mais ce n'est pas une obligation. Une date clôturant un trimestre civil &#40;31 mars, 30 juin…&#41; est également souvent choisie pour des raisons de simplicité.</p>
@@ -1123,7 +1160,9 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Préparez la clôture</span>
-		  <p>Cliquez sur le bouton "Préparer la clôture de EX20XX".</p><p>La phase de préparation à la clôture permet à une seule personne de modifier les écritures de l'exercice en cours de clôture, sans bloquer la saisie d'autres utilisateurs sur des périodes non concernées par celle-ci.</p><p>Notez qu'il n'est pas possible de clôturer un exercice si le précédent n'a pas été clôturé ou verrouillé. Il n'est évidemment pas possible non plus de clôturer un exercice avant sa date de fin.</p>
+         <p>Cliquez sur le bouton "Préparer la clôture de EX20XX".</p>
+         <p>La phase de préparation à la clôture permet à une seule personne de modifier les écritures de l'exercice en cours de clôture, sans bloquer la saisie d'autres utilisateurs sur des périodes non concernées par celle-ci.</p>
+         <p>Notez qu'il n'est pas possible de clôturer un exercice si le précédent n'a pas été clôturé ou verrouillé. Il n'est évidemment pas possible non plus de clôturer un exercice avant sa date de fin.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/cloture2.png" class="contour-img" alt="Préparation de la clôture" data-action="zoom" />
          </p>
@@ -1149,12 +1188,13 @@
       <div class="process-txt">
          <span class="titre-advice">Contrôlez les indicateurs de clôture</span>
          <p>Une liste d'alertes et de messages vous informe automatiquement des éventuelles vérifications et corrections à faire pour permettre à la clôture de se dérouler correctement.</p>
-		 <p>Les points d'exclamation<img src="../images/chapitre6/exclamation-triangle.svg" alt="Point d'exclamation" height="20" class="align-icone icone-marge-gauche icone-marge-droite">alertent l'utilisateur sur des points de vigilance. Ils ne sont pas bloquants mais une fois l'opération terminée, il ne sera plus possible de faire marche arrière.</p>
-		 <p>La croix de couleur rouge<img src="../images/chapitre6/close.svg" alt="Croix rouge" height="20" class="align-icone icone-marge-gauche icone-marge-droite">indique que la clôture ne peut avoir lieu tant que le problème n'est pas résolu.</p>
+         <p>Les points d'exclamation<img src="../images/chapitre6/exclamation-triangle.svg" alt="Point d'exclamation" height="20" class="align-icone icone-marge-gauche icone-marge-droite">alertent l'utilisateur sur des points de vigilance. Ils ne sont pas bloquants mais une fois l'opération terminée, il ne sera plus possible de faire marche arrière.</p>
+         <p>La croix de couleur rouge<img src="../images/chapitre6/close.svg" alt="Croix rouge" height="20" class="align-icone icone-marge-gauche icone-marge-droite">indique que la clôture ne peut avoir lieu tant que le problème n'est pas résolu.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/cloture5.png" class="contour-img" alt="Exercices comptables" data-action="zoom" />
          </p>
-		 <p>Pour la plupart des points de blocage, des liens permettent d'ouvrir une nouvelle page avec, le cas échéant, un filtre qui isole la donnée posant problème. Lors du retour à la page de clôture, raffraîchissez votre navigateur pour mettre à jour la liste des vérifications.</p><p>La coche de couleur verte<img src="../images/chapitre6/check.svg" alt="Coche verte" height="20" class="align-icone icone-marge-gauche icone-marge-droite">indique une analyse satisfaisante des données pour permettre le bon déroulement de la clôture.</p>
+         <p>Pour la plupart des points de blocage, des liens permettent d'ouvrir une nouvelle page avec, le cas échéant, un filtre qui isole la donnée posant problème. Lors du retour à la page de clôture, raffraîchissez votre navigateur pour mettre à jour la liste des vérifications.</p>
+         <p>La coche de couleur verte<img src="../images/chapitre6/check.svg" alt="Coche verte" height="20" class="align-icone icone-marge-gauche icone-marge-droite">indique une analyse satisfaisante des données pour permettre le bon déroulement de la clôture.</p>
       </div>
       <br />
       <div class="floating-box process">
@@ -1181,10 +1221,10 @@
          <p class="max-img-process">
             <img src="../images/chapitre6/cloture7.png" class="contour-img" alt="Clôture en cours" data-action="zoom" />
          </p>
-		 <p class="max-img-process">
+         <p class="max-img-process">
             <img src="../images/chapitre6/cloture8.png" class="contour-img" alt="Clôture en cours" data-action="zoom" />
          </p>
-		 <p>Une fois l'exercice clôturé, la pastille rouge<img src="../images/commun/marker.svg" alt="Notification" height="20" class="align-icone icone-marge-gauche icone-marge-droite">en haut à droite de la cloche<img src="../images/commun/bell-o-blue.svg" alt="Cloche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">vous indique qu'une opération interne a été effectuée par l'application.</p>
+         <p>Une fois l'exercice clôturé, la pastille rouge<img src="../images/commun/marker.svg" alt="Notification" height="20" class="align-icone icone-marge-gauche icone-marge-droite">en haut à droite de la cloche<img src="../images/commun/bell-o-blue.svg" alt="Cloche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">vous indique qu'une opération interne a été effectuée par l'application.</p>
       </div>
       <br />
       <div class="floating-box process">
@@ -1313,7 +1353,7 @@
       <div class="process-txt">
          <span class="titre-advice">Sélectionnez l'export FEC</span>
          <p>Cliquez sur le bouton "Export FEC", puis sélectionnez le type de fichier souhaité dans la liste déroulante. Les abbréviations utilisées sont les suivantes&nbsp;:</p>
-		  <p>BA - Bénéfices Agricoles<br />BNC - Bénéfices Non Commerciaux<br />IR - Impôt sur le Revenu</p>
+         <p>BA - Bénéfices Agricoles<br />BNC - Bénéfices Non Commerciaux<br />IR - Impôt sur le Revenu</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/exportfec3.png" class="contour-img" alt="Sélection Export FEC" data-action="zoom" />
          </p>
@@ -1431,7 +1471,7 @@
       </div>
       <p class="texte">C'est la sélection du régime fiscal de l'entreprise dans l'assistant de démarrage qui définit automatiquement le plan de comptes adapté à son activité principale &#40;plan comptable agricole ‒ arrêté du 11/12/1986 ou plan comptable général de 1982 ‒ arrêté du 14/12/2007&#41;.</p>
       <p class="texte">Pour une meilleure présentation des états, la longueur des comptes comptables a été homogénéisée à 8 chiffres &#40;10 si vous avez choisi cette option dans l'assistant de démarrage&#41;, comme par exemple 60120000, sauf pour les comptes de tiers &#40;clients et fournisseurs uniquement&#41; composés du numéro de compte centralisateur à 3 chiffres et du numéro auxiliaire &#40;pouvant être une chaîne de caractères alphanumériques&#41;.</p>
-	  <div class="affichage-large"></div>
+      <div class="affichage-large"></div>
       <div class="affichage-mobile">
          <p align="center">
             <img src="../images/commun/scroll.svg" alt="Scroll" height="40" class="">
@@ -1439,11 +1479,11 @@
             Glissez pour parcourir le schéma
          </p>
       </div>
-	  <div class="scroll marge">
+      <div class="scroll marge">
          <div class="tableau">
-      		 <p align="center"><img src="../images/chapitre6/schema-compte.png" alt="Comptes de tiers" width="500"></p>
-		 </div>
-	  </div>
+            <p align="center"><img src="../images/chapitre6/schema-compte.png" alt="Comptes de tiers" width="500"></p>
+         </div>
+      </div>
       <div class="info-fond magic-green aerateur">
          <div class="floating-box-info">
             <img src="../images/commun/info.svg" width="100" alt="Info"/>
@@ -1856,7 +1896,7 @@
          <p class="max-img-process">
             <img src="../images/chapitre6/emprunt6.png" class="contour-img" alt="Validation du statut" data-action="zoom" />
          </p>
-		 <p>Lorsque le statut de l'emprunt est défini sur "En cours", il n'est plus possible de recalculer l'échéancier en automatique en modifiant l'emprunt. Néanmoins, il reste possible de modifier les échéances une par une ou d'en ajouter afin de refléter, au mieux, des changements de situation lors du remboursement.</p>
+         <p>Lorsque le statut de l'emprunt est défini sur "En cours", il n'est plus possible de recalculer l'échéancier en automatique en modifiant l'emprunt. Néanmoins, il reste possible de modifier les échéances une par une ou d'en ajouter afin de refléter, au mieux, des changements de situation lors du remboursement.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/emprunt7.png" class="contour-img" alt="Nouvel emprunt en cours" data-action="zoom" />
          </p>
@@ -1882,7 +1922,7 @@
          <p>Dès qu'un exercice comptable est verrouillé ou clôturé, les cases dans la colonne "Verrouillé" des remboursements concernés sont alors cochées<img src="../images/commun/check-square-o.svg" alt="Case cochée" height="20" class="align-icone icone-marge-gauche">, indiquant que les écritures dans le brouillard du journal de banque ont été définitivement validées.</p>
          <p>Cliquez sur le bouton <span class="step step-vert">&nbsp;Remboursé&nbsp;</span> dès que l'emprunt est remboursé pour modifier son statut et validez votre choix dans la <span class="tooltip">fenêtre modale<span class="tooltiptext tooltip-top">Voir glossaire</span></span>.</p>
       </div>
-	  <br />
+      <br />
       <div class="floating-box process">
          <img src="../images/commun/step7.svg" alt="7" width="52" />
       </div>
@@ -1892,7 +1932,7 @@
          <p class="max-img-process">
             <img src="../images/chapitre6/emprunt11.png" class="contour-img" alt="Fermeture emprunt" data-action="zoom" />
          </p>
-		 <p class="max-img-process">
+         <p class="max-img-process">
             <img src="../images/chapitre6/emprunt12.png" class="contour-img" alt="Emprunt remboursé" data-action="zoom" />
          </p>
       </div>
@@ -1927,7 +1967,7 @@
          <p class="max-img-process">
             <img src="../images/chapitre6/virement2.png" class="contour-img" alt="Nouvel emprunt" data-action="zoom" />
          </p>
-		 <p>Notez que le virement interne peut également être enregistré entre la caisse et un compte bancaire.</p>
+         <p>Notez que le virement interne peut également être enregistré entre la caisse et un compte bancaire.</p>
          <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
       </div>
       <br />
@@ -2139,7 +2179,7 @@
       <h2 class="texte aerateur">h - Immobilisations</h2>
       <p align="center" class="texte"><img src="../images/commun/option.svg" height="55" alt="Optionnel"></p>
       <p class="texte">La notion d'immobilisation intègre l'ensemble des biens durables détenus par une exploitation sur plus d'un exercice comptable et qui ne sont pas destinés à la revente. Les immobilisations corporelles sont composées de plusieurs catégories&nbsp;: les terrains, les constructions, l’agencement et les installations générales, l’outillage, le matériel, les véhicules, le mobilier et les équipements informatiques.</p>
-	  <p align="center" class="texte aerateur procedure">A – Procédure pour enregistrer une immobilisation
+      <p align="center" class="texte aerateur procedure">A – Procédure pour enregistrer une immobilisation
       </p>
       <p class="texte">Dans l'exemple suivant, certaines notions font appel à des procédures expliquées dans le "<a class="avoid-clicks" href="../chapitre7">chapitre 7 - Achats</a>".</p>
       <div class="info-fond aerateur-haut aerateur-bas">
@@ -2153,7 +2193,7 @@
             </p>
          </div>
       </div>
-	  <p class="texte">Le processus suivant vous guide pour enregistrer une nouvelle immobilisation.</p>
+      <p class="texte">Le processus suivant vous guide pour enregistrer une nouvelle immobilisation.</p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
       </div>
@@ -2345,9 +2385,9 @@
             </div>
          </div>
       </div>
-	  <h6>Guide de prise en main • Comptabilité • Cession d'immobilisation</h6>
+      <h6>Guide de prise en main • Comptabilité • Cession d'immobilisation</h6>
       <a class="slice-process" id="cession"></a>
-	  <p align="center" class="texte aerateur procedure">B – Procédure pour enregistrer une cession d'immobilisation
+      <p align="center" class="texte aerateur procedure">B – Procédure pour enregistrer une cession d'immobilisation
       </p>
       <p class="texte">
          Le processus suivant vous guide pour enregistrer une cession d'immobilisation.
@@ -2365,7 +2405,7 @@
          </p>
       </div>
       <br />
-	  <div class="floating-box process">
+      <div class="floating-box process">
          <img src="../images/commun/step2.svg" alt="2" width="52" />
       </div>
       <div class="process-txt">
@@ -2376,7 +2416,7 @@
          </p>
       </div>
       <br />
-	  <div class="floating-box process">
+      <div class="floating-box process">
          <img src="../images/commun/step3.svg" alt="3" width="52" />
       </div>
       <div class="process-txt">
@@ -2387,52 +2427,52 @@
          </p>
       </div>
       <br />
-	  <div class="floating-box process">
+      <div class="floating-box process">
          <img src="../images/commun/step4.svg" alt="4" width="52" />
       </div>
       <div class="process-txt">
          <span class="titre-advice">Renseignez la nouvelle vente</span>
          <p>Sélectionnez un client dans la liste déroulante ou créez-en un nouveau à la volée.</p>
-		 <p>Saisissez le prix de cession de l'immobilisation. Notez que la variante a automatiquement été sélectionnée dans la ligne de vente.</p>
+         <p>Saisissez le prix de cession de l'immobilisation. Notez que la variante a automatiquement été sélectionnée dans la ligne de vente.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/cession4.png" class="contour-img" alt="Liste immobilisations" data-action="zoom" />
          </p>
-		 <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
+         <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
       </div>
       <br />
-	  <div class="floating-box process">
+      <div class="floating-box process">
          <img src="../images/commun/step5.svg" alt="5" width="52" />
       </div>
       <div class="process-txt">
          <span class="titre-advice">Modifiez le statut de la vente</span>
-		 <p>La vente est enregistrée avec le statut <span class="step step-orange">&nbsp;Devis brouillon&nbsp;</span>.</p>
+         <p>La vente est enregistrée avec le statut <span class="step step-orange">&nbsp;Devis brouillon&nbsp;</span>.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/cession5.png" class="contour-img" alt="Vente en mode devis brouillon" data-action="zoom" />
          </p>
-		 <p>Transformez le devis en facture en cliquant sur le bouton <span class="step step-vert">&nbsp;Facture&nbsp;</span> et en validant ce choix.</p>
-		  <p class="max-img-process">
+         <p>Transformez le devis en facture en cliquant sur le bouton <span class="step step-vert">&nbsp;Facture&nbsp;</span> et en validant ce choix.</p>
+         <p class="max-img-process">
             <img src="../images/chapitre6/cession6.png" class="contour-img" alt="Transformation en facture" data-action="zoom" />
          </p>
-		 <p>Notez que le solde négatif affiché dans la section "Affaire" &#40;égal au montant total TTC de la facture&#41; exprime une créance en attente de réglement.</p>
+         <p>Notez que le solde négatif affiché dans la section "Affaire" &#40;égal au montant total TTC de la facture&#41; exprime une créance en attente de réglement.</p>
       </div>
       <br />
-	  <div class="floating-box process">
+      <div class="floating-box process">
          <img src="../images/commun/step6.svg" alt="6" width="52" />
       </div>
       <div class="process-txt">
          <span class="titre-advice">Réalisez la cession</span>
-		 <p>Retournez dans les immobilisations et cliquez sur <span class="step step-rouge">&nbsp;Vendue&nbsp;</span>. Validez votre choix dans la <span class="tooltip">fenêtre modale<span class="tooltiptext tooltip-top">Voir glossaire</span></span>.</p>
+         <p>Retournez dans les immobilisations et cliquez sur <span class="step step-rouge">&nbsp;Vendue&nbsp;</span>. Validez votre choix dans la <span class="tooltip">fenêtre modale<span class="tooltiptext tooltip-top">Voir glossaire</span></span>.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/cession7.png" class="contour-img" alt="Changement statut statut" data-action="zoom" />
          </p>
-	  	 <p class="max-img-process">
+         <p class="max-img-process">
             <img src="../images/chapitre6/cession8.png" class="contour-img" alt="Statut immobilisation vendue" data-action="zoom" />
          </p>
-		 <p>Notez que, dès cette opération validée, l'équipement n'est plus disponible pour enregistrer une intervention.</p>
-	  </div>
-	  <h6>Guide de prise en main • Comptabilité • Mise au rebut d'une immobilisation</h6>
+         <p>Notez que, dès cette opération validée, l'équipement n'est plus disponible pour enregistrer une intervention.</p>
+      </div>
+      <h6>Guide de prise en main • Comptabilité • Mise au rebut d'une immobilisation</h6>
       <a class="slice-process" id="mise-rebut"></a>
-	  <p align="center" class="texte aerateur procedure">C – Procédure pour mettre au rebut une immobilisation
+      <p align="center" class="texte aerateur procedure">C – Procédure pour mettre au rebut une immobilisation
       </p>
       <p class="texte">
          Le processus suivant vous guide pour mettre au rebut une immobilisation.
@@ -2450,7 +2490,7 @@
          </p>
       </div>
       <br />
-	  <div class="floating-box process">
+      <div class="floating-box process">
          <img src="../images/commun/step2.svg" alt="2" width="52" />
       </div>
       <div class="process-txt">
@@ -2461,7 +2501,7 @@
          </p>
       </div>
       <br />
-	  <div class="floating-box process">
+      <div class="floating-box process">
          <img src="../images/commun/step3.svg" alt="3" width="52" />
       </div>
       <div class="process-txt">
@@ -2470,34 +2510,34 @@
          <p class="max-img-process">
             <img src="../images/chapitre6/mise-rebut3.png" class="contour-img" alt="Affichage immobilisation" data-action="zoom" />
          </p>
-		 <p>Renseignez notamment la date de mise au rebut.</p>
+         <p>Renseignez notamment la date de mise au rebut.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/mise-rebut4.png" class="contour-img" alt="Affichage immobilisation" data-action="zoom" />
          </p>
-		 <p>Cliquez sur <span class="btn-blue">Modifier</span> pour valider l'opération.</p>
+         <p>Cliquez sur <span class="btn-blue">Modifier</span> pour valider l'opération.</p>
       </div>
       <br />
-	  <div class="floating-box process">
+      <div class="floating-box process">
          <img src="../images/commun/step4.svg" alt="4" width="52" />
       </div>
-	  <div class="process-txt">
+      <div class="process-txt">
          <span class="titre-advice">Confirmez la mise au rebut</span>
-		 <p>Un message de confirmation vous informe de la bonne exécution de la tâche.</p>
-		 <p class="max-img-process">
+         <p>Un message de confirmation vous informe de la bonne exécution de la tâche.</p>
+         <p class="max-img-process">
             <img src="../images/chapitre6/mise-rebut5.png" class="contour-img" alt="Affichage immobilisation" data-action="zoom" />
          </p>
          <p>Cliquez à nouveau sur <span class="step step-rouge">&nbsp;Mise au rebut&nbsp;</span> pour confirmer la mise au rebut de l'immobilisation et validez votre choix dans la <span class="tooltip">fenêtre modale<span class="tooltiptext tooltip-top">Voir glossaire</span></span>.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/mise-rebut6.png" class="contour-img" alt="Affichage immobilisation" data-action="zoom" />
          </p>
-		 <p class="max-img-process">
+         <p class="max-img-process">
             <img src="../images/chapitre6/mise-rebut7.png" class="contour-img" alt="Affichage immobilisation" data-action="zoom" />
          </p>
-		 <p>Notez que la date de mise au rebut est automatiquement reportée dans la fiche de l'équipement qui n'est alors plus disponible pour enregistrer une intervention.</p>
+         <p>Notez que la date de mise au rebut est automatiquement reportée dans la fiche de l'équipement qui n'est alors plus disponible pour enregistrer une intervention.</p>
       </div>
-	  <h6>Guide de prise en main • Comptabilité • États des immobilisations</h6>
+      <h6>Guide de prise en main • Comptabilité • États des immobilisations</h6>
       <a class="slice-process" id="etats"></a>
-	  <p align="center" class="texte aerateur procedure">D – Procédure pour produire les états des immobilisations
+      <p align="center" class="texte aerateur procedure">D – Procédure pour produire les états des immobilisations
       </p>
       <p class="texte">
          Le processus suivant vous guide pour produire les états des immobilisations et des plus et moins values.
@@ -2515,7 +2555,7 @@
          </p>
       </div>
       <br />
-	  <div class="floating-box process">
+      <div class="floating-box process">
          <img src="../images/commun/step2.svg" alt="2" width="52" />
       </div>
       <div class="process-txt">
@@ -2526,7 +2566,7 @@
          </p>
       </div>
       <br />
-	  <div class="floating-box process">
+      <div class="floating-box process">
          <img src="../images/commun/step3.svg" alt="3" width="52" />
       </div>
       <div class="process-txt">
@@ -2537,7 +2577,7 @@
          </p>
       </div>
       <br />
-	  <div class="floating-box process">
+      <div class="floating-box process">
          <img src="../images/commun/step4.svg" alt="4" width="52" />
       </div>
       <div class="process-txt">
@@ -2564,7 +2604,7 @@
       </div>
       <p class="texte">Le journal des opérations diverses en comptabilité, appelé aussi journal des OD, est un document auxiliaire au journal général de comptabilité. Il permet d’enregistrer les opérations comptables qui ne concernent ni le journal des achats, ni le journal des ventes, ni les journaux de trésorerie. Le journal des opérations diverses &#40;OD&#41; permet d’enregistrer des opérations concernant les mouvements de TVA, les provisions, la paie ou encore les écritures rectificatrices des différentes erreurs de saisie qui ont été commises. Notez que le journal comptable est une obligation légale pour les entreprises soumises au régime du réel, afin de suivre toutes ses opérations.</p>
       <p class="texte">Dans Ekylibre, les écritures issues des éventuelles corrections réalisées par votre comptable doivent être consignées dans un nouveau journal d'opérations diverses, l'existant étant réservé à l'administrateur de la ferme.</p>
-	  <a class="slice-process" id="journal-od"></a>
+      <a class="slice-process" id="journal-od"></a>
       <p align="center" class="texte aerateur procedure">A – Procédure pour paramétrer un nouveau journal
       </p>
       <p class="texte">
@@ -2589,7 +2629,8 @@
       <div class="process-txt">
          <span class="titre-advice">Créez un nouveau journal</span>
          <p>Cliquez sur le bouton "Nouveau" et remplissez tous les champs avec les bonnes informations pour le définir correctement.</p>
-		 <p>Nommez de façon explicite le nouveau journal et affectez-lui un code. La longueur de la chaîne alphanumérique pour définir le code du journal est limitée à 4 caractères. Si le code est plus long, il sera automatiquement tronqué lors de l'enregistrement du journal. Le passage du code en majuscule est également automatique lors de la création d'un nouveau journal.</p><p>Vérifiez enfin que le bouton radio<img src="../images/commun/radio.svg" alt="Bouton radio" height="20" class="align-icone icone-marge-gauche icone-marge-droite">est bien activé pour "Opérations diverses".</p>
+         <p>Nommez de façon explicite le nouveau journal et affectez-lui un code. La longueur de la chaîne alphanumérique pour définir le code du journal est limitée à 4 caractères. Si le code est plus long, il sera automatiquement tronqué lors de l'enregistrement du journal. Le passage du code en majuscule est également automatique lors de la création d'un nouveau journal.</p>
+         <p>Vérifiez enfin que le bouton radio<img src="../images/commun/radio.svg" alt="Bouton radio" height="20" class="align-icone icone-marge-gauche icone-marge-droite">est bien activé pour "Opérations diverses".</p>
          <p>Sélectionnez, parmi les tiers disponibles, votre comptable ou créez-en un à la volée en sélectionnant "Ajouter un nouvel enregistrement". Notez que ce comptable doit être <strong>le même</strong> que celui qui sera associé à l'exercice comptable.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/journaux2.png" class="contour-img" alt="Nouveau journal" data-action="zoom" />
@@ -2726,8 +2767,8 @@
                </div>
             </div>
          </div>
-		 <p>Progressivement, la liste sera complétée par les échanges successifs ouverts au sein d'un même exercice &#40;deux échanges clôturés et un en cours dans cet exemple&#41;&nbsp;:</p>
-		 <p class="max-img-process">
+         <p>Progressivement, la liste sera complétée par les échanges successifs ouverts au sein d'un même exercice &#40;deux échanges clôturés et un en cours dans cet exemple&#41;&nbsp;:</p>
+         <p class="max-img-process">
             <img src="../images/chapitre6/echange8.png" class="contour-img" alt="Liste des échanges" data-action="zoom" />
          </p>
       </div>
@@ -2806,7 +2847,7 @@
       <a class="slice-process" id="grand-livre"></a>
       <h2 class="texte aerateur">k - Grand-livre</h2>
       <p class="texte">Un Grand-livre est la transcription sur un document unique de la totalité des mouvements de comptabilité d’une exploitation. Ces mouvements sont classés par compte, dans l'ordre de numéro prévu par le plan comptable.</p>
-	  <p class="texte">Les Grands-livres auxiliaires sont formés par l'ensemble des comptes individuels de même type &#40;clients, fournisseurs, etc.&#41;. Ils permettent ainsi d'établir un relevé nominatif de la position de chaque compte avec le détail des mouvements.</p>
+      <p class="texte">Les Grands-livres auxiliaires sont formés par l'ensemble des comptes individuels de même type &#40;clients, fournisseurs, etc.&#41;. Ils permettent ainsi d'établir un relevé nominatif de la position de chaque compte avec le détail des mouvements.</p>
       <p class="texte">Les comptes auxiliaires font partie intégrante du Grand-livre général. Néanmoins, il n'est retranscrit dans le Grand-livre que le solde total des comptes avec le numéro correspondant. Par exemple 401 pour les fournisseurs et 411 pour les clients.</p>
       <p align="center" class="texte aerateur procedure">A – Procédure pour produire le Grand-livre
       </p>
@@ -2946,6 +2987,108 @@
          </div>
          <div id="arrow"><i class="fas fa-lg fa-caret-left"></i></div>
       </div>
+      <div class="tooltip">
+         <a style="display:block" href="#" data-width="730" data-rel="popup1" class="poplight" target="_self">
+            <div class="btn_navigation"><span class="tooltiptext2 tooltip-top">Menu du chapitre</span></div>
+         </a>
+      </div>
    </article>
    <aside></aside>
+</div>
+<!-- END MAIN -->
+<div id="modale">
+   <div id="popup1" class="popup_block">
+      <h2 class="info titre-annexe">Menu comptabilité</h2>
+      <div class="compta-large">
+         <p class="marge-annexe">Sélectionnez le lien dans les listes déroulantes&nbsp;:</p>
+         <div class="divTableCompta texte aerateur-bas">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellCompta1"><img src="../images/chapitre6/wrench3.svg" alt="Configuration" height="28"></div>
+                  <div class="divTableCellCompta1"><img src="../images/chapitre6/cog-black.svg" alt="Configuration" height="30"></div>
+                  <div class="divTableCellCompta3"><img src="../images/chapitre6/book.svg" alt="Journaux" height="30"></div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellCompta2">
+                     <form>
+                        <select name="ListeUrl" SIZE="1" onChange="ChangeUrl(this.form)" style="width:210px">
+                           <option selected value="">Configuration</option>
+                           <option value="#societe">- Paramétrer la société</option>
+                           <option value="#plan">- Créer un compte comptable</option>
+                        </select>
+                     </form>
+                  </div>
+                  <div class="divTableCellCompta2">
+                     <form>
+                        <select name="ListeUrl" SIZE="1" onChange="ChangeUrl(this.form)" style="width:210px">
+                           <option selected value="">TVA</option>
+                           <option value="#tva">- Créer un nouveau taux de TVA</option>
+                           <option value="#declaration">- Produire une déclaration de TVA</option>
+                        </select>
+                     </form>
+                  </div>
+                  <div class="divTableCellCompta3">
+                     <form>
+                        <select name="ListeUrl" SIZE="1" onChange="ChangeUrl(this.form)" style="width:210px">
+                           <option selected value="">Journaux</option>
+                           <option value="#journaux">- Créer un nouveau journal</option>
+                           <option value="#lettrage">- Réaliser le lettrage de comptes</option>
+                           <option value="#brouillard">- Valider le brouillard comptable</option>
+                           <option value="#centralisateur">- Obtenir le journal centralisateur</option>
+                        </select>
+                     </form>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellCompta2">&nbsp;</div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellCompta1"><img src="../images/chapitre6/table.svg" alt="Exercice comptable" height="28"></div>
+                  <div class="divTableCellCompta1"><img src="../images/chapitre6/home.svg" alt="Immobilisation" height="30"></div>
+                  <div class="divTableCellCompta3"><img src="../images/chapitre6/money.svg" alt="Trésorerie" height="22"></div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellCompta2">
+                     <form>
+                        <select name="ListeUrl" SIZE="1" onChange="ChangeUrl(this.form)" style="width:210px">
+                           <option selected value="">Exercices comptables</option>
+                           <option value="#exercice">- Ouvrir un nouvel exercice</option>
+                           <option value="#echanges">- Réaliser un échange comptable</option>
+                           <option value="#cloture">- Clôturer un exercice</option>
+                           <option value="#verrouillage">- Verrouiller un exercice</option>
+                           <option value="#exportfec">- Obtenir le fichier des écritures comptables</option>
+                           <option value="#bilan">- Obtenir le bilan et le compte de résultat</option>
+                           <option value="#balance">- Produire la balance</option>
+                           <option value="#grand-livre">- Produire le Grand-livre</option>
+                        </select>
+                     </form>
+                  </div>
+                  <div class="divTableCellCompta2">
+                     <form>
+                        <select name="ListeUrl" SIZE="1" onChange="ChangeUrl(this.form)" style="width:210px">
+                           <option selected value="">Immobilisations</option>
+                           <option value="#immobilisations">- Enregistrer une immobilisation</option>
+                           <option value="#cession">- Enregistrer une cession d'immobilisation</option>
+                           <option value="#mise-rebut">- Mettre au rebut une immobilisation</option>
+                           <option value="#etats">- Produire les états des immobilisations</option>
+                           <option value="#etats">- Produire les états des plus et moins values</option>
+                        </select>
+                     </form>
+                  </div>
+                  <div class="divTableCellCompta3">
+                     <form>
+                        <select name="ListeUrl" SIZE="1" onChange="ChangeUrl(this.form)" style="width:210px">
+                           <option selected value="">Trésorerie</option>
+                           <option value="#tresorerie">- Créer un compte bancaire</option>
+                           <option value="#rapprochement">- Procéder au rapprochement bancaire</option>
+                           <option value="#emprunts">- Enregistrer un emprunt</option>
+                           <option value="#virements">- Réaliser un virement interne</option>
+                        </select>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
 </div>

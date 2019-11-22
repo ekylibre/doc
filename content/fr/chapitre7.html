@@ -123,15 +123,15 @@
                      <ul style="display: none;">
                         <div class="bloc">
                            <li><a href="../chapitre6#introduction" target="_self">Introduction</a></li>
-                           <li><a href="../chapitre6#societe" target="_self">Paramétrage de l'exploitation</a></li>
-						   <li><a href="../chapitre6#journaux" target="_self">Journaux</a></li>
+                           <li><a href="../chapitre6#societe" target="_self">Paramétrage</a></li>
+                           <li><a href="../chapitre6#journaux" target="_self">Journaux</a></li>
                            <li><a href="../chapitre6#exercice" target="_self">Exercices comptables</a></li>
                            <li><a href="../chapitre6#plan" target="_self">Plan de comptes</a></li>
                            <li><a href="../chapitre6#tva" target="_self">Taux et déclaration de TVA</a></li>
                            <li><a href="../chapitre6#tresorerie" target="_self">Trésorerie</a></li>
-						   <li><a href="../chapitre6#immobilisations" target="_self">Immobilisations</a></li>
+                           <li><a href="../chapitre6#immobilisations" target="_self">Immobilisations</a></li>
                            <li><a href="../chapitre6#echanges" target="_self">Échanges comptables</a></li>
-						   <li><a href="../chapitre6#balance" target="_self">Balance</a></li>
+                           <li><a href="../chapitre6#balance" target="_self">Balance</a></li>
                            <li><a href="../chapitre6#grand-livre" target="_self">Grand-livre</a></li>
                         </div>
                      </ul>
@@ -460,7 +460,7 @@
             <img class="align-icone icone-marge-gauche" src="../images/commun/tacheC.svg" width="20" alt="C">
          </p>
       </div>
-	  <div class="info-fond aerateur-haut aerateur-bas">
+      <div class="info-fond aerateur-haut aerateur-bas">
          <div class="floating-box-info">
             <img src="../images/commun/info.svg" width="100" alt="Info"/>
          </div>
@@ -469,7 +469,7 @@
             <p class="texte-advice">
                La gestion des achats nécessite qu'un exercice comptable soit déjà ouvert à la date d'enregistrement d'une nouvelle commande, même si vous ne gérez pas votre comptabilité dans Ekylibre. La procédure d'ouverture d'un exercice comptable est expliquée dans le <a href="../chapitre6#exercice" class="avoid-clicks">chapitre 6 - Comptabilité</a>.
             </p>
-	  	 </div>
+         </div>
       </div>
       <p align="center" class="texte procedure aerateur">A – Procédure pour enregistrer une commande
       </p>
@@ -518,8 +518,8 @@
          <p class="max-img-process">
             <img src="../images/chapitre7/commande2.png" class="contour-img" alt="Créer une nouvelle commande" data-action="zoom" />
          </p>
-		 <p>Notez que si vous avez activé la répartition des achats dans les préférences analytiques des <a href="../chapitre6#societe" class="avoid-clicks" target="_self">paramètres de la société</a>, une liste déroulante vous permet de sélectionner une activité parmi celles ouvertes&nbsp;:</p>
-		 <p class="max-img-process">
+         <p>Notez que si vous avez activé la répartition des achats dans les préférences analytiques des <a href="../chapitre6#societe" class="avoid-clicks" target="_self">paramètres de la société</a>, une liste déroulante vous permet de sélectionner une activité parmi celles ouvertes&nbsp;:</p>
+         <p class="max-img-process">
             <img src="../images/chapitre7/activites.png" class="contour-img" alt="Liste activités" data-action="zoom" />
          </p>
          <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération ou sur <span class="btn-blue">Créer et saisir suivant</span> pour réaliser une nouvelle saisie.</p>
@@ -538,7 +538,6 @@
       <h6>Guide de prise en main • Achats • Réception des commandes</h6>
       <a class="slice-long" id="reception"></a>
       <h2 class="texte aerateur">c - Réception des commandes</h2>
-      <div class="saut-page"></div>
       <div class="config margin-config">
          <p>
             <img src="../images/commun/parcours.svg" height="55" alt="Icône parcours"/>
@@ -611,6 +610,7 @@
          <p><img src="../images/commun/statut-vert.svg" alt="Statut vert" height="20" class="align-icone icone-marge-droite">indique une réception avec le statut "Donnée".</p>
          <p><img src="../images/commun/statut-orange.svg" alt="Statut orange" height="20" class="align-icone icone-marge-droite">indique une réception avec le statut "Brouillon".</p>
       </div>
+	  <div class="saut-page"></div>
       <div class="warn-fond aerateur-haut aerateur-bas">
          <div class="floating-box-warn">
             <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
@@ -1256,67 +1256,69 @@
    <aside></aside>
 </div>
 <!-- END MAIN -->
-<div id="popup1" class="popup_block">
-   <h2 class="info titre-annexe">Outils de dessin</h2>
-   <p class="marge-annexe">
-      La barre d'outils à gauche dans la carte contient les outils permettant de délimiter les parcelles et/ou les zones travaillées en complément de la main<img src="../images/commun/hand-o.svg" alt="Main" height="20" class="align-icone icone-marge-gauche icone-marge-droite">qui permet de déplacer la carte.
-   </p>
-   <div class="divTableOutils marge-annexe" style="margin-bottom:10px">
-      <div class="divTableBody">
-         <div class="divTableRow">
-            <div class="divTableCellOutils" style="width: 40px">
-               <img src="../images/commun/plus.svg" alt="Zoom avant" height="30" width="30" class="align-icone">
+<div id="modale">
+   <div id="popup1" class="popup_block">
+      <h2 class="info titre-annexe">Outils de dessin</h2>
+      <p class="marge-annexe">
+         La barre d'outils à gauche dans la carte contient les outils permettant de délimiter les parcelles et/ou les zones travaillées en complément de la main<img src="../images/commun/hand-o.svg" alt="Main" height="20" class="align-icone icone-marge-gauche icone-marge-droite">qui permet de déplacer la carte.
+      </p>
+      <div class="divTableOutils marge-annexe" style="margin-bottom:10px">
+         <div class="divTableBody">
+            <div class="divTableRow">
+               <div class="divTableCellOutils" style="width: 40px">
+                  <img src="../images/commun/plus.svg" alt="Zoom avant" height="30" width="30" class="align-icone">
+               </div>
+               <div class="divTableCellOutils" style="width: auto">
+                  Le bouton "zoom plus" permet de faire un zoom avant
+               </div>
             </div>
-            <div class="divTableCellOutils" style="width: auto">
-               Le bouton "zoom plus" permet de faire un zoom avant
+            <div class="divTableRow">
+               <div class="divTableCellOutils">
+                  <img src="../images/commun/minus.svg" alt="Zoom arrière" height="30" width="30" class="align-icone">
+               </div>
+               <div class="divTableCellOutils">
+                  Le bouton "zoom moins" permet de faire un zoom arrière
+               </div>
             </div>
-         </div>
-         <div class="divTableRow">
-            <div class="divTableCellOutils">
-               <img src="../images/commun/minus.svg" alt="Zoom arrière" height="30" width="30" class="align-icone">
+            <div class="divTableRow">
+               <div class="divTableCellOutils">
+                  <img src="../images/commun/arrows-alt.svg" alt="Mode plein écran" height="30" width="30" class="align-icone">
+               </div>
+               <div class="divTableCellOutils">
+                  Le bouton "agrandissement" permet d'afficher la carte en plein écran. Cliquez à nouveau sur ce bouton ou pressez la touche "esc" de votre clavier pour revenir à un affichage normal 
+               </div>
             </div>
-            <div class="divTableCellOutils">
-               Le bouton "zoom moins" permet de faire un zoom arrière
+            <div class="divTableRow">
+               <div class="divTableCellOutils">
+                  <img src="../images/commun/star-o.svg" alt="Outil de création" height="30" width="30" class="align-icone">
+               </div>
+               <div class="divTableCellOutils">
+                  Le bouton "étoile" permet de créer des formes représentant les parcelles et/ou les zones travaillées de votre exploitation
+               </div>
             </div>
-         </div>
-         <div class="divTableRow">
-            <div class="divTableCellOutils">
-               <img src="../images/commun/arrows-alt.svg" alt="Mode plein écran" height="30" width="30" class="align-icone">
+            <div class="divTableRow">
+               <div class="divTableCellOutils">
+                  <img src="../images/commun/pencil.svg" alt="Outil de modification" height="30" width="30" class="align-icone">
+               </div>
+               <div class="divTableCellOutils">
+                  Le bouton "crayon" permet de modifier toutes les parcelles et/ou les zones travaillées existantes
+               </div>
             </div>
-            <div class="divTableCellOutils">
-               Le bouton "agrandissement" permet d'afficher la carte en plein écran. Cliquez à nouveau sur ce bouton ou pressez la touche "esc" de votre clavier pour revenir à un affichage normal 
+            <div class="divTableRow">
+               <div class="divTableCellOutils">
+                  <img src="../images/commun/close.svg" alt="Outil de suppression" height="30" width="30" class="align-icone">
+               </div>
+               <div class="divTableCellOutils">
+                  Le bouton "croix" permet de supprimer toutes les parcelles et/ou les zones travaillées existantes
+               </div>
             </div>
-         </div>
-         <div class="divTableRow">
-            <div class="divTableCellOutils">
-               <img src="../images/commun/star-o.svg" alt="Outil de création" height="30" width="30" class="align-icone">
-            </div>
-            <div class="divTableCellOutils">
-               Le bouton "étoile" permet de créer des formes représentant les parcelles et/ou les zones travaillées de votre exploitation
-            </div>
-         </div>
-         <div class="divTableRow">
-            <div class="divTableCellOutils">
-               <img src="../images/commun/pencil.svg" alt="Outil de modification" height="30" width="30" class="align-icone">
-            </div>
-            <div class="divTableCellOutils">
-               Le bouton "crayon" permet de modifier toutes les parcelles et/ou les zones travaillées existantes
-            </div>
-         </div>
-         <div class="divTableRow">
-            <div class="divTableCellOutils">
-               <img src="../images/commun/close.svg" alt="Outil de suppression" height="30" width="30" class="align-icone">
-            </div>
-            <div class="divTableCellOutils">
-               Le bouton "croix" permet de supprimer toutes les parcelles et/ou les zones travaillées existantes
-            </div>
-         </div>
-         <div class="divTableRow">
-            <div class="divTableCellOutils">
-               <img src="../images/commun/download.svg" alt="Bouton de téléchargement" height="30" width="30" class="align-icone">
-            </div>
-            <div class="divTableCellOutils">
-               Le bouton "téléchargement" permet d'importer des zones à partir d'un logiciel tiers, au format Geography Markup Language &#40;.gml&#41;, GeoJSON &#40;.json&#41; ou Keyhole Markup Language &#40;.kml&#41;.
+            <div class="divTableRow">
+               <div class="divTableCellOutils">
+                  <img src="../images/commun/download.svg" alt="Bouton de téléchargement" height="30" width="30" class="align-icone">
+               </div>
+               <div class="divTableCellOutils">
+                  Le bouton "téléchargement" permet d'importer des zones à partir d'un logiciel tiers, au format Geography Markup Language &#40;.gml&#41;, GeoJSON &#40;.json&#41; ou Keyhole Markup Language &#40;.kml&#41;.
+               </div>
             </div>
          </div>
       </div>

@@ -357,7 +357,7 @@ a:visited {
 	vertical-align: -2px;
 }
 
-.align-produit {
+.align-compta {
 	vertical-align: -3px;
 }
 
@@ -2013,13 +2013,16 @@ a:visited {
 }
 
 
-/*Tableau des exemples de profils - chapitre 6*/
+/*Tableau sommaire compta - chapitre 6*/
 
-.divTableCellProfil1,
-.divTableHeadProfil1 {
-	font-size: 12.5px;
-	height: 40px;
-	border-top-width: 3px;
+.divTableCompta {
+	display: table;
+}
+
+.divTableCellPDF1,
+.divTableHeadPDF1 {
+	height: 30px;
+	border-top-width: 0;
 	border-top-style: solid;
 	border-top-color: #ffffff;
 	border-bottom-width: 0;
@@ -2035,14 +2038,14 @@ a:visited {
 	padding: 5px 5px;
 	text-align: center;
 	vertical-align: middle;
-	background-color: #dddddd;
+	background-color: #ddd;
 	font-weight: bold;
 }
 
-.divTableCellProfil2,
-.divTableHeadProfil2 {
+.divTableCellPDF2,
+.divTableHeadPDF2 {
 	font-size: 12px;
-	height: 30px;
+	height: 20px;
 	border-top-width: 3px;
 	border-top-style: solid;
 	border-top-color: #ffffff;
@@ -2057,16 +2060,15 @@ a:visited {
 	border-right-color: #ffffff;
 	display: table-cell;
 	padding: 3px 3px;
-	text-align: center;
+	text-align: left;
 	vertical-align: middle;
-	background-color: #eeeeee;
+	background-color: #eee;
 }
 
-.divTableCellProfil3,
-.divTableHeadProfil3 {
-	font-size: 12px;
+.divTableCellPDF3,
+.divTableHeadPDF3 {
 	height: 30px;
-	border-top-width: 3px;
+	border-top-width: 0;
 	border-top-style: solid;
 	border-top-color: #ffffff;
 	border-bottom-width: 0;
@@ -2082,13 +2084,14 @@ a:visited {
 	padding: 3px 3px;
 	text-align: center;
 	vertical-align: middle;
-	background-color: #f4e8a8;
+	background-color: #ddd;
+	font-weight: bold;
 }
 
-.divTableCellProfil4,
-.divTableHeadProfil4 {
-	font-size: 12.5px;
-	height: 40px;
+.divTableCellPDF4,
+.divTableHeadPDF4 {
+	font-size: 12px;
+	height: 20px;
 	border-top-width: 3px;
 	border-top-style: solid;
 	border-top-color: #ffffff;
@@ -2103,10 +2106,32 @@ a:visited {
 	border-right-color: #ffffff;
 	display: table-cell;
 	padding: 5px 5px;
-	text-align: center;
+	text-align: left;
 	vertical-align: middle;
-	background-color: #fcd79d;
-	font-weight: bold;
+	background-color: #eee;
+}
+
+.divTableCellPDF5,
+.divTableHeadPDF5 {
+	font-size: 12px;
+	height: 20px;
+	border-top-width: 3px;
+	border-top-style: solid;
+	border-top-color: #ffffff;
+	border-bottom-width: 0;
+	border-bottom-style: solid;
+	border-bottom-color: #ffffff;
+	border-left-width: 0;
+	border-left-style: solid;
+	border-left-color: #ffffff;
+	border-right-width: 3px;
+	border-right-style: solid;
+	border-right-color: #ffffff;
+	display: table-cell;
+	padding: 3px 3px;
+	text-align: left;
+	vertical-align: middle;
+	background-color: #fff;
 }
 
 
@@ -2183,6 +2208,9 @@ a:visited {
 }
 
 /*--Style pour popup--*/
+#modale {
+visibility: hidden;
+}
 
 #fade {
 	display: none;
@@ -2192,8 +2220,25 @@ a:visited {
 	top: 0;
 	width: 100%;
 	height: 100%;
-	opacity: .50;
+	opacity: 0;
 	z-index: 9999;
+}
+
+@media only screen and (min-width: 768px) {
+	#fade {
+		display: none;
+		background: #000;
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		opacity: .50;
+		z-index: 9999;
+	}
+	#modale {
+		visibility: visible;
+}
 }
 
 .popup_block {
@@ -2216,7 +2261,7 @@ a:visited {
 
 img.btn_close {
 	float: right;
-	margin: -15px 0 -10px 0;
+	margin: -10px 5px 0 0;
 }
 
 .decal-image {
@@ -2439,6 +2484,10 @@ img.zoom-img {
 	display: none;
 }
 
+.btn_navigation {
+	display: none;
+}
+
 @media only screen and (min-width: 768px) {
 	.btn_pdf {
 		display: inline;
@@ -2472,6 +2521,22 @@ img.zoom-img {
 		background-size: 50px auto;
 		z-index: 1;
 	}
+	.btn_navigation {
+		display: inline;
+		position: fixed;
+		height: 50px;
+		width: 50px;
+		left: 180px;
+		right: auto;
+		bottom: 12px;
+		background-color: #476ba8;
+		border-radius: 25px;
+		background-image: url("../fr/images/chapitre6/navigation.svg");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: 50px auto;
+		z-index: 1;
+	}
 	.compta-large {
 		display: inline;
 	}
@@ -2490,6 +2555,9 @@ img.zoom-img {
 	.btn_notes-version {
 		display: none;
 	}
+	.btn_navigation {
+		display: none;
+}
 }
 
 
