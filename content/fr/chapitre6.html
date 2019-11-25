@@ -268,11 +268,11 @@
          </div>
          <div class="info-txt">
             <span class="titre-advice">Comptabilité 2019<br /></span>
-            <p class="texte-advice">Le module "Comptabilité" a été récemment profondément remanié afin d'offrir aux utilisateurs un outil complet, fiable et performant avec une présentation plus intuitive. Ce chapitre est encore en cours de rédaction et des informations complémentaires seront ajoutées progressivement.</p>
+            <p class="texte-advice">Le module "Comptabilité" a été récemment profondément remanié afin d'offrir aux utilisateurs un outil complet, fiable et performant avec une présentation plus intuitive. Ce chapitre présente les procédures essentielles à connaître pour tirer efficacement profit des outils de gestion comptable dans Ekylibre.</p>
          </div>
       </div>
       <div class="compta-large">
-         <p class="texte aerateur-haut"><strong>Dans ce chapitre, on vous explique comment</strong> &#40;sélectionnez le lien dans les listes déroulantes&#41;&nbsp;<strong>:</strong></p>
+         <p class="texte aerateur-haut"><strong>Dans ce chapitre, on vous explique comment</strong> &#40;sélectionnez un processus dans les listes déroulantes&#41;&nbsp;<strong>:</strong></p>
          <div class="divTableCompta texte aerateur-bas">
             <div class="divTableBody">
                <div class="divTableRow">
@@ -361,11 +361,11 @@
                </div>
             </div>
          </div>
-         <p class="texte"><em>Ce système de navigation est également disponible à tout moment avec le bouton en bas à gauche de la fenêtre&nbsp;:</em></p>
+         <p class="texte"><em>Ce système de navigation est également disponible à tout moment grâce au bouton en bas à gauche de la fenêtre&nbsp;:</em></p>
 		 <p class="texte" align="center"><img src="../images/chapitre6/navigation.svg" width="50" alt="Menu comptabilité" /></p>
       </div>
       <div class="compta-short">
-         <p class="texte aerateur-haut"><strong>Dans ce chapitre, on vous explique comment</strong> &#40;sélectionnez le lien dans la liste déroulante&#41;&nbsp;<strong>:</strong></p>
+         <p class="texte aerateur-haut"><strong>Dans ce chapitre, on vous explique comment</strong> &#40;sélectionnez un processus dans la liste déroulante&#41;&nbsp;<strong>:</strong></p>
          <form class="texte">
             <select name="ListeUrl" SIZE="1" onChange="ChangeUrl(this.form)" style="width:210px">
                <option selected value="">Menu comptabilité&nbsp;:</option>
@@ -684,7 +684,14 @@
       <h6>Guide de prise en main • Comptabilité • Journaux</h6>
       <a class="slice-process" id="journaux"></a>
       <h2 class="texte aerateur">c - Journaux</h2>
-      <p class="texte">La création d'un nouveau journal peut s'avérer utile voire indispensable dans les cas suivants&nbsp;:</p>
+	  <p class="texte">Lors de la création de votre ferme Ekylibre, 10 journaux ont été générés automatiquement par l'application.</p>
+	  <p class="texte">Il est possible de les modifier en cliquant sur le crayon<img src="../images/commun/crayon.svg" alt="Crayon modification" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche du nom de chacun d'eux pour changer leur nom, leur code ou pour leur associer un comptable.</p>
+	  <p class="texte">Il est également possible d'en supprimer certains en cliquant sur la croix<img src="../images/commun/times-blue.svg" alt="Croix suppression" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche du nom de chacun d'eux mais nous vous déconseillons de le faire car ils sont tous potentiellement utilisés par l'application pour gérer correctement votre comptabilité. Les journaux "Achats", "Banque", "Caisse" et "Ventes" ne sont pas supprimables.</p>
+	  <p class="texte">Notez qu'une fois que des écritures sont consignées dans un journal, il n'est plus possible de le supprimer.</p>
+	  <p class="texte">
+            <img src="../images/chapitre6/liste-journaux.png" class="contour-img" alt="Liste des journaux" data-action="zoom" />
+         </p>
+      <p class="texte aerateur-haut">La création d'un nouveau journal peut s'avérer utile voire indispensable dans les cas suivants&nbsp;:</p>
       <div class="divTableListe marge">
          <div class="divTableBody">
             <div class="divTableRow">
@@ -778,7 +785,7 @@
       <h6>Guide de prise en main • Comptabilité • Lettrage de comptes</h6>
       <a class="slice-process" id="lettrage"></a>
       <p align="center" class="texte aerateur procedure">B – Procédure pour réaliser le lettrage de comptes</p>
-      <p class="texte">Le lettrage comptable d'un compte &#40;généralement un compte de tiers&#41; est une opération qui consiste à affecter un seul repère à 2 ou plusieurs entrées comptables dans ce compte, la somme des entrées au crédit devant être égale à la somme des entrées au débit. Il permet donc d'isoler les factures restant à payer pour les fournisseurs et les factures restant à encaisser pour les clients.</p>
+      <p class="texte">Le lettrage comptable d'un compte &#40;généralement un compte de tiers&#41; est une opération qui consiste à affecter un seul code à 2 ou plusieurs entrées comptables dans ce compte, la somme des entrées au crédit devant être égale à la somme des entrées au débit. Il permet donc d'isoler les factures restant à payer pour les fournisseurs et les factures restant à encaisser pour les clients.</p>
       <p class="texte">Ce rapprochement est réalisé grâce à une codification composée d'une ou plusieurs «&nbsp;lettres&nbsp;» permettant ainsi de visualiser plus rapidement les factures non réglées. Ekylibre réalise automatiquement le lettrage en détectant les factures et les règlements pour les lier s'ils sont équilibrés. Dans le cas contraire, il sera possible de corriger le lettrage et éventuellement d'ajouter des écritures de compensation.</p>
       <p class="texte">Notez que le <a href="#rapprochement" class="avoid-clicks" target="_self">rapprochement bancaire</a>, qui utilise également des lettres lorsque vous pointez les écritures passées en banque avec les écritures passées en comptabilité, est une opération différente et indépendante du lettrage de comptes.</p>
       <p class="texte aerateur-haut">
@@ -874,7 +881,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Affichez le nouveau lettrage</span>
-         <p>Le nouveau lettrage est affiché avec la nouvelle écriture enregistrée dans le brouillard du journal de banque. Notez qu'une nouveau code unique a également remplacé l'ancien lettrage pour chacune des écritures concernées par l'opération.</p>
+         <p>Le nouveau lettrage est affiché avec la nouvelle écriture enregistrée dans le brouillard du journal de banque. Notez qu'une nouveau code unique a remplacé l'ancien lettrage pour chacune des écritures concernées par l'opération.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/lettrage10.png" class="contour-img" alt="Nouveau lettrage" data-action="zoom" />
          </p>
@@ -3000,7 +3007,7 @@
    <div id="popup1" class="popup_block">
       <h2 class="info titre-annexe">Menu comptabilité</h2>
       <div class="compta-large">
-         <p class="marge-annexe">Sélectionnez le lien dans les listes déroulantes&nbsp;:</p>
+         <p class="marge-annexe">Sélectionnez un processus dans les listes déroulantes&nbsp;:</p>
          <div class="divTableCompta texte aerateur-bas">
             <div class="divTableBody">
                <div class="divTableRow">

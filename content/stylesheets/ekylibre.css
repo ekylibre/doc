@@ -2502,7 +2502,7 @@ img.zoom-img {
 		background-image: url("../fr/images/commun/link-pdf.svg");
 		background-repeat: no-repeat;
 		background-position: center center;
-		background-size: 30px auto;
+		background-size: 50px auto;
 		z-index: 1;
 	}
 	.btn_notes-version {
