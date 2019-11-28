@@ -148,6 +148,7 @@
                      </div>
                      <ul style="display: none;">
                         <div class="bloc">
+                           <li><a href="../chapitre7#societe" target="_self">Paramétrage</a></li>
                            <li><a href="../chapitre7#types" target="_self">Types d'achat</a></li>
                            <li><a href="../chapitre7#achats" target="_self">Enregistrement des commandes</a></li>
                            <li><a href="../chapitre7#reception" target="_self">Réception des commandes</a></li>
@@ -169,6 +170,7 @@
                      </div>
                      <ul style="display: none;">
                         <div class="bloc">
+                           <li><a href="../chapitre8#societe" target="_self">Paramétrage</a></li>
                            <li><a href="../chapitre8#types" target="_self">Types de vente</a></li>
                            <li><a href="../chapitre8#ventes" target="_self">Enregistrer une vente</a></li>
                            <li><a href="../chapitre8#factures" target="_self">Facturer une vente</a></li>
@@ -665,21 +667,7 @@
             <span class="titre-advice">Les comptes de tiers<br /></span>
             <p class="texte-advice">Par défaut les numéros de compte des clients commencent par 411 mais il est possible de modifier le radical comptable en 4111 en fonction des exigences de votre expert-comptable ou de votre centre de gestion. De la même manière, les numéros de compte des fournisseurs commencent par 401 mais il est possible de modifier le radical comptable en 4011.</p>
          </div>
-      </div>
-      <div class="floating-box process">
-         <img src="../images/commun/step4.svg" alt="4" width="52" />
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Préférences analytiques</span>
-         <p>Dans la section "Préférences analytiques", cochez la case de répartition des achats et des ventes sur les activités pour analyser la rentabilité de chaque activité le cas échéant &#40;la fonctionnalité n'est pas encore disponible pour les équipes&#41;.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre6/societe4.png" class="contour-img" alt="Paramétrage société" data-action="zoom" />
-         </p>
-         <p>Lors de l'enregistrement d'un achat, une liste déroulante vous permettra de sélectionner une activité parmi celles ouvertes&nbsp;:</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre6/societe5.png" class="contour-img" alt="Liste activités" data-action="zoom" />
-         </p>
-         <p>Cliquez sur <span class="btn-blue">Modifier</span> pour valider l'opération.</p>
+		 <p>Cliquez sur <span class="btn-blue">Modifier</span> pour valider l'opération.</p>
       </div>
       <h6>Guide de prise en main • Comptabilité • Journaux</h6>
       <a class="slice-process" id="journaux"></a>
@@ -1502,6 +1490,8 @@
             </p>
          </div>
       </div>
+	  <h6>Guide de prise en main • Comptabilité • Ajouter un compte</h6>
+      <a class="slice-process" id="compte"></a>
       <p align="center" class="texte aerateur procedure">A – Procédure pour ajouter un ou plusieurs comptes
       </p>
       <p class="texte">
@@ -1992,6 +1982,15 @@
       <a class="slice-process" id="rapprochement"></a>
       <p align="center" class="texte aerateur procedure">D – Procédure pour réaliser un rapprochement bancaire</p>
       <p class="texte">Le rapprochement bancaire est un contrôle, réalisé dans le but d'amener les comptes bancaires réalisés sur Ekylibre au plus proche de la réalité des relevés de comptes, c'est-à-dire vérifier la concordance des deux comptes.</p>
+	  <div class="warn-fond aerateur-haut aerateur-bas">
+         <div class="floating-box-warn">
+            <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
+         </div>
+         <div class="info-txt">
+            <span class="titre-advice">Fréquence du pointage<br /></span>
+            <p class="texte-advice">Dans la mesure du possible et en fonction du nombre d'opérations financières ayant lieu sur votre compte bancaire, tâchez de pointer régulièrement les écritures afin de ne pas être submergé&#40;e&#41; par une charge de travail trop importante à un moment donné. La fréquence de cette opération reste cependant propre à chaque exploitation.</p>
+         </div>
+      </div>
       <p class="texte">
          Le processus suivant vous guide pour réaliser un rapprochement bancaire avec l'import d'un fichier <span class="tooltip">OFX<span class="tooltiptext tooltip-top">Voir glossaire</span></span>.
       </p>
@@ -2015,7 +2014,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Paramétrez votre compte bancaire</span>
-         <p>Cliquez sur le bouton "Nouveau", puis sélectionnez le "Type" de trésorerie et remplissez tous les champs obligatoires signalés par une astérisque de couleur rouge avec les informations requises pour le définir correctement. Renseignez avec attention le code IBAN car c'est cet identifiant qui établira la liaison automatique entre le compte bancaire dans l'application et les informations contenues dans le fichier <span class="tooltip">OFX<span class="tooltiptext tooltip-top">Voir glossaire</span></span>.</p>
+         <p>Cliquez sur le bouton "Nouveau", puis sélectionnez le "Type" de trésorerie et remplissez tous les champs obligatoires signalés par une astérisque de couleur rouge avec les informations requises pour le définir correctement. Renseignez avec attention le code IBAN car c'est cet identifiant qui établira la liaison automatique entre le compte bancaire dans l'application et les informations contenues dans le fichier OFX.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/rapprochement2.png" class="contour-img" alt="Paramétrage compte bancaire" data-action="zoom" />
          </p>
@@ -2026,14 +2025,17 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Paramétrez les options comptables</span>
-         <p>Dans l'optique de réaliser le rapprochement bancaire grâce à l'import d'un fichier <span class="tooltip">OFX<span class="tooltiptext tooltip-top">Voir glossaire</span></span>, 2 options sont à prendre en considération&nbsp;:</p>
+         <p>Dans l'optique de réaliser le rapprochement bancaire grâce à l'import d'un fichier OFX, 2 options sont à prendre en considération&nbsp;:</p>
          <p><strong><span class="avert">Avec un compte d'attente&nbsp;:</span></strong><br />Cochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à droite de l'option "Suspendre jusqu'à réconciliation" pour utiliser un compte d'attente &#40;471XXXXX&#41;.</p>
          <p>Dans ce cas, tous les encaissements et les décaissements dans Ekylibre passeront par un compte d’attente de type 471XXXX &#40;attention à bien créer autant de comptes d’attente que de comptes de trésorerie&#41;. L’import du relevé de compte provoquera la création d’une écriture comptable directement dans le compte de banque. C'est la méthode que vous devez privilégier.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/rapprochement3.png" class="contour-img" alt="Paramétrage compte bancaire" data-action="zoom" />
          </p>
          <p><strong>Avantage</strong>&nbsp;: le solde de banque dans Ekylibre sera toujours à jour avec le solde de banque réel même si le relevé de compte n’est pas pointé entièrement.<br />
-            <strong>Inconvénient</strong>&nbsp;: demande un paramétrage plus complexe au départ avec la création d'un compte d'attente &#40;471XXXXX&#41;.
+            <strong>Inconvénient</strong>&nbsp;: demande un paramétrage plus complexe au départ avec la <a href="#compte" target="_self">création d'un compte</a> d'attente &#40;471XXXXX&#41; défini préalablement dans la section "Comptabilité" du module "Configuration".
+         </p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre6/compte-attente1.png" class="contour-img" alt="Paramétrage compte comptable" data-action="zoom" />
          </p>
          <p><strong><span class="avert">Sans compte d'attente&nbsp;:</span></strong><br />Laissez la case<img src="../images/commun/square-o.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">décochée à droite de l'option "Suspendre jusqu'à réconciliation" pour ne pas utiliser de compte d'attente. Tous les encaissements et les décaissements généreront directement une écriture dans le compte de banque.</p>
          <p class="max-img-process">
@@ -2042,7 +2044,7 @@
          <p><strong>Avantage</strong>&nbsp;: il ne reste qu’à pointer les relevés de comptes avec les encaissements et les décaissements.<br />
             <strong>Inconvénient</strong>&nbsp;: il peut y avoir des écarts avec le solde de banque si le relevé de compte n’est pas pointé entièrement.
          </p>
-         <p>Notez que l’option "Comptabiliser le détail du relevé de compte" permet de générer autant de lignes comptables que de lignes présentes dans le relevé de compte et ainsi d’avoir une évolution précise du solde bancaire.</p>
+         <p>Notez que l’option "Comptabiliser le détail du relevé de compte" permet de générer autant de lignes comptables que de lignes présentes dans le relevé de compte et ainsi d’avoir une évolution précise du solde bancaire. Vous bénéficierez également d'une progression plus régulière des courbes interactives affichées dans la vue "Graphique" des trésoreries.</p>
       </div>
       <div class="warn-fond aerateur-haut aerateur-bas">
          <div class="floating-box-warn">
@@ -2309,7 +2311,7 @@
          <p class="max-img-process">
             <img src="../images/chapitre6/immo-attente3.png" class="contour-img" alt="Immobilisation en attente" data-action="zoom" />
          </p>
-         <p>Cliquez à nouveau sur <span class="step step-orange">&nbsp;En attente&nbsp;</span> pour mettre l'immobilisation en attente et validez votre choix dans la <span class="tooltip">fenêtre modale<span class="tooltiptext tooltip-top">Voir glossaire</span></span>.</p>
+         <p>Cliquez une seconde fois sur <span class="step step-orange">&nbsp;En attente&nbsp;</span> pour mettre l'immobilisation en attente et validez votre choix dans la <span class="tooltip">fenêtre modale<span class="tooltiptext tooltip-top">Voir glossaire</span></span>.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/immo-attente1.png" class="contour-img" alt="Immobilisation en attente" data-action="zoom" />
          </p>
@@ -2533,7 +2535,7 @@
          <p class="max-img-process">
             <img src="../images/chapitre6/mise-rebut5.png" class="contour-img" alt="Affichage immobilisation" data-action="zoom" />
          </p>
-         <p>Cliquez à nouveau sur <span class="step step-rouge">&nbsp;Mise au rebut&nbsp;</span> pour confirmer la mise au rebut de l'immobilisation et validez votre choix dans la <span class="tooltip">fenêtre modale<span class="tooltiptext tooltip-top">Voir glossaire</span></span>.</p>
+         <p>Cliquez une seconde fois sur <span class="step step-rouge">&nbsp;Mise au rebut&nbsp;</span> pour confirmer la mise au rebut de l'immobilisation et validez votre choix dans la <span class="tooltip">fenêtre modale<span class="tooltiptext tooltip-top">Voir glossaire</span></span>.</p>
          <p class="max-img-process">
             <img src="../images/chapitre6/mise-rebut6.png" class="contour-img" alt="Affichage immobilisation" data-action="zoom" />
          </p>
