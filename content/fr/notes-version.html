@@ -23,6 +23,49 @@
       <div class="image-carre"><img class="chapitre loading" src="../images/notes-version/notes-version-carre.png" alt="Notes de version" /></div>
       <h1 align="center" class="majuscule aerateur">Notes de version</h1>
       <p class="texte">Les notes de version décrivent les nouvelles fonctionnalités, les améliorations, les modifications et les correctifs apportés à chaque évolution significative d'Ekylibre.</p>
+	  <div id="main_content_wrap" class="marge chronoline">
+      	<section id="main_content">
+      	<div id="target1" class="timeline-tgt"></div>
+      	</section>
+      </div>
+	  <script type="text/javascript">
+      	$(document).ready(function(){
+	  	var now = new Date();
+	  	var annee   = now.getFullYear();
+	  	var mois    = now.getMonth();
+	  	var jour    = now.getDate();
+      	var events = [
+      		{dates: [new Date(2019, 5, 21), new Date(2019, 6, 30)], title: "Version 2.55"},
+      		{dates: [new Date(2019, 6, 31), new Date(2019, 8, 9)], title: "Version 2.56"},
+      		{dates: [new Date(2019, 8, 10), new Date(2019, 9, 2)], title: "Version 2.59"},
+      		{dates: [new Date(2019, 9, 3), new Date(2019, 9, 23)], title: "Version 2.60"},
+	  		{dates: [new Date(2019, 9, 24), new Date(annee, mois, jour)], title: "Version 3.0"}
+		];
+
+      	var sections = [
+      		{dates: [new Date(2019, 4, 1), new Date(2019, 11, 30)], title: "2019", section: 0, attrs: {fill: "#d4e3fd"}},
+      		{dates: [new Date(2019, 12, 1), new Date(2020, 11, 30)], title: "2020", section: 1, attrs: {fill: "#eaf0fa"}}
+      	];
+
+      	var timeline1 = new Chronoline(document.getElementById("target1"), events,
+      		{visibleSpan: DAY_IN_MILLISECONDS * 366,
+      		animated: true,
+      		tooltips: true,
+      		defaultStartDate: new Date(2019, 5, 1),
+      		sections: sections,
+      		sectionLabelAttrs: {"fill": "#1195f5", "font-weight": "bold"},
+      		labelInterval: isHalfMonth,
+      		hashInterval: isHalfMonth,
+      		scrollLeft: prevQuarter,
+      		scrollRight: nextQuarter,
+      		draggable: true
+      });
+      function godate(){
+	  	timeline1.goToToday();
+      };
+	  	window.onload = godate;
+	  });
+    </script>
       <div class="accordion-container marge">
          <div class="panel">
             <div class="heading">
