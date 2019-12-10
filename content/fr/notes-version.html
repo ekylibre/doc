@@ -25,7 +25,7 @@
       <p class="texte">Les notes de version décrivent les nouvelles fonctionnalités, les améliorations, les modifications et les correctifs apportés à chaque évolution significative d'Ekylibre.</p>
 	  <div id="main_content_wrap" class="marge chronoline">
       	<section id="main_content">
-      	<div id="target1" class="timeline-tgt"></div>
+      	<div id="target" class="timeline-tgt"></div>
       	</section>
       </div>
 	  <script type="text/javascript">
@@ -43,11 +43,11 @@
 		];
 
       	var sections = [
-      		{dates: [new Date(2019, 4, 1), new Date(2019, 11, 30)], title: "2019", section: 0, attrs: {fill: "#d4e3fd"}},
-      		{dates: [new Date(2019, 12, 1), new Date(2020, 11, 30)], title: "2020", section: 1, attrs: {fill: "#eaf0fa"}}
+      		{dates: [new Date(2019, 4, 30), new Date(2019, 11, 31)], title: "2019", section: 0, attrs: {fill: "#d4e3fd"}},
+      		{dates: [new Date(2019, 12, 1), new Date(2020, 11, 31)], title: "2020", section: 1, attrs: {fill: "#eaf0fa"}}
       	];
 
-      	var timeline1 = new Chronoline(document.getElementById("target1"), events,
+      	var timeline = new Chronoline(document.getElementById("target"), events,
       		{visibleSpan: DAY_IN_MILLISECONDS * 366,
       		animated: true,
       		tooltips: true,
@@ -61,7 +61,7 @@
       		draggable: true
       });
       function godate(){
-	  	timeline1.goToToday();
+	  	timeline.goToToday();
       };
 	  	window.onload = godate;
 	  });

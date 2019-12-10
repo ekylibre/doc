@@ -204,7 +204,7 @@ function Chronoline(domElement, events, options) {
         qtipOptions: {},  // additional options to pass to qTip
 
         markToday: 'line',  // 'line', 'labelBox', false
-        todayAttrs: {'stroke': '#484848'},
+        todayAttrs: {'stroke': '#1195f5'},
 
         sections: [],
         floatingSectionLabels: true,
@@ -480,11 +480,11 @@ function Chronoline(domElement, events, options) {
                     elem.attr(section.attrs);
                 }
                 var sectionLabel = t.paper.text(startX + 10, 10, section.title);
-                sectionLabel.attr('text-anchor', 'start' - 10);
+                sectionLabel.attr('text-anchor', 'start');
                 sectionLabel.attr(t.sectionLabelAttrs);
                 if(t.floatingSectionLabels){
                     // bounds determine how far things can float
-                    sectionLabel.data('left-bound', startX + 15);
+                    sectionLabel.data('left-bound', startX + 10);
                     sectionLabel.data('right-bound', startX + width - sectionLabel.attr('width'));
                     t.floatingSet.push(sectionLabel);
                     t.sectionLabelSet.push(sectionLabel);
