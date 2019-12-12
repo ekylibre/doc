@@ -23,50 +23,180 @@
       <div class="image-carre"><img class="chapitre loading" src="../images/notes-version/notes-version-carre.png" alt="Notes de version" /></div>
       <h1 align="center" class="majuscule aerateur">Notes de version</h1>
       <p class="texte">Les notes de version décrivent les nouvelles fonctionnalités, les améliorations, les modifications et les correctifs apportés à chaque évolution significative d'Ekylibre.</p>
-	  <div id="main_content_wrap" class="marge chronoline">
-      	<section id="main_content">
-      	<div id="target" class="timeline-tgt"></div>
-      	</section>
+      <div id="main_content_wrap" class="marge chronoline">
+         <section id="main_content">
+            <div id="target" class="timeline-tgt"></div>
+         </section>
       </div>
-	  <script type="text/javascript">
-      	$(document).ready(function(){
-	  	var now = new Date();
-	  	var annee   = now.getFullYear();
-	  	var mois    = now.getMonth();
-	  	var jour    = now.getDate();
-      	var events = [
-      		{dates: [new Date(2019, 5, 21), new Date(2019, 6, 30)], title: "Version 2.55"},
-      		{dates: [new Date(2019, 6, 31), new Date(2019, 8, 9)], title: "Version 2.56"},
-      		{dates: [new Date(2019, 8, 10), new Date(2019, 9, 2)], title: "Version 2.59"},
-      		{dates: [new Date(2019, 9, 3), new Date(2019, 9, 23)], title: "Version 2.60"},
-	  		{dates: [new Date(2019, 9, 24), new Date(annee, mois, jour)], title: "Version 3.0"}
-		];
-
-      	var sections = [
-      		{dates: [new Date(2019, 4, 30), new Date(2019, 11, 31)], title: "2019", section: 0, attrs: {fill: "#d4e3fd"}},
-      		{dates: [new Date(2019, 12, 1), new Date(2020, 11, 31)], title: "2020", section: 1, attrs: {fill: "#eaf0fa"}}
-      	];
-
-      	var timeline = new Chronoline(document.getElementById("target"), events,
-      		{visibleSpan: DAY_IN_MILLISECONDS * 366,
-      		animated: true,
-      		tooltips: true,
-      		defaultStartDate: new Date(2019, 5, 1),
-      		sections: sections,
-      		sectionLabelAttrs: {"fill": "#1195f5", "font-weight": "bold"},
-      		labelInterval: isHalfMonth,
-      		hashInterval: isHalfMonth,
-      		scrollLeft: prevQuarter,
-      		scrollRight: nextQuarter,
-      		draggable: true
-      });
-      function godate(){
-	  	timeline.goToToday();
-      };
-	  	window.onload = godate;
-	  });
-    </script>
+      <script type="text/javascript">
+         $(document).ready(function(){
+         var now = new Date();
+         var annee   = now.getFullYear();
+         var mois    = now.getMonth();
+         var jour    = now.getDate();
+         var events = [
+         	{dates: [new Date(2019, 5, 21), new Date(2019, 6, 30)], title: "Version 2.55"},
+         	{dates: [new Date(2019, 6, 31), new Date(2019, 8, 9)], title: "Version 2.56"},
+         	{dates: [new Date(2019, 8, 10), new Date(2019, 9, 2)], title: "Version 2.59"},
+         	{dates: [new Date(2019, 9, 3), new Date(2019, 9, 23)], title: "Version 2.60"},
+            {dates: [new Date(2019, 9, 24), new Date(2019,11, 10)], title: "Version 3.0"},
+            {dates: [new Date(2019, 11, 12), new Date(annee, mois, jour)], title: "Version 3.1"}
+         ];
+         
+         var sections = [
+         	{dates: [new Date(2019, 4, 30), new Date(2019, 11, 31)], title: "2019", section: 0, attrs: {fill: "#d4e3fd"}},
+         	{dates: [new Date(2019, 12, 1), new Date(2020, 11, 31)], title: "2020", section: 1, attrs: {fill: "#eaf0fa"}}
+         ];
+         
+         var timeline = new Chronoline(document.getElementById("target"), events,
+         	{visibleSpan: DAY_IN_MILLISECONDS * 366,
+         	animated: true,
+         	tooltips: true,
+         	defaultStartDate: new Date(2019, 5, 1),
+         	sections: sections,
+         	sectionLabelAttrs: {"fill": "#1195f5", "font-weight": "bold"},
+         	labelInterval: isHalfMonth,
+         	hashInterval: isHalfMonth,
+         	scrollLeft: prevQuarter,
+         	scrollRight: nextQuarter,
+         	draggable: true
+         });
+         function godate(){
+         timeline.goToToday();
+         };
+         window.onload = godate;
+         });
+      </script>
       <div class="accordion-container marge">
+         <div class="panel">
+            <div class="heading">
+               <h2>Note de version 3.1 du 12/12/2019</h2>
+               <i class="fa fa-chevron-down"></i>
+            </div>
+            <div class="content">
+               <div class="divTableNoteVersion">
+                  <div class="divTableBody">
+                     <div class="divTableRow">
+                        <div class="divTableCellNoteVersion1" style="width: 60px">
+                           <img src="../images/notes-version/first-run.svg" alt="Assistant de démarrage" width="60">
+                        </div>
+                        <div class="divTableCellNoteVersion2" style="width: auto">
+                           <strong>Assistant de démarrage</strong><br /><br />
+                           1 amélioration
+                        </div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellNoteVersion3" style="width: 60px">
+                        </div>
+                        <div class="divTableCellNoteVersion4" style="width: auto">
+                           <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                           <ul>
+                              <li>À la création de la ferme, il est désormais possible de sélectionner le nombre de caractères des comptes comptables entre 8 et 14 inclus pour correspondre à toutes les longueurs couramment utilisées par les cabinets comptables.</li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellNoteVersion1">
+                           <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
+                        </div>
+                        <div class="divTableCellNoteVersion2">
+                           <strong>Comptabilité</strong><br /><br />
+                           1 amélioration et 1 bug corrigé
+                        </div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                        <div class="divTableCellNoteVersion4" style="width: auto">
+                           <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                           <ul>
+                              <li>Lors du rapprochement bancaire, remplacement du sélecteur de date permettant maintenant d'ajouter une ligne à une date absente du relevé de compte bancaire.</li>
+                           </ul>
+                           <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                           <ul>
+                              <li>Révision des modèles de documents définis pour l'export des fichiers PDF du bilan et du compte de résultat.</li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellNoteVersion1">
+                           <img src="../images/notes-version/achats.svg" alt="Achats" width="60">
+                        </div>
+                        <div class="divTableCellNoteVersion2">
+                           <strong>Achats</strong><br /><br />
+                           1 bug corrigé
+                        </div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                        <div class="divTableCellNoteVersion4" style="width: auto">
+                           <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                           <ul>
+                              <li>Le filtre d'affichage de la liste des équipements que l'on peut sélectionner dans les commandes et dans les factures d'achat ne laisse apparaître maintenant que les équipements.</li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellNoteVersion1">
+                           <img src="../images/notes-version/rh.svg" alt="Ressources humaines" width="60">
+                        </div>
+                        <div class="divTableCellNoteVersion2">
+                           <strong>RH</strong><br /><br />
+                           3 améliorations
+                        </div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellNoteVersion3" style="width: 60px">
+                        </div>
+                        <div class="divTableCellNoteVersion4" style="width: auto">
+                           <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                           <ul>
+                              <li>Création d'une nouvelle section "Équipes" dans la barre latérale du module des ressources humaines&nbsp;;</li>
+                              <li>Création de deux nouvelles fonctionnalités "Équipes" et "Équipiers" dans la section "Équipes"&nbsp;;</li>
+                              <li>Mise à disposition d'un nouveau bouton "Imprimer le registre horaire des opérateurs" dans la liste des équipiers permettant d'obtenir un fichier PDF où sont détaillés les temps de travaux consignés lors de l'enregistrement des interventions.</li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellNoteVersion1">
+                           <img src="../images/notes-version/outils.svg" alt="Outils" width="60">
+                        </div>
+                        <div class="divTableCellNoteVersion2">
+                           <strong>Outils</strong><br /><br />
+                           3 améliorations
+                        </div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                        <div class="divTableCellNoteVersion4" style="width: auto">
+                           <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                           <ul>
+                              <li>Import des factures de ventes enregistrées via le logiciel de gestion "Panier local" dans Ekylibre&nbsp;;</li>
+                              <li>Import de la liste des encaissements consignés via le logiciel de gestion "Panier local" dans Ekylibre&nbsp;;</li>
+                              <li>Suppression du bouton permettant d'obtenir le "Registre horaire des opérateurs". La fonctionnalité est déplacée dans la section "Équipiers" du module "RH".</li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellNoteVersion1"><img src="../images/notes-version/configuration.svg" alt="Configuration" width="60"></div>
+                        <div class="divTableCellNoteVersion2">
+                           <strong>Configuration</strong><br /><br />
+                           2 améliorations
+                        </div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                        <div class="divTableCellNoteVersion4" style="width: auto">
+                           <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                           <ul>
+                              <li>Dans la liste des droits accordés aux utilisateurs, changement de l'intitulé de l'accès "Colis entrants" par "Réceptions" et de l'intitulé de l'accès "Colis sortants" par "Expéditions"&nbsp;;</li>
+                              <li>Dans la section "Production", suppression du lien permettant de lister les "Équipiers". La fonctionnalité est déplacée dans la section "Équipiers" du module "RH".</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
          <div class="panel">
             <div class="heading">
                <h2>Note de version 3.0 du 24/10/2019</h2>
@@ -755,6 +885,133 @@
                            </ul>
                         </div>
                      </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="saut-page"></div>
+      <div class="heading-print marge aerateur-haut">
+         <h2>Note de version 3.1 du 12/12/2019</h2>
+      </div>
+      <div class="content-print marge">
+         <div class="divTableNoteVersion">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/first-run.svg" alt="Assistant de démarrage" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Assistant de démarrage</strong><br /><br />
+                     1 amélioration
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>À la création de la ferme, il est désormais possible de sélectionner le nombre de caractères des comptes comptables entre 8 et 14 inclus pour correspondre à toutes les longueurs couramment utilisées par les cabinets comptables.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Comptabilité</strong><br /><br />
+                     1 amélioration et 1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>Lors du rapprochement bancaire, remplacement du sélecteur de date permettant maintenant d'ajouter une ligne à une date absente du relevé de compte bancaire.</li>
+                     </ul>
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>Révision des modèles de documents définis pour l'export des fichiers PDF du bilan et du compte de résultat.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/achats.svg" alt="Achats" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Achats</strong><br /><br />
+                     1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>Le filtre d'affichage de la liste des équipements que l'on peut sélectionner dans les commandes et dans les factures d'achat ne laisse apparaître maintenant que les équipements.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/rh.svg" alt="Ressources humaines" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>RH</strong><br /><br />
+                     3 améliorations
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>Création d'une nouvelle section "Équipes" dans la barre latérale du module des ressources humaines&nbsp;;</li>
+                        <li>Création de deux nouvelles fonctionnalités "Équipes" et "Équipiers" dans la section "Équipes"&nbsp;;</li>
+                        <li>Mise à disposition d'un nouveau bouton "Imprimer le registre horaire des opérateurs" dans la liste des équipiers permettant d'obtenir un fichier PDF où sont détaillés les temps de travaux consignés lors de l'enregistrement des interventions.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/outils.svg" alt="Outils" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Outils</strong><br /><br />
+                     3 améliorations
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>Import des factures de ventes enregistrées via le logiciel de gestion "Panier local" dans Ekylibre&nbsp;;</li>
+                        <li>Import de la liste des encaissements consignés via le logiciel de gestion "Panier local" dans Ekylibre&nbsp;;</li>
+                        <li>Suppression du bouton permettant d'obtenir le "Registre horaire des opérateurs". La fonctionnalité est déplacée dans la section "Équipiers" du module "RH".</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1"><img src="../images/notes-version/configuration.svg" alt="Configuration" width="60"></div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Configuration</strong><br /><br />
+                     2 améliorations
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>Dans la liste des droits accordés aux utilisateurs, changement de l'intitulé de l'accès "Colis entrants" par "Réceptions" et de l'intitulé de l'accès "Colis sortants" par "Expéditions"&nbsp;;</li>
+                        <li>Dans la section "Production", suppression du lien permettant de lister les "Équipiers". La fonctionnalité est déplacée dans la section "Équipiers" du module "RH".</li>
+                     </ul>
                   </div>
                </div>
             </div>
