@@ -291,6 +291,7 @@ video {
 	height: 65px;
 	position: fixed;
 	top: 0;
+	z-index:1;
 }
 
 .max-img-inline {
@@ -729,6 +730,7 @@ video {
 		height: 65px;
 		position: fixed;
 		top: 0;
+		z-index:1;
 	}
 	.max-img-inline {
 		max-width: 646px;
