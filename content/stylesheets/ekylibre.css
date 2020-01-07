@@ -262,6 +262,9 @@ h4,
 h5,
 h6 {
 	font-family: "Montserrat", "Lato", "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: 700;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
@@ -432,7 +435,7 @@ a:visited {
 
 .titre-advice {
 	font-style: normal;
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 120%;
 }
 
