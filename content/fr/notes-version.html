@@ -39,8 +39,9 @@
          	{dates: [new Date(2019, 6, 31), new Date(2019, 8, 9)], title: "Version 2.56"},
          	{dates: [new Date(2019, 8, 10), new Date(2019, 9, 2)], title: "Version 2.59"},
          	{dates: [new Date(2019, 9, 3), new Date(2019, 9, 23)], title: "Version 2.60"},
-            {dates: [new Date(2019, 9, 24), new Date(2019,11, 10)], title: "Version 3.0"},
-            {dates: [new Date(2019, 11, 12), new Date(annee, mois, jour)], title: "Version 3.1"}
+            {dates: [new Date(2019, 9, 24), new Date(2019, 11, 11)], title: "Version 3.0"},
+			{dates: [new Date(2019, 11, 12), new Date(2019, 12, 14)], title: "Version 3.1"},
+            {dates: [new Date(2020, 12, 15), new Date(annee, mois, jour)], title: "Version 3.3"}
          ];
          
          var sections = [
@@ -68,6 +69,181 @@
          });
       </script>
       <div class="accordion-container marge">
+		 <div class="panel">
+            <div class="heading">
+               <h2>Note de version 3.3 du 15/01/2020</h2>
+               <i class="fa fa-chevron-down"></i>
+            </div>
+            <div class="content">
+               <div class="divTableNoteVersion">
+                  <div class="divTableBody">
+                     <div class="divTableRow">
+                        <div class="divTableCellNoteVersion1" style="width: 60px">
+                           <img src="../images/notes-version/ekylibre.svg" alt="Ekylibre" width="60">
+                        </div>
+                        <div class="divTableCellNoteVersion2" style="width: auto">
+                           <strong>Commun à tous les modules</strong><br /><br />
+                           1 amélioration
+                        </div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellNoteVersion3" style="width: 60px">
+                        </div>
+                        <div class="divTableCellNoteVersion4" style="width: auto">
+                           <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                           <ul>
+                              <li>Possibilité pour l'utilisateur de sélectionner un modèle de document personnalisé "Actif" parmi ceux disponibles dans son instance afin d'en disposer lors de l'édition d'un nouveau document.</li>
+                           </ul>
+                        </div>
+                     </div>
+					 <div class="divTableRow">
+                        <div class="divTableCellNoteVersion1" style="width: 60px">
+                           <img src="../images/notes-version/tiers.svg" alt="Tiers" width="60">
+                        </div>
+                        <div class="divTableCellNoteVersion2" style="width: auto">
+                           <strong>Tiers</strong><br /><br />
+                           1 amélioration
+                        </div>
+                     </div>
+					 <div class="divTableRow">
+                        <div class="divTableCellNoteVersion3" style="width: 60px">
+                        </div>
+                        <div class="divTableCellNoteVersion4" style="width: auto">
+                           <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                           <ul>
+                              <li>Le statut de l'administrateur système est maintenant automatiquement défini sur "Employé" de la ferme dans un objectif de simplification.</li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellNoteVersion1">
+                           <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
+                        </div>
+                        <div class="divTableCellNoteVersion2">
+                           <strong>Comptabilité</strong><br /><br />
+                           2 améliorations et 1 bug corrigé
+                        </div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                        <div class="divTableCellNoteVersion4" style="width: auto">
+                           <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                           <ul>
+                              <li>La sélection du premier exercice comptable géré dans l'application est maintenant comprise entre l'année de création de l'entreprise (renseignée dans l'assistant de démarrage) et la date actuelle&nbsp;;</li>
+							  <li>Possibilité d'ajouter une pièce jointe à un virement interne &#40;image numérique, document enregistré au format PDF ou dans un autre format compatible avec l'application&#41;.</li>
+                           </ul>
+                           <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                           <ul>
+                              <li>Révision de l'affichage du solde de la balance, que celle-ci soit équilibrée ou non.</li>
+                           </ul>
+                        </div>
+                     </div>
+					 <div class="divTableRow">
+                        <div class="divTableCellNoteVersion1">
+                           <img src="../images/notes-version/ventes.svg" alt="Ventes" width="60">
+                        </div>
+                        <div class="divTableCellNoteVersion2">
+                           <strong>Ventes</strong><br /><br />
+                           3 améliorations
+                        </div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                        <div class="divTableCellNoteVersion4" style="width: auto">
+                           <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                           <ul>
+                              <li>Les intitulés des taux de TVA disponibles dans la liste déroulante prennent maintenant en compte le nom du taux à la place de son type afin de les distinguer lorsqu'ils ont le même pourcentage mais qu'ils sont rattachés à des comptes comptables différents&nbsp;;</li>
+							  <li>Mise à disposition des factures de ventes signées numériquement dans la "Gestion électronique des documents" du module "Outils"&nbsp;;</li>
+							  <li>Ajout d'un lien vers une page permettant de vérifier l'authenticité et l'intégrité des factures de ventes avec copie automatique de la clé de sécurité.</li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellNoteVersion1">
+                           <img src="../images/notes-version/achats.svg" alt="Achats" width="60">
+                        </div>
+                        <div class="divTableCellNoteVersion2">
+                           <strong>Achats</strong><br /><br />
+                           1 amélioration et 1 bug corrigé
+                        </div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                        <div class="divTableCellNoteVersion4" style="width: auto">
+						   <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                           <ul>
+							  <li>Les intitulés des taux de TVA disponibles dans la liste déroulante prennent maintenant en compte le nom du taux à la place de son type afin de les distinguer lorsqu'ils ont le même pourcentage mais qu'ils sont rattachés à des comptes comptables différents.</li>
+                           </ul>
+                           <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                           <ul>
+                              <li>Il est maintenant obligatoire de sélectionner un taux de TVA parmi ceux disponibles pour enregistrer une ligne d'achat.</li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellNoteVersion1">
+                           <img src="../images/notes-version/stocks.svg" alt="Stocks" width="60">
+                        </div>
+                        <div class="divTableCellNoteVersion2">
+                           <strong>Stocks</strong><br /><br />
+                           2 améliorations
+                        </div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellNoteVersion3" style="width: 60px">
+                        </div>
+                        <div class="divTableCellNoteVersion4" style="width: auto">
+                           <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                           <ul>
+                              <li>Création d'une nouvelle section "Zones" dans la barre latérale du module des stocks&nbsp;;</li>
+                              <li>Création de trois nouvelles fonctionnalités "Bâtiments", "Zones de bâtiments" et "Installations" dans la section "Zones".</li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellNoteVersion1">
+                           <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                        </div>
+                        <div class="divTableCellNoteVersion2">
+                           <strong>Production</strong><br /><br />
+                           2 améliorations et 1 bug corrigé
+                        </div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                        <div class="divTableCellNoteVersion4" style="width: auto">
+                           <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                           <ul>
+                              <li>Dans la liste des interventions, déplacement de l'intervention "Binage" de la section "Entretien des cultures" vers la section "Travail du sol" afin d'éviter toute ambiguïté avec l'intervention "Binage inter-rangs"&nbsp;;</li>
+                              <li>Création d'une nouvelle fonctionnalité "Équipements" dans la section "Production".</li>
+                           </ul>
+						   <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                           <ul>
+                              <li>La section "Travaux" dans la vue détaillée d'un animal est maintenant masquée car sans objet avec les informations à afficher.</li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellNoteVersion1"><img src="../images/notes-version/configuration.svg" alt="Configuration" width="60"></div>
+                        <div class="divTableCellNoteVersion2">
+                           <strong>Configuration</strong><br /><br />
+                           2 améliorations
+                        </div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                        <div class="divTableCellNoteVersion4" style="width: auto">
+                           <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                           <ul>
+                              <li>Suppression de la section "Production". Les fonctionnalités "Bâtiments", "Découpes de bâtiments" et "Installations" sont déplacées dans la section "Zones" du module "Stocks". La fonctionnalité "Équipements" est déplacée dans la section "Production" du module "Production"&nbsp;;</li>
+                              <li>Les modèles de documents personnalisés sont maintenant tous stockés au niveau de l'instance pour permettre à l'utilisateur de sélectionner celui de son choix lors de l'édition d'un nouveau document.</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
          <div class="panel">
             <div class="heading">
                <h2>Note de version 3.1 du 12/12/2019</h2>
