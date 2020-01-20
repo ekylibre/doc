@@ -299,7 +299,7 @@
                   <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
                </div>
                <div class="divTableCellListe">
-                  Comment paramétrer l'application pour réaliser un <a href="#inventaires" class="avoid-clicks">inventaire</a> des stocks
+                  Comment paramétrer l'application afin de réaliser un <a href="#inventaires" class="avoid-clicks">inventaire</a> des stocks
                </div>
             </div>
             <div class="divTableRow">
@@ -307,7 +307,23 @@
                   <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
                </div>
                <div class="divTableCellListe">
-                  Comment définir vos <a href="#equipements" class="avoid-clicks">équipements</a> &#40;matériel agricole&#41;, votre <a href="#tiers" class="avoid-clicks">personnel et vos contacts</a> &#40;fournisseurs, clients, prestataires de services, etc.&#41;
+                  Comment définir vos <a href="#equipements" class="avoid-clicks">équipements</a> &#40;matériel agricole&#41; et vos <a href="#tiers" class="avoid-clicks">tiers</a> &#40;personnel de l'explotation, fournisseurs, clients, prestataires de services, etc.&#41;
+               </div>
+            </div>
+			<div class="divTableRow">
+               <div class="divTableCellListe">
+                  <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
+               </div>
+               <div class="divTableCellListe">
+				   Comment convertir vos tiers en <a href="#equipiers" class="avoid-clicks">équipiers</a> afin de pouvoir les sélectionner lors de l'enregistrement des interventions
+               </div>
+            </div>
+			<div class="divTableRow">
+               <div class="divTableCellListe">
+                  <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
+               </div>
+               <div class="divTableCellListe">
+                  Comment affecter un <a class="avoid-clicks" href="#coutequipier">coût horaire estimatif</a> à un type d'équipier et l'enregistrer dans un <a class="avoid-clicks" href="#coutusage">catalogue de prix</a>
                </div>
             </div>
 			<div class="divTableRow">
@@ -334,7 +350,7 @@
             </div>
          </div>
       </div>
-      <p class="texte aerateur-bas">Les symboles<img src="../images/commun/option-small.svg" class="align-icone icone-marge-gauche" height="30" alt="Optionnel">et<img src="../images/commun/expert-small.svg" class="align-icone icone-marge-gauche" height="30" alt="Processus complexe">dans ce chapitre vous indiquent un processus avancé lié au niveau de traçabilité souhaité ou bien une procédure complexe à mettre en œuvre.</p>
+      <p class="texte aerateur-bas">Le symbole<img src="../images/commun/option-small.svg" class="align-icone icone-marge-gauche" height="30" alt="Optionnel">dans ce chapitre vous indique un processus optionnel ou avancé lié au niveau de traçabilité souhaité.</p>
       <div class="aerateur-bas">
       </div>
       <h6>Guide de prise en main • Stocks et tiers • Notions de base</h6>
@@ -1291,7 +1307,7 @@
 		 <p class="max-img-process">
             <img src="../images/chapitre9/equipements4.png" class="contour-img" alt="Nouvel équipement" data-action="zoom" />
          </p>
-         <p>Vous pouvez également sélectionner un visuel pour illustrer l'équipement avec une image de votre choix, de préférence au format jpeg ou png.</p>
+         <p>Vous pouvez également sélectionner un visuel pour illustrer l'équipement avec une image de votre choix, de préférence au format JPEG ou PNG.</p>
          <p class="max-img-process">
             <img src="../images/chapitre9/equipements5.png" class="contour-img" alt="Visuel de l'équipement" data-action="zoom" />
          </p>
@@ -1484,7 +1500,6 @@
             <img src="../images/chapitre9/personnel5.png" class="contour-img" alt="Nouvel équipier" data-action="zoom" />
          </p>
       </div>
-      <a class="slice-process" id="equipiers"></a>
       <div class="warn-fond aerateur-haut aerateur-bas">
          <div class="floating-box-warn">
             <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
@@ -1498,8 +1513,8 @@
          </div>
       </div>
       <h6>Guide de prise en main • Stocks et tiers • Création d'un équipier</h6>
-	  <p align="center" class="texte aerateur procedure">B – Procédure de création des équipiers
-      </p>
+	  <a class="slice-process" id="equipiers"></a>
+	  <h2 class="texte aerateur">B – Procédure de création des équipiers</h2>
       <p class="texte">
          Le processus suivant vous guide pour créer de nouveaux équipiers dans l'application.
       </p>
@@ -1638,7 +1653,7 @@
       <p class="texte">Vous pouvez également suivre la procédure suivante pour attribuer un coût horaire d'utilisation à un équipement. Cela peut se faire à la volée pendant la saisie d'une intervention &#40;expliquée dans le <a href="../chapitre10" class="avoid-clicks" target="_self">chapitre 10 - Production</a>&#41; mais il est préférable de le définir avant.</p>
       <h6>Guide de prise en main • Stocks et tiers • Coût de main d'œuvre</h6>
 	  <a class="slice-process" id="coutequipier"></a>
-      <p align="center" class="texte aerateur procedure">D – Procédure pour définir un coût de main d'œuvre</p>
+      <h2 class="texte aerateur">D – Procédure pour définir un coût de main d'œuvre</h2>
       <p align="center" class="texte"><img src="../images/commun/option.svg" height="55" alt="Optionnel"></p>
       <p class="texte">Le processus suivant vous guide pour attribuer un coût horaire estimatif de main d'œuvre à un type d'équipier.</p>
       <div class="floating-box process">
@@ -1661,7 +1676,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Sélectionnez un catalogue de prix</span>
-         <p>Cliquez sur le "Code" ou sur le "Nom" du catalogue "Coûts d'usage" pour en afficher le contenu, puis cliquez sur le bouton "Nouveau" pour définir un nouveau prix.</p>
+         <p>Cliquez sur le "Code" ou sur le "Nom" du catalogue "Coûts d'usage" pour en afficher le contenu, puis cliquez sur le bouton "Nouveau" pour définir un nouveau prix. Si le catalogue de prix "Coûts d'usage" n'est pas disponible, on vous explique <a class="avoid-clicks" href="#coutusage">comment le configurer</a>.</p>
          <p class="max-img-process">
             <img src="../images/chapitre9/catalogue2.png" class="contour-img" alt="Liste des catalogues de prix" data-action="zoom" />
          </p>
@@ -1716,9 +1731,66 @@
             </p>
          </div>
       </div>
+	  <h6>Guide de prise en main • Production • Création catalogue de prix</h6>
+	  <a class="slice-process" id="coutusage"></a>
+      <h2 class="texte aerateur">E – Procédure pour créer un nouveau catalogue de prix</h2>
+      <p align="center" class="texte"><img src="../images/commun/option.svg" height="55" alt="Optionnel"></p>
+      <p class="texte">Le processus suivant vous guide pour définir un nouveau catalogue de prix des coûts d'usage.</p>
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez les catalogues de prix</span>
+         <p>
+            Cliquez sur la clef anglaise<img src="../images/chapitre9/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">dans le "Menu principal" ou sur le bouton "Configuration" de la page d'accueil&nbsp;:
+         </p>
+         <p align="center"><img src="../images/chapitre9/wrench.svg" alt="Configuration" width="60"></p>
+         <p>Dans la barre latérale du module, cliquez sur "Catalogues de prix" dans la section "Produit" symbolisée par l'icône d'un épi<img src="../images/chapitre9/wheat.svg" alt="Épi" height="20" class="align-icone icone-marge-gauche">.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre9/usage1.png" class="contour-img" alt="Liste des catalogues de prix" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Créez un catalogue de prix</span>
+         <p>Cliquez sur le bouton "Nouveau" pour afficher la fenêtre de saisie du nouveau catalogue de prix.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre9/usage2.png" class="contour-img" alt="Création catalogue de prix" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Renseignez le nouveau catalogue</span>
+         <p>Remplissez tous les champs signalés par une astérisque de couleur rouge avec les informations requises pour le définir correctement.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre9/usage3.png" class="contour-img" alt="Configuration du catalogue" data-action="zoom" />
+         </p>
+		 <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step4.svg" alt="4" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez le catalogue de prix</span>
+         <p>Le catalogue est immédiatement disponible pour répertorier les coûts estimatifs des opérateurs ou des équipements sélectionnés lors de l'enregistrement des interventions.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre9/usage4.png" class="contour-img" alt="Nouveau catalogue de prix" data-action="zoom" />
+         </p>
+		 <p>La création d'un nouveaux coût d'usage rattaché à une variante est automatiquement ajouté dans la section "Éléments" de ce catalogue de prix.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre9/usage5.png" class="contour-img" alt="Éléments du catalogue" data-action="zoom" />
+         </p>
+      </div>
 	  <a class="slice-process" id="registre"></a>
 	  <h6>Guide de prise en main • Stocks et tiers • Registre horaire des opérateurs</h6>
-      <p align="center" class="texte aerateur procedure">E – Procédure pour obtenir le registre horaire des opérateurs</p>
+      <p align="center" class="texte aerateur procedure">F – Procédure pour obtenir le registre horaire des opérateurs</p>
 	  <p class="texte">Le registre horaire des opérateurs détaille les temps de travaux des équipiers consignés lors de l'enregistrement des interventions.</p>
       <p class="texte">Le processus suivant vous guide pour obtenir le registre horaire des opérateurs.</p>
       <div class="floating-box process">
