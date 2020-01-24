@@ -2497,6 +2497,10 @@ img.zoom-img {
 	display: none;
 }
 
+.btn_pdf-notes {
+	display: none;
+}
+
 @media only screen and (min-width: 768px) {
 	.btn_pdf {
 		display: inline;
@@ -2546,6 +2550,22 @@ img.zoom-img {
 		background-size: 50px auto;
 		z-index: 1;
 	}
+	.btn_pdf-notes {
+		display: inline;
+		position: fixed;
+		height: 50px;
+		width: 50px;
+		left: 180px;
+		right: auto;
+		bottom: 12px;
+		background-color: #476ba8;
+		border-radius: 25px;
+		background-image: url("../fr/images/notes-version/pdf-notes.svg");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: 50px auto;
+		z-index: 1;
+	}
 	.compta-large {
 		display: inline;
 	}
@@ -2566,9 +2586,11 @@ img.zoom-img {
 	}
 	.btn_navigation {
 		display: none;
+	}
+	.btn_pdf-notes {
+	display: none;
+	}
 }
-}
-
 
 /*Tooltip*/
 
