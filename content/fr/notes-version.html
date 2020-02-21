@@ -35,14 +35,15 @@
          var mois    = now.getMonth();
          var jour    = now.getDate();
          var events = [
-         	{dates: [new Date(2019, 5, 21), new Date(2019, 6, 30)], title: "Version 2.55"},
-         	{dates: [new Date(2019, 6, 31), new Date(2019, 8, 9)], title: "Version 2.56"},
-         	{dates: [new Date(2019, 8, 10), new Date(2019, 9, 2)], title: "Version 2.59"},
-         	{dates: [new Date(2019, 9, 3), new Date(2019, 9, 23)], title: "Version 2.60"},
-            {dates: [new Date(2019, 9, 24), new Date(2019, 11, 11)], title: "Version 3.0"},
-         	{dates: [new Date(2019, 11, 12), new Date(2019, 12, 22)], title: "Version 3.1"},
-            {dates: [new Date(2019, 12, 23), new Date(2020, 1, 18)], title: "Version 3.3"},
-         	{dates: [new Date(2020, 1, 19), new Date(annee, mois, jour)], title: "Version 3.5"}
+         	{dates: [new Date(2019, 5, 21), new Date(2019, 6, 30)], title: "Version 2.55", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
+         	{dates: [new Date(2019, 6, 31), new Date(2019, 8, 9)], title: "Version 2.56", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
+         	{dates: [new Date(2019, 8, 10), new Date(2019, 9, 2)], title: "Version 2.59", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
+         	{dates: [new Date(2019, 9, 3), new Date(2019, 9, 23)], title: "Version 2.60", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
+            {dates: [new Date(2019, 9, 24), new Date(2019, 11, 11)], title: "Version 3.0", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
+         	{dates: [new Date(2019, 11, 12), new Date(2019, 12, 22)], title: "Version 3.1", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
+            {dates: [new Date(2019, 12, 23), new Date(2020, 1, 18)], title: "Version 3.3", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
+         	{dates: [new Date(2020, 1, 19), new Date(2020, 1, 20)], title: "Version 3.5", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
+         	{dates: [new Date(2020, 1, 21), new Date(annee, mois, jour)], title: "Version 3.6", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
          ];
          
          var sections = [
@@ -70,6 +71,76 @@
          });
       </script>
       <div class="accordion-container marge">
+         <div class="panel">
+            <div class="heading">
+               <h2>Note de version 3.6 du 21/02/2020</h2>
+               <i class="fa fa-chevron-down"></i>
+            </div>
+            <div class="content">
+               <div class="divTableNoteVersion">
+                  <div class="divTableBody">
+                     <div class="divTableRow">
+                        <div class="divTableCellNoteVersion1" style="width: 60px">
+                           <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                        </div>
+                        <div class="divTableCellNoteVersion2" style="width: auto">
+                           <strong>Production</strong><br /><br />
+                           4 améliorations
+                        </div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellNoteVersion3" style="width: 60px">
+                        </div>
+                        <div class="divTableCellNoteVersion4" style="width: auto">
+                           <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                           <ul>
+                              <li>Dans les interventions de pulvérisation, possibilité de sélectionner l'usage des produits phytosanitaires utilisés avec affichage des informations disponibles en provenance d'E-Phy telles que la date d'autorisation, le délai de ré-entrée &#40;DRE&#41;, le délai avant récolte &#40;DAR&#41;, la dose maximale autorisée, le nombre maximal d'applications, les stades d'application et les zones non traitées &#40;ZNT aquatiques, ZNT arthropodes et ZNT plantes&#41;&nbsp;;</li>
+                              <li>Affichage des mentions autorisées d'un produit phytosanitaire lors de sa sélection&nbsp;:"Utilisable en agriculture biologique", "Liste biocontrôle" et produit avec "Mention abeille"&nbsp;;</li>
+                              <li>Contrôle du dosage d'un produit phytosanitaire en fonction de la dose maximale autorisée par l'usage sélectionné, avec affichage d'un indicateur précisant si l'on est en dessous, à la dose maximale ou au dessus de la dose autorisée&nbsp;;</li>
+                              <li>Contrôle des mélanges de produits phytosanitaires autorisés dans une intervention de pulvérisation.</li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellNoteVersion1"><img src="../images/notes-version/configuration.svg" alt="Configuration" width="60"></div>
+                        <div class="divTableCellNoteVersion2">
+                           <strong>Configuration</strong><br /><br />
+                           3 améliorations
+                        </div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                        <div class="divTableCellNoteVersion4" style="width: auto">
+                           <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                           <ul>
+                              <li>Simplification de l'import d'articles de nature phytosanitaire avec affichage des informations en provenance d'E-Phy&nbsp;;</li>
+                              <li>La vue d'un produit phytosanitaire comporte désormais les informations réglementaires pour chaque produit phytosanitaire importé&nbsp;: les substances actives et leur dosage, le n<sup>o</sup> et la date d'Autorisation de Mise sur le Marché &#40;AMM&#41;, les seconds noms commerciaux, les usages du produit, ses mentions de danger et les informations relatives à la protection de l'opérateur&nbsp;;</li>
+                              <li>Mise à jour des pictogrammes de danger selon la réglementation CLP &#40;classification et étiquetage des produits chimiques&#41;.</li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellNoteVersion1"><img src="../images/notes-version/app.svg" alt="Application mobile" width="60"></div>
+                        <div class="divTableCellNoteVersion2">
+                           <strong>Application mobile</strong><br /><br />
+                           3 améliorations
+                        </div>
+                     </div>
+                     <div class="divTableRow">
+                        <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                        <div class="divTableCellNoteVersion4" style="width: auto">
+                           <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                           <ul>
+                              <li>Mise à jour de l'application mobile Android avec possibilité de saisir, en mode déconnecté, avec ou sans enregistrement des temps de travaux détaillés, toutes les interventions disponibles dans Ekylibre&nbsp;;</li>
+                              <li>Visualisation de la fiche d'un produit phytosanitaire comportant notamment ses usages et les informations de protection de l'opérateur&nbsp;;</li>
+                              <li>Contrôle des doses utilisées lors des interventions en fonction de la dose maximale autorisée par l'usage sélectionné.</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
          <div class="panel">
             <div class="heading">
                <h2>Note de version 3.5 du 19/02/2020</h2>
@@ -111,10 +182,10 @@
                            <ul>
                               <li>De nouveaux boutons permettent maintenant de filtrer l'affichage des "Catégories", des "Types" et des "Variantes" selon 7 natures&nbsp;: "Articles", "Animaux", "Cultures", "Équipements", "Services", "Équipiers" et  "Zones"&nbsp;;</li>
                               <li>Les variantes d'articles peuvent être filtrées selon leurs caractéristiques par sous-nature "Engrais", "Produits phytosanitaires", "Semences et plants" et "Autres"&nbsp;;</li>
-							  <li>Nouvelle procédure d'import des variantes et simplification de la méthode de sélection pour les produits phytosanitaires via une liste déroulante&nbsp;;</li>
-							  <li>Possibilité de modifier la "Catégorie" et le "Type" de produit directement depuis l'édition d'une variante&nbsp;;</li>
-							  <li>Lors de la création d'une variante de sous-nature "Produits phytosanitaires", possibilité de choisir le n<sup>o</sup> d'AMM du produit dans une liste déroulante&nbsp;;</li>
-							  <li>Changement de l'intitulé des boutons "Piocher" par "Importer" permettant l'ajout des "Catégories", des "Types", des "Variantes" et des "Rôles" d'utilisateur.</li>
+                              <li>Nouvelle procédure d'import des variantes et simplification de la méthode de sélection pour les produits phytosanitaires via une liste déroulante&nbsp;;</li>
+                              <li>Possibilité de modifier la "Catégorie" et le "Type" de produit directement depuis l'édition d'une variante&nbsp;;</li>
+                              <li>Lors de la création d'une variante de sous-nature "Produits phytosanitaires", possibilité de choisir le n<sup>o</sup> d'AMM du produit dans une liste déroulante&nbsp;;</li>
+                              <li>Changement de l'intitulé des boutons "Piocher" par "Importer" permettant l'ajout des "Catégories", des "Types", des "Variantes" et des "Rôles" d'utilisateur.</li>
                            </ul>
                         </div>
                      </div>
@@ -1101,6 +1172,74 @@
       </div>
       <div class="saut-page"></div>
       <div class="heading-print marge aerateur-haut">
+         <h2>Note de version 3.6 du 21/02/2020</h2>
+      </div>
+      <div class="content-print marge">
+         <div class="divTableNoteVersion">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/ekylibre.svg" alt="Ekylibre" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Production</strong><br /><br />
+                     4 améliorations
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>Dans les interventions de pulvérisation, possibilité de sélectionner l'usage des produits phytosanitaires utilisés avec affichage des informations disponibles en provenance d'E-Phy telles que la date d'autorisation, le délai de ré-entrée &#40;DRE&#41;, le délai avant récolte &#40;DAR&#41;, la dose maximale autorisée, le nombre maximal d'applications, les stades d'application et les zones non traitées &#40;ZNT aquatiques, ZNT arthropodes et ZNT plantes&#41;&nbsp;;</li>
+                        <li>Affichage des mentions autorisées d'un produit phytosanitaire lors de sa sélection&nbsp;:"Utilisable en agriculture biologique", "Liste biocontrôle" et produit avec "Mention abeille"&nbsp;;</li>
+                        <li>Contrôle du dosage d'un produit phytosanitaire en fonction de la dose maximale autorisée par l'usage sélectionné, avec affichage d'un indicateur précisant si l'on est en dessous, à la dose maximale ou au dessus de la dose autorisée&nbsp;;</li>
+                        <li>Contrôle des mélanges de produits phytosanitaires autorisés dans une intervention de pulvérisation.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1"><img src="../images/notes-version/configuration.svg" alt="Configuration" width="60"></div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Configuration</strong><br /><br />
+                     3 améliorations
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>Simplification de l'import d'articles de nature phytosanitaire avec affichage des informations en provenance d'E-Phy&nbsp;;</li>
+                        <li>La vue d'un produit phytosanitaire comporte désormais les informations réglementaires pour chaque produit phytosanitaire importé&nbsp;: les substances actives et leur dosage, le n<sup>o</sup> et la date d'Autorisation de Mise sur le Marché &#40;AMM&#41;, les seconds noms commerciaux, les usages du produit, ses mentions de danger et les informations relatives à la protection de l'opérateur&nbsp;;</li>
+                        <li>Mise à jour des pictogrammes de danger selon la réglementation CLP &#40;classification et étiquetage des produits chimiques&#41;.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1"><img src="../images/notes-version/app.svg" alt="Application mobile" width="60"></div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Application mobile</strong><br /><br />
+                     3 améliorations
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>Mise à jour de l'application mobile Android avec possibilité de saisir, en mode déconnecté, avec ou sans enregistrement des temps de travaux détaillés, toutes les interventions disponibles dans Ekylibre&nbsp;;</li>
+                        <li>Visualisation de la fiche d'un produit phytosanitaire comportant notamment ses usages et les informations de protection de l'opérateur&nbsp;;</li>
+                        <li>Contrôle des doses utilisées lors des interventions en fonction de la dose maximale autorisée par l'usage sélectionné.</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="saut-page"></div>
+      <div class="heading-print marge aerateur-haut">
          <h2>Note de version 3.5 du 19/02/2020</h2>
       </div>
       <div class="content-print marge">
@@ -1139,10 +1278,10 @@
                      <ul>
                         <li>De nouveaux boutons permettent maintenant de filtrer l'affichage des "Catégories", des "Types" et des "Variantes" selon 7 natures&nbsp;: "Articles", "Animaux", "Cultures", "Équipements", "Services", "Équipiers" et  "Zones"&nbsp;;</li>
                         <li>Les variantes d'articles peuvent être filtrées selon leurs caractéristiques par sous-nature "Engrais", "Produits phytosanitaires", "Semences et plants" et "Autres"&nbsp;;</li>
-						<li>Nouvelle procédure d'import des variantes et simplification de la méthode de sélection pour les produits phytosanitaires via une liste déroulante&nbsp;;</li>
-						<li>Possibilité de modifier la "Catégorie" et le "Type" de produit directement depuis l'édition d'une variante&nbsp;;</li>
-						<li>Lors de la création d'une variante de sous-nature "Produits phytosanitaires", possibilité de choisir le n<sup>o</sup> d'AMM du produit dans une liste déroulante&nbsp;;</li>
-						<li>Changement de l'intitulé des boutons "Piocher" par "Importer" permettant l'ajout des "Catégories", des "Types", des "Variantes" et des "Rôles" d'utilisateur.</li>
+                        <li>Nouvelle procédure d'import des variantes et simplification de la méthode de sélection pour les produits phytosanitaires via une liste déroulante&nbsp;;</li>
+                        <li>Possibilité de modifier la "Catégorie" et le "Type" de produit directement depuis l'édition d'une variante&nbsp;;</li>
+                        <li>Lors de la création d'une variante de sous-nature "Produits phytosanitaires", possibilité de choisir le n<sup>o</sup> d'AMM du produit dans une liste déroulante&nbsp;;</li>
+                        <li>Changement de l'intitulé des boutons "Piocher" par "Importer" permettant l'ajout des "Catégories", des "Types", des "Variantes" et des "Rôles" d'utilisateur.</li>
                      </ul>
                   </div>
                </div>
