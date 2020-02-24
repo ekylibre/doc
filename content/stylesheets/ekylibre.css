@@ -225,6 +225,7 @@ img.loading {
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
+	z-index: 1;
 }
 
 @media only screen and (min-width: 768px) {
@@ -2866,6 +2867,10 @@ img.zoom-img {
 
 
 /*Accordion*/
+
+.version {
+	max-width: 90%;
+}
 
 .accordion-container .panel {
 	margin-top: 0;

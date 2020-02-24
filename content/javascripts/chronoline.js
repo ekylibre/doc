@@ -521,18 +521,18 @@ function Chronoline(domElement, events, options) {
                 } else {  // it's a range
                     var width = (getEndDate(myEvent.dates) - myEvent.dates[0]) * t.pxRatio;
                     // left rounded corner
-                    var leftCircle = t.paper.circle(startX, upperY + t.circleRadius, t.circleRadius).attr(t.eventAttrs);
+                    var leftCircle = t.paper.circle(startX + 1, upperY + t.circleRadius, t.circleRadius).attr(t.eventAttrs);
                     if(typeof myEvent.attrs != "undefined"){
                         leftCircle.attr(myEvent.attrs);
                     }
                     addElemClass(t.paperType, leftCircle.node, 'chronoline-event');
                     // right rounded corner
-                    var rightCircle = t.paper.circle(startX + width, upperY + t.circleRadius, t.circleRadius).attr(t.eventAttrs);
+                    var rightCircle = t.paper.circle(startX - 1 + width, upperY + t.circleRadius, t.circleRadius).attr(t.eventAttrs);
                     if(typeof myEvent.attrs != "undefined"){
                         rightCircle.attr(myEvent.attrs);
                     }
                     addElemClass(t.paperType, rightCircle.node, 'chronoline-event');
-                    elem = t.paper.rect(startX, upperY, width, t.eventHeight)
+                    elem = t.paper.rect(startX + 1, upperY, width - 2, t.eventHeight)
                         .attr(t.eventAttrs);
                 }
                 if (t.eventClick || t.eventDblClick) {
