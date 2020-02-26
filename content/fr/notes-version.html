@@ -1,3 +1,13 @@
+<script>
+   $(window).bind('resize', function(e)
+   {
+   if (window.RT) clearTimeout(window.RT);
+   window.RT = setTimeout(function()
+   {
+   this.location.reload(false); /* false to get page from cache */
+   }, 100);
+   });
+</script>
 <div class="w3-content page-content scroll-spy-heading-breadcrumbs">
    <div id="navigation">
       <div class="divTable">
@@ -70,27 +80,22 @@
       });
    </script>
    <!-- TAB CONTROLLERS -->
-<input id="panel-1-ctrl"
-       class="panel-radios" type="radio" name="tab-radios" checked>
-<input id="panel-2-ctrl"
-       class="panel-radios" type="radio" name="tab-radios">
-<input id="nav-ctrl"
-       class="panel-radios" type="checkbox" name="nav-checkbox">
+   <input id="panel-1-ctrl"
+      class="panel-radios" type="radio" name="tab-radios" checked>
+   <input id="panel-2-ctrl"
+      class="panel-radios" type="radio" name="tab-radios">
+   <input id="nav-ctrl"
+      class="panel-radios" type="checkbox" name="nav-checkbox">
    <ul id="tabs-list">
-      <!-- MENU TOGGLE -->
       <label id="open-nav-label" for="nav-ctrl"></label>
       <li id="li-for-panel-1">
          <label class="panel-label"
             for="panel-1-ctrl">2020</label>
       </li>
-      <!--INLINE-BLOCK FIX
-         -->
       <li id="li-for-panel-2">
          <label class="panel-label"
             for="panel-2-ctrl">2019</label>
       </li>
-      <!--INLINE-BLOCK FIX
-         -->
       <label id="close-nav-label" for="nav-ctrl">Replier le sélecteur</label>
    </ul>
    <article id="panels">

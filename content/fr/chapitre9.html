@@ -364,7 +364,7 @@
       <h6>Guide de prise en main • Stocks et tiers • Notions de base</h6>
       <a class="slice-process" id="categories"></a>
       <h2 class="texte aerateur">a - Catégories, types et variantes</h2>
-      <p class="texte">Tous les éléments stockés dans Ekylibre sont associés à une catégorie qui est un profil de gestion applicable pour les écritures comptables &#40;le paramétrage de plusieurs tâches associées à la comptabilité est expliqué dans le <a href="../chapitre6" target="_self" class="avoid-clicks">chapitre 6 - Comptabilité</a>&#41;.</p>
+      <p class="texte">Tous les éléments stockés dans Ekylibre sont associés à une catégorie qui est un profil de gestion applicable pour les écritures comptables &#40;le paramétrage et les procédures de gestion comptable sont expliquées dans le <a href="../chapitre6" target="_self" class="avoid-clicks">chapitre 6 - Comptabilité</a>&#41;.</p>
       <p class="texte">Ces éléments sont également rattachés à des types &#40;familles&#41; identifiés par un profil technique comme par exemple un service, un équipement, un produit phytosanitaire.</p>
       <p class="texte">La variante correspond à un article de catalogue appartenant simultanément à une catégorie &#40;profil de gestion&#41; et à un type de produit &#40;profil technique&#41;.</p>
       <p class="texte">À la création du stock initial ou lors d'un achat, la variante est finalement enregistrée sous la forme d'un produit en stock avec la quantité spécifiée.</p>
@@ -379,6 +379,20 @@
       <div class="scroll marge">
          <div class="tableau">
             <p align="center" class="aerateur-haut aerateur-bas"><img src="../images/chapitre9/tableau-produits.png" alt="Schéma produits"></p>
+         </div>
+      </div>
+	  <p class="texte">En complément, on peut associer un prix d'achat ou un prix de vente &#40;ainsi qu'un coût d'usage dans le cas d'un équipement&#41; à chaque variante. Ces informations sont alors répertoriées dans des catalogues de prix spécifiques et disponibles pour enregistrer des commandes, des ventes et des interventions.</p>
+	  <div class="affichage-large"></div>
+      <div class="affichage-mobile">
+         <p align="center">
+            <img src="../images/commun/scroll.svg" alt="Scroll" height="40" class="">
+            <br />
+            Glissez pour parcourir le schéma
+         </p>
+      </div>
+      <div class="scroll marge">
+         <div class="tableau">
+            <p align="center" class="aerateur-haut aerateur-bas"><img src="../images/chapitre9/schema-catalogues.png" class="contour-img" alt="Schéma catalogues"></p>
          </div>
       </div>
       <p class="texte aerateur-haut">Dans le schéma suivant, parmi les différentes catégories disponibles dans l'application, on a choisi en exemple celle des équipements qui regroupe plusieurs types d'équipements possédant chacun des caractéristiques différentes.</p>
@@ -540,9 +554,146 @@
          </p>
          <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
       </div>
+	  <h6>Guide de prise en main • Stocks et tiers • Produit phytosanitaire</h6>
+      <a class="slice-process" id="phyto"></a>
+      <p align="center" class="texte aerateur procedure">C – Procédure pour importer une variante d'un produit phytosanitaire</p>
+      <p class="texte">Dans l'exemple suivant, nous vous expliquons comment créer une nouvelle catégorie, un nouveau type et enfin de nouvelles variantes pour permettre la gestion des stocks et la gestion des ventes d'un producteur de produits laitiers transformés.</p>
+      <p class="texte">Le processus suivant vous guide pour importer une variante d'un produit phytosanitaire.</p>
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez les catégories de produits</span>
+         <p>
+            Cliquez sur la clef anglaise<img src="../images/chapitre9/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">dans le "Menu principal" ou sur le bouton "Configuration" de la page d'accueil&nbsp;:
+         </p>
+         <p align="center"><img src="../images/chapitre9/wrench.svg" alt="Configuration" width="60"></p>
+         <p>Dans la barre latérale du module, cliquez sur "Catégories de produits" dans la section "Produit" symbolisée par l'icône d'un épi<img src="../images/chapitre9/wheat.svg" alt="Épi" height="20" class="align-icone icone-marge-gauche">, puis cliquez sur le bouton "Nouveau".</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre9/categorie1.png" class="contour-img" alt="Catégories de produits" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <p class="texte aerateur-top">Pictogrammes de danger selon la réglementation CLP &#40;classification et étiquetage des produits chimiques&#41;.</p>
+	  <div class="divTableListe marge">
+         <div class="divTableBody">
+			 <div class="divTableRow">
+               <div class="divTableCellInter" style="width: 35px">
+                  <img src="../images/chapitre9/agrio_bio.svg" alt="Utilisable en agriculture biologique" height="25" width="25">
+               </div>
+               <div class="divTableCellInter" style="width: auto">
+                  <p>Utilisable en agriculture biologique.</p>
+               </div>
+            </div>
+			 <div class="divTableRow">
+               <div class="divTableCellInter">
+                  <img src="../images/chapitre9/liste_bio.svg" alt="Liste biocontrôle" height="25" width="25">
+               </div>
+               <div class="divTableCellInter" style="width: auto">
+                  <p>Liste biocontrôle.</p>
+               </div>
+            </div>
+			 <div class="divTableRow">
+               <div class="divTableCellInter">
+                  <img src="../images/chapitre9/mention_abeille.svg" alt="Mention abeille" height="25" width="25">
+               </div>
+               <div class="divTableCellInter" style="width: auto">
+                  <p>Mention abeille.</p>
+               </div>
+            </div>
+	     </div>
+	  </div>
+	  <div class="info-fond aerateur-haut aerateur-bas">
+         <div class="floating-box-info">
+            <img src="../images/commun/info.svg" width="100" alt="Info"/>
+         </div>
+         <div class="info-txt">
+            <span class="titre-advice">Mention abeille<br /></span>
+            <p class="texte-advice">
+               La Mention Abeille est une dérogation à l'Arrêté du 28/11/2003 interdisant l'emploi des insecticides et des acaricides pendant la période de floraison ou la période de production  d’exsudats.  Elle n’est pas attribuée à  un  produit dans son ensemble mais usage par usage.<br />3 types de mention &nbsp;:<br /><ul><li>«&nbsp;emploi autorisé durant la floraison en dehors de la présence d’abeilles&nbsp;»&nbsp;;</li><li>«&nbsp;emploi autorisé au cours des périodes de production d’exsudats, en dehors de la présence d’abeilles&nbsp;»&nbsp;;</li><li>«&nbsp;emploi autorisé durant la floraison et au cours des périodes de production d’exsudats, en dehors de la présence d’abeilles&nbsp;».</li></ul>
+            </p>
+         </div>
+      </div>
+	  <p class="texte aerateur-haut">Pictogrammes de danger selon la réglementation CLP &#40;classification et étiquetage des produits chimiques&#41;.</p>
+	  <div class="divTableListe marge">
+         <div class="divTableBody">
+            <div class="divTableRow">
+               <div class="divTableCellInter" style="width: 50px">
+                  <img src="../images/chapitre9/SGH01_BombeExplosant.svg" alt="SGH01" height="40" width="40">
+               </div>
+               <div class="divTableCellInter" style="width: auto">
+                  <p>SGH01&nbsp;: gaz, substance ou mélange explosif.</p>
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellInter">
+                  <img src="../images/chapitre9/SGH02_Flamme.svg" alt="SGH02" height="40" width="40">
+               </div>
+               <div class="divTableCellInter">
+                  <p>SGH02&nbsp;: gaz, liquide, matière inflammable ou pyrophorique.</p>
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellInter">
+                  <img src="../images/chapitre9/SGH03_FlammeSurCercle.svg" alt="SGH03" height="40" width="40">
+               </div>
+               <div class="divTableCellInter">
+                  <p>SGH03&nbsp;: gaz, liquide ou matière comburant.</p>
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellInter">
+                  <img src="../images/chapitre9/SGH04_BouteilleGaz.svg" alt="SGH04" height="40" width="40">
+               </div>
+               <div class="divTableCellInter">
+                  <p>SGH04&nbsp;: gaz sous pression, comprimé, liquéfié ou liquéfié réfrigéré.</p>
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellInter">
+                  <img src="../images/chapitre9/SGH05_Corrosion.svg" alt="SGH05" height="40" width="40">
+               </div>
+               <div class="divTableCellInter">
+                  <p>SGH05&nbsp;: substance ou mélange corrosif.</p>
+               </div>
+            </div>
+			<div class="divTableRow">
+               <div class="divTableCellInter">
+                  <img src="../images/chapitre9/SGH06_TeteDeMort.svg" alt="SGH06" height="40" width="40">
+               </div>
+               <div class="divTableCellInter">
+                  <p>SGH06&nbsp;: mortel par ingestion, contact ou inhalation.</p>
+               </div>
+            </div>
+			<div class="divTableRow">
+               <div class="divTableCellInter">
+                  <img src="../images/chapitre9/SGH07_PointExclamation.svg" alt="SGH07" height="40" width="40">
+               </div>
+               <div class="divTableCellInter">
+                  <p>SGH07&nbsp;: toxicité aiguë ou spécifique pour certains organes cibles, lésions ou irritations oculaires graves.</p>
+               </div>
+            </div>
+			<div class="divTableRow">
+               <div class="divTableCellInter">
+                  <img src="../images/chapitre9/SGH08_DangerSante.svg" alt="SGH08" height="40" width="40">
+               </div>
+               <div class="divTableCellInter">
+                  <p>SGH08&nbsp;: substance mutagène ou cancérogène, toxique pour la reproduction et l'allaitement.</p>
+               </div>
+            </div>
+			<div class="divTableRow">
+               <div class="divTableCellInter">
+                  <img src="../images/chapitre9/SGH09_Environnement.svg" alt="SGH09" height="40" width="40">
+               </div>
+               <div class="divTableCellInter">
+                  <p>SGH09&nbsp;: substance toxique pour les organismes aquatiques.</p>
+               </div>
+            </div>
+         </div>
+      </div>
       <h6>Guide de prise en main • Stocks et tiers • Nouvel article</h6>
       <a class="slice-process" id="article"></a>
-      <p align="center" class="texte aerateur procedure">C – Procédure pour créer un nouvel article</p>
+      <p align="center" class="texte aerateur procedure">D – Procédure pour créer un nouvel article</p>
       <p class="texte">Dans l'exemple suivant, nous vous expliquons comment créer une nouvelle catégorie, un nouveau type et enfin de nouvelles variantes pour permettre la gestion des stocks et la gestion des ventes d'un producteur de produits laitiers transformés.</p>
       <p align="center" class="texte"><img src="../images/commun/option.svg" height="55" alt="Optionnel"></p>
       <p class="texte">Le processus suivant vous guide pour créer de nouveaux articles à partir de nouvelles variantes définies à partir d'une nouvelle catégorie et d'un nouveau type.</p>
@@ -642,6 +793,7 @@
       <h3 class="texte">1 - Différentes manières de compter</h3>
       <p class="texte">En fonction de la variante &#40;le produit&#41; sélectionnée, l'unité utilisée pour son comptage lui est propre. Soyez attentif dans le processus de création des réceptions et des expéditions.</p>
       <p class="texte">Quelques exemples&nbsp;:</p>
+	  <div class="saut-page"></div>
       <div class="divTableGlossaire marge aerateur-bas">
          <div class="divTableBody">
             <div class="divTableRow">
@@ -851,6 +1003,7 @@
             Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.
          </p>
       </div>
+	  <div class="saut-page"></div>
       <div class="warn-fond aerateur-haut aerateur-bas">
          <div class="floating-box-warn">
             <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
