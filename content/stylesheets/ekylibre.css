@@ -3232,15 +3232,30 @@ ul.breadcrumb li:last-child:hover a {
 
 /* Tabs for Notes de version */
 
-ul#tabs-list {
-  list-style: none;
-  text-align: center;
-  border-bottom: 1px solid #ccc;
-  margin: 0;
-  padding: 0;
-  font-family: "Lato", "Open Sans", "Droid Sans", "Liberation Sans", Helvetica, sans-serif;
-  font-weight: 700;
-  font-size: 15px;
+@media all and (max-width: 767px) {
+  ul#tabs-list {
+    list-style: none;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", "Open Sans", "Droid Sans", "Liberation Sans", Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  ul#tabs-list {
+    list-style: none;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", "Open Sans", "Droid Sans", "Liberation Sans", Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+  }
 }
 
 label.panel-label {
@@ -3249,7 +3264,8 @@ label.panel-label {
       -ms-user-select: none;
           user-select: none;
   display: block;
-  width: 100%;
+  max-width: 150px;
+  margin: 0 auto;
   color: #bdc3c7;
   cursor: pointer;
   background-color: #ecf0f1;
@@ -3346,6 +3362,8 @@ label.panel-label:hover {
     bottom: 0;
     left: 0;
     cursor: pointer;
+    max-width: 150px;
+	margin: 0 auto;
   }
 
   #nav-ctrl:checked ~ #tabs-list #open-nav-label {
@@ -3366,19 +3384,21 @@ label.panel-label:hover {
     font-size: 12px;
     line-height: 22px;
     letter-spacing: 1px;
+	max-width: 150px;
+	margin: 0 auto;
   }
 
   #nav-ctrl:checked ~ #tabs-list #close-nav-label {
     max-height: 36px;
     opacity: 1;
-    padding: 12px 24px;
+    padding: 12px 12px;
   }
 
   #tabs-list {
     position: relative;
   }
   #tabs-list label.panel-label {
-    padding: 12px 0;
+    padding: 12px 12px;
   }
   #tabs-list #li-for-panel-1 {
     max-height: 0;
