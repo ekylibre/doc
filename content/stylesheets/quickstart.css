@@ -954,7 +954,7 @@ video {
 	.ekylibre {
 		left: 50%;
 		margin-left: -384px;
-		width: 384px;
+		width: 768px;
 		background-color: #333;
 		height: 65px;
 		position: fixed;

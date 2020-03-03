@@ -532,8 +532,13 @@ function Chronoline(domElement, events, options) {
                         rightCircle.attr(myEvent.attrs);
                     }
                     addElemClass(t.paperType, rightCircle.node, 'chronoline-event');
+                    if(width > 2) {
                     elem = t.paper.rect(startX + 1, upperY, width - 2, t.eventHeight)
                         .attr(t.eventAttrs);
+                	} else {
+                	elem = t.paper.rect(startX + 1, upperY, width, t.eventHeight)
+                		.attr(t.eventAttrs);
+                	}
                 }
                 if (t.eventClick || t.eventDblClick) {
                     elem.data("eventData", myEvent);
