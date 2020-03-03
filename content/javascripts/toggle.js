@@ -8,5 +8,4 @@ $("#toggle > li > div").click(function () {
     $(this).next().slideToggle();
     $("#toggle > li > div").removeClass("active");
     $(this).addClass('active');
-
 });
