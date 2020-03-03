@@ -3269,6 +3269,7 @@ label.panel-label {
   color: #bdc3c7;
   cursor: pointer;
   background-color: #ecf0f1;
+  border-radius: 5px;
   -webkit-transition-property: background-color, color;
   transition-property: background-color, color;
   -webkit-transition-duration: 200ms;
@@ -3375,6 +3376,7 @@ label.panel-label:hover {
     max-height: 0;
     overflow-y: hidden;
     background-color: #444444;
+    border-radius: 5px;
     color: #ecf0f1;
     padding: 0px;
     -webkit-transition: max-height 200ms;
@@ -3383,7 +3385,6 @@ label.panel-label:hover {
     text-transform: uppercase;
     font-size: 12px;
     line-height: 22px;
-    letter-spacing: 1px;
 	max-width: 150px;
 	margin: 0 auto;
   }
@@ -3440,6 +3441,7 @@ label.panel-label:hover {
     color: #476ba8;
     background-color: #476ba8;
     color: white;
+    border-radius: 5px;
   }
 
   #panel-2-ctrl:checked ~ #tabs-list #li-for-panel-2 {
@@ -3451,6 +3453,7 @@ label.panel-label:hover {
     color: #476ba8;
     background-color: #476ba8;
     color: white;
+    border-radius: 5px;
   }
 
   #panel-3-ctrl:checked ~ #tabs-list #li-for-panel-3 {
@@ -3462,6 +3465,7 @@ label.panel-label:hover {
     color: #476ba8;
     background-color: #476ba8;
     color: white;
+    border-radius: 5px;
   }
 
   #panel-4-ctrl:checked ~ #tabs-list #li-for-panel-4 {
@@ -3473,6 +3477,7 @@ label.panel-label:hover {
     color: #476ba8;
     background-color: #476ba8;
     color: white;
+    border-radius: 5px;
   }
 
   #panel-5-ctrl:checked ~ #tabs-list #li-for-panel-5 {
@@ -3484,6 +3489,7 @@ label.panel-label:hover {
     color: #476ba8;
     background-color: #476ba8;
     color: white;
+    border-radius: 5px;
   }
 
   #panels .container {
@@ -3636,6 +3642,7 @@ label.panel-label:hover {
   ul#tabs-list li label.panel-label {
     position: relative;
     padding: 15px 0;
+    border-radius: 0;
   }
   ul#tabs-list li label.panel-label::after {
     content: "";
