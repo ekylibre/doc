@@ -773,8 +773,8 @@
             </p>
          </div>
       </div>
-      <p align="center" class="texte aerateur procedure">A – Procédure pour saisir une intervention de semis</p>
-      <p class="texte">Le processus suivant vous guide pour saisir une intervention de semis dans l'application.</p>
+      <p align="center" class="texte aerateur procedure">A – Procédure pour enregistrer une intervention</p>
+      <p class="texte">Le processus suivant vous guide pour saisir une intervention de semis dans l'application. À la fin de cette procédure, vous découvrirez également des informations complémentaires à propos de l'intervention de <a href="#pulverisation" class="avoid-clicks">pulvérisation</a>.</p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
       </div>
@@ -903,7 +903,7 @@
          </p>
          <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération ou sur <span class="btn-blue">Créer et saisir suivant</span> pour réaliser une nouvelle saisie.</p>
       </div>
-      <div class="info-fond aerateur-haut aerateur-bas">
+      <div class="info-fond aerateur-haut">
          <div class="floating-box-info">
             <img src="../images/commun/info.svg" width="100" alt="Info"/>
          </div>
@@ -915,7 +915,51 @@
             <br />La liste des interventions &#40;classées par statut&#41; est également automatiquement enrichie mais notez que si vous avez enregistré une intervention en fin d'année, elle ne sera pas visible dans cette liste l'année suivante.
          </div>
       </div>
-      <p class="texte">
+	  <h6>Guide de prise en main • Production • Pulvérisation</h6>
+      <a class="slice-import" id="pulverisation"></a>
+	  <div class="process-txt">
+		 <p class="titre-advice">Intervention de pulvérisation</p>
+         <p>L'enregistrement d'une intervention de pulvérisation &#40;classée dans les interventions de "Protection des cultures"&#41; suit le même processus que celle d'un semis avec la sélection des équipements appropriés et d'un ou plusieurs produits phytosanitaires.</p>
+		 <p>En fonction du système de production, vous êtes immédiatement prévenu&#40;e&#41; si le produit est applicable ou non sur la culture ou la parcelle sélectionnée avec les mentions <span class="statut-vert">&nbsp;Autorisé&nbsp;</span> ou <span class="statut-rouge">&nbsp;Non autorisé&nbsp;</span>.</p>
+		 <p>Pour chaque produit phytosanitaire, choisissez un usage dans la liste déroulante "Usage" pour afficher les informations disponibles en provenance d'E-Phy telles que la date d'autorisation, le délai de ré-entrée &#40;DRE&#41;, le délai avant récolte &#40;DAR&#41;, la dose maximale autorisée, le nombre maximal d'applications, les stades <span class="tooltip">BBCH<span class="tooltiptext tooltip-top">Voir glossaire</span></span> d'application et les zones non traitées &#40;ZNT aquatique, ZNT arthropodes et ZNT plantes&#41;.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre10/pulverisation1.png" class="contour-img" alt="Pulvérisation" data-action="zoom" />
+         </p>
+		 <p class="aerateur-haut"><strong>Dose autorisée</strong></p>
+		 <p>Dans le champ "Quantité", saisissez la dose du produit utilisé en sélectionnant l'unité adéquate dans la liste déroulante juste à sa droite. Après un contrôle automatique par l'application, un indicateur vous signale si&nbsp;:</p>
+		 <p><img src="../images/commun/statut-vert.svg" alt="Statut vert" height="20" class="align-icone icone-marge-droite">le dosage est inférieur à la dose maximale autorisée.</p>
+         <p><img src="../images/commun/statut-orange.svg" alt="Statut orange" height="20" class="align-icone icone-marge-droite">le dosage est égal à la dose maximale autorisée.</p>
+         <p><img src="../images/commun/statut-rouge.svg" alt="Statut rouge" height="20" class="align-icone icone-marge-droite">le dosage est supérieur à la dose maximale autorisée.</p>
+		 <p class="aerateur-haut"><strong>Nombre d'application&#40;s&#41;</strong></p>
+		 <p>En fonction de l'usage sélectionné, un indicateur vous signale si le nombre d'application&#40;s&#41;&nbsp;:</p>
+		 <p><img src="../images/commun/statut-vert.svg" alt="Statut vert" height="20" class="align-icone icone-marge-droite">est inférieur au maximal autorisé.</p>
+         <p><img src="../images/commun/statut-orange.svg" alt="Statut orange" height="20" class="align-icone icone-marge-droite">est égal au maximal autorisé.</p>
+         <p><img src="../images/commun/statut-rouge.svg" alt="Statut rouge" height="20" class="align-icone icone-marge-droite">est supérieur au maximal autorisé..</p>
+		 <p class="aerateur-haut"><strong>Mentions autorisées</strong></p>
+		 <p>Trois pictogrammes vous informent également des mentions autorisées &#40;leur signification est expliquée dans le <a href="../chapitre9#phyto" class="avoid-clicks">chapitre 9 - Stocks et tiers</a>&#41;&nbsp;:</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre10/pulverisation2.png" class="contour-img" alt="Mentions autorisées" data-action="zoom" />
+         </p>
+		 <p><img src="../images/chapitre9/mention_abeille.svg" alt="Utilisable en agriculture biologique" height="20" class="align-icone icone-marge-droite">Mention abeille.</p>
+		 <p><img src="../images/chapitre9/liste_bio.svg" alt="Utilisable en agriculture biologique" height="20" class="align-icone icone-marge-droite">Liste biocontrôle.</p>
+         <p><img src="../images/chapitre9/agrio_bio.svg" alt="Utilisable en agriculture biologique" height="20" class="align-icone icone-marge-droite">Utilisable en agriculture biologique.</p>
+		 <p class="aerateur-haut"><strong>Mélanges de produits phytosanitaires</strong></p>
+		 <p>Si 2 ou plusieurs produits phytosanitaires sont sélectionnés, l'application contrôle automatiquement si le mélange est autorisé ou non avec les mentions <span class="statut-vert">&nbsp;Autorisé&nbsp;</span> ou <span class="statut-rouge">&nbsp;Non autorisé&nbsp;</span>.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre10/pulverisation3.png" class="contour-img" alt="Mélange non autorisé" data-action="zoom" />
+         </p>
+		 <p class="aerateur-haut"><strong>Délai de ré-entrée &#40;DRE&#41;</strong></p>
+		 <p>Si vous souhaitez enregistrer une nouvelle intervention sans respecter le délai de ré-entrée, l'application vous le signale. En cas de mélange lors de l'intervention de pulvérisation, c'est le délai le plus long qui s'applique au calcul de la date de ré-entrée.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre10/pulverisation4.png" class="contour-img" alt="Délai de ré-entrée" data-action="zoom" />
+         </p>
+		 <p class="aerateur-haut"><strong>Délai avant récolte &#40;DAR&#41;</strong></p>
+		 <p>Si vous souhaitez enregistrer une intervention de récolte sans respecter le délai avant récolte, l'application vous le signale. En cas de mélange lors de l'intervention de pulvérisation, c'est le délai le plus long qui s'applique au calcul de la date de récolte.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre10/pulverisation5.png" class="contour-img" alt="Délai avant récolte" data-action="zoom" />
+         </p>
+      </div>
+      <p class="texte aerateur-top">
          Une fois la création de l'intervention terminée, l'application récapitule l'ensemble des informations saisies avec la possibilité de définir les coûts de main d'œuvre et d'utilisation des équipements s'ils n'ont pas encore été créés. Vous pouvez réaliser cette opération à ce moment-là et suivre la procédure suivante à partir de l'étape 3 ou bien modifier l'intervention en suivant l'ensemble des étapes.
       </p>
       <p class="texte">Notez que l'enregistrement d'une intervention définit automatiquement son statut par défaut sur "Terminée".</p>
