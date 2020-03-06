@@ -3232,6 +3232,16 @@ ul.breadcrumb li:last-child:hover a {
 
 /* Tabs for Notes de version */
 
+#years {
+	visibility: visible;
+}
+
+@media print {
+  #years {
+    visibility: hidden;
+  }
+}
+
 @media all and (max-width: 767px) {
   ul#tabs-list {
     list-style: none;
@@ -3256,6 +3266,12 @@ ul.breadcrumb li:last-child:hover a {
     font-weight: 700;
     font-size: 15px;
   }
+}
+
+@media print {
+  ul#tabs-list {
+  visibility: hidden;
+	}
 }
 
 label.panel-label {
