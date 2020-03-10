@@ -1,8 +1,8 @@
 <script src="../../javascripts/accordion.js"></script>
 <script>
-	$(window).bind('orientationchange', function (event) {
-    location.reload(true);
-});
+   $(window).bind('orientationchange', function (event) {
+      location.reload(true);
+   });
 </script>
 <div class="w3-content page-content scroll-spy-heading-breadcrumbs">
    <article class="post">
@@ -49,7 +49,8 @@
          	{dates: [new Date(2019, 11, 12), new Date(2019, 12, 22)], title: "Version 3.1", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
             {dates: [new Date(2019, 12, 23), new Date(2020, 1, 18)], title: "Version 3.3", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
          	{dates: [new Date(2020, 1, 19), new Date(2020, 1, 20)], title: "Version 3.5", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
-         	{dates: [new Date(2020, 1, 21), new Date(annee, mois, jour)], title: "Version 3.6", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
+         	{dates: [new Date(2020, 1, 21), new Date(2020, 2, 9)], title: "Version 3.6", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
+         {dates: [new Date(2020, 2, 10), new Date(annee, mois, jour)], title: "Version 3.7", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}}
          ];
          
          var sections = [
@@ -85,16 +86,16 @@
          class="panel-radios" type="checkbox" name="nav-checkbox">
       <ul id="tabs-list">
          <label id="open-nav-label" for="nav-ctrl"></label>
-		 <div id="years">
-         <li id="li-for-panel-1">
-            <label class="panel-label"
-               for="panel-1-ctrl">2020</label>
-         </li>
-         <li id="li-for-panel-2">
-            <label class="panel-label"
-               for="panel-2-ctrl">2019</label>
-         </li>
-		 </div>
+         <div id="years">
+            <li id="li-for-panel-1">
+               <label class="panel-label"
+                  for="panel-1-ctrl">2020</label>
+            </li>
+            <li id="li-for-panel-2">
+               <label class="panel-label"
+                  for="panel-2-ctrl">2019</label>
+            </li>
+         </div>
          <label id="close-nav-label" for="nav-ctrl">Replier le sélecteur</label>
       </ul>
       <article id="panels">
@@ -102,6 +103,84 @@
             <section id="panel-1">
                <main>
                   <div class="accordion-container marge">
+                     <div class="panel">
+                        <div class="heading">
+                           <div class="version">
+                              <h2>Note de version 3.7 du 10/03/2020</h2>
+                           </div>
+                           <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <div class="content">
+                           <div class="divTableNoteVersion">
+                              <div class="divTableBody">
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Comptabilité</strong><br /><br />
+                                       1 bug corrigé
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+                                          <li>Correction d'une anomalie qui empêchait, lors de la clôture, le passage en comptabilité des immobilisations mises en service sur un exercice comptable précédent, clôturé ou verrouillé.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Production</strong><br /><br />
+                                       4 améliorations et 1 bug corrigé
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+                                          <li>Il n'est désormais plus possible de changer de campagne dans le formulaire de modification d'une production&nbsp;;</li>
+                                          <li>Dans la saisie d'une intervention, le coût d'un intrant qui apparaissait dans la partie droite de la fenêtre principale a été mis à la ligne pour optimiser sa visibilité&nbsp;;</li>
+                                          <li>Alignement du champ "Quantité" avec tous les autres champs du formulaire de saisie d'une intervention&nbsp;;</li>
+                                          <!--
+                                             <li>Amélioration des conditions d'affichage des mentions "Autorisé" et "Non autorisé" pour les interventions de pulvérisation&nbsp;;</li>
+                                             -->
+                                          <li>La correspondance entre les productions d'E-Phy et celles d'Ekylibre est améliorée : en fonction de la culture sélectionnée, choisir l'usage d'un produit phytosanitaire est facilité grâce à un tri plus pertinent des propositions de la liste déroulante.</li>
+                                       </ul>
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+                                          <li>Modification du message affiché sur l'indicateur "Météo" lorsqu'il n'existe aucune zone cultivable enregistrée.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1"><img src="../images/notes-version/configuration.svg" alt="Configuration" width="60"></div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Configuration</strong><br /><br />
+                                       2 améliorations
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+                                          <li>Dans la liste des produits phytosanitaires et si le n<sup>o</sup> d'AMM est renseigné, ajout d'une colonne indiquant à l'utilisateur si le produit est actuellement autorisé ou non&nbsp;;</li>
+                                          <li>Lors de la création de nouvelles variantes, l'espèce "Abeille" n'est maintenant plus sélectionnée par défaut.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                      <div class="panel">
                         <div class="heading">
                            <div class="version">
@@ -1229,6 +1308,80 @@
             </section>
          </div>
       </article>
+      <div class="saut-page"></div>
+      <div class="heading-print marge aerateur-haut">
+         <h2>Note de version 3.7 du 10/03/2020</h2>
+      </div>
+      <div class="content-print marge">
+         <div class="divTableNoteVersion">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Comptabilité</strong><br /><br />
+                     1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>Correction d'une anomalie qui empêchait, lors de la clôture, le passage en comptabilité des immobilisations mises en service sur un exercice comptable précédent, clôturé ou verrouillé.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Production</strong><br /><br />
+                     4 améliorations et 1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>Il n'est désormais plus possible de changer de campagne dans le formulaire de modification d'une production&nbsp;;</li>
+                        <li>Dans la saisie d'une intervention, le coût d'un intrant qui apparaissait dans la partie droite de la fenêtre principale a été mis à la ligne pour optimiser sa visibilité&nbsp;;</li>
+                        <li>Alignement du champ "Quantité" avec tous les autres champs du formulaire de saisie d'une intervention&nbsp;;</li>
+                        <!--
+                           <li>Amélioration des conditions d'affichage des mentions "Autorisé" et "Non autorisé" pour les interventions de pulvérisation&nbsp;;</li>
+                           -->
+                        <li>La correspondance entre les productions d'E-Phy et celles d'Ekylibre est améliorée : en fonction de la culture sélectionnée, choisir l'usage d'un produit phytosanitaire est facilité grâce à un tri plus pertinent des propositions de la liste déroulante.</li>
+                     </ul>
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>Modification du message affiché sur l'indicateur "Météo" lorsqu'il n'existe aucune zone cultivable enregistrée.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1"><img src="../images/notes-version/configuration.svg" alt="Configuration" width="60"></div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Configuration</strong><br /><br />
+                     2 améliorations
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>Dans la liste des produits phytosanitaires et si le n<sup>o</sup> d'AMM est renseigné, ajout d'une colonne indiquant à l'utilisateur si le produit est actuellement autorisé ou non&nbsp;;</li>
+                        <li>Lors de la création de nouvelles variantes, l'espèce "Abeille" n'est maintenant plus sélectionnée par défaut.</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
       <div class="saut-page"></div>
       <div class="heading-print marge aerateur-haut">
          <h2>Note de version 3.6 du 21/02/2020</h2>
@@ -2405,5 +2558,5 @@
    <aside></aside>
 </div>
 <script>
-	var accordion = new Accordion('.accordion-container');
+   var accordion = new Accordion('.accordion-container');
 </script>
