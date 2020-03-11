@@ -219,7 +219,7 @@
                            <li><a href="../chapitre10#productions" target="_self">Création des productions dans une campagne</a></li>
                            <li><a href="../chapitre10#interventions" target="_self">Enregistrement et planification d'interventions</a></li>
                            <li><a href="../chapitre10#cahier" target="_self">Obtenir le cahier de traçabilité</a></li>
-                           <li><a href="../chapitre10#etiquettes" target="_self">Création des étiquettes</a></li>
+                           <li><a href="../chapitre10#etiquettes" target="_self">Utilisation des étiquettes</a></li>
                         </div>
                      </ul>
                   </li>
@@ -284,6 +284,14 @@
                </div>
                <div class="divTableCellListe">
                   Comment enregistrer une <a href="#interventions" class="avoid-clicks">intervention</a> sur une parcelle ou une partie de parcelle &#40;implantation de culture&#41;
+               </div>
+            </div>
+			<div class="divTableRow">
+               <div class="divTableCellListe">
+                  <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
+               </div>
+               <div class="divTableCellListe">
+                  Comment enregistrer une intervention de <a href="#pulverisation" class="avoid-clicks">pulvérisation</a> sur une culture ou une parcelle avec des produits phytosanitaires
                </div>
             </div>
             <div class="divTableRow">
@@ -932,6 +940,7 @@
             <img src="../images/chapitre10/pulverisation1.png" class="contour-img" alt="Produit retiré" data-action="zoom" />
          </p>
 		 <p class="aerateur-haut">Pour chaque produit phytosanitaire, choisissez un usage dans la liste déroulante "Usage" &#40;nécessite que le n<sup>o</sup> d'AMM ait été renseigné dans la fiche de la variante&#41; pour afficher les informations disponibles en provenance d'E-Phy telles que la date d'autorisation, le délai de ré-entrée &#40;DRE&#41;, le délai avant récolte &#40;DAR&#41;, la dose maximale autorisée, le nombre maximal d'applications, les stades <span class="tooltip">BBCH<span class="tooltiptext tooltip-top">Voir glossaire</span></span> d'application et les zones non traitées &#40;ZNT aquatique, ZNT arthropodes et ZNT plantes&#41;.</p>
+		 <p>Notez qu'en fonction de la culture sélectionnée, choisir l'usage d'un produit phytosanitaire est facilité grâce à un tri pertinent des propositions de la liste déroulante.</p>
          <p class="max-img-process">
             <img src="../images/chapitre10/pulverisation2.png" class="contour-img" alt="Pulvérisation" data-action="zoom" />
          </p>
@@ -970,19 +979,30 @@
             <img src="../images/chapitre10/pulverisation7.png" class="contour-img" alt="Mélange non autorisé" data-action="zoom" />
          </p>
 		 <p class="aerateur-haut"><strong>Délai de ré-entrée &#40;DRE&#41;</strong></p>
-		 <p>Si vous souhaitez enregistrer une nouvelle intervention sans respecter le délai de ré-entrée, l'application vous le signale. En cas de mélange lors de l'intervention de pulvérisation, c'est le délai le plus long qui s'applique au calcul de la date de ré-entrée.</p>
+		 <p>Si vous souhaitez enregistrer une nouvelle intervention sans respecter le délai de ré-entrée, l'application vous le signale en indiquant la date préconisée la plus proche. En cas de mélange lors de l'intervention de pulvérisation, c'est le délai le plus long qui s'applique au calcul de la date de ré-entrée.</p>
 		 <p class="max-img-process">
             <img src="../images/chapitre10/pulverisation8.png" class="contour-img" alt="Délai de ré-entrée" data-action="zoom" />
          </p>
 		 <p>Notez que ce délai peut être différent selon les usages en plein champ et les applications en milieu fermé. Il peut également concerner le bétail pour certains produits utilisés sur des prairies destinées au pâturage.</p>
 		 <p class="aerateur-haut"><strong>Délai avant récolte &#40;DAR&#41;</strong></p>
-		 <p>Si vous souhaitez enregistrer une intervention de récolte sans respecter le délai avant récolte, l'application vous le signale. En cas de mélange lors de l'intervention de pulvérisation, c'est le délai le plus long qui s'applique au calcul de la date de récolte.</p>
+		 <p>Si vous souhaitez enregistrer une intervention de récolte sans respecter le délai avant récolte, l'application vous le signale en indiquant la date préconisée la plus proche. En cas de mélange lors de l'intervention de pulvérisation, c'est le délai le plus long qui s'applique au calcul de la date de récolte.</p>
 		 <p class="max-img-process">
             <img src="../images/chapitre10/pulverisation9.png" class="contour-img" alt="Délai avant récolte" data-action="zoom" />
          </p>
       </div>
+	  <div class="warn-fond aerateur-haut aerateur-bas">
+         <div class="floating-box-warn">
+            <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
+         </div>
+         <div class="info-txt">
+            <span class="titre-advice">Attention à la réglementation<br /></span>
+            <p class="texte-advice">
+               Les interventions de pulvérisation sont toutes consignées dans un <a href="../chapitre12#phyto" class="avoid-clicks">registre phytosanitaire</a> dont la tenue est obligatoire. L'application de produits retirés ou dont l'usage a été retiré sur certaines cultures, de mélanges non autorisés ainsi que le non-respect des ZNT aquatiques demeure de la responsabilité de l'exploitant en cas de contrôle.
+            </p>
+         </div>
+      </div>
       <p class="texte aerateur-top">
-         Une fois la création de l'intervention terminée, l'application récapitule l'ensemble des informations saisies avec la possibilité de définir les coûts de main d'œuvre et d'utilisation des équipements s'ils n'ont pas encore été créés. Vous pouvez réaliser cette opération à ce moment-là et suivre la procédure suivante à partir de l'étape 3 ou bien modifier l'intervention en suivant l'ensemble des étapes.
+         Une fois la création de l'intervention terminée, l'application récapitule l'ensemble des informations saisies avec la possibilité de définir les coûts de main d'œuvre et d'utilisation des équipements s'ils n'ont pas encore été créés dans un catalogue de prix. Vous pouvez réaliser cette opération à ce moment-là et suivre la procédure suivante à partir de l'étape 3 ou bien modifier l'intervention en suivant l'ensemble des étapes.
       </p>
       <p class="texte">Notez que l'enregistrement d'une intervention définit automatiquement son statut par défaut sur "Terminée".</p>
 	  <div class="info-fond aerateur-haut">
@@ -992,7 +1012,7 @@
          <div class="info-txt">
             <span class="titre-advice">Note pour les utilisateurs de smartphone ou de tablette sous Android</span>
             <br />
-            <p class="texte-advice">Téléchargez l'application mobile <a href="https://play.google.com/store/apps/details?id=ekylibre.zero&gl=FR" title="Zero" target="_blank">Zero</a> &#40;gratuit&#41;.</p><p align="center"><a href="https://play.google.com/store/apps/details?id=ekylibre.zero&gl=FR" title="Zero" target="_blank"><img src="../images/chapitre10/google-play-badge-fr.png" width="130" alt="Play Store"/></a></p> Zero permet de saisir, en mode déconnecté, avec ou sans enregistrement des temps de travaux détaillés, toutes les interventions disponibles dans Ekylibre.
+            <p class="texte-advice">Téléchargez l'application mobile <a href="https://play.google.com/store/apps/details?id=ekylibre.zero&gl=FR" title="Zero" target="_blank">Zero</a> &#40;gratuit&#41; sur le magasin Google Play.</p><p align="center"><a href="https://play.google.com/store/apps/details?id=ekylibre.zero&gl=FR" title="Zero" target="_blank"><img src="../images/chapitre10/google-play-badge-fr.png" width="130" alt="Play Store"/></a></p> Zero permet de saisir, en mode déconnecté, avec ou sans enregistrement des temps de travaux détaillés, toutes les interventions disponibles dans Ekylibre.
          </div>
       </div>
       <h6>Guide de prise en main • Production • Coût équipement</h6>
@@ -1709,7 +1729,9 @@
             <img src="../images/chapitre10/etiquettes5.png" class="contour-img" alt="Étiquette affichée dans la fiche d'une intervention">
          </p>
       </div>
+	  <div class="pdf">
       <p class="texte aerateur-haut">Passez au <a class="avoid-clicks" href="../chapitre11">chapitre suivant</a> de ce guide.</p>
+	  </div>
       <div class="navishort aerateur-haut">
          <div class="divTable">
             <div class="divTableBody">
