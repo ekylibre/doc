@@ -741,16 +741,20 @@ video {
 	}
 	.main-menu {
 		left: 50%;
-		margin-left: -314px;
-		width: 150px;
-		height: 65px;
+		margin-left: -330px;
+		width: 118px;
+		height: 45px;
 		position: fixed;
-		top: 0;
+		top: 10px;
 		z-index:999;
 		color:#fff;
 		text-transform: uppercase;
+		white-space: no-wrap;
 		font-size: 14px;
-		padding-top: 10px;
+		padding-left: 16px;
+	}
+	.main-menu:hover {
+		cursor: pointer;
 	}
 	.max-img-inline {
 		max-width: 646px;
