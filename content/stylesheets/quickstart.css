@@ -298,6 +298,10 @@ video {
 	z-index:1;
 }
 
+.main-menu {
+		display: none;
+}
+
 .max-img-inline {
 	max-width: 100%;
 }
@@ -495,6 +499,9 @@ video {
 		height: 65px;
 		position: fixed;
 		top: 0;
+	}
+	.main-menu {
+		display: none;
 	}
 	.max-img-inline {
 		max-width: 100%;
@@ -740,6 +747,10 @@ video {
 		z-index:1;
 	}
 	.main-menu {
+		display: none;
+	}
+	.main-menu {
+		display: block;
 		left: 50%;
 		margin-left: -330px;
 		width: 118px;
