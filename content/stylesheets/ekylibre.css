@@ -3106,6 +3106,21 @@ span.the-btn {
 	cursor: pointer;
 }
 
+.rond-ekyviti {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #662d91;
+	margin-right: 8px;
+	line-height: 31px;
+	text-align: center;
+	float: left;
+	color: #fff;
+	font-size: 20px;
+	margin-top: 3px;
+	cursor: pointer;
+}
+
 .bloc {
 	padding-right: 20px;
 	margin-left: 10px;
