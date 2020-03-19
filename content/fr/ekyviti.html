@@ -277,7 +277,10 @@
                      </div>
                      <ul style="display: block;">
                         <div class="bloc">
-                           <li><a href="#" target="_self">Parcellaire</a></li>
+                           <li><a href="#" target="_self">Préparation des données</a></li>
+						   <li><a href="#" target="_self">Import des données du parcellaire cadastral</a></li>
+						   <li><a href="#" target="_self">Conversion du parcellaire cadastral en cultural</a></li>
+						   <li><a href="#" target="_self">Modification du parcellaire cultural</a></li>
                         </div>
                      </ul>
                   </li>
@@ -296,24 +299,74 @@
          </p>
       </div>
       </div>
-      <a class="slice-process" id="prerequis"></a>
-      <h2 class="texte aerateur">a - Ce dont il faut disposer pour démarrer</h2>
+	  <h2 class="texte aerateur">Glossaire du chapitre</h2>
+      <div class="divTableGlossaire marge aerateur-bas">
+         <div class="divTableBody">
+            <div class="divTableRow">
+               <div class="divTableCellGlossaire1" style="width: auto">
+                  CSV
+               </div>
+               <div class="divTableCellGlossaire2" style="width: 100%">
+                  un fichier CSV est un fichier texte où chaque ligne du texte correspond à une ligne d'un tableau et les virgules &#40;ou les points-virgules&#41; correspondent aux séparations entre les colonnes. Sauf pour les imports provenant d'Exacompta, le séparateur utilisé pour les fichiers importés est la virgule
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellGlossaire1">
+                  CVI
+               </div>
+               <div class="divTableCellGlossaire2" style="width: 100%">
+                  le casier viticole informatisé est un outil que les États membres de l'Union européenne doivent tenir obligatoirement. Il contient notamment toutes les informations relatives aux entreprises viti-vinicoles, aux parcelles plantées ou arrachées, les niveaux de production et de stock
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellGlossaire1" style="width: auto">
+                  UTF-8
+               </div>
+               <div class="divTableCellGlossaire2" style="width: 100%">
+                  &#40;abréviation de l’anglais Universal Character Set Transformation Format - 8 bits&#41; est un codage de caractères informatiques conçu pour coder l’ensemble des caractères du «&nbsp;répertoire universel de caractères codés&nbsp;»
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellGlossaire1" style="width: auto">
+                  XML
+               </div>
+               <div class="divTableCellGlossaire2" style="width: 100%">
+                  &#40;Extensible Markup Language&#41; est un langage de balisage permettant de faciliter l'échange d'informations sur internet 
+               </div>
+            </div>
+         </div>
+      </div>
+	  <h6>Guide de prise en main • Outils • Préparation des fichiers CSV</h6>
+      <a class="slice-process" id="fichiers"></a>
+      <h2 class="texte aerateur">a - Préparation des données</h2>
+	  <p class="texte">
+         Pour démarrer et utiliser le module Ekyviti de façon optimale, l'import des données du <span class="tooltip">CVI<span class="tooltiptext tooltip-top">Voir glossaire</span></span> dans Ekyviti nécessite la création d'un fichier &#40;un tableau sous forme de feuille de calcul&#41; au format <span class="tooltip">CSV<span class="tooltiptext tooltip-top">Voir glossaire</span></span> avec les informations propres à votre exploitation.
+      </p>
+	  <p class="texte">
+         Ce tableau doit être architecturé selon une structure qui doit strictement respecter les préconisations édictées ci-après.
+      </p>
+      <p class="texte">
+         Lors de l'enregistrement des fichiers CSV, veillez à ce que l'encodage sélectionné soit bien défini sur UTF-8 et que le séparateur des colonnes de la feuille de calcul soit la virgule. Prenez également soin de vérifier que le fichier ne comporte pas de caractères spéciaux.
+      </p>
+      <p class="texte" style="text-align: center"><img src="../images/chapitre12/import-csv.png" alt="Tableau imports" class="contour-img"></p>
+      <p align="center" class="texte legende">
+         Ouverture d'un fichier CSV avec «&nbsp;LibreOffice&nbsp;»
+      </p>
+	  <div class="warn-fond aerateur-haut aerateur-bas">
+         <div class="floating-box-warn">
+            <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
+         </div>
+         <div class="info-txt">
+            <span class="titre-advice">Attention aux caractères spéciaux<br /></span>
+            <p class="texte-advice">
+               Veillez à ce que les différentes cellules de votre tableau ne comporte aucune virgule qui pourrait être interprétée comme un séparateur et rendrait les données inutilisables ou provoquerait une erreur lors de l'import. Pour vous en assurer, vous pouvez effectuer une recherche du caractère "," dans le tableur.
+            </p>
+         </div>
+      </div>
+      <a class="slice-process" id="import"></a>
+      <h2 class="texte aerateur">b - Import des données du parcellaire cadastral</h2>
       <p class="texte">L’application Ekylibre s’adresse à tous types d’exploitations quelle que soit leur taille et leur activité.</p>
-      <p class="texte">Application multi-utilisateur, Ekylibre  vous permettra de gérer simultanément votre exploitation depuis un ordinateur ou plusieurs ordinateurs, tablettes ou smartphones.</p>
-      <p align="center" class="aerateur-haut aerateur-bas texte"><img src="../images/chapitre1/screens.png" alt="Ordinateur, tablette, smartphone" width="300" /></p>
-      <p class="texte">Ekylibre est une application web, accessible par une connexion internet filaire, Wi‑Fi ou 3G/4G, via un logiciel de navigation web récent tel que Mozilla Firefox, Google Chrome, Safari, Edge…<br />Vous devez aussi avoir une adresse email valide et le moyen de la consulter pour vous inscrire.
-      </p>
-      <p align="center"><img src="../images/chapitre1/connexion.png" alt="Connexion" class="aerateur-haut"></p>
-      <p class="legende texte" align="center">Une connexion internet filaire, Wi‑Fi ou 3G/4G</p>
-      <p align="center"><img src="../images/chapitre1/navigateurs.png" alt="icone-marge-droites" class="aerateur-haut"></p>
-      <p class="legende texte" align="center">Un navigateur web récent</p>
-      <p align="center"><img src="../images/chapitre1/mail.png" alt="Boite mail" class="aerateur-haut"></p>
-      <p class="legende texte" align="center">Une adresse email&nbsp;:<br />
-         un compte Gmail ou Orange…
-      </p>
-      <p class="aerateur-haut texte" align="center">et si vous désirez centraliser tous vos justificatifs &#40;chèques, factures, etc.&#41;&nbsp;:</p>
-      <p align="center"><img src="../images/chapitre1/scanner.png" alt="Scanner" class="aerateur-haut"></p>
-      <p class="legende texte" align="center">Un scanner</p>
+      
       <div class="navishort aerateur-haut">
          <div class="divTable">
             <div class="divTableBody">
