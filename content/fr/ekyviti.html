@@ -278,8 +278,8 @@
                      </div>
                      <ul style="display: block;">
                         <div class="bloc">
-                           <li><a href="#cvi" target="_self">Préparation et importation des données du CVI</a></li>
-                           <li><a href="#parcellaire" target="_self">Gestion et modification du parcellaire</a></li>
+                           <li><a href="#cvi" target="_self">Préparation et import des données cadastrales du CVI</a></li>
+                           <li><a href="#parcellaire" target="_self">Gestion et modification du parcellaire cultural</a></li>
                         </div>
                      </ul>
                   </li>
@@ -337,19 +337,27 @@
       </div>
       <a class="slice-process" id="cvi"></a>
       <h6>Guide de prise en main • Ekyviti • Préparation des fichiers CSV</h6>
-      <h2 class="texte aerateur">a - Préparation et intégration des données du CVI</h2>
-      <p align="center" class="texte aerateur procedure">A – Préparation des données du CVI</p>
-      <p class="texte">
-         Pour bien démarrer et commencer à utiliser le module Ekyviti de façon optimale, l'import des données du <span class="tooltip">CVI<span class="tooltiptext tooltip-top">Voir glossaire</span></span> dans Ekyviti nécessite la création d'un fichier au format <span class="tooltip">CSV<span class="tooltiptext tooltip-top">Voir glossaire</span></span> &#40;un tableau sous la forme d'une feuille de calcul&#41; avec les informations propres à votre exploitation.
-      </p>
-      <p class="texte">Ce tableau peut être créé à l'aide d'un tableur comme par exemple <a href="https://www.openoffice.org/fr/" target="_blank">Apache OpenOffice</a> ou <a href="https://fr.libreoffice.org/" target="_blank">LibreOffice</a> et doit être architecturé selon une structure respectant strictement les préconisations édictées ci-après. Vous pouvez également télécharger un modèle de document via le lien ci-dessous. Ce tableau devra alors être personnalisé avec les données de votre exploitation.</p>
+      <h2 class="texte aerateur">a - Préparation et import des données cadastrales du CVI</h2>
+      <p align="center" class="texte aerateur procedure">1 – Préparation des données cadastrales du CVI</p>
+	  <div class="info-fond aerateur-haut aerateur-bas">
+      <div class="floating-box-info">
+         <img src="../images/commun/info.svg" width="100" alt="Info"/>
+      </div>
+      <div class="info-txt">
+         <span class="titre-advice">Paramétrage des données parcellaires<br /></span>
+         <p class="texte-advice">
+			Pour pouvoir paramétrer votre parcellaire cultural à partir des informations cadastrales du <span class="tooltip">CVI<span class="tooltiptext tooltip-top">Voir glossaire</span></span>, il est nécessaire d'adapter les données de votre exploitation pour les rendre compatibles avec le système de gestion parcellaire d'Ekylibre. Cette opération peut paraître fastidieuse au premier abord car elle est aujourd'hui basée sur l'intégration d'un fichier au format <span class="tooltip">CSV<span class="tooltiptext tooltip-top">Voir glossaire</span></span> &#40;un tableau sous la forme d'une feuille de calcul&#41;. Elle évoluera et sera simplifiée dans une future version d'Ekyviti avec la prise en charge des fichiers <span class="tooltip">PDF<span class="tooltiptext tooltip-top">Voir glossaire</span></span> délivrés par le CVI. Notez que cette phase de préparation des données ne doit être réalisée qu'<strong>une seule fois</strong> pour bien démarrer.
+         </p>
+      </div>
+      </div>
+      <p class="texte">Ce tableau peut être créé à l'aide d'un tableur comme par exemple Microsoft Excel, <a href="https://www.openoffice.org/fr/" target="_blank">Apache OpenOffice</a> ou <a href="https://fr.libreoffice.org/" target="_blank">LibreOffice</a> et doit être architecturé selon une structure respectant strictement les préconisations édictées ci-après. Vous pouvez également télécharger un modèle de document via le lien ci-dessous. Ce tableau devra alors être personnalisé avec les données de votre exploitation.</p>
       <div class="cadre-dl">
          <a href="../imports/fichier_modele_cvi.csv" target="_blank">
             <p class="aerateur-bas download" align="center"><img src="../images/ekyviti/download.svg" alt="Télécharger" height="20" class="align-icone icone-marge-droite">Télécharger un document modèle au format CSV</p>
          </a>
       </div>
       <p class="texte">
-         Lors de l'ouverture de ce fichier CSV, veillez à ce que l'encodage sélectionné soit bien défini sur UTF-8 et que le séparateur des colonnes de la feuille de calcul soit la virgule.
+         Lors de l'ouverture de ce fichier CSV, veillez à ce que l'encodage sélectionné soit bien défini sur <span class="tooltip">UTF-8<span class="tooltiptext tooltip-top">Voir glossaire</span></span> et que le séparateur des colonnes de la feuille de calcul soit la virgule.
       </p>
       <p class="texte" style="text-align: center"><img src="../images/ekyviti/import-csv.png" alt="Tableau import" class="contour-img"></p>
       <p align="center" class="texte legende">
@@ -365,8 +373,8 @@
 	  <p align="center" class="texte legende">
          Modèle de fichier CSV
       </p>
-      <p class="texte">Procédez à la saisie de vos informations du parcellaire cadastral telles qu'elles apparaissent dans le doument <span class="tooltip">PDF<span class="tooltiptext tooltip-top">Voir glossaire</span></span> fourni par le CVI.</p>
-      <p class="texte"><strong>En complément et en fonction des données fournies dans le document PDF du CVI, Prenez bien soin de renseigner&nbsp;:</strong></p>
+      <p class="texte">Procédez à la saisie de vos informations de parcellaire cadastral telles qu'elles ont été consignées et listées dans le document <span class="tooltip">PDF<span class="tooltiptext tooltip-top">Voir glossaire</span></span> délivré par le CVI.</p>
+      <p class="texte"><strong>En complément et en fonction de ces données, prenez également soin de renseigner&nbsp;:</strong></p>
       <div class="divTableListe marge">
          <div class="divTableBody">
             <div class="divTableRow">
@@ -418,8 +426,8 @@
       <p class="texte" style="text-align: center"><img src="../images/ekyviti/export-csv.png" alt="Tableau export" class="contour-img"></p>
       <p class="texte">Notez que l'interface pour enregistrer le fichier peut différer de celle présentée ci-dessus en fonction du système d'exploitation installé sur votre ordinateur.</p>
       <a class="slice-process" id="import"></a>
-      <h6>Guide de prise en main • Ekyviti • Importation des données du CSV</h6>
-      <p align="center" class="texte aerateur procedure">B – Importation des données du CVI</p>
+      <h6>Guide de prise en main • Ekyviti • Import des données du CVI</h6>
+      <p align="center" class="texte aerateur procedure">2 – Import des données cadastrales du CVI</p>
       <p class="texte">Maintenant que le fichier CSV est créé, vous pouvez intégrer les données cadastrales du casier viticole informatisé dans Ekyviti.</p>
 	  <p class="texte">Le processus suivant vous guide pour importer les données du CVI via un fichier CSV.</p>
       <div class="floating-box process">
@@ -435,7 +443,7 @@
          <p class="max-img-process">
             <img src="../images/ekyviti/import-csv1.png" class="contour-img" alt="Liste des imports" data-action="zoom" />
          </p>
-         <p>Tous les "Imports" déjà réalisés sont listés, notamment ceux issus, le cas échéant, de l'intégration des données TelePAC dans l'Assistant de démarrage.</p>
+         <p>Tous les "Imports" déjà réalisés sont listés, notamment ceux issus de l'intégration des données TelePAC, ainsi que les zones cultivables et les bâtiments définis dans l'Assistant de démarrage.</p>
       </div>
       <br />
       <div class="floating-box process">
@@ -506,7 +514,7 @@
       </div>
 	  <h6>Guide de prise en main • Ekyviti • Gestion parcellaire</h6>
       <a class="slice-process" id="parcellaire"></a>
-      <h2 class="texte aerateur">b - Gestion et modification du parcellaire</h2>
+      <h2 class="texte aerateur">b - Gestion et modification du parcellaire cultural</h2>
       <div class="navishort aerateur-haut">
          <div class="divTable">
             <div class="divTableBody">
