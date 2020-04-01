@@ -107,7 +107,8 @@
                         <div class="bloc">
                            <li><a href="../chapitre5#espace" target="_self">Présentation de l'espace de travail</a></li>
                            <li><a href="../chapitre5#modules" target="_self">Présentation des différents modules</a></li>
-						   <li><a href="../chapitre5#perso" target="_self">Personnalisation des tableaux de bord</a></li>
+                           <li><a href="../chapitre5#perso" target="_self">Personnalisation des tableaux de bord</a></li>
+                           <li><a href="../chapitre5#champs" target="_self">Création de champs personnalisés</a></li>
                         </div>
                      </ul>
                   </li>
@@ -125,14 +126,14 @@
                         <div class="bloc">
                            <li><a href="../chapitre6#introduction" target="_self">Introduction</a></li>
                            <li><a href="../chapitre6#societe" target="_self">Paramétrage</a></li>
-						   <li><a href="../chapitre6#journaux" target="_self">Journaux</a></li>
+                           <li><a href="../chapitre6#journaux" target="_self">Journaux</a></li>
                            <li><a href="../chapitre6#exercice" target="_self">Exercices comptables</a></li>
                            <li><a href="../chapitre6#plan" target="_self">Plan de comptes</a></li>
                            <li><a href="../chapitre6#tva" target="_self">Taux et déclaration de TVA</a></li>
                            <li><a href="../chapitre6#tresorerie" target="_self">Trésorerie</a></li>
-						   <li><a href="../chapitre6#immobilisations" target="_self">Immobilisations</a></li>
+                           <li><a href="../chapitre6#immobilisations" target="_self">Immobilisations</a></li>
                            <li><a href="../chapitre6#echanges" target="_self">Échanges comptables</a></li>
-						   <li><a href="../chapitre6#balance" target="_self">Balance</a></li>
+                           <li><a href="../chapitre6#balance" target="_self">Balance</a></li>
                            <li><a href="../chapitre6#grand-livre" target="_self">Grand-livre</a></li>
                         </div>
                      </ul>
@@ -275,7 +276,7 @@
                   <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
                </div>
                <div class="divTableCellListe" style="width: auto">
-                  Comment aborder la présentation de <a href="#espace" class="avoid-clicks">l’espace de travail</a>
+                  Comment aborder la présentation de <a href="#espace" class="avoid-clicks">l’espace de travail</a> d'Ekylibre &#40;fenêtre principale, menus, etc.&#41;
                </div>
             </div>
             <div class="divTableRow">
@@ -283,10 +284,10 @@
                   <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
                </div>
                <div class="divTableCellListe">
-                  Comment accéder aux différentes <a href="#modules" class="avoid-clicks">fonctionnalités</a> de l'application
+                  Comment accéder aux différentes <a href="#modules" class="avoid-clicks">fonctionnalités et modules</a> de l'application
                </div>
             </div>
-			<div class="divTableRow">
+            <div class="divTableRow">
                <div class="divTableCellListe">
                   <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
                </div>
@@ -294,12 +295,21 @@
                   Comment personnaliser les <a href="#perso" class="avoid-clicks">tableaux de bord</a> de la page d'accueil et de chaque module
                </div>
             </div>
+			<div class="divTableRow">
+               <div class="divTableCellListe">
+                  <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
+               </div>
+               <div class="divTableCellListe">
+                  Comment créer des <a href="#champs" class="avoid-clicks">champs personnalisés</a> pour enregistrer des informations complémentaires
+               </div>
+            </div>
          </div>
       </div>
+	  <div class="saut-page"></div>
       <h2 class="texte aerateur">Glossaire du chapitre</h2>
       <div class="divTableGlossaire marge">
          <div class="divTableBody">
-			<div class="divTableRow">
+            <div class="divTableRow">
                <div class="divTableCellGlossaire1">
                   CSV
                </div>
@@ -397,7 +407,6 @@
          </div>
       </div>
       <p class="texte">Notez que dans le "Menu principal", le bouton "Accueil"<img src="../images/chapitre5/home.svg" alt="Bouton accueil" height="20" class="align-icone icone-marge-gauche icone-marge-droite">permet de revenir à la page d'accueil de votre ferme Ekylibre depuis n'importe où dans l'application.</p>
-      <div class="saut-page"></div>
       <div class="warn-fond aerateur-haut aerateur-bas">
          <div class="floating-box-warn">
             <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
@@ -448,7 +457,7 @@
          </div>
       </div>
       <p class="texte">En complément, deux boutons sont à votre disposition en haut à droite de chaque tableau de bord&nbsp;:</p>
-	  <p class="texte"><img src="../images/chapitre5/config1.png" class="contour-img" alt="Configuer" data-action="zoom" /></p>
+      <p class="texte"><img src="../images/chapitre5/config1.png" class="contour-img" alt="Configuer" data-action="zoom" /></p>
       <p class="texte">Le bouton<img src="../images/chapitre5/configurer.svg" alt="Configurer" height="30" class="bouton"></p>
       <p class="texte">Il permet de personnaliser le tableau de bord général ou celui de chaque module grâce à l'ajout et/ou à la suppression d'indicateurs que vous pouvez également disposer à votre guise les uns par rapport aux autres. Son utilisation est expliquée dans la <a href="#perso" class="avoid-clicks">section c</a> de ce chapitre.</p>
       <p class="texte">Le bouton "Agrandissement"<img src="../images/chapitre5/arrows-alt.svg" alt="Agrandissement" height="30" class="bouton"></p>
@@ -457,36 +466,36 @@
       <p class="texte">Sur la plupart des tableaux, en mode d'affichage "Liste", il permet de personnaliser la présentation des données &#40;affichage/masquage des colonnes, nombre de lignes par page&#41; et de réaliser des exports aux formats ODF et CSV&nbsp;:</p>
       <p class="texte"><img src="../images/chapitre5/custom1.png" class="contour-img" alt="Personnalisation tableau" data-action="zoom" /></p>
       <p class="texte"><img src="../images/chapitre5/custom2.png" class="contour-img" alt="Personnalisation tableau" data-action="zoom" /></p>
-	  <p class="aerateur-haut"><span class="titre-advice texte">Notifications</span></p>
-	  <p class="texte">Le standard «&nbsp;Web Push&nbsp;» permet aux sites web d’envoyer des notifications à leurs utilisateurs sous forme de nouveaux messages ou de contenu mis à jour. Tant que le navigateur utilisé est ouvert, les sites web qui ont obtenu une permission peuvent envoyer des notifications à votre navigateur et les afficher à l’écran. Les utilisateurs peuvent facilement autoriser ou désactiver les notifications et contrôler la façon dont ces notifications apparaîtront. Activez ou non les notifications Ekylibre une fois arrivé&#40;e&#41; dans l'application.</p>
-	  <p class="texte"><img src="../images/chapitre5/notif-navigateur1.png" class="contour-img" alt="Notifications navigateur" data-action="zoom" /></p>
-	  <p class="texte">Exemple de notification&nbsp;:</p>
-	  <p class="texte"><img src="../images/chapitre5/notif-navigateur2.png" class="contour-img" alt="Notifications navigateur" data-action="zoom" /></p>
-	  <p class="texte aerateur-haut">En parallèle, Ekylibre dispose de son propre système de notification. Il consigne, dans l'ordre chronologique, l'ensemble des opérations internes réalisées par l'application. Il permet également de consulter l'historique complet de ces opérations en indiquant depuis combien de temps elles ont été effectuées.</p>
+      <p class="aerateur-haut"><span class="titre-advice texte">Notifications</span></p>
+      <p class="texte">Le standard «&nbsp;Web Push&nbsp;» permet aux sites web d’envoyer des notifications à leurs utilisateurs sous forme de nouveaux messages ou de contenu mis à jour. Tant que le navigateur utilisé est ouvert, les sites web qui ont obtenu une permission peuvent envoyer des notifications à votre navigateur et les afficher à l’écran. Les utilisateurs peuvent facilement autoriser ou désactiver les notifications et contrôler la façon dont ces notifications apparaîtront. Activez ou non les notifications Ekylibre une fois arrivé&#40;e&#41; dans l'application.</p>
+      <p class="texte"><img src="../images/chapitre5/notif-navigateur1.png" class="contour-img" alt="Notifications navigateur" data-action="zoom" /></p>
+      <p class="texte">Exemple de notification&nbsp;:</p>
+      <p class="texte"><img src="../images/chapitre5/notif-navigateur2.png" class="contour-img" alt="Notifications navigateur" data-action="zoom" /></p>
+      <p class="texte aerateur-haut">En parallèle, Ekylibre dispose de son propre système de notification. Il consigne, dans l'ordre chronologique, l'ensemble des opérations internes réalisées par l'application. Il permet également de consulter l'historique complet de ces opérations en indiquant depuis combien de temps elles ont été effectuées.</p>
       <p class="texte">Les notifications vous informent notamment de l'échec ou de la réussite d'une opération interne comme par exemple l'import de données, la génération d'un document ou la clôture d'un exercice comptable.<br />La cloche<img src="../images/chapitre5/bell-o-blue.svg" alt="cloche bleue" height="20" class="align-icone icone-marge-gauche icone-marge-droite">située dans le "Menu utilisateur" est alors adjointe d'une pastille de couleur rouge<img src="../images/commun/marker.svg" alt="Notification" height="20" class="align-icone icone-marge-gauche icone-marge-droite">avec le nombre de notifications non lues générées par l'application.</p>
       <p align="center" class="texte"><img src="../images/chapitre5/schema-cloche.svg" alt="Schéma notification" height="30" class="bouton"></p>
-	  <p class="texte">Cliquez sur la cloche pour afficher la ou les nouvelle&#40;s&#41; notification&#40;s&#41; sous le "Menu utilisateur".</p>
-	  <p class="texte"><img src="../images/chapitre5/notification1.png" class="contour-img" alt="Notification" data-action="zoom" /></p>
-	  <p class="texte">Notez qu'en cliquant sur la cloche, seules les notifications dont vous êtes à l'origine sont listées, alors qu'en sélectionnant "Gérer les notifications", les notifications générées par tous les utilisateurs &#40;d'autres personnes ayant accès à votre ferme, voir le <a href="../chapitre11" class="avoid-clicks" target="_self">chapitre 11 - Accès</a>&#41; sont affichées.</p>
+      <p class="texte">Cliquez sur la cloche pour afficher la ou les nouvelle&#40;s&#41; notification&#40;s&#41; sous le "Menu utilisateur".</p>
+      <p class="texte"><img src="../images/chapitre5/notification1.png" class="contour-img" alt="Notification" data-action="zoom" /></p>
+      <p class="texte">Notez qu'en cliquant sur la cloche, seules les notifications dont vous êtes à l'origine sont listées, alors qu'en sélectionnant "Gérer les notifications", les notifications générées par tous les utilisateurs &#40;d'autres personnes ayant accès à votre ferme, voir le <a href="../chapitre11" class="avoid-clicks" target="_self">chapitre 11 - Accès</a>&#41; sont affichées.</p>
       <p class="texte"><img src="../images/chapitre5/notification2.png" class="contour-img" alt="Notification" data-action="zoom" /></p>
-	  <p class="texte">Cliquez sur le lien "Gérer les notifications" pour afficher toutes les notifications conservées dans votre ferme.</p>
+      <p class="texte">Cliquez sur le lien "Gérer les notifications" pour afficher toutes les notifications conservées dans votre ferme.</p>
       <p class="texte"><img src="../images/chapitre5/notification3.png" class="contour-img" alt="Notification" data-action="zoom" /></p>
-	  <p class="texte">La présence du symbole<img src="../images/chapitre5/check-all.svg" alt="Double check" height="15" class="icone-marge-gauche icone-marge-droite">devant le message signale la lecture ou non de celui-ci.</p>
+      <p class="texte">La présence du symbole<img src="../images/chapitre5/check-all.svg" alt="Double check" height="15" class="icone-marge-gauche icone-marge-droite">devant le message signale la lecture ou non de celui-ci.</p>
       <p class="texte">Chaque message est assorti d'un indicateur en couleur selon sa nature. Dans certains cas, le message est un lien pour accéder directement à un document ou à un module en rapport avec l'opération réalisée.</p>
       <p class="texte"><img src="../images/chapitre5/check-circle.svg" alt="Statut vert" height="20" class="align-icone icone-marge-droite">signale une opération réussie.</p>
       <p class="texte"><img src="../images/chapitre5/info-circle.svg" alt="Statut orange" height="20" class="align-icone icone-marge-droite">signale une information.</p>
       <p class="texte"><img src="../images/chapitre5/exclamation-circle.svg" alt="Statut rouge" height="20" class="align-icone icone-marge-droite">signale un avertissement.</p>
       <p class="texte"><img src="../images/chapitre5/close-circle.svg" alt="Statut rouge" height="20" class="align-icone icone-marge-droite">signale une opération en échec.</p>
       <p class="texte">Une fois que vous avez pris connaissance du ou des message&#40;s&#41;, validez la lecture en cliquant sur le bouton&nbsp;:</p>
-	  <p class="texte" align="center"><img src="../images/chapitre5/marquer.svg" alt="Tout marquer comme lu" height="30"></p>
-	  <p class="texte">Le symbole<img src="../images/chapitre5/check-all.svg" alt="Double check" height="15" class="icone-marge-gauche icone-marge-droite">devant chaque message disparaît ainsi que la pastille rouge à droite de la cloche jusqu'à la génération d'une nouvelle notification.</p>
-	  <p class="aerateur-haut"><span class="titre-advice texte">Messages</span></p>
-	  <p class="texte">Affichés dans la fenêtre principale et complémentaires des notifications, certains messages vous informeront de l'avancée de certaines tâches, vous préviendront soit d'une erreur interne, soit d'une mauvaise manipulation ou vous avertiront d'un prérequis.</p>
-	  <p class="texte">Cliquez sur le symbole<img src="../images/commun/times2.svg" alt="Supprimer" height="15" class="icone-marge-gauche icone-marge-droite">à droite du message pour le supprimer le cas échéant.</p>
-	  <p class="texte"><img src="../images/chapitre5/message1.png" class="contour-img" alt="Message" data-action="zoom" /></p>
-	  <p class="texte"><img src="../images/chapitre5/message2.png" class="contour-img" alt="Message" data-action="zoom" /></p>
-	  <p class="texte"><img src="../images/chapitre5/message3.png" class="contour-img" alt="Message" data-action="zoom" /></p>
-	  <p class="texte"><img src="../images/chapitre5/message4.png" class="contour-img" alt="Message" data-action="zoom" /></p>
+      <p class="texte" align="center"><img src="../images/chapitre5/marquer.svg" alt="Tout marquer comme lu" height="30"></p>
+      <p class="texte">Le symbole<img src="../images/chapitre5/check-all.svg" alt="Double check" height="15" class="icone-marge-gauche icone-marge-droite">devant chaque message disparaît ainsi que la pastille rouge à droite de la cloche jusqu'à la génération d'une nouvelle notification.</p>
+      <p class="aerateur-haut"><span class="titre-advice texte">Messages</span></p>
+      <p class="texte">Affichés dans la fenêtre principale et complémentaires des notifications, certains messages vous informeront de l'avancée de certaines tâches, vous préviendront soit d'une erreur interne, soit d'une mauvaise manipulation ou vous avertiront d'un prérequis.</p>
+      <p class="texte">Cliquez sur le symbole<img src="../images/commun/times2.svg" alt="Supprimer" height="15" class="icone-marge-gauche icone-marge-droite">à droite du message pour le supprimer le cas échéant.</p>
+      <p class="texte"><img src="../images/chapitre5/message1.png" class="contour-img" alt="Message" data-action="zoom" /></p>
+      <p class="texte"><img src="../images/chapitre5/message2.png" class="contour-img" alt="Message" data-action="zoom" /></p>
+      <p class="texte"><img src="../images/chapitre5/message3.png" class="contour-img" alt="Message" data-action="zoom" /></p>
+      <p class="texte"><img src="../images/chapitre5/message4.png" class="contour-img" alt="Message" data-action="zoom" /></p>
       <p class="aerateur-haut"><span class="titre-advice texte">Fenêtre principale</span></p>
       <p class="texte">Les informations affichées et la liste des champs à renseigner peuvent occuper une hauteur importante dans la fenêtre principale.<br />Réduisez ou développez les informations des sections avec les boutons<img src="../images/commun/minus-square-o.svg" alt="moins" height="15" class="icone-marge-gauche icone-marge-droite">et<img src="../images/commun/plus-square-o.svg" alt="plus" height="15" class="icone-marge-gauche icone-marge-droite">à droite de la fenêtre principale.</p>
       <p class="texte"><img src="../images/chapitre5/dev-reduc.png" class="contour-img" alt="Réduction agrandissement des sections" data-action="zoom" /></p>
@@ -538,13 +547,13 @@
             <p align="center" class="texte-advice"><img src="../images/chapitre5/accordeon.png" alt="Accordéon" class="contour-gris" width="500"></p>
          </div>
       </div>
-	  <h6>Guide de prise en main • L'interface • Tableaux de bord</h6>
-	  <a class="slice-process" id="perso"></a>
+      <h6>Guide de prise en main • L'interface • Tableaux de bord</h6>
+      <a class="slice-process" id="perso"></a>
       <h2 class="texte aerateur">c - Personnalisation des tableaux de bord</h2>
       <p class="texte">Le tableau de bord général et celui de chaque module peuvent être personnalisés avec des indicateurs pour visualiser d'un seul coup d'œil les informations qui vous semblent importantes. Ces indicateurs peuvent prendre la forme de tableaux, de graphes, de données, de cartes, etc. Vous pouvez également configurer l'agencement de chaque tableau de bord à l'aide de boîtes modulables &#40;des sections&#41; qui contiennent un ou plusieurs indicateurs.</p>
-	  <p class="texte">Trois exemples d'agencements réalisés avec deux boîtes &#40;symbolisées par les contours en pointillés&#41; &nbsp;:</p>
-	  <p class="texte aerateur-bas"><img src="../images/chapitre5/schema-tdb.png" alt="Disposition indicateurs" /></p>
-	  <p class="texte">Le processus suivant vous guide pour personnaliser un tableau de bord avec un nouvel indicateur.</p>
+      <p class="texte">Trois exemples d'agencements réalisés avec deux boîtes &#40;symbolisées par les contours en pointillés&#41; &nbsp;:</p>
+      <p class="texte aerateur-bas"><img src="../images/chapitre5/schema-tdb.png" alt="Disposition indicateurs" /></p>
+      <p class="texte">Le processus suivant vous guide pour personnaliser un tableau de bord avec un nouvel indicateur.</p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
       </div>
@@ -556,7 +565,7 @@
          </p>
       </div>
       <br />
-	  <div class="floating-box process">
+      <div class="floating-box process">
          <img src="../images/commun/step2.svg" alt="2" width="52" />
       </div>
       <div class="process-txt">
@@ -565,53 +574,53 @@
          <p class="max-img-process">
             <img src="../images/chapitre5/tdb2.png" class="contour-img" alt="Bouton de configuration" data-action="zoom" />
          </p>
-		 <p>Un nouvelle liste déroulante contenant les indicateurs apparaît.</p>
-		 <p class="max-img-process">
+         <p>Un nouvelle liste déroulante contenant les indicateurs apparaît.</p>
+         <p class="max-img-process">
             <img src="../images/chapitre5/tdb3.png" class="contour-img" alt="Liste des indicateurs" data-action="zoom" />
          </p>
-		 <p>Notez que vous pouvez supprimer un indicateur d'un tableau de bord en cliquant sur la croix<img src="../images/chapitre5/delete.svg" alt="Suppression" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à droite de son nom. Cette action n'est jamais définitive et vous pouvez toujours le réactiver pour en disposer de nouveau.</p>
+         <p>Notez que vous pouvez supprimer un indicateur d'un tableau de bord en cliquant sur la croix<img src="../images/chapitre5/delete.svg" alt="Suppression" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à droite de son nom. Cette action n'est jamais définitive et vous pouvez toujours le réactiver pour en disposer de nouveau.</p>
       </div>
       <br />
-	  <div class="floating-box process">
+      <div class="floating-box process">
          <img src="../images/commun/step3.svg" alt="3" width="52" />
       </div>
-	  <div class="process-txt">
+      <div class="process-txt">
          <span class="titre-advice">Sélectionnez un indicateur</span>
          <p>Choisissez, dans la liste déroulante, un indicateur parmi ceux disponibles.</p>
          <p class="max-img-process">
             <img src="../images/chapitre5/tdb4.png" class="contour-img" alt="Bouton de configuration" data-action="zoom" />
          </p>
-		 <p>Cliquez ensuite sur le bouton "+Ajouter".</p>
+         <p>Cliquez ensuite sur le bouton "+Ajouter".</p>
          <p class="max-img-process">
             <img src="../images/chapitre5/tdb5.png" class="contour-img" alt="Bouton de configuration" data-action="zoom" />
          </p>
       </div>
       <br />
-	  <div class="floating-box process">
+      <div class="floating-box process">
          <img src="../images/commun/step4.svg" alt="4" width="52" />
       </div>
-	  <div class="process-txt">
+      <div class="process-txt">
          <span class="titre-advice">Organisez le "Tableau de bord"</span>
          <p>Par défaut, le nouvel indicateur est venu se positionner dans la première boîte de la fenêtre principale. En fonction de la taille de votre écran et de l'importance accordée à l'affichage des informations, vous pouvez insérer de nouveaux indicateurs dans des boîtes existantes.</p>
          <p class="max-img-process">
             <img src="../images/chapitre5/tdb6.png" class="contour-img" alt="Nouvel indicateur" data-action="zoom" />
          </p>
-		 <p>Vous pouvez également créer une nouvelle boîte en cliquant sur le bouton "+Nouvelle boîte" situé en bas de la fenêtre principale. Cette action permet de créer un espace supplémentaire pour accueillir le nouvel indicateur et/ou de permettre un agencement différent du tableau de bord. La création d'une nouvelle boîte est possible avant l'ajout d'un nouvel indicateur.</p>
-		 <p class="max-img-process">
+         <p>Vous pouvez également créer une nouvelle boîte en cliquant sur le bouton "+Nouvelle boîte" situé en bas de la fenêtre principale. Cette action permet de créer un espace supplémentaire pour accueillir le nouvel indicateur et/ou de permettre un agencement différent du tableau de bord. La création d'une nouvelle boîte est possible avant l'ajout d'un nouvel indicateur.</p>
+         <p class="max-img-process">
             <img src="../images/chapitre5/tdb7.png" class="contour-img" alt="Nouvelle boîte" data-action="zoom" />
          </p>
       </div>
       <br />
-	  <div class="floating-box process">
+      <div class="floating-box process">
          <img src="../images/commun/step5.svg" alt="5" width="52" />
       </div>
-	  <div class="process-txt">
+      <div class="process-txt">
          <span class="titre-advice">Agencez les indicateurs</span>
          <p>Vous pouvez maintenant déplacer l'indicateur pour le positionner où vous le souhaitez, seul dans une boîte vide ou dans une boîte déjà occupée. Cliquez sur le bandeau supérieur de l'indicateur &#40;l'icône du curseur prend alors l'aspect de flèches des quatre points cardinaux<img src="../images/chapitre5/move.svg" alt="Curseur flèches" height="20" class="align-icone icone-marge-gauche">&#41;, puis glissez celui-ci dans la boîte de votre choix et relâchez-le pour le déposer. Le nouvel emplacement de destination est signalé au survol par la couleur de son fond qui bascule en vert.</p>
          <p class="max-img-process">
             <img src="../images/chapitre5/tdb8.png" class="contour-img" alt="Déplacement indicateur" data-action="zoom" />
          </p>
-		 <p>Notez que dans cet exemple, une nouvelle boîte a été créée, puis les indicateurs "Calendrier" et "Météo" ont été déposés dans celle-ci. L'indicateur "Temps passé par activité" a enfin été déplacé dans la boîte laissée vide par le transfert des 2 autres.</p>
+         <p>Notez que dans cet exemple, une nouvelle boîte a été créée, puis les indicateurs "Calendrier" et "Météo" ont été déposés dans celle-ci. L'indicateur "Temps passé par activité" a enfin été déplacé dans la boîte laissée vide par le transfert des 2 autres.</p>
       </div>
       <div class="idea-fond aerateur-haut aerateur-bas">
          <div class="floating-box-idea">
@@ -622,19 +631,135 @@
             <p>D'une manière générale, évitez de surcharger une boîte pour ne pas nuire à la visibilité des informations.</p>
          </div>
       </div>
-	  <div class="floating-box process">
+      <div class="floating-box process">
          <img src="../images/commun/step6.svg" alt="6" width="52" />
       </div>
-	  <div class="process-txt">
+      <div class="process-txt">
          <span class="titre-advice">Validez le "Tableau de bord"</span>
          <p>Cliquez sur le bouton "Configurer" pour fermer l'édition du tableau de bord et enregistrer les changements. Cliquez sur le bouton "Réinitialiser" pour annuler les modifications et revenir au paramétrage par défaut du tableau de bord.</p>
          <p class="max-img-process">
             <img src="../images/chapitre5/tdb9.png" class="contour-img" alt="Validation tableau de bord" data-action="zoom" />
          </p>
       </div>
-	  <div class="pdf">
-      <p class="texte aerateur-haut">Passez au <a class="avoid-clicks" href="../chapitre6">chapitre suivant</a> de ce guide.</p>
-	  </div>
+      <h6>Guide de prise en main • L'interface • Champs personnalisés</h6>
+      <a class="slice-process" id="champs"></a>
+      <h2 class="texte aerateur">d - Création de champs personnalisés</h2>
+      <p class="texte">L'application vous permet de définir un ou plusieurs champs personnalisés &#40;optionnels ou obligatoires&#41; que pouvez paramétrer et assigner à certaines fonctionnalités d'Ekylibre.</p>
+      <p class="texte">Ces champs peuvent être de plusieurs types&nbsp;:</p>
+      <div class="divTableListe texte">
+         <div class="divTableBody">
+            <div class="divTableRow">
+               <div class="divTableCellPlan" style="width: 10px">
+                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
+               </div>
+               <div class="divTableCellPlan" style="width: auto">
+                  un champ texte avec une longueur minimale et maximale du nombre de caractère&#40;s&#41;&nbsp;;
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellPlan">
+                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
+               </div>
+               <div class="divTableCellPlan">
+                  un chiffre &#40;un nombre décimal&#41; avec une valeur minimale et maximale&nbsp;;
+               </div>
+            </div>
+			<div class="divTableRow">
+               <div class="divTableCellPlan">
+                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
+               </div>
+               <div class="divTableCellPlan">
+                  une case à cocher&nbsp;;
+               </div>
+            </div>
+			<div class="divTableRow">
+               <div class="divTableCellPlan">
+                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
+               </div>
+               <div class="divTableCellPlan">
+                  une date&nbsp;;
+               </div>
+            </div>
+			<div class="divTableRow">
+               <div class="divTableCellPlan">
+                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
+               </div>
+               <div class="divTableCellPlan">
+                  une date et une heure&nbsp;;
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellPlan">
+                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
+               </div>
+               <div class="divTableCellPlan">
+                  une liste déroulante avec sélection d'une proposition unique.
+               </div>
+            </div>
+         </div>
+      </div>
+      <p class="texte aerateur-haut">Le processus suivant vous guide pour définir un champ personnalisé.</p>
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Accédez aux champs personnalisés</span>
+         <p>
+            Cliquez sur la clef anglaise<img src="../images/chapitre5/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">dans le "Menu principal" ou sur le bouton "Configuration" de la page d'accueil&nbsp;:
+         </p>
+         <p align="center"><img src="../images/chapitre5/wrench.svg" alt="Configuration" width="60"></p>
+         <p>Dans la barre latérale du module, cliquez sur "Champs personnaliés" dans la section "Paramètres" symbolisée par l'icône d'une clef anglaise<img src="../images/chapitre5/wrench3.svg" alt="Épi" height="20" class="align-icone icone-marge-gauche">.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre5/champs1.png" class="contour-img" alt="Liste des champs personnalisés" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52" />
+      </div>
+	  <div class="process-txt">
+         <span class="titre-advice">Créez un nouveau champ personnalisé</span>
+         <p>Cliquez sur le bouton "+&nbsp;Nouveau" en haut à gauche de la fenêtre principale.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre5/champs2.png" class="contour-img" alt="Création champ personnalisé" data-action="zoom" />
+         </p>
+		 <p>Le paramétrage d'un nouveau champ personnalisé permet maintenant de définir les options les plus en adéquation avec un besoin spécifique lié à votre exploitation, à vos activités, à une considération technique ou commerciale.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre5/champs3.png" class="contour-img" alt="Nouveau champ personnalisé" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52" />
+      </div>
+	  <div class="process-txt">
+         <span class="titre-advice">Définissez le nouveau champ personnalisé</span>
+         <p>Sélectionnez le "Type d'enregitrement personnalisé" dans la liste déroulante. Il s'agit de choisir ici une fonctionnalité d'Ekylibre qui proposera de renseigner ce champ lors d'un paramétrage ou de l'enregistrement d'une opération comme par exemple une "Intervention".</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre5/champs4.png" class="contour-img" alt="Sélection type d'enregitrement" data-action="zoom" />
+         </p>
+		 <p>Nommez le nouveau champ personnalisé de façon explicite comme par exemple "Vitesse du vent", puis sélectionnez le type approprié parmi ceux disponibles.</p>
+		 <p>S'il s'agit d'un champ de type "Texte", renseignez si nécessaire la longueur minimale et maximale du nombre de caractères autorisés pour la future saisie des informations.</p>
+		 <p>Assurez-vous que la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à droite de l'option "Actif" est cochée pour disposer du nouveau champ.<br />Cochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à droite de l'option "Obligatoire" pour rendre ce champ obligatoire lors d'un futur enregistrement.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre5/champs5.png" class="contour-img" alt="Validation champ personnalisé" data-action="zoom" />
+         </p>
+		 <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step4.svg" alt="4" width="52" />
+      </div>
+	  <div class="process-txt">
+         <span class="titre-advice">Vérifiez le nouveau champ personnalisé</span>
+         <p>Dans le module "Production", sélectionnez l'enregistrement d'une intervention. Le nouveau champ personnalisé "Vitesse du vent" est automatiquement affiché afin d'être renseigné pour compléter les autres informations requises.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre5/champs6.png" class="contour-img" alt="Nouveau champ dans intervention" data-action="zoom" />
+         </p>
+      </div>
+      <div class="pdf">
+         <p class="texte aerateur-haut">Passez au <a class="avoid-clicks" href="../chapitre6">chapitre suivant</a> de ce guide.</p>
+      </div>
       <div class="navishort aerateur-haut">
          <div class="divTable">
             <div class="divTableBody">
