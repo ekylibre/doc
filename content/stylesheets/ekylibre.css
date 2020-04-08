@@ -3754,19 +3754,6 @@ input {
   z-index: -1;
 }
 
-.row {
-  display: -webkit-box;
-  display: flex;
-}
-.row .col {
-  -webkit-box-flex: 1;
-          flex: 1;
-}
-.row .col:last-child {
-  margin-left: 1em;
-}
-
-/* Accordion styles */
 .tabs {
   border-radius: 8px;
   border: 1px solid #773d61;
@@ -3783,9 +3770,10 @@ input {
   display: flex;
   -webkit-box-pack: justify;
           justify-content: space-between;
-  padding: 1em;
-  background: #fff;
+  padding: 0.8em;
+  background: #eee;
   font-weight: bold;
+  font-size: 15px;
   cursor: pointer;
   /* Icon */
 }
@@ -3799,6 +3787,7 @@ input {
   text-align: center;
   -webkit-transition: all .35s;
   transition: all .35s;
+  font-weight: normal;
 }
 .tab-content {
   max-height: 0;
@@ -3834,10 +3823,13 @@ input:checked ~ .tab-content {
   max-height: 100vh;
   padding: 1em;
 }
+.bottle {
+	font-size: 1.3em;
+}
 
 @media print  {
     .tab-content {
 	max-height: 100vh;
-	padding: 1em;
+    padding: 1em;
 }
 }
