@@ -3753,13 +3753,11 @@ input {
   opacity: 0;
   z-index: -1;
 }
-
 .tabs {
   border-radius: 8px;
   border: 1px solid #773d61;
   overflow: hidden;
 }
-
 .tab {
   width: 100%;
   color: #773d61;
@@ -3769,25 +3767,36 @@ input {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: justify;
-          justify-content: space-between;
-  padding: 0.8em;
-  background: #eee;
+  justify-content: space-between;
+  padding: 0.8em 0.8em 0.8em 2.7em;
+  background: #f1dce9;
   font-weight: bold;
   font-size: 15px;
+  background-image: url("../fr/images/ekyviti/wine-bottle-solid.svg");
+  background-repeat: no-repeat;
+  background-position: top 8px left 8px;
+  background-size: 25px;
   cursor: pointer;
-  /* Icon */
 }
 .tab-label:hover {
-  background: #d3aac4;
+  background: #e5bed7;
+  background-image: url("../fr/images/ekyviti/wine-bottle-solid.svg");
+  background-repeat: no-repeat;
+  background-position: top 8px left 8px;
+  background-size: 25px;
 }
-.tab-label::after {
-  content: "\276F";
-  width: 1em;
-  height: 1em;
+.tab-label:after {
+  content: " \f107";
+  font-family: "Font Awesome 5 Pro";
   text-align: center;
   -webkit-transition: all .35s;
   transition: all .35s;
-  font-weight: normal;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0;
+  padding-top: 10px;
+  visibility: visible;
 }
 .tab-content {
   max-height: 0;
@@ -3801,35 +3810,38 @@ input {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   padding: 1em;
   font-size: 0.75em;
   background: #2c3e50;
   cursor: pointer;
 }
 .tab-close:hover {
-  background: #d3aac4;
+  background: #e5bed7;
   color: #000;
 }
-
 input:checked + .tab-label {
-  background: #d3aac4;
+  background: #e5bed7;
+  background-image: url("../fr/images/ekyviti/wine-bottle-solid.svg");
+  background-repeat: no-repeat;
+  background-position: top 8px left 8px;
+  background-size: 25px;
 }
-input:checked + .tab-label::after {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+input:checked + .tab-label:after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 input:checked ~ .tab-content {
   max-height: 100vh;
   padding: 1em;
-}
-.bottle {
-	font-size: 1.3em;
 }
 
 @media print  {
     .tab-content {
 	max-height: 100vh;
     padding: 1em;
-}
+	}
+	.tab-label::after {
+	visibility: hidden;
+	}
 }
