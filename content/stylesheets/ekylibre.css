@@ -2986,7 +2986,6 @@ img.zoom-img {
 	}
 }
 
-
 /*Sommaire*/
 
 .sommaire {
@@ -3088,7 +3087,7 @@ span.the-btn {
 
 #toggle a:hover {
 	text-decoration: none;
-	color: #1195f5;
+	color: #3f70ce;
 }
 
 .rond-orange {
