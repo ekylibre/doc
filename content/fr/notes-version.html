@@ -51,7 +51,8 @@
          	{dates: [new Date(2020, 1, 19), new Date(2020, 1, 20)], title: "Version 3.5", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
          	{dates: [new Date(2020, 1, 21), new Date(2020, 2, 9)], title: "Version 3.6", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
          	{dates: [new Date(2020, 2, 10), new Date(2020, 2, 26)], title: "Version 3.7", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
-         {dates: [new Date(2020, 2, 27), new Date(annee, mois, jour)], title: "Version 3.8", attrs: {fill: "#fea40b", stroke: "#fea40b"}}
+            {dates: [new Date(2020, 2, 27), new Date(2020, 3, 16)], title: "Version 3.8", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
+			{dates: [new Date(2020, 3, 17), new Date(annee, mois, jour)], title: "Version 3.9", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
          ];
          
          var sections = [
@@ -105,6 +106,40 @@
                <main>
                   <div class="accordion-container marge">
                      <div class="panel">
+                        <div class="heading">
+                           <div class="version">
+                              <h2>Note de version 3.9 du 17/04/2020</h2>
+                           </div>
+                           <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <div class="content">
+                           <div class="divTableNoteVersion">
+                              <div class="divTableBody">
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Production</strong><br /><br />
+                                       2 améliorations
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+                                          <li>Ajout d'une vérification du respect des intervalles entre les applications d'un produit phytosanitaire, utilisé lors d'une intervention de pulvérisation, de semis tout-en-un ou de semis avec pulvérisation&nbsp;;</li>
+                                          <li>Amélioration de la gestion de l'historique d'une intervention avec une sauvegarde automatique des éléments de vérification permettant de déterminer si l'intervention était ou non autorisée par la réglementation lors de son enregistrement.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+					 <div class="panel">
                         <div class="heading">
                            <div class="version">
                               <h2>Note de version 3.8 du 27/03/2020</h2>
@@ -1373,6 +1408,36 @@
          </div>
       </article>
       <div class="saut-page"></div>
+      <div class="heading-print marge aerateur-haut">
+         <h2>Note de version 3.9 du 17/04/2020</h2>
+      </div>
+      <div class="content-print marge">
+         <div class="divTableNoteVersion">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Production</strong><br /><br />
+                     2 améliorations
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>Ajout d'une vérification du respect des intervalles entre les applications d'un produit phytosanitaire, utilisé lors d'une intervention de pulvérisation, de semis tout-en-un ou de semis avec pulvérisation&nbsp;;</li>
+                        <li>Amélioration de la gestion de l'historique d'une intervention avec une sauvegarde automatique des éléments de vérification permettant de déterminer si l'intervention était ou non autorisée par la réglementation lors de son enregistrement.</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+	  <div class="saut-page"></div>
       <div class="heading-print marge aerateur-haut">
          <h2>Note de version 3.8 du 27/03/2020</h2>
       </div>
