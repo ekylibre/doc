@@ -29,7 +29,7 @@
       <div class="image-carre"><img class="chapitre loading" src="../images/notes-version/notes-version-carre.png" alt="Notes de version" /></div>
       <h1 align="center" class="majuscule aerateur">Notes de version</h1>
       <p class="texte">Les notes de version décrivent les nouvelles fonctionnalités, les améliorations, les modifications et les correctifs apportés à chaque évolution significative d'Ekylibre.</p>
-      <div id="main_content_wrap" class="marge chronoline">
+      <div id="main_content_wrap" class="marge chronoline pdf">
          <section id="main_content">
             <div id="target" class="timeline-tgt"></div>
          </section>
@@ -52,12 +52,14 @@
          	{dates: [new Date(2020, 1, 21), new Date(2020, 2, 9)], title: "Version 3.6", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
          	{dates: [new Date(2020, 2, 10), new Date(2020, 2, 26)], title: "Version 3.7", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
             {dates: [new Date(2020, 2, 27), new Date(2020, 3, 16)], title: "Version 3.8", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
-			{dates: [new Date(2020, 3, 17), new Date(annee, mois, jour)], title: "Version 3.9", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
+            {dates: [new Date(2020, 3, 17), new Date(2020, 3, 27)], title: "Version 3.9", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
+            {dates: [new Date(2020, 3, 28), new Date(annee, mois, jour)], title: "Version 3.10", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}}
          ];
          
          var sections = [
          	{dates: [new Date(2019, 4, 30), new Date(2019, 11, 31)], title: "2019", section: 0, attrs: {fill: "#d4e3fd"}},
-         	{dates: [new Date(2019, 12, 1), new Date(2020, 11, 31)], title: "2020", section: 1, attrs: {fill: "#eaf0fa"}}
+         	{dates: [new Date(2019, 12, 1), new Date(2020, 11, 31)], title: "2020", section: 1, attrs: {fill: "#eaf0fa"}},
+			{dates: [new Date(2020, 12, 1), new Date(2021, 11, 31)], title: "2021", section: 2, attrs: {fill: "#d4e3fd"}}
          ];
          
          var timeline = new Chronoline(document.getElementById("target"), events,
@@ -108,6 +110,68 @@
                      <div class="panel">
                         <div class="heading">
                            <div class="version">
+                              <h2>Note de version 3.10 du 28/04/2020</h2>
+                           </div>
+                           <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <div class="content">
+                           <div class="divTableNoteVersion">
+                              <div class="divTableBody">
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Production</strong><br /><br />
+                                       4 améliorations et 1 bug corrigé
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+                                          <li>L'affichage des conditions d'usage d'un produit phytosanitaire est désormais associé à un message prévenant l'utilisateur qu'il doit les vérifier&nbsp;;</li>
+                                          <li>Dans le cadre des interventions de pulvérisation, amélioration de la précision des conditions d'affichage des mentions "Autorisé" ou "Non autorisé", notamment lorsqu'un produit phytosanitaire a été retiré du marché ou lorsque celui-ci n'a aucun usage autorisé, lorsque le dosage ou le nombre d'application&#40;s&#41; est supérieur au maximal autorisé, lorsqu'aucun usage n'est sélectionné et lorsque l'unité du dosage maximal n'est pas prise en charge&nbsp;;</li>
+                                          <li>Amélioration de l'analyse permettant de déterminer si le mélange de plusieurs produits phytosanitaires est autorisé ou non&nbsp;;</li>
+                                          <li>La liste déroulante du sélecteur d'usage d'un produit phytosanitaire présente désormais en premier les usages autorisés.</li>
+                                       </ul>
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+                                          <li>Le mode de visualisation "Carte" des "Parcelles" dans la section "Parcellaire" est à nouveau disponible.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1"><img src="../images/notes-version/configuration.svg" alt="Configuration" width="60"></div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Configuration</strong><br /><br />
+                                       3 améliorations et 1 bug corrigé
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+                                          <li>Mise à disposition d'une nouvelle présentation et d'une disposition plus intuitive des boutons permettant de filtrer l'affichage des "Catégories", des "Types" et des "Variantes" selon les natures ou les sous-natures de produits. Les boutons "+ Importer" et "+ Nouveau" ont également été repositionnés&nbsp;;</li>
+                                          <li>Il n'est désormais plus possible de modifier un n<sup>o</sup> d'AMM &#40;autorisation de mise sur le marché&#41; une fois qu'il a été paramétré et enregistré lors de la création d'un produit phytosanitaire&nbsp;;</li>
+                                          <li>La création d'une nouvelle variante est facilitée grâce à un tri plus pertinent des propositions des listes déroulantes permettant de sélectionner la "Catégorie" et le "Type".</li>
+                                       </ul>
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+                                          <li>L'affichage d'un "Champ personnalisé" dans une variante de produit est maintenant également disponible lors de la modification de celle-ci.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="panel">
+                        <div class="heading">
+                           <div class="version">
                               <h2>Note de version 3.9 du 17/04/2020</h2>
                            </div>
                            <i class="fa fa-chevron-down"></i>
@@ -139,7 +203,7 @@
                            </div>
                         </div>
                      </div>
-					 <div class="panel">
+                     <div class="panel">
                         <div class="heading">
                            <div class="version">
                               <h2>Note de version 3.8 du 27/03/2020</h2>
@@ -1409,6 +1473,64 @@
       </article>
       <div class="saut-page"></div>
       <div class="heading-print marge aerateur-haut">
+         <h2>Note de version 3.10 du 28/04/2020</h2>
+      </div>
+      <div class="content-print marge">
+         <div class="divTableNoteVersion">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Production</strong><br /><br />
+                     4 améliorations et 1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>L'affichage des conditions d'usage d'un produit phytosanitaire est désormais associé à un message prévenant l'utilisateur qu'il doit les vérifier&nbsp;;</li>
+                        <li>Dans le cadre des interventions de pulvérisation, amélioration de la précision des conditions d'affichage des mentions "Autorisé" ou "Non autorisé", notamment lorsqu'un produit phytosanitaire a été retiré du marché ou lorsque celui-ci n'a aucun usage autorisé, lorsque le dosage ou le nombre d'application&#40;s&#41; est supérieur au maximal autorisé, lorsqu'aucun usage n'est sélectionné et lorsque l'unité du dosage maximal n'est pas prise en charge&nbsp;;</li>
+                        <li>Amélioration de l'analyse permettant de déterminer si le mélange de plusieurs produits phytosanitaires est autorisé ou non&nbsp;;</li>
+                        <li>La liste déroulante du sélecteur d'usage d'un produit phytosanitaire présente désormais en premier les usages autorisés.</li>
+                     </ul>
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>Le mode de visualisation "Carte" des "Parcelles" dans la section "Parcellaire" est à nouveau disponible.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1"><img src="../images/notes-version/configuration.svg" alt="Configuration" width="60"></div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Configuration</strong><br /><br />
+                     3 améliorations et 1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>Mise à disposition d'une nouvelle présentation et d'une disposition plus intuitive des boutons permettant de filtrer l'affichage des "Catégories", des "Types" et des "Variantes" selon les natures ou les sous-natures de produits. Les boutons "+ Importer" et "+ Nouveau" ont également été repositionnés&nbsp;;</li>
+                        <li>Il n'est désormais plus possible de modifier un n<sup>o</sup> d'AMM &#40;autorisation de mise sur le marché&#41; une fois qu'il a été paramétré et enregistré lors de la création d'un produit phytosanitaire&nbsp;;</li>
+                        <li>La création d'une nouvelle variante est facilitée grâce à un tri plus pertinent des propositions des listes déroulantes permettant de sélectionner la "Catégorie" et le "Type".</li>
+                     </ul>
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>L'affichage d'un "Champ personnalisé" dans une variante de produit est maintenant également disponible lors de la modification de celle-ci.</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="saut-page"></div>
+      <div class="heading-print marge aerateur-haut">
          <h2>Note de version 3.9 du 17/04/2020</h2>
       </div>
       <div class="content-print marge">
@@ -1437,7 +1559,7 @@
             </div>
          </div>
       </div>
-	  <div class="saut-page"></div>
+      <div class="saut-page"></div>
       <div class="heading-print marge aerateur-haut">
          <h2>Note de version 3.8 du 27/03/2020</h2>
       </div>
