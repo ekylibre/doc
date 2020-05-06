@@ -342,6 +342,7 @@
                         <select name="ListeUrl" SIZE="1" onChange="ChangeUrl(this.form)" style="width:210px">
                            <option selected value="">Trésorerie</option>
                            <option value="#tresorerie">- Créer un compte bancaire</option>
+						   <option value="#associe">- Paramétrer un compte courant d'associé</option>
                            <option value="#rapprochement">- Procéder au rapprochement bancaire</option>
                            <option value="#emprunts">- Enregistrer un emprunt</option>
                            <option value="#virements">- Réaliser un virement interne</option>
@@ -392,6 +393,7 @@
                </optgroup>
                <optgroup label="Trésorerie">
                   <option value="#tresorerie">- Créer un compte bancaire</option>
+				  <option value="#associe">- Paramétrer un compte courant d'associé</option>
                   <option value="#rapprochement">- Procéder au rapprochement bancaire</option>
                   <option value="#emprunts">- Enregistrer un emprunt</option>
                   <option value="#virements">- Réaliser un virement interne</option>
@@ -1806,16 +1808,121 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Créez un compte bancaire</span>
-         <p>Cliquez sur le bouton “Nouveau”, puis sélectionnez le "Type" de trésorerie et remplissez tous les champs obligatoires signalés par une astérisque de couleur rouge avec les informations requises pour la définir correctement. Vous pouvez également partir du “Compte bancaire” déjà défini dans l'application et le modifier en cliquant sur le crayon<img src="../images/commun/crayon.svg" alt="Modifier l'inventaire" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de son intitulé dans la liste des trésoreries.</p>
+         <p>Cliquez sur le bouton “Nouveau”, puis sélectionnez le "Type" de trésorerie et remplissez tous les champs obligatoires signalés par une astérisque de couleur rouge avec les informations requises pour la définir correctement. Vous pouvez également partir du “Compte bancaire” déjà défini dans l'application et le modifier en cliquant sur le crayon<img src="../images/commun/crayon.svg" alt="Crayon modification" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de son intitulé dans la liste des trésoreries.</p>
          <p>Renseignez les informations pour l'enregistrement des écritures comptables.</p>
          <p class="max-img-process">
             <img src="../images/chapitre5/tresorerie2.png" class="contour-img" alt="Nouvelle trésorerie" data-action="zoom" />
          </p>
          <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
       </div>
+	  <h6>Guide de prise en main • Comptabilité • Compte courant d'associés</h6>
+      <a class="slice-process" id="associe"></a>
+	  <p align="center" class="texte aerateur procedure">2 – Procédure pour paramétrer un compte courant d'associé
+      </p>
+	  <p class="texte">À l’image d’un compte courant que n’importe qui peut ouvrir auprès de sa banque, le compte courant d’associé est un compte ouvert au nom de chaque associé dans les livres comptables de la société. Cela signifie que la condition préalable pour être titulaire d’un compte courant d’associé dans une société est d’en être associé, c’est-à-dire avoir souscrit, à la création ou ultérieurement, au capital de la société. Le compte courant d’associé n’est donc pas un compte bancaire au nom de l’associé, il s’agit simplement d’un ensemble d'écritures passées en comptabilité. Celles-ci vont ainsi traduire les opérations réalisées entre l’associé concerné et la société.</p>
+      <p class="texte">
+         Le processus suivant vous guide pour paramétrer un compte courant d'associé.
+      </p>
+	  <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Prérequis&nbsp;: paramétrage d'un compte comptable</span>
+         <p>Il est nécessaire de créer un compte comptable &#40;un compte de tiers&#41; pour chaque associé avec le radical 4551XX comme expliqué dans la section <a href="#plan" class="avoid-clicks">«&nbsp;Plan de comptes&nbsp;»</a> de ce chapitre.</p>
+         <p>Renseignez tous les champs obligatoires signalés par une astérisque de couleur rouge avec les informations requises pour le définir correctement.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre5/associe1.png" class="contour-img" alt="Paramétrage compte comptable" data-action="zoom" />
+         </p>
+		 <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
+      </div>
+	  <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Prérequis&nbsp;: paramétrage d'un tiers</span>
+         <p>Créez l'associé en tant que nouveau tiers comme expliqué dans la section <a href="../chapitre8/#tiers" class="avoid-clicks">«&nbsp;Gestion des tiers&nbsp;»</a> du chapitre 8 - "Stocks et tiers" de ce guide.</p>
+         <p>Renseignez tous les champs obligatoires signalés par une astérisque de couleur rouge avec les informations requises pour le définir correctement.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre5/associe2.png" class="contour-img" alt="Paramétrage tiers" data-action="zoom" />
+         </p>
+		 <p>Définissez le nouveau tiers comme "Employé" de la société et sélectionnez le compte comptable défini préalablement à l'étape n<sup>o</sup> 1 de cette procédure.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre5/associe3.png" class="contour-img" alt="Paramétrage tiers" data-action="zoom" />
+         </p>
+		 <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
+      </div>
+	  <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Prérequis&nbsp;: paramétrage d'un journal des opérations diverses</span>
+         <p>Créez un nouveau journal des opérations diverses comme expliqué dans la section <a href="#journaux" class="avoid-clicks">«&nbsp;Journaux&nbsp;»</a> de ce chapitre. Toutes les écritures liées à des opérations comme par exemple des virements seront consignées dans le brouillard de ce journal comptable.</p>
+         <p>Vérifiez que le bouton radio<img src="../images/commun/radio.svg" alt="Bouton radio" height="20" class="align-icone icone-marge-gauche icone-marge-droite">est bien activé pour "Opérations diverses".</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre5/associe4.png" class="contour-img" alt="Nouveau journal" data-action="zoom" />
+         </p>
+		 <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
+      </div>
+	  <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step4.svg" alt="4" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez les moyens d'encaissement/décaissement</span>
+         <p>
+            Cliquez sur le lien "Comptabilité" dans le "Menu principal" ou sur le bouton "Comptabilité" de la page d'accueil&nbsp;:
+         </p>
+         <p align="center"><img src="../images/chapitre5/comptabilite.svg" alt="Comptabilité" width="60"></p>
+         <p>Dans la barre latérale du module, cliquez sur "Trésoreries" dans la section "Trésorerie" symbolisée par l'icône d'un billet<img src="../images/chapitre5/money.svg" alt="Billet" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des moyens d'encaissement/décaissement.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre5/associe5.png" class="contour-img" alt="Liste des trésoreries" data-action="zoom" />
+         </p>
+      </div>
+	  <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step5.svg" alt="5" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Créez un compte courant d'associé</span>
+         <p>Cliquez sur le bouton “Nouveau” en haut à gauche de la fenêtre principale.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre5/associe6.png" class="contour-img" alt="Nouvelle trésorerie" data-action="zoom" />
+         </p>
+		 <p>Sélectionnez le "Type" de trésorerie et renseignez tous les champs obligatoires signalés par une astérisque de couleur rouge avec les informations requises pour la définir correctement.</p>
+		 <p>Vérifiez que le bouton radio<img src="../images/commun/radio.svg" alt="Bouton radio" height="20" class="align-icone icone-marge-gauche icone-marge-droite">est bien activé à gauche de "Compte courant d'associé".</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre5/associe7.png" class="contour-img" alt="Compte courant d'associé" data-action="zoom" />
+         </p>
+      </div>
+	  <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step6.svg" alt="6" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Paramétrez les options comptables</span>
+         <p>Sélectionnez les informations requises pour l'enregistrement des écritures comptables en choisissant, dans les listes déroulantes "Compte principal" et "Journal", les éléments définis aux étapes n<sup>o</sup> 1 et 3 de cette procédure.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre5/associe8.png" class="contour-img" alt="Paramétrage trésorerie" data-action="zoom" />
+         </p>
+         <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
+      </div>
+	  <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step7.svg" alt="7" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">En option&nbsp;: paramétrez un type de salaire</span>
+         <p>Si la rémunération du travail de l’associé doit être valorisée en charge, vous pouvez maintenant paramétrer, via la section "RH" du module "Configuration", un nouveau type de salaire. Le paiement réalisé passera alors par la trésorerie du compte courant de l’associé &#40;compte radical 6413&#41;.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre5/associe9.png" class="contour-img" alt="Nouveau type de salaire" data-action="zoom" />
+         </p>
+         <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
+      </div>
       <h6>Guide de prise en main • Comptabilité • Emprunts</h6>
       <a class="slice-process" id="emprunts"></a>
-      <p align="center" class="texte aerateur procedure">2 – Procédure pour enregistrer un emprunt bancaire
+      <p align="center" class="texte aerateur procedure">3 – Procédure pour enregistrer un emprunt bancaire
       </p>
       <p class="texte">
          Le processus suivant vous guide pour enregistrer un emprunt bancaire.
@@ -1924,7 +2031,7 @@
       </div>
       <h6>Guide de prise en main • Comptabilité • Virements internes</h6>
       <a class="slice-process" id="virements"></a>
-      <p align="center" class="texte aerateur procedure">3 – Procédure pour enregistrer un virement interne
+      <p align="center" class="texte aerateur procedure">4 – Procédure pour enregistrer un virement interne
       </p>
       <p class="texte">
          Le processus suivant vous guide pour enregistrer un nouveau virement interne entre 2 comptes bancaires.
@@ -3094,6 +3201,7 @@
                         <select name="ListeUrl" SIZE="1" onChange="ChangeUrl(this.form)" style="width:210px">
                            <option selected value="">Trésorerie</option>
                            <option value="#tresorerie">- Créer un compte bancaire</option>
+						   <option value="#associe">- Paramétrer un compte courant d'associé</option>
                            <option value="#rapprochement">- Procéder au rapprochement bancaire</option>
                            <option value="#emprunts">- Enregistrer un emprunt</option>
                            <option value="#virements">- Réaliser un virement interne</option>
