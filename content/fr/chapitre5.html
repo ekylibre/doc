@@ -438,7 +438,7 @@
                <div class="divTableRow">
                   <div class="divTableCellPDF1" style="width: 234px">Exercices comptable&nbsp;<img src="../images/chapitre5/table.svg" alt="Épi" height="20" class="align-compta icone-marge-gauche"></div>
                   <div class="divTableCellPDF1" style="width: 234px">Immobilisations&nbsp;<img src="../images/chapitre5/home.svg" alt="Épi" height="22" class="align-compta icone-marge-gauche"></div>
-                  <div class="divTableCellPDF3" style="width: 234px">Journaux&nbsp;<img src="../images/chapitre5/money.svg" alt="Épi" height="18" class="align-icone icone-marge-gauche"></div>
+                  <div class="divTableCellPDF3" style="width: 234px">Trésorerie&nbsp;<img src="../images/chapitre5/money.svg" alt="Épi" height="18" class="align-icone icone-marge-gauche"></div>
                </div>
                <div class="divTableRow">
                   <div class="divTableCellPDF2">- Ouvrir un nouvel exercice</div>
@@ -448,22 +448,22 @@
                <div class="divTableRow">
                   <div class="divTableCellPDF2">- Réaliser un échange comptable</div>
                   <div class="divTableCellPDF2">- Cession d'immobilisation</div>
-                  <div class="divTableCellPDF4">- Faire un rapprochement bancaire</div>
+                  <div class="divTableCellPDF4">- Créer un compte courant d'associé</div>
                </div>
                <div class="divTableRow">
                   <div class="divTableCellPDF2">- Clôturer un exercice</div>
                   <div class="divTableCellPDF2">- Mise au rebut d'une immobilisation</div>
-                  <div class="divTableCellPDF4">- Enregistrer un emprunt</div>
+                  <div class="divTableCellPDF4">- Faire un rapprochement bancaire</div>
                </div>
                <div class="divTableRow">
                   <div class="divTableCellPDF2">- Verrouiller un exercice</div>
                   <div class="divTableCellPDF2">- États des immobilisations</div>
-                  <div class="divTableCellPDF4">- Réaliser un virement interne</div>
+                  <div class="divTableCellPDF4">- Enregistrer un emprunt</div>
                </div>
                <div class="divTableRow">
                   <div class="divTableCellPDF2">- Fichier des écritures comptables</div>
                   <div class="divTableCellPDF2">- États des plus et moins values</div>
-                  <div class="divTableCellPDF5">&nbsp;</div>
+                  <div class="divTableCellPDF4">- Réaliser un virement interne</div>
                </div>
                <div class="divTableRow">
                   <div class="divTableCellPDF2">- Bilan et compte de résultat</div>
@@ -1829,7 +1829,7 @@
       <div class="process-txt">
          <span class="titre-advice">Prérequis&nbsp;: paramétrage d'un compte comptable</span>
          <p>Il est nécessaire de créer un compte comptable &#40;un compte de tiers&#41; pour chaque associé avec le radical 4551XX comme expliqué dans la section <a href="#plan" class="avoid-clicks">«&nbsp;Plan de comptes&nbsp;»</a> de ce chapitre.</p>
-         <p>Renseignez tous les champs obligatoires signalés par une astérisque de couleur rouge avec les informations requises pour le définir correctement.</p>
+         <p>Renseignez tous les champs obligatoires signalés par une astérisque de couleur rouge avec les informations requises pour le définir correctement.<br />Prenez soin de bien sélectionner "<strong>455 - Comptes courants d'associés</strong>" dans la liste déroulante des usages.</p>
          <p class="max-img-process">
             <img src="../images/chapitre5/associe1.png" class="contour-img" alt="Paramétrage compte comptable" data-action="zoom" />
          </p>
@@ -1914,12 +1914,28 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">En option&nbsp;: paramétrez un type de salaire</span>
-         <p>Si la rémunération du travail de l’associé doit être valorisée en charge, vous pouvez maintenant paramétrer, via la section "RH" du module "Configuration", un nouveau type de salaire. Le paiement réalisé passera alors par la trésorerie du compte courant de l’associé &#40;compte radical 6413&#41;. L'excédent brut d'exploitation &#40;EBE&#41; est alors plus faible.</p>
+         <p>Si la rémunération du travail de l’associé doit être valorisée en charge, vous pouvez maintenant paramétrer, via la section "RH" du module "Configuration", un nouveau type de salaire. Le paiement réalisé passera alors par la trésorerie du compte courant de l’associé &#40;compte radical 6413&#41;. Notez que l'excédent brut d'exploitation &#40;EBE&#41; est alors plus faible.</p>
          <p class="max-img-process">
             <img src="../images/chapitre5/associe9.png" class="contour-img" alt="Nouveau type de salaire" data-action="zoom" />
          </p>
 		 <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
-		 <p>Si la rémunération du travail n’est pas valorisée, il faut alors réaliser un virement interne entre la banque et le compte courant de l’associé, ce qui correpond aussi à un prélèvement privé ou exceptionnel. Les charges sont alors réduites et l'excédent brut d'exploitation &#40;EBE&#41; est plus élevé.</p>
+	  </div>
+	  <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step8.svg" alt="8" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">En option : enregistrez un nouveau salaire</span>
+		 <p>Dans la section "Salaires" du module "RH", un nouveau bouton est maintenant disponible en haut à gauche de la fenêtre principale pour enregistrer un salaire au profit de l'associé.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre5/associe10.png" class="contour-img" alt="Nouveau salaire" data-action="zoom" />
+         </p>
+		 <p>Cliquez sur ce bouton et renseignez tous les champs obligatoires signalés par une astérisque de couleur rouge avec les informations requises pour le définir correctement.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre5/associe11.png" class="contour-img" alt="Nouveau salaire" data-action="zoom" />
+         </p>
+		  <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
+		 <p class="aerateur-haut">Si la rémunération du travail n’est pas valorisée, il faut alors réaliser un <a href="#virements" class="avoid-clicks">virement interne</a> entre la banque et le compte courant de l’associé, ce qui correspond aussi à un prélèvement privé ou exceptionnel. L’associé prélève de l’argent sur son compte sans contrepartie, son compte s'appauvrit et peut devenir débiteur. Les charges sont alors réduites et l'excédent brut d'exploitation &#40;EBE&#41; est plus élevé.</p>
       </div>
       <h6>Guide de prise en main • Comptabilité • Emprunts</h6>
       <a class="slice-process" id="emprunts"></a>
