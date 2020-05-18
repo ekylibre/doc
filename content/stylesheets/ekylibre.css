@@ -3843,3 +3843,13 @@ input:checked ~ .tab-content {
 	visibility: hidden;
 	}
 }
+
+/*Spécifique Ekyviti*/
+	
+.viti-red {
+	color: #ff0000;
+}
+
+.viti-blue {
+	color: #4470b3;
+}
