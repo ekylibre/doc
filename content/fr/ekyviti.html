@@ -605,7 +605,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Supprimer ou ajouter une culture cadastrale</span>
-		 <p>Le cas échéant, cliquez sur la croix<img src="../images/ekyviti/times.svg" alt="Supprimer" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de la culture cadastrale en erreur pour la supprimer et validez votre choix dans la <span class="tooltip">fenêtre modale<span class="tooltiptext tooltip-top">Voir glossaire</span></span>. Notez que cette opération est irréversible et en cas d'erreur, vous devrez supprimer et <a href="#import" target="_self">importer</a> de nouveau la totalité du CVI.</p>
+		 <p>Le cas échéant, cliquez sur la croix<img src="../images/ekyviti/times.svg" alt="Supprimer" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de la culture cadastrale en erreur pour la supprimer et validez votre choix dans la <span class="tooltip">fenêtre modale<span class="tooltiptext tooltip-top">Voir glossaire</span></span>. Notez que cette opération est irréversible et en cas d'erreur, vous devrez supprimer et <a href="#import" class="avoid-clicks" target="_self">importer</a> de nouveau la totalité du CVI.</p>
 		 <p class="max-img-process">
             <img src="../images/ekyviti/modif-casier6.png" class="contour-img" alt="Suppression culture cadastrale" data-action="zoom" />
          </p>
@@ -613,6 +613,66 @@
 		 <p class="aerateur-haut">Pour ajouter des parcelles à votre CVI &#40;dans le cas où une ancienne référence cadastrale aurait été divisée en 2 nouvelles&#41;, nous vous recommandons de réaliser la modification directement dans le fichier CSV.<br />Dans la liste "Casier Viticole Informatisé", supprimez alors la version existante du CVI en cliquant sur la croix<img src="../images/ekyviti/times.svg" alt="Supprimer" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de son numéro et procédez de nouveau à l'<a href="#import" target="_self">import</a> du fichier CSV modifié.</p>
 		 <p class="max-img-process">
             <img src="../images/ekyviti/modif-casier7.png" class="contour-img" alt="Suppression CVI" data-action="zoom" />
+         </p>
+      </div>
+	  <h6>Guide de prise en main • Ekyviti • Conversion du CVI en parcellaire</h6>
+	  <a class="slice-process" id="start"></a>
+	  <p align="center" class="texte aerateur procedure">2 - Conversion du CVI en parcellaire Ekyviti</p>
+	  <p class="texte">Cette étape va maintenant vous permettre de préparer les parcelles cadastrales du CVI validées à l'étape précédente en vue de les adapter au système de gestion parcellaire propre à Ekyviti. Différents outils sont à votre disposition pour modifier le contour d'une parcelle, pour découper une parcelle et pour fusionner deux ou plusieurs parcelles.</p>
+	  <p class="texte aerateur-haut">Le processus suivant vous guide pour démarrer la conversion des données du CVI en parcellaire Ekyviti.</p>
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Accédez aux casiers viticoles informatisés</span>
+         <p>
+            Cliquez sur le lien "Outils" dans le "Menu principal" ou sur le bouton "Outils" de la page d'accueil&nbsp;:
+         </p>
+         <p align="center"><img src="../images/chapitre11/magic.svg" alt="Outils" width="60"></p>
+         <p>Dans la barre latérale du module, cliquez sur "Casier viticole informatisé" dans la section "Cartographie" symbolisée par l'icône représentant des calques<img src="../images/ekyviti/layers.svg" alt="Calques" height="20" class="align-icone icone-marge-gauche">.</p>
+         <p class="max-img-process">
+            <img src="../images/ekyviti/conversion-casier1.png" class="contour-img" alt="Liste des imports" data-action="zoom" />
+         </p>
+         <p>Tous les "Imports" des casiers viticoles informatisés déjà réalisés &#40;un ou plusieurs&#41; sont listés.</p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez le contenu du CVI</span>
+         <p>Cliquez sur le numéro du CVI de votre choix pour en afficher le contenu.</p>
+		 <p>Si aucun message d'erreur n'est affiché, vous pouvez passer à l'étape suivante de cette procédure, sinon, procédez aux vérifications et aux corrections nécessaires à la <a href="#parcellaire" class="avoid-clicks" target="_self">validation</a> des parcelles cadastrales.</p>
+		 <p class="max-img-process">
+            <img src="../images/ekyviti/conversion-casier2.png" class="contour-img" alt="Listes cultures cadastrales" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Démarrer la conversion du CVI</span>
+         <p>Cliquez sur le bouton "Convertir en parcellaire" en haut à gauche de la fenêtre principale pour afficher la <span class="tooltip">fenêtre modale<span class="tooltiptext tooltip-top">Voir glossaire</span></span> permettant de paramétrer le démarrage de la conversion.</p><p>Sélectionnez l'année de la campagne de production &#40;le millésime&#41; via le sélecteur de date. À cheval sur deux années, ce choix détermine automatiquement l'année de création du parcellaire et des productions viticoles associées.</p>
+		 <p class="max-img-process">
+            <img src="../images/ekyviti/conversion-casier3.png" class="contour-img" alt="Démarrer la conversion" data-action="zoom" />
+         </p>
+		 <p>Cliquez sur <span class="btn-purple">Confirmer</span> pour valider l'opération.</p>
+		 <p>L'application affiche automatiquement les nouvelles zones formées par les parcelles attenantes. Dans l'exemple suivant, une route partageant 2 groupes de parcelles, la carte affiche ici 2 zones distinctes.</p>
+		 <p class="max-img-process">
+            <img src="../images/ekyviti/conversion-casier4.png" class="contour-img" alt="Conversion en cours" data-action="zoom" />
+         </p>
+		 <p>Chaque zone est composée par les différentes parcelles cadastrales validées dans le CVI.</p>
+      </div>
+	  <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step4.svg" alt="4" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Reprendre une conversion en cours</span>
+         <p>Notez que si vous interrompez, pour une raison quelconque, la conversion en parcellaire alors que celle-ci n'est pas achevée, l'accès ultérieur depuis le CVI pour poursuivre cette tâche est différent&nbsp;: un bouton "Reprendre la conversion en cours" remplace alors celui qui avait permis d'initier le processus.</p>
+		 <p class="max-img-process">
+            <img src="../images/ekyviti/conversion-casier5.png" class="contour-img" alt="Démarrer la conversion" data-action="zoom" />
          </p>
       </div>
       <div class="navishort aerateur-haut">
