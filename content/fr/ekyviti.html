@@ -529,7 +529,7 @@
       <a class="slice-process" id="parcellaire"></a>
       <h2 class="texte aerateur">b - Gestion et modification du parcellaire cultural</h2>
       <p align="center" class="texte aerateur procedure">1 - Validation du Casier Viticole Informatisé</p>
-      <p class="texte">Maintenant que le fichier CSV a été importé, il est nécessaire de vérifier les données du casier viticole informatisé afin de les valider et de les corriger le cas échéant &#40;mais ce n'est pas systématique&#41;.<br /> <strong>Cette étape est essentielle avant de débuter la conversion du parcellaire cadastral en parcellaire cultural.</strong></p>
+      <p class="texte">Maintenant que le fichier CSV a été importé, il est nécessaire de vérifier les données du casier viticole informatisé afin de les valider et de les corriger le cas échéant &#40;mais ce n'est pas systématique&#41;.<br /><strong>Cette étape est essentielle avant de débuter la conversion du parcellaire cadastral en parcellaire cultural.</strong></p>
 	  <div class="info-fond aerateur-haut aerateur-bas">
       <div class="floating-box-info">
          <img src="../images/commun/info.svg" width="100" alt="Info"/>
@@ -564,54 +564,57 @@
       <div class="process-txt">
          <span class="titre-advice">Affichez le contenu du CVI</span>
          <p>Cliquez sur le numéro du CVI de votre choix pour en afficher le contenu.</p>
-		 <p>Si une différence a été détectée entre le CVI et le parcellaire cadastral, notamment après la division ou le remembrement d’une parcelle suite à une transaction foncière, un message d'alerte vous le signale automatiquement.</p>
-		 <p>Les cultures cadastrales en erreur sont signalées dans la liste par des intitulés de <span class="viti-red">couleur rouge</span>.<br />La suppression de parcelles peut aussi s'avérer nécessaire si des changements fonciers récents n'ont pas encore été pris en compte par l'administration.</p>
-		 <p>Notez que pour vérification, le parcellaire cadastral officiel est consultable sur le site gouvernemental <a href="https://www.geoportail.gouv.fr/" class="avoid-clicks" title="Géoportail" target="_blank">Géoportail</a> après sélection des fonds de carte appropriés pour ce contrôle.</p>
-         <p class="max-img-process">
+		 <p>Si une différence a été détectée entre les références cadastrales utilisées dans le CVI et la base de référence actualisée &#40;cadastre.gouv.fr&#41;, notamment après la division ou le remembrement d’une parcelle suite à une transaction foncière, un message d'alerte vous le signale automatiquement.</p>
+		 <p>Les cultures cadastrales en erreur sont signalées dans la liste par des intitulés de <span class="viti-red">couleur rouge</span>.</p><p>La suppression ou l'ajout de parcelles peut aussi s'avérer nécessaire si des changements fonciers récents n'ont pas encore été pris en compte par l'administration &#40;voir l'étape n<sup>o</sup> 4 de cette procédure&#41;.</p>
+		 <p class="max-img-process">
             <img src="../images/ekyviti/modif-casier2.png" class="contour-img" alt="Listes cultures cadastrales" data-action="zoom" />
          </p>
+		 <p>Notez que pour procéder à la vérification, le parcellaire cadastral officiel peut être affiché en sélectionnant le calque "Parcelles cadastrales" dans le menu "fonds de carte et calques", accessible en cliquant sur le bouton<img src="../images/ekyviti/layers-map.svg" alt="Calques" height="20" class="align-icone icone-marge-gauche icone-marge-droite">en haut à droite de la carte et après avoir suffisamment zoomé. Le contour de chaque parcelle est alors affiché en pointillé et en blanc sur la carte&nbsp;:</p>
+		 <p class="max-img-process">
+            <img src="../images/ekyviti/zoom-map1.png" class="contour-img" alt="Zoom CVI" data-action="zoom" />
+         </p>
+		 <p class="max-img-process">
+            <img src="../images/ekyviti/zoom-map2.png" class="contour-img" alt="Zoom CVI et cadastre" data-action="zoom" />
+         </p>
+		 <p>Vous pouvez également consulter le site national <a href="https://www.geoportail.gouv.fr/" class="avoid-clicks" title="Géoportail" target="_blank">Géoportail</a> après sélection des fonds de carte appropriés pour réaliser ce contrôle.</p>
       </div>
       <br />
 	  <div class="floating-box process">
          <img src="../images/commun/step3.svg" alt="3" width="52" />
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Supprimer une culture cadastrale</span>
-		 <p>Le cas échéant, cliquez sur la croix<img src="../images/ekyviti/times.svg" alt="Supprimer" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de la culture cadastrale en erreur pour la supprimer et validez votre choix dans la <span class="tooltip">fenêtre modale<span class="tooltiptext tooltip-top">Voir glossaire</span></span>. Notez que cette opération est irréversible. En cas d'erreur, vous devrez supprimer et ré-importer la totalité du CVI.</p>
-		 <p class="max-img-process">
-            <img src="../images/ekyviti/modif-casier3.png" class="contour-img" alt="Suppression culture cadastrale" data-action="zoom" />
+         <span class="titre-advice">Corriger une culture cadastrale</span>
+         <p>Si vous souhaitez corriger une référence cadastrale incorrecte dans le CVI, cliquez sur le crayon<img src="../images/ekyviti/crayon.svg" alt="Calques" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de la culture cadastrale déclarée en erreur pour l'éditer.</p>
+         <p class="max-img-process">
+            <img src="../images/ekyviti/modif-casier3.png" class="contour-img" alt="Édition culture cadastrale" data-action="zoom" />
          </p>
-		 <p>Cliquez sur <span class="btn-purple">Confirmer</span> pour valider l'opération.</p>
+         <p>Saisissez dans le champ approprié la correction à apporter &#40;généralement un nouveau numéro de parcelle cadastrale affiché en blanc sur la carte si vous avez activé cette option et disponible sur le site <a href="https://www.geoportail.gouv.fr/" class="avoid-clicks" title="Géoportail" target="_blank">Géoportail</a>&#41;.</p>
+         <p class="max-img-process">
+            <img src="../images/ekyviti/modif-casier4.png" class="contour-img" alt="Modification culture cadastrale" data-action="zoom" />
+         </p>
+		 <p>Cliquez sur <span class="btn-purple">Modifier</span> pour valider l'opération.</p>
+		 <p>Dès que les informations mises à jour sont vérifiées par Ekyviti et conformes aux données du parcellaire cadastrale, les intitulés de la culture cadastrale CVI modifiée sont alors affichés <span class="viti-blue">en bleu</span> dans la liste.</p>
+		 <p class="max-img-process">
+            <img src="../images/ekyviti/modif-casier5.png" class="contour-img" alt="Listes cultures cadastrales" data-action="zoom" />
+         </p>
+		 <p>Répétez la procédure à partir de l'étape n<sup>o</sup> 3 pour chaque parcelle susceptible de présenter une anomalie similaire et détectée par l'application.</p>
       </div>
       <br />
 	  <div class="floating-box process">
          <img src="../images/commun/step4.svg" alt="4" width="52" />
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Éditer une culture cadastrale</span>
-         <p>Si vous souhaitez enregistrer une modification dans le CVI, cliquez sur le crayon<img src="../images/ekyviti/crayon.svg" alt="Calques" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de la culture cadastrale déclarée en erreur pour la corriger.</p>
-         <p class="max-img-process">
-            <img src="../images/ekyviti/modif-casier4.png" class="contour-img" alt="Édition culture cadastrale" data-action="zoom" />
-         </p>
-      </div>
-      <br />
-	  <div class="floating-box process">
-         <img src="../images/commun/step5.svg" alt="5" width="52" />
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Corriger une culture cadastrale</span>
-         <p>Saisissez dans le champ approprié la correction à apporter &#40;généralement le nouveau numéro de la parcelle cadastrale disponible et affiché sur le site <a href="https://www.geoportail.gouv.fr/" class="avoid-clicks" title="Géoportail" target="_blank">Géoportail</a>&#41;.</p>
-         <p class="max-img-process">
-            <img src="../images/ekyviti/modif-casier5.png" class="contour-img" alt="Modification culture cadastrale" data-action="zoom" />
-         </p>
-		 <p>Cliquez sur <span class="btn-purple">Modifier</span> pour valider l'opération.</p>
-		 <p>Dès que les informations mises à jour sont vérifiées par Ekyviti et conformes aux données du parcellaire cadastrale, les intitulés de la culture cadastrale CVI modifiée sont alors affichés <span class="viti-blue">en bleu</span> dans la liste.</p>
+         <span class="titre-advice">Supprimer ou ajouter une culture cadastrale</span>
+		 <p>Le cas échéant, cliquez sur la croix<img src="../images/ekyviti/times.svg" alt="Supprimer" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de la culture cadastrale en erreur pour la supprimer et validez votre choix dans la <span class="tooltip">fenêtre modale<span class="tooltiptext tooltip-top">Voir glossaire</span></span>. Notez que cette opération est irréversible et en cas d'erreur, vous devrez supprimer et <a href="#import" target="_self">importer</a> de nouveau la totalité du CVI.</p>
 		 <p class="max-img-process">
-            <img src="../images/ekyviti/modif-casier6.png" class="contour-img" alt="Listes cultures cadastrales" data-action="zoom" />
+            <img src="../images/ekyviti/modif-casier6.png" class="contour-img" alt="Suppression culture cadastrale" data-action="zoom" />
          </p>
-		 <p>Répétez la procédure à partir de l'étape n<sup>o</sup> 4 pour chaque parcelle susceptible de présenter une anomalie similaire et détectée par l'application.</p>
+		 <p>Cliquez sur <span class="btn-purple">Confirmer</span> pour valider l'opération.</p>
+		 <p class="aerateur-haut">Pour ajouter des parcelles à votre CVI &#40;dans le cas où une ancienne référence cadastrale aurait été divisée en 2 nouvelles&#41;, nous vous recommandons de réaliser la modification directement dans le fichier CSV.<br />Dans la liste "Casier Viticole Informatisé", supprimez alors la version existante du CVI en cliquant sur la croix<img src="../images/ekyviti/times.svg" alt="Supprimer" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de son numéro et procédez de nouveau à l'<a href="#import" target="_self">import</a> du fichier CSV modifié.</p>
+		 <p class="max-img-process">
+            <img src="../images/ekyviti/modif-casier7.png" class="contour-img" alt="Suppression CVI" data-action="zoom" />
+         </p>
       </div>
-      <br />
       <div class="navishort aerateur-haut">
          <div class="divTable">
             <div class="divTableBody">
