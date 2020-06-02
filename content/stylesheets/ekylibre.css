@@ -3853,3 +3853,11 @@ input:checked ~ .tab-content {
 .viti-blue {
 	color: #4470b3;
 }
+
+.viti-green {
+	color: #7ba651;
+}
+
+.viti-orange {
+	color: #f34d00;
+}
