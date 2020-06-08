@@ -43,8 +43,8 @@
          var events = [
          	{dates: [new Date(2019, 5, 21), new Date(2019, 6, 30)], title: "Version 2.55", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
          	{dates: [new Date(2019, 6, 31), new Date(2019, 7, 6)], title: "Version 2.56", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
-			{dates: [new Date(2019, 7, 7), new Date(2019, 7, 25)], title: "Version 2.57", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
-			{dates: [new Date(2019, 7, 26), new Date(2019, 8, 9)], title: "Version 2.58", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
+         	{dates: [new Date(2019, 7, 7), new Date(2019, 7, 25)], title: "Version 2.57", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
+         	{dates: [new Date(2019, 7, 26), new Date(2019, 8, 9)], title: "Version 2.58", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
          	{dates: [new Date(2019, 8, 10), new Date(2019, 9, 2)], title: "Version 2.59", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
          	{dates: [new Date(2019, 9, 3), new Date(2019, 9, 23)], title: "Version 2.60", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
             {dates: [new Date(2019, 9, 24), new Date(2019, 11, 11)], title: "Version 3.0", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
@@ -56,14 +56,15 @@
             {dates: [new Date(2020, 2, 27), new Date(2020, 3, 16)], title: "Version 3.8", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
             {dates: [new Date(2020, 3, 17), new Date(2020, 3, 27)], title: "Version 3.9", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
             {dates: [new Date(2020, 3, 28), new Date(2020, 4, 14)], title: "Version 3.10", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
-			{dates: [new Date(2020, 4, 15), new Date(2020, 5, 2)], title: "Version 3.11", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
-			{dates: [new Date(2020, 5, 3), new Date(annee, mois, jour)], title: "Version 3.12", attrs: {fill: "#fea40b", stroke: "#fea40b"}}
+         	{dates: [new Date(2020, 4, 15), new Date(2020, 5, 2)], title: "Version 3.11", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
+         	{dates: [new Date(2020, 5, 3), new Date(2020, 5, 7)], title: "Version 3.12", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
+         {dates: [new Date(2020, 5, 8), new Date(annee, mois, jour)], title: "Version 3.13", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
          ];
          
          var sections = [
          	{dates: [new Date(2019, 4, 30), new Date(2019, 11, 31)], title: "2019", section: 0, attrs: {fill: "#d4e3fd"}},
          	{dates: [new Date(2019, 12, 1), new Date(2020, 11, 31)], title: "2020", section: 1, attrs: {fill: "#eaf0fa"}},
-         {dates: [new Date(2020, 12, 1), new Date(2021, 11, 31)], title: "2021", section: 2, attrs: {fill: "#d4e3fd"}}
+         	{dates: [new Date(2020, 12, 1), new Date(2021, 11, 31)], title: "2021", section: 2, attrs: {fill: "#d4e3fd"}}
          ];
          
          var timeline = new Chronoline(document.getElementById("target"), events,
@@ -111,6 +112,135 @@
             <section id="panel-1">
                <main>
                   <div class="accordion-container marge">
+                     <div class="panel">
+                        <div class="heading">
+                           <div class="version">
+                              <h2>Note de version 3.13 du 8/06/2020</h2>
+                           </div>
+                           <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <div class="content">
+                           <div class="divTableNoteVersion">
+                              <div class="divTableBody">
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/ekylibre.svg" alt="Ekylibre" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Commun à tous les modules</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Possibilité de saisir les nombre décimaux indifféremment avec la virgule ou le point dans les champs numériques.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Comptabilité</strong><br /><br />
+                                       7 améliorations et 3 bugs corrigés
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+                                          <li>Possibilité d'éditer une immobilisation dont le statut est encore en mode "En attente"&nbsp;;</li>
+                                          <li>Le lettrage manuel permet un rapprochement automatique dans une affaire et la génération d'une écriture dans un journal d'opérations diverses afin de solder l'affaire&nbsp;;</li>
+                                          <li>Mise à disposition d'une case à cocher "Afficher les détails de TVA" dans l'en-tête de recherche de la balance pour afficher le détail des comptes de TVA par type de TVA&nbsp;;</li>
+                                          <li>Ajout d'une colonne dans le Grand-livre pour indiquer la référence externe &#40;le numéro de facture du fournisseur&#41; pour chaque ligne d'écriture comptable&nbsp;;</li>
+                                          <li>Possibilité de visualiser la balance de l'année n-1 y compris lorsqu'une période personnalisée est recherchée&nbsp;;</li>
+                                          <li>Après sélection d'un type de journal, possibilité de visualiser la balance même si l'exercice comptable a été clôturé&nbsp;;</li>
+                                          <li>Dans le Grand-livre, ajout d'une colonne permettant de visualiser le compte de tiers lié à l'écriture comptable.</li>
+                                       </ul>
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
+                                       <ul>
+                                          <li>Prise en compte de la variation d'inventaire négative dans le compte de résultat, quel que soit le plan de comptes utilisé &#40;agricole ou général&#41;&nbsp;;</li>
+                                          <li>Le bilan permet désormais d'afficher, pour une entreprise individuelle, le compte de l'exploitant dans le capital&nbsp;;</li>
+                                          <li>Destruction de l'écriture comptable en mode brouillard lors de la suppression d'un encaissement ou d'un décaissement.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Production</strong><br /><br />
+                                       1 bug corrigé
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+                                          <li>Correction du calcul de la quantité de produit phytosanitaire utilisée lors d'une intervention de pulvérisation.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/outils.svg" alt="Outils" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Outils</strong><br /><br />
+                                       1 amélioration et 1 bug corrigé
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Possibilité d'importer les données parcellaires et les activités de la déclaration TelePAC 2020 &#40;également disponible dans l'Assistant de démarrage&#41;.</li>
+                                       </ul>
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+                                          <li>Remise à disposition de la fonctionnalité d'export pour certains modèles de documents qui n'étaient pas chargés correctement.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/configuration.svg" alt="Configuration" width="60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Configuration</strong><br /><br />
+                                       2 améliorations et 1 bug corrigé
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+                                          <li>Dans la section "À propos…", affichage de la version de la base de données des produits phytosanitaires utilisée et de la date de la dernière mise à jour en provenance d'E-Phy &#40;Anses&#41;&nbsp;;</li>
+                                          <li>Dans les paramètres de la société, ajout d'une liste déroulante permettant de choisir la périodicité préférentielle des amortissements comptables.</li>
+                                       </ul>
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+                                          <li>Correction d'une erreur d'affichage des boutons qui empêchait la configuration d'un nouveau tableau de bord avec ses indicateurs.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                      <div class="panel">
                         <div class="heading">
                            <div class="version">
@@ -1468,6 +1598,131 @@
             </section>
          </div>
       </article>
+      <div class="saut-page"></div>
+      <div class="heading-print marge aerateur-haut">
+         <h2>Note de version 3.13 du 8/06/2020</h2>
+      </div>
+      <div class="content-print marge">
+         <div class="divTableNoteVersion">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/ekylibre.svg" alt="Ekylibre" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Commun à tous les modules</strong><br /><br />
+                     1 amélioration
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>Possibilité de saisir les nombre décimaux indifféremment avec la virgule ou le point dans les champs numériques.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Comptabilité</strong><br /><br />
+                     7 améliorations et 3 bugs corrigés
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>Possibilité d'éditer une immobilisation dont le statut est encore en mode "En attente"&nbsp;;</li>
+                        <li>Le lettrage manuel permet un rapprochement automatique dans une affaire et la génération d'une écriture dans un journal d'opérations diverses afin de solder l'affaire&nbsp;;</li>
+                        <li>Mise à disposition d'une case à cocher "Afficher les détails de TVA" dans l'en-tête de recherche de la balance pour afficher le détail des comptes de TVA par type de TVA&nbsp;;</li>
+                        <li>Ajout d'une colonne dans le Grand-livre pour indiquer la référence externe &#40;le numéro de facture du fournisseur&#41; pour chaque ligne d'écriture comptable&nbsp;;</li>
+                        <li>Possibilité de visualiser la balance de l'année n-1 y compris lorsqu'une période personnalisée est recherchée&nbsp;;</li>
+                        <li>Après sélection d'un type de journal, possibilité de visualiser la balance même si l'exercice comptable a été clôturé&nbsp;;</li>
+                        <li>Dans le Grand-livre, ajout d'une colonne permettant de visualiser le compte de tiers lié à l'écriture comptable.</li>
+                     </ul>
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
+                     <ul>
+                        <li>Prise en compte de la variation d'inventaire négative dans le compte de résultat, quel que soit le plan de comptes utilisé &#40;agricole ou général&#41;&nbsp;;</li>
+                        <li>Le bilan permet désormais d'afficher, pour une entreprise individuelle, le compte de l'exploitant dans le capital&nbsp;;</li>
+                        <li>Destruction de l'écriture comptable en mode brouillard lors de la suppression d'un encaissement ou d'un décaissement.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Production</strong><br /><br />
+                     1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>Correction du calcul de la quantité de produit phytosanitaire utilisée lors d'une intervention de pulvérisation.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/outils.svg" alt="Outils" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Outils</strong><br /><br />
+                     1 amélioration et 1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>Possibilité d'importer les données parcellaires et les activités de la déclaration TelePAC 2020 &#40;également disponible dans l'Assistant de démarrage&#41;.</li>
+                     </ul>
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>Remise à disposition de la fonctionnalité d'export pour certains modèles de documents qui n'étaient pas chargés correctement.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/configuration.svg" alt="Configuration" width="60px">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Configuration</strong><br /><br />
+                     2 améliorations et 1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>Dans la section "À propos…", affichage de la version de la base de données des produits phytosanitaires utilisée et de la date de la dernière mise à jour en provenance d'E-Phy &#40;Anses&#41;&nbsp;;</li>
+                        <li>Dans les paramètres de la société, ajout d'une liste déroulante permettant de choisir la périodicité préférentielle des amortissements comptables.</li>
+                     </ul>
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>Correction d'une erreur d'affichage des boutons qui empêchait la configuration d'un nouveau tableau de bord avec ses indicateurs.</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
       <div class="saut-page"></div>
       <div class="heading-print marge aerateur-haut">
          <h2>Note de version 3.10 du 28/04/2020</h2>
