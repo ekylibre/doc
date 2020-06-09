@@ -80,10 +80,9 @@
          	scrollRight: nextQuarter,
          	draggable: true
          });
-         function godate(){
-         timeline.goToToday();
-         };
-         window.onload = godate;
+		 $(window).load(function() {
+			timeline.goToToday();
+		 });
          });
       </script>
       <!-- TAB CONTROLLERS -->

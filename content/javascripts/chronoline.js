@@ -535,6 +535,9 @@ function Chronoline(domElement, events, options) {
                     if(width > 2) {
                     elem = t.paper.rect(startX + 1, upperY, width - 2, t.eventHeight)
                         .attr(t.eventAttrs);
+                	} else if(width == 0) {
+                	elem = t.paper.rect(startX + 1, upperY, width, t.eventHeight)
+                		.attr(t.eventAttrs);
                 	} else {
                 	elem = t.paper.rect(startX + 1, upperY, width - 1, t.eventHeight)
                 		.attr(t.eventAttrs);
