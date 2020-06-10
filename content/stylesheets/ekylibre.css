@@ -3861,3 +3861,101 @@ input:checked ~ .tab-content {
 .viti-orange {
 	color: #f34d00;
 }
+
+/*Accordéons déroulé parcellaire Ekyviti*/
+
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.tabs-step {
+  overflow: hidden;
+}
+.tab-step {
+  width: 100%;
+  overflow: hidden;
+}
+.tab-label-step {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding: 18px 0 16px 64px;
+  /*background: #f1dce9;*/
+  font-weight: bold;
+  font-size: 15px;
+  max-height: 52px;
+  cursor: pointer;
+}
+.tab-label-step:hover {
+}
+.tab-label-step:after {
+  content: " \f107";
+  font-family: "Font Awesome 5 Pro";
+  text-align: center;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0;
+  padding-top: 10px;
+  visibility: visible;
+}
+.tab-content-step {
+  max-height: 0;
+  padding: 0 0 0 64px;
+  margin-top: -15px;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+  visibility: hidden;
+}
+.tab-close-step {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  padding: 0 0 0 64px;
+  margin-top: -15px;
+  cursor: pointer;
+}
+.tab-close-step:hover {
+  background: #e5bed7;
+  color: #000;
+}
+input:checked + .tab-label-step {
+}
+input:checked + .tab-label-step:after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+input:checked ~ .tab-content-step {
+  max-height: 150vh;
+  padding: 0 0 0 64px;
+  visibility: visible;
+}
+.step1 {
+  background-image: url("../fr/images/commun/step1.svg");
+  background-repeat: no-repeat;
+  background-size: 52px;
+}
+.step2 {
+  background-image: url("../fr/images/commun/step2.svg");
+  background-repeat: no-repeat;
+  background-size: 52px;
+}
+.aerateur-step {
+	margin-top: 25px;
+}
+
+@media print  {
+    .tab-content-step {
+	max-height: 150vh;
+    visibility: visible;
+    margin: 0;
+	}
+	.tab-label-step::after {
+	visibility: hidden;
+	}
+}
