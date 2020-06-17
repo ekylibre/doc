@@ -58,7 +58,8 @@
             {dates: [new Date(2020, 3, 28), new Date(2020, 4, 14)], title: "Version 3.10", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
          	{dates: [new Date(2020, 4, 15), new Date(2020, 5, 2)], title: "Version 3.11", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
          	{dates: [new Date(2020, 5, 3), new Date(2020, 5, 11)], title: "Version 3.12", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
-         {dates: [new Date(2020, 5, 12), new Date(annee, mois, jour)], title: "Version 3.13", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
+            {dates: [new Date(2020, 5, 12), new Date(2020, 5, 16)], title: "Version 3.13", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
+         {dates: [new Date(2020, 5, 17), new Date(annee, mois, jour)], title: "Version 3.14", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}}
          ];
          
          var sections = [
@@ -80,9 +81,9 @@
          	scrollRight: nextQuarter,
          	draggable: true
          });
-		 $(window).load(function() {
-			timeline.goToToday();
-		 });
+         $(window).load(function() {
+         timeline.goToToday();
+         });
          });
       </script>
       <!-- TAB CONTROLLERS -->
@@ -114,6 +115,143 @@
                      <div class="panel">
                         <div class="heading">
                            <div class="version">
+                              <h2>Note de version 3.14 du 17/06/2020</h2>
+                           </div>
+                           <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <div class="content">
+                           <div class="divTableNoteVersion">
+                              <div class="divTableBody">
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/ekylibre.svg" alt="Ekylibre" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Commun à plusieurs modules</strong><br /><br />
+                                       2 bugs corrigés
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
+                                       <ul>
+                                          <li>La saisie d'un texte dans un champ personnalisé respecte maintenant les longueurs minimale et maximale autorisées si elles ont été renseignées lors de la création du champ dans la section "Paramètres" du module "Configuration"&nbsp;;</li>
+                                          <li>Une variante dont le statut n'est pas défini sur "Actif" n'est plus disponible dans les listes déroulantes permettant de la sélectionner.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Comptabilité</strong><br /><br />
+                                       1 amélioration et 5 bugs corrigés
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Lors de la création ou de la modification d'un compte comptable général, la longueur de son numéro est automatiquement vérifiée afin de correspondre au nombre de caractères paramétré dans l'Assistant de démarrage ou dans les "Préférences de la comptabilité".</li>
+                                       </ul>
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
+                                       <ul>
+                                          <li>Correction du calcul de la dernière ligne de dépréciation des immobilisations utilisant une méthode d’amortissement dégressive afin qu'elle corresponde à la valeur résiduelle de l'immobilisation&nbsp;;</li>
+                                          <li>Correction du calcul de la valeur résiduelle des immobilisations lors de l'impression du registre des immobilisations à certaines dates&nbsp;;</li>
+                                          <li>Correction d'une erreur empêchant l'obtention du registre des immobilisations lorsqu'une immobilisation qui ne se déprécie pas est enregistrée sans aucune méthode d’amortissement&nbsp;;</li>
+                                          <li>Dans le registre des immobilisations, la devise utilisée est maintenant correctement affichée&nbsp;;</li>
+                                          <li>Une période recherchée sur un intervalle personnalisé de la balance est désormais sauvegardée entre deux connexions à une même instance.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/ventes.svg" alt="Ventes" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Ventes</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Possibilité de visualiser ou de modifier une ou plusieurs ligne(s) de vente enregistrée(s) dans une vente même si son statut a été passé en "Commande".</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Production</strong><br /><br />
+                                       3 améliorations
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+                                          <li>Dans les interventions de "Pulvérisation", lorsque l’utilisateur sélectionne un produit phytosanitaire dont l’application peut être fractionnée, la mention "Autorisé" n’apparaît plus&nbsp;;</li>
+                                          <li>L'heure de fin d'un intervalle entre applications est maintenant affiché dans la vue détaillée d'une intervention de "Pulvérisation" afin d'informer l'utilisateur avec davantage de précision&nbsp;;</li>
+                                          <li>Un produit phytosanitaire dont l'usage possède une autorisation provisoire déclenche désormais la validation de l'autorisation de cet usage à la date de l'intervention.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/outils.svg" alt="Outils" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Outils</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Mise à disposition d'un en-tête permettant de rechercher un document dans la section "Gestion électronique des documents" à partir de son nom, de son type ou de sa date de création.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/configuration.svg" alt="Configuration" width="60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Configuration</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Possibilité de sélectionner le nombre de caractères &#40;de 8 à 14 inclus&#41; pour définir la longueur des comptes généraux dans la section "Préférences de la comptabilité" si celui-ci doit être modifié après son paramétrage dans l'Assistant de démarrage.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="panel">
+                        <div class="heading">
+                           <div class="version">
                               <h2>Note de version 3.13 du 12/06/2020</h2>
                            </div>
                            <i class="fa fa-chevron-down"></i>
@@ -136,7 +274,7 @@
                                     <div class="divTableCellNoteVersion4" style="width: auto">
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                                        <ul>
-                                          <li>Possibilité de saisir les nombre décimaux indifféremment avec la virgule ou le point dans les champs numériques.</li>
+                                          <li>Possibilité de saisir les nombres décimaux indifféremment avec la virgule ou le point dans les champs numériques.</li>
                                        </ul>
                                     </div>
                                  </div>
@@ -205,7 +343,7 @@
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                                        <ul>
                                           <li>Possibilité d'importer les données parcellaires et les activités de la déclaration TelePAC 2020 &#40;également disponible dans l'Assistant de démarrage&#41;&nbsp;;</li>
-										  <li>Possibilité d'importer le fichier des écritures comptables &#40;FEC&#41; au format TXT avec séparateur symbolique | &#40;norme ISO-8859-15&#41; en provenance du logiciel Odicom.</li>
+                                          <li>Possibilité d'importer le fichier des écritures comptables &#40;FEC&#41; au format TXT avec séparateur symbolique | &#40;norme ISO-8859-15&#41; en provenance du logiciel Odicom.</li>
                                        </ul>
                                        <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
                                        <ul>
@@ -1557,7 +1695,7 @@
                                     <div class="divTableCellNoteVersion4" style="width: auto">
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                                        <ul>
-                                          <li>Import du fichier de la déclaration TelePAC 2019&nbsp;;</li>
+                                          <li>Possibilité d'importer les données parcellaires et les activités de la déclaration TelePAC 2019 &#40;également disponible dans l'Assistant de démarrage&#41;&nbsp;;</li>
                                           <li>Déclaration TelePAC&nbsp;: affichage des rivières, des lacs et des bâtiments dans la vue "Carte"&nbsp;;</li>
                                           <li>Import de fiches parcellaires au format Daplos Agro-EDI.</li>
                                        </ul>
@@ -1600,6 +1738,140 @@
       </article>
       <div class="saut-page"></div>
       <div class="heading-print marge aerateur-haut">
+         <h2>Note de version 3.14 du 17/06/2020</h2>
+      </div>
+      <div class="content-print marge">
+         <div class="divTableNoteVersion">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/ekylibre.svg" alt="Ekylibre" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Commun à plusieurs modules</strong><br /><br />
+                     2 bugs corrigés
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
+                     <ul>
+                        <li>La saisie d'un texte dans un champ personnalisé respecte maintenant les longueurs minimale et maximale autorisées si elles ont été renseignées lors de la création du champ dans la section "Paramètres" du module "Configuration"&nbsp;;</li>
+                        <li>Une variante dont le statut n'est pas défini sur "Actif" n'est plus disponible dans les listes déroulantes permettant de la sélectionner.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Comptabilité</strong><br /><br />
+                     1 amélioration et 5 bugs corrigés
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>Lors de la création ou de la modification d'un compte comptable général, la longueur de son numéro est automatiquement vérifiée afin de correspondre au nombre de caractères paramétré dans l'Assistant de démarrage ou dans les "Préférences de la comptabilité".</li>
+                     </ul>
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
+                     <ul>
+                        <li>Correction du calcul de la dernière ligne de dépréciation des immobilisations utilisant une méthode d’amortissement dégressive afin qu'elle corresponde à la valeur résiduelle de l'immobilisation&nbsp;;</li>
+                        <li>Correction du calcul de la valeur résiduelle des immobilisations lors de l'impression du registre des immobilisations à certaines dates&nbsp;;</li>
+                        <li>Correction d'une erreur empêchant l'obtention du registre des immobilisations lorsqu'une immobilisation qui ne se déprécie pas est enregistrée sans aucune méthode d’amortissement&nbsp;;</li>
+                        <li>Dans le registre des immobilisations, la devise utilisée est maintenant correctement affichée&nbsp;;</li>
+                        <li>Une période recherchée sur un intervalle personnalisé de la balance est désormais sauvegardée entre deux connexions à une même instance.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/ventes.svg" alt="Ventes" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Ventes</strong><br /><br />
+                     1 amélioration
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>Possibilité de visualiser ou de modifier une ou plusieurs ligne(s) de vente enregistrée(s) dans une vente même si son statut a été passé en "Commande".</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Production</strong><br /><br />
+                     4 améliorations
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>Dans les interventions de "Pulvérisation", lorsque l’utilisateur sélectionne un produit phytosanitaire dont l’application peut être fractionnée, la mention "Autorisé" n’apparaît plus&nbsp;;</li>
+                        <li>L'heure de fin d'un intervalle entre applications est maintenant affiché dans la vue détaillée d'une intervention de "Pulvérisation" afin d'informer l'utilisateur avec davantage de précision&nbsp;;</li>
+                        <li>Un produit phytosanitaire dont l'usage possède une autorisation provisoire déclenche désormais la validation de l'autorisation de cet usage à la date de l'intervention&nbsp;;</li>
+                        <li>Le filtre d'affichage de la liste déroulante permettant de sélectionner la cible durant une intervention de récolte ne propose désormais que les cultures et masque les parcelles.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/outils.svg" alt="Outils" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Outils</strong><br /><br />
+                     1 amélioration
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>Mise à disposition d'un en-tête permettant de rechercher un document dans la section "Gestion électronique des documents" à partir de son nom, de son type ou de sa date de création.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/configuration.svg" alt="Configuration" width="60px">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Configuration</strong><br /><br />
+                     1 amélioration
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>Possibilité de sélectionner le nombre de caractères (de 8 à 14 inclus) pour définir la longueur des comptes généraux dans la section "Préférences de la comptabilité" si celui-ci doit être modifié après son paramétrage dans l'Assistant de démarrage.</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="saut-page"></div>
+      <div class="heading-print marge aerateur-haut">
          <h2>Note de version 3.13 du 12/06/2020</h2>
       </div>
       <div class="content-print marge">
@@ -1620,7 +1892,7 @@
                   <div class="divTableCellNoteVersion4" style="width: auto">
                      <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                      <ul>
-                        <li>Possibilité de saisir les nombre décimaux indifféremment avec la virgule ou le point dans les champs numériques.</li>
+                        <li>Possibilité de saisir les nombres décimaux indifféremment avec la virgule ou le point dans les champs numériques.</li>
                      </ul>
                   </div>
                </div>
@@ -1689,7 +1961,7 @@
                      <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                      <ul>
                         <li>Possibilité d'importer les données parcellaires et les activités de la déclaration TelePAC 2020 &#40;également disponible dans l'Assistant de démarrage&#41;&nbsp;;</li>
-						<li>Possibilité d'importer le fichier des écritures comptables &#40;FEC&#41; au format TXT avec séparateur symbolique | &#40;norme ISO-8859-15&#41; en provenance du logiciel Odicom.</li>
+                        <li>Possibilité d'importer le fichier des écritures comptables &#40;FEC&#41; au format TXT avec séparateur symbolique | &#40;norme ISO-8859-15&#41; en provenance du logiciel Odicom.</li>
                      </ul>
                      <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
                      <ul>
@@ -2983,7 +3255,7 @@
                   <div class="divTableCellNoteVersion4" style="width: auto">
                      <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                      <ul>
-                        <li>Import du fichier de la déclaration TelePAC 2019&nbsp;;</li>
+                        <li>Possibilité d'importer les données parcellaires et les activités de la déclaration TelePAC 2019 &#40;également disponible dans l'Assistant de démarrage&#41;&nbsp;;</li>
                         <li>Déclaration TelePAC&nbsp;: affichage des rivières, des lacs et des bâtiments dans la vue "Carte"&nbsp;;</li>
                         <li>Import de fiches parcellaires au format Daplos Agro-EDI.</li>
                      </ul>
