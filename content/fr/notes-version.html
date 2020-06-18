@@ -58,8 +58,8 @@
             {dates: [new Date(2020, 3, 28), new Date(2020, 4, 14)], title: "Version 3.10", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
          	{dates: [new Date(2020, 4, 15), new Date(2020, 5, 2)], title: "Version 3.11", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
          	{dates: [new Date(2020, 5, 3), new Date(2020, 5, 11)], title: "Version 3.12", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
-            {dates: [new Date(2020, 5, 12), new Date(2020, 5, 16)], title: "Version 3.13", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
-         {dates: [new Date(2020, 5, 17), new Date(annee, mois, jour)], title: "Version 3.14", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}}
+            {dates: [new Date(2020, 5, 12), new Date(2020, 5, 17)], title: "Version 3.13", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
+         {dates: [new Date(2020, 5, 18), new Date(annee, mois, jour)], title: "Version 3.14", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}}
          ];
          
          var sections = [
@@ -82,8 +82,8 @@
          	draggable: true
          });
          $(window).load(function() {
-         timeline.goToToday();
-         });
+   			timeline.goToToday();
+		 });
          });
       </script>
       <!-- TAB CONTROLLERS -->
@@ -115,7 +115,7 @@
                      <div class="panel">
                         <div class="heading">
                            <div class="version">
-                              <h2>Note de version 3.14 du 17/06/2020</h2>
+                              <h2>Note de version 3.14 du 18/06/2020</h2>
                            </div>
                            <i class="fa fa-chevron-down"></i>
                         </div>
@@ -163,7 +163,7 @@
                                           <li>Correction du calcul de la dernière ligne de dépréciation des immobilisations utilisant une méthode d’amortissement dégressive afin qu'elle corresponde à la valeur résiduelle de l'immobilisation&nbsp;;</li>
                                           <li>Correction du calcul de la valeur résiduelle des immobilisations lors de l'impression du registre des immobilisations à certaines dates&nbsp;;</li>
                                           <li>Correction d'une erreur empêchant l'obtention du registre des immobilisations lorsqu'une immobilisation qui ne se déprécie pas est enregistrée sans aucune méthode d’amortissement&nbsp;;</li>
-                                          <li>Dans le registre des immobilisations, la devise utilisée est maintenant correctement affichée&nbsp;;</li>
+                                          <li>La devise utilisée est maintenant correctement affichée dans le document PDF du registre des immobilisations&nbsp;;</li>
                                           <li>Une période recherchée sur un intervalle personnalisé de la balance est désormais sauvegardée entre deux connexions à une même instance.</li>
                                        </ul>
                                     </div>
@@ -182,7 +182,7 @@
                                     <div class="divTableCellNoteVersion4" style="width: auto">
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                                        <ul>
-                                          <li>Possibilité de visualiser ou de modifier une ou plusieurs ligne(s) de vente enregistrée(s) dans une vente même si son statut a été passé en "Commande".</li>
+                                          <li>Possibilité de visualiser et de modifier une ou plusieurs ligne(s) de vente enregistrée(s) dans une vente même si son statut a été passé en "Commande".</li>
                                        </ul>
                                     </div>
                                  </div>
@@ -1738,7 +1738,7 @@
       </article>
       <div class="saut-page"></div>
       <div class="heading-print marge aerateur-haut">
-         <h2>Note de version 3.14 du 17/06/2020</h2>
+         <h2>Note de version 3.14 du 18/06/2020</h2>
       </div>
       <div class="content-print marge">
          <div class="divTableNoteVersion">
@@ -1784,7 +1784,7 @@
                         <li>Correction du calcul de la dernière ligne de dépréciation des immobilisations utilisant une méthode d’amortissement dégressive afin qu'elle corresponde à la valeur résiduelle de l'immobilisation&nbsp;;</li>
                         <li>Correction du calcul de la valeur résiduelle des immobilisations lors de l'impression du registre des immobilisations à certaines dates&nbsp;;</li>
                         <li>Correction d'une erreur empêchant l'obtention du registre des immobilisations lorsqu'une immobilisation qui ne se déprécie pas est enregistrée sans aucune méthode d’amortissement&nbsp;;</li>
-                        <li>Dans le registre des immobilisations, la devise utilisée est maintenant correctement affichée&nbsp;;</li>
+                        <li>La devise utilisée est maintenant correctement affichée dans le document PDF du registre des immobilisations&nbsp;;</li>
                         <li>Une période recherchée sur un intervalle personnalisé de la balance est désormais sauvegardée entre deux connexions à une même instance.</li>
                      </ul>
                   </div>
@@ -1803,7 +1803,7 @@
                   <div class="divTableCellNoteVersion4" style="width: auto">
                      <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                      <ul>
-                        <li>Possibilité de visualiser ou de modifier une ou plusieurs ligne(s) de vente enregistrée(s) dans une vente même si son statut a été passé en "Commande".</li>
+                        <li>Possibilité de visualiser et de modifier une ou plusieurs ligne(s) de vente enregistrée(s) dans une vente même si son statut a été passé en "Commande".</li>
                      </ul>
                   </div>
                </div>
@@ -1813,7 +1813,7 @@
                   </div>
                   <div class="divTableCellNoteVersion2" style="width: auto">
                      <strong>Production</strong><br /><br />
-                     4 améliorations
+                     3 améliorations
                   </div>
                </div>
                <div class="divTableRow">
@@ -1824,8 +1824,7 @@
                      <ul>
                         <li>Dans les interventions de "Pulvérisation", lorsque l’utilisateur sélectionne un produit phytosanitaire dont l’application peut être fractionnée, la mention "Autorisé" n’apparaît plus&nbsp;;</li>
                         <li>L'heure de fin d'un intervalle entre applications est maintenant affiché dans la vue détaillée d'une intervention de "Pulvérisation" afin d'informer l'utilisateur avec davantage de précision&nbsp;;</li>
-                        <li>Un produit phytosanitaire dont l'usage possède une autorisation provisoire déclenche désormais la validation de l'autorisation de cet usage à la date de l'intervention&nbsp;;</li>
-                        <li>Le filtre d'affichage de la liste déroulante permettant de sélectionner la cible durant une intervention de récolte ne propose désormais que les cultures et masque les parcelles.</li>
+                        <li>Un produit phytosanitaire dont l'usage possède une autorisation provisoire déclenche désormais la validation de l'autorisation de cet usage à la date de l'intervention.</li>
                      </ul>
                   </div>
                </div>
