@@ -655,10 +655,47 @@
             <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
          </div>
          <div class="info-txt">
-            <span class="titre-advice">Les comptes de tiers<br /></span>
+            <span class="titre-advice">Radical des comptes de tiers<br /></span>
             <p class="texte-advice">Par défaut les numéros de compte des clients commencent par 411 mais il est possible de modifier le radical comptable en 4111 en fonction des exigences de votre expert-comptable ou de votre centre de gestion. De la même manière, les numéros de compte des fournisseurs commencent par 401 mais il est possible de modifier le radical comptable en 4011.</p>
          </div>
+      </div>
+	  <div class="floating-box process">
+         <img src="../images/commun/step4.svg" alt="4" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Période d’amortissement par défaut</span>
+         <p>Dans la section "Préférences de la comptabilité", sélectionnez dans la liste déroulante "Période d’amortissement par défaut", celle que vous désirez privilégier&nbsp;: mensuelle, trimestrielle ou annuelle.
+         </p>
+         <p class="max-img-process">
+            <img src="../images/chapitre5/societe4.png" class="contour-img" alt="Paramétrage période d’amortissement" data-action="zoom" />
+         </p>
+      </div>
+	  <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step5.svg" alt="5" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Nombre de caractères des comptes généraux</span>
+         <p>Dans la section "Préférences de la comptabilité", choisissez le nombre de caractères &#40;de 8 à 14 inclus&#41; si celui-ci doit être modifié après le paramétrage réalisé dans l'assistant de démarrage.
+         </p>
+         <p class="max-img-process">
+            <img src="../images/chapitre5/societe5.png" class="contour-img" alt="Paramétrage nombre de caractères des comptes généraux" data-action="zoom" />
+         </p>
 		 <p>Cliquez sur <span class="btn-blue">Modifier</span> pour valider l'opération.</p>
+      </div>
+	  <div class="warn-fond aerateur-haut">
+         <div class="floating-box-warn">
+            <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
+         </div>
+         <div class="info-txt">
+            <span class="titre-advice">Accès au paramétrage des comptes généraux<br /></span>
+            <p class="texte-advice">Notez qu'il n'est plus possible de modifier le nombre de caractères des comptes généraux à partir du moment où des écritures sont en attente de validation dans le brouillard comptable ou dès que des écritures ont été validées dans le brouillard comptable. La sélection dans la liste déroulante est alors désactivée et celle-ci n'affiche plus que le nombre de caractères actif.</p>
+         </div>
+      </div>
+	  <div class="process-txt">
+         <p class="max-img-process">
+            <img src="../images/chapitre5/societe6.png" class="contour-img" alt="Verrouillage liste" data-action="zoom" />
+         </p>
       </div>
       <h6>Guide de prise en main • Comptabilité • Journaux</h6>
       <a class="slice-process" id="journaux"></a>
@@ -1456,7 +1493,7 @@
          </p>
       </div>
       <p class="texte">C'est la sélection du régime fiscal de l'entreprise dans l'assistant de démarrage qui définit automatiquement le plan de comptes adapté à son activité principale &#40;plan comptable agricole ‒ arrêté du 11/12/1986 ou plan comptable général de 1982 ‒ arrêté du 14/12/2007&#41;.</p>
-      <p class="texte">Pour une meilleure présentation des états, la longueur des comptes comptables a été homogénéisée à 8 chiffres &#40;10 si vous avez choisi cette option dans l'assistant de démarrage&#41;, comme par exemple 60120000, sauf pour les comptes de tiers &#40;clients et fournisseurs uniquement&#41; composés du numéro de compte centralisateur à 3 chiffres et du numéro auxiliaire &#40;pouvant être une chaîne de caractères alphanumériques&#41;.</p>
+      <p class="texte">Pour une meilleure présentation des états, la longueur des comptes comptables a été homogénéisée et peut être définie de 8 à 14 chiffres dans l'assistant de démarrage ou dans les <a href="#societe" target="_self" class="avoid-clicks">"Préférences de la comptabilité"</a>, sauf pour les comptes de tiers &#40;clients et fournisseurs uniquement&#41; composés du numéro de compte centralisateur à 3 chiffres et du numéro auxiliaire &#40;pouvant être une chaîne de caractères alphanumériques&#41;.</p>
       <div class="affichage-large"></div>
       <div class="affichage-mobile">
          <p align="center">
@@ -1465,7 +1502,7 @@
             Glissez pour parcourir le schéma
          </p>
       </div>
-      <div class="scroll marge">
+      <div class="scroll marge aerateur-haut">
          <div class="tableau">
             <p align="center"><img src="../images/chapitre5/schema-compte.png" alt="Comptes de tiers" width="500"></p>
          </div>
@@ -1515,7 +1552,17 @@
          <p class="max-img-process"><img src="../images/chapitre5/plan3.png" class="contour-img" alt="Création nouveau compte" data-action="zoom" /></p>
          <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
       </div>
-      <br />
+      <div class="warn-fond aerateur-haut aerateur-bas">
+         <div class="floating-box-warn">
+            <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
+         </div>
+         <div class="info-txt">
+            <span class="titre-advice">Longueur des comptes comptables généraux<br /></span>
+            <p class="texte-advice">
+               Si le nombre de caractères du compte comptable est inférieur à celui enregistré dans les <a href="#societe" target="_self" class="avoid-clicks">"Préférences de la comptabilité"</a>, sa longueur est automatiquement ajustée par l'ajout de un ou de plusieurs zéro&#40;s&#41; à la fin du numéro. Si le nombre de caractères est supérieur à celui qui a été paramétré, le numéro est automatiquement tronqué pour correspondre à la longueur attendue, si et seulement si l'excédent de chiffres à la fin du numéro est composé de un ou de plusieurs zéro&#40;s&#41;. Sinon, cet ajustement doit être réalisé manuellement par l'utilisateur.
+            </p>
+         </div>
+      </div>
       <div class="floating-box process">
          <img src="../images/commun/step3.svg" alt="3" width="52" />
       </div>
