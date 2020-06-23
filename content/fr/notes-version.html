@@ -72,7 +72,8 @@
          	{visibleSpan: DAY_IN_MILLISECONDS * 366,
          	animated: true,
          	tooltips: true,
-         	defaultStartDate: new Date(2019, 5, 15),
+         	defaultStartDate: new Date(2019, 5, 1),
+			endDate: new Date(2020, 8, 30),
          	sections: sections,
          	sectionLabelAttrs: {"fill": "#3f70ce", "font-weight": "bold"},
          	labelInterval: isHalfMonth,
@@ -161,9 +162,9 @@
                                        <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
                                        <ul>
                                           <li>Correction du calcul de la dernière ligne de dépréciation des immobilisations utilisant une méthode d’amortissement dégressive afin qu'elle corresponde à la valeur résiduelle de l'immobilisation&nbsp;;</li>
-                                          <li>Correction du calcul de la valeur résiduelle des immobilisations lors de l'impression du registre des immobilisations à certaines dates&nbsp;;</li>
-                                          <li>Correction d'une erreur empêchant l'obtention du registre des immobilisations lorsqu'une immobilisation qui ne se déprécie pas est enregistrée sans aucune méthode d’amortissement&nbsp;;</li>
-                                          <li>La devise utilisée est maintenant correctement affichée dans le document PDF du registre des immobilisations&nbsp;;</li>
+                                          <li>Correction du calcul de la valeur résiduelle des immobilisations lors de l'impression du registre "État des immobilisations" à certaines dates&nbsp;;</li>
+                                          <li>Correction d'une erreur empêchant l'obtention du registre "État des immobilisations" lorsqu'une immobilisation qui ne se déprécie pas est enregistrée sans aucune méthode d’amortissement&nbsp;;</li>
+                                          <li>La devise utilisée est maintenant correctement affichée dans le document PDF du registre "État des immobilisations"&nbsp;;</li>
                                           <li>Une période recherchée sur un intervalle personnalisé de la balance est désormais sauvegardée entre deux connexions à une même instance.</li>
                                        </ul>
                                     </div>
@@ -1782,9 +1783,9 @@
                      <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
                      <ul>
                         <li>Correction du calcul de la dernière ligne de dépréciation des immobilisations utilisant une méthode d’amortissement dégressive afin qu'elle corresponde à la valeur résiduelle de l'immobilisation&nbsp;;</li>
-                        <li>Correction du calcul de la valeur résiduelle des immobilisations lors de l'impression du registre des immobilisations à certaines dates&nbsp;;</li>
-                        <li>Correction d'une erreur empêchant l'obtention du registre des immobilisations lorsqu'une immobilisation qui ne se déprécie pas est enregistrée sans aucune méthode d’amortissement&nbsp;;</li>
-                        <li>La devise utilisée est maintenant correctement affichée dans le document PDF du registre des immobilisations&nbsp;;</li>
+                        <li>Correction du calcul de la valeur résiduelle des immobilisations lors de l'impression du registre "État des immobilisations" à certaines dates&nbsp;;</li>
+                        <li>Correction d'une erreur empêchant l'obtention du registre "État des immobilisations" lorsqu'une immobilisation qui ne se déprécie pas est enregistrée sans aucune méthode d’amortissement&nbsp;;</li>
+                        <li>La devise utilisée est maintenant correctement affichée dans le document PDF du registre "État des immobilisations"&nbsp;;</li>
                         <li>Une période recherchée sur un intervalle personnalisé de la balance est désormais sauvegardée entre deux connexions à une même instance.</li>
                      </ul>
                   </div>
