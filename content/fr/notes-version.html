@@ -60,7 +60,7 @@
          	{dates: [new Date(2020, 5, 3), new Date(2020, 5, 11)], title: "Version 3.12", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
             {dates: [new Date(2020, 5, 12), new Date(2020, 5, 17)], title: "Version 3.13", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
             {dates: [new Date(2020, 5, 18), new Date(2020, 6, 1)], title: "Version 3.14", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
-			{dates: [new Date(2020, 6, 2), new Date(annee, mois, jour)], title: "Version 3.15", attrs: {fill: "#fea40b", stroke: "#fea40b"}}
+         {dates: [new Date(2020, 6, 2), new Date(annee, mois, jour)], title: "Version 3.15", attrs: {fill: "#fea40b", stroke: "#fea40b"}}
          ];
          
          var sections = [
@@ -74,7 +74,7 @@
          	animated: true,
          	tooltips: true,
          	defaultStartDate: new Date(2019, 5, 1),
-			endDate: new Date(2020, 8, 30),
+         endDate: new Date(2020, 8, 30),
          	sections: sections,
          	sectionLabelAttrs: {"fill": "#3f70ce", "font-weight": "bold"},
          	labelInterval: isHalfMonth,
@@ -84,8 +84,8 @@
          	draggable: true
          });
          $(window).load(function() {
-   			timeline.goToToday();
-		 });
+         timeline.goToToday();
+         });
          });
       </script>
       <!-- TAB CONTROLLERS -->
@@ -114,7 +114,7 @@
             <section id="panel-1">
                <main>
                   <div class="accordion-container marge">
-					 <div class="panel">
+                     <div class="panel">
                         <div class="heading">
                            <div class="version">
                               <h2>Note de version 3.15 du 2/07/2020</h2>
@@ -124,6 +124,25 @@
                         <div class="content">
                            <div class="divTableNoteVersion">
                               <div class="divTableBody">
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/first-run.svg" alt="Assistant de démarrage" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Assistant de démarrage</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Le choix de la langue proposé dans la liste déroulante est maintenant limité au français et à l'anglais.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
                                  <div class="divTableRow">
                                     <div class="divTableCellNoteVersion1" style="width: 60px">
                                        <img src="../images/notes-version/ekylibre.svg" alt="Ekylibre" width="60">
@@ -137,11 +156,11 @@
                                     <div class="divTableCellNoteVersion3" style="width: 60px">
                                     </div>
                                     <div class="divTableCellNoteVersion4" style="width: auto">
-									   <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                                        <ul>
                                           <li>Affichage d'infobulles &#40;messages d'aide contextuels&#41; apparaissant lorsque le curseur survole les indicateurs tricolores de la colonne "Statut" et mise à jour des libellés associés à ces indicateurs dans la colonne "État"&nbsp;;</li>
-										  <li>Lors du survol d'un libellé tronqué à cause de la longueur excessive de son nombre de caractères, apparition d'une infobulle avec un affichage complet du libellé&nbsp;;</li>
-										  <li>Modification de l'alignement des libellés, des champs et des options affichés dans les en-têtes de recherche permettant une meilleure lisibilité des critères disponibles.</li>
+                                          <li>Lors du survol d'un libellé tronqué à cause de la longueur excessive de son nombre de caractères, apparition d'une infobulle avec un affichage complet du libellé&nbsp;;</li>
+                                          <li>Modification de l'alignement des libellés, des champs et des options affichés dans les en-têtes de recherche permettant une meilleure lisibilité des critères disponibles.</li>
                                        </ul>
                                        <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
                                        <ul>
@@ -171,7 +190,7 @@
                                        </ul>
                                     </div>
                                  </div>
-								 <div class="divTableRow">
+                                 <div class="divTableRow">
                                     <div class="divTableCellNoteVersion1">
                                        <img src="../images/notes-version/stocks.svg" alt="Stocks" width="60">
                                     </div>
@@ -186,7 +205,7 @@
                                     <div class="divTableCellNoteVersion4" style="width: auto">
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                                        <ul>
-										  <li>Amélioration de la courbe interactive utilisée pour afficher, dans l'ordre chronologique, les mouvements de stock d'une matière depuis sa date de création jusqu'à la date du jour&nbsp;;</li>
+                                          <li>Amélioration de la courbe interactive utilisée pour afficher, dans l'ordre chronologique, les mouvements de stock d'une matière depuis sa date de création jusqu'à la date du jour&nbsp;;</li>
                                           <li>Possibilité de supprimer une expédition même si son statut a été passé au stade "Prêt".</li>
                                        </ul>
                                     </div>
@@ -209,7 +228,7 @@
                                           <li>Dans la vue détaillée d'un équipement, ajout d'un bouton permettant de le supprimer s'il n'a encore jamais été sélectionné dans l'enregistrement d'une intervention&nbsp;;</li>
                                           <li>Lorsqu'aucune intervention n'est enregistrée durant une campagne, l'impression du "Cahier de culture" est désormais possible et le document indique l'absence d'enregistrement.</li>
                                        </ul>
-									   <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
                                        <ul>
                                           <li>Réactivation du bouton "Dupliquer" permettant de copier une ou plusieurs intervention(s) dont le statut est au stade "Planifiée".</li>
                                        </ul>
@@ -251,7 +270,7 @@
                                        <ul>
                                           <li>Suppression de l'option "Utiliser la recherche globale" dans les "Préférences de l'interface" afin de favoriser l'utilisation des en-têtes de recherche plus pertinents.</li>
                                        </ul>
-									   <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
                                        <ul>
                                           <li>Correction de l'affichage de l'intervalle entre applications visible dans la vue détaillée d'une variante de produit phytosanitaire.</li>
                                        </ul>
