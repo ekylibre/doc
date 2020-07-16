@@ -94,6 +94,7 @@
                            <li><a href="../chapitre4#espace" target="_self">Présentation de l'espace de travail</a></li>
                            <li><a href="../chapitre4#modules" target="_self">Navigation et accès aux différents modules</a></li>
                            <li><a href="../chapitre4#perso" target="_self">Personnalisation des tableaux de bord</a></li>
+						   <li><a href="../chapitre4#etiquettes" target="_self">Utilisation des étiquettes</a></li>
                            <li><a href="../chapitre4#champs" target="_self">Création de champs personnalisés</a></li>
 						   <li><a href="../chapitre4#formats" target="_self">Formats de nommage</a></li>
 						   <li><a href="../chapitre4#connexions" target="_self">Connexions partenaires</a></li>
@@ -207,9 +208,9 @@
                         <div class="bloc">
                            <li><a href="../chapitre9#activites" target="_self">Activités agricoles</a></li>
                            <li><a href="../chapitre9#productions" target="_self">Création des productions dans une campagne</a></li>
-                           <li><a href="../chapitre9#interventions" target="_self">Enregistrement et planification d'interventions</a></li>
+                           <li><a href="../chapitre9#interventions" target="_self">Enregistrement d'interventions</a></li>
+						   <li><a href="../chapitre9#planification" target="_self">Planification d'interventions</a></li>
                            <li><a href="../chapitre9#cahier" target="_self">Obtenir le cahier de traçabilité</a></li>
-                           <li><a href="../chapitre9#etiquettes" target="_self">Utilisation des étiquettes</a></li>
                         </div>
                      </ul>
                   </li>
@@ -289,7 +290,7 @@
                   <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
                </div>
                <div class="divTableCellListe">
-                  Comment créer des <a href="#champs" class="avoid-clicks">champs personnalisés</a> pour enregistrer des informations complémentaires
+                  Comment créer des <a href="#etiquettes" class="avoid-clicks">étiquettes</a> et des <a href="#champs" class="avoid-clicks">champs personnalisés</a> pour enregistrer des informations complémentaires
                </div>
             </div>
 			<div class="divTableRow">
@@ -517,7 +518,7 @@
       <p class="aerateur-haut"><span class="titre-advice texte">Fenêtre principale</span></p>
       <p class="texte">Les informations affichées et la liste des champs à renseigner peuvent occuper une hauteur importante dans la fenêtre principale.<br />Réduisez ou développez les informations des sections avec les boutons<img src="../images/commun/minus-square-o.svg" alt="moins" height="15" class="icone-marge-gauche icone-marge-droite">et<img src="../images/commun/plus-square-o.svg" alt="plus" height="15" class="icone-marge-gauche icone-marge-droite">à droite de la fenêtre principale.</p>
       <p class="texte"><img src="../images/chapitre4/dev-reduc.png" class="contour-img" alt="Réduction agrandissement des sections" data-action="zoom" /></p>
-      <p class="texte">De la même manière, la fonction de recherche contextuelle &#40;les champs et filtres disponibles dépendent de la fonctionnalité sélectionnée&#41; peut être dépliée ou repliée avec les boutons<img src="../images/commun/plus-square-o.svg" alt="moins" height="15" class="icone-marge-gauche icone-marge-droite">et<img src="../images/commun/minus-square-o.svg" alt="plus" height="15" class="icone-marge-gauche icone-marge-droite">à droite de la fenêtre principale.</p>
+      <p class="texte">De la même manière, la fonction de recherche contextuelle &#40;les champs, filtres et options disponibles dépendent de la fonctionnalité sélectionnée&#41; peut être dépliée ou repliée avec les boutons<img src="../images/commun/plus-square-o.svg" alt="moins" height="15" class="icone-marge-gauche icone-marge-droite">et<img src="../images/commun/minus-square-o.svg" alt="plus" height="15" class="icone-marge-gauche icone-marge-droite">à droite de la fenêtre principale.</p>
       <p class="texte"><img src="../images/chapitre4/search1.png" class="contour-img" alt="Champ de recherche" data-action="zoom" /></p>
       <p class="texte"><img src="../images/chapitre4/search2.png" class="contour-img" alt="Champ de recherche" data-action="zoom" /></p>
       <h6>Guide de prise en main • L'interface • Présentation des modules</h6>
@@ -659,9 +660,80 @@
             <img src="../images/chapitre4/tdb9.png" class="contour-img" alt="Validation tableau de bord" data-action="zoom" />
          </p>
       </div>
+	  <h6>Guide de prise en main • L'interface • Utilisation des étiquettes</h6>
+      <a class="slice-process" id="etiquettes"></a>
+      <h2 class="texte aerateur">d - Utilisation des étiquettes</h2>
+      <p align="center" class="aerateur-haut aerateur-bas texte">
+         <img src="../images/chapitre4/illus-etiquettes.png" alt="Illustration étiquettes" width="450px" />
+      </p>
+      <p class="texte">Les étiquettes sont des indicateurs que vous pouvez personnaliser avec une couleur de votre choix. Si l'une d'entre elles est sélectionnée lors de la saisie d'une intervention &#40;il est même possible d'en choisir plusieurs&#41;, elle est affichée en bas de la fiche de l'intervention.</p>
+      <p class="texte">Exemple de mise en œuvre de cette fonctionnalité : les étiquettes peuvent vous permettre d'associer les conditions météorologiques constatées lors d'une intervention, avec la création d'une étiquette par type d'observation.</p>
+      <p align="center" class="texte"><img src="../images/chapitre4/meteo.svg" alt="étiquettes météo" height="25"></p>
+      <p class="texte aerateur-haut">
+         Le processus suivant vous guide pour créer une nouvelle étiquette.
+      </p>
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Accédez aux étiquettes</span>
+         <p>
+            Pour créer de nouvelles étiquettes, allez dans le menu principal et cliquez sur la clef anglaise<img src="../images/chapitre4/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">ou cliquez sur le bouton "Configuration" de la page d'accueil&nbsp;:
+         </p>
+         <p align="center"><img src="../images/chapitre4/wrench.svg" alt="Configuration" width="60"></p>
+         <p>
+            Dans la barre latérale du module, cliquez sur "Étiquettes" dans la section "Paramètres" symbolisée par l'icône d'une clef anglaise<img src="../images/chapitre9/wrench3.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche">. L'application affiche toutes les étiquettes déjà créées le cas échéant.
+         </p>
+         <p class="max-img-process">
+            <img src="../images/chapitre4/etiquettes1.png" class="contour-img" alt="Liste des étiquettes" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Créez une nouvelle étiquette</span>
+         <p>Cliquez sur le bouton "Nouveau", puis nommez la nouvelle étiquette. Cliquez ensuite sur la pastille noire et associez-lui une teinte à l'aide du "Sélecteur de couleurs".</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre4/etiquettes2.png" class="contour-img" alt="Création d'une nouvelle étiquette" data-action="zoom" />
+         </p>
+         <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez l'étiquette</span>
+         <p>
+            L'application affiche la nouvelle étiquette qui reste modifiable et que vous pouvez sélectionner lors de la saisie d'une intervention. Fermez le "Sélecteur de couleurs".
+         </p>
+         <p class="max-img-process">
+            <img src="../images/chapitre4/etiquettes3.png" class="contour-img" alt="Afficher la nouvelle étiquette" data-action="zoom" />
+         </p>
+      </div>
+      <div class="floating-box process">
+         <img src="../images/commun/step4.svg" alt="4" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Utilisez l'étiquette</span>
+         <p>
+            L'étiquette associée à la saisie d'une intervention…
+         </p>
+         <p class="max-img-process">
+            <img src="../images/chapitre4/etiquettes4.png" class="contour-img" alt="Étiquette sélectionnée dans une intervention" data-action="zoom" />
+         </p>
+         <p>
+            … apparaît automatiquement en bas de la fiche correspondante à celle-ci&nbsp;:
+         </p>
+         <p class="max-img-process">
+            <img src="../images/chapitre4/etiquettes5.png" class="contour-img" alt="Étiquette affichée dans la fiche d'une intervention">
+         </p>
+      </div>
       <h6>Guide de prise en main • L'interface • Champs personnalisés</h6>
       <a class="slice-process" id="champs"></a>
-      <h2 class="texte aerateur">d - Création de champs personnalisés</h2>
+      <h2 class="texte aerateur">e - Création de champs personnalisés</h2>
       <p class="texte">L'application vous permet de définir un ou plusieurs champs personnalisés &#40;optionnels ou obligatoires&#41; que pouvez paramétrer et assigner à certaines fonctionnalités d'Ekylibre.</p>
       <p class="texte">Ces champs peuvent être de plusieurs types&nbsp;:</p>
       <div class="divTableListe texte">
@@ -784,7 +856,7 @@
       </div>
 	  <h6>Guide de prise en main • L'interface • Formats de nommage</h6>
       <a class="slice-process" id="formats"></a>
-      <h2 class="texte aerateur">e - Formats de nommage</h2>
+      <h2 class="texte aerateur">f - Formats de nommage</h2>
       <p class="texte">L'application vous permet de définir la façon dont les parcelles sont nommées, notamment dans les vues "Carte", "Pavés" et "Liste" des interventions, ainsi que dans l'impression du "Cahier de traçabilité".</p>
 	  <p class="texte aerateur-haut">Le processus suivant vous guide pour définir le format de nommage des parcelles.</p>
       <div class="floating-box process">
@@ -807,7 +879,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Éditez le format de nommage des parcelles</span>
-         <p>Cliquez sur l'icône symbolisant un "Crayon"<img src="../images/commun/crayon.svg" alt="crayon" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche du nom du format "Parcelles".</p>
+         <p>Cliquez sur le crayon<img src="../images/commun/crayon.svg" alt="crayon" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche du format de nommage configuré pour désigner les "Parcelles" dans l'application.</p>
          <p class="max-img-process">
             <img src="../images/chapitre4/format2.png" class="contour-img" alt="Édition formats de nommage" data-action="zoom" />
          </p>
@@ -818,11 +890,11 @@
       </div>
 	  <div class="process-txt">
          <span class="titre-advice">Modifiez le format de nommage des parcelles</span>
-         <p>Le nom des parcelles est composé par défaut du nom de la zone cultivable, suivi de l'Activité, suivi de la Campagne comme par exemple "LES ESSARDS #1 Maïs grain 2019".</p>
+         <p>Le nom des parcelles est composé, par défaut, du nom de la zone cultivable, du nom de l'activité et de l'année de la campagne comme par exemple <em><strong>"LES ESSARDS #1 Maïs grain 2019"</strong></em>.</p>
          <p class="max-img-process">
             <img src="../images/chapitre4/format3.png" class="contour-img" alt="Modification format de nommage" data-action="zoom" />
          </p>
-		 <p>Cliquez sur la croix bleue<img src="../images/commun/times-blue.svg" alt="Supprimer" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à droite du numéro d'un champ pour le supprimer si cela est nécessaire.</p>
+		 <p>Cliquez sur la croix<img src="../images/commun/times-blue.svg" alt="Supprimer" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à droite du numéro d'un champ pour le supprimer ou pour modifier l'ordre des champs.</p>
       </div>
       <br />
 	  <div class="floating-box process">
@@ -834,7 +906,7 @@
          <p class="max-img-process">
             <img src="../images/chapitre4/format4.png" class="contour-img" alt="Ajout d'un nouveau champ" data-action="zoom" />
          </p>
-		 <p>Sélectionnez le type de champ à ajouter dans la liste déroulante comme par exemple le Mode de production.</p>
+		 <p>Sélectionnez, dans la liste déroulante, le type de champ à ajouter comme par exemple "Mode de production".</p>
 		 <p class="max-img-process">
             <img src="../images/chapitre4/format5.png" class="contour-img" alt="Sélection type de champ" data-action="zoom" />
          </p>
@@ -846,20 +918,20 @@
       </div>
 	  <div class="process-txt">
          <span class="titre-advice">Validez le nouveau format de nommage</span>
-         <p>Le nom des parcelles est maintenant composé du nom de la zone cultivable, suivi de l'Activité, suivi de la Campagne, suivi du Mode de production comme par exemple "Agriculture biologique".</p>
+         <p>Le nom des parcelles est maintenant défini à partir des trois champs d'origine auxquels est ajouté le mode de production comme par exemple "Agriculture biologique".</p>
          <p class="max-img-process">
             <img src="../images/chapitre4/format6.png" class="contour-img" alt="Validation du nouveau format" data-action="zoom" />
          </p>
 		 <p>Cliquez sur <span class="btn-blue">Modifier</span> pour valider l'opération.</p>
-		 <p class="aerateur-haut">Une confirmation est demandée pour répercuter la modification ou non à l'ensemble des opérations qui ont déjà été enregistrées dans l'application.</p>
+		 <p class="aerateur-haut">En option, il est possible de modifier la totalité des enregistrements faisant référence à ce nouveau format de nommage des parcelles.</p>
          <p class="max-img-process">
             <img src="../images/chapitre4/format7.png" class="contour-img" alt="Validation du nouveau format" data-action="zoom" />
          </p>
-		 <p>Cliquez sur <span class="btn-blue">Mettre à jour</span> dans la <span class="tooltip">fenêtre modale<span class="tooltiptext tooltip-top">Voir glossaire</span></span> pour procéder, le cas échéant, au changement global et rétroactif.</p>
+		 <p>Cliquez sur <span class="btn-blue">Mettre à jour</span> dans la <span class="tooltip">fenêtre modale<span class="tooltiptext tooltip-top">Voir glossaire</span></span> pour procéder à ce changement global et rétroactif.</p>
       </div>
 	  <h6>Guide de prise en main • L'interface • Connexions partenaires</h6>
       <a class="slice-process" id="connexions"></a>
-      <h2 class="texte aerateur">f - Connexions partenaires</h2>
+      <h2 class="texte aerateur">g - Connexions partenaires</h2>
       <p class="texte">L'application vous permet de définir des connexions partenaires afin d'afficher, dans un indicateur, des informations en provenance d'un autre fournisseur de services en ligne.</p>
 	  <p align="center" class="texte aerateur procedure">1 – Connexion avec OpenWeatherMap</p>
 	  <p class="texte">Le processus suivant vous guide pour intégrer les prévisions météorologiques du service OpenWeatherMap. Cette connexion implique la création d'un compte utilisateur sur leur site web &#40;gratuit&#41; afin d'obtenir une clef API qui sera ensuite utilisée par l'indicateur "Météo" de votre ferme Ekylibre.</p>
