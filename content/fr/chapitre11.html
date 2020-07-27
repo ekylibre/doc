@@ -1301,11 +1301,10 @@
             <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
          </div>
          <div class="info-txt">
-            <span class="titre-advice">Bâtiments et aires de stockage<br /></span>
+            <span class="titre-advice">Visualisation des zones de bâtiments<br /></span>
             <p class="texte-advice">
-               Notez que les bâtiments, découpes de bâtiments, et aires de stockage n'apparaissent pas sur la carte car les données de géolocalisation ne sont pas renseignées. Les "Zones de bâtiments" ne sont donc disponibles que lorsque vous spécifiez le lieu de stockage d'un colis entrant ou lors de la réception d'un colis suite à un achat.<br />
-               Cliquez sur la clef anglaise<img src="../images/chapitre11/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">dans le "Menu principal", puis sur "Zones de bâtiments" dans la section "Production" symbolisée par l'icône avec des engrenages<img src="../images/chapitre11/cogs.svg" alt="Engrenages" height="20" class="align-icone icone-marge-gauche icone-marge-droite">.
-               Activez l'affichage en mode "Liste" et cliquez sur l'icône "Crayon"<img src="../images/chapitre11/crayon.svg" alt="Modifier l'inventaire" height="20" class="align-icone icone-marge-gauche icone-marge-droite"> en face du nom de chaque zone de bâtiment pour disposer des outils décrits dans le <a href="../chapitre3/#batiments" target="_self">chapitre 3</a> afin de les dessiner.
+               Notez que les bâtiments et les aires de stockage n'apparaissent pas sur la carte car les données de géolocalisation ne sont pas renseignées dans le fichier CSV. Les "Zones de bâtiments" ne sont donc disponibles que lorsque vous devez spécifier le lieu de stockage des marchandises durant l'enregistrement d'une réception.<br />
+               Accédez au module des "Stocks", puis cliquez sur "Zones de bâtiments" dans la section "Zones" symbolisée par l'icône d'une grange<img src="../images/chapitre11/barn.svg" alt="Grange" height="20" class="align-icone icone-marge-gauche">. En mode "Liste", cliquez sur l'icône représentant un crayon<img src="../images/chapitre11/crayon.svg" alt="Crayon" height="20" class="align-icone icone-marge-gauche icone-marge-droite"> en face du nom de chaque zone de bâtiment pour disposer des <a href="#" data-width="730" data-rel="popup1" class="poplight">outils de dessin</a> documentés dans le <a href="../chapitre3#batiments" class="avoid-clicks" target="_self">chapitre 3 - Exploitation</a>.
             </p>
          </div>
       </div>
@@ -2019,4 +2018,73 @@
       </div>
    </article>
    <aside></aside>
+</div>
+<!-- END MAIN -->
+<div id="modale">
+   <div id="popup1" class="popup_block">
+      <h2 class="info titre-annexe">Outils de dessin</h2>
+      <p class="marge-annexe">
+         La barre d'outils à gauche dans la carte contient les outils permettant de délimiter les parcelles et/ou les zones travaillées en complément de la main<img src="../images/commun/hand-o.svg" alt="Main" height="20" class="align-icone icone-marge-gauche icone-marge-droite">qui permet de déplacer la carte.
+      </p>
+      <div class="divTableOutils marge-annexe" style="margin-bottom:10px">
+         <div class="divTableBody">
+            <div class="divTableRow">
+               <div class="divTableCellOutils" style="width: 40px">
+                  <img src="../images/commun/plus.svg" alt="Zoom avant" height="30" width="30" class="align-icone">
+               </div>
+               <div class="divTableCellOutils" style="width: auto">
+                  Le bouton "zoom plus" permet de faire un zoom avant
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellOutils">
+                  <img src="../images/commun/minus.svg" alt="Zoom arrière" height="30" width="30" class="align-icone">
+               </div>
+               <div class="divTableCellOutils">
+                  Le bouton "zoom moins" permet de faire un zoom arrière
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellOutils">
+                  <img src="../images/commun/arrows-alt.svg" alt="Mode plein écran" height="30" width="30" class="align-icone">
+               </div>
+               <div class="divTableCellOutils">
+                  Le bouton "agrandissement" permet d'afficher la carte en plein écran. Cliquez à nouveau sur ce bouton ou pressez la touche "esc" de votre clavier pour revenir à un affichage normal 
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellOutils">
+                  <img src="../images/commun/star-o.svg" alt="Outil de création" height="30" width="30" class="align-icone">
+               </div>
+               <div class="divTableCellOutils">
+                  Le bouton "étoile" permet de créer des formes représentant les parcelles et/ou les zones travaillées de votre exploitation
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellOutils">
+                  <img src="../images/commun/pencil.svg" alt="Outil de modification" height="30" width="30" class="align-icone">
+               </div>
+               <div class="divTableCellOutils">
+                  Le bouton "crayon" permet de modifier toutes les parcelles et/ou les zones travaillées existantes
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellOutils">
+                  <img src="../images/commun/close.svg" alt="Outil de suppression" height="30" width="30" class="align-icone">
+               </div>
+               <div class="divTableCellOutils">
+                  Le bouton "croix" permet de supprimer toutes les parcelles et/ou les zones travaillées existantes
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellOutils">
+                  <img src="../images/commun/download.svg" alt="Bouton de téléchargement" height="30" width="30" class="align-icone">
+               </div>
+               <div class="divTableCellOutils">
+                  Le bouton "téléchargement" permet d'importer des zones à partir d'un logiciel tiers, au format Geography Markup Language &#40;.gml&#41;, GeoJSON &#40;.json&#41; ou Keyhole Markup Language &#40;.kml&#41;.
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
 </div>
