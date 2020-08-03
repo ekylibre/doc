@@ -66,8 +66,8 @@
             {dates: [new Date(2020, 5, 12), new Date(2020, 5, 17)], title: "Version 3.13", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
             {dates: [new Date(2020, 5, 18), new Date(2020, 6, 5)], title: "Version 3.14", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
             {dates: [new Date(2020, 6, 6), new Date(2020, 6, 16)], title: "Version 3.15", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
-            {dates: [new Date(2020, 6, 17), new Date(2020, 7, 2)], title: "Version 3.16", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
-         {dates: [new Date(2020, 7, 3), new Date(annee, mois, jour)], title: "Version 3.17", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}}
+            {dates: [new Date(2020, 6, 17), new Date(2020, 7, 3)], title: "Version 3.16", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
+         {dates: [new Date(2020, 7, 4), new Date(annee, mois, jour)], title: "Version 3.17", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}}
          ];
          
          var sections = [
@@ -124,7 +124,7 @@
                      <div class="panel">
                         <div class="heading">
                            <div class="version">
-                              <h2>Note de version 3.17 du 3/08/2020</h2>
+                              <h2>Note de version 3.17 du 4/08/2020</h2>
                            </div>
                            <i class="fa fa-chevron-down"></i>
                         </div>
@@ -137,7 +137,7 @@
                                     </div>
                                     <div class="divTableCellNoteVersion2" style="width: auto">
                                        <strong>Assistant de démarrage</strong><br /><br />
-                                       1 amélioration
+                                       1 amélioration et 1 bug corrigé
                                     </div>
                                  </div>
                                  <div class="divTableRow">
@@ -146,8 +146,12 @@
                                     <div class="divTableCellNoteVersion4" style="width: auto">
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                                        <ul>
-                                          <li>Aux étapes de création des bâtiments et de découpage des bâtiments, l'affichage de la carte est désormais centré sur l'adresse de l'exploitation.</li>
+                                          <li>À l'étape de création des bâtiments, l'affichage de la carte est désormais centré sur l'adresse de l'exploitation.</li>
                                        </ul>
+									   <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     				   <ul>
+                        				  <li>À l'étape du découpage des bâtiments, l'affichage de la carte est à nouveau centré sur les bâtiments créés par l'utilisateur.</li>
+                     				   </ul>
                                     </div>
                                  </div>
                                  <div class="divTableRow">
@@ -169,26 +173,28 @@
                                        </ul>
                                     </div>
                                  </div>
+								 <!--
                                  <div class="divTableRow">
                                     <div class="divTableCellNoteVersion1" style="width: 60px">
                                        <img src="../images/notes-version/stocks.svg" alt="Stocks" width="60">
                                     </div>
                                     <div class="divTableCellNoteVersion2" style="width: auto">
                                        <strong>Stocks</strong><br /><br />
-                                       1 amélioration
+                                       2 améliorations
                                     </div>
                                  </div>
                                  <div class="divTableRow">
                                     <div class="divTableCellNoteVersion3" style="width: 60px">
                                     </div>
                                     <div class="divTableCellNoteVersion4" style="width: auto">
-                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                                        <ul>
                                           <li>Après sélection d'une ou plusieurs réceptions enregistrées auprès d'un même fournisseur, un nouveau bouton permet désormais de générer automatiquement une facture d'achat rapprochée&nbsp;;</li>
-                                          <li>La génération d'une facture d'achat rapprochée est maintenant possible depuis la vue d'une réception, que son statut soit en mode "Brouillon" ou en mode "Reçu".</li>
+                                          <li>La génération d'une facture d'achat rapprochée est maintenant possible depuis la vue d'une réception lorsque son statut est en mode "Reçu".</li>
                                        </ul>
                                     </div>
                                  </div>
+								 -->
                                  <div class="divTableRow">
                                     <div class="divTableCellNoteVersion1" style="width: 60px">
                                        <img src="../images/notes-version/production.svg" alt="Production" width="60">
@@ -223,8 +229,8 @@
                                     <div class="divTableCellNoteVersion4" style="width: auto">
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                                        <ul>
-                                          <li>Mise à disposition, dans le module "RH", de la fonctionnalité de création des "Types de salaires" suite à son déplacement depuis le module "Configuration"&nbsp;;</li>
-                                          <li>Dans la page de création d'un salaire, attribution d'un libellé plus générique au bouton permettant d'enregistrer un nouveau salaire ou de dérouler la liste des types de salaires disponibles&nbsp;;</li>
+                                          <li>Mise à disposition, dans la section "Salaires", de la fonctionnalité de création des "Types de salaires" initialement présente dans le module "Configuration"&nbsp;;</li>
+                        				  <li>Dans la page de création d'un salaire, modification du libellé &#40;plus générique&#41; du bouton permettant d'enregistrer un nouveau salaire ou de dérouler la liste des types de salaires disponibles&nbsp;;</li>
                                           <li>Lors de la création d'un salaire, un message prévient désormais l'utilisateur si aucun type de salaire n'a encore été créé, avec un lien vers la fonctionnalité permettant d'en paramétrer un nouveau.</li>
                                        </ul>
                                     </div>
@@ -2198,7 +2204,7 @@
       </article>
       <div class="saut-page"></div>
       <div class="heading-print marge aerateur-haut">
-         <h2>Note de version 3.17 du 3/08/2020</h2>
+         <h2>Note de version 3.17 du 4/08/2020</h2>
       </div>
       <div class="content-print marge">
          <div class="divTableNoteVersion">
@@ -2209,7 +2215,7 @@
                   </div>
                   <div class="divTableCellNoteVersion2" style="width: auto">
                      <strong>Assistant de démarrage</strong><br /><br />
-                     1 amélioration
+                     1 amélioration et 1 bug corrigé
                   </div>
                </div>
                <div class="divTableRow">
@@ -2218,7 +2224,11 @@
                   <div class="divTableCellNoteVersion4" style="width: auto">
                      <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                      <ul>
-                        <li>Aux étapes de création des bâtiments et de découpage des bâtiments, l'affichage de la carte est désormais centré sur l'adresse de l'exploitation.</li>
+                        <li>À l'étape de création des bâtiments, l'affichage de la carte est désormais centré sur l'adresse de l'exploitation.</li>
+                     </ul>
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>À l'étape du découpage des bâtiments, l'affichage de la carte est à nouveau centré sur les bâtiments créés par l'utilisateur.</li>
                      </ul>
                   </div>
                </div>
@@ -2238,26 +2248,6 @@
                      <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                      <ul>
                         <li>Amélioration de l'affichage des en-têtes de recherche permettant une consultation et une sélection plus confortable des critères disponibles, notamment sur les écrans de petite taille.</li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="divTableRow">
-                  <div class="divTableCellNoteVersion1" style="width: 60px">
-                     <img src="../images/notes-version/stocks.svg" alt="Stocks" width="60">
-                  </div>
-                  <div class="divTableCellNoteVersion2" style="width: auto">
-                     <strong>Stocks</strong><br /><br />
-                     1 amélioration
-                  </div>
-               </div>
-               <div class="divTableRow">
-                  <div class="divTableCellNoteVersion3" style="width: 60px">
-                  </div>
-                  <div class="divTableCellNoteVersion4" style="width: auto">
-                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
-                     <ul>
-                        <li>Après sélection d'une ou plusieurs réceptions enregistrées auprès d'un même fournisseur, un nouveau bouton permet désormais de générer automatiquement une facture d'achat rapprochée&nbsp;;</li>
-                        <li>La génération d'une facture d'achat rapprochée est maintenant possible depuis la vue d'une réception, que son statut soit en mode "Brouillon" ou en mode "Reçu".</li>
                      </ul>
                   </div>
                </div>
@@ -2295,8 +2285,8 @@
                   <div class="divTableCellNoteVersion4" style="width: auto">
                      <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                      <ul>
-                        <li>Mise à disposition, dans le module "RH", de la fonctionnalité de création des "Types de salaires" suite à son déplacement depuis le module "Configuration"&nbsp;;</li>
-                        <li>Dans la page de création d'un salaire, attribution d'un libellé plus générique au bouton permettant d'enregistrer un nouveau salaire ou de dérouler la liste des types de salaires disponibles&nbsp;;</li><br />
+                        <li>Mise à disposition, dans la section "Salaires", de la fonctionnalité de création des "Types de salaires" initialement présente dans le module "Configuration"&nbsp;;</li>
+                        <li>Dans la page de création d'un salaire, modification du libellé &#40;plus générique&#41; du bouton permettant d'enregistrer un nouveau salaire ou de dérouler la liste des types de salaires disponibles&nbsp;;</li>
                         <li>Lors de la création d'un salaire, un message prévient désormais l'utilisateur si aucun type de salaire n'a encore été créé, avec un lien vers la fonctionnalité permettant d'en paramétrer un nouveau.</li>
                      </ul>
                   </div>
