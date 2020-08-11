@@ -67,7 +67,8 @@
             {dates: [new Date(2020, 5, 18), new Date(2020, 6, 5)], title: "Version 3.14", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
             {dates: [new Date(2020, 6, 6), new Date(2020, 6, 16)], title: "Version 3.15", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
             {dates: [new Date(2020, 6, 17), new Date(2020, 7, 3)], title: "Version 3.16", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
-         {dates: [new Date(2020, 7, 4), new Date(annee, mois, jour)], title: "Version 3.17", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}}
+            {dates: [new Date(2020, 7, 4), new Date(2020, 7, 13)], title: "Version 3.17", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
+		 {dates: [new Date(2020, 7, 14), new Date(annee, mois, jour)], title: "Version 3.18", attrs: {fill: "#fea40b", stroke: "#fea40b"}}
          ];
          
          var sections = [
@@ -121,6 +122,98 @@
             <section id="panel-1">
                <main>
                   <div class="accordion-container marge">
+					 <div class="panel">
+                        <div class="heading">
+                           <div class="version">
+                              <h2>Note de version 3.18 du 14/08/2020</h2>
+                           </div>
+                           <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <div class="content">
+                           <div class="divTableNoteVersion">
+                              <div class="divTableBody">
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Comptabilité</strong><br /><br />
+                                       2 améliorations
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+                                          <li>Dans la consultation d'un exercice clôturé, la signature électronique des archives pré et post-clôture est désormais affichée dans une fenêtre modale dont l'ouverture est déclenchée par un nouveau bouton&nbsp;;</li>
+                                          <li>Dans la fenêtre modale d'affichage d'une signature électronique, mise à disposition d'un nouveau bouton avec un lien permettant de vérifier l'authenticité de la signature sur le site ekylibre.com.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+								 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/ventes.svg" alt="Ventes" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Ventes</strong><br /><br />
+                                       1 bug corrigé
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+                                          <li>Il est maintenant possible de dupliquer une vente dont le formulaire de saisie contient un champ personnalisé qui a été configuré, lors de sa création, comme obligatoire à renseigner.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Production</strong><br /><br />
+                                       3 améliorations
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+										  <li>Dans la vue "Liste" des cultures, mise à disposition d'un nouveau bouton permettant de sélectionner la création d'une nouvelle intervention d'implantation de culture&nbsp;;</li>
+										  <li>Dans la section "Cultures" de la vue détaillée d'une parcelle, mise à disposition d'un nouveau bouton permettant de sélectionner la création d'une nouvelle intervention d'implantation de culture&nbsp;;</li>
+                                          <li>Dans la vue "Liste" des parcelles, mise à disposition d'un nouveau bouton permettant de sélectionner, dans une fenêtre modale, une campagne et une activité en vue de créer une nouvelle production.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/outils.svg" alt="Outils" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Outils</strong><br /><br />
+                                       2 améliorations
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+                                          <li>Lors de l'export du "Registre des interventions" ou du "Registre phytosanitaire", la sélection des campagnes est maintenant limitée à celles durant lesquelles au moins une intervention a été enregistrée&nbsp;;</li>
+                                          <li>Dans les "Imports", mise à disposition de fichiers téléchargeables permettant à l'utilisateur de se baser sur des modèles compatibles avec l'application pour préparer l'intégration de données personnalisées ou provenant de solutions tierces. Disponibles pour les imports TelePAC 2018 et 2019, de nouveaux modèles de fichiers seront progressivement ajoutés dans les futures versions d'Ekylibre.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                      <div class="panel">
                         <div class="heading">
                            <div class="version">
