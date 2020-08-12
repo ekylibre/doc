@@ -67,8 +67,8 @@
             {dates: [new Date(2020, 5, 18), new Date(2020, 6, 5)], title: "Version 3.14", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
             {dates: [new Date(2020, 6, 6), new Date(2020, 6, 16)], title: "Version 3.15", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
             {dates: [new Date(2020, 6, 17), new Date(2020, 7, 3)], title: "Version 3.16", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
-            {dates: [new Date(2020, 7, 4), new Date(2020, 7, 13)], title: "Version 3.17", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
-		 {dates: [new Date(2020, 7, 14), new Date(annee, mois, jour)], title: "Version 3.18", attrs: {fill: "#fea40b", stroke: "#fea40b"}}
+            {dates: [new Date(2020, 7, 4), new Date(2020, 7, 12)], title: "Version 3.17", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
+         {dates: [new Date(2020, 7, 13), new Date(annee, mois, jour)], title: "Version 3.18", attrs: {fill: "#fea40b", stroke: "#fea40b"}}
          ];
          
          var sections = [
@@ -122,16 +122,35 @@
             <section id="panel-1">
                <main>
                   <div class="accordion-container marge">
-					 <div class="panel">
+                     <div class="panel">
                         <div class="heading">
                            <div class="version">
-                              <h2>Note de version 3.18 du 14/08/2020</h2>
+                              <h2>Note de version 3.18 du 13/08/2020</h2>
                            </div>
                            <i class="fa fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
                               <div class="divTableBody">
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/ekylibre.svg" alt="Ekylibre" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Commun à tous les modules</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Nouvelle ergonomie des fenêtres modales, avec un style appliqué à l'ensemble des modules faisant appel à ce type d'affichage.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
                                  <div class="divTableRow">
                                     <div class="divTableCellNoteVersion1">
                                        <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
@@ -151,7 +170,7 @@
                                        </ul>
                                     </div>
                                  </div>
-								 <div class="divTableRow">
+                                 <div class="divTableRow">
                                     <div class="divTableCellNoteVersion1">
                                        <img src="../images/notes-version/ventes.svg" alt="Ventes" width="60">
                                     </div>
@@ -165,7 +184,7 @@
                                     <div class="divTableCellNoteVersion4" style="width: auto">
                                        <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
                                        <ul>
-                                          <li>Il est maintenant possible de dupliquer une vente dont le formulaire de saisie contient un champ personnalisé qui a été configuré, lors de sa création, comme obligatoire à renseigner.</li>
+                                          <li>Il est maintenant possible de dupliquer une vente dont le formulaire de saisie contient un champ personnalisé et obligatoire à renseigner.</li>
                                        </ul>
                                     </div>
                                  </div>
@@ -175,7 +194,7 @@
                                     </div>
                                     <div class="divTableCellNoteVersion2" style="width: auto">
                                        <strong>Production</strong><br /><br />
-                                       3 améliorations
+                                       4 améliorations
                                     </div>
                                  </div>
                                  <div class="divTableRow">
@@ -183,10 +202,12 @@
                                     </div>
                                     <div class="divTableCellNoteVersion4" style="width: auto">
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <p class="improve"><em>Simplification du processus de création des cultures et des parcelles</em></p>
                                        <ul>
-										  <li>Dans la vue "Liste" des cultures, mise à disposition d'un nouveau bouton permettant de sélectionner la création d'une nouvelle intervention d'implantation de culture&nbsp;;</li>
-										  <li>Dans la section "Cultures" de la vue détaillée d'une parcelle, mise à disposition d'un nouveau bouton permettant de sélectionner la création d'une nouvelle intervention d'implantation de culture&nbsp;;</li>
-                                          <li>Dans la vue "Liste" des parcelles, mise à disposition d'un nouveau bouton permettant de sélectionner, dans une fenêtre modale, une campagne et une activité en vue de créer une nouvelle production.</li>
+                                          <li>Ajout d'un nouveau bouton permettant de sélectionner la création d'une nouvelle intervention d'implantation de culture, depuis la vue "Liste" ou "Carte" des cultures et depuis la vue détaillée d'une parcelle&nbsp;;</li>
+                                          <li>Un message alerte désormais l'utilisateur lorsqu'aucune parcelle n'a encore été créée, et/ou si aucune semence ou plant n'est disponible en stock, avec des liens permettant de définir ces prérequis&nbsp;;</li>
+                                          <li>Ajout d'un nouveau bouton permettant de sélectionner, dans une fenêtre modale, une campagne et une activité en vue de créer une nouvelle parcelle, depuis la vue des parcelles et depuis la vue détaillée d'une zone cultivable&nbsp;;</li>
+                                          <li>Un message alerte désormais l'utilisateur lorsqu'aucune zone cultivable n'est disponible et/ou si aucune activité n'a encore été créée, avec des liens permettant de définir ces prérequis.</li>
                                        </ul>
                                     </div>
                                  </div>
@@ -206,7 +227,7 @@
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                                        <ul>
                                           <li>Lors de l'export du "Registre des interventions" ou du "Registre phytosanitaire", la sélection des campagnes est maintenant limitée à celles durant lesquelles au moins une intervention a été enregistrée&nbsp;;</li>
-                                          <li>Dans les "Imports", mise à disposition de fichiers téléchargeables permettant à l'utilisateur de se baser sur des modèles compatibles avec l'application pour préparer l'intégration de données personnalisées ou provenant de solutions tierces. Disponibles pour les imports TelePAC 2018 et 2019, de nouveaux modèles de fichiers seront progressivement ajoutés dans les futures versions d'Ekylibre.</li>
+                                          <li>Dans les "Imports", mise à disposition de fichiers téléchargeables permettant à l'utilisateur de se baser sur des modèles compatibles avec l'application pour préparer l'intégration de données personnalisées ou en provenance de solutions tierces. Disponibles pour les imports TelePAC 2018 et 2019, de nouveaux modèles de fichiers seront progressivement ajoutés dans les futures versions d'Ekylibre.</li>
                                        </ul>
                                     </div>
                                  </div>
@@ -241,10 +262,10 @@
                                        <ul>
                                           <li>À l'étape de création des bâtiments, l'affichage de la carte est désormais centré sur l'adresse de l'exploitation.</li>
                                        </ul>
-									   <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
-                     				   <ul>
-                        				  <li>À l'étape du découpage des bâtiments, l'affichage de la carte est à nouveau centré sur les bâtiments créés par l'utilisateur.</li>
-                     				   </ul>
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+                                          <li>À l'étape du découpage des bâtiments, l'affichage de la carte est à nouveau centré sur les bâtiments créés par l'utilisateur.</li>
+                                       </ul>
                                     </div>
                                  </div>
                                  <div class="divTableRow">
@@ -266,28 +287,28 @@
                                        </ul>
                                     </div>
                                  </div>
-								 <!--
-                                 <div class="divTableRow">
-                                    <div class="divTableCellNoteVersion1" style="width: 60px">
-                                       <img src="../images/notes-version/stocks.svg" alt="Stocks" width="60">
+                                 <!--
+                                    <div class="divTableRow">
+                                       <div class="divTableCellNoteVersion1" style="width: 60px">
+                                          <img src="../images/notes-version/stocks.svg" alt="Stocks" width="60">
+                                       </div>
+                                       <div class="divTableCellNoteVersion2" style="width: auto">
+                                          <strong>Stocks</strong><br /><br />
+                                          2 améliorations
+                                       </div>
                                     </div>
-                                    <div class="divTableCellNoteVersion2" style="width: auto">
-                                       <strong>Stocks</strong><br /><br />
-                                       2 améliorations
+                                    <div class="divTableRow">
+                                       <div class="divTableCellNoteVersion3" style="width: 60px">
+                                       </div>
+                                       <div class="divTableCellNoteVersion4" style="width: auto">
+                                          <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                          <ul>
+                                             <li>Après sélection d'une ou plusieurs réceptions enregistrées auprès d'un même fournisseur, un nouveau bouton permet désormais de générer automatiquement une facture d'achat rapprochée&nbsp;;</li>
+                                             <li>La génération d'une facture d'achat rapprochée est maintenant possible depuis la vue d'une réception lorsque son statut est en mode "Reçu".</li>
+                                          </ul>
+                                       </div>
                                     </div>
-                                 </div>
-                                 <div class="divTableRow">
-                                    <div class="divTableCellNoteVersion3" style="width: 60px">
-                                    </div>
-                                    <div class="divTableCellNoteVersion4" style="width: auto">
-                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
-                                       <ul>
-                                          <li>Après sélection d'une ou plusieurs réceptions enregistrées auprès d'un même fournisseur, un nouveau bouton permet désormais de générer automatiquement une facture d'achat rapprochée&nbsp;;</li>
-                                          <li>La génération d'une facture d'achat rapprochée est maintenant possible depuis la vue d'une réception lorsque son statut est en mode "Reçu".</li>
-                                       </ul>
-                                    </div>
-                                 </div>
-								 -->
+                                    -->
                                  <div class="divTableRow">
                                     <div class="divTableCellNoteVersion1" style="width: 60px">
                                        <img src="../images/notes-version/production.svg" alt="Production" width="60">
@@ -323,7 +344,7 @@
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                                        <ul>
                                           <li>Mise à disposition, dans la section "Salaires", de la fonctionnalité de création des "Types de salaires" initialement présente dans le module "Configuration"&nbsp;;</li>
-                        				  <li>Dans la page de création d'un salaire, modification du libellé &#40;plus générique&#41; du bouton permettant d'enregistrer un nouveau salaire ou de dérouler la liste des types de salaires disponibles&nbsp;;</li>
+                                          <li>Dans la page de création d'un salaire, modification du libellé &#40;plus générique&#41; du bouton permettant d'enregistrer un nouveau salaire ou de dérouler la liste des types de salaires disponibles&nbsp;;</li>
                                           <li>Lors de la création d'un salaire, un message prévient désormais l'utilisateur si aucun type de salaire n'a encore été créé, avec un lien vers la fonctionnalité permettant d'en paramétrer un nouveau.</li>
                                        </ul>
                                     </div>
@@ -2295,6 +2316,115 @@
             </section>
          </div>
       </article>
+      <div class="saut-page"></div>
+      <div class="heading-print marge aerateur-haut">
+         <h2>Note de version 3.18 du 13/08/2020</h2>
+      </div>
+      <div class="content-print marge">
+         <div class="divTableNoteVersion">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/ekylibre.svg" alt="Ekylibre" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Commun à tous les modules</strong><br /><br />
+                     1 amélioration
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>Nouvelle ergonomie des fenêtres modales, avec un style appliqué à l'ensemble des modules faisant appel à ce type d'affichage.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Comptabilité</strong><br /><br />
+                     2 améliorations
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>Dans la consultation d'un exercice clôturé, la signature électronique des archives pré et post-clôture est désormais affichée dans une fenêtre modale dont l'ouverture est déclenchée par un nouveau bouton&nbsp;;</li>
+                        <li>Dans la fenêtre modale d'affichage d'une signature électronique, mise à disposition d'un nouveau bouton avec un lien permettant de vérifier l'authenticité de la signature sur le site ekylibre.com.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/ventes.svg" alt="Ventes" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Ventes</strong><br /><br />
+                     1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>Il est maintenant possible de dupliquer une vente dont le formulaire de saisie contient un champ personnalisé et obligatoire à renseigner.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Production</strong><br /><br />
+                     4 améliorations
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <p class="improve"><em>Simplification du processus de création des cultures et des parcelles</em></p>
+                     <ul>
+                        <li>Ajout d'un nouveau bouton permettant de sélectionner la création d'une nouvelle intervention d'implantation de culture, depuis la vue "Liste" ou "Carte" des cultures et depuis la vue détaillée d'une parcelle&nbsp;;</li>
+                        <li>Un message alerte désormais l'utilisateur lorsqu'aucune parcelle n'a encore été créée, et/ou si aucune semence ou plant n'est disponible en stock, avec des liens permettant de définir ces prérequis&nbsp;;</li>
+                        <li>Ajout d'un nouveau bouton permettant de sélectionner, dans une fenêtre modale, une campagne et une activité en vue de créer une nouvelle parcelle, depuis la vue des parcelles et depuis la vue détaillée d'une zone cultivable&nbsp;;</li>
+                        <li>Un message alerte désormais l'utilisateur lorsqu'aucune zone cultivable n'est disponible et/ou si aucune activité n'a encore été créée, avec des liens permettant de définir ces prérequis.</li><br /><br />
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/outils.svg" alt="Outils" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Outils</strong><br /><br />
+                     2 améliorations
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>Lors de l'export du "Registre des interventions" ou du "Registre phytosanitaire", la sélection des campagnes est maintenant limitée à celles durant lesquelles au moins une intervention a été enregistrée&nbsp;;</li>
+                        <li>Dans les "Imports", mise à disposition de fichiers téléchargeables permettant à l'utilisateur de se baser sur des modèles compatibles avec l'application pour préparer l'intégration de données personnalisées ou en provenance de solutions tierces. Disponibles pour les imports TelePAC 2018 et 2019, de nouveaux modèles de fichiers seront progressivement ajoutés dans les futures versions d'Ekylibre.</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
       <div class="saut-page"></div>
       <div class="heading-print marge aerateur-haut">
          <h2>Note de version 3.17 du 4/08/2020</h2>
