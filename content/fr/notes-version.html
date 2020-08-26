@@ -68,7 +68,8 @@
             {dates: [new Date(2020, 6, 6), new Date(2020, 6, 16)], title: "Version 3.15", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
             {dates: [new Date(2020, 6, 17), new Date(2020, 7, 3)], title: "Version 3.16", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
             {dates: [new Date(2020, 7, 4), new Date(2020, 7, 12)], title: "Version 3.17", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
-         {dates: [new Date(2020, 7, 13), new Date(annee, mois, jour)], title: "Version 3.18", attrs: {fill: "#fea40b", stroke: "#fea40b"}}
+            {dates: [new Date(2020, 7, 13), new Date(2020, 7, 25)], title: "Version 3.18", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
+         {dates: [new Date(2020, 7, 26), new Date(annee, mois, jour)], title: "Version 3.19", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
          ];
          
          var sections = [
@@ -122,6 +123,115 @@
             <section id="panel-1">
                <main>
                   <div class="accordion-container marge">
+                     <div class="panel">
+                        <div class="heading">
+                           <div class="version">
+                              <h2>Note de version 3.19 du 26/08/2020</h2>
+                           </div>
+                           <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <div class="content">
+                           <div class="divTableNoteVersion">
+                              <div class="divTableBody">
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Comptabilité</strong><br /><br />
+                                       1 bug corrigé
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+                                          <li>L'export de la balance au format PDF, ODS, CSV ou CSV pour Excel nécessite désormais de sélectionner une période afin d'éviter une erreur ou l'obtention de documents dépourvus d'informations.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/achats.svg" alt="Achats" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Achats</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <p class="improve"><em>Simplification du flux commande-réception-facturation</em></p>
+                                       <ul>
+                                          <li>Lorsqu'une commande est totalement rapprochée avec une réception, le bouton permettant de créer une nouvelle réception est inactif.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/stocks.svg" alt="Stocks" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Stocks</strong><br /><br />
+                                       2 améliorations
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <p class="improve"><em>Simplification du flux commande-réception-facturation</em></p>
+                                       <ul>
+                                          <li>Après sélection d'une ou plusieurs réceptions enregistrées auprès d'un même fournisseur, un nouveau bouton permet désormais de générer automatiquement une facture d'achat rapprochée&nbsp;;</li>
+                                          <li>La génération d'une facture d'achat rapprochée est maintenant possible depuis la vue d'une réception lorsque son statut est en mode "Reçu".</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Production</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Dans une intervention de pulvérisation, de semis tout-en-un ou de semis avec pulvérisation, et afin de respecter l'intervalle entre deux applications, un message précise maintenant la date et l'heure à partir de laquelle une nouvelle application de ce produit est autorisée.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/outils.svg" alt="Outils" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Outils</strong><br /><br />
+                                       1 bug corrigé
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+                                          <li>L’export des coûts de production détaillés prend désormais en compte non seulement les interventions terminées, mais également les interventions validées.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                      <div class="panel">
                         <div class="heading">
                            <div class="version">
@@ -287,28 +397,6 @@
                                        </ul>
                                     </div>
                                  </div>
-                                 <!--
-                                    <div class="divTableRow">
-                                       <div class="divTableCellNoteVersion1" style="width: 60px">
-                                          <img src="../images/notes-version/stocks.svg" alt="Stocks" width="60">
-                                       </div>
-                                       <div class="divTableCellNoteVersion2" style="width: auto">
-                                          <strong>Stocks</strong><br /><br />
-                                          2 améliorations
-                                       </div>
-                                    </div>
-                                    <div class="divTableRow">
-                                       <div class="divTableCellNoteVersion3" style="width: 60px">
-                                       </div>
-                                       <div class="divTableCellNoteVersion4" style="width: auto">
-                                          <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
-                                          <ul>
-                                             <li>Après sélection d'une ou plusieurs réceptions enregistrées auprès d'un même fournisseur, un nouveau bouton permet désormais de générer automatiquement une facture d'achat rapprochée&nbsp;;</li>
-                                             <li>La génération d'une facture d'achat rapprochée est maintenant possible depuis la vue d'une réception lorsque son statut est en mode "Reçu".</li>
-                                          </ul>
-                                       </div>
-                                    </div>
-                                    -->
                                  <div class="divTableRow">
                                     <div class="divTableCellNoteVersion1" style="width: 60px">
                                        <img src="../images/notes-version/production.svg" alt="Production" width="60">
@@ -2318,6 +2406,118 @@
       </article>
       <div class="saut-page"></div>
       <div class="heading-print marge aerateur-haut">
+         <h2>Note de version 3.19 du 26/08/2020</h2>
+      </div>
+      <div class="content-print marge">
+         <div class="divTableNoteVersion">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Comptabilité</strong><br /><br />
+                     1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>L'export de la balance au format PDF, ODS, CSV ou CSV pour Excel nécessite désormais de sélectionner une période afin d'éviter une erreur ou l'obtention de documents dépourvus d'informations.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/achats.svg" alt="Achats" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Achats</strong><br /><br />
+                     1 amélioration
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <p class="improve"><em>Simplification du flux commande-réception-facturation</em></p>
+                     <ul>
+                        <li>Lorsqu'une commande est totalement rapprochée avec une réception, le bouton permettant de créer une nouvelle réception est inactif.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/stocks.svg" alt="Stocks" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Stocks</strong><br /><br />
+                     2 améliorations
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <p class="improve"><em>Simplification du flux commande-réception-facturation</em></p>
+                     <ul>
+                        <li>Après sélection d'une ou plusieurs réceptions enregistrées auprès d'un même fournisseur, un nouveau bouton permet désormais de générer automatiquement une facture d'achat rapprochée&nbsp;;</li>
+                        <li>La génération d'une facture d'achat rapprochée est maintenant possible depuis la vue d'une réception lorsque son statut est en mode "Reçu".</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Production</strong><br /><br />
+                     1 amélioration
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>Dans une intervention de pulvérisation, de semis tout-en-un ou de semis avec pulvérisation, et afin de respecter l'intervalle entre deux applications, un message précise maintenant la date et l'heure à partir de laquelle une nouvelle application de ce produit est autorisée.</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="content-print marge">
+         <div class="divTableNoteVersion">
+            <div class="divTableBody">
+               <div class="saut-page"></div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/outils.svg" alt="Outils" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Outils</strong><br /><br />
+                     1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>L’export des coûts de production détaillés prend désormais en compte non seulement les interventions terminées, mais également les interventions validées.</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="saut-page"></div>
+      <div class="heading-print marge aerateur-haut">
          <h2>Note de version 3.18 du 13/08/2020</h2>
       </div>
       <div class="content-print marge">
@@ -2398,10 +2598,17 @@
                         <li>Ajout d'un nouveau bouton permettant de sélectionner la création d'une nouvelle intervention d'implantation de culture, depuis la vue "Liste" ou "Carte" des cultures et depuis la vue détaillée d'une parcelle&nbsp;;</li>
                         <li>Un message alerte désormais l'utilisateur lorsqu'aucune parcelle n'a encore été créée, et/ou si aucune semence ou plant n'est disponible en stock, avec des liens permettant de définir ces prérequis&nbsp;;</li>
                         <li>Ajout d'un nouveau bouton permettant de sélectionner, dans une fenêtre modale, une campagne et une activité en vue de créer une nouvelle parcelle, depuis la vue des parcelles et depuis la vue détaillée d'une zone cultivable&nbsp;;</li>
-                        <li>Un message alerte désormais l'utilisateur lorsqu'aucune zone cultivable n'est disponible et/ou si aucune activité n'a encore été créée, avec des liens permettant de définir ces prérequis.</li><br /><br />
+                        <li>Un message alerte désormais l'utilisateur lorsqu'aucune zone cultivable n'est disponible et/ou si aucune activité n'a encore été créée, avec des liens permettant de définir ces prérequis.</li>
                      </ul>
                   </div>
                </div>
+            </div>
+         </div>
+      </div>
+      <div class="content-print marge">
+         <div class="divTableNoteVersion">
+            <div class="divTableBody">
+               <div class="saut-page"></div>
                <div class="divTableRow">
                   <div class="divTableCellNoteVersion1">
                      <img src="../images/notes-version/outils.svg" alt="Outils" width="60">
@@ -2514,6 +2721,13 @@
                      </ul>
                   </div>
                </div>
+            </div>
+         </div>
+      </div>
+      <div class="content-print marge">
+         <div class="divTableNoteVersion">
+            <div class="divTableBody">
+               <div class="saut-page"></div>
                <div class="divTableRow">
                   <div class="divTableCellNoteVersion1">
                      <img src="../images/notes-version/outils.svg" alt="Outils" width="60">
@@ -2640,6 +2854,13 @@
                      </ul>
                   </div>
                </div>
+            </div>
+         </div>
+      </div>
+      <div class="content-print marge">
+         <div class="divTableNoteVersion">
+            <div class="divTableBody">
+               <div class="saut-page"></div>
                <div class="divTableRow">
                   <div class="divTableCellNoteVersion1" style="width: 60px">
                      <img src="../images/notes-version/production.svg" alt="Production" width="60">
@@ -2926,6 +3147,13 @@
                      </ul>
                   </div>
                </div>
+            </div>
+         </div>
+      </div>
+      <div class="content-print marge">
+         <div class="divTableNoteVersion">
+            <div class="divTableBody">
+               <div class="saut-page"></div>
                <div class="divTableRow">
                   <div class="divTableCellNoteVersion1" style="width: 60px">
                      <img src="../images/notes-version/production.svg" alt="Production" width="60">
@@ -3063,6 +3291,13 @@
                      </ul>
                   </div>
                </div>
+            </div>
+         </div>
+      </div>
+      <div class="content-print marge">
+         <div class="divTableNoteVersion">
+            <div class="divTableBody">
+               <div class="saut-page"></div>
                <div class="divTableRow">
                   <div class="divTableCellNoteVersion1">
                      <img src="../images/notes-version/outils.svg" alt="Outils" width="60">
@@ -3686,6 +3921,13 @@
                      </ul>
                   </div>
                </div>
+            </div>
+         </div>
+      </div>
+      <div class="content-print marge">
+         <div class="divTableNoteVersion">
+            <div class="divTableBody">
+               <div class="saut-page"></div>
                <div class="divTableRow">
                   <div class="divTableCellNoteVersion1">
                      <img src="../images/notes-version/outils.svg" alt="Outils" width="60">
@@ -4000,6 +4242,13 @@
                      </ul>
                   </div>
                </div>
+            </div>
+         </div>
+      </div>
+      <div class="content-print marge">
+         <div class="divTableNoteVersion">
+            <div class="divTableBody">
+               <div class="saut-page"></div>
                <div class="divTableRow">
                   <div class="divTableCellNoteVersion1">
                      <img src="../images/notes-version/outils.svg" alt="Outils" width="60">
@@ -4112,6 +4361,13 @@
                      </ul>
                   </div>
                </div>
+            </div>
+         </div>
+      </div>
+      <div class="content-print marge">
+         <div class="divTableNoteVersion">
+            <div class="divTableBody">
+               <div class="saut-page"></div>
                <div class="divTableRow">
                   <div class="divTableCellNoteVersion1">
                      <img src="../images/notes-version/production.svg" alt="Production" width="60">
