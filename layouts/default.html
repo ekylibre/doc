@@ -1,134 +1,144 @@
 <!doctype html>
 <html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<meta name="format-detection" content="telephone=no">
-	<meta property="og:url" content="https://doc.ekylibre.com/" />
-	<meta property="og:title" content="Guide de prise en main Ekylibre" />
-	<meta property="og:description" content="Ce guide a pour but d'aider le nouvel utilisateur à configurer rapidement et correctement l'application Ekylibre pour son exploitation agricole et de commencer à l'utiliser. Il décrit également des procédures permettant une traçabilité avancée de la production végétale ou animale." />
-	<meta property="og:image" content="https://doc.ekylibre.com/v2/fr/images/commun/ekylibre.png" />
-    <title><%= @item[:title] || 'Ekylibre : guide de prise en main' %></title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="../images/commun/favicon.ico" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../stylesheets/w3school.css">
-    <link rel="stylesheet" href="../../stylesheets/quickstart.css">
-    <link rel="stylesheet" href="../../stylesheets/ekylibre.css">
-    <link rel="stylesheet" href="../../stylesheets/drawer.css">
-    <link rel="stylesheet" href="../../stylesheets/jquery.qtip.css">
-    <link rel="stylesheet" href="../../stylesheets/chronoline.css">
-	<link rel="stylesheet" href="../../stylesheets/fontawesome.css">
-	<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-58304754-1', 'auto');ga('send', 'pageview');</script>
-	<!-- Start of ekylibrehelp Zendesk Widget script -->
-	<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=8e03812d-d038-4a8c-8412-d85571f9fdbe"> </script>
-	<!-- End of ekylibrehelp Zendesk Widget script -->
-  <script src="../../javascripts/jquery.js"></script>
-  <script src="../../javascripts/jquery.qtip.js"></script>
-  <script src="../../javascripts/chronoline.js"></script>
-  <script src="../../javascripts/raphael-min.js"></script>
-  </head>
-  <body class="drawer drawer--top">
-    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
-    <div class="conteneur">
-      <div class="ekylibre affichage-print"><img src="../images/commun/ekylibre.svg" alt="Ekylibre" width="180px" class="logo-entete"></div>
-      <header role="banner">
-        <button type="button" class="drawer-toggle drawer-hamburger">
-          <span class="sr-only">Menu</span>
-          <span class="drawer-hamburger-icon"></span>
-        </button>
-		<div id="shadow"></div>
-        <nav class="drawer-nav" role="navigation">
-          <ul class="drawer-menu">
-			<li><a class="drawer-menu-item" href="../chapitre1"><span data-descr="Prérequis - Inscription - Création de la ferme - Démarrage">Introduction</span>&nbsp;<i class="far fa-angle-right angle" aria-hidden="true"></i></a></li>
-            <li><a class="drawer-menu-item" href="../chapitre2"><span data-descr="Récupération et import de la déclaration TelePAC">Parcellaire</span>&nbsp;<i class="far fa-angle-right angle" aria-hidden="true"></i><br></a></li>
-            <li><a class="drawer-menu-item" href="../chapitre3"><span data-descr="Outils de dessin - Fichiers SIG - Zones de stockage - Activités">Exploitation</span>&nbsp;<i class="far fa-angle-right angle" aria-hidden="true"></i></a></li>
-            <li><a class="drawer-menu-item" href="../chapitre4"><span data-descr="Espace de travail - Navigation - Personnalisation - Connexions">L'interface</span>&nbsp;<i class="far fa-angle-right angle" aria-hidden="true"></i></a></li>
-            <li><a class="drawer-menu-item" href="../chapitre5"><span data-descr="Journaux - Synthèses - Immobilisations - TVA - Trésorerie">Comptabilité</span>&nbsp;<i class="far fa-angle-right angle" aria-hidden="true"></i></a></li>
-			<li><a class="drawer-menu-item" href="../chapitre6"><span data-descr="Commandes - Réceptions - Facturation - Décaissements">Achats</span>&nbsp;<i class="far fa-angle-right angle" aria-hidden="true"></i></a></li>
-			<li><a class="drawer-menu-item" href="../chapitre7"><span data-descr="Ventes - Avoirs - Expéditions - Livraisons - Encaissements">Ventes</span>&nbsp;<i class="far fa-angle-right angle" aria-hidden="true"></i></a></li>
-			<li><a class="drawer-menu-item" href="../chapitre8"><span data-descr="Variantes - Inventaires - Équipements - Contacts - Équipiers - Salaires">Stocks et tiers</span>&nbsp;<i class="far fa-angle-right angle" aria-hidden="true"></i></a></li>
-            <li><a class="drawer-menu-item" href="../chapitre9"><span data-descr="Activités - Assolement - Interventions - Traçabilité">Production</span>&nbsp;<i class="far fa-angle-right angle" aria-hidden="true"></i></a></li>
-            <li><a class="drawer-menu-item" href="../chapitre10"><span data-descr="Utilisateurs - Rôles - Invitations - Inscriptions">Accès</span>&nbsp;<i class="far fa-angle-right angle" aria-hidden="true"></i></a></li>
-			<li><a class="drawer-menu-item" href="../chapitre11"><span data-descr="Imports de données - Exports de documents - Extractions - GED">Outils</span>&nbsp;<i class="far fa-angle-right angle" aria-hidden="true"></i></a></li>
-          </ul>
-        </nav>
-      </header>
-	  <div class="main-menu drawer-toggle"><p>Menu principal</p></div>
-      <div class="fill-it"></div>
-      <div class="affichage-large">
-        <div class="TableauTitre center-div w3-top">
-          <div class="divTableCellMenu w3-right w3-text-white" style="width:364px"><a href="../demarrage"><img src="../images/commun/brand.png" alt="Accueil documentation Ekylibre" width="160px" class="logo-entete"></a></div>
-        </div>
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <meta name="format-detection" content="telephone=no">
+      <meta property="og:url" content="https://doc.ekylibre.com/" />
+      <meta property="og:title" content="Guide de prise en main Ekylibre" />
+      <meta property="og:description" content="Ce guide a pour but d'aider le nouvel utilisateur à configurer rapidement et correctement l'application Ekylibre pour son exploitation agricole et de commencer à l'utiliser. Il décrit également des procédures permettant une traçabilité avancée de la production végétale ou animale." />
+      <meta property="og:image" content="https://doc.ekylibre.com/v2/fr/images/commun/ekylibre.png" />
+      <title><%= @item[:title] || 'Ekylibre : guide de prise en main' %></title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="shortcut icon" href="../images/commun/favicon.ico" />
+      <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="../../stylesheets/w3school.css">
+      <link rel="stylesheet" href="../../stylesheets/quickstart.css">
+      <link rel="stylesheet" href="../../stylesheets/ekylibre.css">
+      <link rel="stylesheet" href="../../stylesheets/drawer.css">
+      <link rel="stylesheet" href="../../stylesheets/jquery.qtip.css">
+      <link rel="stylesheet" href="../../stylesheets/chronoline.css">
+      <link rel="stylesheet" href="../../stylesheets/fontawesome.css">
+      <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-58304754-1', 'auto');ga('send', 'pageview');</script>
+      <!-- Start of ekylibrehelp Zendesk Widget script -->
+      <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=8e03812d-d038-4a8c-8412-d85571f9fdbe"> </script>
+      <!-- End of ekylibrehelp Zendesk Widget script -->
+      <script src="../../javascripts/jquery.js"></script>
+      <script src="../../javascripts/jquery.qtip.js"></script>
+      <script src="../../javascripts/chronoline.js"></script>
+      <script src="../../javascripts/raphael-min.js"></script>
+   </head>
+   <body class="drawer drawer--top">
+      <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+      <div class="conteneur">
+         <div class="ekylibre affichage-print"><img src="../images/commun/ekylibre.svg" alt="Ekylibre" class="logo-entete"></div>
+         <header role="banner">
+            <button type="button" class="drawer-toggle drawer-hamburger">
+            <span class="sr-only">Menu</span>
+            <span class="drawer-hamburger-icon"></span>
+            </button>
+            <div id="shadow"></div>
+            <nav class="drawer-nav" role="navigation">
+               <ul class="drawer-menu">
+                  <li><a class="drawer-menu-item" href="../chapitre1"><span data-descr="Prérequis - Inscription - Création de la ferme - Démarrage">Introduction</span>&nbsp;<i class="far fa-angle-right angle" aria-hidden="true"></i></a></li>
+                  <li><a class="drawer-menu-item" href="../chapitre2"><span data-descr="Récupération et import de la déclaration TelePAC">Parcellaire</span>&nbsp;<i class="far fa-angle-right angle" aria-hidden="true"></i><br></a></li>
+                  <li><a class="drawer-menu-item" href="../chapitre3"><span data-descr="Outils de dessin - Fichiers SIG - Zones de stockage - Activités">Exploitation</span>&nbsp;<i class="far fa-angle-right angle" aria-hidden="true"></i></a></li>
+                  <li><a class="drawer-menu-item" href="../chapitre4"><span data-descr="Espace de travail - Navigation - Personnalisation - Connexions">L'interface</span>&nbsp;<i class="far fa-angle-right angle" aria-hidden="true"></i></a></li>
+                  <li><a class="drawer-menu-item" href="../chapitre5"><span data-descr="Journaux - Synthèses - Immobilisations - TVA - Trésorerie">Comptabilité</span>&nbsp;<i class="far fa-angle-right angle" aria-hidden="true"></i></a></li>
+                  <li><a class="drawer-menu-item" href="../chapitre6"><span data-descr="Commandes - Réceptions - Facturation - Décaissements">Achats</span>&nbsp;<i class="far fa-angle-right angle" aria-hidden="true"></i></a></li>
+                  <li><a class="drawer-menu-item" href="../chapitre7"><span data-descr="Ventes - Avoirs - Expéditions - Livraisons - Encaissements">Ventes</span>&nbsp;<i class="far fa-angle-right angle" aria-hidden="true"></i></a></li>
+                  <li><a class="drawer-menu-item" href="../chapitre8"><span data-descr="Variantes - Inventaires - Équipements - Contacts - Équipiers - Salaires">Stocks et tiers</span>&nbsp;<i class="far fa-angle-right angle" aria-hidden="true"></i></a></li>
+                  <li><a class="drawer-menu-item" href="../chapitre9"><span data-descr="Activités - Assolement - Interventions - Traçabilité">Production</span>&nbsp;<i class="far fa-angle-right angle" aria-hidden="true"></i></a></li>
+                  <li><a class="drawer-menu-item" href="../chapitre10"><span data-descr="Utilisateurs - Rôles - Invitations - Inscriptions">Accès</span>&nbsp;<i class="far fa-angle-right angle" aria-hidden="true"></i></a></li>
+                  <li><a class="drawer-menu-item" href="../chapitre11"><span data-descr="Imports de données - Exports de documents - Extractions - GED">Outils</span>&nbsp;<i class="far fa-angle-right angle" aria-hidden="true"></i></a></li>
+               </ul>
+            </nav>
+         </header>
+         <div class="main-menu drawer-toggle">
+            <p>Menu principal</p>
+         </div>
+         <div class="fill-it"></div>
+         <div class="affichage-large">
+            <div class="TableauTitre center-div w3-top">
+               <div class="divTableCellMenu w3-right w3-text-white" style="width:364px"><a href="../demarrage"><img src="../images/commun/brand.png" alt="Accueil documentation Ekylibre" width="160px" class="logo-entete"></a></div>
+            </div>
+         </div>
+         <div class="affichage-mobile">
+            <div class="TableauTitre center-div w3-top">
+               <div class="divTableCellMenu w3-right w3-text-white" style="width:200px"><a href="../demarrage"><img src="../images/commun/brand.png" alt="Accueil documentation Ekylibre" width="160px" class="logo-entete"></a></div>
+            </div>
+         </div>
+         <div class="affichage-print">
+            <div class="TableauTitre center-div w3-top">
+               <div class="divTableCellMenu w3-right w3-text-white" style="width:250px">GUIDE DE PRISE EN MAIN</div>
+            </div>
+         </div>
       </div>
-      <div class="affichage-mobile">
-        <div class="TableauTitre center-div w3-top">
-          <div class="divTableCellMenu w3-right w3-text-white" style="width:200px"><a href="../demarrage"><img src="../images/commun/brand.png" alt="Accueil documentation Ekylibre" width="160px" class="logo-entete"></a></div>
-        </div>
+      <!-- !PAGE CONTENT! -->
+      <div class="tooltip">
+         <a style="display:block" href="../pdf/Ekylibre-Guide.pdf" target="_blank">
+            <div class="btn_pdf"><span class="tooltiptext2 tooltip-top">Guide format PDF</span></div>
+         </a>
       </div>
-      <div class="affichage-print">
-        <div class="TableauTitre center-div w3-top">
-          <div class="divTableCellMenu w3-right w3-text-white" style="width:250px">GUIDE DE PRISE EN MAIN</div>
-        </div>
+      <div class="tooltip">
+         <a style="display:block" href="../notes-version" target="_self">
+            <div class="btn_notes-version"><span class="tooltiptext2 tooltip-top">Notes de version</span></div>
+         </a>
       </div>
-    </div>
-    <!-- !PAGE CONTENT! -->
-	<div class="tooltip"><a style="display:block" href="../pdf/Ekylibre-Guide.pdf" target="_blank"><div class="btn_pdf"><span class="tooltiptext2 tooltip-top">Guide format PDF</span></div></a></div>
-	<div class="tooltip"><a style="display:block" href="../notes-version" target="_self"><div class="btn_notes-version"><span class="tooltiptext2 tooltip-top">Notes de version</span></div></a></div>
-    <%= yield %>
-    <!-- !PAGE CONTENT! -->
-    <script src="../../javascripts/iscroll.js"></script>
-    <script src="../../javascripts/drawer.js"></script>
-    <script src="../../javascripts/popup.js"></script>
-	<script src="../../javascripts/breadcrumbs.js"></script>
-    <script src="../../javascripts/backtotop.js"></script>
-	<script src="../../javascripts/zoom-vanilla.js"></script>
-	<script src="../../javascripts/toggle.js"></script>
-    <script>
-      $(document).ready(function() {
-      $('.drawer').drawer();
+      <%= yield %>
+      <!-- !PAGE CONTENT! -->
+      <script src="../../javascripts/iscroll.js"></script>
+      <script src="../../javascripts/drawer.js"></script>
+      <script src="../../javascripts/popup.js"></script>
+      <script src="../../javascripts/breadcrumbs.js"></script>
+      <script src="../../javascripts/backtotop.js"></script>
+      <script src="../../javascripts/zoom-vanilla.js"></script>
+      <script src="../../javascripts/toggle.js"></script>
+      <script>
+         $(document).ready(function() {
+         $('.drawer').drawer();
+         });
+      </script>
+      <script>
+         $(function() {
+          /**
+          * Smooth scrolling to page anchor on click
+          **/
+          $("a[href*='#']:not([href='#'])").click(function() {
+              if (
+                  location.hostname == this.hostname
+                  && this.pathname.replace(/^\//,"") == location.pathname.replace(/^\//,"")
+              ) {
+                  var anchor = $(this.hash);
+                  anchor = anchor.length ? anchor : $("[name=" + this.hash.slice(1) +"]");
+                  if ( anchor.length ) {
+                      $("html, body").animate( { scrollTop: anchor.offset().top }, 500);
+                  }
+                  }
+              });
+           });
+      </script>
+   </body>
+   <script>
+      $(function() {
+      $(".content").click(function() {
+        return false;
       });
-    </script>
-	<script>
-	  $(function() {
-    /**
-    * Smooth scrolling to page anchor on click
-    **/
-    $("a[href*='#']:not([href='#'])").click(function() {
-        if (
-            location.hostname == this.hostname
-            && this.pathname.replace(/^\//,"") == location.pathname.replace(/^\//,"")
-        ) {
-            var anchor = $(this.hash);
-            anchor = anchor.length ? anchor : $("[name=" + this.hash.slice(1) +"]");
-            if ( anchor.length ) {
-                $("html, body").animate( { scrollTop: anchor.offset().top }, 500);
-            }
-            }
-        });
-     });
-	</script>
-  </body>
-  <script>
-    $(function() {
-    $(".content").click(function() {
-      return false;
-    });
-  });
-  </script>
-  <script language="JavaScript">
-    function ChangeUrl(formulaire)
-    {
-    if (formulaire.ListeUrl.selectedIndex != 0)
+      });
+   </script>
+   <script language="JavaScript">
+      function ChangeUrl(formulaire)
       {
-      var url ;
-      url = formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value;
-      window.open(url,'_self');
-      $('#fade, .popup_block').fadeOut();
-	  $('#fade, a.close').remove();
-	  $(formulaire.ListeUrl).val("");
-	  }
-    }
-</script>
+      if (formulaire.ListeUrl.selectedIndex != 0)
+        {
+        var url ;
+        url = formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value;
+        window.open(url,'_self');
+        $('#fade, .popup_block').fadeOut();
+      $('#fade, a.close').remove();
+      $(formulaire.ListeUrl).val("");
+      }
+      }
+   </script>
 </html>

@@ -591,7 +591,7 @@ video {
 		background-color: #1195f5;
 		border-color: #1195f5;
 		border-radius: 3px;
-}
+	}
 }
 
 
@@ -924,7 +924,7 @@ video {
 		background-color: #1195f5;
 		border-color: #1195f5;
 		border-radius: 3px;
-}
+	}
 }
 
 @media print {
@@ -1119,6 +1119,7 @@ video {
 	.logo-entete {
 		padding-left: 45px;
 		padding-top: 10px;
+		width: 180px;
 	}
 
 	.drawer--top .drawer-hamburger,
