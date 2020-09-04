@@ -4200,6 +4200,10 @@ input:checked ~ .tab-content-step {
 }
 
 /* Masquage Zendesk sur impression*/
+iframe {
+display: block;
+}
+
 @media print {
 	iframe{
 		display: none;
