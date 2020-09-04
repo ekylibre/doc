@@ -930,6 +930,8 @@ video {
 @media print {
 	html {
 		background-color: #fff;
+		margin: 0 0;
+		width: 100%;
 	}
 	.avoid-clicks {
 		pointer-events: none;
@@ -1098,7 +1100,7 @@ video {
 	.center-div {
 		right: 50%;
 		margin-right: -384px;
-		width: 384px;
+		width: 250px;
 		height: 44px;
 		background-color: #333;
 		z-index: 150;
@@ -1106,6 +1108,8 @@ video {
 		padding-top: 21px;
 		font-size: 15px;
 		line-height: 1.5;
+		text-align: right;
+		padding-right: 40px;
 	}
 	.ekylibre {
 		left: 50%;
