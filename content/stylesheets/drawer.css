@@ -442,6 +442,12 @@ span[data-descr]:hover::after {
 	background-color: #fff;
 }
 
+@media print {
+	.drawer-nav {
+		display: none;
+	}
+}
+
 @media (min-width: 64em) {
 	.drawer--sidebar .drawer-hamburger {
 		display: none;
