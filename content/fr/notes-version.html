@@ -69,7 +69,8 @@
             {dates: [new Date(2020, 6, 17), new Date(2020, 7, 3)], title: "Version 3.16", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
             {dates: [new Date(2020, 7, 4), new Date(2020, 7, 12)], title: "Version 3.17", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
             {dates: [new Date(2020, 7, 13), new Date(2020, 7, 25)], title: "Version 3.18", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
-         {dates: [new Date(2020, 7, 26), new Date(annee, mois, jour)], title: "Version 3.19", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
+            {dates: [new Date(2020, 7, 26), new Date(2020, 8, 10)], title: "Version 3.19", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
+         {dates: [new Date(2020, 8, 11), new Date(annee, mois, jour)], title: "Version 3.20", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}}
          ];
          
          var sections = [
@@ -83,7 +84,7 @@
          	animated: true,
          	tooltips: true,
          	defaultStartDate: new Date(2019, 5, 1),
-         endDate: new Date(2020, 8, 30),
+         endDate: new Date(2020, 11, 31),
          	sections: sections,
          	sectionLabelAttrs: {"fill": "#3f70ce", "font-weight": "bold"},
          	labelInterval: isHalfMonth,
@@ -123,6 +124,114 @@
             <section id="panel-1">
                <main>
                   <div class="accordion-container marge">
+                     <div class="panel">
+                        <div class="heading">
+                           <div class="version">
+                              <h2>Note de version 3.20 du 11/09/2020</h2>
+                           </div>
+                           <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <div class="content">
+                           <div class="divTableNoteVersion">
+                              <div class="divTableBody">
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/ekylibre.svg" alt="Ekylibre" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Commun à plusieurs modules</strong><br /><br />
+                                       1 bug corrigé
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+                                          <li>Dans l'en-tête de recherche, lorsqu'un utilisateur réalise une recherche par mot-clé, celle-ci est sauvegardée même dans le cas où l'utilisateur s'est rendu sur une autre page de l'interface et revient sur l'écran initial.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Comptabilité</strong><br /><br />
+                                       1 bug corrigé
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+                                          <li>Correction d'une anomalie empêchant la clôture comptable lorsque des écritures sont présentes dans un compte de classe 8 &#40;comptes spéciaux&#41;.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/achats.svg" alt="Achats" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Achats</strong><br /><br />
+                                       1 bug corrigé
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+                                          <li>À la sélection d'un "Lot de décaissements", l'export SEPA est de nouveau disponible. Cet export, au format .xml, permet d'intégrer simplement l'ensemble des virements réalisés depuis l'interface des "Règlements".</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Production</strong><br /><br />
+                                       3 améliorations
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+                                          <li>Lors de l'enregistrement d'une intervention de "Désherbinage", les vérifications d'autorisation d'utilisation de produits phytosanitaires sont désormais réalisées et affichées&nbsp;;</li>
+                                          <li>Lors de l'enregistrement d'une intervention de "Désherbage manuel", l'utilisation d'un produit phytosanitaire n'est maintenant plus disponible&nbsp;;</li>
+                                          <li>Toutes les vérifications d’autorisation d’utilisation de produits phytosanitaires sont désormais disponibles et affichées dans les interventions de pulvérisation, de semis «&nbsp;tout-en-un&nbsp;» et de semis avec pulvérisation, y compris lorsque l’utilisateur a choisi de ne pas afficher la carte lors de la sélection du type d’intervention.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/outils.svg" alt="Outils" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Outils</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Dans l’interface des “Imports”, mise à disposition d’une nouvelle ergonomie plus intuitive. Les différents imports sont désormais classés dans des sections, par fonctionnalités et par fournisseurs de fichiers dont les formats de données sont compatibles avec Ekylibre.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                      <div class="panel">
                         <div class="heading">
                            <div class="version">
@@ -2404,6 +2513,117 @@
             </section>
          </div>
       </article>
+      <div class="saut-page"></div>
+      <div class="heading-print marge aerateur-haut">
+         <h2>Note de version 3.20 du 11/09/2020</h2>
+      </div>
+      <div class="content-print marge">
+         <div class="divTableNoteVersion">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/ekylibre.svg" alt="Ekylibre" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Commun à plusieurs modules</strong><br /><br />
+                     1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>Dans l'en-tête de recherche, lorsqu'un utilisateur réalise une recherche par mot-clé, celle-ci est sauvegardée même dans le cas où l'utilisateur s'est rendu sur une autre page de l'interface et revient sur l'écran initial.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Comptabilité</strong><br /><br />
+                     1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>Correction d'une anomalie empêchant la clôture comptable lorsque des écritures sont présentes dans un compte de classe 8 &#40;comptes spéciaux&#41;.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/achats.svg" alt="Achats" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Achats</strong><br /><br />
+                     1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>À la sélection d'un "Lot de décaissements", l'export SEPA est de nouveau disponible. Cet export, au format .xml, permet d'intégrer simplement l'ensemble des virements réalisés depuis l'interface des "Règlements".</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Production</strong><br /><br />
+                     3 améliorations
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>Lors de l'enregistrement d'une intervention de "Désherbinage", les vérifications d'autorisation d'utilisation de produits phytosanitaires sont désormais réalisées et affichées&nbsp;;</li>
+                        <li>Lors de l'enregistrement d'une intervention de "Désherbage manuel", l'utilisation d'un produit phytosanitaire n'est maintenant plus disponible&nbsp;;</li>
+                        <li>Toutes les vérifications d’autorisation d’utilisation de produits phytosanitaires sont désormais disponibles et affichées dans les interventions de pulvérisation, de semis «&nbsp;tout-en-un&nbsp;» et de semis avec pulvérisation, y compris lorsque l’utilisateur a choisi de ne pas afficher la carte lors de la sélection du type d’intervention.</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="content-print marge">
+         <div class="divTableNoteVersion">
+            <div class="divTableBody">
+               <div class="saut-page"></div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/outils.svg" alt="Outils" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Outils</strong><br /><br />
+                     1 amélioration
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>Dans l’interface des “Imports”, mise à disposition d’une nouvelle ergonomie plus intuitive. Les différents imports sont désormais classés dans des sections, par fonctionnalités et par fournisseurs de fichiers dont les formats de données sont compatibles avec Ekylibre.</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
       <div class="saut-page"></div>
       <div class="heading-print marge aerateur-haut">
          <h2>Note de version 3.19 du 26/08/2020</h2>
