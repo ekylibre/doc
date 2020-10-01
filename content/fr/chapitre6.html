@@ -341,6 +341,22 @@
                   OpenDocument est un format de fichier ouvert conçu pour les applications bureautiques&nbsp;: traitements de texte, tableurs, présentations
                </div>
             </div>
+			<div class="divTableRow">
+               <div class="divTableCellGlossaire1">
+                  SEPA
+               </div>
+               <div class="divTableCellGlossaire2">
+                  Single Euro Payments Area est un espace unique de paiement en euros qui vise à simplifier les virements bancaires et les paiements par prélèvement automatique
+               </div>
+            </div>
+			<div class="divTableRow">
+               <div class="divTableCellGlossaire1" style="width: auto">
+                  XML
+               </div>
+               <div class="divTableCellGlossaire2" style="width: 100%">
+                  &#40;Extensible Markup Language&#41; est un langage de balisage permettant de faciliter l'échange d'informations sur internet 
+               </div>
+            </div>
          </div>
       </div>
       <p class="texte aerateur-bas">Le symbole<img src="../images/commun/option-small.svg" class="align-icone icone-marge-gauche" height="30" alt="Optionnel">dans ce chapitre vous indique une procédure pour utiliser une fonctionnalité avancée dans l'application.</p>
@@ -1020,10 +1036,58 @@
             <img src="../images/chapitre6/recept-facture8.png" class="contour-img" alt="Facture acceptée pour paiement" data-action="zoom" />
          </p>
       </div>
-      <h6>Guide de prise en main • Achats • Réaliser un décaissement</h6>
+      <h6>Guide de prise en main • Achats • Décaissements et lots de décaissements</h6>
       <a class="slice-process" id="decaissements"></a>
       <h2 class="texte aerateur">f - Décaissements et lots de décaissements</h2>
-      <p align="center" class="texte aerateur procedure">1 – Procédure pour réaliser un décaissement</p>
+	  <h6>Guide de prise en main • Achats • Paramétrer un mode de décaissement</h6>
+	  <p align="center" class="texte procedure">1 – Procédure pour paramétrer un mode de décaissement</p>
+	  <p class="texte">La création d'un mode de décaissement permet de définir le lien avec une trésorerie existante, de spécifier le passage ou non des écritures en comptabilité et d'activer ou non les exports <span class="tooltip">SEPA<span class="tooltiptext tooltip-top">Voir glossaire</span></span> au format <span class="tooltip">XML<span class="tooltiptext tooltip-top">Voir glossaire</span></span> pour les règlements par virement.</p>
+      <p class="texte">Le processus suivant vous guide pour paramétrer un nouveau mode de décaissement.</p>
+	  <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez les modes de décaissement</span>
+         <p>
+            Cliquez sur la clef anglaise<img src="../images/chapitre7/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite"> dans le "Menu principal" ou sur le bouton "Configuration" de la page d'accueil&nbsp;:
+         </p>
+         <p align="center"><img src="../images/chapitre7/wrench.svg" alt="Configuration" width="60"></p>
+         <p>Dans la barre latérale du module, cliquez sur "Modes de décaissement" dans la section "Ventes/Achats" symbolisée par l'icône d'un histogramme<img src="../images/chapitre7/bar-chart.svg" alt="histogramme" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des modes de décaissement.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/mode1.png" class="contour-img" alt="Modes de décaissement" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Créez un nouveau mode de décaissement</span>
+		 <p>Cliquez sur le bouton<img class="btn-gris" src="../images/commun/nouveau.svg" alt="+ Nouveau">en haut à gauche de la fenêtre principale.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre6/mode2.png" class="contour-img" alt="Nouveau mode de décaissement" data-action="zoom" />
+         </p>
+	  </div>
+	  <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Renseignez le mode de décaissement</span>
+         <p>
+            Nommez de façon explicite le nouveau mode de décaissement. Choisissez, dans la liste déroulante, la trésorerie &#40;préalablement paramétrée comme expliqué dans le <a class="avoid-clicks" href="../chapitre5/#tresorerie" target="_self">chapitre 5 - Comptabilité</a>&#41; qui doit être rattachée à ce mode décaissement.</p><p>Cochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="18" class="align-icone icone-marge-gauche icone-marge-droite">à droite du libellé "Passer en comptabilité" pour enregistrer les écritures comptables dans le brouillard du journal associé à la trésorie sélectionnée.
+         </p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/mode3.png" class="contour-img" alt="Nouveau type d'achat" data-action="zoom" />
+         </p>
+         <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
+		 <p class="aerateur-haut">Pour les virements bancaires, cochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="18" class="align-icone icone-marge-gauche icone-marge-droite">à droite du libellé <span class="tooltip">"SEPA"<span class="tooltiptext tooltip-top">Voir glossaire</span></span> pour pouvoir exporter ces règlements au format <span class="tooltip">XML<span class="tooltiptext tooltip-top">Voir glossaire</span></span> et les intégrer ensuite dans votre interface bancaire.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre6/mode4.png" class="contour-img" alt="Nouveau type d'achat" data-action="zoom" />
+         </p>
+      </div>
+	  <h6>Guide de prise en main • Achats • Réaliser un décaissement</h6>
+      <p align="center" class="texte aerateur procedure">2 – Procédure pour réaliser un décaissement</p>
       <p class="texte">
          Le processus suivant vous guide pour réaliser un décaissement à partir d'une facture.
       </p>
@@ -1089,7 +1153,7 @@
             </p>
          </div>
       </div>
-      <p align="center" class="texte aerateur procedure">2 – Procédure pour réaliser un lot de décaissements</p>
+      <p align="center" class="texte aerateur procedure">3 – Procédure pour réaliser un lot de décaissements</p>
 	  <p align="center" class="texte"><img src="../images/commun/option.svg" height="45" alt="Optionnel"></p>
       <p class="texte">
          Le processus suivant vous guide pour réaliser un lot de décaissements.
@@ -1114,9 +1178,13 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Créez un nouveau lot de décaissements</span>
-         <p>Cliquez sur le bouton "Nouveau". Choisissez les dates de début et de fin d'échéance, puis sélectionnez le mode de paiement "Chèque". Notez que les options "Espèces" et "Virement" ne sont pas fonctionnelles dans la version actuelle de l'application.</p>
-         <p class="max-img-process">
+		  <p>Cliquez sur le bouton<img class="btn-gris" src="../images/commun/nouveau.svg" alt="+ Nouveau">en haut à gauche de la fenêtre principale.</p>
+		  <p class="max-img-process">
             <img src="../images/chapitre6/lots2.png" class="contour-img" alt="Création du nouveau lot" data-action="zoom" />
+         </p>
+		  <p>Choisissez les dates de début et de fin d'échéance, puis sélectionnez le mode de paiement "Chèque".</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre6/lots3.png" class="contour-img" alt="Création du nouveau lot" data-action="zoom" />
          </p>
          <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
       </div>
@@ -1128,7 +1196,7 @@
          <span class="titre-advice">Sélectionnez les décaissements</span>
          <p>L'application affiche tous les décaissements prévus pour la période choisie et pour chaque fournisseur. Sélectionnez les décaissements à effectuer avec les cases à cocher<img src="../images/commun/check-square.svg" alt="Case à cocher" height="18" class="align-icone icone-marge-gauche">. Saisissez le numéro du chèque disponible dans le chéquier utilisé ou le numéro de votre choix pour la génération de lettres-chèques. Si plusieurs fournisseurs doivent être réglés, l'application incrémentera automatiquement ce numéro.</p>
          <p class="max-img-process">
-            <img src="../images/chapitre6/lots3.png" class="contour-img" alt="Création du nouveau lot" data-action="zoom" />
+            <img src="../images/chapitre6/lots4.png" class="contour-img" alt="Création du nouveau lot" data-action="zoom" />
          </p>
          <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
       </div>
@@ -1142,7 +1210,7 @@
          <p>Notez que chaque règlement supplémentaire est associé à un nouveau numéro de chèque ou de lettre-chèque incrémenté automatiquement à partir du numéro saisi à l'étape précédente. Si vous utilisez un chéquier pour effectuer plusieurs règlements, il convient donc de s'assurer que les chèques disponibles sont en nombre suffisant.</p>
          <p>Cliquez sur le bouton<img src="../images/commun/imprimer.svg" alt="Imprimer" height="25" class="align-btn-gris icone-marge-gauche icone-marge-droite">pour générer une ou plusieurs lettre&#40;s&#41;-chèque&#40;s&#41; au format PDF.</p>
          <p class="max-img-process">
-            <img src="../images/chapitre6/lots4.png" class="contour-img" alt="Création du nouveau lot" data-action="zoom" />
+            <img src="../images/chapitre6/lots5.png" class="contour-img" alt="Création du nouveau lot" data-action="zoom" />
          </p>
       </div>
       <br />
@@ -1153,7 +1221,7 @@
          <span class="titre-advice">Affichez un décaissement</span>
          <p>Cliquez sur le numéro d'un décaisssement pour en afficher le détail. Déposez vos justificatifs &#40;documents numérisés au format JPEG, fichiers PDF&#41; par glisser-déposer ou en parcourant votre disque dur après avoir cliqué sur l'icône représentant un trombone<img src="../images/commun/paperclip.svg" alt="Trombonne" height="20" class="align-icone icone-marge-gauche">.</p>
          <p class="max-img-process">
-            <img src="../images/chapitre6/lots5.png" class="contour-img" alt="Création du nouveau lot" data-action="zoom" />
+            <img src="../images/chapitre6/lots6.png" class="contour-img" alt="Création du nouveau lot" data-action="zoom" />
          </p>
       </div>
       <h6>Guide de prise en main • Achats • Zones de stockage</h6>
