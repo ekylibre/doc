@@ -1109,7 +1109,8 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Activez les déclarations fiscales</span>
-         <p>Si vous souhaitez produire les déclarations de TVA, choisissez le "Mode de déclaration de TVA" ainsi que la "Fréquence de déclaration de TVA" en cliquant sur les boutons radio<img src="../images/commun/radio.svg" alt="Bouton radio" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour activer cette fonctionnalité.</p>
+         <p>Si vous souhaitez produire les <a href="#declaration" target="_self" class="avoid-clicks">déclarations de TVA</a>, choisissez le "Mode de déclaration de TVA" ainsi que la "Fréquence de déclaration de TVA" en cliquant sur les boutons radio<img src="../images/commun/radio.svg" alt="Bouton radio" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour activer et paramétrer correctement cette fonctionnalité.</p>
+		 <p>Notez que c'est ce second paramètre qui détermira automatiquement les <strong>dates de début et de fin des périodes prises en compte lors de la génération des déclarations de TVA</strong> afin d'obtenir les registres de TVA provisoires et/ou définitifs.</p>
          <p class="max-img-process">
             <img src="../images/chapitre5/exo2019-6.png" class="contour-img" alt="Activation déclarations fiscales" data-action="zoom" />
          </p>
@@ -1798,10 +1799,11 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Créez une nouvelle déclaration</span>
-         <p>Cliquez sur le bouton<img src="../images/commun/nouveau-caret.svg" alt="Nouveau" class="btn-gris">et sélectionnez l'exercice comptable de votre choix dans la liste déroulante, puis patientez quelques instants.</p>
+         <p>Cliquez sur le bouton<img src="../images/chapitre5/nouveau.svg" alt="Nouveau" class="btn-gris"> ou <img src="../images/commun/nouveau-caret.svg" alt="Nouveau" class="btn-gris">pour sélectionner l'exercice comptable de votre choix dans la liste déroulante si deux exercices sont ouverts, puis patientez quelques instants.</p>
          <p class="max-img-process">
             <img src="../images/chapitre5/declar-tva2.png" class="contour-img" alt="Création nouvelle déclaration de TVA" data-action="zoom" />
          </p>
+		 <p>Notez que les dates délimitant la période de la nouvelle déclaration sont automatiquement définies à partir de la fréquence de déclaration de TVA paramétrée lors de l'ouverture de l'<a href="#exercice" target="_self" class="avoid-clicks">exercice comptable</a> &#40;mensuelle, trimestrielle, etc&#41; et en prenant compte des déclarations déjà réalisées durant l'exercice.</p>
       </div>
       <br />
       <div class="floating-box process">
@@ -1820,7 +1822,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Validez la nouvelle déclaration</span>
-         <p>La nouvelle déclaration de TVA est présentée en mode "Brouillon". À ce stade, elle est encore modifiable par l'utilisateur.</p>
+         <p>La nouvelle déclaration de TVA est présentée en mode <span class="step step-orange">&nbsp;Brouillon&nbsp;</span>. À ce stade, elle est encore modifiable par l'utilisateur &#40;uniquement par l'ajout d'un numéro de référence&#41;.</p>
          <p class="max-img-process">
             <img src="../images/chapitre5/declar-tva4.png" class="contour-img" alt="Déclaration de TVA" data-action="zoom" />
          </p>
@@ -1871,10 +1873,18 @@
       <div class="process-txt">
          <span class="titre-advice">Téléchargez le registre de TVA</span>
          <p>Cliquez sur la vignette pour afficher le document au format PDF dans un nouvel onglet de votre navigateur afin de le télécharger et/ou de l'imprimer.</p>
+		 <p>A - Pour une période donnée en fonction de la fréquence définie lors du <a href="#exercice" target="_self" class="avoid-clicks">paramétrage de l'exercice</a> comptable&nbsp;:</p>
          <p class="max-img-process">
-            <img src="../images/chapitre5/declar-tva11.png" class="contour-img" alt="Export déclaration de TVA" data-action="zoom" />
+            <img src="../images/chapitre5/declar-tva11.png" class="contour-img" alt="Export registre de TVA" data-action="zoom" />
          </p>
-		 <p>Si le statut de la déclaration lors de l'export en PDF est resté défini sur "Brouillon", le document est affiché dans la GED avec l'intitulé "État de TVA préparatoire".</p>
+		 <p>B - Ou pour un exercice comptable complet lorsque la déclaration a été générée avant sa clôture ou son verrouillage&nbsp;:</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre5/declar-tva12.png" class="contour-img" alt="Export registre de TVA" data-action="zoom" />
+         </p>
+		 <p class="aerateur-haut">Si le statut de la déclaration lors de l'export en PDF est resté défini sur <span class="step step-orange">&nbsp;Brouillon&nbsp;</span>, le document est généré avec l'intitulé "État de TVA préparatoire".</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre5/declar-tva13.png" class="contour-img" alt="Export registre de TVA" data-action="zoom" />
+         </p>
          <p>Notez que le document reste accessible à tout moment via le lien <a class="avoid-clicks" href="../chapitre11#ged" target="_self">"Gestion électronique des documents"</a> dans la section "Archives"<img src="../images/commun/archive.svg" alt="Archives" height="20" class="align-icone icone-marge-gauche icone-marge-droite">du module "Outils".</p>
       </div>
       <h6>Guide de prise en main • Comptabilité • Compte bancaire</h6>
