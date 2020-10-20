@@ -4199,7 +4199,7 @@ input:checked ~ .tab-content-step {
 	}
 }
 
-/* Masquage Zendesk sur impression*/
+/* Masquage Zendesk sur impression */
 iframe {
 display: block;
 }
@@ -4208,4 +4208,81 @@ display: block;
 	iframe{
 		display: none;
 	}
+}
+
+/* Bulles Duke - Réception de vendanges */
+.triangle-border {
+    position: relative;
+    padding: 15px;
+    /*margin: 1em 0 3em;*/
+    margin: 0;
+    border: 3px solid #5a8f00;
+    color: #333;
+    background: #fff;
+    border-radius: 10px;
+}
+/*
+.triangle-border::before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 40px;
+    border-width: 20px 20px 0;
+    border-style: solid;
+    border-color: #5a8f00 transparent;
+    display: block;
+    width: 0;
+}
+*/
+.triangle-border::before {
+    content: "";
+    position: absolute;
+    bottom: -16px;
+    left: 40px;
+    border-width: 15px 16px 0;
+    border-style: solid;
+    border-color: #5a8f00 transparent;
+    display: block;
+    width: 0;
+}
+/*
+.triangle-border::after {
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    left: 47px;
+    border-width: 13px 13px 0;
+    border-style: solid;
+    border-color: #fff transparent;
+    display: block;
+    width: 0;
+}
+*/
+.triangle-border::after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 43px;
+    border-width: 12px 13px 0;
+    border-style: solid;
+    border-color: #fff transparent;
+    display: block;
+    width: 0;
+}
+
+.duke-left {
+	width: 55%;
+	float: left;
+}
+
+.duke-right {
+	max-width: 40%;
+	float: right;
+	margin-top: -13px;
+	margin-right: 2px;
+}
+
+.user-duke {
+	margin: 20px 0 0 33px;
+	width: 51px;
 }
