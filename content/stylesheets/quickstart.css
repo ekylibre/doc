@@ -53,8 +53,8 @@ video {
 .divTableCellMenu, .divTableHeadMenu {
 	display: table-cell;
 	text-align: right;
-	margin-top: -5px;
-	margin-right: 17px;
+	margin-top: -15px;
+	margin-right: 14px;
 }
 .chapitre {
 	margin-top: 72px;
@@ -1115,9 +1115,9 @@ video {
 		top: 0;
 	}
 	.logo-entete {
-		padding-left: 45px;
-		padding-top: 10px;
-		width: 180px;
+		padding-left: 43px;
+		padding-top: 6px;
+		width: 130px;
 	}
 
 	.drawer--top .drawer-hamburger,
