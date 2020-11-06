@@ -3096,16 +3096,18 @@ span.the-btn {
 	color: #3f70ce;
 }
 
-.rond-orange {
+.rond-ekyagri {
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
-	background: #f4b134;
+	background: #fff;
+    background-image: url("../fr/images/commun/contour-som-x2.svg");
+    background-repeat: no-repeat;
 	margin-right: 8px;
 	line-height: 31px;
 	text-align: center;
 	float: left;
-	color: #fff;
+	color: #333;
 	font-size: 20px;
 	margin-top: 3px;
 	cursor: pointer;
@@ -3115,12 +3117,14 @@ span.the-btn {
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
-	background: #783e62;
+	background: #fff;
+	background-image: url("../fr/images/commun/contour-som-x1.svg");
+    background-repeat: no-repeat;
 	margin-right: 8px;
 	line-height: 31px;
 	text-align: center;
 	float: left;
-	color: #fff;
+	color: #333;
 	font-size: 20px;
 	margin-top: 3px;
 	cursor: pointer;
