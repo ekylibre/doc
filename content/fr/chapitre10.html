@@ -93,13 +93,13 @@
                         <div class="bloc">
                            <li><a href="../chapitre4#espace" target="_self">Présentation de l'espace de travail</a></li>
                            <li><a href="../chapitre4#modules" target="_self">Navigation et accès aux différents modules</a></li>
-						   <li><a href="../chapitre4#compte" target="_self">Préférences du compte</a></li>
+                           <li><a href="../chapitre4#compte" target="_self">Préférences du compte</a></li>
                            <li><a href="../chapitre4#perso" target="_self">Personnalisation des tableaux de bord</a></li>
-						   <li><a href="../chapitre4#etiquettes" target="_self">Utilisation des étiquettes</a></li>
-						   <li><a href="../chapitre4#champs" target="_self">Création de champs personnalisés</a></li>
-						   <li><a href="../chapitre4#formats" target="_self">Formats de nommage</a></li>
-						   <li><a href="../chapitre4#connexions" target="_self">Connexions partenaires</a></li>
-						   <li><a href="../chapitre4#acces" target="_self">Accès et rôles d'utilisateur</a></li>
+                           <li><a href="../chapitre4#etiquettes" target="_self">Utilisation des étiquettes</a></li>
+                           <li><a href="../chapitre4#champs" target="_self">Création de champs personnalisés</a></li>
+                           <li><a href="../chapitre4#formats" target="_self">Formats de nommage</a></li>
+                           <li><a href="../chapitre4#connexions" target="_self">Connexions partenaires</a></li>
+                           <li><a href="../chapitre4#acces" target="_self">Accès et rôles d'utilisateur</a></li>
                         </div>
                      </ul>
                   </li>
@@ -193,7 +193,7 @@
                            <li><a href="../chapitre8#inventaires" target="_self">Inventaire des stocks</a></li>
                            <li><a href="../chapitre8#equipements" target="_self">Gestion des équipements</a></li>
                            <li><a href="../chapitre8#tiers" target="_self">Gestion des tiers et des équipiers</a></li>
-						   <li><a href="../chapitre8#salaires" target="_self">Gestion des salaires</a></li>
+                           <li><a href="../chapitre8#salaires" target="_self">Gestion des salaires</a></li>
                         </div>
                      </ul>
                   </li>
@@ -212,7 +212,7 @@
                            <li><a href="../chapitre9#activites" target="_self">Activités agricoles</a></li>
                            <li><a href="../chapitre9#productions" target="_self">Création des productions dans une campagne</a></li>
                            <li><a href="../chapitre9#interventions" target="_self">Enregistrement d'interventions</a></li>
-						   <li><a href="../chapitre9#planification" target="_self">Planification d'interventions</a></li>
+                           <li><a href="../chapitre9#planification" target="_self">Planification d'interventions</a></li>
                            <li><a href="../chapitre9#cahier" target="_self">Obtenir le cahier de traçabilité</a></li>
                         </div>
                      </ul>
@@ -233,7 +233,7 @@
                            <li><a href="../chapitre10#imports" target="_self">Intégration de données dans <strong>Eky</strong>agri</a></li>
                            <li><a href="../chapitre10#exports" target="_self">Édition de documents réglementaires</a></li>
                            <li><a href="../chapitre10#extractions" target="_self">Extraction de données au format CSV</a></li>
-						   <li><a href="../chapitre10#ged" target="_self">Gestion électronique des documents</a></li>
+                           <li><a href="../chapitre10#ged" target="_self">Gestion électronique des documents</a></li>
                         </div>
                      </ul>
                   </li>
@@ -313,7 +313,7 @@
                   Comment réaliser des <a href="#extractions" class="avoid-clicks">extractions de données</a> sous la forme de tableaux au format CSV
                </div>
             </div>
-			<div class="divTableRow">
+            <div class="divTableRow">
                <div class="divTableCellListe">
                   <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
                </div>
@@ -323,7 +323,7 @@
             </div>
          </div>
       </div>
-	  <div class="saut-page"></div>
+      <div class="saut-page"></div>
       <h2 class="texte aerateur">Glossaire du chapitre</h2>
       <div class="divTableGlossaire marge aerateur-bas">
          <div class="divTableBody">
@@ -377,7 +377,6 @@
             </div>
          </div>
       </div>
-      <p class="texte">Le symbole<img src="../images/commun/expert-small.svg" class="align-icone icone-marge-gauche" height="30" alt="Processus complexe">dans ce chapitre vous indique un processus complexe à mettre en œuvre.</p>
       <div class="ticket-fond aerateur">
          <div class="floating-box-ticket">
             <img src="../images/commun/ticket-presta.png" width="100" alt="Ticket"/>
@@ -405,8 +404,44 @@
       <p class="texte">Afin de permettre l'utilisation de données externes dans <strong>Eky</strong>agri et d'éviter une double saisie, un moteur d'échange est disponible vous permettant de réaliser des imports spécifiques aux modules ou aux fonctionnalités de l'application. Les procédures suivantes vous expliquent comment importer différents jeux de données propres à votre ferme.</p>
       <h6>Guide de prise en main • Imports • Import d'un plan de comptes</h6>
       <a class="slice-import" id="import-plan"></a>
-      <p align="center" class="texte aerateur-bas procedure">1 – Procédure pour importer un plan de comptes</p>
-	  <p align="center" class="texte"><img src="../images/commun/expert.svg" height="45" alt="Processus complexe"></p>
+      <p align="center" class="texte procedure">1 – Procédure pour importer un plan de comptes</p>
+      <div id="cont1" class="niveau">
+         <div id="gauge1" class="jauge"></div>
+      </div>
+      <script>
+         document.addEventListener("DOMContentLoaded", function(event) {
+          var gNode1 = document.createElement('div');
+          gNode1.setAttribute("class", "jauge");
+          var gauge3 = new JustGage({
+              id: "gauge1",
+              value: 4,
+              width: 150,
+              height: 110,
+              min: 0,
+              max: 5,
+              decimals: 0,
+         customSectors: [{
+          	color : "#00ff00",
+          	lo : 0,
+          	hi : 1
+         	},{
+          	color : "#ff9933",
+          	lo : 2,
+          	hi : 3
+         	},{
+          	color : "#ff0000",
+          	lo : 4,
+          	hi : 5
+         	}],
+              pointer: true,
+         startAnimationTime: 1,
+          	startAnimationType: "linear",
+          	refreshAnimationTime: 1,
+          	refreshAnimationType: "linear",
+         hideMinMax: true,
+          });
+         });
+      </script>
       <p class="texte">Il est possible d'importer un plan de comptes provenant d'une autre application dans <strong>Eky</strong>agri. Cette fonctionnalité nécessite de disposer d'un fichier au format CSV codé en UTF-8 et dont la structure doit strictement respecter les préconisations édictées ci-après.</p>
       <p class="texte">La structure de ce tableau est basée sur 2 colonnes avec les informations classées selon l'ordre suivant &#40;le symbole<img src="../images/chapitre10/asterisk.svg" alt="Astérisque" height="20" class="align-icone icone-marge-gauche icone-marge-droite">indique une donnée obligatoire&#41;&nbsp;:</p>
       <p class="texte"><strong>Numéro de compte<img src="../images/chapitre10/asterisk.svg" alt="Astérisque" height="20" class="align-icone icone-marge-gauche"><br />Libellé</strong><img src="../images/chapitre10/asterisk.svg" alt="Astérisque" height="20" class="align-icone icone-marge-gauche"></p>
@@ -454,10 +489,10 @@
       <div class="process-txt">
          <span class="titre-advice">Créez un nouvel "Import"</span>
          <p>Cliquez sur le bouton<img class="btn-gris icone-marge-gauche icone-marge-droite" src="../images/commun/nouveau.svg" alt="+ Nouveau">en haut à gauche de la fenêtre principale.</p>
-		 <p class="max-img-process">
+         <p class="max-img-process">
             <img src="../images/chapitre10/import2.png" class="contour-img" alt="Nouvel import" data-action="zoom" />
          </p>
-		 <p>Puis, dans le pavé "Ekylibre" de la section "Comptabilité", sélectionnez "Plan de comptes - Ekylibre" dans la liste déroulante des types de fichiers.</p>
+         <p>Puis, dans le pavé "Ekylibre" de la section "Comptabilité", sélectionnez "Plan de comptes - Ekylibre" dans la liste déroulante des types de fichiers.</p>
          <p class="max-img-process">
             <img src="../images/chapitre10/import-plan2.png" class="contour-img" alt="Sélection du type d'import" data-action="zoom" />
          </p>
@@ -481,7 +516,7 @@
       <div class="process-txt">
          <span class="titre-advice">Lancez l'import du plan de comptes</span>
          <p>Cliquez sur le bouton <span class="btn-blue"><i class="fas fa-cog"></i>&nbsp;&nbsp;Exécuter</span> pour valider l'import du plan de comptes.</p>
-		 <p>En cas d'incompatibilité, l'application vous avertit immédiatement qu'une erreur est survenue.</p>
+         <p>En cas d'incompatibilité, l'application vous avertit immédiatement qu'une erreur est survenue.</p>
          <p class="max-img-process">
             <img src="../images/chapitre10/import-plan4.png" class="contour-img" alt="Exécution import" data-action="zoom" />
          </p>
@@ -521,8 +556,44 @@
       </div>
       <a class="slice-process" id="import-tiers"></a>
       <h6>Guide de prise en main • Imports • Import de tiers</h6>
-      <p align="center" class="texte aerateur procedure">2 – Procédure pour importer des tiers dans l'application</p>
-      <p align="center" class="texte"><img src="../images/commun/expert.svg" height="45" alt="Processus complexe"></p>
+      <p align="center" class="texte aerateur-haut procedure">2 – Procédure pour importer des tiers dans l'application</p>
+      <div id="cont2" class="niveau">
+         <div id="gauge2" class="jauge"></div>
+      </div>
+      <script>
+         document.addEventListener("DOMContentLoaded", function(event) {
+          var gNode1 = document.createElement('div');
+          gNode1.setAttribute("class", "jauge");
+          var gauge3 = new JustGage({
+              id: "gauge2",
+              value: 4,
+              width: 150,
+              height: 110,
+              min: 0,
+              max: 5,
+              decimals: 0,
+         customSectors: [{
+          	color : "#00ff00",
+          	lo : 0,
+          	hi : 1
+         	},{
+          	color : "#ff9933",
+          	lo : 2,
+          	hi : 3
+         	},{
+          	color : "#ff0000",
+          	lo : 4,
+          	hi : 5
+         	}],
+              pointer: true,
+         startAnimationTime: 1,
+          	startAnimationType: "linear",
+          	refreshAnimationTime: 1,
+          	refreshAnimationType: "linear",
+         hideMinMax: true,
+          });
+         });
+      </script>
       <p class="texte">Il est possible d'importer des tiers &#40;personnel, fournisseurs, clients&#41; provenant d'un gestionnaire de contacts ou d'une autre application, dans <strong>Eky</strong>agri. Cette fonctionnalité nécessite de disposer d'un fichier au format CSV codé en UTF-8 et dont la structure doit strictement respecter les préconisations édictées ci-après.</p>
       <p class="texte">La structure de ce tableau est basée sur 21 colonnes avec les informations &#40;certaines propres aux entreprises&#41; classées selon l'ordre suivant&nbsp;: &#40;le symbole<img src="../images/chapitre10/asterisk.svg" alt="Astérisque" height="20" class="align-icone icone-marge-gauche icone-marge-droite">indique une donnée obligatoire&#41;.</p>
       <p class="texte"><strong>Prénom<br />Nom<img src="../images/chapitre10/asterisk.svg" alt="Astérisque" height="20" class="align-icone icone-marge-gauche"><br />Type</strong><img src="../images/chapitre10/asterisk.svg" alt="Astérisque" height="20" class="align-icone icone-marge-gauche icone-marge-droite">&#40;<em>"person"</em> pour qualifier une personne physique ou <em>"legal_entity"</em> pour qualifier une entreprise&#41;<br /><strong>Radical compte client</strong> &#40;si l'entité est un client, complétez la colonne avec votre compte radical client. Exemple : <em>"411"</em> ou <em>"431"</em> pour le compte de charges sociales&#41;<br /><strong>Radical compte fournisseur</strong> &#40;si l'entité est un fournisseur, complétez la colonne avec votre compte radical fournisseur. Exemple : <em>"401"</em> ou <em>"431"</em> pour le compte de charges sociales&#41;<br /><strong>Adresse<br />Code postal<br />Ville<br />Téléphone<br />Fax<br />Portable<br />Nature du lien</strong> &#40;<em>"management"</em> pour qualifier un responsable ou <em>"work"</em> pour qualifier un salarié&#41;<br /><strong>Raison sociale</strong> &#40;si un lien est indiqué, il faut impérativement saisir le nom de l'entité avec laquelle la personne est liée&#41;<strong><br />Pays<img src="../images/chapitre10/asterisk.svg" alt="Astérisque" height="20" class="align-icone icone-marge-gauche icone-marge-droite"></strong>&#40;<em>"fr"</em> pour le code par défaut&#41;<br /><strong>Adresse email<br />Actif</strong><img src="../images/chapitre10/asterisk.svg" alt="Astérisque" height="20" class="align-icone icone-marge-gauche icone-marge-droite">&#40;<em>"1"</em> pour qualifier un tiers actif&#41;<br /><strong>Prospect<br />Transporteur<br />N<sup>o</sup> de Siret<br />N<sup>o</sup> de TVA intracommunautaire<br />Code APE</strong></p>
@@ -569,10 +640,10 @@
       <div class="process-txt">
          <span class="titre-advice">Créez un nouvel "Import"</span>
          <p>Cliquez sur le bouton<img class="btn-gris icone-marge-gauche icone-marge-droite" src="../images/commun/nouveau.svg" alt="+ Nouveau">en haut à gauche de la fenêtre principale.</p>
-		 <p class="max-img-process">
+         <p class="max-img-process">
             <img src="../images/chapitre10/import2.png" class="contour-img" alt="Nouvel import" data-action="zoom" />
          </p>
-		 <p>Puis, dans le pavé "Ekylibre" de la section "Stocks", sélectionnez "Tiers - Ekylibre" dans la liste déroulante des types de fichiers.</p>
+         <p>Puis, dans le pavé "Ekylibre" de la section "Stocks", sélectionnez "Tiers - Ekylibre" dans la liste déroulante des types de fichiers.</p>
          <p class="max-img-process">
             <img src="../images/chapitre10/import-tiers2.png" class="contour-img" alt="Sélection du type d'import" data-action="zoom" />
          </p>
@@ -596,7 +667,7 @@
       <div class="process-txt">
          <span class="titre-advice">Lancez l'import des tiers</span>
          <p>Cliquez sur le bouton <span class="btn-blue"><i class="fas fa-cog"></i>&nbsp;&nbsp;Exécuter</span> pour valider l'import des tiers.</p>
-		 <p>En cas d'incompatibilité, l'application vous avertit immédiatement qu'une erreur est survenue.</p>
+         <p>En cas d'incompatibilité, l'application vous avertit immédiatement qu'une erreur est survenue.</p>
          <p class="max-img-process">
             <img src="../images/chapitre10/import-tiers4.png" class="contour-img" alt="Exécution import" data-action="zoom" />
          </p>
@@ -636,8 +707,44 @@
       </div>
       <a class="slice-process" id="import-variants"></a>
       <h6>Guide de prise en main • Imports • Import de variantes</h6>
-      <p align="center" class="texte aerateur procedure">3 – Procédure pour importer des variantes dans l'application</p>
-      <p align="center" class="texte"><img src="../images/commun/expert.svg" height="45" alt="Processus complexe"></p>
+      <p align="center" class="texte aerateur-haut procedure">3 – Procédure pour importer des variantes dans l'application</p>
+      <div id="cont3" class="niveau">
+         <div id="gauge3" class="jauge"></div>
+      </div>
+      <script>
+         document.addEventListener("DOMContentLoaded", function(event) {
+          var gNode1 = document.createElement('div');
+          gNode1.setAttribute("class", "jauge");
+          var gauge3 = new JustGage({
+              id: "gauge3",
+              value: 4,
+              width: 150,
+              height: 110,
+              min: 0,
+              max: 5,
+              decimals: 0,
+         customSectors: [{
+          	color : "#00ff00",
+          	lo : 0,
+          	hi : 1
+         	},{
+          	color : "#ff9933",
+          	lo : 2,
+          	hi : 3
+         	},{
+          	color : "#ff0000",
+          	lo : 4,
+          	hi : 5
+         	}],
+              pointer: true,
+         startAnimationTime: 1,
+          	startAnimationType: "linear",
+          	refreshAnimationTime: 1,
+          	refreshAnimationType: "linear",
+         hideMinMax: true,
+          });
+         });
+      </script>
       <div class="info-fond aerateur-haut aerateur-bas">
          <div class="floating-box-info">
             <img src="../images/commun/info.svg" width="100" alt="Info"/>
@@ -1037,10 +1144,10 @@
       <div class="process-txt">
          <span class="titre-advice">Créez un nouvel "Import"</span>
          <p>Cliquez sur le bouton<img class="btn-gris icone-marge-gauche icone-marge-droite" src="../images/commun/nouveau.svg" alt="+ Nouveau">en haut à gauche de la fenêtre principale.</p>
-		 <p class="max-img-process">
+         <p class="max-img-process">
             <img src="../images/chapitre10/import2.png" class="contour-img" alt="Nouvel import" data-action="zoom" />
          </p>
-		 <p>Puis, dans le pavé "Ekylibre" de la section "Configuration", sélectionnez "Variants - Ekylibre" dans la liste déroulante des types de fichiers.</p>
+         <p>Puis, dans le pavé "Ekylibre" de la section "Configuration", sélectionnez "Variants - Ekylibre" dans la liste déroulante des types de fichiers.</p>
          <p class="max-img-process">
             <img src="../images/chapitre10/import-variants2.png" class="contour-img" alt="Sélection du type d'import" data-action="zoom" />
          </p>
@@ -1064,7 +1171,7 @@
       <div class="process-txt">
          <span class="titre-advice">Lancez l'import des variantes</span>
          <p>Cliquez sur le bouton <span class="btn-blue"><i class="fas fa-cog"></i>&nbsp;&nbsp;Exécuter</span> pour valider l'import des variantes.</p>
-		 <p>En cas d'incompatibilité, l'application vous avertit immédiatement qu'une erreur est survenue.</p>
+         <p>En cas d'incompatibilité, l'application vous avertit immédiatement qu'une erreur est survenue.</p>
          <p class="max-img-process">
             <img src="../images/chapitre10/import-variants4.png" class="contour-img" alt="Exécution import" data-action="zoom" />
          </p>
@@ -1104,8 +1211,44 @@
       </div>
       <a class="slice-process" id="import-equipments"></a>
       <h6>Guide de prise en main • Imports • Import d'équipements</h6>
-      <p align="center" class="texte aerateur procedure">4 – Procédure pour importer des équipement dans l'application</p>
-      <p align="center" class="texte"><img src="../images/commun/expert.svg" height="45" alt="Processus complexe"></p>
+      <p align="center" class="texte aerateur-haut procedure">4 – Procédure pour importer des équipement dans l'application</p>
+      <div id="cont4" class="niveau">
+         <div id="gauge4" class="jauge"></div>
+      </div>
+      <script>
+         document.addEventListener("DOMContentLoaded", function(event) {
+          var gNode1 = document.createElement('div');
+          gNode1.setAttribute("class", "jauge");
+          var gauge4 = new JustGage({
+              id: "gauge4",
+              value: 4,
+              width: 150,
+              height: 110,
+              min: 0,
+              max: 5,
+              decimals: 0,
+         customSectors: [{
+          	color : "#00ff00",
+          	lo : 0,
+          	hi : 1
+         	},{
+          	color : "#ff9933",
+          	lo : 2,
+          	hi : 3
+         	},{
+          	color : "#ff0000",
+          	lo : 4,
+          	hi : 5
+         	}],
+              pointer: true,
+         startAnimationTime: 1,
+          	startAnimationType: "linear",
+          	refreshAnimationTime: 1,
+          	refreshAnimationType: "linear",
+         hideMinMax: true,
+          });
+         });
+      </script>
       <p class="texte">Il est possible d'importer des équipements dans <strong>Eky</strong>agri. Cette fonctionnalité nécessite de disposer d'un fichier au format CSV codé en UTF-8 et dont la structure doit strictement respecter les préconisations édictées ci-après.</p>
       <p class="texte">La structure de ce tableau est basée sur 12 colonnes avec les informations classées selon l'ordre suivant &#40;le symbole<img src="../images/chapitre10/asterisk.svg" alt="Astérisque" height="20" class="align-icone icone-marge-gauche icone-marge-droite">indique une donnée obligatoire&#41;&nbsp;:</p>
       <p class="texte"><strong>Nom</strong><img src="../images/chapitre10/asterisk.svg" alt="Astérisque" height="20" class="align-icone icone-marge-gauche icone-marge-droite">&#40;le nom de l'équipement&#41;<br />
@@ -1126,8 +1269,8 @@
          </a>
       </div>
       <p class="texte">Une fois votre fichier préparé, il est alors possible de réaliser l'intégration des nouvelles données.</p>
-	  <p class="texte aerateur-bas"><strong>Notez que la prise en compte des coûts d'utilisation des équipements au moment de l'import nécessite l'existence d'un catalogue de prix des coûts d'usage</strong> &#40;procédure expliquée dans le <a class="avoid-clicks" href="../chapitre8#coutusage">chapitre 8 - Stocks et tiers</a>&#41;.</p>
-	  <p class="texte">Le processus suivant vous guide pour importer des équipements dans l'application&nbsp;:</p>
+      <p class="texte aerateur-bas"><strong>Notez que la prise en compte des coûts d'utilisation des équipements au moment de l'import nécessite l'existence d'un catalogue de prix des coûts d'usage</strong> &#40;procédure expliquée dans le <a class="avoid-clicks" href="../chapitre8#coutusage">chapitre 8 - Stocks et tiers</a>&#41;.</p>
+      <p class="texte">Le processus suivant vous guide pour importer des équipements dans l'application&nbsp;:</p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
       </div>
@@ -1150,10 +1293,10 @@
       <div class="process-txt">
          <span class="titre-advice">Créez un nouvel "Import"</span>
          <p>Cliquez sur le bouton<img class="btn-gris icone-marge-gauche icone-marge-droite" src="../images/commun/nouveau.svg" alt="+ Nouveau">en haut à gauche de la fenêtre principale.</p>
-		 <p class="max-img-process">
+         <p class="max-img-process">
             <img src="../images/chapitre10/import2.png" class="contour-img" alt="Nouvel import" data-action="zoom" />
          </p>
-		 <p>Puis, dans le pavé "Ekylibre" de la section "Production végétale", sélectionnez "Équipements - Ekylibre" dans la liste déroulante des types de fichiers.</p>
+         <p>Puis, dans le pavé "Ekylibre" de la section "Production végétale", sélectionnez "Équipements - Ekylibre" dans la liste déroulante des types de fichiers.</p>
          <p class="max-img-process">
             <img src="../images/chapitre10/import-equip2.png" class="contour-img" alt="Sélection du type d'import" data-action="zoom" />
          </p>
@@ -1177,7 +1320,7 @@
       <div class="process-txt">
          <span class="titre-advice">Lancez l'import des équipements</span>
          <p>Cliquez sur le bouton <span class="btn-blue"><i class="fas fa-cog"></i>&nbsp;&nbsp;Exécuter</span> pour valider l'import des équipements.</p>
-		 <p>En cas d'incompatibilité, l'application vous avertit immédiatement qu'une erreur est survenue.</p>
+         <p>En cas d'incompatibilité, l'application vous avertit immédiatement qu'une erreur est survenue.</p>
          <p class="max-img-process">
             <img src="../images/chapitre10/import-equip4.png" class="contour-img" alt="Exécution import" data-action="zoom" />
          </p>
@@ -1228,8 +1371,44 @@
       </div>
       <a class="slice-process" id="import-zones"></a>
       <h6>Guide de prise en main • Imports • Import de zones de stockage</h6>
-      <p align="center" class="texte aerateur procedure">5 – Procédure pour importer des zones de stockage</p>
-      <p align="center" class="texte"><img src="../images/commun/expert.svg" height="45" alt="Processus complexe"></p>
+      <p align="center" class="texte aerateur-haut procedure">5 – Procédure pour importer des zones de stockage</p>
+      <div id="cont5" class="niveau">
+         <div id="gauge5" class="jauge"></div>
+      </div>
+      <script>
+         document.addEventListener("DOMContentLoaded", function(event) {
+          var gNode1 = document.createElement('div');
+          gNode1.setAttribute("class", "jauge");
+          var gauge3 = new JustGage({
+              id: "gauge5",
+              value: 4,
+              width: 150,
+              height: 110,
+              min: 0,
+              max: 5,
+              decimals: 0,
+         customSectors: [{
+          	color : "#00ff00",
+          	lo : 0,
+          	hi : 1
+         	},{
+          	color : "#ff9933",
+          	lo : 2,
+          	hi : 3
+         	},{
+          	color : "#ff0000",
+          	lo : 4,
+          	hi : 5
+         	}],
+              pointer: true,
+         startAnimationTime: 1,
+          	startAnimationType: "linear",
+          	refreshAnimationTime: 1,
+          	refreshAnimationType: "linear",
+         hideMinMax: true,
+          });
+         });
+      </script>
       <p class="texte">Il est possible d'importer les bâtiments, leurs subdivisions et les aires de stockage dans <strong>Eky</strong>agri. Cette fonctionnalité nécessite de disposer d'un fichier au format CSV codé en UTF-8 et dont la structure doit strictement respecter les préconisations édictées ci-après.</p>
       <p class="texte">La structure de ce tableau est basée sur 6 colonnes avec les informations classées selon l'ordre suivant &#40;le symbole<img src="../images/chapitre10/asterisk.svg" alt="Astérisque" height="20" class="align-icone icone-marge-gauche icone-marge-droite">indique une donnée obligatoire&#41;&nbsp;:</p>
       <p class="texte"><strong>Nom</strong><img src="../images/chapitre10/asterisk.svg" alt="Astérisque" height="20" class="align-icone icone-marge-gauche icone-marge-droite">&#40;la dénomination de la zone&#41;<br />
@@ -1268,11 +1447,11 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Créez un nouvel "Import"</span>
-		 <p>Cliquez sur le bouton<img class="btn-gris icone-marge-gauche icone-marge-droite" src="../images/commun/nouveau.svg" alt="+ Nouveau">en haut à gauche de la fenêtre principale.</p>
-		 <p class="max-img-process">
+         <p>Cliquez sur le bouton<img class="btn-gris icone-marge-gauche icone-marge-droite" src="../images/commun/nouveau.svg" alt="+ Nouveau">en haut à gauche de la fenêtre principale.</p>
+         <p class="max-img-process">
             <img src="../images/chapitre10/import2.png" class="contour-img" alt="Nouvel import" data-action="zoom" />
          </p>
-		 <p>Puis, dans le pavé "Ekylibre" de la section "Stocks", sélectionnez "Zones de stockage - Ekylibre" dans la liste déroulante des types de fichiers.</p>
+         <p>Puis, dans le pavé "Ekylibre" de la section "Stocks", sélectionnez "Zones de stockage - Ekylibre" dans la liste déroulante des types de fichiers.</p>
          <p class="max-img-process">
             <img src="../images/chapitre10/import-zones2.png" class="contour-img" alt="Sélection du type d'import" data-action="zoom" />
          </p>
@@ -1296,7 +1475,7 @@
       <div class="process-txt">
          <span class="titre-advice">Lancez l'import des zones</span>
          <p>Cliquez sur le bouton <span class="btn-blue"><i class="fas fa-cog"></i>&nbsp;&nbsp;Exécuter</span> pour valider l'import des zones de stockage.</p>
-		 <p>En cas d'incompatibilité, l'application vous avertit immédiatement qu'une erreur est survenue.</p>
+         <p>En cas d'incompatibilité, l'application vous avertit immédiatement qu'une erreur est survenue.</p>
          <p class="max-img-process">
             <img src="../images/chapitre10/import-zones4.png" class="contour-img" alt="Exécution import" data-action="zoom" />
          </p>
@@ -1347,9 +1526,45 @@
       </div>
       <a class="slice-process" id="import-agroedi"></a>
       <h6>Guide de prise en main • Imports • Fiche parcellaire Daplos Agro-EDI</h6>
-      <p align="center" class="texte aerateur procedure">6 – Procédure pour importer une fiche parcellaire Daplos Agro-EDI</p>
+      <p align="center" class="texte aerateur-haut procedure">6 – Procédure pour importer une fiche parcellaire Daplos Agro-EDI</p>
       <p class="texte">Pour favoriser le transfert des données et l’interopérabilité entre les différents systèmes d’information liés aux pratiques agricoles, de nombreux partenaires ont créé dès 1992 l’association Agro-EDI Europe pour élaborer une fiche parcellaire normalisée. La fonctionnalité d'import d'<strong>Eky</strong>agri permet à l'agriculteur de récupérer l'ensemble des informations des interventions enregistrées dans un autre logiciel afin de charger les données historiques de sa ferme.</p>
-      <p align="center" class="texte"><img src="../images/commun/cool.svg" height="55" alt="Processus simple"></p>
+      <div id="cont6" class="niveau">
+         <div id="gauge6" class="jauge"></div>
+      </div>
+      <script>
+         document.addEventListener("DOMContentLoaded", function(event) {
+          var gNode1 = document.createElement('div');
+          gNode1.setAttribute("class", "jauge");
+          var gauge3 = new JustGage({
+              id: "gauge6",
+              value: 1,
+              width: 150,
+              height: 110,
+              min: 0,
+              max: 5,
+              decimals: 0,
+         customSectors: [{
+          	color : "#00ff00",
+          	lo : 0,
+          	hi : 1
+         	},{
+          	color : "#ff9933",
+          	lo : 2,
+          	hi : 3
+         	},{
+          	color : "#ff0000",
+          	lo : 4,
+          	hi : 5
+         	}],
+              pointer: true,
+         startAnimationTime: 1,
+          	startAnimationType: "linear",
+          	refreshAnimationTime: 1,
+          	refreshAnimationType: "linear",
+         hideMinMax: true,
+          });
+         });
+      </script>
       <div class="warn-fond aerateur-haut aerateur-bas">
          <div class="floating-box-warn">
             <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
@@ -1384,10 +1599,10 @@
       <div class="process-txt">
          <span class="titre-advice">Créez un nouvel "Import"</span>
          <p>Cliquez sur le bouton<img class="btn-gris icone-marge-gauche icone-marge-droite" src="../images/commun/nouveau.svg" alt="+ Nouveau">en haut à gauche de la fenêtre principale.</p>
-		 <p class="max-img-process">
+         <p class="max-img-process">
             <img src="../images/chapitre10/import2.png" class="contour-img" alt="Nouvel import" data-action="zoom" />
          </p>
-		 <p>Puis, dans le pavé "Agro-EDI" de la section "Production végétale", sélectionnez "Production végétale" dans la liste déroulante des types de fichiers disponibles.</p>
+         <p>Puis, dans le pavé "Agro-EDI" de la section "Production végétale", sélectionnez "Production végétale" dans la liste déroulante des types de fichiers disponibles.</p>
          <p class="max-img-process">
             <img src="../images/chapitre10/agro-edi2.png" class="contour-img" alt="Sélection du type d'import" data-action="zoom" />
          </p>
@@ -1411,7 +1626,7 @@
       <div class="process-txt">
          <span class="titre-advice">Lancez l'import de la fiche parcellaire</span>
          <p>Cliquez sur le bouton <span class="btn-blue"><i class="fas fa-cog"></i>&nbsp;&nbsp;Exécuter</span> pour valider l'import de la fiche parcellaire.</p>
-		 <p>En cas d'incompatibilité, l'application vous avertit immédiatement qu'une erreur est survenue.</p>
+         <p>En cas d'incompatibilité, l'application vous avertit immédiatement qu'une erreur est survenue.</p>
          <p class="max-img-process">
             <img src="../images/chapitre10/agro-edi4.png" class="contour-img" alt="Exécution import" data-action="zoom" />
          </p>
@@ -1469,7 +1684,43 @@
       <p align="center" class="texte aerateur procedure">G – Procédure pour importer un fichier TelePAC</p>
       <p class="texte">La création des zones cultivables et des activités agricoles grâce à l'import d'un fichier TelePAC se fait généralement dans l'assistant de démarrage mais vous pouvez avoir passé cette étape et décidé d'intégrer vos données plus tard dans l'application. Vous pouvez aussi avoir importé une déclaration TelePAC et décidé d'en intégrer d'autres complémentaires.</p>
       <p class="texte">La fonctionnalité d'import d'<strong>Eky</strong>agri permet à l'agriculteur de récupérer l'ensemble des informations de la gestion parcellaire de son exploitation et des activités déclarées à la PAC à partir de 2015.</p>
-      <p align="center" class="texte aerateur-haut"><img src="../images/commun/cool.svg" height="55" alt="Processus simple"></p>
+      <div id="cont7" class="niveau">
+         <div id="gauge7" class="jauge"></div>
+      </div>
+      <script>
+         document.addEventListener("DOMContentLoaded", function(event) {
+          var gNode1 = document.createElement('div');
+          gNode1.setAttribute("class", "jauge");
+          var gauge3 = new JustGage({
+              id: "gauge7",
+              value: 1,
+              width: 150,
+              height: 110,
+              min: 0,
+              max: 5,
+              decimals: 0,
+         customSectors: [{
+          	color : "#00ff00",
+          	lo : 0,
+          	hi : 1
+         	},{
+          	color : "#ff9933",
+          	lo : 2,
+          	hi : 3
+         	},{
+          	color : "#ff0000",
+          	lo : 4,
+          	hi : 5
+         	}],
+              pointer: true,
+         startAnimationTime: 1,
+          	startAnimationType: "linear",
+          	refreshAnimationTime: 1,
+          	refreshAnimationType: "linear",
+         hideMinMax: true,
+          });
+         });
+      </script>
       <p class="texte">Le processus suivant vous guide pour importer un fichier TelePAC dans l'application.</p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
@@ -1493,10 +1744,10 @@
       <div class="process-txt">
          <span class="titre-advice">Créez un nouvel "Import"</span>
          <p>Cliquez sur le bouton<img class="btn-gris icone-marge-gauche icone-marge-droite" src="../images/commun/nouveau.svg" alt="+ Nouveau">en haut à gauche de la fenêtre principale.</p>
-		 <p class="max-img-process">
+         <p class="max-img-process">
             <img src="../images/chapitre10/import2.png" class="contour-img" alt="Nouvel import" data-action="zoom" />
          </p>
-		 <p>Puis, dans le pavé "TelePAC" de la section "Production végétale", sélectionnez la déclaration dans la liste déroulante des types de fichiers disponibles.</p>
+         <p>Puis, dans le pavé "TelePAC" de la section "Production végétale", sélectionnez la déclaration dans la liste déroulante des types de fichiers disponibles.</p>
          <p class="max-img-process">
             <img src="../images/chapitre10/telepac2.png" class="contour-img" alt="Sélection du type d'import" data-action="zoom" />
          </p>
@@ -1520,7 +1771,7 @@
       <div class="process-txt">
          <span class="titre-advice">Lancez l'import de la déclaration</span>
          <p>Cliquez sur le bouton <span class="btn-blue"><i class="fas fa-cog"></i>&nbsp;&nbsp;Exécuter</span> pour valider l'import de la déclaration.</p>
-		 <p>En cas d'incompatibilité, l'application vous avertit immédiatement qu'une erreur est survenue.</p>
+         <p>En cas d'incompatibilité, l'application vous avertit immédiatement qu'une erreur est survenue.</p>
          <p class="max-img-process">
             <img src="../images/chapitre10/telepac4.png" class="contour-img" alt="Exécution import" data-action="zoom" />
          </p>
@@ -1594,7 +1845,7 @@
          <span class="titre-advice">Réalisez un nouvel export</span>
          <p align="center"><img src="../images/chapitre10/regist-interv.svg" alt="Registre des interventions" height="60"></p>
          <p>Cliquez sur le bouton "Registre des interventions" puis cochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="18" class="align-icone icone-marge-gauche icone-marge-droite">pour filtrer les interventions d'une campagne donnée et validez votre choix en cliquant sur le bouton "Rechercher".</p>
-		 <p>Notez que la sélection des campagnes est limitée à celles durant lesquelles au moins une intervention a été enregistrée.</p>
+         <p>Notez que la sélection des campagnes est limitée à celles durant lesquelles au moins une intervention a été enregistrée.</p>
          <p class="max-img-process">
             <img src="../images/chapitre10/regist-interv1.png" class="contour-img" alt="Sélection du type d'export" data-action="zoom" />
          </p>
@@ -1661,7 +1912,7 @@
          <span class="titre-advice">Réalisez un nouvel export</span>
          <p align="center"><img src="../images/chapitre10/regist-phyto.svg" alt="Registre phytosanitaire" height="60"></p>
          <p>Cliquez sur le bouton "Registre phytosanitaire" puis cochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="18" class="align-icone icone-marge-gauche icone-marge-droite">pour filtrer les interventions d'une campagne donnée et validez votre choix en cliquant sur le bouton "Rechercher".</p>
-		 <p>Notez que la sélection des campagnes est limitée à celles durant lesquelles au moins une intervention a été enregistrée.</p>
+         <p>Notez que la sélection des campagnes est limitée à celles durant lesquelles au moins une intervention a été enregistrée.</p>
          <p class="max-img-process">
             <img src="../images/chapitre10/regist-phyto1.png" class="contour-img" alt="Sélection du type d'export" data-action="zoom" />
          </p>
@@ -1790,8 +2041,44 @@
       <p class="texte"><strong>Eky</strong>agri permet de réaliser l'extraction de données sous la forme de feuilles de calcul &#40;tableaux&#41; au format CSV.</p>
       <p class="texte">Grâce à des recherches croisées et à des filtres avancés entre les différentes <span class="tooltip">tables<span class="tooltiptext tooltip-top">Voir glossaire</span></span> de l'application, vous pouvez facilement récupérer vos données pour les visualiser ou les exploiter dans un tableur comme par exemple <a href="https://www.openoffice.org/fr/" target="_blank">Apache OpenOffice</a> ou <a href="https://fr.libreoffice.org/" target="_blank">LibreOffice</a>.</p>
       <p class="texte">Dans l'exemple suivant, sur la base des factures supérieures à 100 euros qui auraient dû être payées à une date donnée, on souhaite obtenir le nom et l'adresse email des tiers afin de réaliser une campagne de relance avec une solution d'emailing tierce.</p>
-      <p align="center" class="texte aerateur procedure">1 – Procédure pour extraire un tableau de tiers</p>
-      <p align="center" class="texte"><img src="../images/commun/expert.svg" height="45" alt="Processus complexe"></p>
+      <p align="center" class="texte aerateur-haut procedure">1 – Procédure pour extraire un tableau de tiers</p>
+      <div id="cont8" class="niveau">
+         <div id="gauge8" class="jauge"></div>
+      </div>
+      <script>
+         document.addEventListener("DOMContentLoaded", function(event) {
+          var gNode1 = document.createElement('div');
+          gNode1.setAttribute("class", "jauge");
+          var gauge3 = new JustGage({
+              id: "gauge8",
+              value: 4,
+              width: 150,
+              height: 110,
+              min: 0,
+              max: 5,
+              decimals: 0,
+         customSectors: [{
+          	color : "#00ff00",
+          	lo : 0,
+          	hi : 1
+         	},{
+          	color : "#ff9933",
+          	lo : 2,
+          	hi : 3
+         	},{
+          	color : "#ff0000",
+          	lo : 4,
+          	hi : 5
+         	}],
+              pointer: true,
+         startAnimationTime: 1,
+          	startAnimationType: "linear",
+          	refreshAnimationTime: 1,
+          	refreshAnimationType: "linear",
+         hideMinMax: true,
+          });
+         });
+      </script>
       <p class="texte">Le processus suivant vous guide pour réaliser un nouveau processus d'extraction.</p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
@@ -1974,11 +2261,11 @@
             </div>
          </div>
       </div>
-	  <h6>Guide de prise en main • Outils • Gestion électronique des documents</h6>
+      <h6>Guide de prise en main • Outils • Gestion électronique des documents</h6>
       <a class="slice-process" id="ged"></a>
       <h2 class="texte aerateur">e - Gestion électronique des documents</h2>
       <p class="texte"><strong>Eky</strong>agri archive et met à la disposition de l'utilisateur l'ensemble des documents issus d'une impression ou ajoutés en pièces jointes &#40;justificatifs au format PDF ou sous forme d'image numérique au format JPEG/PNG, etc.&#41; pour consultation, impression ou vérification.</p>
-	  <p class="texte">La "Gestion électronique des documents" &#40;GED&#41; permet également un accès direct au site ekylibre.com pour vérifier l'authenticité de certains documents &#40;balance, Grand-livre, journaux après clôture, factures de vente&#41; et garantir l'intégrité des données archivées.</p>
+      <p class="texte">La "Gestion électronique des documents" &#40;GED&#41; permet également un accès direct au site ekylibre.com pour vérifier l'authenticité de certains documents &#40;balance, Grand-livre, journaux après clôture, factures de vente&#41; et garantir l'intégrité des données archivées.</p>
       <p align="center" class="texte aerateur procedure">1 - Procédure pour gérer les documents enregistrés dans <strong>Eky</strong>agri</p>
       <p class="texte">Le processus suivant vous guide pour exploiter les fonctionnalités de la "Gestion électronique des documents".</p>
       <div class="floating-box process">
@@ -1994,63 +2281,63 @@
          <p class="max-img-process">
             <img src="../images/chapitre10/ged1.png" class="contour-img" alt="Liste des documents" data-action="zoom" />
          </p>
-		 <p>Tous les documents issus d'une impression ou ajoutés en pièces jointes sont listés ici.</p>
-		 <p>Notez que la case<img src="../images/commun/check-square-o.svg" alt="Case cochée" height="18" class="align-icone icone-marge-gauche icone-marge-droite">devant le numéro d'un document dans la colonne "Obligatoire" indique qu'une signature électronique permet de vérifier son authenticité. Cette signature est automatiquement ajoutée à la balance, au Grand-livre, aux états des journaux après clôture et aux factures de vente.<br />Une fois générés, ces documents signés ne peuvent pas être supprimés en cliquant sur la croix<img src="../images/commun/times-blue.svg" alt="Supprimer" height="20" class="align-icone icone-marge-gauche">.</p>
+         <p>Tous les documents issus d'une impression ou ajoutés en pièces jointes sont listés ici.</p>
+         <p>Notez que la case<img src="../images/commun/check-square-o.svg" alt="Case cochée" height="18" class="align-icone icone-marge-gauche icone-marge-droite">devant le numéro d'un document dans la colonne "Obligatoire" indique qu'une signature électronique permet de vérifier son authenticité. Cette signature est automatiquement ajoutée à la balance, au Grand-livre, aux états des journaux après clôture et aux factures de vente.<br />Une fois générés, ces documents signés ne peuvent pas être supprimés en cliquant sur la croix<img src="../images/commun/times-blue.svg" alt="Supprimer" height="20" class="align-icone icone-marge-gauche">.</p>
       </div>
       <br />
-	  <div class="floating-box process">
+      <div class="floating-box process">
          <img src="../images/commun/step2.svg" alt="2" width="52" />
       </div>
       <div class="process-txt">
          <span class="titre-advice">Accédez au document archivé</span>
-		 <p>Cliquez sur le numéro ou sur le nom d'un document pour en afficher un aperçu.</p>
-		 <p>Exemple d'une facture de vente avec une signature électronique&nbsp;:</p>
+         <p>Cliquez sur le numéro ou sur le nom d'un document pour en afficher un aperçu.</p>
+         <p>Exemple d'une facture de vente avec une signature électronique&nbsp;:</p>
          <p class="max-img-process">
             <img src="../images/chapitre10/ged2.png" class="contour-img" alt="Aperçu document" data-action="zoom" />
          </p>
-		 <p>Exemple de l'image d'un équipement immobilisé dans un achat&nbsp;:</p>
-		 <p class="max-img-process">
+         <p>Exemple de l'image d'un équipement immobilisé dans un achat&nbsp;:</p>
+         <p class="max-img-process">
             <img src="../images/chapitre10/ged3.png" class="contour-img" alt="Aperçu document" data-action="zoom" />
          </p>
-		 <p>Cliquez sur cet aperçu pour afficher le document dans un nouvel onglet de votre navigateur, avec la possibilité de l'imprimer ou de le télécharger sur un disque dur ou une clé USB.</p>
+         <p>Cliquez sur cet aperçu pour afficher le document dans un nouvel onglet de votre navigateur, avec la possibilité de l'imprimer ou de le télécharger sur un disque dur ou une clé USB.</p>
       </div>
       <br />
-	  <div class="floating-box process">
+      <div class="floating-box process">
          <img src="../images/commun/step3.svg" alt="3" width="52" />
       </div>
       <div class="process-txt">
          <span class="titre-advice">Affichez la signature électronique</span>
-		 <p>Si le document est signé numériquement, cliquez sur<img src="../images/chapitre10/signature.svg" alt="Afficher la signature électronique" height="25" class="align-btn-gris icone-marge-gauche icone-marge-droite">pour visualiser la signature dans une <span class="tooltip">fenêtre modale<span class="tooltiptext tooltip-top">Voir glossaire</span></span>.</p>
-		 <p class="max-img-process">
+         <p>Si le document est signé numériquement, cliquez sur<img src="../images/chapitre10/signature.svg" alt="Afficher la signature électronique" height="25" class="align-btn-gris icone-marge-gauche icone-marge-droite">pour visualiser la signature dans une <span class="tooltip">fenêtre modale<span class="tooltiptext tooltip-top">Voir glossaire</span></span>.</p>
+         <p class="max-img-process">
             <img src="../images/chapitre10/ged4.png" class="contour-img" alt="Aperçu document" data-action="zoom" />
          </p>
          <p class="max-img-process">
             <img src="../images/chapitre10/ged5.png" class="contour-img" alt="Affichage de la signature" data-action="zoom" />
          </p>
-		 <p>Cliquez sur <span class="btn-blue">Vérifier la signature</span> pour contrôler l'authenticité du document sur le site ekylibre.com.</p>
+         <p>Cliquez sur <span class="btn-blue">Vérifier la signature</span> pour contrôler l'authenticité du document sur le site ekylibre.com.</p>
       </div>
-	  <br />
-	  <div class="floating-box process">
+      <br />
+      <div class="floating-box process">
          <img src="../images/commun/step4.svg" alt="4" width="52" />
       </div>
       <div class="process-txt">
          <span class="titre-advice">Vérifiez l'authenticité du document</span>
-		 <p>La signature est automatiquement copiée dans le lien web du bouton pour simplifier le processus de vérification et éviter tout risque potentiel d'erreur de saisie.</p>
-		 <p class="max-img-process">
+         <p>La signature est automatiquement copiée dans le lien web du bouton pour simplifier le processus de vérification et éviter tout risque potentiel d'erreur de saisie.</p>
+         <p class="max-img-process">
             <img src="../images/chapitre10/ged6.png" class="contour-img" alt="Vérification authenticité signature" data-action="zoom" />
          </p>
-		 <p>Une fois redirigé&#40;e&#41; vers le site ekylibre.com, cliquez sur le bouton "Parcourir…" pour sélectionner le fichier précédemment téléchargé depuis la GED.</p>
+         <p>Une fois redirigé&#40;e&#41; vers le site ekylibre.com, cliquez sur le bouton "Parcourir…" pour sélectionner le fichier précédemment téléchargé depuis la GED.</p>
          <p class="max-img-process">
             <img src="../images/chapitre10/ged7.png" class="contour-img" alt="Sélection du fichier" data-action="zoom" />
          </p>
-		 <p class="max-img-process">
+         <p class="max-img-process">
             <img src="../images/chapitre10/ged8.png" class="contour-img" alt="Sélection du fichier" data-action="zoom" />
          </p>
-		  <p>Cliquez enfin sur le bouton <span class="btn-ekylibre-com">Lancer la vérification</span> pour obtenir ou non la certification de l'authenticité du document.</p>
-		 <p class="max-img-process">
+         <p>Cliquez enfin sur le bouton <span class="btn-ekylibre-com">Lancer la vérification</span> pour obtenir ou non la certification de l'authenticité du document.</p>
+         <p class="max-img-process">
             <img src="../images/chapitre10/ged9.png" class="contour-img" alt="Document certifié authentique" data-action="zoom" />
          </p>
-		 <p class="max-img-process">
+         <p class="max-img-process">
             <img src="../images/chapitre10/ged10.png" class="contour-img" alt="Document modifié" data-action="zoom" />
          </p>
       </div>

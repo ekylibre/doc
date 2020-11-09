@@ -2243,8 +2243,45 @@
       </div>
       <h6>Guide de prise en main • Comptabilité • Rapprochement bancaire</h6>
       <a class="slice-process" id="rapprochement"></a>
-      <p align="center" class="texte aerateur procedure">4 – Procédure pour réaliser un rapprochement bancaire</p>
-      <p align="center" class="texte"><img src="../images/commun/option.svg" height="45" alt="Optionnel"></p>
+      <p align="center" class="texte aerateur-haut procedure">4 – Procédure pour réaliser un rapprochement bancaire</p>
+	  <div id="cont1" class="niveau">
+         <div id="gauge1" class="jauge"></div>
+      </div>
+      <script>
+         document.addEventListener("DOMContentLoaded", function(event) {
+          var gNode1 = document.createElement('div');
+          gNode1.setAttribute("class", "jauge");
+			 
+          var gauge1 = new JustGage({
+              id: "gauge1",
+              value: 3,
+              width: 150,
+              height: 110,
+              min: 0,
+              max: 5,
+              decimals: 0,
+         customSectors: [{
+          	color : "#00ff00",
+          	lo : 0,
+          	hi : 1
+         	},{
+          	color : "#ff9933",
+          	lo : 2,
+          	hi : 3
+         	},{
+          	color : "#ff0000",
+          	lo : 4,
+          	hi : 5
+         	}],
+              pointer: true,
+         startAnimationTime: 1,
+          	startAnimationType: "linear",
+          	refreshAnimationTime: 1,
+          	refreshAnimationType: "linear",
+         hideMinMax: true,
+          });
+      });
+      </script>
       <p class="texte">Le rapprochement bancaire est un contrôle, réalisé dans le but d'amener les comptes bancaires réalisés sur <strong>Eky</strong>agri au plus proche de la réalité des relevés de comptes, c'est-à-dire vérifier la concordance des deux comptes en affectant un code unique composé de lettres à 2 ou plusieurs écritures.</p>
       <div class="warn-fond aerateur-haut aerateur-bas">
          <div class="floating-box-warn">
@@ -2466,10 +2503,47 @@
       <h6>Guide de prise en main • Comptabilité • Immobilisations</h6>
       <a class="slice-process" id="immobilisations"></a>
       <h2 class="texte aerateur">h - Immobilisations</h2>
-      <p align="center" class="texte"><img src="../images/commun/option.svg" height="45" alt="Optionnel"></p>
       <p class="texte">La notion d'immobilisation intègre l'ensemble des biens durables détenus par une exploitation sur plus d'un exercice comptable et qui ne sont pas destinés à la revente. Les immobilisations corporelles sont composées de plusieurs catégories&nbsp;: les terrains, les constructions, l’agencement et les installations générales, l’outillage, le matériel, les véhicules, le mobilier et les équipements informatiques.</p>
-      <p align="center" class="texte aerateur procedure">1 – Procédure pour enregistrer une immobilisation
+      <p align="center" class="texte aerateur-haut procedure">1 – Procédure pour enregistrer une immobilisation
       </p>
+	  <div id="cont2" class="niveau">
+         <div id="gauge2" class="jauge"></div>
+      </div>
+      <script>
+         document.addEventListener("DOMContentLoaded", function(event) {
+          var gNode1 = document.createElement('div');
+          gNode1.setAttribute("class", "jauge");
+			 
+          var gauge1 = new JustGage({
+              id: "gauge2",
+              value: 3,
+              width: 150,
+              height: 110,
+              min: 0,
+              max: 5,
+              decimals: 0,
+         customSectors: [{
+          	color : "#00ff00",
+          	lo : 0,
+          	hi : 1
+         	},{
+          	color : "#ff9933",
+          	lo : 2,
+          	hi : 3
+         	},{
+          	color : "#ff0000",
+          	lo : 4,
+          	hi : 5
+         	}],
+              pointer: true,
+         startAnimationTime: 1,
+          	startAnimationType: "linear",
+          	refreshAnimationTime: 1,
+          	refreshAnimationType: "linear",
+         hideMinMax: true,
+          });
+      });
+      </script>
       <p class="texte">Dans l'exemple suivant, certaines notions font appel à des procédures expliquées dans le "<a class="avoid-clicks" href="../chapitre6">chapitre 6 - Achats</a>".</p>
       <div class="info-fond aerateur-haut aerateur-bas">
          <div class="floating-box-info">
