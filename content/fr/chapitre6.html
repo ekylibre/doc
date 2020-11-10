@@ -125,6 +125,7 @@
                            <li><a href="../chapitre5#immobilisations" target="_self">Immobilisations</a></li>
                            <li><a href="../chapitre5#echanges" target="_self">Échanges comptables</a></li>
                            <li><a href="../chapitre5#balance" target="_self">Balance</a></li>
+						   <li><a href="../chapitre5#ecritures" target="_self">Écritures</a></li>
                            <li><a href="../chapitre5#grand-livre" target="_self">Grand-livre</a></li>
                         </div>
                      </ul>
@@ -360,8 +361,7 @@
             </div>
          </div>
       </div>
-      <p class="texte aerateur-bas">Le symbole<img src="../images/commun/option-small.svg" class="align-icone icone-marge-gauche" height="30" alt="Optionnel">dans ce chapitre vous indique une procédure pour utiliser une fonctionnalité avancée dans l'application.</p>
-      <div class="idea-fond aerateur-haut aerateur-bas">
+      <div class="idea-fond aerateur">
          <div class="floating-box-idea">
             <img src="../images/commun/astuce.svg" width="100" alt="Astuce"/>
          </div>
@@ -1156,7 +1156,43 @@
          </div>
       </div>
       <p align="center" class="texte aerateur procedure">3 – Procédure pour réaliser un lot de décaissements</p>
-	  <p align="center" class="texte"><img src="../images/commun/option.svg" height="45" alt="Optionnel"></p>
+	  <div id="cont1" class="niveau">
+         <div id="gauge1" class="jauge"></div>
+      </div>
+      <script>
+         document.addEventListener("DOMContentLoaded", function(event) {
+          var gNode1 = document.createElement('div');
+          gNode1.setAttribute("class", "jauge");
+          var gauge1 = new JustGage({
+              id: "gauge1",
+              value: 1,
+              width: 150,
+              height: 110,
+              min: 0,
+              max: 5,
+              decimals: 0,
+         customSectors: [{
+          	color : "#00ff00",
+          	lo : 0,
+          	hi : 1
+         	},{
+          	color : "#ff9933",
+          	lo : 2,
+          	hi : 3
+         	},{
+          	color : "#ff0000",
+          	lo : 4,
+          	hi : 5
+         	}],
+              pointer: true,
+         startAnimationTime: 1,
+          	startAnimationType: "linear",
+          	refreshAnimationTime: 1,
+          	refreshAnimationType: "linear",
+         hideMinMax: true,
+          });
+      });
+      </script>
       <p class="texte">
          Le processus suivant vous guide pour réaliser un lot de décaissements.
       </p>

@@ -4295,8 +4295,7 @@ display: block;
 /* Jauges */
 .niveaux {
 	max-width: 600px;
-	height: 97px;
-	margin: 20px auto 0 auto;
+	margin: 20px auto 0;
 	text-align: center;
 }
 
@@ -4319,5 +4318,5 @@ display: block;
 	width: 150px;
 	height: 90px;
 	display: inline-block;
-	margin-top: -15px;
+	margin-top: -30px;
 }

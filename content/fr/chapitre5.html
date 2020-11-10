@@ -130,6 +130,7 @@
                            <li><a href="../chapitre5#immobilisations" target="_self">Immobilisations</a></li>
                            <li><a href="../chapitre5#echanges" target="_self">Échanges comptables</a></li>
                            <li><a href="../chapitre5#balance" target="_self">Balance</a></li>
+						   <li><a href="../chapitre5#ecritures" target="_self">Écritures</a></li>
                            <li><a href="../chapitre5#grand-livre" target="_self">Grand-livre</a></li>
                         </div>
                      </ul>
@@ -334,6 +335,7 @@
                            <option value="#exportfec">- Obtenir le fichier des écritures comptables</option>
                            <option value="#bilan">- Obtenir le bilan et le compte de résultat</option>
                            <option value="#balance">- Produire la balance</option>
+						   <option value="#ecritures">- Consulter les écritures</option>
                            <option value="#grand-livre">- Produire le Grand-livre</option>
                         </select>
                      </form>
@@ -395,6 +397,7 @@
                   <option value="#exportfec">- Obtenir le fichier des écritures comptables</option>
                   <option value="#bilan">- Obtenir le bilan et le compte de résultat</option>
                   <option value="#balance">- Produire la balance</option>
+				  <option value="#ecritures">- Consulter les écritures</option>
                   <option value="#grand-livre">- Produire le Grand-livre</option>
                </optgroup>
                <optgroup label="Immobilisations">
@@ -488,6 +491,11 @@
                   <div class="divTableCellPDF5">&nbsp;</div>
                   <div class="divTableCellPDF5">&nbsp;</div>
                </div>
+			    <div class="divTableRow">
+                  <div class="divTableCellPDF2">- Consulter les écritures</div>
+                  <div class="divTableCellPDF5">&nbsp;</div>
+                  <div class="divTableCellPDF5">&nbsp;</div>
+               </div>
                <div class="divTableRow">
                   <div class="divTableCellPDF2">- Produire le Grand-livre</div>
                   <div class="divTableCellPDF5">&nbsp;</div>
@@ -505,6 +513,14 @@
                </div>
                <div class="divTableCellGlossaire2" style="width: 100%">
                   elle vise l’enregistrement de façon chronologique de toutes les opérations effectuées par l’exploitant agricole
+               </div>
+            </div>
+			<div class="divTableRow">
+               <div class="divTableCellGlossaire1">
+                  CFONB
+               </div>
+               <div class="divTableCellGlossaire2">
+                  CFONB est un format de données financières défini par le Comité Français d'Organisation et de Normalisation Bancaires
                </div>
             </div>
             <div class="divTableRow">
@@ -549,8 +565,10 @@
             </div>
          </div>
       </div>
-      <p class="texte aerateur-bas">Le symbole<img src="../images/commun/option-small.svg" class="align-icone icone-marge-gauche" height="30" alt="Optionnel">dans ce chapitre vous indique une procédure pour utiliser une fonctionnalité avancée dans l'application.</p>
-      <p class="texte aerateur-bas">Les dispositions du plan comptable général et du plan comptable agricole sont applicables à toute personne physique ou morale soumise à l’obligation légale d’établir des comptes annuels, sous réserve de dispositions spécifiques.<br />Un&#40;e&#41; agriculteur·rice étant de plus en plus amené&#40;e&#41; à réaliser des opérations commerciales, l'application est capable de répondre à ses contraintes et obligations vis-à-vis de la tenue de la comptabilité.</p>
+      <h6>Guide de prise en main • Comptabilité • Introduction</h6>
+      <a class="slice-process" id="introduction"></a>
+      <h2 class="texte aerateur">a - Introduction à la comptabilité</h2>
+	  <p class="texte aerateur-bas">Les dispositions du plan comptable général et du plan comptable agricole sont applicables à toute personne physique ou morale soumise à l’obligation légale d’établir des comptes annuels, sous réserve de dispositions spécifiques.<br />Un&#40;e&#41; agriculteur·rice étant de plus en plus amené&#40;e&#41; à réaliser des opérations commerciales, l'application est capable de répondre à ses contraintes et obligations vis-à-vis de la tenue de la comptabilité.</p>
       <div class="affichage-large"></div>
       <div class="affichage-mobile">
          <p align="center">
@@ -561,13 +579,10 @@
       </div>
       <div class="scroll marge">
          <div class="tableau">
-            <p align="center" class="aerateur-haut aerateur-bas"><img src="../images/chapitre5/schema-comptabilite.png" alt="Schéma comptabilité" data-action="zoom" /></p>
+            <p align="center" class="aerateur-haut"><img src="../images/chapitre5/schema-comptabilite.png" alt="Schéma comptabilité" data-action="zoom" /></p>
          </div>
       </div>
       <p align="center" class="texte legende">Fonctionnement de la comptabilité dans <strong>Eky</strong>agri</p>
-      <h6>Guide de prise en main • Comptabilité • Introduction</h6>
-      <a class="slice-process" id="introduction"></a>
-      <h2 class="texte aerateur">a - Introduction à la comptabilité</h2>
       <p class="texte">Il y a lieu de distinguer trois phases dans le processus de validation d’une écriture comptable.</p>
       <p class="texte titre-advice">1. Avant la validation comptable d'une écriture &#40;saisie en mode dit brouillard&#41;</p>
       <p class="texte">L’utilisateur peut modifier tout élément de l'écriture comptable. En effet, tant que la validation n'est pas demandée par l'utilisateur, les écritures en mode brouillard présentent un caractère tangible de la comptabilité.<br />Les éditions faites à partir de ce mode de saisie constituent simplement des listes de contrôle appelées couramment brouillard de saisie.</p>
@@ -794,7 +809,7 @@
             <img src="../images/chapitre5/journal2019-2.png" class="contour-img" alt="Nouveau journal" data-action="zoom" />
          </p>
          <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
-         <p>Notez que si vous envisagez de réaliser des <a href="#rapprochement" class="avoid-clicks">rapprochements bancaires</a> à l'aide de fichiers <span class="tooltip">OFX<span class="tooltiptext tooltip-top">Voir glossaire</span></span>, il faudra créer un nouveau journal des opérations diverses et cocher la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="18" class="align-icone icone-marge-gauche icone-marge-droite">devant "Utilisé pour les écarts". Ce journal peut également servir pour les factures non parvenues.</p>
+         <p>Notez que si vous envisagez de réaliser des <a href="#rapprochement" class="avoid-clicks">rapprochements bancaires</a> à l'aide de fichiers <span class="tooltip">OFX<span class="tooltiptext tooltip-top">Voir glossaire</span></span> ou <span class="tooltip">CFONB<span class="tooltiptext tooltip-top">Voir glossaire</span></span>, il faudra créer un nouveau journal des opérations diverses et cocher la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="18" class="align-icone icone-marge-gauche icone-marge-droite">devant "Utilisé pour les écarts". Ce journal peut également servir pour les factures non parvenues.</p>
          <p class="max-img-process">
             <img src="../images/chapitre5/journal2019-3.png" class="contour-img" alt="Nouveau journal" data-action="zoom" />
          </p>
@@ -1968,8 +1983,44 @@
       </div>
       <h6>Guide de prise en main • Comptabilité • Compte courant d'associé</h6>
       <a class="slice-process" id="associe"></a>
-      <p align="center" class="texte aerateur procedure">2 – Procédure pour paramétrer un compte courant d'associé
-      </p>
+      <p align="center" class="texte aerateur procedure">2 – Procédure pour paramétrer un compte courant d'associé</p>
+	  <div id="cont3" class="niveau">
+         <div id="gauge3" class="jauge"></div>
+      </div>
+      <script>
+         document.addEventListener("DOMContentLoaded", function(event) {
+          var gNode1 = document.createElement('div');
+          gNode1.setAttribute("class", "jauge");
+          var gauge1 = new JustGage({
+              id: "gauge3",
+              value: 3,
+              width: 150,
+              height: 110,
+              min: 0,
+              max: 5,
+              decimals: 0,
+         customSectors: [{
+          	color : "#00ff00",
+          	lo : 0,
+          	hi : 1
+         	},{
+          	color : "#ff9933",
+          	lo : 2,
+          	hi : 3
+         	},{
+          	color : "#ff0000",
+          	lo : 4,
+          	hi : 5
+         	}],
+              pointer: true,
+         startAnimationTime: 1,
+          	startAnimationType: "linear",
+          	refreshAnimationTime: 1,
+          	refreshAnimationType: "linear",
+         hideMinMax: true,
+          });
+      });
+      </script>
       <p class="texte">À l’image d’un compte courant que n’importe qui peut contracter auprès de sa banque, le compte courant d’associé est un compte ouvert au nom de chaque associé dans les livres comptables de la société. Cela signifie que la condition préalable pour être titulaire d’un compte courant d’associé dans une société est d’en être associé, c’est-à-dire avoir souscrit, à la création ou ultérieurement, au capital de la société. Le compte courant d’associé n’est donc pas un compte bancaire au nom de l’associé, il s’agit simplement d’un ensemble d'écritures passées en comptabilité traduisant les opérations réalisées entre l’associé concerné et la société.</p>
       <p class="texte">
          Le processus suivant vous guide pour paramétrer un compte courant d'associé.
@@ -2243,7 +2294,7 @@
       </div>
       <h6>Guide de prise en main • Comptabilité • Rapprochement bancaire</h6>
       <a class="slice-process" id="rapprochement"></a>
-      <p align="center" class="texte aerateur-haut procedure">4 – Procédure pour réaliser un rapprochement bancaire</p>
+      <p align="center" class="texte aerateur procedure">4 – Procédure pour réaliser un rapprochement bancaire</p>
 	  <div id="cont1" class="niveau">
          <div id="gauge1" class="jauge"></div>
       </div>
@@ -2293,7 +2344,7 @@
          </div>
       </div>
       <p class="texte">
-         Le processus suivant vous guide pour réaliser un rapprochement bancaire avec l'import d'un fichier <span class="tooltip">OFX<span class="tooltiptext tooltip-top">Voir glossaire</span></span>.
+         Le processus suivant vous guide pour réaliser un rapprochement bancaire avec l'import d'un fichier <span class="tooltip">OFX<span class="tooltiptext tooltip-top">Voir glossaire</span></span> ou <span class="tooltip">CFONB<span class="tooltiptext tooltip-top">Voir glossaire</span></span>.
       </p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
@@ -2315,7 +2366,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Paramétrez votre compte bancaire</span>
-         <p>Cliquez sur le bouton "Nouveau", puis sélectionnez le "Type" de trésorerie et remplissez tous les champs obligatoires signalés par une astérisque de couleur rouge avec les informations requises pour le définir correctement. Renseignez avec attention le code IBAN car c'est cet identifiant qui établira la liaison automatique entre le compte bancaire dans l'application et les informations contenues dans le fichier OFX.</p>
+         <p>Cliquez sur le bouton "Nouveau", puis sélectionnez le "Type" de trésorerie et remplissez tous les champs obligatoires signalés par une astérisque de couleur rouge avec les informations requises pour le définir correctement. Renseignez avec attention le code IBAN car c'est cet identifiant qui établira la liaison automatique entre le compte bancaire dans l'application et les informations contenues dans le fichier OFX ou CFONB.</p>
          <p class="max-img-process">
             <img src="../images/chapitre5/rapprochement2.png" class="contour-img" alt="Paramétrage compte bancaire" data-action="zoom" />
          </p>
@@ -2326,7 +2377,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Paramétrez les options comptables</span>
-         <p>Dans l'optique de réaliser le rapprochement bancaire grâce à l'import d'un fichier OFX, 2 options sont à prendre en considération&nbsp;:</p>
+         <p>Dans l'optique de réaliser le rapprochement bancaire grâce à l'import d'un fichier OFX ou CFONB, 2 options sont à prendre en considération&nbsp;:</p>
          <p><strong><span class="avert">Avec un compte d'attente&nbsp;:</span></strong><br />Cochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="18" class="align-icone icone-marge-gauche icone-marge-droite">à droite de l'option "Suspendre jusqu'à réconciliation" pour utiliser un compte d'attente &#40;471XXXXX&#41;.</p>
          <p>Dans ce cas, tous les encaissements et les décaissements dans <strong>Eky</strong>agri passeront par un compte d’attente de type 471XXXX &#40;attention à bien créer autant de comptes d’attente que de comptes de trésorerie&#41;. L’import du relevé de compte provoquera la création d’une écriture comptable directement dans le compte de banque. <strong>C'est la méthode que vous devez privilégier</strong>.</p>
          <p class="max-img-process">
@@ -2352,28 +2403,28 @@
             <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
          </div>
          <div class="info-txt">
-            <span class="titre-advice">Téléchargement des relevés de compte au format OFX<br /></span>
-            <p class="texte-advice">Identifié&#40;e&#41; sur le site web de votre banque et une fois dans la page des téléchargements, choisissez le format de fichier OFX pour récupérer vos relevés de compte. Prenez soin de paramétrer les dates du 1<sup>er</sup> du mois à la fin du mois ou par trimestre entier afin de vous y retrouver.</p>
+            <span class="titre-advice">Téléchargement des relevés de compte au format OFX ou CFONB<br /></span>
+            <p class="texte-advice">Identifié&#40;e&#41; sur le site web de votre banque et une fois dans la page des téléchargements, choisissez le format de fichier OFX ou CFONB pour récupérer vos relevés de compte. Prenez soin de paramétrer les dates du 1<sup>er</sup> du mois à la fin du mois ou par trimestre entier afin de vous y retrouver.</p>
          </div>
       </div>
       <div class="floating-box process">
          <img src="../images/commun/step4.svg" alt="4" width="52" />
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Importez le fichier OFX</span>
-         <p>Affichez à nouveau la liste des trésoreries, puis cliquez sur le bouton "Importer"…</p>
+         <span class="titre-advice">Importez le fichier OFX ou CFONB</span>
+         <p>Affichez à nouveau la liste des trésoreries, puis cliquez sur le bouton "Importer" pour sélectionner le type de fichier dans la liste déroulante…</p>
          <p class="max-img-process">
             <img src="../images/chapitre5/rapprochement5.png" class="contour-img" alt="Création de l'import" data-action="zoom" />
          </p>
-         <p>… ou cliquez sur le nom d'un compte bancaire dans la liste des trésoreries, puis cliquez sur le bouton "Importer".</p>
+         <p>… ou cliquez sur le nom d'un compte bancaire dans la liste des trésoreries, puis cliquez sur le bouton "Importer" pour sélectionner le type de fichier dans la liste déroulante.</p>
          <p class="max-img-process">
             <img src="../images/chapitre5/rapprochement6.png" class="contour-img" alt="Création de l'import" data-action="zoom" />
          </p>
-         <p>La fenêtre de sélection vous permet maintenant d'importer le fichier OFX.</p>
+         <p>La fenêtre de sélection vous permet maintenant d'importer le fichier OFX ou CFONB.</p>
          <p class="max-img-process">
-            <img src="../images/chapitre5/rapprochement7.png" class="contour-img" alt="Sélection du fichier OFX" data-action="zoom" />
+            <img src="../images/chapitre5/rapprochement7.png" class="contour-img" alt="Sélection du fichier OFX/CFONB" data-action="zoom" />
          </p>
-         <p>Cliquez sur le bouton "Parcourir" pour sélectionner le fichier OFX, puis cliquez sur le bouton "Enregistrer". Le fichier OFX importé est automatiquement associé au bon compte bancaire même si vous en avez créé plusieurs.</p>
+         <p>Cliquez sur le bouton "Parcourir" pour sélectionner le fichier OFX ou CFONB, puis cliquez sur le bouton "Enregistrer". Le fichier OFX ou CFONB importé est automatiquement associé au bon compte bancaire même si vous en avez créé plusieurs.</p>
          <p class="max-img-process">
             <img src="../images/chapitre5/rapprochement8.png" class="contour-img" alt="Import des données" data-action="zoom" />
          </p>
@@ -2384,7 +2435,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Vérifiez l'importation des données</span>
-         <p>Une fois le ficher OFX importé, contrôlez les éléments du relevé de compte afin de valider la cohérence des données affichées avec vos activités. En cas d'erreur, cliquez sur le bouton "Supprimer".</p>
+         <p>Une fois le ficher OFX ou CFONB importé, contrôlez les éléments du relevé de compte afin de valider la cohérence des données affichées avec vos activités. En cas d'erreur, cliquez sur le bouton "Supprimer".</p>
          <p class="max-img-process">
             <img src="../images/chapitre5/rapprochement9.png" class="contour-img" alt="Paramétrage compte bancaire" data-action="zoom" />
          </p>
@@ -2504,7 +2555,7 @@
       <a class="slice-process" id="immobilisations"></a>
       <h2 class="texte aerateur">h - Immobilisations</h2>
       <p class="texte">La notion d'immobilisation intègre l'ensemble des biens durables détenus par une exploitation sur plus d'un exercice comptable et qui ne sont pas destinés à la revente. Les immobilisations corporelles sont composées de plusieurs catégories&nbsp;: les terrains, les constructions, l’agencement et les installations générales, l’outillage, le matériel, les véhicules, le mobilier et les équipements informatiques.</p>
-      <p align="center" class="texte aerateur-haut procedure">1 – Procédure pour enregistrer une immobilisation
+      <p align="center" class="texte aerateur procedure">1 – Procédure pour enregistrer une immobilisation
       </p>
 	  <div id="cont2" class="niveau">
          <div id="gauge2" class="jauge"></div>
@@ -3221,9 +3272,64 @@
             <img src="../images/chapitre5/balance5.png" class="contour-img" alt="Impression de la balance" data-action="zoom" />
          </p>
       </div>
+	  <h6>Guide de prise en main • Comptabilité • Écritures</h6>
+      <a class="slice-process" id="ecritures"></a>
+      <h2 class="texte aerateur">k - Écritures</h2>
+      <p class="texte">Toutes les écritures comptables enregistrées dans l'application peuvent être, grâce à l'en-tête de recherche, affichées globalement ou filtrées selon des critères personnalisés.</p>
+      <p align="center" class="texte aerateur procedure">1 – Procédure pour afficher les écritures
+      </p>
+      <p class="texte">
+         Le processus suivant vous guide pour filtrer et afficher tout ou partie des écritures enregistrées en comptabilité.
+      </p>
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Accédez aux écritures</span>
+         <p>Cliquez sur le lien "Comptabilité" dans le "Menu principal" ou sur le bouton "Comptabilité" de la page d'accueil&nbsp;:</p>
+         <p align="center"><img src="../images/chapitre5/comptabilite.svg" alt="Comptabilité" width="60"></p>
+         <p>Dans la barre latérale du module, cliquez sur "Écritures" dans la section "Synthèses" symbolisée par l'icône d'un tableau<img src="../images/chapitre5/table.svg" alt="Tableau" height="20" class="align-icone icone-marge-gauche">.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre5/ecritures1.png" class="contour-img" alt="Liste des écritures" data-action="zoom" />
+         </p>
+		  <p>Toutes les écritures sont listées ici. Parcourez, le cas échéant, la liste des écritures avec les flèches<img src="../images/commun/fleche-g.svg" alt="Flèche gauche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">et<img src="../images/commun/fleche-d.svg" alt="Flèche droite" height="20" class="align-icone icone-marge-gauche icone-marge-droite">en haut à droite de l'écran.</p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Déployez l'en-tête de recherche</span>
+         <p>Affichez les critères de recherche avancés en dépliant les options grâce au bouton<img src="../images/commun/plus-square-o.svg" alt="moins" height="15" class="icone-marge-gauche icone-marge-droite">en haut à droite de la fenêtre.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre5/ecritures2.png" class="contour-img" alt="Liste des écritures" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Filtrez les écritures</span>
+         <p>Personnalisez votre recherche en renseignant un ou plusieurs champs et/ou en cochant ou non certaines cases <img src="../images/commun/check-square.svg" alt="Case à cocher" height="18" class="align-icone icone-marge-gauche icone-marge-droite"> &#40;états des écritures, journaux, état du lettrage, etc.&#41;, puis cliquez sur le bouton "Rechercher".</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre5/ecritures3.png" class="contour-img" alt="Liste des écritures" data-action="zoom" />
+         </p>
+      </div>
+	  <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step4.svg" alt="4" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez les écritures</span>
+		 <p>La liste des écritures est automatiquement mise à jour selon les critères définis à l'étape précédente. Chaque numéro d'écriture est un lien permettant d'en afficher le détail pour consultation ou pour procéder à une modification lorsque son statut l'autorise.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre5/ecritures4.png" class="contour-img" alt="Liste des écritures recherchée" data-action="zoom" />
+         </p>
+      </div>
       <h6>Guide de prise en main • Comptabilité • Grand-Livre</h6>
       <a class="slice-process" id="grand-livre"></a>
-      <h2 class="texte aerateur">k - Grand-livre</h2>
+      <h2 class="texte aerateur">l - Grand-livre</h2>
       <p class="texte">Un Grand-livre est la transcription sur un document unique de la totalité des mouvements de comptabilité d’une exploitation. Ces mouvements sont classés par compte, dans l'ordre de numéro prévu par le plan comptable.</p>
       <p class="texte">Les Grands-livres auxiliaires sont formés par l'ensemble des comptes individuels de même type &#40;clients, fournisseurs, etc.&#41;. Ils permettent ainsi d'établir un relevé nominatif de la position de chaque compte avec le détail des mouvements.</p>
       <p class="texte">Les comptes auxiliaires font partie intégrante du Grand-livre général. Néanmoins, il n'est retranscrit dans le Grand-livre que le solde total des comptes avec le numéro correspondant. Par exemple 401 pour les fournisseurs et 411 pour les clients.</p>
@@ -3428,6 +3534,7 @@
                            <option value="#exportfec">- Obtenir le fichier des écritures comptables</option>
                            <option value="#bilan">- Obtenir le bilan et le compte de résultat</option>
                            <option value="#balance">- Produire la balance</option>
+						   <option value="#ecritures">- Consulter les écritures</option>
                            <option value="#grand-livre">- Produire le Grand-livre</option>
                         </select>
                      </form>

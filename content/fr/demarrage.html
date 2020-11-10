@@ -16,7 +16,7 @@
       <h1 align="center" class="texte majuscule aerateur">Guide de prise en main</h1>
       <p align="center"><img src="../images/accueil/icone-doc.png" alt="Documentation Ekylibre" height="100px"></p>
       <p align="center"><img src="../images/accueil/logos-eky.png" alt="Logos Ekylibre" height="80px"></p>
-      <p class="texte">Ce guide a pour but d'aider le nouvel utilisateur à configurer rapidement et correctement les applications développées par Ekylibre &#40;sauf <a href="https://doc.clic.farm/" target="_blank" class="avoid-clicks">Clic&#38;Farm</a>&#41; pour son exploitation agricole et de commencer à les utiliser. Cette documentation a été mise à jour le 9 novembre 2020. La version au format PDF est datée du 9 novembre 2020.</p>
+      <p class="texte">Ce guide a pour but d'aider le nouvel utilisateur à configurer rapidement et correctement les applications développées par Ekylibre &#40;sauf <a href="https://doc.clic.farm/" target="_blank" class="avoid-clicks">Clic&#38;Farm</a>&#41; pour son exploitation agricole et de commencer à les utiliser. Cette documentation a été mise à jour le 10 novembre 2020. La version au format PDF est datée du 9 novembre 2020.</p>
       <div class="info-fond aerateur-haut aerateur-bas">
          <div class="floating-box-info">
             <img src="../images/commun/info.svg" width="100" alt="Info"/>
@@ -196,6 +196,7 @@
                            <li><a href="../chapitre5#immobilisations" target="_self">Immobilisations</a></li>
                            <li><a href="../chapitre5#echanges" target="_self">Échanges comptables</a></li>
                            <li><a href="../chapitre5#balance" target="_self">Balance</a></li>
+						   <li><a href="../chapitre5#ecritures" target="_self">Écritures</a></li>
                            <li><a href="../chapitre5#grand-livre" target="_self">Grand-livre</a></li>
                         </div>
                      </ul>
@@ -353,8 +354,8 @@
          </div>
       </div>
       <h2 class="texte aerateur">Échelle de difficulté</h2>
-      <p class="texte">Certaines procédures étant plus ou moins difficiles à mettre en œuvre &#40;notamment pour les imports et les extractions de données&#41;, une jauge vous informe, le cas échéant, du niveau de complexité que vous pouvez rencontrer.</p>
-      <div id="cont" class="niveaux">
+      <p class="texte">Certaines procédures étant plus ou moins difficiles et parfois chronophages à mettre en œuvre &#40;notamment pour les imports et les extractions de données&#41;, une jauge vous informe, le cas échéant, du niveau de complexité que vous pouvez rencontrer ou du temps nécessaire à la préparation des fichiers.</p>
+      <div id="cont" class="niveaux marge">
          <div id="gauge1" class="gauge"></div>
          <div id="gauge2" class="gauge"></div>
          <div id="gauge3" class="gauge"></div>
@@ -373,6 +374,7 @@
           var gauge1 = new JustGage({
               id: "gauge1",
               title: "Facile",
+			  titleFontFamily: "Lato",
               value: 1,
               width: 150,
               height: 110,
@@ -403,6 +405,7 @@
           var gauge2 = new JustGage({
               id: "gauge2",
               title: "Intermédiaire",
+			  titleFontFamily: "Lato",
               value: 3,
               width: 150,
               height: 110,
@@ -433,6 +436,7 @@
           var gauge3 = new JustGage({
               id: "gauge3",
               title: "Difficile",
+			  titleFontFamily: "Lato",
               value: 4,
               width: 150,
               height: 110,
