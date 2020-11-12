@@ -339,7 +339,36 @@
       <h6>Guide de prise en main • Ekyviti • Préparation des fichiers CSV</h6>
       <h2 class="texte aerateur">a - Préparation et import des données cadastrales du CVI</h2>
       <p align="center" class="texte aerateur procedure">1 – Préparation des données cadastrales du CVI</p>
-      <div class="info-fond aerateur-haut aerateur-bas">
+	  <div id="cont1" class="niveau">
+         <div id="gauge1" class="jauge"></div>
+      </div>
+	  <script>
+         document.addEventListener("DOMContentLoaded", function(event) {
+          var gNode1 = document.createElement('div');
+          gNode1.setAttribute("class", "jauge");
+          var gauge1 = new JustGage({
+              id: "gauge1",
+              value: 3,
+              width: 150,
+              height: 110,
+              min: 0,
+              max: 5,
+              decimals: 0,
+              customSectors: [{
+          	  color : "#ff9933",
+			  lo : 2,
+          	  hi : 3
+         	  }],
+              pointer: true,
+              startAnimationTime: 1,
+          	  startAnimationType: "linear",
+          	  refreshAnimationTime: 1,
+          	  refreshAnimationType: "linear",
+              hideMinMax: true,
+          });
+      });
+      </script>
+      <div class="info-fond aerateur-bas">
          <div class="floating-box-info">
             <img src="../images/commun/info.svg" width="100" alt="Info"/>
          </div>
@@ -520,6 +549,35 @@
       <a class="slice-process" id="conversion"></a>
       <h2 class="texte aerateur">b - Conversion du parcellaire cadastral</h2>
       <p align="center" class="texte aerateur procedure">1 - Validation du casier viticole informatisé</p>
+	  <div id="cont2" class="niveau">
+         <div id="gauge2" class="jauge"></div>
+      </div>
+      <script>
+         document.addEventListener("DOMContentLoaded", function(event) {
+          var gNode1 = document.createElement('div');
+          gNode1.setAttribute("class", "jauge");
+          var gauge1 = new JustGage({
+              id: "gauge2",
+              value: 2,
+              width: 150,
+              height: 110,
+              min: 0,
+              max: 5,
+              decimals: 0,
+              customSectors: [{
+			  color : "#ffff00",
+          	  lo : 2,
+			  hi : 3
+         	  }],
+              pointer: true,
+              startAnimationTime: 1,
+          	  startAnimationType: "linear",
+          	  refreshAnimationTime: 1,
+          	  refreshAnimationType: "linear",
+              hideMinMax: true,
+          });
+      });
+      </script>
       <p class="texte">Maintenant que le fichier CSV a été importé, il est nécessaire de vérifier les données du casier viticole informatisé afin de les valider et de les corriger le cas échéant &#40;mais ce n'est pas systématique&#41;.<br /><strong>Cette étape est essentielle avant de débuter la conversion du parcellaire cadastral en parcellaire cultural.</strong></p>
       <div class="info-fond aerateur-haut aerateur-bas">
          <div class="floating-box-info">
@@ -610,6 +668,35 @@
       <h6>Guide de prise en main • Ekyviti • Conversion du CVI en parcellaire</h6>
       <a class="slice-process" id="start"></a>
       <p align="center" class="texte aerateur procedure">2 - Conversion du CVI en parcellaire Ekyviti</p>
+	  <div id="cont3" class="niveau">
+         <div id="gauge3" class="jauge"></div>
+      </div>
+      <script>
+         document.addEventListener("DOMContentLoaded", function(event) {
+          var gNode1 = document.createElement('div');
+          gNode1.setAttribute("class", "jauge");
+          var gauge1 = new JustGage({
+              id: "gauge3",
+              value: 2,
+              width: 150,
+              height: 110,
+              min: 0,
+              max: 5,
+              decimals: 0,
+              customSectors: [{
+			  color : "#ffff00",
+          	  lo : 2,
+			  hi : 3
+         	  }],
+              pointer: true,
+              startAnimationTime: 1,
+          	  startAnimationType: "linear",
+          	  refreshAnimationTime: 1,
+          	  refreshAnimationType: "linear",
+              hideMinMax: true,
+          });
+      });
+      </script>
       <p class="texte">Cette étape va maintenant vous permettre de préparer les parcelles cadastrales du CVI validées à l'étape précédente en vue de les adapter au système de gestion parcellaire propre à <strong>Eky</strong>viti.</p>
       <p class="texte aerateur-haut">Le processus suivant vous guide pour démarrer la conversion des données du CVI en parcellaire <strong>Eky</strong>viti.</p>
       <div class="floating-box process">
@@ -909,6 +996,35 @@
       <h6>Guide de prise en main • Ekyviti • Modification des parcelles</h6>
       <a class="slice-process" id="modif"></a>
       <p align="center" class="texte aerateur procedure">1 - Modification des parcelles</p>
+	  <div id="cont4" class="niveau">
+         <div id="gauge4" class="jauge"></div>
+      </div>
+      <script>
+         document.addEventListener("DOMContentLoaded", function(event) {
+          var gNode1 = document.createElement('div');
+          gNode1.setAttribute("class", "jauge");
+          var gauge1 = new JustGage({
+              id: "gauge4",
+              value: 3,
+              width: 150,
+              height: 110,
+              min: 0,
+              max: 5,
+              decimals: 0,
+              customSectors: [{
+			  color : "#ff6600",
+          	  lo : 2,
+			  hi : 3
+         	  }],
+              pointer: true,
+              startAnimationTime: 1,
+          	  startAnimationType: "linear",
+          	  refreshAnimationTime: 1,
+          	  refreshAnimationType: "linear",
+              hideMinMax: true,
+          });
+      });
+      </script>
       <p class="texte">Le processus suivant vous guide pour regrouper deux parcelles afin de vous permettre ensuite de définir 2 parcelles supportant 2 cépages différents.</p>
       <div class="tabs-step step1 marge aerateur-step">
          <div class="tab-step">
@@ -1044,6 +1160,35 @@
       <h6>Guide de prise en main • Ekyviti • Conversion du parcellaire cultural</h6>
       <a class="slice-process" id="terminer"></a>
       <p align="center" class="texte aerateur procedure">2 - Finaliser la conversion du parcellaire cultural</p>
+	  <div id="cont5" class="niveau">
+         <div id="gauge5" class="jauge"></div>
+      </div>
+      <script>
+         document.addEventListener("DOMContentLoaded", function(event) {
+          var gNode1 = document.createElement('div');
+          gNode1.setAttribute("class", "jauge");
+		  var gauge1 = new JustGage({
+              id: "gauge5",
+              value: 1,
+              width: 150,
+              height: 110,
+              min: 0,
+              max: 5,
+              decimals: 0,
+              customSectors: [{
+          	  color : "#00ff00",
+          	  lo : 0,
+          	  hi : 1
+         	  }],
+              pointer: true,
+              startAnimationTime: 1,
+          	  startAnimationType: "linear",
+          	  refreshAnimationTime: 1,
+          	  refreshAnimationType: "linear",
+              hideMinMax: true,
+          });
+      });
+      </script>
       <p class="texte">Le processus suivant vous guide pour reprendre et terminer la préparation des parcelles pour convertir une ou plusieurs zone&#40;s&#41; cultivable&#40;s&#41;.</p>
       <div class="tabs-step step1 marge aerateur-step">
          <div class="tab-step">
@@ -1278,7 +1423,7 @@
             <ul class="breadcrumb">
                <li>
                   <a href="../ekyviti">
-                  <i class="top-marker"></i><i class="fas fa-lg fa-wine-bottle"></i>
+                  <i class="top-marker"></i><img class="svg" src="../images/commun/grape.svg" width="18" alt="Ekyviti" style="margin-top: 4px">
                   <span class="text">&nbsp;Ekyviti</span>
                   </a>
                </li>

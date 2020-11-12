@@ -1071,6 +1071,35 @@
       <h2 class="texte aerateur">h - Connexions partenaires</h2>
       <p class="texte">L'application vous permet de définir des connexions partenaires afin d'afficher, dans un indicateur, des informations en provenance d'un autre fournisseur de services en ligne.</p>
       <p align="center" class="texte aerateur procedure">1 – Connexion avec OpenWeatherMap</p>
+	  <div id="cont1" class="niveau">
+         <div id="gauge1" class="jauge"></div>
+      </div>
+      <script>
+         document.addEventListener("DOMContentLoaded", function(event) {
+          var gNode1 = document.createElement('div');
+          gNode1.setAttribute("class", "jauge");
+          var gauge1 = new JustGage({
+              id: "gauge1",
+              value: 2,
+              width: 150,
+              height: 110,
+              min: 0,
+              max: 5,
+              decimals: 0,
+              customSectors: [{
+			  color : "#ffff00",
+          	  lo : 2,
+			  hi : 3
+         	  }],
+              pointer: true,
+              startAnimationTime: 1,
+          	  startAnimationType: "linear",
+          	  refreshAnimationTime: 1,
+          	  refreshAnimationType: "linear",
+              hideMinMax: true,
+          });
+      });
+      </script>
       <p class="texte">Le processus suivant vous guide pour intégrer les prévisions météorologiques du service OpenWeatherMap. Cette connexion implique la création d'un compte utilisateur sur leur site web &#40;gratuit&#41; afin d'obtenir une clef API qui sera ensuite utilisée par l'indicateur "Météo" de votre ferme <strong>Eky</strong>agri.</p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
@@ -2546,7 +2575,7 @@
             <ul class="breadcrumb">
                <li>
                   <a href="../ekyviti">
-                  <i class="fas fa-lg fa-wine-bottle"></i>
+                  <img class="svg" src="../images/commun/grape.svg" width="18" alt="Ekyviti" style="margin-top: 4px">
                   <span class="text">&nbsp;Ekyviti</span>
                   </a>
                </li>

@@ -16,7 +16,7 @@
       <h1 align="center" class="texte majuscule aerateur">Guide de prise en main</h1>
       <p align="center"><img src="../images/accueil/icone-doc.png" alt="Documentation Ekylibre" height="100px"></p>
       <p align="center"><img src="../images/accueil/logos-eky.png" alt="Logos Ekylibre" height="80px"></p>
-      <p class="texte">Ce guide a pour but d'aider le nouvel utilisateur à configurer rapidement et correctement les applications développées par Ekylibre &#40;sauf <a href="https://doc.clic.farm/" target="_blank" class="avoid-clicks">Clic&#38;Farm</a>&#41; pour son exploitation agricole et de commencer à les utiliser. Cette documentation a été mise à jour le 10 novembre 2020. La version au format PDF est datée du 9 novembre 2020.</p>
+      <p class="texte">Ce guide a pour but d'aider le nouvel utilisateur à configurer rapidement et correctement les applications développées par Ekylibre &#40;sauf <a href="https://doc.clic.farm/" target="_blank" class="avoid-clicks">Clic&#38;Farm</a>&#41; pour son exploitation agricole et de commencer à les utiliser. Cette documentation a été mise à jour le 12 novembre 2020. La version au format PDF est datée du 9 novembre 2020.</p>
       <div class="info-fond aerateur-haut aerateur-bas">
          <div class="floating-box-info">
             <img src="../images/commun/info.svg" width="100" alt="Info"/>
@@ -360,18 +360,18 @@
          <div id="gauge1" class="gauge"></div>
          <div id="gauge2" class="gauge"></div>
          <div id="gauge3" class="gauge"></div>
+		 <div id="gauge4" class="gauge"></div>
       </div>
       <script>
          document.addEventListener("DOMContentLoaded", function(event) {
           var gNode1 = document.createElement('div');
           gNode1.setAttribute("class", "gauge");
-         
           var gNode2 = document.createElement('div');
           gNode2.setAttribute("class", "gauge");
-         
          var gNode3 = document.createElement('div');
           gNode3.setAttribute("class", "gauge");
-         
+		 var gNode4 = document.createElement('div');
+          gNode4.setAttribute("class", "gauge");
           var gauge1 = new JustGage({
               id: "gauge1",
               title: "Facile",
@@ -382,30 +382,45 @@
               min: 0,
               max: 5,
               decimals: 0,
-         customSectors: [{
-          	color : "#00ff00",
-          	lo : 0,
-          	hi : 1
-         	},{
-          	color : "#ff9933",
-          	lo : 2,
-          	hi : 3
-         	},{
-          	color : "#ff0000",
-          	lo : 4,
-          	hi : 5
-         	}],
-         pointer: true,
-         startAnimationTime: 1,
-          	startAnimationType: "linear",
-          	refreshAnimationTime: 1,
-          	refreshAnimationType: "linear",
-         hideMinMax: true,
+              customSectors: [{
+          	  color : "#00ff00",
+          	  lo : 0,
+          	  hi : 1
+         	  }],
+             pointer: true,
+             startAnimationTime: 1,
+          	 startAnimationType: "linear",
+          	 refreshAnimationTime: 1,
+          	 refreshAnimationType: "linear",
+             hideMinMax: true,
           });
          
           var gauge2 = new JustGage({
               id: "gauge2",
               title: "Intermédiaire",
+			  titleFontFamily: "Lato",
+              value: 2,
+              width: 150,
+              height: 110,
+              min: 0,
+              max: 5,
+              decimals: 0,
+              customSectors: [{
+			  color : "#ffff00",
+          	  lo : 2,
+			  hi : 3
+         	  }],
+              pointer: true,
+              startAnimationTime: 1,
+          	  startAnimationType: "linear",
+          	  refreshAnimationTime: 1,
+          	  refreshAnimationType: "linear",
+              hideMinMax: true,
+          });
+         
+          var gauge3 = new JustGage({
+              id: "gauge3",
+              title: "Difficile",
 			  titleFontFamily: "Lato",
               value: 3,
               width: 150,
@@ -413,30 +428,22 @@
               min: 0,
               max: 5,
               decimals: 0,
-         customSectors: [{
-          	color : "#00ff00",
-          	lo : 0,
-          	hi : 1
-         	},{
-          	color : "#ff9933",
-          	lo : 2,
-          	hi : 3
-         	},{
-          	color : "#ff0000",
-          	lo : 4,
-          	hi : 5
-         	}],
+              customSectors: [{
+          	  color : "#ff9933",
+			  lo : 2,
+          	  hi : 3
+         	  }],
               pointer: true,
-         startAnimationTime: 1,
-          	startAnimationType: "linear",
-          	refreshAnimationTime: 1,
-          	refreshAnimationType: "linear",
-         hideMinMax: true,
-          });
-         
-          var gauge3 = new JustGage({
-              id: "gauge3",
-              title: "Difficile",
+              startAnimationTime: 1,
+          	  startAnimationType: "linear",
+          	  refreshAnimationTime: 1,
+          	  refreshAnimationType: "linear",
+              hideMinMax: true,
+         });
+			 
+		 var gauge4 = new JustGage({
+              id: "gauge4",
+              title: "Complexe",
 			  titleFontFamily: "Lato",
               value: 4,
               width: 150,
@@ -444,27 +451,19 @@
               min: 0,
               max: 5,
               decimals: 0,
-         customSectors: [{
-          	color : "#00ff00",
-          	lo : 0,
-          	hi : 1
-         	},{
-          	color : "#ff9933",
-          	lo : 2,
-          	hi : 3
-         	},{
-          	color : "#ff0000",
-          	lo : 4,
-          	hi : 5
-         	}],
+              customSectors: [{
+          	  color : "#ff0000",
+          	  lo : 4,
+          	  hi : 5
+         	  }],
               pointer: true,
-         startAnimationTime: 1,
-          	startAnimationType: "linear",
-          	refreshAnimationTime: 1,
-          	refreshAnimationType: "linear",
-         hideMinMax: true,
+              startAnimationTime: 1,
+          	  startAnimationType: "linear",
+          	  refreshAnimationTime: 1,
+          	  refreshAnimationType: "linear",
+              hideMinMax: true,
           });
-         });
+      });
       </script>
       <h2 class="texte aerateur">Réussir ses premiers pas dans Ekyagri</h2>
       <div class="affichage-mobile">
@@ -583,7 +582,7 @@
       <ul class="breadcrumb">
          <li>
             <a href="../ekyviti">
-            <i class="fas fa-lg fa-wine-bottle"></i>
+            <img class="svg" src="../images/commun/grape.svg" width="18" alt="Ekyviti" style="margin-top: 4px">
             <span class="text">&nbsp;Ekyviti</span>
             </a>
          </li>

@@ -3194,7 +3194,7 @@ ul.breadcrumb li a {
 	transition: all 0.2s;
 	text-decoration: none;
 	height: 34px;
-	color: #ddd;
+	color: #fff;
 	background-color: #444;
 	text-align: center;
 	min-width: 34px;
@@ -3216,10 +3216,10 @@ ul.breadcrumb li a .text {
 
 ul.breadcrumb li a:hover {
 	width: auto;
-	background-color: #1195f5;
-	padding-right: 20px;
-	padding-left: 50px;
-	color: #fff;
+	background-color: #666;
+	padding-right: 10px;
+	padding-left: 40px;
+	/*color: #fff;*/
 }
 
 ul.breadcrumb li a:hover .text {
@@ -3766,12 +3766,12 @@ input {
 }
 .tabs {
   border-radius: 8px;
-  border: 1px solid #773d61;
+  border: 1px solid #781628;
   overflow: hidden;
 }
 .tab {
   width: 100%;
-  color: #773d61;
+  color: #781628;
   overflow: hidden;
 }
 .tab-label {
@@ -3783,7 +3783,7 @@ input {
   background: #f1dce9;
   font-weight: bold;
   font-size: 15px;
-  background-image: url("../fr/images/ekyviti/wine-bottle-solid.svg");
+  background-image: url("../fr/images/ekyviti/grape.svg");
   background-repeat: no-repeat;
   background-position: top 8px left 8px;
   background-size: 25px;
@@ -3791,7 +3791,7 @@ input {
 }
 .tab-label:hover {
   background: #e5bed7;
-  background-image: url("../fr/images/ekyviti/wine-bottle-solid.svg");
+  background-image: url("../fr/images/ekyviti/grape.svg");
   background-repeat: no-repeat;
   background-position: top 8px left 8px;
   background-size: 25px;
@@ -3832,7 +3832,7 @@ input {
 }
 input:checked + .tab-label {
   background: #e5bed7;
-  background-image: url("../fr/images/ekyviti/wine-bottle-solid.svg");
+  background-image: url("../fr/images/ekyviti/grape.svg");
   background-repeat: no-repeat;
   background-position: top 8px left 8px;
   background-size: 25px;
@@ -4294,7 +4294,7 @@ display: block;
 }
 /* Jauges */
 .niveaux {
-	max-width: 600px;
+	max-width: 670px;
 	margin: 20px auto 0;
 	text-align: center;
 }
@@ -4318,7 +4318,7 @@ display: block;
 	width: 150px;
 	height: 90px;
 	display: inline-block;
-	margin-top: -20px;
+	margin-top: -18px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -4326,6 +4326,6 @@ display: block;
 		width: 150px;
 		height: 90px;
 		display: inline-block;
-		margin-top: -30px;
+		margin-top: -26px;
 	}
 }
