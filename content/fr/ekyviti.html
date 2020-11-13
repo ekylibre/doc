@@ -19,24 +19,10 @@
       <div class="image-carre"><img class="chapitre loading" src="../images/ekyviti/ekyviti-carre.png" alt="Ekyviti" style="width:auto;" /></div>
       <h1 align="center" class="majuscule aerateur">Ekyviti</h1>
       <div class="sommaire">
+         <h1 align="center" class="texte aerateur-haut">Sommaire</h1>
          <div class="gris">
             <div class="contenu">
                <ul id="toggle">
-                  <li>
-                     <div>
-                        <h3>
-                           <div class="rond-ekyagri">1</div>
-                           Prérequis
-                        </h3>
-                        <span class="the-btn"><i class="far fa-angle-up"></i></span>
-                        <div class="clear"></div>
-                     </div>
-                     <ul style="display: none;">
-                        <div class="bloc">
-                           <li><a href="../chapitre1#prerequis" target="_self">Ce dont il faut disposer pour démarrer</a></li>
-                        </div>
-                     </ul>
-                  </li>
                   <li>
                      <div class="clear"></div>
                      <div>
@@ -143,7 +129,7 @@
                            <li><a href="../chapitre5#immobilisations" target="_self">Immobilisations</a></li>
                            <li><a href="../chapitre5#echanges" target="_self">Échanges comptables</a></li>
                            <li><a href="../chapitre5#balance" target="_self">Balance</a></li>
-						   <li><a href="../chapitre5#ecritures" target="_self">Écritures</a></li>
+                           <li><a href="../chapitre5#ecritures" target="_self">Écritures</a></li>
                            <li><a href="../chapitre5#grand-livre" target="_self">Grand-livre</a></li>
                         </div>
                      </ul>
@@ -290,6 +276,7 @@
             </p>
          </div>
       </div>
+	  <div class="saut-page"></div>
       <h2 class="texte aerateur">Glossaire du chapitre</h2>
       <div class="divTableGlossaire marge aerateur-bas">
          <div class="divTableBody">
@@ -339,10 +326,10 @@
       <h6>Guide de prise en main • Ekyviti • Préparation des fichiers CSV</h6>
       <h2 class="texte aerateur">a - Préparation et import des données cadastrales du CVI</h2>
       <p align="center" class="texte aerateur procedure">1 – Préparation des données cadastrales du CVI</p>
-	  <div id="cont1" class="niveau">
+      <div id="cont1" class="niveau">
          <div id="gauge1" class="jauge"></div>
       </div>
-	  <script>
+      <script>
          document.addEventListener("DOMContentLoaded", function(event) {
           var gNode1 = document.createElement('div');
           gNode1.setAttribute("class", "jauge");
@@ -356,7 +343,7 @@
               decimals: 0,
               customSectors: [{
           	  color : "#ff9933",
-			  lo : 2,
+         lo : 2,
           	  hi : 3
          	  }],
               pointer: true,
@@ -366,7 +353,7 @@
           	  refreshAnimationType: "linear",
               hideMinMax: true,
           });
-      });
+         });
       </script>
       <div class="info-fond aerateur-bas">
          <div class="floating-box-info">
@@ -549,7 +536,7 @@
       <a class="slice-process" id="conversion"></a>
       <h2 class="texte aerateur">b - Conversion du parcellaire cadastral</h2>
       <p align="center" class="texte aerateur procedure">1 - Validation du casier viticole informatisé</p>
-	  <div id="cont2" class="niveau">
+      <div id="cont2" class="niveau">
          <div id="gauge2" class="jauge"></div>
       </div>
       <script>
@@ -565,9 +552,9 @@
               max: 5,
               decimals: 0,
               customSectors: [{
-			  color : "#ffff00",
+         color : "#ffff00",
           	  lo : 2,
-			  hi : 3
+         hi : 3
          	  }],
               pointer: true,
               startAnimationTime: 1,
@@ -576,7 +563,7 @@
           	  refreshAnimationType: "linear",
               hideMinMax: true,
           });
-      });
+         });
       </script>
       <p class="texte">Maintenant que le fichier CSV a été importé, il est nécessaire de vérifier les données du casier viticole informatisé afin de les valider et de les corriger le cas échéant &#40;mais ce n'est pas systématique&#41;.<br /><strong>Cette étape est essentielle avant de débuter la conversion du parcellaire cadastral en parcellaire cultural.</strong></p>
       <div class="info-fond aerateur-haut aerateur-bas">
@@ -668,7 +655,7 @@
       <h6>Guide de prise en main • Ekyviti • Conversion du CVI en parcellaire</h6>
       <a class="slice-process" id="start"></a>
       <p align="center" class="texte aerateur procedure">2 - Conversion du CVI en parcellaire Ekyviti</p>
-	  <div id="cont3" class="niveau">
+      <div id="cont3" class="niveau">
          <div id="gauge3" class="jauge"></div>
       </div>
       <script>
@@ -684,9 +671,9 @@
               max: 5,
               decimals: 0,
               customSectors: [{
-			  color : "#ffff00",
+         color : "#ffff00",
           	  lo : 2,
-			  hi : 3
+         hi : 3
          	  }],
               pointer: true,
               startAnimationTime: 1,
@@ -695,7 +682,7 @@
           	  refreshAnimationType: "linear",
               hideMinMax: true,
           });
-      });
+         });
       </script>
       <p class="texte">Cette étape va maintenant vous permettre de préparer les parcelles cadastrales du CVI validées à l'étape précédente en vue de les adapter au système de gestion parcellaire propre à <strong>Eky</strong>viti.</p>
       <p class="texte aerateur-haut">Le processus suivant vous guide pour démarrer la conversion des données du CVI en parcellaire <strong>Eky</strong>viti.</p>
@@ -958,6 +945,7 @@
          </p>
          <p>Cliquez sur <span class="btn-purple">Regrouper</span> pour valider l'opération.</p>
       </div>
+	  <div class="saut-page"></div>
       <div class="warn-fond aerateur-haut">
          <div class="floating-box-warn">
             <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
@@ -996,7 +984,7 @@
       <h6>Guide de prise en main • Ekyviti • Modification des parcelles</h6>
       <a class="slice-process" id="modif"></a>
       <p align="center" class="texte aerateur procedure">1 - Modification des parcelles</p>
-	  <div id="cont4" class="niveau">
+      <div id="cont4" class="niveau">
          <div id="gauge4" class="jauge"></div>
       </div>
       <script>
@@ -1012,9 +1000,9 @@
               max: 5,
               decimals: 0,
               customSectors: [{
-			  color : "#ff6600",
+         color : "#ff6600",
           	  lo : 2,
-			  hi : 3
+         hi : 3
          	  }],
               pointer: true,
               startAnimationTime: 1,
@@ -1023,7 +1011,7 @@
           	  refreshAnimationType: "linear",
               hideMinMax: true,
           });
-      });
+         });
       </script>
       <p class="texte">Le processus suivant vous guide pour regrouper deux parcelles afin de vous permettre ensuite de définir 2 parcelles supportant 2 cépages différents.</p>
       <div class="tabs-step step1 marge aerateur-step">
@@ -1160,14 +1148,14 @@
       <h6>Guide de prise en main • Ekyviti • Conversion du parcellaire cultural</h6>
       <a class="slice-process" id="terminer"></a>
       <p align="center" class="texte aerateur procedure">2 - Finaliser la conversion du parcellaire cultural</p>
-	  <div id="cont5" class="niveau">
+      <div id="cont5" class="niveau">
          <div id="gauge5" class="jauge"></div>
       </div>
       <script>
          document.addEventListener("DOMContentLoaded", function(event) {
           var gNode1 = document.createElement('div');
           gNode1.setAttribute("class", "jauge");
-		  var gauge1 = new JustGage({
+         var gauge1 = new JustGage({
               id: "gauge5",
               value: 1,
               width: 150,
@@ -1187,7 +1175,7 @@
           	  refreshAnimationType: "linear",
               hideMinMax: true,
           });
-      });
+         });
       </script>
       <p class="texte">Le processus suivant vous guide pour reprendre et terminer la préparation des parcelles pour convertir une ou plusieurs zone&#40;s&#41; cultivable&#40;s&#41;.</p>
       <div class="tabs-step step1 marge aerateur-step">

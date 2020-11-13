@@ -378,7 +378,6 @@
             </div>
          </div>
       </div>
-      <p class="texte aerateur-bas">Le symbole<img src="../images/commun/option-small.svg" class="align-icone icone-marge-gauche" height="30" alt="Optionnel">dans ce chapitre vous indique un paramétrage avancé lié au niveau de traçabilité souhaité.</p>
       <h6>Guide de prise en main • Production • Activités</h6>
       <a class="slice-process" id="activites"></a>
       <h2 class="texte aerateur">a - Activités agricoles</h2>
@@ -1219,6 +1218,35 @@
       <h6>Guide de prise en main • Production • Coût équipement</h6>
       <a class="slice-process" id="cout"></a>
       <p align="center" class="texte aerateur procedure">3 – Procédure pour définir le coût d'usage d'un équipement</p>
+	  <div id="cont1" class="niveau">
+         <div id="gauge1" class="jauge"></div>
+      </div>
+      <script>
+         document.addEventListener("DOMContentLoaded", function(event) {
+          var gNode1 = document.createElement('div');
+          gNode1.setAttribute("class", "jauge");
+          var gauge1 = new JustGage({
+              id: "gauge1",
+              value: 2,
+              width: 150,
+              height: 110,
+              min: 0,
+              max: 5,
+              decimals: 0,
+              customSectors: [{
+			  color : "#ffff00",
+          	  lo : 2,
+			  hi : 3
+         	  }],
+              pointer: true,
+              startAnimationTime: 1,
+          	  startAnimationType: "linear",
+          	  refreshAnimationTime: 1,
+          	  refreshAnimationType: "linear",
+              hideMinMax: true,
+          });
+      });
+      </script>
       <p class="texte">Comme expliqué dans le <a href="../chapitre8" class="avoid-clicks" target="_self">chapitre 8 - Stocks et tiers</a>, si vous souhaitez appliquer des coûts d'usage différents à des variantes d'un même type dans une intervention, comme par exemple 2 tracteurs, prenez soin de créer auparavant une nouvelle variante de l'équipement "Tracteur" pour les différencier. Sinon, le coût d'utilisation d'un des deux tracteurs sera automatiquement répercuté sur l'autre.</p>
       <p class="texte">Ce schéma récapitule la succession des étapes nécessaires à la création d'un nouveau tracteur défini à partir d'une nouvelle variante d'équipement auquel on a attribué un coût d'usage &#40;un coût horaire&#41;. Notez que les procédures doivent être réalisées dans l'ordre indiqué.</p>
       <div class="affichage-mobile">
@@ -1235,7 +1263,6 @@
             </p>
          </div>
       </div>
-      <p align="center" class="texte"><img src="../images/commun/option.svg" height="45" alt="Optionnel"></p>
       <p class="texte">Le processus suivant vous guide pour attribuer un coût estimatif d'utilisation à un équipement directement dans une intervention.</p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />

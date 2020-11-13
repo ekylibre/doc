@@ -4329,3 +4329,12 @@ display: block;
 		margin-top: -26px;
 	}
 }
+
+@media print {
+	.jauge {
+		width: 150px;
+		height: 90px;
+		display: inline-block;
+		margin-top: -28px;
+	}
+}

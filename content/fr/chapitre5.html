@@ -2989,7 +2989,35 @@
       <h6>Guide de prise en main • Comptabilité • Échanges comptables</h6>
       <a class="slice-process" id="echanges"></a>
       <h2 class="texte aerateur">i - Échanges comptables</h2>
-      <p align="center" class="texte"><img src="../images/commun/option.svg" height="45" alt="Optionnel"></p>
+	  <div id="cont4" class="niveau">
+         <div id="gauge4" class="jauge"></div>
+      </div>
+      <script>
+         document.addEventListener("DOMContentLoaded", function(event) {
+          var gNode1 = document.createElement('div');
+          gNode1.setAttribute("class", "jauge");
+          var gauge1 = new JustGage({
+              id: "gauge4",
+              value: 2,
+              width: 150,
+              height: 110,
+              min: 0,
+              max: 5,
+              decimals: 0,
+              customSectors: [{
+			  color : "#ffff00",
+          	  lo : 2,
+			  hi : 3
+         	  }],
+              pointer: true,
+              startAnimationTime: 1,
+          	  startAnimationType: "linear",
+          	  refreshAnimationTime: 1,
+          	  refreshAnimationType: "linear",
+              hideMinMax: true,
+          });
+      });
+      </script>
       <p class="texte"><strong>Eky</strong>agri permet d'échanger des données comptables entre l'administrateur de la ferme et son expert-comptable ou son centre de gestion en toute sécurité. Vous pouvez exporter et partager vos données sans interrompre votre travail et sans risque d'incohérence. Réciproquement, vous pouvez intégrer les validations ou corrections réalisées par un tiers.</p>
       <div class="warn-fond users-orange aerateur-haut aerateur-bas">
          <div class="floating-box-warn">
@@ -3299,6 +3327,10 @@
 		 <p>La liste des écritures est automatiquement mise à jour selon les critères définis à l'étape précédente. Chaque numéro d'écriture est un lien permettant d'en afficher le détail pour consultation ou pour procéder à une modification lorsque son statut l'autorise.</p>
 		 <p class="max-img-process">
             <img src="../images/chapitre5/ecritures4.png" class="contour-img" alt="Liste des écritures recherchée" data-action="zoom" />
+         </p>
+		 <p class="aerateur-haut">Cochez les cases à gauche des écritures sélectionnées<img src="../images/commun/check-square.svg" alt="Case à cocher" height="18" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher le total en débit et en crédit.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre5/ecritures5.png" class="contour-img" alt="Totaux des écritures sélectionnées" data-action="zoom" />
          </p>
       </div>
       <h6>Guide de prise en main • Comptabilité • Grand-Livre</h6>

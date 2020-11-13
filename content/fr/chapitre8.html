@@ -387,7 +387,6 @@
             </div>
          </div>
       </div>
-      <p class="texte">Le symbole<img src="../images/commun/option-small.svg" class="align-icone icone-marge-gauche" height="30" alt="Optionnel">dans ce chapitre vous indique un processus optionnel ou avancé lié au niveau de traçabilité souhaité.</p>
       <div class="aerateur-bas">
       </div>
       <div class="saut-page"></div>
@@ -962,8 +961,35 @@
 	  <p align="center" class="aerateur-haut aerateur-bas texte">
          <img src="../images/chapitre8/illus-laitier.png" alt="Illustration produits laitiers" width="450px" />
       </p>
-      <p class="texte">Dans l'exemple suivant, on vous explique comment créer une nouvelle catégorie, un nouveau type et enfin de nouvelles variantes pour permettre la gestion des stocks et la gestion des ventes d'un producteur de produits laitiers transformés.</p>
-      <p align="center" class="texte"><img src="../images/commun/option.svg" height="45" alt="Optionnel"></p>
+      <p class="texte">Dans l'exemple suivant, on vous explique comment créer une nouvelle catégorie, un nouveau type et enfin de nouvelles variantes pour permettre la gestion des stocks et la gestion des ventes d'un producteur de produits laitiers transformés.</p><div id="cont1" class="niveau">
+         <div id="gauge1" class="jauge"></div>
+      </div>
+      <script>
+         document.addEventListener("DOMContentLoaded", function(event) {
+          var gNode1 = document.createElement('div');
+          gNode1.setAttribute("class", "jauge");
+          var gauge1 = new JustGage({
+              id: "gauge1",
+              value: 3,
+              width: 150,
+              height: 110,
+              min: 0,
+              max: 5,
+              decimals: 0,
+              customSectors: [{
+			  color : "#ff9900",
+          	  lo : 2,
+			  hi : 3
+         	  }],
+              pointer: true,
+              startAnimationTime: 1,
+          	  startAnimationType: "linear",
+          	  refreshAnimationTime: 1,
+          	  refreshAnimationType: "linear",
+              hideMinMax: true,
+          });
+      });
+      </script>
       <p class="texte">Le processus suivant vous guide pour créer de nouveaux articles à partir de nouvelles variantes définies à partir d'une nouvelle catégorie et d'un nouveau type.</p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
@@ -1833,7 +1859,35 @@
       </div>
       <h6>Guide de prise en main • Stocks et tiers • Variante d'équipement</h6>
       <p align="center" class="texte aerateur procedure">2 – Procédure pour créer une nouvelle variante d'équipement</p>
-      <p align="center" class="texte"><img src="../images/commun/option.svg" height="45" alt="Optionnel"></p>
+	   <div id="cont2" class="niveau">
+         <div id="gauge2" class="jauge"></div>
+      </div>
+      <script>
+         document.addEventListener("DOMContentLoaded", function(event) {
+          var gNode1 = document.createElement('div');
+          gNode1.setAttribute("class", "jauge");
+          var gauge1 = new JustGage({
+              id: "gauge2",
+              value: 2,
+              width: 150,
+              height: 110,
+              min: 0,
+              max: 5,
+              decimals: 0,
+              customSectors: [{
+			  color : "#ffff00",
+          	  lo : 2,
+			  hi : 3
+         	  }],
+              pointer: true,
+              startAnimationTime: 1,
+          	  startAnimationType: "linear",
+          	  refreshAnimationTime: 1,
+          	  refreshAnimationType: "linear",
+              hideMinMax: true,
+          });
+      });
+      </script>
       <p class="texte">Le processus suivant vous guide pour créer une nouvelle variante d'équipement dans l'application.</p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
@@ -2146,7 +2200,35 @@
       <h6>Guide de prise en main • Stocks et tiers • Création type d'équipier</h6>
       <a class="slice-process" id="typeequipier"></a>
       <p align="center" class="texte aerateur procedure">4 – Procédure de création d'un type d'équipier</p>
-      <p align="center" class="texte"><img src="../images/commun/option.svg" height="45" alt="Optionnel"></p>
+	  <div id="cont3" class="niveau">
+         <div id="gauge3" class="jauge"></div>
+      </div>
+      <script>
+         document.addEventListener("DOMContentLoaded", function(event) {
+          var gNode1 = document.createElement('div');
+          gNode1.setAttribute("class", "jauge");
+          var gauge1 = new JustGage({
+              id: "gauge3",
+              value: 2,
+              width: 150,
+              height: 110,
+              min: 0,
+              max: 5,
+              decimals: 0,
+              customSectors: [{
+			  color : "#ffff00",
+          	  lo : 2,
+			  hi : 3
+         	  }],
+              pointer: true,
+              startAnimationTime: 1,
+          	  startAnimationType: "linear",
+          	  refreshAnimationTime: 1,
+          	  refreshAnimationType: "linear",
+              hideMinMax: true,
+          });
+      });
+      </script>
       <p class="texte">Le processus suivant vous guide pour créer un nouveau type d'équipier dans l'application.</p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
@@ -2210,7 +2292,35 @@
       <h6>Guide de prise en main • Stocks et tiers • Coût de main d'œuvre</h6>
       <a class="slice-process" id="coutequipier"></a>
       <p align="center" class="texte aerateur procedure">5 – Procédure pour définir un coût de main d'œuvre</p>
-      <p align="center" class="texte"><img src="../images/commun/option.svg" height="45" alt="Optionnel"></p>
+	  <div id="cont4" class="niveau">
+         <div id="gauge4" class="jauge"></div>
+      </div>
+      <script>
+         document.addEventListener("DOMContentLoaded", function(event) {
+          var gNode1 = document.createElement('div');
+          gNode1.setAttribute("class", "jauge");
+          var gauge1 = new JustGage({
+              id: "gauge4",
+              value: 2,
+              width: 150,
+              height: 110,
+              min: 0,
+              max: 5,
+              decimals: 0,
+              customSectors: [{
+			  color : "#ffff00",
+          	  lo : 2,
+			  hi : 3
+         	  }],
+              pointer: true,
+              startAnimationTime: 1,
+          	  startAnimationType: "linear",
+          	  refreshAnimationTime: 1,
+          	  refreshAnimationType: "linear",
+              hideMinMax: true,
+          });
+      });
+      </script>
       <p class="texte">Le processus suivant vous guide pour attribuer un coût horaire estimatif de main d'œuvre à un type d'équipier.</p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
@@ -2290,7 +2400,35 @@
       <h6>Guide de prise en main • Stocks et tiers • Création catalogue de prix</h6>
       <a class="slice-process" id="coutusage"></a>
       <p align="center" class="texte aerateur procedure">6 – Procédure pour créer un nouveau catalogue de prix</p>
-      <p align="center" class="texte"><img src="../images/commun/option.svg" height="45" alt="Optionnel"></p>
+	  <div id="cont5" class="niveau">
+         <div id="gauge5" class="jauge"></div>
+      </div>
+      <script>
+         document.addEventListener("DOMContentLoaded", function(event) {
+          var gNode1 = document.createElement('div');
+          gNode1.setAttribute("class", "jauge");
+          var gauge1 = new JustGage({
+              id: "gauge5",
+              value: 1,
+              width: 150,
+              height: 110,
+              min: 0,
+              max: 5,
+              decimals: 0,
+              customSectors: [{
+			  color : "#00ff00",
+          	  lo : 0,
+			  hi : 1
+         	  }],
+              pointer: true,
+              startAnimationTime: 1,
+          	  startAnimationType: "linear",
+          	  refreshAnimationTime: 1,
+          	  refreshAnimationType: "linear",
+              hideMinMax: true,
+          });
+      });
+      </script>
       <p class="texte">Le processus suivant vous guide pour définir un nouveau catalogue de prix des coûts d'usage.</p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
