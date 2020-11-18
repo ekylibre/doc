@@ -72,7 +72,8 @@
             {dates: [new Date(2020, 7, 26), new Date(2020, 8, 10)], title: "Version 3.19", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
             {dates: [new Date(2020, 8, 11), new Date(2020, 9, 7)], title: "Version 3.20", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
             {dates: [new Date(2020, 9, 8), new Date(2020, 10, 9)], title: "Version 3.21", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
-         {dates: [new Date(2020, 10, 10), new Date(annee, mois, jour)], title: "Version 3.22", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
+            {dates: [new Date(2020, 10, 10), new Date(2020, 10, 17)], title: "Version 3.22", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
+         {dates: [new Date(2020, 10, 18), new Date(annee, mois, jour)], title: "Version 3.23", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}}
          ];
          
          var sections = [
@@ -126,6 +127,96 @@
             <section id="panel-1">
                <main>
                   <div class="accordion-container marge">
+                     <div class="panel">
+                        <div class="heading">
+                           <div class="version">
+                              <h2>Note de version 3.23 du 18/11/2020</h2>
+                           </div>
+                           <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <div class="content">
+                           <div class="divTableNoteVersion">
+                              <div class="divTableBody">
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Comptabilité</strong><br /><br />
+                                       2 améliorations
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+                                          <li>L'export du fichier permettant de réaliser un échange comptable est désormais proposé avec une compression au format ZIP pour un enregistrement plus rapide des données&nbsp;;</li>
+                                          <li>La taille des fichiers CSV acceptée pour l'import des données d'échanges comptables est également augmentée.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/ventes.svg" alt="Ventes" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Ventes</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>L'affichage de l'indicateur des "Totaux commerciaux" est accéléré de manière sensible pour les fermes dont le volume d'affaires est particulièrement important.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/achats.svg" alt="Achats" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Achats</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>La vue détaillée d'une commande ou d'une facture d'achat affiche maintenant un historique complet des modifications successives qui ont pu être réalisées, avec le nom de l'intervenant.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Production</strong><br /><br />
+                                       1 bug corrigé
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+                                          <li>La recherche d'interventions selon des critères personnalisés saisis dans l'en-tête de recherche est à nouveau possible dans la vue "Pavés" des interventions.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                      <div class="panel">
                         <div class="heading">
                            <div class="version">
@@ -2654,6 +2745,90 @@
          </div>
       </article>
       <!-- Section pour la génération du PDF -->
+      <div class="saut-page"></div>
+      <div class="heading-print marge aerateur-haut">
+         <h2>Note de version 3.23 du 18/11/2020</h2>
+         <div class="content-print marge">
+            <div class="divTableNoteVersion">
+               <div class="divTableBody">
+                  <div class="divTableRow">
+                     <div class="divTableCellNoteVersion1">
+                        <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
+                     </div>
+                     <div class="divTableCellNoteVersion2">
+                        <strong>Comptabilité</strong><br /><br />
+                        2 améliorations
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellNoteVersion3" style="width: 60px">
+                     </div>
+                     <div class="divTableCellNoteVersion4" style="width: auto">
+                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                        <ul>
+                           <li>L'export du fichier permettant de réaliser un échange comptable est désormais proposé avec une compression au format ZIP pour un enregistrement plus rapide des données&nbsp;;</li>
+                           <li>La taille des fichiers CSV acceptée pour l'import des données d'échanges comptables est également augmentée.</li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellNoteVersion1">
+                        <img src="../images/notes-version/ventes.svg" alt="Ventes" width="60">
+                     </div>
+                     <div class="divTableCellNoteVersion2">
+                        <strong>Ventes</strong><br /><br />
+                        1 amélioration
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                     <div class="divTableCellNoteVersion4" style="width: auto">
+                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                        <ul>
+                           <li>L'affichage de l'indicateur des "Totaux commerciaux" est accéléré de manière sensible pour les fermes dont le volume d'affaires est particulièrement important.</li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellNoteVersion1">
+                        <img src="../images/notes-version/achats.svg" alt="Achats" width="60">
+                     </div>
+                     <div class="divTableCellNoteVersion2">
+                        <strong>Achats</strong><br /><br />
+                        1 amélioration
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                     <div class="divTableCellNoteVersion4" style="width: auto">
+                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                        <ul>
+                           <li>La vue détaillée d'une commande ou d'une facture d'achat affiche maintenant un historique complet des modifications successives qui ont pu être réalisées, avec le nom de l'intervenant.</li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellNoteVersion1" style="width: 60px">
+                        <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                     </div>
+                     <div class="divTableCellNoteVersion2" style="width: auto">
+                        <strong>Production</strong><br /><br />
+                        1 bug corrigé
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                     <div class="divTableCellNoteVersion4" style="width: auto">
+                        <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                        <ul>
+                           <li>La recherche d'interventions selon des critères personnalisés saisis dans l'en-tête de recherche est à nouveau possible dans la vue "Pavés" des interventions.</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
       <div class="saut-page"></div>
       <div class="heading-print marge aerateur-haut">
          <h2>Note de version 3.22 du 10/11/2020</h2>
