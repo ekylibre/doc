@@ -73,7 +73,8 @@
             {dates: [new Date(2020, 8, 11), new Date(2020, 9, 7)], title: "Version 3.20", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
             {dates: [new Date(2020, 9, 8), new Date(2020, 10, 9)], title: "Version 3.21", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
             {dates: [new Date(2020, 10, 10), new Date(2020, 10, 17)], title: "Version 3.22", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
-         {dates: [new Date(2020, 10, 18), new Date(annee, mois, jour)], title: "Version 3.23", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}}
+            {dates: [new Date(2020, 10, 18), new Date(2020, 11, 1)], title: "Version 3.23", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
+         {dates: [new Date(2020, 11, 2), new Date(annee, mois, jour)], title: "Version 3.24", attrs: {fill: "#fea40b", stroke: "#fea40b"}}
          ];
          
          var sections = [
@@ -127,6 +128,155 @@
             <section id="panel-1">
                <main>
                   <div class="accordion-container marge">
+                     <div class="panel">
+                        <div class="heading">
+                           <div class="version">
+                              <h2>Note de version 3.24 du 2/12/2020</h2>
+                           </div>
+                           <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <div class="content">
+                           <div class="divTableNoteVersion">
+                              <div class="divTableBody">
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/modules.svg" alt="modules" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Commun à plusieurs modules</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Dans l'interface, ajout de flèches de navigation en bas à droite des listes volumineuses afin de parcourir les différentes pages qui composent celles-ci plus aisément.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Comptabilité</strong><br /><br />
+                                       2 bugs corrigés
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
+                                       <ul>
+                                          <li>Le fichier au format CSV exporté lors d'un échange comptable intègre maintenant les numéros de comptes comptables et les codes des journaux&nbsp;;</li>
+                                          <li>Le calcul du compte de résultat et du bilan, mais aussi la prise en compte de l'utilisation de comptes comptables spécifiques, sont améliorés afin d'obtenir un résultat juste et équilibré.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/achats.svg" alt="Achats" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Achats</strong><br /><br />
+                                       8 améliorations et 1 bug corrigé
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+                                          <li>Dans les formulaires de création et de modification des commandes et des factures d'achat, la disposition des listes déroulantes "Équipe" et "Équipement" est inversée afin de permettre une lecture plus confortable des longues dénominations attribuées aux équipements&nbsp;;</li>
+                                          <li>Lors du rapprochement d'une facture avec des réceptions, la somme des colis reçus est désormais affichée dans la fenêtre modale&nbsp;;</li>
+                                          <li>Dans la vue condensée des lignes d'achat d'une commande ou d'une facture, un nouvel en-tête affiche l'intitulé des colonnes qui composent le tableau récapitulatif&nbsp;;</li>
+                                          <li>Amélioration de l'ergonomie du formulaire de saisie d'une commande avec un alignement à gauche des options relatives à une immobilisation comptable&nbsp;;</li>
+                                          <li>Lors du rapprochement d'une facture avec des réceptions, les réceptions affichées dans la fenêtre modale sont maintenant présentées dans l'ordre chronologique&nbsp;;</li>
+                                          <li>Lorsque le numéro du bon de réception d'un fournisseur est renseigné dans le formulaire d'enregistrement d'une réception, il est reporté au niveau de chaque ligne de la facture d'achat&nbsp;;</li>
+                                          <li>Le bouton "Rapprocher avec une ou des réceptions" reste désormais inactif dans les factures d'achat tant qu'un fournisseur n'a pas été sélectionné&nbsp;;</li>
+                                          <li>Lors du rapprochement d'une facture avec une réception, un nouveau message alerte l'utilisateur lorsqu'aucune réception n'est en attente de rapprochement avec le fournisseur choisi.</li>
+                                       </ul>
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+                                          <li>L'outil de recherche pour réaliser des règlements par lot de décaissements sur une période donnée est de nouveau fonctionnel.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/stocks.svg" alt="Stocks" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Stocks</strong><br /><br />
+                                       1 bug corrigé
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+                                          <li>Lors de l'édition d'un inventaire, celui-ci est désormais calculé uniquement pour la catégorie de produits sélectionnée, afin d'éviter tout problème potentiel de synchronisation au moment du passage des écritures en comptabilité.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Production</strong><br /><br />
+                                       4 améliorations et 4 bugs corrigés
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+                                          <li>Les informations d'une parcelle &#40;périmètre et surface&#41; et l'échelle du zoom, initialement situées à droite de la carte, ont été déplacées en bas à gauche de celle-ci afin de ne plus être masquées lorsque la légende contient une liste importante d'activités&nbsp;;</li>
+                                          <li>Dans une intervention avec prestation de service et grâce à un nouveau tri, seules les commandes et les lignes de commande comprenant une prestation de service sont affichées dans la liste déroulante des propositions filtrées&nbsp;;</li>
+                                          <li>Dans une intervention de "Réparation et maintenance", le filtre de la liste déroulante "Outils" n'affiche désormais que les équipements déjà créés&nbsp;;</li>
+                                          <li>La possibilité de supprimer une parcelle est réactivée dans la vue détaillée d'une production si celle-ci ne contient aucune culture et lorsqu'aucune intervention n'a été préalablement enregistrée.</li>
+                                       </ul>
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
+                                       <ul>
+                                          <li>Dans les interventions de "Semis tout-en-un" ou de "Semis avec pulvérisation", un message alerte à nouveau l'utilisateur lorsqu'une zone travaillée chevauche une zone de non-traitement&nbsp;;</li>
+                                          <li>La modification d'une prestation de service dans une intervention, comme par exemple la correction d'une quantité, est désormais fonctionnelle&nbsp;;</li>
+                                          <li>Les "Actions" sélectionnées avec l'application mobile Zero sont correctement prises en compte dans l'application en ligne&nbsp;;</li>
+                                          <li>Les interventions de "Semis" ciblées simultanément sur plusieurs parcelles avec l'application mobile Zero sont maintenant correctement reportées dans l'application en ligne.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/configuration.svg" alt="Configuration" width="60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Configuration</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Le format de nommage des parcelles permet désormais la création et l'utilisation d'un champ libre. Il est possible de personnaliser ainsi le nom des parcelles des plantations pérennes et de remplacer celui défini par défaut pour les plantations annuelles.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                      <div class="panel">
                         <div class="heading">
                            <div class="version">
@@ -2746,82 +2896,227 @@
       <!-- Section pour la génération du PDF -->
       <div class="saut-page"></div>
       <div class="heading-print marge aerateur-haut">
+         <h2>Note de version 3.24 du 2/12/2020</h2>
+      </div>
+      <div class="content-print marge">
+         <div class="divTableNoteVersion">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/modules.svg" alt="modules" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Commun à plusieurs modules</strong><br /><br />
+                     1 amélioration
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>Dans l'interface, ajout de flèches de navigation en bas à droite des listes volumineuses afin de parcourir les différentes pages qui composent celles-ci plus aisément.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Comptabilité</strong><br /><br />
+                     2 bugs corrigés
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
+                     <ul>
+                        <li>Le fichier au format CSV exporté lors d'un échange comptable intègre maintenant les numéros de comptes comptables et les codes des journaux&nbsp;;</li>
+                        <li>Le calcul du compte de résultat et du bilan, mais aussi la prise en compte de l'utilisation de comptes comptables spécifiques, sont améliorés afin d'obtenir un résultat juste et équilibré.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/achats.svg" alt="Achats" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Achats</strong><br /><br />
+                     8 améliorations et 1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>Dans les formulaires de création et de modification des commandes et des factures d'achat, la disposition des listes déroulantes "Équipe" et "Équipement" est inversée afin de permettre une lecture plus confortable des longues dénominations attribuées aux équipements&nbsp;;</li>
+                        <li>Lors du rapprochement d'une facture avec des réceptions, la somme des colis reçus est désormais affichée dans la fenêtre modale&nbsp;;</li>
+                        <li>Dans la vue condensée des lignes d'achat d'une commande ou d'une facture, un nouvel en-tête affiche l'intitulé des colonnes qui composent le tableau récapitulatif&nbsp;;</li>
+                        <li>Amélioration de l'ergonomie du formulaire de saisie d'une commande avec un alignement à gauche des options relatives à une immobilisation comptable&nbsp;;</li>
+                        <li>Lors du rapprochement d'une facture avec des réceptions, les réceptions affichées dans la fenêtre modale sont maintenant présentées dans l'ordre chronologique&nbsp;;</li>
+                        <li>Lorsque le numéro du bon de réception d'un fournisseur est renseigné dans le formulaire d'enregistrement d'une réception, il est reporté au niveau de chaque ligne de la facture d'achat&nbsp;;</li>
+                        <li>Le bouton "Rapprocher avec une ou des réceptions" reste désormais inactif dans les factures d'achat tant qu'un fournisseur n'a pas été sélectionné&nbsp;;</li>
+                        <li>Lors du rapprochement d'une facture avec une réception, un nouveau message alerte l'utilisateur lorsqu'aucune réception n'est en attente de rapprochement avec le fournisseur choisi.</li>
+                     </ul>
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>L'outil de recherche pour réaliser des règlements par lot de décaissements sur une période donnée est de nouveau fonctionnel.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/stocks.svg" alt="Stocks" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Stocks</strong><br /><br />
+                     1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>Lors de l'édition d'un inventaire, celui-ci est désormais calculé uniquement pour la catégorie de produits sélectionnée, afin d'éviter tout problème potentiel de synchronisation au moment du passage des écritures en comptabilité.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Production</strong><br /><br />
+                     4 améliorations et 4 bugs corrigés
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>Les informations d'une parcelle &#40;périmètre et surface&#41; et l'échelle du zoom, initialement situées à droite de la carte, ont été déplacées en bas à gauche de celle-ci afin de ne plus être masquées lorsque la légende contient une liste importante d'activités&nbsp;;</li>
+                        <li>Dans une intervention avec prestation de service et grâce à un nouveau tri, seules les commandes et les lignes de commande comprenant une prestation de service sont affichées dans la liste déroulante des propositions filtrées&nbsp;;</li>
+                        <li>Dans une intervention de "Réparation et maintenance", le filtre de la liste déroulante "Outils" n'affiche désormais que les équipements déjà créés&nbsp;;</li>
+                        <li>La possibilité de supprimer une parcelle est réactivée dans la vue détaillée d'une production si celle-ci ne contient aucune culture et lorsqu'aucune intervention n'a été préalablement enregistrée.</li>
+                     </ul>
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
+                     <ul>
+                        <li>Dans les interventions de "Semis tout-en-un" ou de "Semis avec pulvérisation", un message alerte à nouveau l'utilisateur lorsqu'une zone travaillée chevauche une zone de non-traitement&nbsp;;</li>
+                        <li>La modification d'une prestation de service dans une intervention, comme par exemple la correction d'une quantité, est désormais fonctionnelle&nbsp;;</li>
+                        <li>Les "Actions" sélectionnées avec l'application mobile Zero sont correctement prises en compte dans l'application en ligne&nbsp;;</li>
+                        <li>Les interventions de "Semis" ciblées simultanément sur plusieurs parcelles avec l'application mobile Zero sont maintenant correctement reportées dans l'application en ligne.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/configuration.svg" alt="Configuration" width="60px">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Configuration</strong><br /><br />
+                     1 amélioration
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>Le format de nommage des parcelles permet désormais la création et l'utilisation d'un champ libre. Il est possible de personnaliser ainsi le nom des parcelles des plantations pérennes et de remplacer celui défini par défaut pour les plantations annuelles.</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="saut-page"></div>
+      <div class="heading-print marge aerateur-haut">
          <h2>Note de version 3.23 du 18/11/2020</h2>
-         <div class="content-print marge">
-            <div class="divTableNoteVersion">
-               <div class="divTableBody">
-                  <div class="divTableRow">
-                     <div class="divTableCellNoteVersion1">
-                        <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
-                     </div>
-                     <div class="divTableCellNoteVersion2">
-                        <strong>Comptabilité</strong><br /><br />
-                        1 amélioration
-                     </div>
+      </div>
+      <div class="content-print marge">
+         <div class="divTableNoteVersion">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
                   </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellNoteVersion3" style="width: 60px">
-                     </div>
-                     <div class="divTableCellNoteVersion4" style="width: auto">
-                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
-                        <ul>
-                           <li>La taille des fichiers CSV acceptés pour réaliser l'import des données prises en charge par les échanges comptables est augmentée de manière significative.</li>
-                        </ul>
-                     </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Comptabilité</strong><br /><br />
+                     1 amélioration
                   </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellNoteVersion1">
-                        <img src="../images/notes-version/ventes.svg" alt="Ventes" width="60">
-                     </div>
-                     <div class="divTableCellNoteVersion2">
-                        <strong>Ventes</strong><br /><br />
-                        1 amélioration
-                     </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
                   </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellNoteVersion3" style="width: 60px"></div>
-                     <div class="divTableCellNoteVersion4" style="width: auto">
-                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
-                        <ul>
-                           <li>L'affichage de l'indicateur des "Totaux commerciaux" est accéléré de manière sensible pour les fermes dont le volume d'affaires est particulièrement important.</li>
-                        </ul>
-                     </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>La taille des fichiers CSV acceptés pour réaliser l'import des données prises en charge par les échanges comptables est augmentée de manière significative.</li>
+                     </ul>
                   </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellNoteVersion1">
-                        <img src="../images/notes-version/achats.svg" alt="Achats" width="60">
-                     </div>
-                     <div class="divTableCellNoteVersion2">
-                        <strong>Achats</strong><br /><br />
-                        1 amélioration
-                     </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/ventes.svg" alt="Ventes" width="60">
                   </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellNoteVersion3" style="width: 60px"></div>
-                     <div class="divTableCellNoteVersion4" style="width: auto">
-                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
-                        <ul>
-                           <li>La vue détaillée d'une commande ou d'une facture d'achat affiche maintenant un historique complet des modifications successives qui ont pu être réalisées, avec le nom de l'intervenant.</li>
-                        </ul>
-                     </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Ventes</strong><br /><br />
+                     1 amélioration
                   </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellNoteVersion1" style="width: 60px">
-                        <img src="../images/notes-version/production.svg" alt="Production" width="60">
-                     </div>
-                     <div class="divTableCellNoteVersion2" style="width: auto">
-                        <strong>Production</strong><br /><br />
-                        1 bug corrigé
-                     </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>L'affichage de l'indicateur des "Totaux commerciaux" est accéléré de manière sensible pour les fermes dont le volume d'affaires est particulièrement important.</li>
+                     </ul>
                   </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellNoteVersion3" style="width: 60px"></div>
-                     <div class="divTableCellNoteVersion4" style="width: auto">
-                        <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
-                        <ul>
-                           <li>La recherche d'interventions selon des critères personnalisés saisis dans l'en-tête de recherche est à nouveau possible dans la vue "Pavés" des interventions.</li>
-                        </ul>
-                     </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/achats.svg" alt="Achats" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Achats</strong><br /><br />
+                     1 amélioration
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>La vue détaillée d'une commande ou d'une facture d'achat affiche maintenant un historique complet des modifications successives qui ont pu être réalisées, avec le nom de l'intervenant.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Production</strong><br /><br />
+                     1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>La recherche d'interventions selon des critères personnalisés saisis dans l'en-tête de recherche est à nouveau possible dans la vue "Pavés" des interventions.</li>
+                     </ul>
                   </div>
                </div>
             </div>
@@ -2830,139 +3125,139 @@
       <div class="saut-page"></div>
       <div class="heading-print marge aerateur-haut">
          <h2>Note de version 3.22 du 10/11/2020</h2>
-         <div class="content-print marge">
-            <div class="divTableNoteVersion">
-               <div class="divTableBody">
-                  <div class="divTableRow">
-                     <div class="divTableCellNoteVersion1" style="width: 60px">
-                        <img src="../images/notes-version/modules.svg" alt="modules" width="60">
-                     </div>
-                     <div class="divTableCellNoteVersion2" style="width: auto">
-                        <strong>Commun à plusieurs modules</strong><br /><br />
-                        1 amélioration et 1 bug corrigé
-                     </div>
+      </div>
+      <div class="content-print marge">
+         <div class="divTableNoteVersion">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/modules.svg" alt="modules" width="60">
                   </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellNoteVersion3" style="width: 60px">
-                     </div>
-                     <div class="divTableCellNoteVersion4" style="width: auto">
-                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
-                        <ul>
-                           <li>Amélioration des performances de l'application pour le traitement et l'affichage d'informations associées aux activités agricoles et à certaines opérations comptables comme par exemple le calcul de la balance.</li>
-                        </ul>
-                        <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
-                        <ul>
-                           <li>Remise à disposition de la possibilité de créer de nouvelles variantes à la volée grâce à l'option "Ajouter un nouvel enregistrement" dans les listes déroulantes concernées par cette opération.</li>
-                        </ul>
-                     </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Commun à plusieurs modules</strong><br /><br />
+                     1 amélioration et 1 bug corrigé
                   </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellNoteVersion1">
-                        <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
-                     </div>
-                     <div class="divTableCellNoteVersion2">
-                        <strong>Comptabilité</strong><br /><br />
-                        2 améliorations et 1 bug corrigé
-                     </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
                   </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellNoteVersion3" style="width: 60px">
-                     </div>
-                     <div class="divTableCellNoteVersion4" style="width: auto">
-                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
-                        <ul>
-                           <li>Mise à disposition d'une nouvelle fonctionnalité "Écritures" permettant, via la section des documents de "Synthèses", de filtrer et d'afficher les écritures selon différents critères de recherche&nbsp;;</li>
-                           <li>L'import d'un relevé de compte est désormais possible au format CFONB (Comité Français d'Organisation et de Normalisation Bancaires) pour compléter celui déjà disponible au format OFX.</li>
-                        </ul>
-                        <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
-                        <ul>
-                           <li>Le passage au statut “Vendue” ou “Mise au rebut” d’une immobilisation est désormais possible après clôture d’un exercice comptable.</li>
-                        </ul>
-                     </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>Amélioration des performances de l'application pour le traitement et l'affichage d'informations associées aux activités agricoles et à certaines opérations comptables comme par exemple le calcul de la balance.</li>
+                     </ul>
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>Remise à disposition de la possibilité de créer de nouvelles variantes à la volée grâce à l'option "Ajouter un nouvel enregistrement" dans les listes déroulantes concernées par cette opération.</li>
+                     </ul>
                   </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellNoteVersion1">
-                        <img src="../images/notes-version/ventes.svg" alt="Ventes" width="60">
-                     </div>
-                     <div class="divTableCellNoteVersion2">
-                        <strong>Ventes</strong><br /><br />
-                        1 bug corrigé
-                     </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
                   </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellNoteVersion3" style="width: 60px"></div>
-                     <div class="divTableCellNoteVersion4" style="width: auto">
-                        <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
-                        <ul>
-                           <li>Mise à disposition d'une nouvelle liste déroulante permettant de sélectionner facilement un modèle de document personnalisé parmi ceux disponibles, lors de l’impression d’une facture de vente.</li>
-                        </ul>
-                     </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Comptabilité</strong><br /><br />
+                     2 améliorations et 1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>Mise à disposition d'une nouvelle fonctionnalité "Écritures" permettant, via la section des documents de "Synthèses", de filtrer et d'afficher les écritures selon différents critères de recherche&nbsp;;</li>
+                        <li>L'import d'un relevé de compte est désormais possible au format CFONB (Comité Français d'Organisation et de Normalisation Bancaires) pour compléter celui déjà disponible au format OFX.</li>
+                     </ul>
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>Le passage au statut “Vendue” ou “Mise au rebut” d’une immobilisation est désormais possible après clôture d’un exercice comptable.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/ventes.svg" alt="Ventes" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Ventes</strong><br /><br />
+                     1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>Mise à disposition d'une nouvelle liste déroulante permettant de sélectionner facilement un modèle de document personnalisé parmi ceux disponibles, lors de l’impression d’une facture de vente.</li>
+                     </ul>
                   </div>
                </div>
             </div>
          </div>
-         <div class="content-print marge">
-            <div class="divTableNoteVersion">
-               <div class="divTableBody">
-                  <div class="saut-page"></div>
-                  <div class="divTableRow">
-                     <div class="divTableCellNoteVersion1">
-                        <img src="../images/notes-version/achats.svg" alt="Achats" width="60">
-                     </div>
-                     <div class="divTableCellNoteVersion2">
-                        <strong>Achats</strong><br /><br />
-                        1 amélioration et 1 bug corrigé
-                     </div>
+      </div>
+      <div class="content-print marge">
+         <div class="divTableNoteVersion">
+            <div class="divTableBody">
+               <div class="saut-page"></div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/achats.svg" alt="Achats" width="60">
                   </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellNoteVersion3" style="width: 60px"></div>
-                     <div class="divTableCellNoteVersion4" style="width: auto">
-                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
-                        <ul>
-                           <li>Rafraîchissement automatique de l'affichage des montants totaux HT et TTC ainsi que celui de la TVA dans une facture rapprochée, après la validation successive d'une ou plusieurs lignes d'achat.</li>
-                        </ul>
-                        <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
-                        <ul>
-                           <li>Amélioration de l'affichage du sélecteur de date définissant la période d'un nouveau lot de décaissements.</li>
-                        </ul>
-                     </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Achats</strong><br /><br />
+                     1 amélioration et 1 bug corrigé
                   </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellNoteVersion1" style="width: 60px">
-                        <img src="../images/notes-version/production.svg" alt="Production" width="60">
-                     </div>
-                     <div class="divTableCellNoteVersion2" style="width: auto">
-                        <strong>Production</strong><br /><br />
-                        1 amélioration
-                     </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>Rafraîchissement automatique de l'affichage des montants totaux HT et TTC ainsi que celui de la TVA dans une facture rapprochée, après la validation successive d'une ou plusieurs lignes d'achat.</li>
+                     </ul>
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>Amélioration de l'affichage du sélecteur de date définissant la période d'un nouveau lot de décaissements.</li>
+                     </ul>
                   </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellNoteVersion3" style="width: 60px">
-                     </div>
-                     <div class="divTableCellNoteVersion4" style="width: auto">
-                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
-                        <ul>
-                           <li>Accélération de l'affichage du tableau décrivant l'usage d'un produit phytosanitaire sélectionné lors de l'enregistrement d'une intervention de "Semis tout-en-un" ou de "Semis avec pulvérisation".</li>
-                        </ul>
-                     </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/production.svg" alt="Production" width="60">
                   </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellNoteVersion1">
-                        <img src="../images/notes-version/outils.svg" alt="Outils" width="60">
-                     </div>
-                     <div class="divTableCellNoteVersion2">
-                        <strong>Outils</strong><br /><br />
-                        1 amélioration
-                     </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Production</strong><br /><br />
+                     1 amélioration
                   </div>
-                  <div class="divTableRow">
-                     <div class="divTableCellNoteVersion3" style="width: 60px"></div>
-                     <div class="divTableCellNoteVersion4" style="width: auto">
-                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
-                        <ul>
-                           <li>Dans la liste des "Imports", disponible dans la section "Comptabilité", mise à disposition de deux nouvelles options Ekylibre pour intégrer des fichiers décrivant des "Immobilisations" ou des "Emprunts" au format CSV.</li>
-                        </ul>
-                     </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>Accélération de l'affichage du tableau décrivant l'usage d'un produit phytosanitaire sélectionné lors de l'enregistrement d'une intervention de "Semis tout-en-un" ou de "Semis avec pulvérisation".</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/outils.svg" alt="Outils" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Outils</strong><br /><br />
+                     1 amélioration
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>Dans la liste des "Imports", disponible dans la section "Comptabilité", mise à disposition de deux nouvelles options Ekylibre pour intégrer des fichiers décrivant des "Immobilisations" ou des "Emprunts" au format CSV.</li>
+                     </ul>
                   </div>
                </div>
             </div>

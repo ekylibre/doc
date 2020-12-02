@@ -526,7 +526,7 @@
          </p>
          <p>Notez que si vous avez supprimé par erreur une catégorie, un type ou une variante, vous pouvez facilement retrouver l'élément dans la liste correspondante en cliquant sur le bouton<img class="btn-gris icone-marge-gauche icone-marge-droite" src="../images/commun/importer.svg" alt="+ Importer">disponible après avoir sélectionné une nature ou une sous-nature.</p>
       </div>
-      <p class="texte aerateur-top">Si vous ne trouvez pas un produit spécifique dans la liste proposée pour en réaliser le stockage &#40;comme par exemple un équipement ou un intrant&#41;, vous pouvez définir une nouvelle variante de produit mais vous n'allez créer que rarement de nouvelles catégories et/ou de nouveaux types. On vous explique cependant comment procéder un peu plus loin dans ce chapitre avec la création d'un <a href="#article" class="avoid-clicks">nouvel article</a>.</p>
+      <p class="texte aerateur-top">Si vous ne trouvez pas un produit spécifique dans la liste proposée pour en réaliser le stockage &#40;comme par exemple un équipement ou un intrant&#41;, vous pouvez définir une nouvelle variante de produit mais vous n'allez créer que rarement de nouvelles catégories et/ou de nouveaux types. On vous explique cependant comment procéder un peu plus loin dans ce chapitre avec la création d'un <a href="#article" class="avoid-clicks">nouvel article</a> et de variantes dont le profil comptable est spécifique aux <a href="#coop" class="avoid-clicks">factures de ventes émises à destination des coopératives</a>.</p>
 	  <p class="texte">Pour les <strong>produits phytosanitaires</strong>, il est conseillé d'utiliser la fonction<img class="btn-gris icone-marge-gauche icone-marge-droite" src="../images/commun/importer.svg" alt="+ Importer">qui permet de bénéficier des informations réglementaires et actualisées en provenance d'E-Phy. La procédure est <a href="#phyto" class="avoid-clicks">expliquée ici</a>.</p>
       <h6>Guide de prise en main • Stocks et tiers • Nouvelle variante</h6>
       <a class="slice-process" id="nouvelle"></a>
@@ -961,7 +961,8 @@
 	  <p align="center" class="aerateur-haut aerateur-bas texte">
          <img src="../images/chapitre8/illus-laitier.png" alt="Illustration produits laitiers" width="450px" />
       </p>
-      <p class="texte">Dans l'exemple suivant, on vous explique comment créer une nouvelle catégorie, un nouveau type et enfin de nouvelles variantes pour permettre la gestion des stocks et la gestion des ventes d'un producteur de produits laitiers transformés.</p><div id="cont1" class="niveau">
+      <p class="texte">Dans l'exemple suivant, on vous explique comment créer une nouvelle catégorie, un nouveau type et enfin de nouvelles variantes pour permettre la gestion des stocks et la gestion des ventes d'un producteur de produits laitiers transformés.</p>
+	  <div id="cont1" class="niveau">
          <div id="gauge1" class="jauge"></div>
       </div>
       <script>
@@ -1078,6 +1079,118 @@
          <p class="max-img-process">
             <img src="../images/chapitre8/categorie11.png" class="contour-img" alt="Nouvelles matières" data-action="zoom" />
          </p>
+      </div>
+	  <h6>Guide de prise en main • Stocks et tiers • Variantes factures d'apport</h6>
+      <a class="slice-process" id="coop"></a>
+      <p align="center" class="texte aerateur procedure">5 – Procédure pour créer une variante pour une facture d'apport</p>
+      <p class="texte">Lors de l'édition d'une facture à destination d'une coopérative, le montant de la vente peut être défalqué par un approvisionnement &#40;semences de base&#41;, des prestations &#40;séchage&#41;, des retenues de charges &#40;analyses&#41; ou des retenues de taxes &#40;cotisations diverses&#41;. Pour que la facture enregistrée dans l'application corresponde à la facture d'apport émise par l'acheteur, il s'avère nécessaire de créer de nouvelles variantes dont la catégorie de produit &#40;le profil comptable&#41; a été personnalisée pour un passage correct des écritures en comptabilité.</p>
+	  <div id="cont6" class="niveau">
+         <div id="gauge6" class="jauge"></div>
+      </div>
+      <script>
+         document.addEventListener("DOMContentLoaded", function(event) {
+          var gNode1 = document.createElement('div');
+          gNode1.setAttribute("class", "jauge");
+          var gauge1 = new JustGage({
+              id: "gauge6",
+              value: 3,
+              width: 150,
+              height: 110,
+              min: 0,
+              max: 5,
+              decimals: 0,
+              customSectors: [{
+			  color : "#ff9900",
+          	  lo : 2,
+			  hi : 3
+         	  }],
+              pointer: true,
+              startAnimationTime: 1,
+          	  startAnimationType: "linear",
+          	  refreshAnimationTime: 1,
+          	  refreshAnimationType: "linear",
+              hideMinMax: true,
+          });
+      });
+      </script>
+      <p class="texte">Le processus suivant vous guide pour créer une nouvelle catégorie et une nouvelle variante de prestation de séchage dont le profil comptable est spécifique aux factures de ventes émises à destination des coopératives.</p>
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez les catégories de services</span>
+         <p>
+            Cliquez sur la clef anglaise<img src="../images/chapitre8/wrench2.svg" alt="clef anglaise" height="20" class="align-icone icone-marge-gauche icone-marge-droite">dans le "Menu principal" ou sur le bouton "Configuration" de la page d'accueil&nbsp;:
+         </p>
+         <p align="center"><img src="../images/chapitre8/wrench.svg" alt="Configuration" width="60"></p>
+         <p>Dans la barre latérale du module, cliquez sur "Catégories de produits" dans la section "Produit" symbolisée par l'icône d'un épi<img src="../images/chapitre8/wheat.svg" alt="Épi" height="20" class="align-icone icone-marge-gauche">.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre8/var-coop1.png" class="contour-img" alt="Catégories de produits" data-action="zoom" />
+         </p>
+		 <p>Cliquez sur le bouton "Services" pour afficher les catégories de services, puis cliquez sur le bouton<img class="btn-gris icone-marge-gauche icone-marge-droite" src="../images/commun/nouveau.svg" alt="+ Nouveau">à droite du menu.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre8/var-coop2.png" class="contour-img" alt="Catégories de produits" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Renseignez la nouvelle catégorie</span>
+         <p>Nommez la nouvelle catégorie, sélectionnez son type principal et cochez les cases<img src="../images/commun/check-square.svg" alt="Case à cocher" height="18" class="align-icone icone-marge-gauche icone-marge-droite">de la section "Type" en lien avec la catégorie pour la définir correctement. Pour chaque case activée, une nouvelle section apparaît avec différents champs à renseigner. Sélectionnez dans chaque liste déroulante les comptes comptables appropriés.</p>
+		 <p><strong>Notez que le compte de produit doit être le même que celui du compte d'achat</strong> &#40;60510000 dans cet exemple&#41;.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre8/var-coop3.png" class="contour-img" alt="Nouvelle catégorie de produits" data-action="zoom" />
+         </p>
+         <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre8/var-coop4.png" class="contour-img" alt="Nouvelle catégorie de produits" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52" />
+      </div>
+	  <div class="process-txt">
+         <span class="titre-advice">Accédez aux variantes de produits</span>
+         <p>Dans la barre latérale du module, cliquez sur "Variantes de produits" dans la section "Produit" symbolisée par l'icône d'un épi<img src="../images/chapitre8/wheat.svg" alt="Épi" height="20" class="align-icone icone-marge-gauche">.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre8/var-coop5.png" class="contour-img" alt="Variantes de produits" data-action="zoom" />
+         </p>
+		 <p>Cliquez sur le bouton "Services" pour afficher les variantes de services, puis cliquez sur le bouton<img class="btn-gris icone-marge-gauche icone-marge-droite" src="../images/commun/nouveau.svg" alt="+ Nouveau">à droite du menu.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre8/var-coop6.png" class="contour-img" alt="Variantes de produits" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step4.svg" alt="4" width="52" />
+      </div>
+	  <div class="process-txt">
+         <span class="titre-advice">Reseignez la nouvelle variante</span>
+         <p>Sélectionnez le "Type" dans la liste déroulante.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre8/var-coop7.png" class="contour-img" alt="Sélection type" data-action="zoom" />
+         </p>
+         <p class="max-img-process">
+            <img src="../images/chapitre8/var-coop8.png" class="contour-img" alt="Sélection type" data-action="zoom" />
+         </p>
+		 <p>Cliquez sur <span class="btn-blue">Suivant</span> pour valider l'opération.</p>
+		 <p class="aerateur-haut">Sélectionnez la "Catégorie" de produit créée à l'étape n<sup>o</sup> 2 de cette procédure.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre8/var-coop9.png" class="contour-img" alt="Variantes de produits" data-action="zoom" />
+         </p>
+		 <p class="aerateur-haut">Nommez la nouvelle variante de façon explicite car c'est son libellé qui permettra de la distinguer des autres, lors de la saisie de la facture de vente.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre8/var-coop10.png" class="contour-img" alt="Variantes de produits" data-action="zoom" />
+         </p>
+		 <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
+		 <p class="aerateur-haut">La nouvelle "Prestation de séchage &#40;coop&#41;" est maintenant disponible et s'ajoute à la "Prestation de séchage &#40;production végétale&#41;" déjà existante par défaut dans l'application.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre8/var-coop11.png" class="contour-img" alt="Liste des variantes de produits" data-action="zoom" />
+         </p>
+		 <p>Répétez cette procédure pour l'ensemble des autres prestations, charges et taxes qui peuvent figurer dans la facture d'apport émise par la coopérative.</p>
       </div>
       <h6>Guide de prise en main • Stocks et tiers • Gestion des stocks</h6>
       <a class="slice-process" id="stocks"></a>
