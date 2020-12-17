@@ -75,7 +75,7 @@
             {dates: [new Date(2020, 10, 10), new Date(2020, 10, 17)], title: "Version 3.22", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
             {dates: [new Date(2020, 10, 18), new Date(2020, 11, 2)], title: "Version 3.23", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
             {dates: [new Date(2020, 11, 3), new Date(2020, 11, 16)], title: "Version 3.24", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
-		 {dates: [new Date(2020, 11, 17), new Date(annee, mois, jour)], title: "Version 3.24", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
+         {dates: [new Date(2020, 11, 17), new Date(annee, mois, jour)], title: "Version 3.24", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
          ];
          
          var sections = [
@@ -177,7 +177,7 @@
                                        </ul>
                                     </div>
                                  </div>
-								 <div class="divTableRow">
+                                 <div class="divTableRow">
                                     <div class="divTableCellNoteVersion1" style="width: 60px">
                                        <img src="../images/notes-version/ventes.svg" alt="Ventes" width="60">
                                     </div>
@@ -192,7 +192,7 @@
                                     <div class="divTableCellNoteVersion4" style="width: auto">
                                        <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
                                        <ul>
-                                          <li>Correction de la mise en forme des devis et des factures générés au format PDF lorsque le document fait plusieurs pages en raison d'un grand nombre de lignes de vente.</li>
+                                          <li>Rectification de la mise en page des devis et des factures générés au format PDF lorsque le document contient plusieurs pages en raison d'un grand nombre de lignes de vente.</li>
                                        </ul>
                                     </div>
                                  </div>
@@ -212,12 +212,12 @@
                                        <ul>
                                           <li>Le bouton "Créer une réception" est maintenant affiché dans la vue détaillée d'une commande même si l'adresse du fournisseur n'a pas encore été renseignée&nbsp;;</li>
                                           <li>La saisie des montants dans les lignes d'achat d'une commande ou d'une facture est désormais dynamiquement limitée à 2 chiffres après la virgule afin de prévenir les erreurs de calcul automatique de la balance comptable&nbsp;;</li>
-										  <li>Accélération de l'affichage des listes volumineuses des factures d'achat.</li>
+                                          <li>Accélération de l'affichage des listes volumineuses des factures d'achat.</li>
                                        </ul>
                                        <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
                                        <ul>
-                                          <li>Dans le processus d'achat, l'affichage de la référence fournisseur et du n° du bon de réception dans les fenêtres modales permettant les rapprochements est de nouveau actif&nbsp;;</li>
-										  <li>Le statut d'une facture d'achat qui n'a pas fait l'objet d'un rapprochement avec une réception est de nouveau correctement intitulé.</li>
+                                          <li>Dans le processus d'achat, l'affichage de la référence fournisseur et du n<sup>o</sup> du bon de réception dans les fenêtres modales permettant les rapprochements est de nouveau actif&nbsp;;</li>
+                                          <li>Le statut d'une facture d'achat qui n'a pas fait l'objet d'un rapprochement avec une réception est de nouveau correctement intitulé.</li>
                                        </ul>
                                     </div>
                                  </div>
@@ -238,13 +238,13 @@
                                        <ul>
                                           <li>Un nouveau message prévient l'utilisateur lorsque la date d'une intervention est antérieure ou postérieure à celles définies pour la période de production de la culture ciblée&nbsp;;</li>
                                           <li>Dans la vue détaillée d'un équipement, les interventions de "Réparation et maintenance" sont désormais dissociées des interventions pour lesquelles l'équipement est utilisé en tant qu'outil&nbsp;;</li>
-										  <li>Accélération de l'affichage des activités lorsque leur nombre est particulièrement important.</li>
+                                          <li>Accélération de l'affichage d'une activité lorsque le nombre de productions est particulièrement important.</li>
                                        </ul>
                                        <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
                                        <ul>
                                           <li>Lorsque l'utilisateur a déjà défini la date et l'heure de fin d'une intervention, la modification de la date et de l'heure de début n'impacte plus automatiquement la date et l'heure de fin&nbsp;;</li>
-                                          <li>Correction de l'enregistrement d'une intervention de pulvérisation dont la quantité de produit phytosanitaire est comptée en unité&nbsp;;</li>
-                                          <li>Correction de la disparition des prestations de service lorsqu'une intervention a été initialement planifiée.</li>
+                                          <li>L'enregistrement d'une intervention de pulvérisation dont la quantité de produit phytosanitaire est comptée en unité est désormais fonctionnel&nbsp;;</li>
+                                          <li>Dans une intervention initialement planifiée, les prestations de service sont de nouveau consultables et modifiables.</li>
                                        </ul>
                                     </div>
                                  </div>
@@ -267,27 +267,19 @@
                                        </ul>
                                     </div>
                                  </div>
-								 <div class="divTableRow">
+                                 <div class="divTableRow">
                                     <div class="divTableCellNoteVersion1"><img src="../images/notes-version/app.svg" alt="Application mobile" width="60"></div>
                                     <div class="divTableCellNoteVersion2">
                                        <strong>Application mobile</strong><br /><br />
-                                       5 améliorations et 1 bug corrigé
+                                       1 amélioration
                                     </div>
                                  </div>
                                  <div class="divTableRow">
                                     <div class="divTableCellNoteVersion3" style="width: 60px"></div>
                                     <div class="divTableCellNoteVersion4" style="width: auto">
-                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                                        <ul>
-                                          <li>Amélioration des performances de la synchronisation initiale de l'application mobile Zero avec l'instance <strong>Eky</strong>agri&nbsp;;</li>
-                                          <li>Suppression du bouton permettant d'enregistrer des interventions classées dans la section "Production animale"&nbsp;;</li>
-										  <li>Lors de l'enregistrement d'une intervention de "Désherbinage", les informations relatives aux produits phytosanitaires sont maintenant affichées&nbsp;;</li>
-										  <li>Lors de l'enregistrement d'une intervention de "Désherbage manuel", la sélection d'un herbicide n'est plus disponible&nbsp;;</li>
-                                          <li>Ajout de traductions d'unités manquantes.</li>
-                                       </ul>
-									   <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
-                                       <ul>
-                                          <li>Les quantités d'intrants et d'extrants sont maintenant correctement reportées dans l'application en ligne <strong>Eky</strong>agri.</li>
+                                          <li>Amélioration des performances de la synchronisation initiale de l'application mobile Zero avec l'instance <strong>Eky</strong>agri.</li>
                                        </ul>
                                     </div>
                                  </div>
@@ -295,7 +287,7 @@
                            </div>
                         </div>
                      </div>
-					 <div class="panel">
+                     <div class="panel">
                         <div class="heading">
                            <div class="version">
                               <h2>Note de version 3.24 du 3/12/2020</h2>
@@ -385,7 +377,7 @@
                                     <div class="divTableCellNoteVersion3" style="width: 60px">
                                     </div>
                                     <div class="divTableCellNoteVersion4" style="width: auto">
-									   <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                                        <ul>
                                           <li>Dans la vue condensée des éléments d'une réception, un nouvel en-tête affiche l'intitulé des colonnes qui composent le tableau récapitulatif.</li>
                                        </ul>
@@ -401,7 +393,7 @@
                                     </div>
                                     <div class="divTableCellNoteVersion2" style="width: auto">
                                        <strong>Production</strong><br /><br />
-                                       4 améliorations et 4 bugs corrigés
+                                       5 améliorations et 4 bugs corrigés
                                     </div>
                                  </div>
                                  <div class="divTableRow">
@@ -413,7 +405,8 @@
                                           <li>Les informations d'une parcelle &#40;périmètre et surface&#41; et l'échelle du zoom, initialement situées à droite de la carte, ont été déplacées en bas à gauche de celle-ci afin de ne plus être masquées lorsque la légende contient une liste importante d'activités&nbsp;;</li>
                                           <li>Dans une intervention avec prestation de service et grâce à un nouveau tri, seules les commandes et les lignes de commande comprenant une prestation de service sont affichées dans la liste déroulante des propositions filtrées&nbsp;;</li>
                                           <li>Dans une intervention de "Réparation et maintenance", le filtre de la liste déroulante "Outils" n'affiche désormais que les équipements déjà créés&nbsp;;</li>
-                                          <li>La possibilité de supprimer une parcelle est réactivée dans la vue détaillée d'une production si celle-ci ne contient aucune culture et lorsqu'aucune intervention n'a été préalablement enregistrée.</li>
+                                          <li>La possibilité de supprimer une parcelle est réactivée dans la vue détaillée d'une production si celle-ci ne contient aucune culture et lorsqu'aucune intervention n'a été préalablement enregistrée&nbsp;;</li>
+										  <li>Possibilité de personnaliser, grâce à un nouveau champ libre, le nom des parcelles des plantations pérennes afin de remplacer celui défini par défaut pour les plantations annuelles.</li>
                                        </ul>
                                        <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
                                        <ul>
@@ -439,7 +432,7 @@
                                     <div class="divTableCellNoteVersion4" style="width: auto">
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                                        <ul>
-                                          <li>Le format de nommage des parcelles permet désormais la création et l'utilisation d'un champ libre. Il est possible de personnaliser ainsi le nom des parcelles des plantations pérennes et de remplacer celui défini par défaut pour les plantations annuelles.</li>
+                                          <li>Le format de nommage des parcelles permet désormais la création et l'utilisation d'un nouveau champ libre pour personnaliser le nom des parcelles lors de la création des productions.</li>
                                        </ul>
                                     </div>
                                  </div>
@@ -3066,6 +3059,167 @@
       <!-- Section pour la génération du PDF -->
       <div class="saut-page"></div>
       <div class="heading-print marge aerateur-haut">
+         <h2>Note de version 3.25 du 17/12/2020</h2>
+      </div>
+      <div class="content-print marge">
+         <div class="divTableNoteVersion">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/modules.svg" alt="modules" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Commun à plusieurs modules</strong><br /><br />
+                     1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>Le filtre de la liste déroulante "Options" présent dans l'en-tête de recherche des matières et des variantes est maintenant fonctionnel.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Comptabilité</strong><br /><br />
+                     1 amélioration
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>Le Grand-livre est maintenant exporté avec une colonne supplémentaire mentionnant la variante concernée par l'écriture.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/ventes.svg" alt="Ventes" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Ventes</strong><br /><br />
+                     1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>Rectification de la mise en page des devis et des factures générés au format PDF lorsque le document contient plusieurs pages en raison d'un grand nombre de lignes de vente.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/achats.svg" alt="Achats" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Achats</strong><br /><br />
+                     3 améliorations et 2 bugs corrigés
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>Le bouton "Créer une réception" est maintenant affiché dans la vue détaillée d'une commande même si l'adresse du fournisseur n'a pas encore été renseignée&nbsp;;</li>
+                        <li>La saisie des montants dans les lignes d'achat d'une commande ou d'une facture est désormais dynamiquement limitée à 2 chiffres après la virgule afin de prévenir les erreurs de calcul automatique de la balance comptable&nbsp;;</li>
+                        <li>Accélération de l'affichage des listes volumineuses des factures d'achat.</li>
+                     </ul>
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
+                     <ul>
+                        <li>Dans le processus d'achat, l'affichage de la référence fournisseur et du n<sup>o</sup> du bon de réception dans les fenêtres modales permettant les rapprochements est de nouveau actif&nbsp;;</li>
+                        <li>Le statut d'une facture d'achat qui n'a pas fait l'objet d'un rapprochement avec une réception est de nouveau correctement intitulé.</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="content-print marge">
+         <div class="divTableNoteVersion">
+            <div class="divTableBody">
+               <div class="saut-page"></div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Production</strong><br /><br />
+                     3 améliorations et 3 bugs corrigés
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>Un nouveau message prévient l'utilisateur lorsque la date d'une intervention est antérieure ou postérieure à celles définies pour la période de production de la culture ciblée&nbsp;;</li>
+                        <li>Dans la vue détaillée d'un équipement, les interventions de "Réparation et maintenance" sont désormais dissociées des interventions pour lesquelles l'équipement est utilisé en tant qu'outil&nbsp;;</li>
+                        <li>Accélération de l'affichage d'une activité lorsque le nombre de productions est particulièrement important.</li>
+                     </ul>
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
+                     <ul>
+                        <li>Lorsque l'utilisateur a déjà défini la date et l'heure de fin d'une intervention, la modification de la date et de l'heure de début n'impacte plus automatiquement la date et l'heure de fin&nbsp;;</li>
+                        <li>L'enregistrement d'une intervention de pulvérisation dont la quantité de produit phytosanitaire est comptée en unité est désormais fonctionnel&nbsp;;</li>
+                        <li>Dans une intervention initialement planifiée, les prestations de service sont de nouveau consultables et modifiables.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/outils.svg" alt="Outils" width="60px">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Outils</strong><br /><br />
+                     1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>L'export au format PDF du "Registre phytosanitaire", après la sélection d'une ou plusieurs campagnes, est de nouveau fonctionnel.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1"><img src="../images/notes-version/app.svg" alt="Application mobile" width="60"></div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Application mobile</strong><br /><br />
+                     1 amélioration
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>Amélioration des performances de la synchronisation initiale de l'application mobile Zero avec l'instance <strong>Eky</strong>agri.</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="saut-page"></div>
+      <div class="heading-print marge aerateur-haut">
          <h2>Note de version 3.24 du 3/12/2020</h2>
       </div>
       <div class="content-print marge">
@@ -3158,9 +3312,9 @@
                   <div class="divTableCellNoteVersion3" style="width: 60px">
                   </div>
                   <div class="divTableCellNoteVersion4" style="width: auto">
-					 <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                      <ul>
-                     	<li>Dans la vue condensée des éléments d'une réception, un nouvel en-tête affiche l'intitulé des colonnes qui composent le tableau récapitulatif.</li>
+                        <li>Dans la vue condensée des éléments d'une réception, un nouvel en-tête affiche l'intitulé des colonnes qui composent le tableau récapitulatif.</li>
                      </ul>
                      <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
                      <ul>
@@ -3174,7 +3328,7 @@
                   </div>
                   <div class="divTableCellNoteVersion2" style="width: auto">
                      <strong>Production</strong><br /><br />
-                     4 améliorations et 4 bugs corrigés
+                     5 améliorations et 4 bugs corrigés
                   </div>
                </div>
                <div class="divTableRow">
@@ -3186,7 +3340,8 @@
                         <li>Les informations d'une parcelle &#40;périmètre et surface&#41; et l'échelle du zoom, initialement situées à droite de la carte, ont été déplacées en bas à gauche de celle-ci afin de ne plus être masquées lorsque la légende contient une liste importante d'activités&nbsp;;</li>
                         <li>Dans une intervention avec prestation de service et grâce à un nouveau tri, seules les commandes et les lignes de commande comprenant une prestation de service sont affichées dans la liste déroulante des propositions filtrées&nbsp;;</li>
                         <li>Dans une intervention de "Réparation et maintenance", le filtre de la liste déroulante "Outils" n'affiche désormais que les équipements déjà créés&nbsp;;</li>
-                        <li>La possibilité de supprimer une parcelle est réactivée dans la vue détaillée d'une production si celle-ci ne contient aucune culture et lorsqu'aucune intervention n'a été préalablement enregistrée.</li>
+                        <li>La possibilité de supprimer une parcelle est réactivée dans la vue détaillée d'une production si celle-ci ne contient aucune culture et lorsqu'aucune intervention n'a été préalablement enregistrée&nbsp;;</li>
+						<li>Possibilité de personnaliser, grâce à un nouveau champ libre, le nom des parcelles des plantations pérennes afin de remplacer celui défini par défaut pour les plantations annuelles.</li>
                      </ul>
                      <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
                      <ul>
@@ -3212,7 +3367,7 @@
                   <div class="divTableCellNoteVersion4" style="width: auto">
                      <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                      <ul>
-                        <li>Le format de nommage des parcelles permet désormais la création et l'utilisation d'un champ libre. Il est possible de personnaliser ainsi le nom des parcelles des plantations pérennes et de remplacer celui défini par défaut pour les plantations annuelles.</li>
+                        <li>Le format de nommage des parcelles permet désormais la création et l'utilisation d'un nouveau champ libre pour personnaliser le nom des parcelles lors de la création des productions.</li>
                      </ul>
                   </div>
                </div>
