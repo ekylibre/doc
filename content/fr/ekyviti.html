@@ -185,7 +185,7 @@
                      <div>
                         <h3>
                            <div class="rond-ekyagri">8</div>
-                           Stocks et tiers
+                           Stocks, tiers et RH
                         </h3>
                         <span class="the-btn"><i class="far fa-angle-down"></i></span>
                         <div class="clear"></div>
@@ -362,7 +362,7 @@
          <div class="info-txt">
             <span class="titre-advice">Paramétrage des données parcellaires<br /></span>
             <p class="texte-advice">
-               Pour pouvoir paramétrer votre parcellaire cultural à partir des informations cadastrales du <span class="tooltip">CVI<span class="tooltiptext tooltip-top">Voir glossaire</span></span>, il est nécessaire d'adapter les données de votre exploitation pour les rendre compatibles avec le système de gestion parcellaire d'Ekylibre. Cette opération peut paraître fastidieuse au premier abord car elle est aujourd'hui basée sur l'intégration d'un fichier au format <span class="tooltip">CSV<span class="tooltiptext tooltip-top">Voir glossaire</span></span> &#40;un tableau sous la forme d'une feuille de calcul&#41;. Elle évoluera et sera simplifiée dans une future version d'<strong>Eky</strong>viti avec la prise en charge des fichiers <span class="tooltip">PDF<span class="tooltiptext tooltip-top">Voir glossaire</span></span> délivrés par le CVI. Notez que cette phase de préparation des données ne doit être réalisée qu'<strong>une seule fois</strong> pour bien démarrer.
+               Pour pouvoir paramétrer votre parcellaire cultural à partir des informations cadastrales du <span class="tooltip">CVI<span class="tooltiptext tooltip-top">Voir glossaire</span></span>, il est nécessaire d'adapter les données de votre exploitation pour les rendre compatibles avec le système de gestion parcellaire d'<strong>Eky</strong>agri. Cette opération peut paraître fastidieuse au premier abord car elle est aujourd'hui basée sur l'intégration d'un fichier au format <span class="tooltip">CSV<span class="tooltiptext tooltip-top">Voir glossaire</span></span> &#40;un tableau sous la forme d'une feuille de calcul&#41;. Elle évoluera et sera simplifiée dans une future version d'<strong>Eky</strong>viti avec la prise en charge des fichiers <span class="tooltip">PDF<span class="tooltiptext tooltip-top">Voir glossaire</span></span> délivrés par le CVI. Notez que cette phase de préparation des données ne doit être réalisée qu'<strong>une seule fois</strong> pour bien démarrer.
             </p>
          </div>
       </div>
@@ -471,9 +471,13 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Créez un nouvel "Import"</span>
-         <p>Cliquez sur le bouton "Nouveau" puis sélectionnez "Casier Viticole Informatisé &#40;CSV&#41;" dans la liste déroulante des types d'imports disponibles dans l'application.</p>
+         <p>Cliquez sur le bouton<img class="btn-gris icone-marge-gauche icone-marge-droite" src="../images/commun/nouveau.svg" alt="+ Nouveau">en haut à gauche de la fenêtre principale.</p>
          <p class="max-img-process">
             <img src="../images/ekyviti/import-csv2.png" class="contour-img" alt="Sélection du type d'import" data-action="zoom" />
+         </p>
+		 <p>Puis, dans le pavé "Ekylibre" de la section "Production végétale", sélectionnez "Casier Viticole Informatisé &#40;CSV&#41;" dans la liste déroulante des types de fichiers.</p>
+		 <p class="max-img-process">
+            <img src="../images/ekyviti/import-csv3.png" class="contour-img" alt="Sélection du type d'import" data-action="zoom" />
          </p>
       </div>
       <br />
@@ -484,9 +488,9 @@
          <span class="titre-advice">Sélectionnez le fichier CSV</span>
          <p>Cliquez sur le bouton "Parcourir" pour sélectionner le fichier CSV contenant les informations du CVI.</p>
          <p class="max-img-process">
-            <img src="../images/ekyviti/import-csv3.png" class="contour-img" alt="Sélection import CVI" data-action="zoom" />
+            <img src="../images/ekyviti/import-csv4.png" class="contour-img" alt="Sélection import CVI" data-action="zoom" />
          </p>
-         <p>Cliquez sur <span class="btn-purple">Créer</span> pour valider l'opération.</p>
+         <p>Cliquez sur <span class="btn-purple">Importer</span> pour valider l'opération.</p>
       </div>
       <br />
       <div class="floating-box process">
@@ -496,7 +500,7 @@
          <span class="titre-advice">Lancez l'import des données</span>
          <p>Cliquez sur le bouton "Exécuter" pour valider l'import des données dans <strong>Eky</strong>viti. En cas d'incompatibilité, l'application vous avertit qu'une erreur est survenue.</p>
          <p class="max-img-process">
-            <img src="../images/ekyviti/import-csv4.png" class="contour-img" alt="Exécution import" data-action="zoom" />
+            <img src="../images/ekyviti/import-csv5.png" class="contour-img" alt="Exécution import" data-action="zoom" />
          </p>
       </div>
       <br />
@@ -507,7 +511,7 @@
          <span class="titre-advice">Patientez quelques instants</span>
          <p>La barre de progression vous indique l'avancée du transfert des données qui peut prendre plus ou moins de temps en fonction du nombre de parcelles cadastrales à traiter.</p>
          <p class="max-img-process">
-            <img src="../images/ekyviti/import-csv5.png" class="contour-img" alt="Progression import" data-action="zoom" />
+            <img src="../images/ekyviti/import-csv6.png" class="contour-img" alt="Progression import" data-action="zoom" />
          </p>
       </div>
       <br />
@@ -518,7 +522,7 @@
          <span class="titre-advice">Affichez les notifications</span>
          <p>Une fois que la barre d'avancement disparaît, la pastille rouge<img src="../images/commun/marker.svg" alt="Notification" height="20" class="align-icone icone-marge-gauche icone-marge-droite">en haut à droite de la cloche<img src="../images/ekyviti/bell-o-purple.svg" alt="Cloche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">vous indique qu'une opération interne a été effectuée par l'application. Cliquez sur celle-ci pour afficher la notification. En cas d'erreur, vous serez informé&#40;e&#41; de la nature de celle-ci.</p>
          <p class="max-img-process">
-            <img src="../images/ekyviti/import-csv6.png" class="contour-img" alt="Affichage notifications" data-action="zoom" />
+            <img src="../images/ekyviti/import-csv7.png" class="contour-img" alt="Affichage notifications" data-action="zoom" />
          </p>
       </div>
       <br />
@@ -529,7 +533,7 @@
          <span class="titre-advice">Vérifiez l'import du casier viticole informatisé</span>
          <p>Cliquez sur le lien "Casier Viticole Informatisé" dans la section "Cartographie" du module "Outils" pour vérifier la présence du nouveau casier viticole informatisé.</p>
          <p class="max-img-process">
-            <img src="../images/ekyviti/import-csv7.png" class="contour-img" alt="Affichage CVI" data-action="zoom" />
+            <img src="../images/ekyviti/import-csv8.png" class="contour-img" alt="Affichage CVI" data-action="zoom" />
          </p>
       </div>
       <h6>Guide de prise en main • Ekyviti • Conversion du parcellaire cadastral</h6>
@@ -1430,7 +1434,7 @@
                <li>
                   <a href="../chapitre8">
                   <i class="fas fa-lg fa-flip-horizontal fa-truck"></i>
-                  <span class="text">&nbsp;Stocks et tiers</span>
+                  <span class="text">&nbsp;Stocks, tiers et RH</span>
                   </a>
                </li>
                <li>
