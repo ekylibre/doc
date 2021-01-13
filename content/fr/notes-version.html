@@ -75,7 +75,8 @@
             {dates: [new Date(2020, 10, 10), new Date(2020, 10, 17)], title: "Version 3.22", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
             {dates: [new Date(2020, 10, 18), new Date(2020, 11, 2)], title: "Version 3.23", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
             {dates: [new Date(2020, 11, 3), new Date(2020, 11, 16)], title: "Version 3.24", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
-         {dates: [new Date(2020, 11, 17), new Date(annee, mois, jour)], title: "Version 3.24", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
+            {dates: [new Date(2020, 11, 17), new Date(2020, 12, 12)], title: "Version 3.24", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
+         {dates: [new Date(2020, 12, 13), new Date(annee, mois, jour)], title: "Version 3.24", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}}
          ];
          
          var sections = [
@@ -108,14 +109,14 @@
          class="panel-radios" type="radio" name="tab-radios" checked>
       <input id="panel-2-ctrl"
          class="panel-radios" type="radio" name="tab-radios">
-	  <input id="panel-3-ctrl"
+      <input id="panel-3-ctrl"
          class="panel-radios" type="radio" name="tab-radios">
       <input id="nav-ctrl"
          class="panel-radios" type="checkbox" name="nav-checkbox">
       <ul id="tabs-list">
          <label id="open-nav-label" for="nav-ctrl"></label>
          <div id="years">
-			<li id="li-for-panel-1">
+            <li id="li-for-panel-1">
                <label class="panel-label"
                   for="panel-1-ctrl">2021</label>
             </li>
@@ -132,24 +133,119 @@
       </ul>
       <article id="panels">
          <div class="container">
-			<section id="panel-1">
+            <section id="panel-1">
                <main>
                   <div class="accordion-container marge">
                      <div class="panel">
                         <div class="heading">
                            <div class="version">
-                              <h2>Note de version 3.26 du XX/01/2021 &#40;en cours&#41;</h2>
+                              <h2>Note de version 3.26 du 13/01/2021</h2>
                            </div>
                            <i class="fa fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
                               <div class="divTableBody">
-								 <div class="divTableRow">
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Comptabilité</strong><br /><br />
+                                       1 bug corrigé
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+                                          <li>Correction du calcul de l'amortissement des immobilisations cédées ou mises au rebut lorsque la date de référence de l'export est en dehors de la période de dépréciation.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/ventes.svg" alt="Ventes" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Ventes</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>L'enregistrement d'un prix unitaire dans les lignes des factures de ventes permet désormais une saisie jusqu'à quatre décimales pour un calcul plus précis des montants HT, de la TVA et des montants TTC.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/achats.svg" alt="Achats" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Achats</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>L'enregistrement d'un prix unitaire dans les lignes des commandes et des factures d'achats permet désormais une saisie jusqu'à quatre décimales pour un calcul plus précis des montants HT, de la TVA et des montants TTC.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Production</strong><br /><br />
+                                       2 bugs corrigés
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
+                                       <ul>
+                                          <li>Le calcul d'un budget est maintenant automatiquement mis à jour en cas de suppression d'une production&nbsp;;</li>
+                                          <li>Correction des calculs erronés des surfaces et des stocks résultants d'un changement d'unité lors de l'enregistrement d'une intervention de "Paillage/Mulching".</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/rh.svg" alt="Ressources humaines" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>RH</strong><br /><br />
+                                       1 bug corrigé
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+                                          <li>La création à la volée d'une personne lors de l'enregistrement d'un nouvel équipier permet de définir un nouvel employé et non plus seulement une nouvelle organisation.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
                                     <div class="divTableCellNoteVersion1"><img src="../images/notes-version/app.svg" alt="Application mobile" width="60"></div>
                                     <div class="divTableCellNoteVersion2">
                                        <strong>Application mobile</strong><br /><br />
-                                       4 améliorations et 1 bug corrigé
+                                       5 améliorations et 2 bugs corrigés
                                     </div>
                                  </div>
                                  <div class="divTableRow">
@@ -160,10 +256,12 @@
                                           <li>Suppression du bouton permettant d'enregistrer des interventions classées dans la section "Production animale"&nbsp;;</li>
                                           <li>Lors de l'enregistrement d'une intervention de "Désherbinage", les informations relatives aux produits phytosanitaires sont maintenant affichées&nbsp;;</li>
                                           <li>Lors de l'enregistrement d'une intervention de "Désherbage manuel", la sélection d'un herbicide n'est plus disponible&nbsp;;</li>
+                                          <li>Amélioration de l'enregistrement des dates et des temps d'intervention avec une primauté des temps de travaux détaillés sur la saisie initiale lorsqu'ils ont été renseignés&nbsp;;</li>
                                           <li>Ajout de traductions d'unités manquantes.</li>
                                        </ul>
-                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
                                        <ul>
+                                          <li>Le passage d'une intervention de l'état "Planifiée" vers l'état "Terminée" est désormais autorisé même si les temps de travaux détaillés n'ont pas été renseignés&nbsp;;</li>
                                           <li>Les quantités d'intrants utilisés et d'extrants récoltés sont maintenant correctement reportées dans l'application en ligne <strong>Eky</strong>agri.</li>
                                        </ul>
                                     </div>
@@ -455,7 +553,7 @@
                                           <li>Dans une intervention avec prestation de service et grâce à un nouveau tri, seules les commandes et les lignes de commande comprenant une prestation de service sont affichées dans la liste déroulante des propositions filtrées&nbsp;;</li>
                                           <li>Dans une intervention de "Réparation et maintenance", le filtre de la liste déroulante "Outils" n'affiche désormais que les équipements déjà créés&nbsp;;</li>
                                           <li>La possibilité de supprimer une parcelle est réactivée dans la vue détaillée d'une production si celle-ci ne contient aucune culture et lorsqu'aucune intervention n'a été préalablement enregistrée&nbsp;;</li>
-										  <li>Possibilité de personnaliser, grâce à un nouveau champ libre, le nom des parcelles des plantations pérennes afin de remplacer celui défini par défaut pour les plantations annuelles.</li>
+                                          <li>Possibilité de personnaliser, grâce à un nouveau champ libre, le nom des parcelles des plantations pérennes afin de remplacer celui défini par défaut pour les plantations annuelles.</li>
                                        </ul>
                                        <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
                                        <ul>
@@ -3108,6 +3206,143 @@
       <!-- Section pour la génération du PDF -->
       <div class="saut-page"></div>
       <div class="heading-print marge aerateur-haut">
+         <h2>Note de version 3.26 du 13/01/2021</h2>
+      </div>
+      <div class="content-print marge">
+         <div class="divTableNoteVersion">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Comptabilité</strong><br /><br />
+                     1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>Correction du calcul de l'amortissement des immobilisations cédées ou mises au rebut lorsque la date de référence de l'export est en dehors de la période de dépréciation.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/ventes.svg" alt="Ventes" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Ventes</strong><br /><br />
+                     1 amélioration
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>L'enregistrement d'un prix unitaire dans les lignes des factures de ventes permet désormais une saisie jusqu'à quatre décimales pour un calcul plus précis des montants HT, de la TVA et des montants TTC.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/achats.svg" alt="Achats" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Achats</strong><br /><br />
+                     1 amélioration
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>L'enregistrement d'un prix unitaire dans les lignes des commandes et des factures d'achats permet désormais une saisie jusqu'à quatre décimales pour un calcul plus précis des montants HT, de la TVA et des montants TTC.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Production</strong><br /><br />
+                     2 bugs corrigés
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
+                     <ul>
+                        <li>Le calcul d'un budget est maintenant automatiquement mis à jour en cas de suppression d'une production&nbsp;;</li>
+                        <li>Correction des calculs erronés des surfaces et des stocks résultants d'un changement d'unité lors de l'enregistrement d'une intervention de "Paillage/Mulching".</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/rh.svg" alt="Ressources humaines" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>RH</strong><br /><br />
+                     1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>La création à la volée d'une personne lors de l'enregistrement d'un nouvel équipier permet de définir un nouvel employé et non plus seulement une nouvelle organisation.</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="content-print marge">
+         <div class="divTableNoteVersion">
+            <div class="divTableBody">
+               <div class="saut-page"></div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1"><img src="../images/notes-version/app.svg" alt="Application mobile" width="60"></div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Application mobile</strong><br /><br />
+                     5 améliorations et 2 bugs corrigés
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>Suppression du bouton permettant d'enregistrer des interventions classées dans la section "Production animale"&nbsp;;</li>
+                        <li>Lors de l'enregistrement d'une intervention de "Désherbinage", les informations relatives aux produits phytosanitaires sont maintenant affichées&nbsp;;</li>
+                        <li>Lors de l'enregistrement d'une intervention de "Désherbage manuel", la sélection d'un herbicide n'est plus disponible&nbsp;;</li>
+                        <li>Amélioration de l'enregistrement des dates et des temps d'intervention avec une primauté des temps de travaux détaillés sur la saisie initiale lorsqu'ils ont été renseignés&nbsp;;</li>
+                        <li>Ajout de traductions d'unités manquantes.</li>
+                     </ul>
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
+                     <ul>
+                        <li>Le passage d'une intervention de l'état "Planifiée" vers l'état "Terminée" est désormais autorisé même si les temps de travaux détaillés n'ont pas été renseignés&nbsp;;</li>
+                        <li>Les quantités d'intrants utilisés et d'extrants récoltés sont maintenant correctement reportées dans l'application en ligne <strong>Eky</strong>agri.</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="saut-page"></div>
+      <div class="heading-print marge aerateur-haut">
          <h2>Note de version 3.25 du 17/12/2020</h2>
       </div>
       <div class="content-print marge">
@@ -3390,7 +3625,7 @@
                         <li>Dans une intervention avec prestation de service et grâce à un nouveau tri, seules les commandes et les lignes de commande comprenant une prestation de service sont affichées dans la liste déroulante des propositions filtrées&nbsp;;</li>
                         <li>Dans une intervention de "Réparation et maintenance", le filtre de la liste déroulante "Outils" n'affiche désormais que les équipements déjà créés&nbsp;;</li>
                         <li>La possibilité de supprimer une parcelle est réactivée dans la vue détaillée d'une production si celle-ci ne contient aucune culture et lorsqu'aucune intervention n'a été préalablement enregistrée&nbsp;;</li>
-						<li>Possibilité de personnaliser, grâce à un nouveau champ libre, le nom des parcelles des plantations pérennes afin de remplacer celui défini par défaut pour les plantations annuelles.</li>
+                        <li>Possibilité de personnaliser, grâce à un nouveau champ libre, le nom des parcelles des plantations pérennes afin de remplacer celui défini par défaut pour les plantations annuelles.</li>
                      </ul>
                      <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
                      <ul>
