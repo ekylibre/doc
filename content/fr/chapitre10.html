@@ -2029,10 +2029,11 @@
             Cliquez sur le lien "Outils" dans le "Menu principal" ou sur le bouton "Outils" de la page d'accueil&nbsp;:
          </p>
          <p align="center"><img src="../images/chapitre10/magic.svg" alt="Outils" width="60"></p>
-         <p>Dans la barre latérale du module, cliquez sur "Extractions" dans la section "Échange" symbolisée par l'icône représentant 2 flèches<img src="../images/chapitre10/exchange.svg" alt="Échange" height="20" class="align-icone icone-marge-gauche"> &#40;par défaut, la liste des processus d'extraction de données est vide&#41;, puis cliquez sur le bouton "Nouveau".</p>
+         <p>Dans la barre latérale du module, cliquez sur "Extractions" dans la section "Échange" symbolisée par l'icône représentant 2 flèches<img src="../images/chapitre10/exchange.svg" alt="Échange" height="20" class="align-icone icone-marge-gauche">.</p>
          <p class="max-img-process">
             <img src="../images/chapitre10/extractions1.png" class="contour-img" alt="Liste des extractions" data-action="zoom" />
          </p>
+		 <p>Tous les processus d'extraction de données déjà créés sont listés ici.</p>
       </div>
       <br />
       <div class="floating-box process">
@@ -2040,9 +2041,13 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Créez un nouveau processus</span>
+		 <p>Cliquez sur le bouton<img class="btn-gris icone-marge-gauche icone-marge-droite" src="../images/commun/nouveau.svg" alt="+ Nouveau">en haut à gauche de la fenêtre principale.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre10/extractions2.png" class="contour-img" alt="Sélection de la racine" data-action="zoom" />
+         </p>
          <p>Nommez le nouveau processus et sélectionnez la <span class="tooltip">table<span class="tooltiptext tooltip-top">Voir glossaire</span></span> principale dans la liste déroulante "Racine". Dans l'application, les factures de vente sont rattachées à la <span class="tooltip">table<span class="tooltiptext tooltip-top">Voir glossaire</span></span> "Ventes", il faut donc sélectionner celle-ci en premier.</p>
          <p class="max-img-process">
-            <img src="../images/chapitre10/extractions2.png" class="contour-img" alt="Sélection de la racine" data-action="zoom" />
+            <img src="../images/chapitre10/extractions3.png" class="contour-img" alt="Sélection de la racine" data-action="zoom" />
          </p>
       </div>
       <br />
@@ -2051,9 +2056,9 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Validez le processus</span>
-         <p>Renseignez enfin de manière explicite la description du rôle du nouveau processus comme par exemple "Liste les factures impayées au 1 septembre 2019".</p>
+         <p>Renseignez enfin de manière explicite la description du rôle du nouveau processus comme par exemple "Liste les tiers avec factures impayées supérieures à 100 € au 1er septembre 2020".</p>
          <p class="max-img-process">
-            <img src="../images/chapitre10/extractions3.png" class="contour-img" alt="Validation du processus d'extractions" data-action="zoom" />
+            <img src="../images/chapitre10/extractions4.png" class="contour-img" alt="Validation du processus d'extractions" data-action="zoom" />
          </p>
          <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
       </div>
@@ -2065,7 +2070,7 @@
          <span class="titre-advice">Construisez le processus</span>
          <p>La <span class="tooltip">table<span class="tooltiptext tooltip-top">Voir glossaire</span></span> racine "Vente" permet de définir le premier critère de recherche. Sélectionnez "Montant HT" dans la liste déroulante, puis cliquez sur le bouton "Ajouter". Notez que la liste déroulante est scindée en 2 parties&nbsp;: une première dont les éléments appartiennent à la table "Vente" et une seconde qui regroupe des "Tables liées".</p>
          <p class="max-img-process">
-            <img src="../images/chapitre10/extractions4.png" class="contour-img" alt="Construction de l'extraction" data-action="zoom" />
+            <img src="../images/chapitre10/extractions5.png" class="contour-img" alt="Construction de l'extraction" data-action="zoom" />
          </p>
          <p>Le critère "Montant HT" est alors affiché à droite du symbole<img src="../images/chapitre10/columns.svg" alt="Table" height="20" class="align-icone icone-marge-gauche icone-marge-droite">ainsi que la case à cocher<img src="../images/commun/check-square.svg" alt="Case à cocher" height="18" class="align-icone icone-marge-gauche icone-marge-droite">permettant d'activer ou non celui-ci lors d'une extraction.</p>
       </div>
@@ -2077,10 +2082,10 @@
          <span class="titre-advice">Paramétrez un premier filtre de tri</span>
          <p>Cliquez sur le bouton "Ajouter un filtre", puis définissez la condition "supérieur à" avec le montant désiré &#40;100&#41; et cliquez sur le bouton "Valider" pour enregistrer le filtre.</p>
          <p class="max-img-process">
-            <img src="../images/chapitre10/extractions5.png" class="contour-img" alt="Paramétrage d'un filtre" data-action="zoom" />
+            <img src="../images/chapitre10/extractions6.png" class="contour-img" alt="Paramétrage d'un filtre" data-action="zoom" />
          </p>
          <p class="max-img-process">
-            <img src="../images/chapitre10/extractions6.png" class="contour-img" alt="Paramétrage d'un filtre" data-action="zoom" />
+            <img src="../images/chapitre10/extractions7.png" class="contour-img" alt="Paramétrage d'un filtre" data-action="zoom" />
          </p>
       </div>
       <br />
@@ -2089,9 +2094,13 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Ajoutez un second critère de recherche</span>
-         <p>Sélectionnez "À régler au plus tard le" dans la liste déroulante "Vente", puis cliquez sur le bouton "Ajouter". Appliquez un nouveau filtre en définissant la condition "inférieure ou égale à" avec la date butoir d'encaissement souhaitée et cliquez sur le bouton "Valider".</p>
+         <p>Sélectionnez "À régler au plus tard le" dans la liste déroulante "Vente", puis cliquez sur le bouton "Ajouter".</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre10/extractions8.png" class="contour-img" alt="Nouveau critère" data-action="zoom" />
+         </p>
+		 <p>Appliquez un nouveau filtre en définissant la condition "inférieure ou égale à" avec la date butoir d'encaissement souhaitée et cliquez sur le bouton "Valider".</p>
          <p class="max-img-process">
-            <img src="../images/chapitre10/extractions7.png" class="contour-img" alt="Nouveau critère" data-action="zoom" />
+            <img src="../images/chapitre10/extractions9.png" class="contour-img" alt="Nouveau critère" data-action="zoom" />
          </p>
       </div>
       <br />
@@ -2102,13 +2111,16 @@
          <span class="titre-advice">Extrayez les informations clients</span>
          <p>Dans la liste déroulante "Vente", sélectionnez "Client" dans la partie "Tables liées" et cliquez sur le bouton "Ajouter".</p>
          <p class="max-img-process">
-            <img src="../images/chapitre10/extractions8.png" class="contour-img" alt="Récupération nom client" data-action="zoom" />
+            <img src="../images/chapitre10/extractions10.png" class="contour-img" alt="Récupération nom client" data-action="zoom" />
          </p>
-         <p>Sélectionnez "Nom complet" dans la liste déroulante "Client" et cliquez sur le bouton "Ajouter" pour récupérer le nom du client dans l'extraction.</p>
+         <p>Puis, dans la liste déroulante "Client", sélectionnez "Nom complet" et cliquez sur le bouton "Ajouter" pour récupérer le nom du client dans l'extraction.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre10/extractions11.png" class="contour-img" alt="Récupération nom client" data-action="zoom" />
+         </p>
+		 <p>Notez la présence du symbole<img src="../images/chapitre10/share-alt.svg" alt="Table" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de "Client" indiquant que l'information extraite est située dans une <span class="tooltip">table<span class="tooltiptext tooltip-top">Voir glossaire</span></span> différente de la table initiale "Vente" dans la base de données.</p>
          <p class="max-img-process">
-            <img src="../images/chapitre10/extractions9.png" class="contour-img" alt="Récupération nom client" data-action="zoom" />
+            <img src="../images/chapitre10/extractions12.png" class="contour-img" alt="Récupération nom client" data-action="zoom" />
          </p>
-         <p>Notez la présence du symbole<img src="../images/chapitre10/share-alt.svg" alt="Table" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de "Client" indiquant que l'information extraite est située dans une <span class="tooltip">table<span class="tooltiptext tooltip-top">Voir glossaire</span></span> différente de la table "Vente" dans la base de données.</p>
       </div>
       <br />
       <div class="floating-box process">
@@ -2118,11 +2130,15 @@
          <span class="titre-advice">Récupérez les adresses email</span>
          <p>Dans la liste déroulante "Client", sélectionnez "Courriels &#40;e-mails&#41;" dans la partie "Tables liées" et cliquez sur le bouton "Ajouter".</p>
          <p class="max-img-process">
-            <img src="../images/chapitre10/extractions10.png" class="contour-img" alt="Récupération email client" data-action="zoom" />
+            <img src="../images/chapitre10/extractions13.png" class="contour-img" alt="Récupération email client" data-action="zoom" />
          </p>
-         <p>Sélectionnez "Coordonnée" dans la liste déroulante "Courriels &#40;e-mails&#41;" et cliquez sur le bouton "Ajouter" pour récupérer l'adresse email du client dans l'extraction. Ajoutez un nouveau filtre en définissant la condition "Contient" et le symbole "@" &#40;arobace&#41; pour exclure les adresses postales, puis cliquez sur le bouton "Valider".</p>
+         <p>Sélectionnez "Coordonnée" dans la liste déroulante "Courriels &#40;e-mails&#41;" et cliquez sur le bouton "Ajouter" pour récupérer l'adresse email du client dans l'extraction.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre10/extractions14.png" class="contour-img" alt="Filtre arobace" data-action="zoom" />
+         </p>
+		 <p>Ajoutez un nouveau filtre en définissant la condition "Contient" et le symbole "@" &#40;arobace&#41; pour exclure les adresses postales, puis cliquez sur le bouton "Valider".</p>
          <p class="max-img-process">
-            <img src="../images/chapitre10/extractions11.png" class="contour-img" alt="Filtre arobace" data-action="zoom" />
+            <img src="../images/chapitre10/extractions15.png" class="contour-img" alt="Filtre arobace" data-action="zoom" />
          </p>
          <p>Notez la présence du symbole<img src="../images/chapitre10/share-alt.svg" alt="Table" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de "Courriels &#40;e-mails&#41;" indiquant que l'information extraite est située dans une <span class="tooltip">table<span class="tooltiptext tooltip-top">Voir glossaire</span></span> différente de la table "Client" dans la base de données.</p>
       </div>
@@ -2132,9 +2148,13 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Terminez la construction du processus</span>
-         <p>Sélectionnez finalement "Numéro" dans la liste déroulante "Vente" &#40;comme dans l'étape n<sup>o</sup> 4&#41; pour ajouter les numéros des factures impayées dans l'extraction.</p>
+         <p>Sélectionnez finalement "Numéro" dans la liste déroulante "Vente" &#40;comme dans l'étape n<sup>o</sup> 4&#41; pour ajouter les numéros des factures impayées dans l'extraction et cliquez sur le bouton "Ajouter".</p>
+		 
          <p class="max-img-process">
-            <img src="../images/chapitre10/extractions12.png" class="contour-img" alt="Récupération nom client" data-action="zoom" />
+            <img src="../images/chapitre10/extractions16.png" class="contour-img" alt="Récupération nom client" data-action="zoom" />
+         </p>
+         <p class="max-img-process">
+            <img src="../images/chapitre10/extractions17.png" class="contour-img" alt="Récupération nom client" data-action="zoom" />
          </p>
          <p>Cliquez sur <span class="btn-blue">Modifier</span> pour valider l'opération.</p>
       </div>
@@ -2146,9 +2166,9 @@
          <span class="titre-advice">Lancez l'extraction</span>
          <p>Cliquez sur le lien "Extractions" dans la barre latérale du module, puis cliquez sur le symbole<img src="../images/chapitre10/download.svg" alt="Télécharger" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche du nom du processus pour lancer la création du fichier CSV avec les informations attendues. En fonction de la quantité de données à traiter, patientez quelques instants avant l'obtention du fichier.</p>
          <p class="max-img-process">
-            <img src="../images/chapitre10/extractions13.png" class="contour-img" alt="Récupération nom client" data-action="zoom" />
+            <img src="../images/chapitre10/extractions18.png" class="contour-img" alt="Récupération nom client" data-action="zoom" />
          </p>
-         <p>Cliquez sur le symbole<img src="../images/chapitre10/files-o.svg" alt="Dupliquer" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour dupliquer le processus d'extraction ou sur le crayon<img src="../images/chapitre10/crayon.svg" alt="Modifier" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour le modifier.</p>
+         <p>Cliquez sur le symbole<img src="../images/chapitre10/copy.svg" alt="Copier" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour dupliquer le processus d'extraction ou sur le crayon<img src="../images/chapitre10/crayon.svg" alt="Modifier" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour le modifier.</p>
          <div class="divTableListe">
             <div class="divTableBody">
                <div class="divTableRow">
@@ -2162,7 +2182,7 @@
             </div>
          </div>
          <p class="max-img-process">
-            <img src="../images/chapitre10/extractions14.png" class="contour-img" alt="Bouton extraire" data-action="zoom" />
+            <img src="../images/chapitre10/extractions19.png" class="contour-img" alt="Bouton extraire" data-action="zoom" />
          </p>
       </div>
       <div class="info-fond aerateur-haut">
