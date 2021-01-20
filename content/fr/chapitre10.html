@@ -1986,10 +1986,11 @@
       <h6>Guide de prise en main • Outils • Extractions</h6>
       <a class="slice-process" id="extractions"></a>
       <h2 class="texte aerateur">d - Extractions de données</h2>
-      <p class="texte"><strong>Eky</strong>agri permet de réaliser l'extraction de données sous la forme de feuilles de calcul &#40;tableaux&#41; au format CSV.</p>
-      <p class="texte">Grâce à des recherches croisées et à des filtres avancés entre les différentes <span class="tooltip">tables<span class="tooltiptext tooltip-top">Voir glossaire</span></span> de l'application, vous pouvez facilement récupérer vos données pour les visualiser ou les exploiter dans un tableur comme par exemple <a href="https://www.openoffice.org/fr/" target="_blank">Apache OpenOffice</a> ou <a href="https://fr.libreoffice.org/" target="_blank">LibreOffice</a>.</p>
-      <p class="texte">Dans l'exemple suivant, sur la base des factures supérieures à 100 euros qui auraient dû être payées à une date donnée, on souhaite obtenir le nom et l'adresse email des tiers afin de réaliser une campagne de relance avec une solution d'emailing tierce.</p>
-      <p align="center" class="texte aerateur procedure">1 – Procédure pour extraire un tableau de tiers</p>
+      <p class="texte"><strong>Eky</strong>agri permet de réaliser l'extraction de données sous la forme de feuilles de calcul &#40;tableaux&#41; au format <span class="tooltip">CSV<span class="tooltiptext tooltip-top">Voir glossaire</span></span>.</p>
+      <p class="texte">Grâce à des recherches croisées entre les différentes <span class="tooltip">tables<span class="tooltiptext tooltip-top">Voir glossaire</span></span> de l'application et à des filtres avancés, vous pouvez contruire des processus afin d'obtenir automatiquement des informations ciblées. Ces données pourront ensuite être visualisées dans un tableur comme par exemple <a href="https://www.openoffice.org/fr/" target="_blank">Apache OpenOffice</a> ou <a href="https://fr.libreoffice.org/" target="_blank">LibreOffice</a> et/ou exploitées dans un autre logiciel.</p>
+	  <p align="center" class="aerateur-haut"><img src="../images/chapitre10/schema-tables.png" alt="Schéma tables" width="500" /></p>
+      <p class="texte aerateur-haut">Dans l'exemple suivant, sur la base des factures supérieures à 100 euros qui auraient dû être payées à une date donnée, on souhaite obtenir le nom, l'adresse email des tiers, le montant et le numéro des factures en souffrance, afin de réaliser une campagne de relance avec une solution d'emailing tierce.</p>
+      <p align="center" class="texte aerateur procedure">1 – Procédure pour extraire une liste de factures impayées</p>
       <div id="cont8" class="niveau">
          <div id="gauge8" class="jauge"></div>
       </div>
@@ -2113,7 +2114,7 @@
          <p class="max-img-process">
             <img src="../images/chapitre10/extractions10.png" class="contour-img" alt="Récupération nom client" data-action="zoom" />
          </p>
-         <p>Puis, dans la liste déroulante "Client", sélectionnez "Nom complet" et cliquez sur le bouton "Ajouter" pour récupérer le nom du client dans l'extraction.</p>
+         <p>Puis, dans cette nouvelle liste déroulante "Client", sélectionnez "Nom complet" et cliquez sur le bouton "Ajouter" pour récupérer le nom du client dans l'extraction.</p>
 		 <p class="max-img-process">
             <img src="../images/chapitre10/extractions11.png" class="contour-img" alt="Récupération nom client" data-action="zoom" />
          </p>
@@ -2128,7 +2129,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Récupérez les adresses email</span>
-         <p>Dans la liste déroulante "Client", sélectionnez "Courriels &#40;e-mails&#41;" dans la partie "Tables liées" et cliquez sur le bouton "Ajouter".</p>
+         <p>Dans la même liste déroulante "Client", sélectionnez "Courriels &#40;e-mails&#41;" dans la partie "Tables liées" et cliquez sur le bouton "Ajouter".</p>
          <p class="max-img-process">
             <img src="../images/chapitre10/extractions13.png" class="contour-img" alt="Récupération email client" data-action="zoom" />
          </p>
@@ -2164,11 +2165,12 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Lancez l'extraction</span>
-         <p>Cliquez sur le lien "Extractions" dans la barre latérale du module, puis cliquez sur le symbole<img src="../images/chapitre10/download.svg" alt="Télécharger" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche du nom du processus pour lancer la création du fichier CSV avec les informations attendues. En fonction de la quantité de données à traiter, patientez quelques instants avant l'obtention du fichier.</p>
+         <p>Cliquez sur le lien "Extractions" dans la barre latérale du module, puis cliquez sur le symbole<img src="../images/chapitre10/download.svg" alt="Télécharger" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche du nom du processus pour lancer la création du fichier <span class="tooltip">CSV<span class="tooltiptext tooltip-top">Voir glossaire</span></span> avec les informations attendues. En fonction de la quantité de données à traiter, patientez quelques instants avant l'obtention du fichier.</p>
          <p class="max-img-process">
             <img src="../images/chapitre10/extractions18.png" class="contour-img" alt="Récupération nom client" data-action="zoom" />
          </p>
-         <p>Cliquez sur le symbole<img src="../images/chapitre10/copy.svg" alt="Copier" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour dupliquer le processus d'extraction ou sur le crayon<img src="../images/chapitre10/crayon.svg" alt="Modifier" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour le modifier.</p>
+         <p>Cliquez sur le symbole<img src="../images/chapitre10/copy.svg" alt="Copier" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour dupliquer un processus d'extraction ou sur le crayon<img src="../images/chapitre10/crayon.svg" alt="Modifier" height="20" class="align-icone icone-marge-gauche icone-marge-droite">&#40;ou son nom&#41; pour le modifier.</p>
+		 <p>Cela permet notamment de corriger facilement un filtre &#40;comme par exemple effectuer un changement de date&#41; pour adapter le processus existant à un nouveau besoin.</p>
          <div class="divTableListe">
             <div class="divTableBody">
                <div class="divTableRow">
