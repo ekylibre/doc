@@ -636,6 +636,132 @@
             </div>
          </div>
       </div>
+	  <a class="slice-process" id="fond-ecran"></a>
+      <h6>Guide de prise en main • Imports • Sélection fond d'écran</h6>
+      <p class="aerateur-haut"><span class="titre-advice texte">Sélection d'un écran d'accueil personnalisé</span></p>
+	  <div id="cont2" class="niveau">
+         <div id="gauge2" class="jauge"></div>
+      </div>
+      <script>
+         document.addEventListener("DOMContentLoaded", function(event) {
+          var gNode1 = document.createElement('div');
+          gNode1.setAttribute("class", "jauge");
+          var gauge1 = new JustGage({
+              id: "gauge2",
+              value: 1,
+              width: 150,
+              height: 110,
+              min: 0,
+              max: 5,
+              decimals: 0,
+              customSectors: [{
+          	  color : "#00ff00",
+          	  lo : 0,
+          	  hi : 1
+         	  }],
+              pointer: true,
+              startAnimationTime: 1,
+          	  startAnimationType: "linear",
+          	  refreshAnimationTime: 1,
+          	  refreshAnimationType: "linear",
+              hideMinMax: true,
+          });
+      });
+      </script>
+      <p class="texte">La fonctionnalité d'import d'<strong>Eky</strong>agri permet à l'utilisateur de sélectionner une image ou un visuel de son choix afin de personnaliser l'écran d'accueil de sa ferme et remplacer celui défini par défaut dans l'application.</p>
+	  <p class="texte">Le visuel doit être disponible au format JPEG ou PNG, avec une définition maximale de 3000 pixels de largeur.</p>
+      <p class="texte aerateur-haut">Le processus suivant vous guide pour importer un nouveau fond d'écran.</p>
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez les "Imports"</span>
+         <p>
+            Cliquez sur le lien "Outils" dans le "Menu principal" ou sur le bouton "Outils" de la page d'accueil&nbsp;:
+         </p>
+         <p align="center"><img src="../images/chapitre10/magic.svg" alt="Outils" width="60"></p>
+         <p>Dans la barre latérale du module, cliquez sur "Imports" dans la section "Échange" symbolisée par l'icône représentant 2 flèches<img src="../images/chapitre10/exchange.svg" alt="Échange" height="20" class="align-icone icone-marge-gauche">.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre4/ecran-accueil1.png" class="contour-img" alt="Liste des imports" data-action="zoom" />
+         </p>
+         <p>Tous les "Imports" déjà réalisés sont listés ici, notamment ceux issus de l'intégration des données TelePAC, ainsi que les zones cultivables et les bâtiments définis dans l'assistant de démarrage.</p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Créez un nouvel "Import"</span>
+         <p>Cliquez sur le bouton<img class="btn-gris icone-marge-gauche icone-marge-droite" src="../images/commun/nouveau.svg" alt="+ Nouveau">en haut à gauche de la fenêtre principale.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre4/ecran-accueil2.png" class="contour-img" alt="Nouvel import" data-action="zoom" />
+         </p>
+         <p>Puis, dans le pavé "Ekylibre" de la section "Configuration", sélectionnez "Fond écran page de connexion - Ekylibre" dans la liste déroulante des types de fichiers.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre4/ecran-accueil3.png" class="contour-img" alt="Sélection du type d'import" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Sélectionnez le nouveau visuel</span>
+         <p>Cliquez sur le bouton "Parcourir" pour sélectionner l'image ou le visuel à importer dans l'application.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre4/ecran-accueil4.png" class="contour-img" alt="Sélection import TelePAC" data-action="zoom" />
+         </p>
+         <p>Cliquez sur <span class="btn-blue">Importer</span> pour valider l'opération.</p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step4.svg" alt="4" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Lancez l'import du nouveau visuel</span>
+         <p>Cliquez sur le bouton <span class="btn-blue"><i class="fas fa-cog"></i>&nbsp;&nbsp;Exécuter</span> pour valider l'import du nouveau visuel.</p>
+         <p>En cas d'incompatibilité, l'application vous avertit immédiatement qu'une erreur est survenue &#40;format de fichier non supporté, taille de l'image trop importante&#41;.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre4/ecran-accueil5.png" class="contour-img" alt="Exécution import" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step5.svg" alt="5" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Patientez quelques instants</span>
+         <p>La barre de progression vous indique l'avancée du transfert des données qui peut prendre plus ou moins de temps en fonction du poids du fichier.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre4/ecran-accueil6.png" class="contour-img" alt="Progression import" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step6.svg" alt="6" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez les notifications</span>
+         <p>Une fois que la barre d'avancement disparaît, la pastille rouge<img src="../images/commun/marker.svg" alt="Notification" height="20" class="align-icone icone-marge-gauche icone-marge-droite">en haut à droite de la cloche<img src="../images/commun/bell-o-blue.svg" alt="Cloche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">vous indique qu'une opération interne a été effectuée par l'application. Cliquez sur celle-ci pour afficher la notification. En cas d'erreur, vous serez informé&#40;e&#41; de la nature de celle-ci.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre4/ecran-accueil7.png" class="contour-img" alt="Affichage notifications" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step7.svg" alt="7" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Vérifiez l'écran d'accueil</span>
+         <p>Déconnectez-vous en cliquant sur le lien "Se déconnecter" dans le menu déroulant en haut à droite de la fenêtre principale.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre4/ecran-accueil8.png" class="contour-img" alt="Déconnexion" data-action="zoom" />
+         </p>
+		 <p>Le nouvel écran d'accueil est maintenant affiché comme image de fond pour tous les utilisateurs qui souhaitent se connecter à votre ferme <strong>Eky</strong>agri, grâce à leur identifiant et à leur mot de passe&nbsp;:</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre4/ecran-accueil9.png" class="contour-img" alt="Écran d'accueil/connexion" data-action="zoom" />
+         </p>
+      </div>
       <h6>Guide de prise en main • Interface et accès • Présentation des modules</h6>
       <a class="slice-process" id="modules"></a>
       <h2 class="texte aerateur">b - Navigation et accès aux différents modules</h2>
