@@ -201,12 +201,8 @@ video {
 .image-carre {}
 .legende {
 	margin-bottom: 18px;
-	font-size: 16px;
+	font-size: 15px;
 	font-style: italic;
-}
-.legende2 {
-	font-size: 16px;
-	margin-bottom: -8px;
 }
 .menu {
 	font-family: 'Montserrat', sans-serif;
@@ -457,15 +453,9 @@ video {
 		display: none;
 	}
 	.legende {
-		margin-top: 10px;
 		margin-bottom: 35px;
-		font-size: 16px;
+		font-size: 15px;
 		font-style: italic;
-	}
-	.legende2 {
-		margin-top: 10px;
-		margin-bottom: -8px;
-		font-size: 16px;
 	}
 	.menu {
 		font-family: 'Montserrat', sans-serif;
@@ -758,15 +748,9 @@ video {
 		display: none;
 	}
 	.legende {
-		margin-top: 10px;
 		margin-bottom: 35px;
-		font-size: 16px;
+		font-size: 15px;
 		font-style: italic;
-	}
-	.legende2 {
-		margin-top: 10px;
-		margin-bottom: -8px;
-		font-size: 16px;
 	}
 	.menu {
 		font-family: 'Montserrat', sans-serif;
@@ -1068,15 +1052,9 @@ video {
 		display: none;
 	}
 	.legende {
-		margin-top: 10px;
 		margin-bottom: 35px;
-		font-size: 16px;
+		font-size: 15px;
 		font-style: italic;
-	}
-	.legende2 {
-		margin-top: 10px;
-		margin-bottom: -8px;
-		font-size: 16px;
 	}
 	.menu {
 		font-family: 'Montserrat', sans-serif;
