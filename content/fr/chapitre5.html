@@ -2007,6 +2007,7 @@
             <img src="../images/chapitre5/tresorerie3.png" class="contour-img" alt="Nouvelle trésorerie" data-action="zoom" />
          </p>
          <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
+		 <p>Notez que lors d'un changement du mode d'identification du compte bancaire &#40;comme par exemple le remplacement du code IBAN par un relevé d'identité bancaire&#41;, la validation de l'opération supprime définitivement l'information caduque.</p>
       </div>
       <h6>Guide de prise en main • Comptabilité • Compte courant d'associé</h6>
       <a class="slice-process" id="associe"></a>
@@ -2158,9 +2159,130 @@
          <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
          <p class="aerateur-haut">Si la rémunération du travail n'est pas valorisée, il faut alors réaliser un <a href="#virements" class="avoid-clicks">virement interne</a> entre la banque et le compte courant de l'associé, ce qui correspond aussi à un prélèvement privé ou exceptionnel. L'associé prélève de l'argent sur son compte sans contrepartie, son compte s'appauvrit et peut même devenir débiteur. Les charges sont alors réduites et l'excédent brut d'exploitation &#40;EBE&#41; est plus élevé.</p>
       </div>
+	  <h6>Guide de prise en main • Comptabilité • Compte d'associé coopérateur</h6>
+      <a class="slice-process" id="coop"></a>
+      <p align="center" class="texte aerateur procedure">3 – Procédure pour paramétrer un compte d'associé coopérateur</p>
+	  <div id="cont5" class="niveau">
+         <div id="gauge5" class="jauge"></div>
+      </div>
+      <script>
+         document.addEventListener("DOMContentLoaded", function(event) {
+          var gNode1 = document.createElement('div');
+          gNode1.setAttribute("class", "jauge");
+          var gauge1 = new JustGage({
+              id: "gauge5",
+              value: 3,
+              width: 150,
+              height: 110,
+              min: 0,
+              max: 5,
+              decimals: 0,
+              customSectors: [{
+          	  color : "#ff9933",
+			  lo : 2,
+          	  hi : 3
+         	  }],
+              pointer: true,
+              startAnimationTime: 1,
+          	  startAnimationType: "linear",
+          	  refreshAnimationTime: 1,
+          	  refreshAnimationType: "linear",
+              hideMinMax: true,
+          });
+      });
+      </script>
+      <p class="texte">Les associés coopérateurs d'une société coopérative agricole peuvent être des personnes physiques ou morales ayant la qualité d'agriculteur ou de forestier dans la circonscription de la société coopérative agricole ou possédant dans cette circonscription des intérêts agricoles qui correspondent à l'objet social de la coopérative agricole.</p>
+      <p class="texte">
+         Le processus suivant vous guide pour paramétrer un compte courant d'associé coopérateur.
+      </p>
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Prérequis&nbsp;: paramétrage d'un compte comptable</span>
+         <p>Il est nécessaire de créer un compte comptable &#40;un compte de tiers&#41; pour l'associé coopérateur avec le radical 472XX comme expliqué dans la section <a href="#plan" class="avoid-clicks">&#171;&nbsp;Plan de comptes&nbsp;&#187;</a> de ce chapitre.</p>
+         <p>Renseignez tous les champs obligatoires signalés par une astérisque de couleur rouge avec les informations requises pour le définir correctement.<br />Prenez soin de bien sélectionner "<strong>472 - Opérations de compensation &#40;conventions de compte courant&#41;</strong>" dans la liste déroulante des usages.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre5/associe1.png" class="contour-img" alt="Paramétrage compte comptable" data-action="zoom" />
+         </p>
+         <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Prérequis&nbsp;: paramétrage d'un tiers</span>
+         <p>Créez l'associé coopérateur en tant que nouveau tiers comme expliqué dans la section <a href="../chapitre8/#tiers" class="avoid-clicks">&#171;&nbsp;Gestion des tiers&nbsp;&#187;</a> du chapitre 8 - "Stocks, tiers et RH" de ce guide.</p>
+         <p>Renseignez tous les champs obligatoires signalés par une astérisque de couleur rouge avec les informations requises pour le définir correctement.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre5/associe2.png" class="contour-img" alt="Paramétrage tiers" data-action="zoom" />
+         </p>
+         <p>Définissez le nouveau tiers comme "Employé" de la société et sélectionnez le compte comptable défini préalablement à l'étape n<sup>o</sup> 1 de cette procédure.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre5/associe3.png" class="contour-img" alt="Paramétrage tiers" data-action="zoom" />
+         </p>
+         <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Prérequis&nbsp;: paramétrage d'un journal des opérations diverses</span>
+         <p>Créez un nouveau journal des opérations diverses comme expliqué dans la section <a href="#journaux" class="avoid-clicks">&#171;&nbsp;Journaux&nbsp;&#187;</a> de ce chapitre. Toutes les écritures liées à des opérations comme par exemple des versements de dividendes ou des rémunérations seront consignées dans le brouillard de ce journal comptable.</p>
+         <p>Vérifiez que le bouton radio<img src="../images/commun/radio.svg" alt="Bouton radio" height="20" class="align-icone icone-marge-gauche icone-marge-droite">est bien activé pour "Opérations diverses".</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre5/associe4.png" class="contour-img" alt="Nouveau journal" data-action="zoom" />
+         </p>
+         <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step4.svg" alt="4" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez les moyens d'encaissement/décaissement</span>
+         <p>
+            Cliquez sur le lien "Comptabilité" dans le "Menu principal" ou sur le bouton "Comptabilité" de la page d'accueil&nbsp;:
+         </p>
+         <p align="center"><img src="../images/chapitre5/comptabilite.svg" alt="Comptabilité" width="60"></p>
+         <p>Dans la barre latérale du module, cliquez sur "Trésoreries" dans la section "Trésorerie" symbolisée par l'icône d'un billet<img src="../images/chapitre5/money.svg" alt="Billet" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des moyens d'encaissement/décaissement.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre5/associe5.png" class="contour-img" alt="Liste des trésoreries" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step5.svg" alt="5" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Créez un compte courant d'associé</span>
+         <p>Cliquez sur le bouton “Nouveau” en haut à gauche de la fenêtre principale.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre5/associe6.png" class="contour-img" alt="Nouvelle trésorerie" data-action="zoom" />
+         </p>
+         <p>Sélectionnez le "Type" de trésorerie et renseignez tous les champs obligatoires signalés par une astérisque de couleur rouge avec les informations requises pour la définir correctement.</p>
+         <p>Vérifiez que le bouton radio<img src="../images/commun/radio.svg" alt="Bouton radio" height="20" class="align-icone icone-marge-gauche icone-marge-droite">est bien activé à gauche de "Compte courant d'associé".</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre5/associe7.png" class="contour-img" alt="Compte courant d'associé" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step6.svg" alt="6" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Paramétrez les options comptables</span>
+         <p>Sélectionnez les informations requises pour l'enregistrement des écritures comptables en choisissant, dans les listes déroulantes "Compte principal" et "Journal", les éléments définis aux étapes n<sup>o</sup> 1 et 3 de cette procédure.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre5/associe8.png" class="contour-img" alt="Paramétrage trésorerie" data-action="zoom" />
+         </p>
+         <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
+      </div>
       <h6>Guide de prise en main • Comptabilité • Emprunts</h6>
       <a class="slice-process" id="emprunts"></a>
-      <p align="center" class="texte aerateur procedure">3 – Procédure pour enregistrer un emprunt bancaire
+      <p align="center" class="texte aerateur procedure">4 – Procédure pour enregistrer un emprunt bancaire
       </p>
       <p class="texte">
          Le processus suivant vous guide pour enregistrer un emprunt bancaire.
@@ -2269,7 +2391,7 @@
       </div>
       <h6>Guide de prise en main • Comptabilité • Virements internes</h6>
       <a class="slice-process" id="virements"></a>
-      <p align="center" class="texte aerateur procedure">4 – Procédure pour enregistrer un virement interne
+      <p align="center" class="texte aerateur procedure">5 – Procédure pour enregistrer un virement interne
       </p>
       <p class="texte">
          Le processus suivant vous guide pour enregistrer un nouveau virement interne entre 2 comptes bancaires.
@@ -2314,7 +2436,7 @@
       </div>
       <h6>Guide de prise en main • Comptabilité • Rapprochement bancaire</h6>
       <a class="slice-process" id="rapprochement"></a>
-      <p align="center" class="texte aerateur procedure">4 – Procédure pour réaliser un rapprochement bancaire</p>
+      <p align="center" class="texte aerateur procedure">6 – Procédure pour réaliser un rapprochement bancaire</p>
 	  <div id="cont1" class="niveau">
          <div id="gauge1" class="jauge"></div>
       </div>
