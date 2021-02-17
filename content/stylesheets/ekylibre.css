@@ -1229,6 +1229,18 @@ a:visited {
 	border-top-color: #ccc;
 }
 
+.divTableCellNoteVersion5,
+.divTableHeadNoteVersion5 {
+	display: table-cell;
+	text-align: left;
+	font-size: 12px;
+	font-style: italic;
+	background-color: #fff;
+	border-top-width: 5px;
+	border-top-style: solid;
+	border-top-color: #fff;
+}
+
 .divTableCellNoteVersion4 li {
 	padding-right: 10px;
 }
