@@ -303,7 +303,7 @@
                   <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
                </div>
                <div class="divTableCellListe">
-                  Comment définir vos <a href="#equipements" class="avoid-clicks">équipements</a> &#40;matériel agricole&#41; et vos <a href="#tiers" class="avoid-clicks">tiers</a> &#40;personnel de l'exploitation, fournisseurs, clients, prestataires de services, etc.&#41;. Comment les <a href="#lien" class="avoid-clicks">rattacher</a> à une organisation
+                  Comment définir vos <a href="#equipements" class="avoid-clicks">équipements</a> &#40;matériel agricole&#41; et vos <a href="#tiers" class="avoid-clicks">tiers</a> &#40;personnel de l'exploitation, fournisseurs, clients, prestataires de services, etc.&#41;. Comment les <a href="#lien" class="avoid-clicks">rattacher</a> à une <a href="#organisation" class="avoid-clicks">organisation</a>
                </div>
             </div>
             <div class="divTableRow">
@@ -2166,7 +2166,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Accédez aux tiers</span>
-         <p>Dans la barre latérale du module, cliquez sur "Tiers" dans la section "Tiers" symbolisée par l'icône représentant deux personnes<img src="../images/chapitre8/users.svg" alt="Utilisateurs" height="20" class="align-icone icone-marge-gauche">, puis cliquez sur le bouton "Nouveau contact".</p>
+         <p>Dans la barre latérale du module, cliquez sur "Tiers" dans la section "Tiers" symbolisée par l'icône représentant deux personnes<img src="../images/chapitre8/users.svg" alt="Utilisateurs" height="20" class="align-icone icone-marge-gauche">, puis cliquez sur le bouton "+&nbsp;Nouveau contact".</p>
          <p class="max-img-process">
             <img src="../images/chapitre8/contact2.png" class="contour-img" alt="Liste des tiers" data-action="zoom" />
          </p>
@@ -2192,7 +2192,7 @@
          <p class="max-img-process">
             <img src="../images/chapitre8/contact4.png" class="contour-img" alt="Nouvel contact" data-action="zoom" />
          </p>
-         <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération ou sur <span class="btn-blue">Créer et saisir suivant</span> pour réaliser une nouvelle saisie.</p>
+         <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération ou sur <span class="btn-blue">Créer&nbsp;et&nbsp;saisir suivant</span> pour réaliser une nouvelle saisie.</p>
       </div>
 	  <div class="idea-fond aerateur-haut aerateur-bas">
          <div class="floating-box-idea">
@@ -2208,9 +2208,9 @@
             <img src="../images/commun/info.svg" width="100" alt="Info"/>
          </div>
          <div class="info-txt">
-            <span class="titre-advice">Comptes client ou fournisseur associé<br /></span>
+            <span class="titre-advice">Comptes client ou fournisseur associés<br /></span>
             <p class="texte-advice">
-               Vous pouvez laisser le champ "Compte client associé" &#40;s'il s'agit de la création d'un nouveau client&#41; ou le champ "Compte fournisseur associé" &#40;s'il s'agit de la création d'un nouveau fournisseur&#41; vide car l'application affecte un nouveau compte comptable automatiquement dès qu'une opération commerciale &#40;une vente ou un achat&#41; est enregistrée.
+               Sélectionnez les comptes comptables auxiliaires s'ils ont été préalablement définis. Vous pouvez laisser les champs "Compte client associé" et "Compte fournisseur associé" vides pour permettre à l'application d'en générer de nouveaux automatiquement dès l'enregistrement du nouveau contact.
             </p>
             <p align="center">
                <img src="../images/chapitre8/compte-client.png" class="contour-img" alt="Compte client associé" width="350">
@@ -2223,17 +2223,92 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Affichez le contact</span>
-         <p>Une fois créé, l'application affiche automatiquement la fiche du nouveau contact. Celle-ci sera progressivement enrichie avec les différents opérations impliquant le tiers &#40;ventes, achats, expéditions et réceptions de marchandises, encaissements, etc.&#41;.</p>
-         <p>
-            S'il s'agit d'un prospect, d'un client ou d'un fournisseur/prestataire de services &#40;sauf exception&#41;, le paramétrage du nouveau contact est terminé. Vous pouvez aussi, dans la foulée, convertir ce tiers en équipier pour pouvoir le sélectionner lors de l'enregistrement d'interventions en suivant la <a href="#equipiers" target="_self" class="avoid-clicks">&#171;&nbsp;Procédure de création des équipiers&nbsp;&#187;</a>.
-         </p>
+         <p>Une fois créé, l'application affiche automatiquement la fiche détaillée du nouveau contact. Celle-ci sera progressivement enrichie dans un historique avec les différentes opérations le concernant, comme par exemple les interventions &#40;si le contact a été <a href="#equipiers" target="_self" class="avoid-clicks">converti en équipier</a> et sélectionné comme conducteur ou opérateur&#41;.</p>
          <p class="max-img-process">
             <img src="../images/chapitre8/contact5.png" class="contour-img" alt="Nouvel équipier" data-action="zoom" />
          </p>
       </div>
+	  <h6>Guide de prise en main • Stocks, tiers et RH • Création d'une organisation</h6>
+      <a class="slice-process" id="organisation"></a>
+	  <p align="center" class="texte aerateur procedure">2 – Procédure de création d'une organisation
+      </p>
+	  <div class="info-fond aerateur-haut aerateur-bas">
+         <div class="floating-box-info">
+            <img src="../images/commun/info.svg" width="100" alt="Info"/>
+         </div>
+         <div class="info-txt">
+            <span class="titre-advice">Création d'une nouvelle organisation<br /></span>
+            <p class="texte-advice">
+               La procédure de création d'une nouvelle organisation est sensiblement la même que pour la création d'un nouveau contact mais avec des champs propres à l'activité professionnelle &#40;numéro Siret, code APE/NAF, numéro de TVA intra-communautaire&#41;. Renseignez correctement les codes IBAN et BIC si vous envisagez de réaliser des <a href="../chapitre6#lots" class="avoid-clicks" target="_self">lots de décaissements</a> par virement SEPA. Notez que lorsque vous créez un nouvel expéditeur ou un nouveau destinataire à la volée lors d'un achat ou d'une vente ou lors de la création d'une réception ou d'une expédition, il est automatiquement enregistré en tant que nouvelle organisation.
+            </p>
+         </div>
+      </div>
+      <p class="texte">
+         Le processus suivant vous guide pour créer une nouvelle organisation dans l'application.
+      </p>
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Accédez aux tiers</span>
+         <p>
+            Cliquez sur le lien "Tiers" dans le "Menu principal" ou sur le bouton "Tiers" de la page d'accueil&nbsp;:
+         </p>
+         <p align="center"><img src="../images/chapitre8/tiers.svg" alt="Tiers" width="60"></p>
+		 <p>Dans la barre latérale du module, cliquez sur "Tiers" dans la section "Tiers" symbolisée par l'icône représentant deux personnes<img src="../images/chapitre8/users.svg" alt="Utilisateurs" height="20" class="align-icone icone-marge-gauche">.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre8/organisation1.png" class="contour-img" alt="Liste des tiers" data-action="zoom" />
+         </p>
+         <p>Tous les tiers &#40;administrateur de la ferme, contacts, organisations&#41; déjà créés ou importés sont listés ici.</p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Créez la nouvelle organisation</span>
+         <p>Cliquez sur le bouton "+&nbsp;Nouvelle organisation" en haut à gauche de la fenêtre principale.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre8/organisation2.png" class="contour-img" alt="Liste des tiers" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Renseignez la nouvelle organisation</span>
+         <p>Remplissez tous les champs signalés par une astérisque de couleur rouge avec les informations requises pour la définir correctement.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre8/organisation3.png" class="contour-img" alt="Nouvelle organisation" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step4.svg" alt="4" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Qualifiez l'organisation</span>
+         <p>Paramétrez la nouvelle organisation comme "Client" et/ou comme "Fournisseur", en cochant les cases adéquates<img src="../images/commun/check-square.svg" alt="Case à cocher" height="18" class="align-icone icone-marge-gauche icone-marge-droite">situées à droite des libellés. Sélectionnez les comptes comptables auxiliaires s'ils ont été préalablement définis, ou laissez ces champs vides pour permettre à l'application d'en générer de nouveaux automatiquement.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre8/organisation4.png" class="contour-img" alt="Nouvelle organisation" data-action="zoom" />
+         </p>
+         <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération ou sur <span class="btn-blue">Créer&nbsp;et&nbsp;saisir suivant</span> pour réaliser une nouvelle saisie.</p>
+      </div>
+	  <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step5.svg" alt="5" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez l'organisation</span>
+         <p>Une fois créée, l'application affiche automatiquement la fiche détaillée de la nouvelle organisation. Celle-ci sera progressivement enrichie dans un historique avec les différentes opérations la concernant&nbsp;: ventes, achats, expéditions et réceptions de marchandises, encaissements, etc.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre8/organisation5.png" class="contour-img" alt="Fiche détaillée de l'organisation" data-action="zoom" />
+         </p>
+      </div>
       <h6>Guide de prise en main • Stocks, tiers et RH • Lier un tiers à une organisation</h6>
       <a class="slice-process" id="lien"></a>
-      <p align="center" class="texte aerateur procedure">2 – Procédure de rattachement à une organisation</p>
+      <p align="center" class="texte aerateur procedure">3 – Procédure de rattachement à une organisation</p>
       <p class="texte">
          Le processus suivant vous guide pour rattacher un tiers à une organisation préalablement définie dans l'application.
       </p>
@@ -2284,7 +2359,7 @@
       </div>
       <h6>Guide de prise en main • Stocks, tiers et RH • Création d'un équipier</h6>
       <a class="slice-process" id="equipiers"></a>
-      <p align="center" class="texte aerateur procedure">3 – Procédure de création des équipiers</p>
+      <p align="center" class="texte aerateur procedure">4 – Procédure de création des équipiers</p>
 	  <div class="info-fond aerateur-bas">
          <div class="floating-box-warn">
             <img src="../images/commun/info.svg" width="100" alt="Info"/>
@@ -2366,21 +2441,10 @@
             <p class="texte-advice">Pour pouvoir sélectionner un nouvel équipier lors de la saisie d'une intervention, le champ de sa date de naissance doit obligatoirement être renseigné et la date strictement antérieure à la date de l'intervention. N'hésitez-pas à fixer celle-ci à minuit pour disposer de l'équipier immédiatement &#40;heure définie sur 00:00&#41;.</p>
          </div>
       </div>
-      <div class="info-fond aerateur-haut aerateur-bas">
-         <div class="floating-box-info">
-            <img src="../images/commun/info.svg" width="100" alt="Info"/>
-         </div>
-         <div class="info-txt">
-            <span class="titre-advice">Création d'une nouvelle organisation<br /></span>
-            <p class="texte-advice">
-               La procédure de création d'une nouvelle organisation est sensiblement la même que pour la création d'un nouveau contact mais avec des champs propres à l'activité professionnelle &#40;numéro Siret, code APE/NAF, numéro de TVA intra-communautaire&#41;. Renseignez correctement les codes IBAN et BIC si vous envisagez de réaliser des <a href="../chapitre6#lots" class="avoid-clicks" target="_self">lots de décaissements</a> par virement SEPA. Notez que lorsque vous créez un nouvel expéditeur ou un nouveau destinataire à la volée lors d'un achat ou d'une vente ou lors de la création d'une réception ou d'une expédition, il est automatiquement enregistré en tant que nouvelle organisation.
-            </p>
-         </div>
-      </div>
       <p class="texte aerateur-top">Le cumul des périodes travaillées par les équipiers pour réaliser les interventions permet de connaître leur productivité. Vous pourrez aussi affecter un coût horaire à chaque équipier en fonction de sa qualification. Il peut alors s'avérer nécessaire de les différencier, sinon le coût horaire d'un des deux équipiers sera automatiquement répercuté sur l'autre.</p>
       <h6>Guide de prise en main • Stocks, tiers et RH • Création type d'équipier</h6>
       <a class="slice-process" id="typeequipier"></a>
-      <p align="center" class="texte aerateur procedure">4 – Procédure de création d'un type d'équipier</p>
+      <p align="center" class="texte aerateur procedure">5 – Procédure de création d'un type d'équipier</p>
 	  <div id="cont3" class="niveau">
          <div id="gauge3" class="jauge"></div>
       </div>
@@ -2472,7 +2536,7 @@
       <p class="texte">Vous pouvez également suivre la procédure suivante pour attribuer un coût horaire d'utilisation à un équipement. Cela peut se faire à la volée pendant la saisie d'une intervention &#40;expliquée dans le <a href="../chapitre9" class="avoid-clicks" target="_self">chapitre 9 - Production</a>&#41; mais il est préférable de le définir avant.</p>
       <h6>Guide de prise en main • Stocks, tiers et RH • Coût de main d'œuvre</h6>
       <a class="slice-process" id="coutequipier"></a>
-      <p align="center" class="texte aerateur procedure">5 – Procédure pour définir un coût de main d'œuvre</p>
+      <p align="center" class="texte aerateur procedure">6 – Procédure pour définir un coût de main d'œuvre</p>
 	  <div id="cont4" class="niveau">
          <div id="gauge4" class="jauge"></div>
       </div>
@@ -2580,7 +2644,7 @@
       </div>
       <h6>Guide de prise en main • Stocks, tiers et RH • Création catalogue de prix</h6>
       <a class="slice-process" id="coutusage"></a>
-      <p align="center" class="texte aerateur procedure">6 – Procédure pour créer un nouveau catalogue de prix</p>
+      <p align="center" class="texte aerateur procedure">7 – Procédure pour créer un nouveau catalogue de prix</p>
 	  <div id="cont5" class="niveau">
          <div id="gauge5" class="jauge"></div>
       </div>
@@ -2665,7 +2729,7 @@
       </div>
       <a class="slice-process" id="registre"></a>
       <h6>Guide de prise en main • Stocks, tiers et RH • Registre horaire des opérateurs</h6>
-      <p align="center" class="texte aerateur procedure">7 – Procédure pour obtenir le registre horaire des opérateurs</p>
+      <p align="center" class="texte aerateur procedure">8 – Procédure pour obtenir le registre horaire des opérateurs</p>
       <p class="texte">Le registre horaire des opérateurs détaille les temps de travaux des équipiers consignés lors de l'enregistrement des interventions.</p>
       <p class="texte">Le processus suivant vous guide pour obtenir le registre horaire des opérateurs.</p>
       <div class="floating-box process">
