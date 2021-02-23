@@ -1,7 +1,7 @@
 // chronoline.js v0.1.6
 // by Kevin Leung for Zanbato, https://zanbato.com
 // MIT license at https://github.com/StoicLoofah/chronoline.js/blob/master/LICENSE.md
-// Adaptation par Ekylibre, , https://doc.ekylibre.com
+// Adaptation par Ekylibre, https://doc.ekylibre.com
 
     if (!Date.now) {
         Date.now = function now() {

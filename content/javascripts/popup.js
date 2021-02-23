@@ -1,3 +1,5 @@
+// Adaptation par Ekylibre, https://doc.ekylibre.com
+
 jQuery(function ($) {
 
 	//When you click on a link with class of poplight and the href starts with a # 
