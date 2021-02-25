@@ -298,7 +298,8 @@
                      <form>
                         <select name="ListeUrl" SIZE="1" onChange="ChangeUrl(this.form)" style="width:210px">
                            <option selected value="">TVA</option>
-                           <option value="#tva">- Créer un nouveau taux de TVA</option>
+                           <option value="#tva">- Ajouter un nouveau taux de TVA</option>
+						   <option value="#tva-intra">- Créer un taux de TVA intracommunautaire</option>
                            <option value="#declaration">- Produire une déclaration de TVA</option>
                         </select>
                      </form>
@@ -381,7 +382,8 @@
                   <option value="#plan">- Créer un compte comptable</option>
                </optgroup>
                <optgroup label="TVA">
-                  <option value="#tva">- Créer un nouveau taux de TVA</option>
+                  <option value="#tva">- Ajouter un nouveau taux de TVA</option>
+				  <option value="#tva-intra">- Créer un taux de TVA intracommunautaire</option>
                   <option value="#declaration">- Produire une déclaration de TVA</option>
                </optgroup>
                <optgroup label="Journaux">
@@ -430,17 +432,17 @@
                </div>
                <div class="divTableRow">
                   <div class="divTableCellPDF2">- Paramétrer la société</div>
-                  <div class="divTableCellPDF2">- Créer un nouveau taux de TVA</div>
+                  <div class="divTableCellPDF2">- Ajouter un nouveau taux de TVA</div>
                   <div class="divTableCellPDF4">- Créer un nouveau journal</div>
                </div>
                <div class="divTableRow">
                   <div class="divTableCellPDF2">- Créer un compte comptable</div>
-                  <div class="divTableCellPDF2">- Produire une déclaration de TVA</div>
+                  <div class="divTableCellPDF2">- Créer un taux de TVA intracom.</div>
                   <div class="divTableCellPDF4">- Réaliser le lettrage de comptes</div>
                </div>
                <div class="divTableRow">
                   <div class="divTableCellPDF5">&nbsp;</div>
-                  <div class="divTableCellPDF5">&nbsp;</div>
+                  <div class="divTableCellPDF2">- Produire une déclaration de TVA</div>
                   <div class="divTableCellPDF4">- Valider le brouillard comptable</div>
                </div>
                <div class="divTableRow">
@@ -1102,6 +1104,8 @@
             <img src="../images/chapitre5/ouvert-exo.png" class="contour-img" alt="Message ouverture exercice" data-action="zoom" />
          </div>
       </div>
+	  <h6>Guide de prise en main • Comptabilité • Ouverture d'un exercice</h6>
+	  <a class="slice-process" id="ouv-exercice"></a>
       <p align="center" class="texte aerateur procedure">1 – Procédure pour ouvrir un exercice comptable</p>
       <p class="texte">
          Le processus suivant vous guide pour créer un nouvel exercice comptable.
@@ -1693,10 +1697,12 @@
          </div>
       </div>
       <p class="texte">Tous les autres taux applicables notamment dans les départements d'outre-mer, en Corse ou à l'étranger doivent être ajoutés par vos soins.</p>
+	  <h6>Guide de prise en main • Comptabilité • Création d'un taux de TVA</h6>
+      <a class="slice-process" id="nelle-tva"></a>
       <p align="center" class="texte aerateur procedure">1 – Procédure pour ajouter des taux de TVA
       </p>
       <p class="texte">
-         Le processus suivant vous guide pour créer un nouveau taux de TVA comme par exemple un taux de 8,5%.
+         Le processus suivant vous guide pour paramétrer un nouveau taux de TVA comme par exemple un taux de 8,5&nbsp;%.
       </p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
@@ -1740,10 +1746,12 @@
             <img src="../images/chapitre5/tva4-2019.png" class="contour-img" alt="Comptes comptables" data-action="zoom" />
          </p>
       </div>
-      <p align="center" class="texte aerateur procedure">2 – Procédure pour paramétrer un taux de TVA intracommunautaire
+	  <h6>Guide de prise en main • Comptabilité • TVA intracommunautaire</h6>
+      <a class="slice-process" id="tva-intra"></a>
+      <p align="center" class="texte aerateur procedure">2 – Procédure pour créer un taux de TVA intracommunautaire
       </p>
       <p class="texte">
-         Le processus suivant vous guide pour créer un nouveau taux de TVA intracommunautaire comme par exemple un taux de 10%.
+         Le processus suivant vous guide pour créer un nouveau taux de TVA intracommunautaire comme par exemple un taux de 10&nbsp;%.
       </p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
@@ -1784,6 +1792,8 @@
       </div>
       <div class="aerateur"></div>
       <p class="texte aerateur-haut">Si votre ferme a été créée avant le 24 octobre 2019, plusieurs taux de TVA sont définis dans l'application qui sont inutiles ou qui ne sont plus en vigueur depuis la dernière modification intervenue au 1<sup>er</sup> janvier 2014. Vous pouvez donc en supprimer pour faciliter la saisie des achats et des ventes ainsi que pour simplifier les <a href="#declaration" class="avoid-clicks">déclarations de TVA</a>.</p>
+	  <h6>Guide de prise en main • Comptabilité • Suppression d'un taux de TVA</h6>
+      <a class="slice-process" id="suppression-tva"></a>
       <p align="center" class="texte aerateur procedure">3 – Procédure pour supprimer un taux de TVA
       </p>
       <p class="texte">
@@ -2070,7 +2080,7 @@
          <p class="max-img-process">
             <img src="../images/chapitre5/associe2.png" class="contour-img" alt="Paramétrage tiers" data-action="zoom" />
          </p>
-         <p>Définissez le nouveau tiers comme "Employé" de la société et sélectionnez le compte comptable défini préalablement à l'étape n<sup>o</sup> 1 de cette procédure.</p>
+         <p>Définissez le nouveau tiers comme "Employé" de la société et sélectionnez le compte comptable défini préalablement à l'étape n<sup>o</sup>&nbsp;1 de cette procédure.</p>
          <p class="max-img-process">
             <img src="../images/chapitre5/associe3.png" class="contour-img" alt="Paramétrage tiers" data-action="zoom" />
          </p>
@@ -2694,6 +2704,8 @@
       <a class="slice-process" id="immobilisations"></a>
       <h2 class="texte aerateur">h - Immobilisations</h2>
       <p class="texte">La notion d'immobilisation intègre l'ensemble des biens durables détenus par une exploitation sur plus d'un exercice comptable et qui ne sont pas destinés à la revente. Les immobilisations corporelles sont composées de plusieurs catégories&nbsp;: les terrains, les constructions, l'agencement et les installations générales, l'outillage, le matériel, les véhicules, le mobilier et les équipements informatiques.</p>
+	  <h6>Guide de prise en main • Comptabilité • Nouvelle immobilisation</h6>
+      <a class="slice-process" id="nelle-immo"></a>
       <p align="center" class="texte aerateur procedure">1 – Procédure pour enregistrer une immobilisation
       </p>
 	  <div id="cont2" class="niveau">
@@ -3186,6 +3198,7 @@
       </div>
       <p class="texte">Le journal des opérations diverses en comptabilité, appelé aussi journal des OD, est un document auxiliaire au journal général de comptabilité. Il permet d'enregistrer les opérations comptables qui ne concernent ni le journal des achats, ni le journal des ventes, ni les journaux de trésorerie. Le journal des opérations diverses &#40;OD&#41; permet d'enregistrer des opérations concernant les mouvements de TVA, les provisions, la paie ou encore les écritures rectificatrices des différentes erreurs de saisie qui ont été commises. Notez que le journal comptable est une obligation légale pour les entreprises soumises au régime du réel, afin de suivre toutes ses opérations.</p>
       <p class="texte">Dans <strong>Eky</strong>agri, les écritures issues des éventuelles corrections réalisées par votre comptable doivent être consignées dans un nouveau journal d'opérations diverses, l'existant étant réservé à l'administrateur de la ferme.</p>
+	  <h6>Guide de prise en main • Comptabilité • Journal OD</h6>
       <a class="slice-process" id="journal-od"></a>
       <p align="center" class="texte aerateur procedure">1 – Procédure pour paramétrer un nouveau journal
       </p>
@@ -3230,6 +3243,8 @@
             <img src="../images/chapitre5/journaux3.png" class="contour-img" alt="Nouveau journal" data-action="zoom" />
          </p>
       </div>
+	  <h6>Guide de prise en main • Comptabilité • Échange de données</h6>
+      <a class="slice-process" id="echange-donnees"></a>
       <p align="center" class="texte aerateur procedure">2 – Procédure pour échanger des données comptables
       </p>
       <p class="texte">
@@ -3659,7 +3674,8 @@
                      <form>
                         <select name="ListeUrl" SIZE="1" onChange="ChangeUrl(this.form)" style="width:210px">
                            <option selected value="">TVA</option>
-                           <option value="#tva">- Créer un nouveau taux de TVA</option>
+                           <option value="#tva">- Ajouter un nouveau taux de TVA</option>
+						   <option value="#tva-intra">- Créer un taux de TVA intracommunautaire</option>
                            <option value="#declaration">- Produire une déclaration de TVA</option>
                         </select>
                      </form>
