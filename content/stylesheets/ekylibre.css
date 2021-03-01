@@ -40,13 +40,13 @@ html {
 	text-align: center;
 }
 
-.compta-large {
+.menu-large {
 	display: none;
 }
-.compta-short {
+.menu-short {
 	display: inline;
 }
-.compta-print {
+.menu-print {
 	display: none;
 }
 
@@ -694,7 +694,7 @@ a:visited {
 }
 
 .perso1 {
-	background-image: url("../fr/images/chapitre10/man-user.svg");
+	background-image: url("../fr/images/chapitre4/man-user.svg");
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-color: #d2ffa6;
@@ -702,7 +702,7 @@ a:visited {
 }
 
 .perso2 {
-	background-image: url("../fr/images/chapitre10/man-user.svg");
+	background-image: url("../fr/images/chapitre4/man-user.svg");
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-color: #ffeb74;
@@ -710,7 +710,7 @@ a:visited {
 }
 
 .perso3 {
-	background-image: url("../fr/images/chapitre10/man-user.svg");
+	background-image: url("../fr/images/chapitre4/man-user.svg");
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-color: #efc4ff;
@@ -718,7 +718,7 @@ a:visited {
 }
 
 .perso4 {
-	background-image: url("../fr/images/chapitre10/man-user.svg");
+	background-image: url("../fr/images/chapitre4/man-user.svg");
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-color: #c2f1ff;
@@ -726,7 +726,7 @@ a:visited {
 }
 
 .perso5 {
-	background-image: url("../fr/images/chapitre10/man-user.svg");
+	background-image: url("../fr/images/chapitre4/man-user.svg");
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-color: #ffd5b6;
@@ -734,7 +734,7 @@ a:visited {
 }
 
 .perso6 {
-	background-image: url("../fr/images/chapitre10/man-user.svg");
+	background-image: url("../fr/images/chapitre4/man-user.svg");
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-color: #c2cbff;
@@ -2391,13 +2391,13 @@ img.btn_close {
 	.pdf {
 		display: none;
 	}
-	.compta-large {
+	.menu-large {
 		display: none;
 	}
-	.compta-short {
+	.menu-short {
 		display: none;
 	}
-	.compta-print {
+	.menu-print {
 		display: inline;
 	}
 	.divTableCell8,
@@ -2512,7 +2512,11 @@ img.zoom-img {
 	display: none;
 }
 
-.btn_navigation {
+.btn_navi_compta {
+	display: none;
+}
+
+.btn_navi_stocks {
 	display: none;
 }
 
@@ -2553,7 +2557,7 @@ img.zoom-img {
 		background-size: 50px auto;
 		z-index: 1;
 	}
-	.btn_navigation {
+	.btn_navi_compta {
 		display: inline;
 		position: fixed;
 		height: 50px;
@@ -2564,6 +2568,22 @@ img.zoom-img {
 		background-color: #476ba8;
 		border-radius: 25px;
 		background-image: url("../fr/images/chapitre5/navigation.svg");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: 50px auto;
+		z-index: 1;
+	}
+	.btn_navi_stocks {
+		display: inline;
+		position: fixed;
+		height: 50px;
+		width: 50px;
+		left: 180px;
+		right: auto;
+		bottom: 12px;
+		background-color: #476ba8;
+		border-radius: 25px;
+		background-image: url("../fr/images/chapitre8/navigation.svg");
 		background-repeat: no-repeat;
 		background-position: center center;
 		background-size: 50px auto;
@@ -2585,13 +2605,13 @@ img.zoom-img {
 		background-size: 50px auto;
 		z-index: 1;
 	}
-	.compta-large {
+	.menu-large {
 		display: inline;
 	}
-	.compta-short {
+	.menu-short {
 		display: none;
 	}
-	.compta-print {
+	.menu-print {
 		display: none;
 }
 }
@@ -2652,7 +2672,7 @@ img.zoom-img {
 	visibility: hidden;
 	position: absolute;
 	width: 116px;
-	margin-left: -55px;
+	margin-left: -58px;
 	left: 50%;
 	background-color: #476ba8;
 	color: #fff;

@@ -1,6 +1,6 @@
 <div class="tooltip">
    <a style="display:block" href="#" data-width="730" data-rel="popup1" class="poplight" target="_self">
-      <div class="btn_navigation"><span class="tooltiptext2 tooltip-top">Menu du chapitre</span></div>
+      <div class="btn_navi_compta"><span class="tooltiptext2 tooltip-top">Menu du chapitre</span></div>
    </a>
 </div>
 <div class="w3-content page-content scroll-spy-heading-breadcrumbs">
@@ -275,13 +275,13 @@
             <p class="texte-advice">Le module "Comptabilité" a été récemment profondément remanié afin d'offrir aux utilisateurs un outil complet, fiable et performant avec une présentation plus intuitive. Ce chapitre présente les procédures essentielles à connaître pour tirer efficacement profit des outils de gestion comptable dans <strong>Eky</strong>agri.</p>
          </div>
       </div>
-      <div class="compta-large">
-         <p class="texte aerateur-haut"><strong>Dans ce chapitre, on vous explique comment</strong> &#40;sélectionnez un processus dans les listes déroulantes&#41;&nbsp;<strong>:</strong></p>
+      <div class="menu-large">
+         <p class="texte aerateur-top"><strong>Dans ce chapitre, on vous explique comment</strong> &#40;sélectionnez un processus dans les listes déroulantes&#41;&nbsp;<strong>:</strong></p>
          <div class="divTableCompta texte aerateur-bas">
             <div class="divTableBody">
                <div class="divTableRow">
                   <div class="divTableCellCompta1"><img src="../images/chapitre5/wrench3.svg" alt="Configuration" height="28"></div>
-                  <div class="divTableCellCompta1"><img src="../images/chapitre5/cog-black.svg" alt="TVA" height="30"></div>
+                  <div class="divTableCellCompta1"><img src="../images/chapitre5/cog.svg" alt="TVA" height="30"></div>
                   <div class="divTableCellCompta3"><img src="../images/chapitre5/book.svg" alt="Journaux" height="30"></div>
                </div>
                <div class="divTableRow">
@@ -372,7 +372,7 @@
          <p class="texte">Ce système de navigation est également disponible à tout moment grâce au bouton en bas à gauche de la fenêtre&nbsp;:</p>
          <p class="texte" align="center"><img src="../images/chapitre5/navigation.svg" width="70" alt="Menu comptabilité" /></p>
       </div>
-      <div class="compta-short">
+      <div class="menu-short">
          <p class="texte aerateur-haut"><strong>Dans ce chapitre, on vous explique comment</strong> &#40;sélectionnez un processus dans la liste déroulante&#41;&nbsp;<strong>:</strong></p>
          <form class="texte">
             <select name="ListeUrl" SIZE="1" onChange="ChangeUrl(this.form)" style="width:210px">
@@ -421,14 +421,14 @@
             </select>
          </form>
       </div>
-      <div class="compta-print">
+      <div class="menu-print">
          <p class="texte aerateur-haut">Dans ce chapitre, on vous explique comment&nbsp;:</p>
          <div class="divTableCompta marge">
             <div class="divTableBody">
                <div class="divTableRow">
-                  <div class="divTableCellPDF1" style="width: 234px">Configuration&nbsp;<img src="../images/chapitre5/wrench3.svg" alt="Épi" height="20" class="align-compta icone-marge-gauche"></div>
-                  <div class="divTableCellPDF1" style="width: 234px">TVA&nbsp;<img src="../images/chapitre5/cog-black.svg" alt="Épi" height="20" class="align-icone icone-marge-gauche"></div>
-                  <div class="divTableCellPDF3" style="width: 234px">Journaux&nbsp;<img src="../images/chapitre5/book.svg" alt="Épi" height="21" class="align-compta icone-marge-gauche"></div>
+                  <div class="divTableCellPDF1" style="width: 234px">Configuration&nbsp;<img src="../images/chapitre5/wrench3.svg" alt="Configuration" height="20" class="align-compta icone-marge-gauche"></div>
+                  <div class="divTableCellPDF1" style="width: 234px">TVA&nbsp;<img src="../images/chapitre5/cog.svg" alt="TVA" height="20" class="align-icone icone-marge-gauche"></div>
+                  <div class="divTableCellPDF3" style="width: 234px">Journaux&nbsp;<img src="../images/chapitre5/book.svg" alt="Journaux" height="21" class="align-compta icone-marge-gauche"></div>
                </div>
                <div class="divTableRow">
                   <div class="divTableCellPDF2">- Paramétrer la société</div>
@@ -783,6 +783,8 @@
             </div>
          </div>
       </div>
+	  <h6>Guide de prise en main • Comptabilité • Création d'un journal</h6>
+      <a class="slice-process" id="nouv-journal"></a>
       <p align="center" class="texte aerateur procedure">1 – Procédure pour créer un journal
       </p>
       <p class="texte">
@@ -998,7 +1000,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Validez les écritures</span>
-         <p>Cliquez ensuite sur le bouton <span class="btn-blue">Validez les écritures</span> dans la <span class="tooltip">fenêtre modale<span class="tooltiptext tooltip-top">Voir glossaire</span></span> pour confirmer l'opération.</p>
+         <p>Cliquez ensuite sur le bouton <span class="btn-blue">Validez&nbsp;les&nbsp;écritures</span> dans la <span class="tooltip">fenêtre modale<span class="tooltiptext tooltip-top">Voir glossaire</span></span> pour confirmer l'opération.</p>
 		 <p>Les écritures validées sont alors figées dans le journal et leur modification ultérieure devient dès lors impossible.</p>
          <p class="max-img-process">
             <img src="../images/chapitre5/brouillard5.png" class="contour-img" alt="Validation du brouillard" data-action="zoom" />
@@ -1292,7 +1294,7 @@
          <p class="max-img-process">
             <img src="../images/chapitre5/cloture6.png" class="contour-img" alt="Exercices comptables" data-action="zoom" />
          </p>
-         <p>Cliquez sur <span class="btn-blue">Clôturer l'exercice</span> pour valider l'opération.</p>
+         <p>Cliquez sur <span class="btn-blue">Clôturer&nbsp;l'exercice</span> pour valider l'opération.</p>
       </div>
       <br />
       <div class="floating-box process">
@@ -1323,13 +1325,13 @@
          <p class="max-img-process">
             <img src="../images/chapitre5/cloture10.png" class="contour-img" alt="Vérifier la signature électronique" data-action="zoom" />
          </p>
-         <p>Cliquez sur <span class="btn-blue">Vérifier la signature</span> pour contrôler, sur le site ekylibre.com, l'authenticité et l'intégrité des documents comptables &#40;avec copie automatique de la clé de sécurité&#41;.</p>
+         <p>Cliquez sur <span class="btn-blue">Vérifier&nbsp;la&nbsp;signature</span> pour contrôler, sur le site ekylibre.com, l'authenticité et l'intégrité des documents comptables &#40;avec copie automatique de la clé de sécurité&#41;.</p>
          <p>Le processus complet de vérification de la signature électronique des documents obligatoires est expliqué dans la section <a class="avoid-clicks" href="../chapitre10#ged" target="_self">&#171;&nbsp;Gestion électronique des documents&nbsp;&#187;</a> du chapitre 10 - Outils.</p>
       </div>
 	  <h6>Guide de prise en main • Comptabilité • Verrouillage d'un exercice</h6>
       <a class="slice-process" id="verrouillage"></a>
       <p align="center" class="texte aerateur procedure">3 – Procédure pour verrouiller un exercice comptable</p>
-      <p class="texte">La gestion commerciale dans l'application nécessite qu'un exercice comptable soit déjà ouvert à la date d'enregistrement d'une nouvelle commande ou d'une nouvelle vente, même si vous ne gérez pas votre comptabilité dans <strong>Eky</strong>agri. Dans la mesure où seulement 2 exercices peuvent être ouverts simultanément, l'ouverture d'un nouvel exercice oblige à verrouiller le plus ancien. Exemple&nbsp;: si les exercices 2018 et 2019 sont ouverts et que vous souhaitez ouvrir l'exercice 2020 sans procéder à une clôture, il faut verrouiller l'exercice 2018.</p>
+      <p class="texte">La gestion commerciale dans l'application nécessite qu'un exercice comptable soit déjà ouvert à la date d'enregistrement d'une nouvelle commande ou d'une nouvelle vente, même si vous ne gérez pas votre comptabilité dans <strong>Eky</strong>agri. Dans la mesure où seulement 2 exercices peuvent être ouverts simultanément, l'ouverture d'un nouvel exercice oblige à verrouiller le plus ancien. Exemple&nbsp;: si les exercices 2019 et 2020 sont ouverts et que vous souhaitez ouvrir l'exercice 2021 sans procéder à une clôture, il faut verrouiller l'exercice 2019.</p>
       <div class="affichage-large"></div>
       <div class="affichage-mobile">
          <p align="center">
@@ -1396,7 +1398,7 @@
          <p class="max-img-process">
             <img src="../images/chapitre5/verrouillage3.png" class="contour-img" alt="Verrouillage de l'exercice" data-action="zoom" />
          </p>
-         <p>Cliquez sur <span class="btn-blue">Verrouiller l'exercice</span> pour valider l'opération.</p>
+         <p>Cliquez sur <span class="btn-blue">Verrouiller&nbsp;l'exercice</span> pour valider l'opération.</p>
       </div>
       <br />
       <div class="floating-box process">
@@ -1408,7 +1410,7 @@
          <p class="max-img-process">
             <img src="../images/chapitre5/verrouillage4.png" class="contour-img" alt="Verrouillage de l'exercice" data-action="zoom" />
          </p>
-         <p>Cliquez sur <span class="btn-blue">Verrouiller l'exercice</span> pour valider l'opération.</p>
+         <p>Cliquez sur <span class="btn-blue">Verrouiller&nbsp;l'exercice</span> pour valider l'opération.</p>
       </div>
       <h6>Guide de prise en main • Comptabilité • Export FEC</h6>
       <a class="slice-process" id="exportfec"></a>
@@ -1840,7 +1842,7 @@
          <span class="titre-advice">Affichez les taxes</span>
          <p>Cliquez sur le lien "Comptabilité" dans le "Menu principal" ou sur le bouton "Comptabilité" de la page d'accueil&nbsp;:</p>
          <p align="center"><img src="../images/chapitre5/comptabilite.svg" alt="Comptabilité" width="60"></p>
-         <p>Dans la barre latérale du module, cliquez sur "Déclarations TVA" dans la section "TVA" symbolisée par l'icône d'un engrenage<img src="../images/chapitre5/cog-black.svg" alt="Engrenage" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des déclarations de TVA.</p>
+         <p>Dans la barre latérale du module, cliquez sur "Déclarations TVA" dans la section "TVA" symbolisée par l'icône d'un engrenage<img src="../images/chapitre5/cog.svg" alt="Engrenage" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des déclarations de TVA.</p>
          <p class="max-img-process">
             <img src="../images/chapitre5/declar-tva1.png" class="contour-img" alt="Déclarations TVA" data-action="zoom" />
          </p>
@@ -3657,7 +3659,7 @@
             <div class="divTableBody">
                <div class="divTableRow">
                   <div class="divTableCellCompta1"><img src="../images/chapitre5/wrench3.svg" alt="Configuration" height="28"></div>
-                  <div class="divTableCellCompta1"><img src="../images/chapitre5/cog-black.svg" alt="Configuration" height="30"></div>
+                  <div class="divTableCellCompta1"><img src="../images/chapitre5/cog.svg" alt="TVA" height="30"></div>
                   <div class="divTableCellCompta3"><img src="../images/chapitre5/book.svg" alt="Journaux" height="30"></div>
                </div>
                <div class="divTableRow">
