@@ -271,16 +271,17 @@
          <div class="divTableCompta texte aerateur-bas">
             <div class="divTableBody">
                <div class="divTableRow">
-                  <div class="divTableCellCompta1"><img src="../images/chapitre8/wrench3.svg" alt="Configuration" height="28"></div>
-                  <div class="divTableCellCompta1"><img src="../images/chapitre8/matter.svg" alt="Matières" height="28"></div>
+                  <div class="divTableCellCompta1"><img src="../images/chapitre8/book.svg" alt="Catalogues" height="30"></div>
+                  <div class="divTableCellCompta1"><img src="../images/chapitre8/wheat.svg" alt="Produits" height="28"></div>
                   <div class="divTableCellCompta3"><img src="../images/chapitre8/tractor.svg" alt="Tracteur" height="32"></div>
                </div>
                <div class="divTableRow">
                   <div class="divTableCellCompta2">
                      <form>
                         <select name="ListeUrl" SIZE="1" onChange="ChangeUrl(this.form)" style="width:210px">
-                           <option selected value="">Configuration</option>
-						   <option value="#coutusage">- Définir un catalogue de prix</option>
+                           <option selected value="">Catalogues de prix</option>
+						   <option value="#coutusage">- Créer un catalogue des coûts d'usage</option>
+						   <option value="#coutequipier">- Affecter un coût horaire à un équipier</option>
                         </select>
                      </form>
                   </div>
@@ -325,7 +326,6 @@
 						   <option value="#lien">- Rattacher un contact à une organisation</option>
 						   <option value="#equipiers">- Convertir un contact en équipier</option>
 						   <option value="#typeequipier">- Configurer un type d'équipier</option>
-						   <option value="#coutequipier">- Affecter un coût horaire à un équipier</option>
 						   <option value="#registre">- Obtenir le registre horaire des opérateurs</option>
                         </select>
                      </form>
@@ -365,8 +365,9 @@
          <form class="texte">
             <select name="ListeUrl" SIZE="1" onChange="ChangeUrl(this.form)" style="width:210px">
                <option selected value="">Menu stocks, tiers et RH&nbsp;:</option>
-               <optgroup label="Configuration">
-                  <option value="#coutusage">- Définir un catalogue de prix</option>
+               <optgroup label="Catalogues de prix">
+                  <option value="#coutusage">- Créer un catalogue des coûts d'usage</option>
+				  <option value="#coutequipier">- Affecter un coût horaire à un équipier</option>
                </optgroup>
                <optgroup label="Variantes et produits">
                   <option value="#categories">- Appréhender la notion de variante</option>
@@ -386,7 +387,6 @@
 				  <option value="#lien">- Rattacher un contact à une organisation</option>
 				  <option value="#equipiers">- Convertir un contact en équipier</option>
 				  <option value="#typeequipier">- Configurer un type d'équipier</option>
-				  <option value="#coutequipier">- Affecter un coût horaire à un équipier</option>
 				  <option value="#registre">- Obtenir le registre horaire des opérateurs</option>
                </optgroup>
                <optgroup label="Stocks">
@@ -407,86 +407,86 @@
          </form>
       </div>
 	  <div class="menu-print">
-      <p class="texte aerateur-haut">
-         <strong>Dans ce chapitre, on vous explique&nbsp;:</strong>
-      </p>
-      <div class="divTableListe marge">
-         <div class="divTableBody">
-            <div class="divTableRow">
-               <div class="divTableCellListe" style="width: 14px">
-                  <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
+         <p class="texte aerateur-haut">Dans ce chapitre, on vous explique comment&nbsp;:</p>
+         <div class="divTableCompta marge">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellPDF1" style="width: 234px">Catalogues de prix&nbsp;<img src="../images/chapitre8/book.svg" alt="Catalogue" height="20" class="align-compta icone-marge-gauche"></div>
+                  <div class="divTableCellPDF1" style="width: 234px">Variantes et produits&nbsp;<img src="../images/chapitre8/wheat.svg" alt="Produits" height="20" class="align-icone icone-marge-gauche"></div>
+                  <div class="divTableCellPDF3" style="width: 234px">Équipements&nbsp;<img src="../images/chapitre8/tractor.svg" alt="Tracteur" height="21" class="align-compta icone-marge-gauche"></div>
                </div>
-               <div class="divTableCellListe">
-                  Comment importer des <a href="#phyto" class="avoid-clicks">produits phytosanitaires</a>, créer de <a href="#nelle-variante" class="avoid-clicks">nouvelles variantes</a> et de nouveaux <a href="#article" class="avoid-clicks">articles</a>
+               <div class="divTableRow">
+                  <div class="divTableCellPDF2">- Créer un catalogue des coûts d'usage</div>
+                  <div class="divTableCellPDF2">- Appréhender la notion de variante</div>
+				  <div class="divTableCellPDF4">- Recenser vos machines et outils</div>
                </div>
-            </div>
-            <div class="divTableRow">
-               <div class="divTableCellListe">
-                  <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
+               <div class="divTableRow">
+                  <div class="divTableCellPDF2">- Affecter un coût horaire à un équipier</div>
+                  <div class="divTableCellPDF2">- Créer de nouvelles variantes</div>
+				  <div class="divTableCellPDF4">- Créer un nouvel équipement</div>
                </div>
-               <div class="divTableCellListe">
-                  Comment définir un <a href="#stock" class="avoid-clicks">stock initial</a> dans l'application &#40;avec la création de nouvelles matières&#41;
+               <div class="divTableRow">
+				  <div class="divTableCellPDF5">&nbsp;</div>
+                  <div class="divTableCellPDF2">- Importer des produits phytosanitaires</div>
+                  <div class="divTableCellPDF4">- Définir une variante d'équipement</div>
                </div>
-            </div>
-            <div class="divTableRow">
-               <div class="divTableCellListe">
-                  <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
+               <div class="divTableRow">
+				  <div class="divTableCellPDF5">&nbsp;</div>
+                  <div class="divTableCellPDF2">- Paramétrer de nouveaux articles</div>
+                  <div class="divTableCellPDF5">&nbsp;</div>
                </div>
-               <div class="divTableCellListe">
-                  Comment enregistrer une <a href="#expeditions" class="avoid-clicks">expédition</a>, enregistrer une <a href="#livraison" class="avoid-clicks">livraison</a> et <a href="#facture" class="avoid-clicks">facturer une expédition</a>
-               </div>
-            </div>
-            <div class="divTableRow">
-               <div class="divTableCellListe">
-                  <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
-               </div>
-               <div class="divTableCellListe">
-                  Comment paramétrer l'application afin de réaliser un <a href="#inventaires" class="avoid-clicks">inventaire</a> des stocks
+			   <div class="divTableRow">
+				  <div class="divTableCellPDF5">&nbsp;</div>
+                  <div class="divTableCellPDF2">- Créer une variante pour facture d'apport</div>
+                  <div class="divTableCellPDF5">&nbsp;</div>
                </div>
             </div>
-            <div class="divTableRow">
-               <div class="divTableCellListe">
-                  <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
+         </div>
+         <div class="divTableCompta marge aerateur-haut">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellPDF1" style="width: 234px">Tiers et équipiers&nbsp;<img src="../images/chapitre8/users.svg" alt="Tiers et équipiers" height="20" class="align-compta icone-marge-gauche"></div>
+                  <div class="divTableCellPDF1" style="width: 234px">Stocks&nbsp;<img src="../images/chapitre8/truck.svg" alt="Stocks" height="22" class="align-compta icone-marge-gauche"></div>
+                  <div class="divTableCellPDF3" style="width: 234px">Salaires&nbsp;<img src="../images/chapitre8/cog.svg" alt="Salaires" height="18" class="align-icone icone-marge-gauche"></div>
                </div>
-               <div class="divTableCellListe">
-                  Comment définir vos <a href="#equipements" class="avoid-clicks">équipements</a> &#40;matériel agricole&#41; et vos <a href="#tiers" class="avoid-clicks">tiers</a> &#40;personnel de l'exploitation, fournisseurs, clients, prestataires de services, etc.&#41;. Comment les <a href="#lien" class="avoid-clicks">rattacher</a> à une <a href="#organisation" class="avoid-clicks">organisation</a>
+               <div class="divTableRow">
+                  <div class="divTableCellPDF2">- Créer un nouveau contact</div>
+                  <div class="divTableCellPDF2">- Aborder la gestion des stocks</div>
+                  <div class="divTableCellPDF4">- Paramétrer un type de salaire</div>
                </div>
-            </div>
-            <div class="divTableRow">
-               <div class="divTableCellListe">
-                  <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
+               <div class="divTableRow">
+                  <div class="divTableCellPDF2">- Paramétrer une nouvelle organisation</div>
+                  <div class="divTableCellPDF2">- Créer un stock initial de matières</div>
+				  <div class="divTableCellPDF4">- Enregistrer un nouveau salaire</div>
                </div>
-               <div class="divTableCellListe">
-                  Comment configurer des <a href="#equipiers" class="avoid-clicks">équipiers</a> afin de pouvoir les sélectionner lors de l'enregistrement des interventions
+               <div class="divTableRow">
+                  <div class="divTableCellPDF2">- Rattacher un contact à une organisation</div>
+                  <div class="divTableCellPDF2">- Enregistrer une expédition</div>
+				  <div class="divTableCellPDF4">- Procéder au paiement d'un salaire</div>
                </div>
-            </div>
-            <div class="divTableRow">
-               <div class="divTableCellListe">
-                  <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
+               <div class="divTableRow">
+                  <div class="divTableCellPDF2">- Convertir un contact en équipier</div>
+                  <div class="divTableCellPDF2">- Paramétrer une livraison</div>
+				  <div class="divTableCellPDF5">&nbsp;</div>
                </div>
-               <div class="divTableCellListe">
-                  Comment affecter un <a class="avoid-clicks" href="#coutequipier">coût horaire estimatif</a> à un type d'équipier et l'enregistrer dans un <a class="avoid-clicks" href="#coutusage">catalogue de prix</a>
+               <div class="divTableRow">
+                  <div class="divTableCellPDF2">- Configurer un type d'équipier</div>
+                  <div class="divTableCellPDF2">- Facturer une expédition</div>
+				  <div class="divTableCellPDF5">&nbsp;</div>
                </div>
-            </div>
-            <div class="divTableRow">
-               <div class="divTableCellListe">
-                  <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
+               <div class="divTableRow">
+                  <div class="divTableCellPDF2">- Obtenir le registre horaire des opérateurs</div>
+                  <div class="divTableCellPDF2">- Paramétrer les stocks permanents</div>
+                  <div class="divTableCellPDF5">&nbsp;</div>
                </div>
-               <div class="divTableCellListe">
-                  Comment obtenir le <a href="#registre" class="avoid-clicks">registre horaire des opérateurs</a>
-               </div>
-            </div>
-			<div class="divTableRow">
-               <div class="divTableCellListe">
-                  <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
-               </div>
-               <div class="divTableCellListe">
-                  Comment paramétrer un <a href="#typesalaire" class="avoid-clicks">type de salaire</a>, enregistrer un nouveau <a href="#creasalaire" class="avoid-clicks">salaire</a> et procéder à son <a href="#paiement" class="avoid-clicks">paiement</a>
+               <div class="divTableRow">
+                  <div class="divTableCellPDF5">&nbsp;</div>
+                  <div class="divTableCellPDF2">- Réaliser un inventaire des stocks</div>
+                  <div class="divTableCellPDF5">&nbsp;</div>
                </div>
             </div>
          </div>
       </div>
-	  </div>
       <div class="saut-page"></div>
       <h2 class="texte aerateur">Glossaire du chapitre</h2>
       <div class="divTableGlossaire marge aerateur-bas">
@@ -3239,16 +3239,17 @@
          <div class="divTableCompta texte aerateur-bas">
             <div class="divTableBody">
                <div class="divTableRow">
-                  <div class="divTableCellCompta1"><img src="../images/chapitre8/wrench3.svg" alt="Configuration" height="28"></div>
-                  <div class="divTableCellCompta1"><img src="../images/chapitre8/matter.svg" alt="Matières" height="28"></div>
+                  <div class="divTableCellCompta1"><img src="../images/chapitre8/book.svg" alt="Catalogues" height="30"></div>
+                  <div class="divTableCellCompta1"><img src="../images/chapitre8/wheat.svg" alt="Produits" height="28"></div>
                   <div class="divTableCellCompta3"><img src="../images/chapitre8/tractor.svg" alt="Tracteur" height="32"></div>
                </div>
                <div class="divTableRow">
                   <div class="divTableCellCompta2">
                      <form>
                         <select name="ListeUrl" SIZE="1" onChange="ChangeUrl(this.form)" style="width:210px">
-                           <option selected value="">Configuration</option>
-						   <option value="#coutusage">- Définir un catalogue de prix</option>
+                           <option selected value="">Catalogues de prix</option>
+						   <option value="#coutusage">- Créer un catalogue des coûts d'usage</option>
+						   <option value="#coutequipier">- Affecter un coût horaire à un équipier</option>
                         </select>
                      </form>
                   </div>
@@ -3293,7 +3294,6 @@
 						   <option value="#lien">- Rattacher un contact à une organisation</option>
 						   <option value="#equipiers">- Convertir un contact en équipier</option>
 						   <option value="#typeequipier">- Configurer un type d'équipier</option>
-						   <option value="#coutequipier">- Affecter un coût horaire à un équipier</option>
 						   <option value="#registre">- Obtenir le registre horaire des opérateurs</option>
                         </select>
                      </form>

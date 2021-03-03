@@ -78,7 +78,8 @@
             {dates: [new Date(2020, 11, 17), new Date(2020, 12, 21)], title: "Version 3.25", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
             {dates: [new Date(2020, 12, 22), new Date(2021, 1, 2)], title: "Version 3.26", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
             {dates: [new Date(2021, 1, 3), new Date(2021, 1, 17)], title: "Version 3.27", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
-         {dates: [new Date(2021, 1, 18), new Date(annee, mois, jour)], title: "Version 3.28", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
+            {dates: [new Date(2021, 1, 18), new Date(annee, 2, 3)], title: "Version 3.28", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
+		 {dates: [new Date(2021, 2, 4), new Date(annee, mois, jour)], title: "Version 3.29", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}}
          ];
          
          var sections = [
@@ -92,7 +93,7 @@
          	animated: true,
          	tooltips: true,
          	defaultStartDate: new Date(2019, 5, 1),
-         endDate: new Date(2021, 2, 31),
+         	endDate: new Date(2021, 5, 31),
          	sections: sections,
          	sectionLabelAttrs: {"fill": "#3f70ce", "font-weight": "bold"},
          	labelInterval: isHalfMonth,
@@ -138,6 +139,103 @@
             <section id="panel-1">
                <main>
                   <div class="accordion-container marge">
+                     <div class="panel">
+                        <div class="heading">
+                           <div class="version">
+                              <h2>Note de version 3.29 du 4/03/2021</h2>
+                           </div>
+                           <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <div class="content">
+                           <div class="divTableNoteVersion">
+                              <div class="divTableBody">
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Comptabilité</strong><br /><br />
+                                       1 amélioration et 4 bugs corrigés
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Il est désormais possible de sélectionner un compte comptable d'attente avec le radical 472 dans le formulaire de création ou de modification d'un compte de trésorerie.</li>
+                                       </ul>
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
+                                       <ul>
+                                          <li>Le "N<sup>o</sup> référence" indiqué lors de la saisie d'une écriture comptable est désormais reporté dans la vue de l'écriture comptable ainsi que dans le brouillard du journal concerné&nbsp;;</li>
+                                          <li>Le pointage généré lors d'un rapprochement bancaire est correctement affecté aux écritures lorsqu'on utilise un compte d'attente. Pour rappel, ce dernier permet d'obtenir, dans l'application, un solde de banque toujours à jour avec le solde de banque réel&nbsp;;</li>
+                                          <li>Effacer le pointage des lignes d'un relevé de compte rapprochées avec des écritures comptables enregistrées dans <strong>Eky</strong>agri supprime désormais intégralement le pointage caduque, y compris lorsque les écritures sont situées sur un relevé de compte d'une période différente&nbsp;;</li>
+                                          <li>Il n'est maintenant plus possible de supprimer un encaissement ou un décaissement lorsque celui-ci a déjà été pointé lors d'un rapprochement bancaire.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/ventes.svg" alt="Ventes" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Ventes</strong><br /><br />
+                                       1 bug corrigé
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+                                          <li>Lorsqu'une facture de vente est générée au format PDF avec un grand nombre de lignes de vente, le modèle d'impression évite désormais la superposition des informations quand le récapitulatif du montant total se situe en bas de page.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Production</strong><br /><br />
+                                       1 bug corrigé
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+                                          <li>Correction de la proratisation des temps de travaux affectés à chaque activité lorsqu'une intervention est enregistrée en ciblant des parcelles et/ou des cultures dont les activités sont différentes.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/outils.svg" alt="Outils" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Outils</strong><br /><br />
+                                       2 améliorations
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+                                          <li>Mise à disposition d'un nouvel outil d'import de fichiers au format TXT en provenance du logiciel Isacompta pour réaliser le transfert des écritures comptables &#40;FEC&#41;&nbsp;;</li>
+                                          <li>Mise à disposition d'un nouvel outil d'import de fichiers au format ECR en provenance du logiciel Isapaye pour transférer les écritures comptables de paie. Un nouveau journal comptable est automatiquement créé pendant l'import pour consigner ces écritures.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                      <div class="panel">
                         <div class="heading">
                            <div class="version">
@@ -3413,6 +3511,106 @@
          </div>
       </article>
       <!-- Section pour la génération du PDF -->
+      <div class="saut-page"></div>
+      <div class="heading-print marge aerateur-haut">
+         <h2>Note de version 3.29 du 4/03/2021</h2>
+      </div>
+      <div class="content-print marge">
+         <div class="divTableNoteVersion">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Comptabilité</strong><br /><br />
+                     1 amélioration et 4 bugs corrigés
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>Il est désormais possible de sélectionner un compte comptable d'attente avec le radical 472 dans le formulaire de création ou de modification d'un compte de trésorerie.</li>
+                     </ul>
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
+                     <ul>
+                        <li>Le "N<sup>o</sup> référence" indiqué lors de la saisie d'une écriture comptable est désormais reporté dans la vue de l'écriture comptable ainsi que dans le brouillard du journal concerné&nbsp;;</li>
+                        <li>Le pointage généré lors d'un rapprochement bancaire est correctement affecté aux écritures lorsqu'on utilise un compte d'attente. Pour rappel, ce dernier permet d'obtenir, dans l'application, un solde de banque toujours à jour avec le solde de banque réel&nbsp;;</li>
+                        <li>Effacer le pointage des lignes d'un relevé de compte rapprochées avec des écritures comptables enregistrées dans <strong>Eky</strong>agri supprime désormais intégralement le pointage caduque, y compris lorsque les écritures sont situées sur un relevé de compte d'une période différente&nbsp;;</li>
+                        <li>Il n'est maintenant plus possible de supprimer un encaissement ou un décaissement lorsque celui-ci a déjà été pointé lors d'un rapprochement bancaire.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/ventes.svg" alt="Ventes" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Ventes</strong><br /><br />
+                     1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>Lorsqu'une facture de vente est générée au format PDF avec un grand nombre de lignes de vente, le modèle d'impression évite désormais la superposition des informations quand le récapitulatif du montant total se situe en bas de page.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Production</strong><br /><br />
+                     1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>Correction de la proratisation des temps de travaux affectés à chaque activité lorsqu'une intervention est enregistrée en ciblant des parcelles et/ou des cultures dont les activités sont différentes.</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="content-print marge">
+         <div class="divTableNoteVersion">
+            <div class="divTableBody">
+               <div class="saut-page"></div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/outils.svg" alt="Outils" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Outils</strong><br /><br />
+                     2 améliorations
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>Mise à disposition d'un nouvel outil d'import de fichiers au format TXT en provenance du logiciel Isacompta pour réaliser le transfert des écritures comptables &#40;FEC&#41;&nbsp;;</li>
+                        <li>Mise à disposition d'un nouvel outil d'import de fichiers au format ECR en provenance du logiciel Isapaye pour transférer les écritures comptables de paie. Un nouveau journal comptable est automatiquement créé pendant l'import pour consigner ces écritures.</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
       <div class="saut-page"></div>
       <div class="heading-print marge aerateur-haut">
          <h2>Note de version 3.28 du 18/02/2021</h2>
