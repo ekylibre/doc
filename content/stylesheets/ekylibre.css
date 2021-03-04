@@ -995,17 +995,17 @@ a:visited {
 
 /*Tableau comptabilité*/
 
-.divTableCellCompta1, .divTableHeadCompta1 {
+.divTableCellMenu1, .divTableHeadMenu1 {
 	display: table-cell;
 	padding: 3px 9px 0 0;
 	text-align: center;
 	vertical-align: middle;
 }
-.divTableCellCompta2, .divTableHeadCompta2 {
+.divTableCellMenu2, .divTableHeadMenu2 {
 	display: table-cell;
 	padding: 3px 9px 0 0;
 }
-.divTableCellCompta3, .divTableHeadCompta3 {
+.divTableCellMenu3, .divTableHeadMenu3 {
 	display: table-cell;
 	padding: 3px 0 0 0;
 	text-align: center;
