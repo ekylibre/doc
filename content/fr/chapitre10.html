@@ -282,6 +282,14 @@
                   Comment importer une <a href="#import-agroedi" class="avoid-clicks">fiche parcellaire Daplos Agro-EDI</a>
                </div>
             </div>
+			<div class="divTableRow">
+               <div class="divTableCellListe">
+                  <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
+               </div>
+               <div class="divTableCellListe">
+                  Comment importer les <a href="#import-isapaye" class="avoid-clicks">écritures comptables de paie &#40;ECR&#41;</a> issues du logiciel Isapaye
+               </div>
+            </div>
             <div class="divTableRow">
                <div class="divTableCellListe">
                   <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
@@ -521,7 +529,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Patientez quelques instants</span>
-         <p>La barre de progression vous indique l'avancée du transfert des données à traiter.</p>
+         <p>La barre de progression vous informe de l'avancée du transfert des données à traiter.</p>
          <p class="max-img-process">
             <img src="../images/chapitre10/import-plan5.png" class="contour-img" alt="Progression import" data-action="zoom" />
          </p>
@@ -665,7 +673,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Patientez quelques instants</span>
-         <p>La barre de progression vous indique l'avancée du transfert des données qui peut prendre plus ou moins de temps en fonction du nombre de tiers à traiter.</p>
+         <p>La barre de progression vous informe de l'avancée du transfert des données qui peut prendre plus ou moins de temps en fonction du nombre de tiers à traiter.</p>
          <p class="max-img-process">
             <img src="../images/chapitre10/import-tiers5.png" class="contour-img" alt="Progression import" data-action="zoom" />
          </p>
@@ -1162,7 +1170,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Patientez quelques instants</span>
-         <p>La barre de progression vous indique l'avancée du transfert des données qui peut prendre plus ou moins de temps en fonction du nombre de variantes à traiter.</p>
+         <p>La barre de progression vous informe de l'avancée du transfert des données qui peut prendre plus ou moins de temps en fonction du nombre de variantes à traiter.</p>
          <p class="max-img-process">
             <img src="../images/chapitre10/import-variants5.png" class="contour-img" alt="Progression import" data-action="zoom" />
          </p>
@@ -1303,7 +1311,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Patientez quelques instants</span>
-         <p>La barre de progression vous indique l'avancée du transfert des données qui peut prendre plus ou moins de temps en fonction du nombre d'équipements à traiter.</p>
+         <p>La barre de progression vous informe de l'avancée du transfert des données qui peut prendre plus ou moins de temps en fonction du nombre d'équipements à traiter.</p>
          <p class="max-img-process">
             <img src="../images/chapitre10/import-equip5.png" class="contour-img" alt="Progression import" data-action="zoom" />
          </p>
@@ -1450,7 +1458,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Patientez quelques instants</span>
-         <p>La barre de progression vous indique l'avancée du transfert des données qui peut prendre plus ou moins de temps en fonction du nombre de zones à traiter.</p>
+         <p>La barre de progression vous informe de l'avancée du transfert des données qui peut prendre plus ou moins de temps en fonction du nombre de zones à traiter.</p>
          <p class="max-img-process">
             <img src="../images/chapitre10/import-zones5.png" class="contour-img" alt="Progression import" data-action="zoom" />
          </p>
@@ -1593,7 +1601,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Patientez quelques instants</span>
-         <p>La barre de progression vous indique l'avancée du transfert des données qui peut prendre plus ou moins de temps en fonction du nombre de parcelles et d'interventions à traiter.</p>
+         <p>La barre de progression vous informe de l'avancée du transfert des données qui peut prendre plus ou moins de temps en fonction du nombre de parcelles et d'interventions à traiter.</p>
          <p class="max-img-process">
             <img src="../images/chapitre10/agro-edi5.png" class="contour-img" alt="Progression import" data-action="zoom" />
          </p>
@@ -1635,9 +1643,152 @@
          </p>
          <p>Cliquez sur le nom d'une intervention pour en afficher le détail. Les parcelles &#40;cibles d'intervention&#41;, engrais, produits phytosanitaires &#40;intrants d'intervention&#41; et produits de récolte &#40;extrants d'intervention&#41; sont maintenant tous consignés dans <strong>Eky</strong>agri et vous permettent d'éditer le registre des interventions, le cahier de traçabilité et le registre phytosanitaire.</p>
       </div>
-      <a class="slice-process" id="import-telepac"></a>
+      <a class="slice-process" id="import-isapaye"></a>
+      <h6>Guide de prise en main • Imports • Fichier Isapaye &#40;ECR&#41;</h6>
+      <p align="center" class="texte aerateur procedure">7 – Procédure pour importer un fichier ECR Isapaye</p>
+	  <div id="cont9" class="niveau">
+         <div id="gauge9" class="jauge"></div>
+      </div>
+      <script>
+         document.addEventListener("DOMContentLoaded", function(event) {
+          var gNode1 = document.createElement('div');
+          gNode1.setAttribute("class", "jauge");
+          var gauge1 = new JustGage({
+              id: "gauge9",
+              value: 1,
+              width: 150,
+              height: 110,
+              min: 0,
+              max: 5,
+              decimals: 0,
+              customSectors: [{
+          	  color : "#00ff00",
+          	  lo : 0,
+          	  hi : 1
+         	  }],
+              pointer: true,
+              startAnimationTime: 1,
+          	  startAnimationType: "linear",
+          	  refreshAnimationTime: 1,
+          	  refreshAnimationType: "linear",
+              hideMinMax: true,
+          });
+      });
+      </script>
+      <p class="texte">Destiné aux employeurs MSA, le logiciel Isapaye développé par la société Isagri sécurise et automatise la réalisation des fiches de paie et des déclarations sociales.</p>
+	  <p class="texte">La fonctionnalité d'import d'<strong>Eky</strong>agri permet à l'agriculteur d'intégrer facilement, dans un journal des opérations diverses, l'ensemble des écritures comptables de paie liées à l'enregistrement des salaires et au calcul des charges dans Isapaye.</p>
+      <p class="texte aerateur-haut">Le processus suivant vous guide pour importer un fichier des écritures comptables de paie &#40;ECR&#41; dans l'application.</p>
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Prérequis&nbsp;: obtenez le fichier des écritures comptables de paie</span>
+         <p>
+            Dans l'application Isapaye, sélectionnez, dans le menu principal, l'onglet "Éditions" puis cliquez sur le lien "Écritures comptables"&nbsp;:
+         </p>
+         <p class="max-img-process">
+            <img src="../images/chapitre10/isapaye1.png" class="contour-img" alt="Sélection onglet Édition" data-action="zoom" />
+         </p>
+         <p class="aerateur-haut">Sélectionnez la période en haut à gauche de la fenêtre principale, puis paramétrez l'export des écritures comptables de paie et validez l'enregistrement du fichier ECR en cliquant sur le bouton "Transfert"&nbsp;:</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre10/isapaye2.png" class="contour-img" alt="Obtention du fichier ECR" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez les "Imports"</span>
+         <p>
+            Cliquez sur le lien "Outils" dans le "Menu principal" ou sur le bouton "Outils" de la page d'accueil&nbsp;:
+         </p>
+         <p align="center"><img src="../images/chapitre10/magic.svg" alt="Outils" width="60"></p>
+         <p>Dans la barre latérale du module, cliquez sur "Imports" dans la section "Échange" symbolisée par l'icône représentant 2 flèches<img src="../images/chapitre10/exchange.svg" alt="Échange" height="20" class="align-icone icone-marge-gauche">.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre10/isapaye3.png" class="contour-img" alt="Liste des imports" data-action="zoom" />
+         </p>
+         <p>Tous les "Imports" déjà réalisés sont listés ici, notamment ceux issus de l'intégration des données TelePAC, ainsi que les zones cultivables et les bâtiments définis dans l'assistant de démarrage.</p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Créez un nouvel "Import"</span>
+         <p>Cliquez sur le bouton<img class="btn-gris icone-marge-gauche icone-marge-droite" src="../images/commun/nouveau.svg" alt="+ Nouveau">en haut à gauche de la fenêtre principale.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre10/isapaye4.png" class="contour-img" alt="Nouvel import" data-action="zoom" />
+         </p>
+         <p>Puis, dans le pavé "Isagri" de la section "Comptabilité", sélectionnez "Écritures comptables &#40;ECR&#41; Isapaye - Isagri" dans la liste déroulante des types de fichiers disponibles.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre10/isapaye5.png" class="contour-img" alt="Sélection du type d'import" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step4.svg" alt="4" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Sélectionnez le fichier ECR</span>
+         <p>Cliquez sur le bouton "Parcourir" pour sélectionner le fichier ECR obtenu à l'étape n<sup>o</sup>&nbsp;1 de cette procédure.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre10/isapaye6.png" class="contour-img" alt="Sélection fichier ECR" data-action="zoom" />
+         </p>
+         <p>Cliquez sur <span class="btn-blue">Importer</span> pour valider l'opération.</p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step5.svg" alt="5" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Lancez l'import des écritures</span>
+         <p>Cliquez sur le bouton <span class="btn-blue"><i class="fas fa-cog"></i>&nbsp;&nbsp;Exécuter</span> pour valider l'import des écritures comptables de paie.</p>
+         <p>En cas d'incompatibilité, l'application vous avertit immédiatement qu'une erreur est survenue.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre10/isapaye7.png" class="contour-img" alt="Exécution import" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step6.svg" alt="6" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Patientez quelques instants</span>
+         <p>La barre de progression vous informe de l'avancée du transfert des données à traiter.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre10/isapaye8.png" class="contour-img" alt="Progression import" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step7.svg" alt="7" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez les notifications</span>
+         <p>Une fois que la barre d'avancement disparaît, la pastille rouge<img src="../images/commun/marker.svg" alt="Notification" height="20" class="align-icone icone-marge-gauche icone-marge-droite">en haut à droite de la cloche<img src="../images/commun/bell-o-blue.svg" alt="Cloche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">vous indique qu'une opération interne a été effectuée par l'application. Cliquez sur celle-ci pour afficher la notification. En cas d'erreur, vous serez informé&#40;e&#41; de la nature de celle-ci.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre10/isapaye9.png" class="contour-img" alt="Affichage notifications" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step8.svg" alt="8" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Vérifiez l'import des écritures</span>
+         <p>Cliquez sur le lien "Journaux" de la section "Journaux" du module "Comptabilité". Durant l'import, un nouveau journal comptable "Import ISAPAYE" a automatiquement été créé pour consigner les écritures de paie.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre10/isapaye10.png" class="contour-img" alt="Liste des journaux" data-action="zoom" />
+         </p>
+         <p>Dans la liste des journaux, cliquez sur le nom du journal "Import ISAPAYE" ou sur le code "ISAP" pour consulter les écritures ajoutées en mode brouillard lors de l'import.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre10/isapaye11.png" class="contour-img" alt="Liste des écritures du journal Isapaye" data-action="zoom" />
+         </p>
+      </div>
+	  <a class="slice-process" id="import-telepac"></a>
       <h6>Guide de prise en main • Imports • Fichier TelePAC &#40;XML&#41;</h6>
-      <p align="center" class="texte aerateur procedure">G – Procédure pour importer un fichier TelePAC</p>
+      <p align="center" class="texte aerateur procedure">8 – Procédure pour importer un fichier TelePAC</p>
 	  <div id="cont7" class="niveau">
          <div id="gauge7" class="jauge"></div>
       </div>
@@ -1669,7 +1820,7 @@
       </script>
       <p class="texte">La création des zones cultivables et des activités agricoles grâce à l'import d'un fichier TelePAC se fait généralement dans l'assistant de démarrage mais vous pouvez avoir passé cette étape et décidé d'intégrer vos données plus tard dans l'application. Vous pouvez aussi avoir importé une déclaration TelePAC et décidé d'en intégrer d'autres complémentaires.</p>
       <p class="texte">La fonctionnalité d'import d'<strong>Eky</strong>agri permet à l'agriculteur de récupérer l'ensemble des informations de la gestion parcellaire de son exploitation et des activités déclarées à la PAC à partir de 2015.</p>
-      <p class="texte">Le processus suivant vous guide pour importer un fichier TelePAC dans l'application.</p>
+      <p class="texte aerateur-haut">Le processus suivant vous guide pour importer un fichier TelePAC dans l'application.</p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
       </div>
@@ -1730,7 +1881,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Patientez quelques instants</span>
-         <p>La barre de progression vous indique l'avancée du transfert des données qui peut prendre plus ou moins de temps en fonction du nombre de parcelles et d'activités à traiter.</p>
+         <p>La barre de progression vous informe de l'avancée du transfert des données qui peut prendre plus ou moins de temps en fonction du nombre de parcelles et d'activités à traiter.</p>
          <p class="max-img-process">
             <img src="../images/chapitre10/telepac6.png" class="contour-img" alt="Progression import" data-action="zoom" />
          </p>
