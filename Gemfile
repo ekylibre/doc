@@ -6,3 +6,4 @@ gem 'adsf'
 group :nanoc do
   gem 'guard-nanoc'
 end
+gem 'webrick'
