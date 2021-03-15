@@ -92,7 +92,7 @@
 
 .drawer-menu-item:link {
 	font-size: 17px;
-	display: block;
+	display: inline-block;
 	padding: .60rem;
 	text-decoration: none;
 	color: #fff;
@@ -153,30 +153,36 @@ span[data-descr]:hover::after {
 	display: none;
 }
 
-@media only screen and (min-width: 481px) {
-span[data-descr]:hover::after {
-    display: inline;
-	content: attr(data-descr);
-	font-family: "Lato", "Open Sans", "Droid Sans", "Liberation Sans", Helvetica, sans-serif;
-	position: absolute;
-	left: 50%;
-    margin-left: -275px;
-	top: 19px;
-	width: 550px;
-	padding: 2px;
-	color: #fff;
-	font-size: 10px;
-	text-transform: uppercase;
-	/*z-index: 1;*/
-	-webkit-animation-name: specialFadeIn;
-	animation-name: specialFadeIn;
-	-webkit-animation-delay: 30ms;
-	animation-delay: 30ms;
-	-webkit-animation-duration: 200ms;
-	animation-duration: 200ms;
-	-webkit-animation-fill-mode: both;
-	animation-fill-mode: both;
+@media only screen and (min-width: 481px){
+	span[data-descr]:hover::after {
+		display: inline;
+		content: attr(data-descr);
+		font-family: "Lato", "Open Sans", "Droid Sans", "Liberation Sans", Helvetica, sans-serif;
+		position: absolute;
+		left: 50%;
+		margin-left: -275px;
+		top: 19px;
+		width: 550px;
+		padding: 2px;
+		color: #fff;
+		font-size: 10px;
+		text-transform: uppercase;
+		/*z-index: 1;*/
+		-webkit-animation-name: specialFadeIn;
+		animation-name: specialFadeIn;
+		-webkit-animation-delay: 30ms;
+		animation-delay: 30ms;
+		-webkit-animation-duration: 200ms;
+		animation-duration: 200ms;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
 }
+
+@media only screen and (max-height: 500px){
+span[data-descr]:hover::after {
+		display: none;
+	}
 }
 
 /*! overlay */
@@ -201,6 +207,20 @@ span[data-descr]:hover::after {
     Top
 \*!------------------------------------*/
 
+.columns {
+	column-count: 2;
+	-moz-column-count: 2;
+	-webkit-column-count: 2;
+}
+
+@media only screen and (min-height: 500px){
+	.columns {
+		column-count: 1;
+		-moz-column-count: 1;
+		-webkit-column-count: 1;
+	}
+}
+
 .drawer--top .drawer-nav {
 	top: -100%;
 	/*left: 0;*/
@@ -210,6 +230,7 @@ span[data-descr]:hover::after {
 	max-height: 100%;
 	-webkit-transition: top .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
 	transition: top .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
+	text-align: center;
 }
 
 @media only screen and (min-width: 481px) {
