@@ -27,7 +27,8 @@
 	background-color: #fff;
 	padding-top: 65px;
 	padding-bottom: 20px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: "Lato", "Open Sans", "Droid Sans", "Liberation Sans", Helvetica, sans-serif;
+	font-weight: 700;
 	border: 1px solid #333;
 	border-radius: 5px;
 }
@@ -100,6 +101,8 @@
 
 .drawer-menu-item:link .angle {
 	visibility: hidden;
+	vertical-align: -1px;
+	display: none;
 }
 
 .drawer-menu-item:visited {
@@ -153,7 +156,7 @@ span[data-descr]:hover::after {
 	display: none;
 }
 
-@media only screen and (min-width: 481px){
+@media only screen and (min-width: 450px){
 	span[data-descr]:hover::after {
 		display: inline;
 		content: attr(data-descr);
@@ -165,8 +168,8 @@ span[data-descr]:hover::after {
 		width: 550px;
 		padding: 2px;
 		color: #fff;
-		font-size: 10px;
-		text-transform: uppercase;
+		font-size: 11px;
+		font-weight: 300;
 		/*z-index: 1;*/
 		-webkit-animation-name: specialFadeIn;
 		animation-name: specialFadeIn;
@@ -177,10 +180,16 @@ span[data-descr]:hover::after {
 		-webkit-animation-fill-mode: both;
 		animation-fill-mode: both;
 	}
+	.drawer-menu-item:link .angle {
+		display: inline;
+	}
 }
 
 @media only screen and (max-height: 500px){
-span[data-descr]:hover::after {
+	span[data-descr]:hover::after {
+		display: none;
+	}
+	.drawer-menu-item:link .angle {
 		display: none;
 	}
 }
@@ -230,14 +239,13 @@ span[data-descr]:hover::after {
 	max-height: 100%;
 	-webkit-transition: top .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
 	transition: top .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
-	text-align: center;
 }
 
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 450px) {
 	.drawer--top .drawer-nav {
 		top: -120%;
 		/*left: 0;*/
-		width: 450px;
+		width: 400px;
 		background-color: #333;
 		height: auto;
 		max-height: 100%;
@@ -246,11 +254,11 @@ span[data-descr]:hover::after {
 	}
 }
 
-@media only screen and (min-width: 769px) {
+/*
+@media only screen and (min-width: 768px) {
 	.drawer--top .drawer-nav {
 		top: -120%;
-		/*left: 0;*/
-		width: 550px;
+		width: 400px;
 		background-color: #333;
 		height: auto;
 		max-height: 100%;
@@ -258,6 +266,7 @@ span[data-descr]:hover::after {
 		transition: top .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
 	}
 }
+*/
 
 .drawer--top.drawer-open .drawer-nav {
 	top: 0;
@@ -398,13 +407,13 @@ span[data-descr]:hover::after {
 .drawer-open .drawer-hamburger-icon:before {
 	-webkit-transform: rotate(45deg);
 	transform: rotate(45deg);
-	background-color: #1195f5;
+	background-color: #fff;
 }
 
 .drawer-open .drawer-hamburger-icon:after {
 	-webkit-transform: rotate(-45deg);
 	transform: rotate(-45deg);
-	background-color: #1195f5;
+	background-color: #fff;
 }
 
 

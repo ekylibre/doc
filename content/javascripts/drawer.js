@@ -4,6 +4,7 @@
  * http://git.blivesta.com/drawer
  * License : MIT
  * Author : blivesta <design@blivesta.com> (http://blivesta.com/)
+ * Adaptation : Ekylibre (https://doc.ekylibre.com/v2/fr/)
  */
 
 ;(function umd(factory) {
@@ -108,7 +109,7 @@
 
     open: function open() {
       var $this = $(this);
-
+	  $('html').css({'overflow-y': 'hidden'});
       if (touches) {
         $this.on('touchmove.' + namespace, function disableTouch(event) {
           event.preventDefault();
@@ -126,7 +127,7 @@
 
     close: function close() {
       var $this = $(this);
-
+      $('html').css({'overflow-y': 'visible'});
       if (touches) $this.off('touchmove.' + namespace);
 
       return $this

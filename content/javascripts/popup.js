@@ -1,4 +1,4 @@
-// Adaptation par Ekylibre, https://doc.ekylibre.com
+// Adaptation : Ekylibre (https://doc.ekylibre.com/v2/fr/)
 
 jQuery(function ($) {
 
