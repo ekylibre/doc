@@ -110,6 +110,7 @@
     open: function open() {
       var $this = $(this);
 	  $('html').css({'overflow-y': 'hidden'});
+	  $('.top-background img').css({'opacity': '0.5'});
       if (touches) {
         $this.on('touchmove.' + namespace, function disableTouch(event) {
           event.preventDefault();
@@ -128,6 +129,7 @@
     close: function close() {
       var $this = $(this);
       $('html').css({'overflow-y': 'visible'});
+      $('.top-background img').css({'opacity': '1'});
       if (touches) $this.off('touchmove.' + namespace);
 
       return $this
