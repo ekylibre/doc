@@ -232,6 +232,7 @@ video {
 	padding-top: 21px;
 	font-size: 15px;
 	line-height: 1.5;
+	z-index: 90;
 }
 .ekylibre {
 	display: none;
@@ -474,6 +475,7 @@ video {
 		padding-top: 21px;
 		font-size: 15px;
 		line-height: 1.5;
+		z-index: 90;
 	}
 	.ekylibre {
 		display: none;
@@ -761,6 +763,7 @@ video {
 		padding-top: 21px;
 		font-size: 15px;
 		line-height: 1.5;
+		z-index: 90;
 	}
 	.ekylibre {
 		display: none;

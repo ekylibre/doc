@@ -198,7 +198,7 @@ span[data-descr]:hover::after {
 
 .drawer-overlay {
 	position: fixed;
-	z-index: 100;
+	z-index: 1;
 	top: 0;
 	left: 0;
 	display: none;
@@ -220,6 +220,7 @@ span[data-descr]:hover::after {
 	column-count: 2;
 	-moz-column-count: 2;
 	-webkit-column-count: 2;
+	column-rule: 1px solid #fff;
 }
 
 @media only screen and (min-height: 500px){
@@ -239,6 +240,7 @@ span[data-descr]:hover::after {
 	max-height: 100%;
 	-webkit-transition: top .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
 	transition: top .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
+	z-index: 85;
 }
 
 @media only screen and (min-width: 450px) {
@@ -251,6 +253,7 @@ span[data-descr]:hover::after {
 		max-height: 100%;
 		-webkit-transition: top .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
 		transition: top .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
+		z-index: 85;
 	}
 }
 
