@@ -1088,8 +1088,36 @@
       </div>
 	  <h6>Guide de prise en main • Achats • Enregistrer un avoir</h6>
       <a class="slice-process" id="avoir-fact"></a>
-      <p align="center" class="texte aerateur procedure">3 – Procédure pour enregistrer un avoir dans le journal des achats
-      </p>
+      <p align="center" class="texte aerateur procedure">3 – Procédure pour enregistrer un avoir sur un achat</p>
+	  <div id="cont2" class="niveau">
+         <div id="gauge2" class="jauge"></div>
+      </div>
+      <script>
+         document.addEventListener("DOMContentLoaded", function(event) {
+          var gNode1 = document.createElement('div');
+          gNode1.setAttribute("class", "jauge");
+          var gauge1 = new JustGage({
+              id: "gauge2",
+              value: 2,
+              width: 150,
+              height: 110,
+              min: 0,
+              max: 5,
+              decimals: 0,
+              customSectors: [{
+         color : "#ffff00",
+          	  lo : 2,
+         hi : 3
+         	  }],
+              pointer: true,
+              startAnimationTime: 1,
+          	  startAnimationType: "linear",
+          	  refreshAnimationTime: 1,
+          	  refreshAnimationType: "linear",
+              hideMinMax: true,
+          });
+         });
+      </script>
 	  <p class="texte">L'écriture comptable pour enregistrer l'avoir obtenu de la part d'un fournisseur peut faire suite à un retour des marchandises achetées ou à une remise. Les explications délivrées ci-dessous s'appliquent lorsque qu'une facture d'achat est déjà payée dans sa totalité par un ou plusieurs décaissements, et qu'il s'avère nécessaire de procéder à un régularisation.</p>
 	  <div class="info-fond aerateur-haut aerateur-bas">
          <div class="floating-box-info">
