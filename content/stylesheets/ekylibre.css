@@ -4439,3 +4439,24 @@ display: block;
 		margin-top: -28px;
 	}
 }
+
+/* Search */
+.search input {
+	position: relative;
+	opacity: 1;
+	z-index: 1;
+	width: 200px;
+	margin-left: 12px;
+	border-radius: 5px;
+	border: 1px solid #aaa;
+	outline: 0;
+	padding: 6px 8px 6px 25px;
+	background-image: url("../fr/images/commun/search.svg");
+	background-repeat: no-repeat;
+	background-position: 5px 7px;
+	background-size: 14px;
+}
+
+.title-chapter {
+	margin-top: 13px;
+}
