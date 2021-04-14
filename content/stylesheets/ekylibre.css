@@ -66,21 +66,7 @@ a.slice-process {
 	}
 }
 
-a.slice-config {
-	display: block;
-	position: relative;
-	top: -56px;
-	visibility: hidden;
-}
-
-a.slice-section {
-	display: block;
-	position: relative;
-	top: 0;
-	visibility: hidden;
-}
-
-a.slice-import {
+a.slice-intra {
 	display: block;
 	position: relative;
 	top: -80px;
@@ -271,14 +257,16 @@ img.loading {
 
 h1,
 h2,
-h3,
 h4,
 h5,
 h6 {
 	font-family: "Montserrat", "Lato", "Helvetica Neue", Helvetica, sans-serif;
 	font-weight: 700;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+}
+
+h3 {
+	font-family: "Lato", "Open Sans", "Droid Sans", "Liberation Sans", Helvetica, sans-serif;
+	font-weight: 400;
 }
 
 h1 {
@@ -295,11 +283,6 @@ h1 {
 	h1 {
 		font-size: 26px;
 	}
-}
-
-h3 {
-	font-size: 19px;
-	font-weight: normal;
 }
 
 h6 {
@@ -3056,10 +3039,6 @@ img.zoom-img {
 	height: 100%;
 }
 
-h3 {
-	cursor: pointer;
-}
-
 #toggle {
 	width: 60%;
 	list-style: none;
@@ -3072,7 +3051,7 @@ h3 {
 	/*display: block;*/
 }
 
-#toggle h3 {
+#toggle h5 {
 	font-size: 14px;
 	margin: 0;
 	padding: 0;
@@ -3080,6 +3059,7 @@ h3 {
 	line-height: 36px;
 	font-weight: normal;
 	height: 36px;
+	cursor: pointer;
 }
 
 .clear {
