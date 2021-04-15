@@ -198,7 +198,7 @@ span[data-descr]:hover::after {
 
 .drawer-overlay {
 	position: fixed;
-	z-index: 1;
+	z-index: 104;
 	top: 0;
 	left: 0;
 	display: none;
@@ -240,7 +240,7 @@ span[data-descr]:hover::after {
 	max-height: 100%;
 	-webkit-transition: top .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
 	transition: top .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
-	z-index: 85;
+	z-index: 105;
 }
 
 @media only screen and (min-width: 450px) {
@@ -253,7 +253,7 @@ span[data-descr]:hover::after {
 		max-height: 100%;
 		-webkit-transition: top .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
 		transition: top .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
-		z-index: 85;
+		z-index: 105;
 	}
 }
 
@@ -334,7 +334,7 @@ span[data-descr]:hover::after {
 
 .drawer-hamburger {
 	position: fixed;
-	z-index: 104;
+	z-index: 110;
 	top: 0;
 	display: block;
 	box-sizing: content-box;
