@@ -296,6 +296,12 @@ h6 {
 	font-weight: normal;
 }
 
+.title-alternate {
+	font-size: 26px;
+	font-weight: 700;
+	font-family: "Montserrat", "Lato", "Helvetica Neue", Helvetica, sans-serif;
+}
+
 a {
 	text-decoration: none;
 	color: #3f70ce;
@@ -1149,7 +1155,6 @@ a:visited {
 	border-right-style: solid;
 	border-right-color: #ffffff;
 }
-
 
 /*Tableau Note de version*/
 
@@ -2918,10 +2923,17 @@ img.zoom-img {
 .title-version {
 	font-family: "Montserrat", "Lato", "Helvetica Neue", Helvetica, sans-serif;
 	font-weight: 700;
-	font-size: 19px;
+	font-size: 16px;
 	line-height: 0;
 	margin-top: 29px;
 	margin-bottom: 7px;
+	white-space: nowrap;
+}
+
+@media only screen and (min-width: 768px) {
+	.title-version {	
+	font-size: 19px;
+	}
 }
 
 .accordion-container .panel {

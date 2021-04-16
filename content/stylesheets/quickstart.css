@@ -212,6 +212,7 @@ video {
 }
 .logo {
 	margin-top: 78px;
+	margin-bottom: 5px;
 }
 .affichage-large {
 	display: none;
@@ -454,6 +455,7 @@ video {
 	}
 	.logo {
 		margin-top: 82px;
+		margin-bottom: 5px;
 	}
 	.affichage-large {
 		display: inline;
@@ -740,6 +742,7 @@ video {
 	}
 	.logo {
 		margin-top: 89px;
+		margin-bottom: 5px;
 	}
 	.affichage-large {
 		display: inline;
@@ -1034,6 +1037,7 @@ video {
 	}
 	.logo {
 		margin-top: 72px;
+		margin-bottom: 5px;
 	}
 	.affichage-large {
 		display: none;
