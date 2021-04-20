@@ -2936,6 +2936,13 @@ img.zoom-img {
 	}
 }
 
+@media print {
+	.title-version {	
+	font-size: 19px;
+	line-height: 26px;
+	}
+}
+
 .accordion-container .panel {
 	margin-top: 0;
 	margin-bottom: 20px;
