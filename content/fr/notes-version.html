@@ -78,10 +78,11 @@
             {dates: [new Date(2020, 11, 17), new Date(2020, 12, 21)], title: "Version 3.25", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
             {dates: [new Date(2020, 12, 22), new Date(2021, 1, 2)], title: "Version 3.26", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
             {dates: [new Date(2021, 1, 3), new Date(2021, 1, 17)], title: "Version 3.27", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
-            {dates: [new Date(2021, 1, 18), new Date(annee, 2, 3)], title: "Version 3.28", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
-         	{dates: [new Date(2021, 2, 4), new Date(annee, 2, 24)], title: "Version 3.29", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
-         	{dates: [new Date(2021, 2, 25), new Date(annee, 4, 2)], title: "Version 3.30", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
-         {dates: [new Date(2021, 4, 3), new Date(annee, mois, jour)], title: "Version 3.31", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
+            {dates: [new Date(2021, 1, 18), new Date(2021, 2, 3)], title: "Version 3.28", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
+         	{dates: [new Date(2021, 2, 4), new Date(2021, 2, 24)], title: "Version 3.29", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
+         	{dates: [new Date(2021, 2, 25), new Date(2021, 4, 2)], title: "Version 3.30", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
+            {dates: [new Date(2021, 4, 3), new Date(2021, 4, 4)], title: "Version 3.31", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
+            {dates: [new Date(2021, 4, 5), new Date(annee, mois, jour)], title: "Version 3.32", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}}
          ];
          
          var sections = [
@@ -141,6 +142,98 @@
             <section id="panel-1">
                <main>
                   <div class="accordion-container marge">
+                     <div class="panel">
+                        <div class="heading">
+                           <div class="version">
+                              <h2>Note de version 3.32 du 5/05/2021</h2>
+                           </div>
+                           <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <div class="content">
+                           <div class="divTableNoteVersion">
+                              <div class="divTableBody">
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/stocks.svg" alt="Stocks" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Stocks</strong><br /><br />
+                                       2 améliorations
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+                                          <li>Lors de la création d'une réception depuis la sélection d'une ou plusieurs commandes enregistrées auprès d'un même fournisseur, le champ désormais obligatoire "Date de réception" est automatiquement pré-rempli en se référant à la commande la plus ancienne&nbsp;;</li>
+                                          <li>La liste des matières en stock n'affiche désormais que les variantes triées sur la base de la nature "Articles". Dans l'en-tête de recherche, un sélecteur permet également de filtrer les articles d'après leur sous-nature.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Production</strong><br /><br />
+                                       2 améliorations
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+                                          <li>Dans les interventions mettant en œuvre des produits phytosanitaires, les champs de formulaire "Usage" et "Quantité" sont intervertis, afin d'optimiser l'ordre des informations à renseigner&nbsp;;</li>
+                                          <li>Le modèle de document utilisé pour l'impression au format PDF d'une fiche d'intervention &#40;bon de travail&#41; est remplacé par un nouvelle mise en page offrant une meilleure présentation des informations et davantage de lisibilité.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/rh.svg" alt="Ressources humaines" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>RH</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Un nouvel en-tête de recherche est désormais disponible pour effectuer une recherche sur le "Nom", le "Numéro" ou le "Numéro de travail" des équipiers. Une liste déroulante permet également de filtrer les équipiers selon la variante utilisée pour les créer.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/configuration.svg" alt="Configuration" width="60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Configuration</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Dans la section "Produits" de la vue détaillée des variantes de nature "Articles", "Animaux", "Équipements" et "Équipiers", un nouveau bouton permet de rediriger maintenant l'utilisateur vers le formulaire de création adéquat d'un nouvel élément.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                      <div class="panel">
                         <div class="heading">
                            <div class="version">
@@ -250,7 +343,7 @@
                                           <li>Le calcul des IFT d'une campagne précédente est possible lorsque des interventions ont été enregistrées avec des produits dont le n<sup>o</sup> d'AMM est valide et si un usage a été sélectionné&nbsp;;</li>
                                           <li>Possibilité d'éditer le bilan d'IFT de la campagne au format PDF. Les IFT de chacun des traitements contenus dans le rapport sont signés électroniquement&nbsp;;</li>
                                           <br />
-										  <li>La création d’une intervention, depuis la fiche détaillée d’une parcelle ou d'une production végétale, mémorise désormais l’origine de cette vue initiale pour renseigner automatiquement la cible de la nouvelle intervention&nbsp;;</li>
+                                          <li>La création d’une intervention, depuis la fiche détaillée d’une parcelle ou d'une production végétale, mémorise désormais l’origine de cette vue initiale pour renseigner automatiquement la cible de la nouvelle intervention&nbsp;;</li>
                                           <li>Dans la vue "Carte" et lorsqu'une déclaration TelePAC a été importée, affichage des SNA &#40;surfaces non agricoles&#41; symbolisées par de nouveaux marqueurs de géolocalisation cliquables précisant la catégorie et le type de SNA dans une infobulle.</li>
                                        </ul>
                                     </div>
@@ -3797,6 +3890,94 @@
       <!-- Section pour la génération du PDF -->
       <div class="saut-page"></div>
       <div class="heading-print marge aerateur-haut">
+         <h2>Note de version 3.32 du 5/05/2021</h2>
+      </div>
+      <div class="content-print marge">
+         <div class="divTableNoteVersion">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/stocks.svg" alt="Stocks" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Stocks</strong><br /><br />
+                     2 améliorations
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>Lors de la création d'une réception depuis la sélection d'une ou plusieurs commandes enregistrées auprès d'un même fournisseur, le champ désormais obligatoire "Date de réception" est automatiquement pré-rempli en se référant à la commande la plus ancienne&nbsp;;</li>
+                        <li>La liste des matières en stock n'affiche désormais que les variantes triées sur la base de la nature "Articles". Dans l'en-tête de recherche, un sélecteur permet également de filtrer les articles d'après leur sous-nature.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Production</strong><br /><br />
+                     2 améliorations
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>Dans les interventions mettant en œuvre des produits phytosanitaires, les champs de formulaire "Usage" et "Quantité" sont intervertis, afin d'optimiser l'ordre des informations à renseigner&nbsp;;</li>
+                        <li>Le modèle de document utilisé pour l'impression au format PDF d'une fiche d'intervention &#40;bon de travail&#41; est remplacé par un nouvelle mise en page offrant une meilleure présentation des informations et davantage de lisibilité.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/rh.svg" alt="Ressources humaines" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>RH</strong><br /><br />
+                     1 amélioration
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>Un nouvel en-tête de recherche est désormais disponible pour effectuer une recherche sur le "Nom", le "Numéro" ou le "Numéro de travail" des équipiers. Une liste déroulante permet également de filtrer les équipiers selon la variante utilisée pour les créer.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/configuration.svg" alt="Configuration" width="60px">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Configuration</strong><br /><br />
+                     1 amélioration
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>Dans la section "Produits" de la vue détaillée des variantes de nature "Articles", "Animaux", "Équipements" et "Équipiers", un nouveau bouton permet de rediriger maintenant l'utilisateur vers le formulaire de création adéquat d'un nouvel élément.</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="saut-page"></div>
+      <div class="heading-print marge aerateur-haut">
          <h2>Note de version 3.31 du 3/05/2021</h2>
       </div>
       <div class="content-print marge">
@@ -3908,7 +4089,7 @@
                         <li>Le calcul des IFT d'une campagne précédente est possible lorsque des interventions ont été enregistrées avec des produits dont le n<sup>o</sup> d'AMM est valide et si un usage a été sélectionné&nbsp;;</li>
                         <li>Possibilité d'éditer le bilan d'IFT de la campagne au format PDF. Les IFT de chacun des traitements contenus dans le rapport sont signés électroniquement&nbsp;;</li>
                         <br />
-						<li>La création d’une intervention, depuis la fiche détaillée d’une parcelle ou d'une production végétale, mémorise désormais l’origine de cette vue initiale pour renseigner automatiquement la cible de la nouvelle intervention&nbsp;;</li>
+                        <li>La création d’une intervention, depuis la fiche détaillée d’une parcelle ou d'une production végétale, mémorise désormais l’origine de cette vue initiale pour renseigner automatiquement la cible de la nouvelle intervention&nbsp;;</li>
                         <li>Dans la vue "Carte" et lorsqu'une déclaration TelePAC a été importée, affichage des SNA &#40;surfaces non agricoles&#41; symbolisées par de nouveaux marqueurs de géolocalisation cliquables précisant la catégorie et le type de SNA dans une infobulle.</li>
                      </ul>
                   </div>
