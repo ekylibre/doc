@@ -82,7 +82,8 @@
          	{dates: [new Date(2021, 2, 4), new Date(2021, 2, 24)], title: "Version 3.29", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
          	{dates: [new Date(2021, 2, 25), new Date(2021, 4, 2)], title: "Version 3.30", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
             {dates: [new Date(2021, 4, 3), new Date(2021, 4, 5)], title: "Version 3.31", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
-            {dates: [new Date(2021, 4, 6), new Date(annee, mois, jour)], title: "Version 3.32", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}}
+            {dates: [new Date(2021, 4, 6), new Date(2021, 4, 25)], title: "Version 3.32", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
+			{dates: [new Date(2021, 4, 26), new Date(annee, mois, jour)], title: "Version 3.33", attrs: {fill: "#fea40b", stroke: "#fea40b"}}
          ];
          
          var sections = [
@@ -143,6 +144,146 @@
                <main>
                   <div class="accordion-container marge">
                      <div class="panel">
+                        <div class="heading">
+                           <div class="version">
+                              <h2>Note de version 3.33 du 26/05/2021</h2>
+                           </div>
+                           <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <div class="content">
+                           <div class="divTableNoteVersion">
+                              <div class="divTableBody">
+								 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/modules.svg" alt="modules" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Commun à plusieurs modules</strong><br /><br />
+                                       2 améliorations
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+                                          <li>Les liens permettant d'afficher un document au format PDF ouvrent désormais systématiquement une nouvelle page ou un nouvel onglet suivant le navigateur utilisé&nbsp;;</li>
+                                          <li>Dans un objectif de clarification, modification de plusieurs libellés permettant à l'utilisateur une lecture plus intuitive des informations et une meilleure navigation dans l'interface de l'application.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+								 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Comptabilité</strong><br /><br />
+                                       5 améliorations
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+                                          <li>Mise à disposition d'une nouvelle fonctionnalité d'échange comptable basée sur la structure des fichiers (au format CSV ou FEC) adoptée par la solution tierce Isacompta&nbsp;;</li>
+										  <li>Lors de la création d'un échange comptable au format Ekyagri ou Isacompta, il est maintenant possible de sélectionner les journaux à prendre en compte pour l'export des écritures&nbsp;;</li>
+										  <li>À la création d'un échange au format Isacompta, possibilité d'activer l'enregistrement des informations d'une séquence configurée préalablement &#40;voir amélioration du module "Configuration"&#41;, en vue de les exploiter en comptabilité analytique&nbsp;;</li>
+										  <li>L'import d'écritures suite à un échange comptable au format Isacompta génère automatiquement un nouveau lettrage de compte&nbsp;;</li>
+                                          <li>La fermeture d'un échange comptable ne provoque plus le verrouillage systématique et définitif des écritures échangées, afin de pouvoir les modifier si nécessaire.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/stocks.svg" alt="Stocks" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Stocks</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Lors de la création d'une réception depuis la sélection de plusieurs commandes enregistrées auprès d'un même fournisseur, le champ "Date de réception" est automatiquement pré-rempli en se référant à la date de la commande la plus ancienne.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Production</strong><br /><br />
+                                       9 améliorations
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+                                          <li>La création d'une nouvelle activité implique désormais la sélection d'une "Famille" parmi celles proposées. En fonction de la "Famille" choisie et d'une "Production de référence", la sélection d'une espèce ou d'un type de produit est facilitée grâce à un tri pertinent des propositions filtrées de la liste déroulante&nbsp;;</li>
+										  <li>La "Campagne annuelle de production" &#40;dénommée auparavant "Campagne rattachée"&#41; est maintenant définie à partir d'une date de début et d'une date de fin choisies grâce à la mise à disposition d'un nouveau sélecteur&nbsp;;</li>
+										  <li>Lors de la création de nouvelles activités pérennes, il est désormais possible de renseigner l'année prévisionnelle de pleine production et la durée de vie estimative de l'activité après plantation&nbsp;;</li>
+										  <li>Mise à disposition d'une nouvelle fonctionnalité de "Groupements de parcellaire" permettant d'associer des parcelles ou des cultures entre elles&nbsp;;</li>
+										  <li>L'enregistrement ou la planification d'une intervention à partir d'un "Groupement de parcellaire" cible automatiquement toutes les parcelles ou les cultures initialement groupées&nbsp;;</li>
+										  <li>En option, chaque groupement de parcellaire peut être caractérisé par un usage, comme par exemple un itinéraire technique spécifique, symbolisé par la création d'une étiquette dont on peut choisir la couleur et qui est reportée dans la fiche détaillée de l'intervention&nbsp;;</li>
+										  <li>Dans la vue détaillée d'une activité, il est maintenant possible de sélectionner une campagne de production afin d'obtenir un calcul plus juste du budget et des coûts de production affichés pour les activités pérennes&nbsp;;</li>
+										  <li>Depuis la section "Parcelles" &#40;ex-"Productions"&#41; de la vue d'une activité, l'édition d'une parcelle supportant une activité pérenne permet désormais de définir une date de "Début des travaux sur la parcelle" et les "Campagnes prévisionnelles de pleine production"&nbsp;;</li>
+                                          <li>Lors de la création d’une activité et/ou d’un équipement, possibilité de paramétrer un code utilisé pour renseigner la séquence analytique enregistrée lors d’un échange comptable au format Isacompta.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+								 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/outils.svg" alt="Outils" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Outils</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Une nouvelle connexion partenaire permet, aux possesseurs d'un boitier Samsys installé sur un équipement agricole tel qu'un tracteur, d'enregistrer et de visualiser sur une carte ses trajets géolocalisés avec une précision centimétrique, grâce au réseau RTK collaboratif Centipede.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/configuration.svg" alt="Configuration" width="60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Configuration</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Mise à disposition d'une nouvelle fonctionnalité permettant de paramétrer une "Séquence analytique" pour consigner des informations utilisées lors d'un échange comptable au format Isacompta. La séquence peut notamment être définie avec les codes identifiant les "Activités" et les "Équipements".</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+					 <div class="panel">
                         <div class="heading">
                            <div class="version">
                               <h2>Note de version 3.32 du 6/05/2021</h2>
@@ -467,7 +608,7 @@
                                     <div class="divTableCellNoteVersion4" style="width: auto">
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                                        <ul>
-                                          <li>Lors de la création des lignes d'achat (commande et facture) ou des éléments d'une réception, la saisie de nombres décimaux dans les champs “Conditionnement” et “Quantité” est désormais autorisée&nbsp;;</li>
+                                          <li>Lors de la création des lignes d'achat (commande et facture) ou des éléments d'une réception, la saisie de nombres décimaux dans les champs "Conditionnement" et "Quantité" est désormais autorisée&nbsp;;</li>
                                           <li>Ajout d'une nouvelle colonne "Référence fournisseur" dans la liste des résultats permettant la création des lots de décaissements.</li>
                                        </ul>
                                        <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
@@ -1412,7 +1553,7 @@
                                        </ul>
                                        <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
                                        <ul>
-                                          <li>Le passage au statut “Vendue” ou “Mise au rebut” d'une immobilisation est désormais possible après clôture d'un exercice comptable.</li>
+                                          <li>Le passage au statut "Vendue" ou "Mise au rebut" d'une immobilisation est désormais possible après clôture d'un exercice comptable.</li>
                                        </ul>
                                     </div>
                                  </div>
@@ -1597,7 +1738,7 @@
                                     <div class="divTableCellNoteVersion4" style="width: auto">
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                                        <ul>
-                                          <li>Dans l'interface des “Imports”, mise à disposition d'une nouvelle ergonomie plus intuitive. Les différents imports sont désormais classés dans des sections, par fonctionnalités et par fournisseurs de fichiers dont les formats de données sont compatibles avec Ekylibre.</li>
+                                          <li>Dans l'interface des "Imports", mise à disposition d'une nouvelle ergonomie plus intuitive. Les différents imports sont désormais classés dans des sections, par fonctionnalités et par fournisseurs de fichiers dont les formats de données sont compatibles avec Ekylibre.</li>
                                        </ul>
                                     </div>
                                  </div>
@@ -4222,7 +4363,7 @@
                   <div class="divTableCellNoteVersion4" style="width: auto">
                      <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                      <ul>
-                        <li>Lors de la création des lignes d'achat (commande et facture) ou des éléments d'une réception, la saisie de nombres décimaux dans les champs “Conditionnement” et “Quantité” est désormais autorisée&nbsp;;</li>
+                        <li>Lors de la création des lignes d'achat (commande et facture) ou des éléments d'une réception, la saisie de nombres décimaux dans les champs "Conditionnement" et "Quantité" est désormais autorisée&nbsp;;</li>
                         <li>Ajout d'une nouvelle colonne "Référence fournisseur" dans la liste des résultats permettant la création des lots de décaissements.</li>
                      </ul>
                      <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
@@ -5155,7 +5296,7 @@
                      </ul>
                      <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
                      <ul>
-                        <li>Le passage au statut “Vendue” ou “Mise au rebut” d'une immobilisation est désormais possible après clôture d'un exercice comptable.</li>
+                        <li>Le passage au statut "Vendue" ou "Mise au rebut" d'une immobilisation est désormais possible après clôture d'un exercice comptable.</li>
                      </ul>
                   </div>
                </div>
@@ -5350,7 +5491,7 @@
                   <div class="divTableCellNoteVersion4" style="width: auto">
                      <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                      <ul>
-                        <li>Dans l'interface des “Imports”, mise à disposition d'une nouvelle ergonomie plus intuitive. Les différents imports sont désormais classés dans des sections, par fonctionnalités et par fournisseurs de fichiers dont les formats de données sont compatibles avec Ekylibre.</li>
+                        <li>Dans l'interface des "Imports", mise à disposition d'une nouvelle ergonomie plus intuitive. Les différents imports sont désormais classés dans des sections, par fonctionnalités et par fournisseurs de fichiers dont les formats de données sont compatibles avec Ekylibre.</li>
                      </ul>
                   </div>
                </div>
