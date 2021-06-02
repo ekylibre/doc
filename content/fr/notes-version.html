@@ -82,8 +82,8 @@
          	{dates: [new Date(2021, 2, 4), new Date(2021, 2, 24)], title: "Version 3.29", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
          	{dates: [new Date(2021, 2, 25), new Date(2021, 4, 2)], title: "Version 3.30", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
             {dates: [new Date(2021, 4, 3), new Date(2021, 4, 5)], title: "Version 3.31", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
-            {dates: [new Date(2021, 4, 6), new Date(2021, 4, 30)], title: "Version 3.32", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
-			{dates: [new Date(2021, 5, 1), new Date(annee, mois, jour)], title: "Version 3.33", attrs: {fill: "#fea40b", stroke: "#fea40b"}}
+            {dates: [new Date(2021, 4, 6), new Date(2021, 5, 1)], title: "Version 3.32", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
+         {dates: [new Date(2021, 5, 2), new Date(annee, mois, jour)], title: "Version 3.33", attrs: {fill: "#fea40b", stroke: "#fea40b"}}
          ];
          
          var sections = [
@@ -97,7 +97,7 @@
          	animated: true,
          	tooltips: true,
          	defaultStartDate: new Date(2019, 5, 1),
-         	endDate: new Date(2021, 5, 31),
+         	endDate: new Date(2021, 8, 31),
          	sections: sections,
          	sectionLabelAttrs: {"fill": "#3f70ce", "font-weight": "bold"},
          	labelInterval: isHalfMonth,
@@ -146,14 +146,14 @@
                      <div class="panel">
                         <div class="heading">
                            <div class="version">
-                              <h2>Note de version 3.33 du 1/06/2021</h2>
+                              <h2>Note de version 3.33 du 2/06/2021</h2>
                            </div>
                            <i class="fa fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
                               <div class="divTableBody">
-								 <div class="divTableRow">
+                                 <div class="divTableRow">
                                     <div class="divTableCellNoteVersion1" style="width: 60px">
                                        <img src="../images/notes-version/modules.svg" alt="modules" width="60">
                                     </div>
@@ -173,7 +173,7 @@
                                        </ul>
                                     </div>
                                  </div>
-								 <div class="divTableRow">
+                                 <div class="divTableRow">
                                     <div class="divTableCellNoteVersion1">
                                        <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
                                     </div>
@@ -188,10 +188,10 @@
                                     <div class="divTableCellNoteVersion4" style="width: auto">
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                                        <ul>
-                                          <li>Mise à disposition d'une nouvelle fonctionnalité d'échange comptable basée sur la structure des fichiers (au format CSV ou FEC) adoptée par la solution tierce Isacompta&nbsp;;</li>
-										  <li>Lors de la création d'un échange comptable au format Ekyagri ou Isacompta, il est maintenant possible de sélectionner les journaux à prendre en compte pour l'export des écritures&nbsp;;</li>
-										  <li>À la création d'un échange au format Isacompta, possibilité d'activer l'enregistrement des informations d'une séquence configurée préalablement &#40;voir amélioration du module "Configuration"&#41;, en vue de les exploiter en comptabilité analytique&nbsp;;</li>
-										  <li>L'import d'écritures suite à un échange comptable au format Isacompta génère automatiquement un nouveau lettrage de compte&nbsp;;</li>
+                                          <li>Mise à disposition d'une nouvelle fonctionnalité d'échange comptable basée sur la structure des fichiers &#40;au format CSV ou FEC&#41; adoptée par la solution tierce Isacompta. Pour en bénéficier, il est nécessaire de contacter le support afin de demander la modification des écritures déjà enregistrées&nbsp;;</li>
+                                          <li>Lors de la création d'un échange comptable au format <strong>Eky</strong>agri ou Isacompta, il est maintenant possible de sélectionner les journaux à prendre en compte pour l'export des écritures&nbsp;;</li>
+                                          <li>À la création d'un échange au format Isacompta, possibilité d'activer l'enregistrement des informations d'une séquence configurée préalablement &#40;voir amélioration du module "Configuration"&#41;, en vue de les exploiter en comptabilité analytique&nbsp;;</li>
+                                          <li>L'import d'écritures suite à un échange comptable au format Isacompta génère automatiquement un nouveau lettrage de compte&nbsp;;</li>
                                           <li>La fermeture d'un échange comptable ne provoque plus le verrouillage systématique et définitif des écritures échangées, afin de pouvoir les modifier si nécessaire.</li>
                                        </ul>
                                     </div>
@@ -221,7 +221,7 @@
                                     </div>
                                     <div class="divTableCellNoteVersion2" style="width: auto">
                                        <strong>Production</strong><br /><br />
-                                       9 améliorations
+                                       9 améliorations et 1 bug corrigé
                                     </div>
                                  </div>
                                  <div class="divTableRow">
@@ -231,16 +231,23 @@
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                                        <ul>
                                           <li>La création d'une nouvelle activité implique désormais la sélection d'une "Famille" parmi celles proposées. En fonction de la "Famille" choisie et d'une "Production de référence", la sélection d'une espèce est facilitée grâce à un tri pertinent des propositions filtrées de la liste déroulante&nbsp;;</li>
-										  <li>La "Campagne annuelle de production" &#40;dénommée auparavant "Campagne rattachée"&#41; est maintenant définie à partir d'une date de début et d'une date de fin choisies grâce à la mise à disposition d'un nouveau sélecteur&nbsp;;</li><br />
-										  <em>Activités pérennes&nbsp;:</em><br />
-										  <li>Lors de la création de nouvelles activités pérennes, il est maintenant possible de renseigner l'année prévisionnelle de pleine production et la durée de vie estimative de l'activité après plantation&nbsp;;</li>
-										  <li>Dans la vue détaillée d'une activité pérenne, la sélection d'une campagne de production est disponible afin d'obtenir un calcul plus juste du budget et des coûts de production affichés&nbsp;;</li>
-										  <li>Depuis la section "Parcelles" &#40;ex-Productions&#41; de la vue d'une activité pérenne, l'édition d'une parcelle supportant l'activité permet désormais de définir une date de "Début des travaux sur la parcelle" et les "Campagnes prévisionnelles de pleine production"&nbsp;;</li><br />
-										  <em>Groupements de parcellaire&nbsp;:</em><br />
-										  <li>Mise à disposition d'une nouvelle fonctionnalité de "Groupements de parcellaire" permettant d'associer des parcelles ou des cultures entre elles&nbsp;;</li>
-										  <li>L'enregistrement ou la planification d'une intervention à partir d'un "Groupement de parcellaire" cible automatiquement toutes les parcelles ou les cultures initialement groupées&nbsp;;</li>
-										  <li>En option, chaque groupement de parcellaire peut être caractérisé par un usage, comme par exemple un itinéraire technique spécifique, symbolisé par la création d'une étiquette dont on peut choisir la couleur et qui est reportée dans la fiche détaillée de l'intervention&nbsp;;</li><br />
+                                          <li>La "Campagne annuelle de production" &#40;dénommée auparavant "Campagne rattachée"&#41; est maintenant définie à partir d'une date de début et d'une date de fin choisies grâce à la mise à disposition d'un nouveau sélecteur&nbsp;;</li>
+                                          <br />
+                                          <em>Activités pérennes&nbsp;:</em><br />
+                                          <li>Lors de la création de nouvelles activités pérennes, il est maintenant possible de renseigner l'année prévisionnelle de pleine production et la durée de vie estimative de l'activité après plantation&nbsp;;</li>
+                                          <li>Dans la vue détaillée d'une activité pérenne, la sélection d'une campagne de production est disponible afin d'obtenir un calcul plus juste du budget et des coûts de production affichés&nbsp;;</li>
+                                          <li>Depuis la section "Parcelles" &#40;ex-Productions&#41; de la vue d'une activité pérenne, l'édition d'une parcelle supportant l'activité permet désormais de définir une date de "Début des travaux sur la parcelle" et les "Campagnes prévisionnelles de pleine production"&nbsp;;</li>
+                                          <br />
+                                          <em>Groupements parcellaires&nbsp;:</em><br />
+                                          <li>Mise à disposition d'une nouvelle fonctionnalité de "Groupements parcellaires" permettant d'associer des parcelles ou des cultures entre elles&nbsp;;</li>
+                                          <li>L'enregistrement ou la planification d'une intervention à partir d'un groupement parcellaire cible automatiquement toutes les parcelles ou les cultures initialement groupées&nbsp;;</li>
+                                          <li>En option, chaque groupement parcellaire peut être caractérisé par un usage, comme par exemple un itinéraire technique spécifique, symbolisé par la création d'une étiquette dont on peut choisir la couleur et qui est reportée dans la fiche détaillée de l'intervention&nbsp;;</li>
+                                          <br />
                                           <li>Lors de la création d’une activité et/ou d’un équipement, possibilité de paramétrer un code utilisé pour renseigner la séquence analytique &#40;voir amélioration du module "Configuration"&#41; enregistrée lors d’un échange comptable au format Isacompta.</li>
+                                       </ul>
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+                                          <li>Lors de la modification d'un animal, la sélection d'une "Mère initiale" et/ou d'un "Père initial" dans la section "Généalogie" est de nouveau fonctionnelle.</li>
                                        </ul>
                                     </div>
                                  </div>
@@ -267,7 +274,7 @@
                            </div>
                         </div>
                      </div>
-					 <div class="panel">
+                     <div class="panel">
                         <div class="heading">
                            <div class="version">
                               <h2>Note de version 3.32 du 6/05/2021</h2>
@@ -4012,6 +4019,140 @@
          </div>
       </article>
       <!-- Section pour la génération du PDF -->
+      <div class="saut-page"></div>
+      <div class="heading-print marge aerateur-haut">
+         <h2>Note de version 3.33 du 2/06/2021</h2>
+      </div>
+      <div class="content-print marge">
+         <div class="divTableNoteVersion">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/modules.svg" alt="modules" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Commun à plusieurs modules</strong><br /><br />
+                     2 améliorations
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>Les liens permettant d'afficher un document au format PDF ouvrent désormais systématiquement une nouvelle page ou un nouvel onglet suivant le navigateur utilisé&nbsp;;</li>
+                        <li>Dans un objectif de clarification, modification de plusieurs libellés permettant à l'utilisateur une lecture plus intuitive des informations et une meilleure navigation dans l'interface de l'application.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Comptabilité</strong><br /><br />
+                     5 améliorations
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>Mise à disposition d'une nouvelle fonctionnalité d'échange comptable basée sur la structure des fichiers &#40;au format CSV ou FEC&#41; adoptée par la solution tierce Isacompta. Pour en bénéficier, il est nécessaire de contacter le support afin de demander la modification des écritures déjà enregistrées&nbsp;;</li>
+                        <li>Lors de la création d'un échange comptable au format <strong>Eky</strong>agri ou Isacompta, il est maintenant possible de sélectionner les journaux à prendre en compte pour l'export des écritures&nbsp;;</li>
+                        <li>À la création d'un échange au format Isacompta, possibilité d'activer l'enregistrement des informations d'une séquence configurée préalablement &#40;voir amélioration du module "Configuration"&#41;, en vue de les exploiter en comptabilité analytique&nbsp;;</li>
+                        <li>L'import d'écritures suite à un échange comptable au format Isacompta génère automatiquement un nouveau lettrage de compte&nbsp;;</li>
+                        <li>La fermeture d'un échange comptable ne provoque plus le verrouillage systématique et définitif des écritures échangées, afin de pouvoir les modifier si nécessaire.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/stocks.svg" alt="Stocks" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Stocks</strong><br /><br />
+                     1 amélioration
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>Lors de la création d'une réception depuis la sélection de plusieurs commandes enregistrées auprès d'un même fournisseur, le champ "Date de réception" est automatiquement pré-rempli en se référant à la date de la commande la plus ancienne.</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="content-print marge">
+         <div class="divTableNoteVersion">
+            <div class="divTableBody">
+               <div class="saut-page"></div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Production</strong><br /><br />
+                     9 améliorations et 1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>La création d'une nouvelle activité implique désormais la sélection d'une "Famille" parmi celles proposées. En fonction de la "Famille" choisie et d'une "Production de référence", la sélection d'une espèce est facilitée grâce à un tri pertinent des propositions filtrées de la liste déroulante&nbsp;;</li>
+                        <li>La "Campagne annuelle de production" &#40;dénommée auparavant "Campagne rattachée"&#41; est maintenant définie à partir d'une date de début et d'une date de fin choisies grâce à la mise à disposition d'un nouveau sélecteur&nbsp;;</li>
+                        <br />
+                        <em>Activités pérennes&nbsp;:</em><br />
+                        <li>Lors de la création de nouvelles activités pérennes, il est maintenant possible de renseigner l'année prévisionnelle de pleine production et la durée de vie estimative de l'activité après plantation&nbsp;;</li>
+                        <li>Dans la vue détaillée d'une activité pérenne, la sélection d'une campagne de production est disponible afin d'obtenir un calcul plus juste du budget et des coûts de production affichés&nbsp;;</li>
+                        <li>Depuis la section "Parcelles" &#40;ex-Productions&#41; de la vue d'une activité pérenne, l'édition d'une parcelle supportant l'activité permet désormais de définir une date de "Début des travaux sur la parcelle" et les "Campagnes prévisionnelles de pleine production"&nbsp;;</li>
+                        <br />
+                        <em>Groupements parcellaires&nbsp;:</em><br />
+                        <li>Mise à disposition d'une nouvelle fonctionnalité de "Groupements parcellaires" permettant d'associer des parcelles ou des cultures entre elles&nbsp;;</li>
+                        <li>L'enregistrement ou la planification d'une intervention à partir d'un groupement parcellaire cible automatiquement toutes les parcelles ou les cultures initialement groupées&nbsp;;</li>
+                        <li>En option, chaque groupement parcellaire peut être caractérisé par un usage, comme par exemple un itinéraire technique spécifique, symbolisé par la création d'une étiquette dont on peut choisir la couleur et qui est reportée dans la fiche détaillée de l'intervention&nbsp;;</li>
+                        <br />
+                        <li>Lors de la création d’une activité et/ou d’un équipement, possibilité de paramétrer un code utilisé pour renseigner la séquence analytique &#40;voir amélioration du module "Configuration"&#41; enregistrée lors d’un échange comptable au format Isacompta.</li>
+                     </ul>
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>Lors de la modification d'un animal, la sélection d'une "Mère initiale" et/ou d'un "Père initial" dans la section "Généalogie" est de nouveau fonctionnelle.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/configuration.svg" alt="Configuration" width="60px">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Configuration</strong><br /><br />
+                     1 amélioration
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>Mise à disposition d'une nouvelle fonctionnalité permettant de paramétrer une "Séquence analytique" pour consigner des informations utilisées lors d'un échange comptable au format Isacompta. La séquence peut notamment être définie avec les codes identifiant les "Activités" et les "Équipements".</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
       <div class="saut-page"></div>
       <div class="heading-print marge aerateur-haut">
          <h2>Note de version 3.32 du 6/05/2021</h2>

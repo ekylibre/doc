@@ -203,7 +203,7 @@ function Chronoline(domElement, events, options) {
         tooltips: false,  // activates qtip tooltips. Otherwise, you just get title tooltips
         qtipOptions: {},  // additional options to pass to qTip
 
-        markToday: 'line',  // 'line', 'labelBox', false
+        //markToday: 'line',  // 'line', 'labelBox', false
         todayAttrs: {'stroke': '#1195f5'},
 
         sections: [],
