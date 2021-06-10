@@ -18,7 +18,7 @@
       </div>
       <div class="image-large"><img class="chapitre loading" src="../images/chapitre5/comptabilite.png" alt="Comptabilité"/></div>
       <div class="image-carre"><img class="chapitre loading" src="../images/chapitre5/comptabilite-carre.png" alt="Comptabilité" style="width:auto;" /></div>
-	  <div class="search title-chapter"><form><input type="text" id="search" name="search" placeholder="Rechercher…"></form></div>
+	  <div class="pdf"><div class="search title-chapter"><form><input type="text" id="search" name="search" placeholder="Rechercher…"></form></div></div>
       <h1 align="center" class="majuscule aerateur">5 - Comptabilité</h1>
       <div class="sommaire">
          <div class="gris">
@@ -811,6 +811,7 @@
 		 <p class="max-img-process">
             <img src="../images/chapitre5/seq-analytique8.png" class="contour-img" alt="Sélection segment" data-action="zoom" />
          </p>
+		 <p>Notez que si l'option permettant de transmettre les codes analytiques est activée lors de la création d'un <a href="#echange-donnees" class="avoid-clicks" target="_self">échange comptable</a> au format Isacompta, <strong>celui-ci n'est alors fonctionnel que si tous les codes Isacompta des segments sélectionnés ont été renseignés</strong>.</p>
       </div>
       <br />
       <h6>Guide de prise en main • Comptabilité • Journaux</h6>
@@ -910,10 +911,14 @@
          <p class="max-img-process">
             <img src="../images/chapitre5/journal2019-3.png" class="contour-img" alt="Nouveau journal" data-action="zoom" />
          </p>
+		 <p>Afin d'assurer une correspondance lorsque des échanges comptables au format Isacompta sont réalisés, saisissez dans les champs appropriés le "Code Isacompta" et le "Libellé Isacompta" identifiant ce journal dans l'application tierce.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre5/journal2019-4.png" class="contour-img" alt="Code et libellé Isacompta" data-action="zoom" />
+         </p>
          <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
-         <p>Notez que si vous envisagez de réaliser des <a href="#rapprochement" class="avoid-clicks">rapprochements bancaires</a> à l'aide de fichiers <span class="tooltip">OFX<span class="tooltiptext tooltip-top">Voir glossaire</span></span> ou <span class="tooltip">CFONB<span class="tooltiptext tooltip-top">Voir glossaire</span></span>, il faudra créer un nouveau journal des opérations diverses et cocher la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="18" class="align-icone icone-marge-gauche icone-marge-droite">devant "Utilisé pour les écarts". Ce journal peut également servir pour les factures non parvenues.</p>
+         <p class="aerateur-haut">Notez que si vous envisagez de réaliser des <a href="#rapprochement" class="avoid-clicks">rapprochements bancaires</a> à l'aide de fichiers <span class="tooltip">OFX<span class="tooltiptext tooltip-top">Voir glossaire</span></span> ou <span class="tooltip">CFONB<span class="tooltiptext tooltip-top">Voir glossaire</span></span>, il faudra créer un nouveau journal des opérations diverses et cocher la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="18" class="align-icone icone-marge-gauche icone-marge-droite">devant "Utilisé pour les écarts". Ce journal peut également servir pour les factures non parvenues.</p>
          <p class="max-img-process">
-            <img src="../images/chapitre5/journal2019-4.png" class="contour-img" alt="Nouveau journal" data-action="zoom" />
+            <img src="../images/chapitre5/journal2019-5.png" class="contour-img" alt="Nouveau journal" data-action="zoom" />
          </p>
       </div>
       <br />
@@ -924,7 +929,7 @@
          <span class="titre-advice">Affichez le nouveau journal</span>
          <p>L'application affiche le nouveau journal. La liste des "Journaux" est également automatiquement enrichie avec celui-ci.</p>
          <p class="max-img-process">
-            <img src="../images/chapitre5/journal2019-5.png" class="contour-img" alt="Nouveau journal" data-action="zoom" />
+            <img src="../images/chapitre5/journal2019-6.png" class="contour-img" alt="Nouveau journal" data-action="zoom" />
          </p>
       </div>
       <h6>Guide de prise en main • Comptabilité • Lettrage de comptes</h6>
@@ -3337,7 +3342,7 @@
       <h6>Guide de prise en main • Comptabilité • Échange comptable</h6>
       <a class="slice-process" id="echange-donnees"></a>
       <h3 align="center" class="texte aerateur procedure">2 – Procédure pour échanger des données comptables</h3>
-	  <p class="texte">Deux types d'échanges comptables sont disponibles dans l'application&nbsp;: les échanges au format <strong>Eky</strong>agri et les échanges au format Isacompta. Dans les deux cas, les prérequis pour les mettre en œuvre sont identiques, avec la création préalable d'un tiers &#40;un comptable ou un organisme de gestion&#41; et le paramétrage d'un journal des opérations diverses.</p>
+	  <p class="texte">Deux types d'échanges comptables sont disponibles dans l'application&nbsp;: les échanges au format Ekylibre et les échanges au format Isacompta. Dans les deux cas, les prérequis pour les mettre en œuvre sont identiques, avec la création préalable d'un tiers &#40;un comptable ou un organisme de gestion&#41; et le paramétrage d'un journal des opérations diverses.</p>
 	  <p class="texte">Les échanges au format Isacompta proposent, en option, le transfert de codes analytiques prédéfinis et enregistrés dans une <a href="#seq-analytique" class="avoid-clicks" target="_self">séquence analytique</a> qu'il faut configurer préalablement pour disposer de cette fonctionnalité.</p>
       <p class="texte">
          Le processus suivant vous guide pour échanger des données comptables avec un tiers.
@@ -3405,13 +3410,14 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Paramétrez le nouvel échange</span>
-         <p>Sélectionnez, grâce aux 2 sélecteurs, les dates déterminant le début et la fin de la période des écritures échangées &#40;la fréquence des échanges reste à la discrétion de l'utilisateur&#41;.</p>
+         <p>Saisissez ou utilisez les sélecteurs de date pour définir le début et la fin de la période du nouvel échange &#40;la fréquence des échanges reste libre&#41;.</p>
          <p class="max-img-process"><img src="../images/chapitre5/echange5.png" class="contour-img" alt="Création nouvel échange" data-action="zoom" /></p>
 		 <p>Choisissez le format de l'échange en activant le bouton radio<img src="../images/commun/radio.svg" alt="Bouton radio" height="20" class="align-icone icone-marge-gauche icone-marge-droite">situé à gauche du format Ekylibre ou Isacompta.</p>
-		 <p>Si l'échange est au format Isacompta, cochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="18" class="align-icone icone-marge-gauche icone-marge-droite">pour activer l'option permettant de transmettre les codes analytiques.</p>
 		 <p class="max-img-process"><img src="../images/chapitre5/echange6.png" class="contour-img" alt="Sélection des journaux" data-action="zoom" /></p>
-		 <p>Cochant les cases<img src="../images/commun/check-square.svg" alt="Case à cocher" height="18" class="align-icone icone-marge-gauche icone-marge-droite">devant le nom des journaux pris en charge pour réaliser le tranfert des écritures échangées.</p>
+		 <p>Si l'échange est au format Isacompta, cochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="18" class="align-icone icone-marge-gauche icone-marge-droite">pour activer l'option permettant de transmettre les codes analytiques. Notez que l'échange n'est alors possible que si tous les codes Isacompta des segments sélectionnés lors du paramétrage de la <a href="#seq-analytique" class="avoid-clicks" target="_self">séquence analytique</a> ont été renseignés.</p>
 		 <p class="max-img-process"><img src="../images/chapitre5/echange7.png" class="contour-img" alt="Sélection des journaux" data-action="zoom" /></p>
+		 <p>Cochant les cases<img src="../images/commun/check-square.svg" alt="Case à cocher" height="18" class="align-icone icone-marge-gauche icone-marge-droite">devant le nom des journaux pris en charge pour réaliser le transfert des écritures échangées.</p>
+		 <p class="max-img-process"><img src="../images/chapitre5/echange8.png" class="contour-img" alt="Sélection des journaux" data-action="zoom" /></p>
          <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
       </div>
       <div class="warn-fond aerateur-haut aerateur-bas">
@@ -3455,11 +3461,11 @@
          <img src="../images/commun/step7.svg" alt="7" width="52" />
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Gérez la réalisation des échanges</span>
+         <span class="titre-advice">Gérez la progression de l'échange</span>
          <p>Chaque nouvel échange est automatiquement numéroté et nommé d'après la date de début d'exercice ou de clôture de l'échange précédent, complété par la date d'arrêté sélectionnée à l'étape n<sup>o</sup>&nbsp;6 de cette procédure.</p>
-         <p>Dans la section "Échanges" de la vue détaillée de l'exercice comptable ouvert, 4 nouvelles commandes sont maintenant disponibles pour gérer le processus de l'échange&nbsp;:</p>
+         <p>Dans la section du format de l'échange sélectionné à l'étape précédente, 4 nouvelles commandes sont maintenant disponibles pour piloter le processus de l'échange&nbsp;:</p>
          <p class="max-img-process">
-            <img src="../images/chapitre5/echange8.png" class="contour-img" alt="Création nouvel échange" data-action="zoom" />
+            <img src="../images/chapitre5/echange9.png" class="contour-img" alt="Création nouvel échange" data-action="zoom" />
          </p>
          <div class="divTableListe">
             <div class="divTableBody">
@@ -3484,7 +3490,14 @@
                      <img src="../images/chapitre5/envelope.svg" alt="Notifier" height="20">
                   </div>
                   <div class="divTableCellInter">
-                     <p>La troisième icône permet de notifier votre comptable par email qu'un fichier CSV est à sa disposition et qu'il peut le télécharger grâce au lien contenu dans le message.</p>
+                     <p>La troisième icône permet de choisir un format de fichier CSV ou FEC et d'envoyer un email au comptable, avec les données de l'échange jointes au message sous la forme d'une archive ZIP.</p>
+                  </div>
+               </div>
+			   <div class="divTableRow">
+                  <div class="divTableCellExch">
+                  </div>
+                  <div class="divTableCellInter">
+                     <img src="../images/chapitre5/echange10.png" alt="Sélection format fichier" />
                   </div>
                </div>
                <div class="divTableRow">
@@ -3492,14 +3505,14 @@
                      <img src="../images/chapitre5/lock-blue.svg" alt="Fermer" height="20">
                   </div>
                   <div class="divTableCellInter">
-                     <p>La quatrième icône permet de fermer l'échange. La clôture d'un échange verrouille les écritures comptables concernées par celui-ci. Fermez un échange avant d'en ouvrir un nouveau.</p>
+                     <p>La quatrième icône permet de fermer l'échange. La clôture d'un échange ne verrouille pas les écritures comptables concernées par celui-ci. Fermez un échange avant d'en ouvrir un nouveau.</p>
                   </div>
                </div>
             </div>
          </div>
-         <p>Au sein d'un même exercice, la liste sera progressivement enrichie par les échanges successifs, ouverts et clôturés par le responsable de l'opération &#40;deux échanges clôturés et un en cours dans cet exemple&#41;&nbsp;:</p>
+         <p>Au sein d'un même exercice, la liste sera progressivement enrichie par les échanges successifs, ouverts et clôturés par le responsable de l'opération. Deux échanges clôturés et un en cours dans cet exemple&nbsp;:</p>
          <p class="max-img-process">
-            <img src="../images/chapitre5/echange9.png" class="contour-img" alt="Liste des échanges" data-action="zoom" />
+            <img src="../images/chapitre5/echange11.png" class="contour-img" alt="Liste des échanges" data-action="zoom" />
          </p>
       </div>
       <div class="info-fond wrench-green aerateur-haut">
