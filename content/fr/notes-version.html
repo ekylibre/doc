@@ -33,7 +33,7 @@
       <div class="image-large"><img class="chapitre loading" src="../images/notes-version/notes-version.png" alt="Notes de version" /></div>
       <div class="image-carre"><img class="chapitre loading" src="../images/notes-version/notes-version-carre.png" alt="Notes de version" /></div>
       <h1 align="center" class="majuscule aerateur">Notes de version</h1>
-      <p class="texte">Les notes de version décrivent les nouvelles fonctionnalités, les améliorations, les modifications et les correctifs apportés à chaque évolution significative d'<strong>Eky</strong>agri et de l'application mobile Zero.</p>
+      <p class="texte">Les notes de version décrivent les nouvelles fonctionnalités, les améliorations, les modifications et les correctifs apportés à chaque évolution significative d'<strong>Eky</strong>agri, d'<strong>Eky</strong>viti et de l'application mobile Zero.</p>
       <div id="main_content_wrap" class="marge chronoline pdf">
          <section id="main_content">
             <div id="target" class="timeline-tgt"></div>
@@ -83,7 +83,8 @@
          	{dates: [new Date(2021, 2, 25), new Date(2021, 4, 2)], title: "Version 3.30", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
             {dates: [new Date(2021, 4, 3), new Date(2021, 4, 5)], title: "Version 3.31", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
             {dates: [new Date(2021, 4, 6), new Date(2021, 5, 2)], title: "Version 3.32", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
-         {dates: [new Date(2021, 5, 3), new Date(annee, mois, jour)], title: "Version 3.33", attrs: {fill: "#fea40b", stroke: "#fea40b"}}
+            {dates: [new Date(2021, 5, 3), new Date(2021, 5, 22)], title: "Version 3.33", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
+         {dates: [new Date(2021, 5, 23), new Date(annee, mois, jour)], title: "Version 3.34", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
          ];
          
          var sections = [
@@ -143,6 +144,131 @@
             <section id="panel-1">
                <main>
                   <div class="accordion-container marge">
+                     <div class="panel">
+                        <div class="heading">
+                           <div class="version">
+                              <h2>Note de version 3.34 du 23/06/2021</h2>
+                           </div>
+                           <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <div class="content">
+                           <div class="divTableNoteVersion">
+                              <div class="divTableBody">
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Comptabilité</strong><br /><br />
+                                       4 améliorations et 1 bug corrigé
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+                                          <li>Lorsque le contrôle de l'export FEC des écritures est activé, un nouvel indicateur, présent dans le brouillard comptable, signale si une écriture est conforme ou non. En cas de non-conformité, cet indicateur est un lien qui déclenche l'ouverture d'une fenêtre modale précisant la nature de l'erreur&nbsp;;</li>
+                                          <li>Si le contrôle de la conformité FEC est activé, la fenêtre de validation du brouillard récapitule, le cas échéant, l'ensemble des écritures invalides, sans bloquer l'opération en cours&nbsp;;</li>
+                                          <li>L'export d'un fichier FEC au format TXT permet désormais l'obtention d'une archive ZIP contenant le fichier des écritures et un fichier de description, assortie, le cas échéant, d'un fichier des erreurs de données&nbsp;;</li>
+                                          <li>L'export d'un fichier FEC au format XML permet désormais l'obtention d'un fichier des écritures assorti, le cas échéant, d'un fichier des erreurs de données et d'un fichier des erreurs de structure.</li>
+                                       </ul>
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+                                          <li>Après génération d'une déclaration de TVA, la modification d'un exercice est maintenant autorisée, comme par exemple un changement de comptable &#40;le mode et la fréquence choisis pour la première déclaration demeurent par contre définis pour toute la durée restante de l'exercice&#41;.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Production</strong><br /><br />
+                                       1 amélioration et 1 bug corrigé
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Afin de regrouper l'ensemble des tâches d'impression, mise à disposition d'un nouveau bouton permettant, depuis les activités, de générer tous les documents PDF en rapport avec la traçabilité des productions et la conduite des parcelles.</li>
+                                       </ul>
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+                                          <li>Lorsqu'une culture a été déclarée, par erreur, comme détruite par une intervention, il est désormais possible de corriger son statut pour la rendre de nouveau disponible.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/outils.svg" alt="Outils" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Outils</strong><br /><br />
+                                       4 améliorations
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+                                          <li>Une nouvelle connexion partenaire permet, aux possesseurs de capteurs Weenat installés sur leurs parcelles, de transférer automatiquement dans <strong>Eky</strong>vagri les données de pluviométrie collectées&nbsp;;</li>
+                                          <li>Les informations en provenance de la solution Weenat sont accessibles via la fonctionnalité "Capteurs" du module "Outils" pour consulter les analyses, ou directement affichées, avec une échelle de mesures, sur chaque parcelle concernée dans la vue "Carte" du module "Production"&nbsp;;</li>
+                                          <li>Dans la section "Exports", les tâches permettant l'impression du "Registre des interventions" et du "Registre phytosanitaire" sont déplacées dans le module "Production" &#40;voir ci-dessus&#41;&nbsp;;</li>
+                                          <li>L'export FEC des écritures comptables avec la sélection d'un découpage semestriel, trimestriel ou mensuel des données n'est désormais plus disponible.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/configuration.svg" alt="Configuration" width="60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Configuration</strong><br /><br />
+                                       3 améliorations
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+                                          <li>Dans la section "Préférences de la comptabilité" du paramétrage de la société, une nouvelle option permet d'activer le contrôle de la conformité des écritures dans le brouillard comptable, en vue de réaliser un export FEC&nbsp;;</li>
+                                          <li>Le modèle de document utilisé pour l'impression au format PDF du "Registre des interventions" est remplacé par une nouvelle mise en page offrant une meilleure présentation des informations consignées&nbsp;;</li>
+                                          <li>Le modèle de document utilisé pour l'impression au format PDF du "Registre phytosanitaire" est remplacé par une nouvelle mise en page offrant une meilleure présentation des informations consignées.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/ekyviti.svg" alt="Ekyviti" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Ekyviti</strong><br /><br />
+                                       3 améliorations
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+                                          <li>Les utilisateurs de la solution <strong>Eky</strong>viti bénéficient désormais de l'ensemble des nouveautés, des améliorations et des correctifs apportés par les versions successives 3.26 à 3.34 d'<strong>Eky</strong>agri&nbsp;;</li>
+                                          <li>Une nouvelle connexion partenaire permet, aux abonnés de la solution de gestion pour domaines viticoles et négoces Baqio, de transférer automatiquement les opérations commerciales (facturation des ventes) vers le module "Comptabilité" d'<strong>Eky</strong>viti&nbsp;;</li>
+                                          <li>Après synchronisation avec le compte Baqio, la gestion des clients, produits et tarifs est automatisée, comme les opérations de trésorerie, la génération des comptes, journaux et écritures comptables.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                      <div class="panel">
                         <div class="heading">
                            <div class="version">
@@ -4019,6 +4145,134 @@
          </div>
       </article>
       <!-- Section pour la génération du PDF -->
+      <div class="saut-page"></div>
+      <div class="heading-print marge aerateur-haut">
+         <h2>Note de version 3.34 du 23/05/2021</h2>
+      </div>
+      <div class="content-print marge">
+         <div class="divTableNoteVersion">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Comptabilité</strong><br /><br />
+                     4 améliorations et 1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>Lorsque le contrôle de l'export FEC des écritures est activé, un nouvel indicateur, présent dans le brouillard comptable, signale si une écriture est conforme ou non. En cas de non-conformité, cet indicateur est un lien qui déclenche l'ouverture d'une fenêtre modale précisant la nature de l'erreur&nbsp;;</li>
+                        <li>Si le contrôle de la conformité FEC est activé, la fenêtre de validation du brouillard récapitule, le cas échéant, l'ensemble des écritures invalides, sans bloquer l'opération en cours&nbsp;;</li>
+                        <li>L'export d'un fichier FEC au format TXT permet désormais l'obtention d'une archive ZIP contenant le fichier des écritures et un fichier de description, assortie, le cas échéant, d'un fichier des erreurs de données&nbsp;;</li>
+                        <li>L'export d'un fichier FEC au format XML permet désormais l'obtention d'un fichier des écritures assorti, le cas échéant, d'un fichier des erreurs de données et d'un fichier des erreurs de structure.</li>
+                     </ul>
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>Après génération d'une déclaration de TVA, la modification d'un exercice est maintenant autorisée, comme par exemple un changement de comptable &#40;le mode et la fréquence choisis pour la première déclaration demeurent par contre définis pour toute la durée restante de l'exercice&#41;.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Production</strong><br /><br />
+                     1 amélioration et 1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>Afin de regrouper l'ensemble des tâches d'impression, mise à disposition d'un nouveau bouton permettant, depuis les activités, de générer tous les documents PDF en rapport avec la traçabilité des productions et la conduite des parcelles.</li>
+                     </ul>
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>Lorsqu'une culture a été déclarée, par erreur, comme détruite par une intervention, il est désormais possible de corriger son statut pour la rendre de nouveau disponible.</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="content-print marge">
+         <div class="divTableNoteVersion">
+            <div class="divTableBody">
+               <div class="saut-page"></div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/outils.svg" alt="Outils" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Outils</strong><br /><br />
+                     4 améliorations
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>Une nouvelle connexion partenaire permet, aux possesseurs de capteurs Weenat installés sur leurs parcelles, de transférer automatiquement dans <strong>Eky</strong>vagri les données de pluviométrie collectées&nbsp;;</li>
+                        <li>Les informations en provenance de la solution Weenat sont accessibles via la fonctionnalité "Capteurs" du module "Outils" pour consulter les analyses, ou directement affichées, avec une échelle de mesures, sur chaque parcelle concernée dans la vue "Carte" du module "Production"&nbsp;;</li>
+                        <li>Dans la section "Exports", les tâches permettant l'impression du "Registre des interventions" et du "Registre phytosanitaire" sont déplacées dans le module "Production" &#40;voir ci-dessus&#41;&nbsp;;</li>
+                        <li>L'export FEC des écritures comptables avec la sélection d'un découpage semestriel, trimestriel ou mensuel des données n'est désormais plus disponible.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/configuration.svg" alt="Configuration" width="60px">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Configuration</strong><br /><br />
+                     3 améliorations
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>Dans la section "Préférences de la comptabilité" du paramétrage de la société, une nouvelle option permet d'activer le contrôle de la conformité des écritures dans le brouillard comptable, en vue de réaliser un export FEC&nbsp;;</li>
+                        <li>Le modèle de document utilisé pour l'impression au format PDF du "Registre des interventions" est remplacé par une nouvelle mise en page offrant une meilleure présentation des informations consignées&nbsp;;</li>
+                        <li>Le modèle de document utilisé pour l'impression au format PDF du "Registre phytosanitaire" est remplacé par une nouvelle mise en page offrant une meilleure présentation des informations consignées.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/ekyviti.svg" alt="Ekyviti" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Ekyviti</strong><br /><br />
+                     3 améliorations
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>Les utilisateurs de la solution <strong>Eky</strong>viti bénéficient désormais de l'ensemble des nouveautés, des améliorations et des correctifs apportés par les versions successives 3.26 à 3.34 d'<strong>Eky</strong>agri&nbsp;;</li>
+                        <li>Une nouvelle connexion partenaire permet, aux abonnés de la solution de gestion pour domaines viticoles et négoces Baqio, de transférer automatiquement les opérations commerciales (facturation des ventes) vers le module "Comptabilité" d'<strong>Eky</strong>viti&nbsp;;</li>
+                        <li>Après synchronisation avec le compte Baqio, la gestion des clients, produits et tarifs est automatisée, comme les opérations de trésorerie, la génération des comptes, journaux et écritures comptables.</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
       <div class="saut-page"></div>
       <div class="heading-print marge aerateur-haut">
          <h2>Note de version 3.33 du 3/06/2021</h2>

@@ -239,7 +239,6 @@
                         <div class="bloc marge-basse">
                            <li><a href="../chapitre10#fichiers" target="_self">Importation de fichiers CSV</a></li>
                            <li><a href="../chapitre10#imports" target="_self">Intégration de données dans <strong>Eky</strong>agri</a></li>
-                           <li><a href="../chapitre10#exports" target="_self">Édition de documents réglementaires</a></li>
                            <li><a href="../chapitre10#extractions" target="_self">Extraction de données au format CSV</a></li>
                            <li><a href="../chapitre10#ged" target="_self">Gestion des documents archivés</a></li>
 						   <li><a href="../chapitre10#connexions" target="_self">Connexions partenaires</a></li>
@@ -664,11 +663,12 @@
          <img src="../images/commun/step2.svg" alt="2" width="52" />
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Choisissez un type d'imposition et un mode de déclaration</span>
+         <span class="titre-advice">Choisissez un type d'imposition…</span>
          <p>Dans la section "Préférences de la comptabilité", sélectionnez, dans la liste déroulante, un type d'imposition et un mode de déclaration des revenus. Les propositions d'export du fichier FEC dans la vue d'un exercice comptable seront filtrées à partir de ce paramétrage.</p>
          <p class="max-img-process">
             <img src="../images/chapitre5/societe2.png" class="contour-img" alt="Paramétrage type d'imposition" data-action="zoom" />
          </p>
+		 <span class="titre-advice">… et la méthode d'enregistrement des opérations</span>
 		 <p>Par défaut, la comptabilité d'engagement est activée&nbsp;: c'est une méthode qui enregistre en comptabilité les recettes et les dépenses lorsqu'elles sont acquises &#40;suite à des ventes&#41; ou dues &#40;suite à des achats&#41;, même si ces opérations commerciales n'ont pas encore été réglées&nbsp;:</p>
 		 <p class="max-img-process">
             <img src="../images/chapitre5/societe3.png" class="contour-img" alt="Paramétrage comptabilité d'engagement" data-action="zoom" />
@@ -679,10 +679,15 @@
          <img src="../images/commun/step3.svg" alt="3" width="52" />
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Désactivez le mode stock permanent</span>
-         <p>Dans la section "Préférences de la comptabilité", nous vous conseillons de laisser désactivé le "Mode stock permanent", sinon, une écriture sera générée à chaque mouvement de stock après une opération d'achat ou de vente.</p>
+         <span class="titre-advice">Configurez le mode stock permanent…</span>
+         <p>Nous vous conseillons de laisser le "Mode stock permanent" désactivé, sinon, une écriture sera générée à chaque mouvement de stock après une opération commerciale &#40;achat ou vente&#41;.</p>
          <p class="max-img-process">
             <img src="../images/chapitre5/societe4.png" class="contour-img" alt="Paramétrage mode stock permanent" data-action="zoom" />
+         </p>
+		 <span class="titre-advice">… et le contrôle des écritures pour l'export FEC</span>
+		 <p>Par défaut, le contrôle de la conformité FEC est activé. Cette option permet l'affichage d'indicateurs et de messages d'avertissement lorsque des écritures en erreur sont détectées lors de la validation du brouillard d'un journal. Durant un export FEC, des fichiers complémentaires sont également générés en cas de non-conformité &#40;erreurs de données ou de structure&#41;.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre5/societe5.png" class="contour-img" alt="Paramétrage conformité FEC" data-action="zoom" />
          </p>
       </div>
       <br />
@@ -691,10 +696,10 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Paramétrez les radicaux comptables</span>
-         <p>Dans la section "Préférences de la comptabilité", saisissez éventuellement, dans les champs appropriés, les nouveaux radicaux comptables destinés aux comptes auxiliaires &#40;comptes de tiers&nbsp;: clients et fournisseurs uniquement&#41;.
+         <p>Saisissez éventuellement, dans les champs appropriés, les nouveaux radicaux comptables destinés aux comptes auxiliaires &#40;comptes de tiers&nbsp;: clients et fournisseurs uniquement&#41;.
          </p>
          <p class="max-img-process">
-            <img src="../images/chapitre5/societe5.png" class="contour-img" alt="Paramétrage comptes auxiliaires" data-action="zoom" />
+            <img src="../images/chapitre5/societe6.png" class="contour-img" alt="Paramétrage comptes auxiliaires" data-action="zoom" />
          </p>
       </div>
       <div class="warn-fond aerateur-haut aerateur-bas">
@@ -711,10 +716,10 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Définissez une période d'amortissement</span>
-         <p>Dans la section "Préférences de la comptabilité", sélectionnez, dans la liste déroulante "Période d'amortissement par défaut", celle que vous désirez privilégier&nbsp;: mensuelle, trimestrielle ou annuelle.
+         <p>Sélectionnez, dans la liste déroulante "Période d'amortissement par défaut", celle que vous désirez privilégier&nbsp;: mensuelle, trimestrielle ou annuelle.
          </p>
          <p class="max-img-process">
-            <img src="../images/chapitre5/societe6.png" class="contour-img" alt="Paramétrage période d'amortissement" data-action="zoom" />
+            <img src="../images/chapitre5/societe7.png" class="contour-img" alt="Paramétrage période d'amortissement" data-action="zoom" />
          </p>
       </div>
       <br />
@@ -723,10 +728,13 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Sélectionnez la longueur des comptes généraux</span>
-         <p>Dans la section "Préférences de la comptabilité", choisissez le nombre de caractères &#40;de 8 à 14 inclus&#41; si celui-ci doit être modifié après le paramétrage réalisé dans l'assistant de démarrage.
+         <p>Choisissez le nombre de caractères &#40;de 8 à 14 inclus&#41; si celui-ci doit être modifié après le paramétrage réalisé dans l'assistant de démarrage.
          </p>
          <p class="max-img-process">
-            <img src="../images/chapitre5/societe7.png" class="contour-img" alt="Paramétrage comptes généraux" data-action="zoom" />
+            <img src="../images/chapitre5/societe8.png" class="contour-img" alt="Paramétrage comptes généraux" data-action="zoom" />
+         </p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre5/societe9.png" class="contour-img" alt="Validation configuration" data-action="zoom" />
          </p>
          <p>Cliquez sur <span class="btn-blue">Modifier</span> pour valider la personnalisation et l'activation de vos préférences comptables.</p>
       </div>
@@ -737,7 +745,7 @@
          <div class="info-txt">
             <span class="titre-advice">Verrouillage des comptes généraux<br /></span>
             <p class="texte-advice">Il n'est plus possible de modifier le nombre de caractères des comptes généraux dès que des écritures sont en attente de validation dans le brouillard ou enregistrées en comptabilité. La liste déroulante est alors désactivée et n'affiche plus que le nombre de caractères choisi.</p><br />
-            <img src="../images/chapitre5/societe8.png" class="contour-img" alt="Verrouillage comptes généraux" />
+            <img src="../images/chapitre5/societe10.png" class="contour-img" alt="Verrouillage comptes généraux" />
          </div>
       </div>
 	  <h6>Guide de prise en main • Comptabilité • Séquence analytique</h6>
@@ -1081,7 +1089,19 @@
          <p class="max-img-process">
             <img src="../images/chapitre5/brouillard4.png" class="contour-img" alt="Liste des écritures" data-action="zoom" />
          </p>
-         <p>Cliquez sur le bouton "Valider les écritures" pour déclencher la validation.</p>
+		 <p class="aerateur-haut">Si vous avez activé l'option "Contrôler la conformité des écritures dans le brouillard pour export FEC" dans le <a href="#societe" class="avoid-clicks" target="_self">paramétrage</a> des "Préférences de la comptabilité" de la société, un indicateur est affiché dans la colonne "Conformité FEC" à droite de chaque écriture.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre5/brouillard-fec1.png" class="contour-img" alt="Liste des écritures" data-action="zoom" />
+         </p>
+		 <p><img src="../images/chapitre5/check-green.svg" alt="Check OK" height="20" class="align-icone icone-marge-droite">indique que l'écriture est conforme.</p>
+         <p><img src="../images/chapitre5/times-red.svg" alt="Erreur" height="20" class="align-icone icone-marge-droite">signale que l'écriture est invalide. Cliquez sur l'icône pour connaître la nature de l'erreur&nbsp;:</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre5/brouillard-fec2.png" class="contour-img" alt="Écriture invalide" data-action="zoom" />
+         </p>
+         <p class="aerateur-haut">Cliquez sur le bouton "Valider l'écriture" ou "Valider les X écritures" en bas de la fenêtre principale pour déclencher la validation.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre5/brouillard5.png" class="contour-img" alt="Validation du brouillard" data-action="zoom" />
+         </p>
       </div>
       <br />
       <div class="floating-box process">
@@ -1092,15 +1112,15 @@
          <p>Cliquez ensuite sur le bouton <span class="btn-blue">Validez&nbsp;les&nbsp;écritures</span> dans la <span class="tooltip">fenêtre modale<span class="tooltiptext tooltip-top">Voir glossaire</span></span> pour confirmer l'opération.</p>
          <p>Les écritures validées sont alors figées dans le journal et leur modification ultérieure devient dès lors impossible.</p>
          <p class="max-img-process">
-            <img src="../images/chapitre5/brouillard5.png" class="contour-img" alt="Validation du brouillard" data-action="zoom" />
+            <img src="../images/chapitre5/brouillard6.png" class="contour-img" alt="Validation du brouillard" data-action="zoom" />
          </p>
          <p>Un message de confirmation vous informe alors de la bonne exécution de la tâche&nbsp;:</p>
          <p class="max-img-process">
-            <img src="../images/chapitre5/brouillard6.png" class="contour-img" alt="Message de confirmation" data-action="zoom" />
+            <img src="../images/chapitre5/brouillard7.png" class="contour-img" alt="Message de confirmation" data-action="zoom" />
          </p>
          <p>Notez qu'il faut avoir validé au moins une écriture pour disposer du bouton<img src="../images/commun/imprimer.svg" alt="Imprimer" class="btn-gris icone-marge-gauche icone-marge-droite">permettant d'obtenir le journal centralisateur au format PDF.</p>
          <p class="max-img-process">
-            <img src="../images/chapitre5/brouillard7.png" class="contour-img" alt="Liste des journaux" data-action="zoom" />
+            <img src="../images/chapitre5/brouillard8.png" class="contour-img" alt="Liste des journaux" data-action="zoom" />
          </p>
       </div>
       <h6>Guide de prise en main • Comptabilité • Journal centralisateur</h6>
