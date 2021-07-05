@@ -744,7 +744,6 @@ a:visited {
 
 .cogs-green {
 	background: url("../fr/images/commun/cogs-green.svg") no-repeat right;
-	;
 	background-position: 98% 15px !important;
 	background-size: 28px !important;
 	background-color: #eee;
@@ -752,7 +751,6 @@ a:visited {
 
 .cogs-orange {
 	background: url("../fr/images/commun/cogs-orange.svg") no-repeat right;
-	;
 	background-position: 98% 15px !important;
 	background-size: 28px !important;
 	background-color: #eee;
@@ -760,7 +758,6 @@ a:visited {
 
 .cart-green {
 	background: url("../fr/images/commun/cart-green.svg") no-repeat right;
-	;
 	background-position: 98% 15px !important;
 	background-size: 28px !important;
 	background-color: #eee;
@@ -768,7 +765,6 @@ a:visited {
 
 .cart-orange {
 	background: url("../fr/images/commun/cart-orange.svg") no-repeat right;
-	;
 	background-position: 98% 15px !important;
 	background-size: 28px !important;
 	background-color: #eee;
@@ -776,7 +772,6 @@ a:visited {
 
 .bar-green {
 	background: url("../fr/images/commun/bar-green.svg") no-repeat right;
-	;
 	background-position: 98% 15px !important;
 	background-size: 28px !important;
 	background-color: #eee;
@@ -784,7 +779,6 @@ a:visited {
 
 .bar-orange {
 	background: url("../fr/images/commun/bar-orange.svg") no-repeat right;
-	;
 	background-position: 98% 15px !important;
 	background-size: 28px !important;
 	background-color: #eee;
@@ -792,7 +786,6 @@ a:visited {
 
 .wrench-green {
 	background: url("../fr/images/commun/wrench-green.svg") no-repeat right;
-	;
 	background-position: 98% 15px !important;
 	background-size: 28px !important;
 	background-color: #eee;
@@ -800,7 +793,6 @@ a:visited {
 
 .wrench-orange {
 	background: url("../fr/images/commun/wrench-orange.svg") no-repeat right;
-	;
 	background-position: 98% 15px !important;
 	background-size: 28px !important;
 	background-color: #eee;
@@ -808,7 +800,6 @@ a:visited {
 
 .truck-green {
 	background: url("../fr/images/commun/truck-green.svg") no-repeat right;
-	;
 	background-position: 98% 15px !important;
 	background-size: 28px !important;
 	background-color: #eee;
@@ -816,7 +807,6 @@ a:visited {
 
 .truck-orange {
 	background: url("../fr/images/commun/truck-orange.svg") no-repeat right;
-	;
 	background-position: 98% 15px !important;
 	background-size: 28px !important;
 	background-color: #eee;
@@ -824,7 +814,6 @@ a:visited {
 
 .money-green {
 	background: url("../fr/images/commun/money-green.svg") no-repeat right;
-	;
 	background-position: 98% 15px !important;
 	background-size: 28px !important;
 	background-color: #eee;
@@ -832,7 +821,6 @@ a:visited {
 
 .money-orange {
 	background: url("../fr/images/commun/money-orange.svg") no-repeat right;
-	;
 	background-position: 98% 15px !important;
 	background-size: 28px !important;
 	background-color: #eee;
@@ -840,7 +828,6 @@ a:visited {
 
 .users-green {
 	background: url("../fr/images/commun/users-green.svg") no-repeat right;
-	;
 	background-position: 98% 15px !important;
 	background-size: 28px !important;
 	background-color: #eee;
@@ -848,7 +835,6 @@ a:visited {
 
 .users-orange {
 	background: url("../fr/images/commun/users-orange.svg") no-repeat right;
-	;
 	background-position: 98% 15px !important;
 	background-size: 28px !important;
 	background-color: #eee;
@@ -856,7 +842,6 @@ a:visited {
 
 .magic-green {
 	background: url("../fr/images/commun/magic-green.svg") no-repeat right;
-	;
 	background-position: 98% 15px !important;
 	background-size: 28px !important;
 	background-color: #eee;
@@ -864,7 +849,6 @@ a:visited {
 
 .magic-orange {
 	background: url("../fr/images/commun/magic-orange.svg") no-repeat right;
-	;
 	background-position: 98% 15px !important;
 	background-size: 28px !important;
 	background-color: #eee;
@@ -3135,7 +3119,7 @@ span.the-btn {
 	color: #3f70ce;
 }
 
-.rond-ekyagri {
+.rond-prod {
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
@@ -3153,12 +3137,48 @@ span.the-btn {
 	cursor: pointer;
 }
 
-.rond-ekyviti {
+.rond-prod-viti {
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
 	background: #fff;
 	background-image: url("../fr/images/commun/contour-som-x1.svg");
+    background-repeat: no-repeat;
+	margin-right: 8px;
+	line-height: 31px;
+	text-align: center;
+	letter-spacing: -1px;
+	float: left;
+	color: #333;
+	font-size: 20px;
+	margin-top: 3px;
+	cursor: pointer;
+}
+
+.rond-gestion {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #fff;
+	background-image: url("../fr/images/commun/contour-som-x4.svg");
+    background-repeat: no-repeat;
+	margin-right: 8px;
+	line-height: 31px;
+	text-align: center;
+	letter-spacing: -1px;
+	float: left;
+	color: #333;
+	font-size: 20px;
+	margin-top: 3px;
+	cursor: pointer;
+}
+
+.rond-gestion-viti {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #fff;
+	background-image: url("../fr/images/commun/contour-som-x5.svg");
     background-repeat: no-repeat;
 	margin-right: 8px;
 	line-height: 31px;
@@ -4450,4 +4470,40 @@ display: block;
 
 .title-chapter {
 	margin-top: 13px;
+}
+
+/* Config offres 2021 */
+.config-x1-viti {
+	background: url("../fr/images/commun/config-x1-viti.svg") no-repeat right;
+	background-position: 98% 15px !important;
+	background-size: 50px !important;
+	background-color: #83e054;
+}
+
+.config-x2 {
+	background: url("../fr/images/commun/config-x2.svg") no-repeat right;
+	background-position: 98% 15px !important;
+	background-size: 50px !important;
+	background-color: #83e054;
+}
+
+.config-x2-viti {
+	background: url("../fr/images/commun/config-x2-viti.svg") no-repeat right;
+	background-position: 98% 15px !important;
+	background-size: 50px !important;
+	background-color: #83e054;
+}
+
+.config-x4 {
+	background: url("../fr/images/commun/config-x4.svg") no-repeat right;
+	background-position: 98% 15px !important;
+	background-size: 50px !important;
+	background-color: #83e054;
+}
+
+.config-intro {
+	background: url("../fr/images/commun/config-x4.svg") no-repeat right;
+	background-position: 98% 10px !important;
+	background-size: 40px !important;
+	background-color: #83e054;
 }
