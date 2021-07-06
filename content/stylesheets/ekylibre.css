@@ -398,10 +398,11 @@ a:visited {
 }
 
 .config {
-	background-color: #83e054;
 	text-align: center;
 	padding: 1px;
 	color: #000;
+	font-size: 12px;
+	background-color: #83e054;
 }
 
 .tableaux {
@@ -1312,11 +1313,11 @@ a:visited {
 }
 
 
-/*Tableau Chapitre 2 Tâches visées*/
+/*Tableau Chapitre 1 Tâches visées*/
 
 .divTableCell,
 .divTableHead {
-	height: 30px;
+	height: 24px;
 	border-top-width: 3px;
 	border-top-style: solid;
 	border-top-color: #ffffff;
@@ -1338,7 +1339,7 @@ a:visited {
 
 .divTableCell1,
 .divTableHead1 {
-	height: 30px;
+	height: 24px;
 	border-top-width: 0;
 	border-top-style: solid;
 	border-top-color: #ffffff;
@@ -1360,7 +1361,7 @@ a:visited {
 
 .divTableCell2,
 .divTableHead2 {
-	height: 30px;
+	height: 24px;
 	border-top-width: 3px;
 	border-top-style: solid;
 	border-top-color: #ffffff;
@@ -1382,7 +1383,7 @@ a:visited {
 
 .divTableCell21,
 .divTableHead21 {
-	height: 30px;
+	height: 24px;
 	border-top-width: 3px;
 	border-top-style: solid;
 	border-top-color: #ffffff;
@@ -1403,11 +1404,11 @@ a:visited {
 }
 
 
-/*Tableau Chapitre 2 Informations à collecter*/
+/*Tableau Chapitre 1 Informations à collecter*/
 
 .divTableCell4,
 .divTableHead4 {
-	height: 35px;
+	height: 30px;
 	border-top-width: 3px;
 	border-top-style: solid;
 	border-top-color: #ffffff;
@@ -1429,7 +1430,7 @@ a:visited {
 
 .divTableCell5,
 .divTableHead5 {
-	height: 40px;
+	height: 30px;
 	border-top-width: 3px;
 	border-top-style: solid;
 	border-top-color: #ffffff;
@@ -1451,7 +1452,7 @@ a:visited {
 
 .divTableCellGs,
 .divTableHeadGs {
-	height: 40px;
+	height: 30px;
 	border-top-width: 3px;
 	border-top-style: solid;
 	border-top-color: #ffffff;
@@ -1473,7 +1474,7 @@ a:visited {
 
 .divTableCellOr,
 .divTableHeadOr {
-	height: 40px;
+	height: 30px;
 	border-top-width: 3px;
 	border-top-style: solid;
 	border-top-color: #ffffff;
@@ -1495,7 +1496,7 @@ a:visited {
 
 .divTableCellRe,
 .divTableHeadRe {
-	height: 40px;
+	height: 30px;
 	border-top-width: 3px;
 	border-top-style: solid;
 	border-top-color: #ffffff;
@@ -1517,7 +1518,7 @@ a:visited {
 
 .divTableCellVt,
 .divTableHeadVt {
-	height: 40px;
+	height: 30px;
 	border-top-width: 3px;
 	border-top-style: solid;
 	border-top-color: #ffffff;
@@ -1538,7 +1539,7 @@ a:visited {
 }
 
 
-/*Tableau Chapitre 3 Tableau de correspondances*/
+/*Tableau Chapitre 2 Tableau de correspondances*/
 
 .divTableCell32,
 .divTableHead32 {
@@ -3119,12 +3120,12 @@ span.the-btn {
 	color: #3f70ce;
 }
 
-.rond-prod {
+.rond-all {
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
 	background: #fff;
-    background-image: url("../fr/images/commun/contour-som-x2.svg");
+    background-image: url("../fr/images/commun/contour-som-x4.svg");
     background-repeat: no-repeat;
 	margin-right: 8px;
 	line-height: 31px;
@@ -3160,7 +3161,7 @@ span.the-btn {
 	height: 30px;
 	border-radius: 50%;
 	background: #fff;
-	background-image: url("../fr/images/commun/contour-som-x4.svg");
+	background-image: url("../fr/images/commun/contour-som-x2.svg");
     background-repeat: no-repeat;
 	margin-right: 8px;
 	line-height: 31px;
@@ -4475,28 +4476,28 @@ display: block;
 /* Config offres 2021 */
 .config-x1-viti {
 	background: url("../fr/images/commun/config-x1-viti.svg") no-repeat right;
-	background-position: 98% 15px !important;
+	background-position: 98% 14px !important;
 	background-size: 50px !important;
 	background-color: #83e054;
 }
 
 .config-x2 {
 	background: url("../fr/images/commun/config-x2.svg") no-repeat right;
-	background-position: 98% 15px !important;
+	background-position: 98% 14px !important;
 	background-size: 50px !important;
 	background-color: #83e054;
 }
 
 .config-x2-viti {
 	background: url("../fr/images/commun/config-x2-viti.svg") no-repeat right;
-	background-position: 98% 15px !important;
+	background-position: 98% 14px !important;
 	background-size: 50px !important;
 	background-color: #83e054;
 }
 
 .config-x4 {
 	background: url("../fr/images/commun/config-x4.svg") no-repeat right;
-	background-position: 98% 15px !important;
+	background-position: 98% 14px !important;
 	background-size: 50px !important;
 	background-color: #83e054;
 }
