@@ -13,7 +13,11 @@
       </div>
       <div class="image-large"><img class="chapitre loading" src="../images/chapitre4/interface.png" alt="Interface"/> </div>
       <div class="image-carre"><img class="chapitre loading" src="../images/chapitre4/interface-carre.png" alt="Interface" style="width:auto;" /></div>
-      <div class="pdf"><div class="search title-chapter"><form><input type="text" id="search" name="search" placeholder="Rechercher…"></form></div></div>
+      <div class="pdf">
+         <div class="search title-chapter">
+            <form><input type="text" id="search" name="search" placeholder="Rechercher…"></form>
+         </div>
+      </div>
       <h1 align="center" class="majuscule aerateur">4 - Interface et accès</h1>
       <div class="sommaire">
          <div class="gris">
@@ -94,12 +98,13 @@
                         <div class="bloc">
                            <li><a href="#espace" target="_self">Présentation de l'espace de travail</a></li>
                            <li><a href="#modules" target="_self">Navigation et accès aux différents modules</a></li>
-                           <li><a href="#compte" target="_self">Préférences du compte</a></li>
+                           <li><a href="#compte" target="_self">Gestion du compte administrateur</a></li>
                            <li><a href="#perso" target="_self">Personnalisation des tableaux de bord</a></li>
-                           <li><a href="#etiquettes" target="_self">Utilisation des étiquettes</a></li>
+                           <li><a href="#etiquettes" target="_self">Paramétrage des étiquettes</a></li>
                            <li><a href="#champs" target="_self">Création de champs personnalisés</a></li>
                            <li><a href="#formats" target="_self">Formats de nommage</a></li>
                            <li><a href="#acces" target="_self">Accès et rôles d'utilisateur</a></li>
+						   <li><a href="#duke" target="_self">Duke, l'assistant vocal intelligent</a></li>
                         </div>
                      </ul>
                   </li>
@@ -148,7 +153,7 @@
                            <li><a href="../chapitre6#reception" target="_self">Réception des commandes</a></li>
                            <li><a href="../chapitre6#facturation" target="_self">Facturation des achats</a></li>
                            <li><a href="../chapitre6#decaissements" target="_self">Décaissements et lots de décaissements</a></li>
-						   <li><a href="../chapitre6#justif-achats" target="_self">Justificatifs d'achats</a></li>
+                           <li><a href="../chapitre6#justif-achats" target="_self">Justificatifs d'achats</a></li>
                            <li><a href="../chapitre6#stockage" target="_self">Zones de stockage</a></li>
                         </div>
                      </ul>
@@ -215,9 +220,9 @@
                            <li><a href="../chapitre9#productions" target="_self">Création des productions dans une campagne</a></li>
                            <li><a href="../chapitre9#interventions" target="_self">Enregistrement d'interventions</a></li>
                            <li><a href="../chapitre9#planification" target="_self">Planification d'interventions</a></li>
-						   <li><a href="../chapitre9#zero" target="_self">Utilisation de l'application mobile</a></li>
+                           <li><a href="../chapitre9#zero" target="_self">Utilisation de l'application mobile</a></li>
                            <li><a href="../chapitre9#cahier" target="_self">Impression des documents réglementaires</a></li>
-						   <li><a href="../chapitre9#suivi" target="_self">Indicateurs et suivi des activités</a></li>
+                           <li><a href="../chapitre9#suivi" target="_self">Indicateurs et suivi des activités</a></li>
                         </div>
                      </ul>
                   </li>
@@ -237,7 +242,7 @@
                            <li><a href="../chapitre10#imports" target="_self">Intégration de données dans <strong>Eky</strong>agri</a></li>
                            <li><a href="../chapitre10#extractions" target="_self">Extraction de données au format CSV</a></li>
                            <li><a href="../chapitre10#ged" target="_self">Gestion des documents archivés</a></li>
-						   <li><a href="../chapitre10#connexions" target="_self">Connexions partenaires</a></li>
+                           <li><a href="../chapitre10#connexions" target="_self">Connexions partenaires</a></li>
                         </div>
                      </ul>
                   </li>
@@ -274,7 +279,7 @@
                   <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
                </div>
                <div class="divTableCellListe" style="width: auto">
-                  Comment aborder la présentation de <a href="#espace" class="avoid-clicks">l'espace de travail</a> d'<strong>Eky</strong>agri &#40;fenêtre principale, menus, etc.&#41;
+                  Comment aborder la présentation de <a href="#espace" class="avoid-clicks">l'espace de travail</a> &#40;fenêtre principale, menus, etc.&#41;
                </div>
             </div>
             <div class="divTableRow">
@@ -298,7 +303,7 @@
                   <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
                </div>
                <div class="divTableCellListe">
-                  Comment créer des <a href="#etiquettes" class="avoid-clicks">étiquettes</a> et des <a href="#champs" class="avoid-clicks">champs personnalisés</a> pour enregistrer des informations complémentaires
+                  Comment paramétrer des <a href="#etiquettes" class="avoid-clicks">étiquettes</a> et des <a href="#champs" class="avoid-clicks">champs personnalisés</a> complémentaires
                </div>
             </div>
             <div class="divTableRow">
@@ -314,7 +319,7 @@
                   <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
                </div>
                <div class="divTableCellListe" style="width: auto">
-                  Comment créer des <a href="#utilisateurs" class="avoid-clicks">utilisateurs</a> et leur attribuer des droits dans l'application
+                  Comment créer des <a href="#utilisateurs" class="avoid-clicks">utilisateurs</a> et leur accorder des autorisations d'accès à vos données
                </div>
             </div>
             <div class="divTableRow">
@@ -322,7 +327,7 @@
                   <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
                </div>
                <div class="divTableCellListe">
-                  Comment utiliser ou créer des <a href="#roles" class="avoid-clicks">rôles</a> pour des familles d'utilisateurs
+                  Comment utiliser ou configurer des <a href="#roles" class="avoid-clicks">rôles</a> pour des familles d'utilisateurs
                </div>
             </div>
             <div class="divTableRow">
@@ -330,7 +335,7 @@
                   <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
                </div>
                <div class="divTableCellListe">
-                  Comment générer des <a href="#invitations" class="avoid-clicks">invitations</a> et gérer les <a href="#inscriptions" class="avoid-clicks">inscriptions</a> d'utilisateurs
+                  Comment générer des <a href="#invitations" class="avoid-clicks">invitations</a> et gérer les <a href="#inscriptions" class="avoid-clicks">inscriptions</a> de nouveaux utilisateurs
                </div>
             </div>
          </div>
@@ -431,7 +436,7 @@
                   <img src="../images/chapitre4/b-maj.svg" alt="B" height="40" width="40">
                </div>
                <div class="divTableCellInter">
-                  <p>Le "Menu utilisateur", en haut à droite de l'écran, affiche les notifications<img src="../images/chapitre4/bell-o-blue.svg" alt="Cloche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">de l'application, un lien vers ce guide<img src="../images/chapitre4/life-ring.svg" alt="Bouton accueil" height="20" class="align-icone icone-marge-gauche icone-marge-droite">et permet d'accéder à certaines préférences de votre compte.</p>
+                  <p>Le "Menu utilisateur", en haut à droite de l'écran, affiche les notifications<img src="../images/chapitre4/bell-o-blue.svg" alt="Cloche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">de l'application, un lien vers ce guide<img src="../images/chapitre4/doc-link.svg" alt="Bouton accueil" height="20" class="align-icone icone-marge-gauche icone-marge-droite">et permet d'accéder à certaines préférences de votre compte.</p>
                </div>
             </div>
             <div class="divTableRow">
@@ -480,7 +485,7 @@
                   <img src="../images/chapitre4/carte.svg" alt="Carte" height="30" class="btn-affichage">
                </div>
                <div class="divTableCellAffichage" style="width: auto">
-                  affichage des données dans la carte
+                  affichage des données dans la carte &#40;"Vue carte"&#41;
                </div>
             </div>
             <div class="divTableRow">
@@ -488,7 +493,7 @@
                   <img src="../images/chapitre4/paves.svg" alt="Pavés" height="30" class="btn-affichage">
                </div>
                <div class="divTableCellAffichage">
-                  affichage des données dans des pavés
+                  affichage des données dans des pavés &#40;"Vue pavés"&#41;
                </div>
             </div>
             <div class="divTableRow">
@@ -496,7 +501,7 @@
                   <img src="../images/chapitre4/liste.svg" alt="liste" height="30" class="btn-affichage">
                </div>
                <div class="divTableCellAffichage">
-                  affichage des données dans une liste
+                  affichage des données dans une liste &#40;"Vue liste"&#41;
                </div>
             </div>
             <div class="divTableRow">
@@ -504,7 +509,7 @@
                   <img src="../images/chapitre4/chronologie.svg" alt="Chronologie" height="30" class="btn-affichage">
                </div>
                <div class="divTableCellAffichage">
-                  affichage des données par ordre chronologique
+                  affichage des données dans l'ordre chronologique &#40;"Vue chronologie"&#41;
                </div>
             </div>
          </div>
@@ -519,8 +524,8 @@
       <p class="texte">Sur la plupart des tableaux, en mode d'affichage "Liste", il permet de personnaliser la présentation des données &#40;affichage/masquage des colonnes, nombre de lignes par page&#41; et de réaliser des exports aux formats ODF et CSV&nbsp;:</p>
       <p class="texte"><img src="../images/chapitre4/custom1.png" class="contour-img" alt="Personnalisation tableau" data-action="zoom" /></p>
       <p class="texte"><img src="../images/chapitre4/custom2.png" class="contour-img" alt="Personnalisation tableau" data-action="zoom" /></p>
-	  <h2 class="texte aerateur">a .2 - Options de l'espace de travail</h2>
-	  <p align="center" class="aerateur-bas texte">
+      <h2 class="texte aerateur">a .2 - Options de l'espace de travail</h2>
+      <p align="center" class="aerateur-bas texte">
          <img src="../images/chapitre4/illus-interface.png" alt="Illustration interface" width="450px" />
       </p>
       <p class="aerateur-haut"><span class="titre-advice texte">Notifications</span></p>
@@ -562,22 +567,67 @@
       <p class="texte">Les informations affichées et la liste des champs à renseigner peuvent occuper une hauteur importante dans la fenêtre principale.<br />Réduisez ou développez les formulaires de saisie avec les boutons<img src="../images/commun/minus-square-o.svg" alt="moins" height="15" class="icone-marge-gauche icone-marge-droite">et<img src="../images/commun/plus-square-o.svg" alt="plus" height="15" class="icone-marge-gauche icone-marge-droite">situés à droite de certaines sections.</p>
       <p class="texte"><img src="../images/chapitre4/dev-reduc.png" class="contour-img" alt="Réduction agrandissement des sections" data-action="zoom" /></p>
       <p class="texte aerateur-haut">De la même manière, un outil de recherche contextuel est disponible à droite de la fenêtre principale &#40;les champs, filtres et options disponibles dépendent de la fonctionnalité sélectionnée&#41;.</p>
-	  <p class="texte">Cliquez sur le bouton<img src="../images/chapitre4/filtrer1.svg" alt="Déplier filtre" height="15" class="btn-gris icone-marge-gauche icone-marge-droite">pour déplier l'en-tête de recherche&nbsp;:</p>
-	  <p class="texte"><img src="../images/chapitre4/search1.png" class="contour-img" alt="En-tête de recherche" data-action="zoom" /></p>
-	  <p class="texte">Cliquez sur le bouton<img src="../images/chapitre4/filtrer2.svg" alt="Replier filtre" height="15" class="btn-gris icone-marge-gauche icone-marge-droite">pour replier l'en-tête de recherche&nbsp;:</p>
+      <p class="texte">Cliquez sur le bouton<img src="../images/chapitre4/filtrer1.svg" alt="Déplier filtre" height="15" class="btn-gris icone-marge-gauche icone-marge-droite">pour déplier l'en-tête de recherche&nbsp;:</p>
+      <p class="texte"><img src="../images/chapitre4/search1.png" class="contour-img" alt="En-tête de recherche" data-action="zoom" /></p>
+      <p class="texte">Cliquez sur le bouton<img src="../images/chapitre4/filtrer2.svg" alt="Replier filtre" height="15" class="btn-gris icone-marge-gauche icone-marge-droite">pour replier l'en-tête de recherche&nbsp;:</p>
       <p class="texte"><img src="../images/chapitre4/search2.png" class="contour-img" alt="En-tête de recherche" data-action="zoom" /></p>
-	  <h6>Guide de prise en main • Imports • Sélection d'un thème couleur</h6>
-	  <a class="slice-process" id="theme"></a>
-      <p class="aerateur-top"><span class="titre-advice texte">Sélection d'un thème couleur</span></p>
-      <p class="texte"><strong>Eky</strong>agri vous permet de choisir entre plusieurs thèmes pour le choix de la couleur principale de l'interface.</p>
+      <h6>Guide de prise en main • Interface et accès • Présentation des modules</h6>
+      <a class="slice-process" id="modules"></a>
+      <h2 class="texte aerateur">b - Navigation et accès aux différents modules</h2>
+      <p class="texte">
+         Les fonctionnalités de l'application sont toutes classées dans différents modules. En voici un aperçu rapide avec les différents tableaux de bord listés dans l'ordre de leur apparition dans le "Menu principal" et dans le "Panneau des modules".
+      </p>
+      <p class="texte">La liste des fonctionnalités associées à chaque module s'affiche dans la barre latérale &#40;à gauche&#41;.</p>
+      <h3 align="center" class="texte aerateur procedure">1 – Module de la gestion des tiers</h3>
+      <p align="center"><img src="../images/chapitre4/tiers.svg" alt="Tiers" width="60"></p>
+      <p class="texte">Les fonctionnalités regroupées dans ce module permettent de gérer les contacts et partenaires économiques &#40;clients/fournisseurs&#41; ainsi que des événements dans un planning &#40;abordé dans le <a href="../chapitre8" class="avoid-clicks" target="_self">chapitre 8 - Stocks, tiers et RH</a>&#41;.</p>
+      <h3 align="center" class="texte aerateur procedure">2 – Module de la comptabilité</h3>
+      <p align="center"><img src="../images/chapitre4/compta.svg" alt="Comptabilité" width="60"></p>
+      <p class="texte">Les fonctionnalités regroupées dans ce module permettent de gérer les écritures et exercices comptables, les immobilisations, les emprunts, les déclarations de TVA et la trésorerie &#40;abordé dans le <a href="../chapitre5" class="avoid-clicks" target="_self">chapitre 5 - Comptabilité</a>&#41;.</p>
+      <h3 align="center" class="texte aerateur procedure">3 – Module des ventes</h3>
+      <p align="center"><img src="../images/chapitre4/ventes.svg" alt="Ventes" width="60"></p>
+      <p class="texte">Les fonctionnalités regroupées dans ce module permettent de gérer les ventes, la génération de factures, les encaissements et les remises en banque &#40;abordé dans le <a href="../chapitre7" class="avoid-clicks" target="_self">chapitre 7 - Ventes</a>&#41;.</p>
+      <h3 align="center" class="texte aerateur procedure">4 – Module des achats</h3>
+      <p align="center"><img src="../images/chapitre4/achats.svg" alt="Achats" width="60"></p>
+      <p class="texte">Les fonctionnalités regroupées dans ce module permettent de gérer les commandes, les factures, les avoirs et les décaissements &#40;abordé dans le <a href="../chapitre6" class="avoid-clicks" target="_self">chapitre 6 - Achats</a>&#41;.</p>
+      <h3 align="center" class="texte aerateur procedure">5 – Module de la gestion des stocks</h3>
+      <p align="center"><img src="../images/chapitre4/truck.svg" alt="Stocks" width="60"></p>
+      <p class="texte">Les fonctionnalités regroupées dans ce module permettent de gérer les stocks, les inventaires, les réceptions, les expéditions, les livraisons et les zones de stockage &#40;abordé dans le <a href="../chapitre8" class="avoid-clicks" target="_self">chapitre 8 - Stocks, tiers et RH</a>&#41;.</p>
+      <h3 align="center" class="texte aerateur procedure">6 – Module de la gestion de la production</h3>
+      <p align="center"><img src="../images/chapitre4/production.svg" alt="Production" width="60"></p>
+      <p class="texte">Les fonctionnalités regroupées dans ce module permettent de gérer les activités, l'assolement, la création des cultures, l'enregistrement des interventions, les traitements phytosanitaires, les IFT, les autorisations et obligations définies par la réglementation &#40;abordé dans le <a href="../chapitre9" class="avoid-clicks" target="_self">chapitre 9 - Production</a>&#41;.</p>
+      <h3 align="center" class="texte aerateur procedure">7 – Module des ressources humaines</h3>
+      <p align="center"><img src="../images/chapitre4/rh.svg" alt="Ressources humaines" width="60"></p>
+      <p class="texte">Les fonctionnalités regroupées dans ce module permettent de gérer les équipiers, l'enregistrement des dépenses salariales et le paiement des salaires &#40;abordé dans le <a href="../chapitre8" class="avoid-clicks" target="_self">chapitre 8 - Stocks, tiers et RH</a>&#41;.</p>
+      <h3 align="center" class="texte aerateur procedure">8 – Module des outils</h3>
+      <p align="center"><img src="../images/chapitre4/magic.svg" alt="Outils" width="60"></p>
+      <p class="texte">Les fonctionnalités regroupées dans ce module permettent de paramétrer les connexions partenaires &#40;services tiers&#41;, de gérer les échanges de fichiers et le patrimoine numérique&nbsp;: imports de données, exports et génération de documents réglementaires &#40;abordé dans le <a href="../chapitre10" class="avoid-clicks" target="_self">chapitre 10 - Outils</a>&#41;.</p>
+      <h3 align="center" class="texte aerateur procedure">9 – Module de configuration</h3>
+      <p align="center"><img src="../images/chapitre4/wrench.svg" alt="Configuration" width="60"></p>
+      <p class="texte">Les fonctionnalités regroupées dans ce module permettent de compléter le paramétrage de l'application, de définir plusieurs options à destination des différents modules d'<strong>Eky</strong>agri, de créer de nouvelles variantes et des <a href="#acces" class="avoid-clicks" target="_self">accès</a> pour d'autres utilisateurs.</p>
+      <div class="info-fond aerateur-top">
+         <div class="floating-box-info">
+            <img src="../images/commun/info.svg" width="100" alt="Info"/>
+         </div>
+         <div class="info-txt">
+            <span class="titre-advice">Menu accordéon<br /></span>
+            <p class="texte-advice">La liste des fonctionnalités peut occuper une hauteur importante dans la barre latérale à gauche de la fenêtre principale. Réduisez ou développez l'affichage en cliquant sur le nom de la section.</p>
+            <br />
+            <p align="center" class="texte-advice"><img src="../images/chapitre4/accordeon.png" alt="Accordéon" class="contour-gris" width="500"></p>
+         </div>
+      </div>
+      <h6>Guide de prise en main • Interface et accès • Gestion du compte</h6>
+      <a class="slice-process" id="compte"></a>
+      <h2 class="texte aerateur">c - Gestion du compte administrateur</h2>
+	  <h3 align="center" class="texte aerateur procedure">1 - Préférences du compte</h3>
       <p class="texte aerateur-haut">
-         Le processus suivant vous guide pour sélectionner le thème principal de l'interface.
+         Le processus suivant vous guide pour modifier les préférences du compte de l'administrateur.
       </p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Accédez à "Mon compte"</span>
+         <span class="titre-advice">Accédez au compte</span>
          <p>
             Cliquez sur le lien "Configuration" dans le "Menu principal" ou cliquez sur le bouton "Configuration" de la page d'accueil&nbsp;:
          </p>
@@ -586,7 +636,7 @@
             Dans la barre latérale du module, cliquez sur "Mon compte" dans la section "Préférences" symbolisée par l'icône d'un personnage<img src="../images/commun/user.svg" alt="Utilisateur" height="20" class="align-icone icone-marge-gauche">&nbsp;.
          </p>
          <p class="max-img-process">
-            <img src="../images/chapitre4/moncompte1.png" class="contour-img" alt="Mon compte" data-action="zoom" />
+            <img src="../images/chapitre4/compte1.png" class="contour-img" alt="Détail du compte" data-action="zoom" />
          </p>
       </div>
       <br />
@@ -594,7 +644,16 @@
          <img src="../images/commun/step2.svg" alt="2" width="52" />
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Sélectionnez le thème</span>
+         <span class="titre-advice">En option&nbsp;: modifiez le profil</span>
+         <p>Dans la section "Profil", changez l'identité de l'administrateur en renseignant son prénom et son nom. Sélectionnez la langue principale de l'interface dans la liste déroulante &#40;français ou anglais&#41;.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre4/compte2.png" class="contour-img" alt="Modification du profil" data-action="zoom" />
+         </p>
+         <h6>Guide de prise en main • Interface et accès • Sélection d'un thème couleur</h6>
+         <a class="slice-intra" id="theme"></a>
+		 <p>&nbsp;</p>
+         <p><strong>Sélection d'un thème couleur</strong></p>
+         <p><strong>Eky</strong>agri vous permet également de choisir entre plusieurs thèmes pour le choix de la couleur principale de l'interface.</p>
          <p>Activez le bouton radio<img src="../images/commun/radio.svg" alt="Bouton radio" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche du thème de votre choix. Tekyla est basé sur une dominante de couleur bleue, Margarita sur une dominante de couleur verte et Tekyla-sunrise sur une dominante de couleur orange.</p>
          <p class="max-img-process">
             <img src="../images/chapitre4/moncompte2.png" class="contour-img" alt="Sélection du thème" data-action="zoom" />
@@ -614,7 +673,18 @@
             <img src="../images/chapitre4/theme-tekyla-sunrise.png" class="contour-img" alt="Modale Tekyla-sunrise" data-action="zoom" />
          </p>
       </div>
-      <p>&nbsp;</p>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">En option&nbsp;: changez le mot de passe</span>
+         <p>Si cela s'avère nécessaire, dans la section "Changer de mot de passe", choisissez un nouveau mot de passe d'accès à la ferme et saisissez-le à deux reprises pour le confirmer.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre4/compte3.png" class="contour-img" alt="Modification du mot de passe" data-action="zoom" />
+         </p>
+         <p>Cliquez sur <span class="btn-blue">Modifier</span> pour valider l'opération.</p>
+      </div>
       <div class="tabs marge aerateur-haut">
          <div class="tab">
             <input type="checkbox" id="chck1">
@@ -637,10 +707,10 @@
             </div>
          </div>
       </div>
-      <h6>Guide de prise en main • Imports • Sélection d'un fond d'écran</h6>
-	  <a class="slice-process" id="fond-ecran"></a>
-      <p class="aerateur-top aerateur-bas"><span class="titre-advice texte">Sélection d'un écran d'accueil personnalisé</span></p>
-	  <div id="cont2" class="niveau">
+      <h6>Guide de prise en main • Interface et accès • Sélection d'un fond d'écran</h6>
+      <a class="slice-process" id="fond-ecran"></a>
+	  <h3 align="center" class="texte aerateur procedure">2 - Sélection d'un écran d'accueil personnalisé</h3>
+      <div id="cont2" class="niveau">
          <div id="gauge2" class="jauge"></div>
       </div>
       <script>
@@ -667,15 +737,15 @@
           	  refreshAnimationType: "linear",
               hideMinMax: true,
           });
-      });
+         });
       </script>
       <p class="texte">La fonctionnalité d'import d'<strong>Eky</strong>agri permet à l'administrateur de la ferme de sélectionner une image ou un visuel de son choix afin de remplacer l'écran d'accueil défini par défaut dans l'application.</p>
-	  <p class="texte">Le visuel doit être disponible au format JPEG ou PNG, avec une définition optimale conseillée de 3000 x 1688 pixels &#40;dimensions données à titre indicatif&#41;.<br />Notez que le cadrage et/ou la mise à l'échelle de l'image est automatiquement réalisé par votre navigateur web.</p>
-	  <div class="process-txt">
+      <p class="texte">Le visuel doit être disponible au format JPEG ou PNG, avec une définition optimale conseillée de 3000 x 1688 pixels &#40;dimensions données à titre indicatif&#41;.<br />Notez que le cadrage et/ou la mise à l'échelle de l'image est automatiquement réalisé par votre navigateur web.</p>
+      <div class="process-txt">
          <p class="max-img-process">
             <img src="../images/chapitre4/ecran-accueil1.png" class="contour-img" alt="Écran d'accueil par défaut" data-action="zoom" />
          </p>
-		 <p class="texte legende" align="center">Écran d'accueil affiché par défaut pour se connecter à <strong>Eky</strong>agri</p>
+         <p class="texte legende" align="center">Écran d'accueil affiché par défaut pour se connecter à <strong>Eky</strong>agri</p>
       </div>
       <p class="texte aerateur-haut">Le processus suivant vous guide pour importer un nouveau fond d'écran.</p>
       <div class="floating-box process">
@@ -764,101 +834,10 @@
          <p class="max-img-process">
             <img src="../images/chapitre4/ecran-accueil9.png" class="contour-img" alt="Déconnexion" data-action="zoom" />
          </p>
-		 <p>Le nouvel écran d'accueil est maintenant affiché comme image de fond pour tous les utilisateurs qui souhaitent, via le formulaire d'identification, se connecter à votre ferme <strong>Eky</strong>agri&nbsp;:</p>
+         <p>Le nouvel écran d'accueil est maintenant affiché comme image de fond pour tous les utilisateurs qui souhaitent, via le formulaire d'identification, se connecter à votre ferme <strong>Eky</strong>agri&nbsp;:</p>
          <p class="max-img-process">
             <img src="../images/chapitre4/ecran-accueil10.png" class="contour-img" alt="Nouvel écran d'accueil" data-action="zoom" />
          </p>
-      </div>
-      <h6>Guide de prise en main • Interface et accès • Présentation des modules</h6>
-      <a class="slice-process" id="modules"></a>
-      <h2 class="texte aerateur">b - Navigation et accès aux différents modules</h2>
-      <p class="texte">
-         Les fonctionnalités de l'application sont toutes classées dans différents modules. En voici un aperçu rapide avec les différents tableaux de bord listés dans l'ordre de leur apparition dans le "Menu principal" et dans le "Panneau des modules".
-      </p>
-      <p class="texte">La liste des fonctionnalités associées à chaque module s'affiche dans la barre latérale &#40;à gauche&#41;.</p>
-      <h3 align="center" class="texte aerateur procedure">1 – Module de la gestion des tiers</h3>
-      <p align="center"><img src="../images/chapitre4/tiers.svg" alt="Tiers" width="60"></p>
-      <p class="texte">Les fonctionnalités regroupées dans ce module permettent de gérer les contacts et partenaires économiques &#40;clients/fournisseurs&#41; ainsi que des événements dans un planning &#40;abordé dans le <a href="../chapitre8" class="avoid-clicks" target="_self">chapitre 8 - Stocks, tiers et RH</a>&#41;.</p>
-      <h3 align="center" class="texte aerateur procedure">2 – Module de la comptabilité</h3>
-      <p align="center"><img src="../images/chapitre4/money.svg" alt="Comptabilité" width="60"></p>
-      <p class="texte">Les fonctionnalités regroupées dans ce module permettent de gérer les écritures et exercices comptables, les immobilisations, les emprunts, les déclarations de TVA et la trésorerie &#40;abordé dans le <a href="../chapitre5" class="avoid-clicks" target="_self">chapitre 5 - Comptabilité</a>&#41;.</p>
-      <h3 align="center" class="texte aerateur procedure">3 – Module des ventes</h3>
-      <p align="center"><img src="../images/chapitre4/ventes.svg" alt="Ventes" width="60"></p>
-      <p class="texte">Les fonctionnalités regroupées dans ce module permettent de gérer les ventes, la génération de factures, les encaissements et les remises en banque &#40;abordé dans le <a href="../chapitre7" class="avoid-clicks" target="_self">chapitre 7 - Ventes</a>&#41;.</p>
-      <h3 align="center" class="texte aerateur procedure">4 – Module des achats</h3>
-      <p align="center"><img src="../images/chapitre4/achats.svg" alt="Achats" width="60"></p>
-      <p class="texte">Les fonctionnalités regroupées dans ce module permettent de gérer les commandes, les factures, les avoirs et les décaissements &#40;abordé dans le <a href="../chapitre6" class="avoid-clicks" target="_self">chapitre 6 - Achats</a>&#41;.</p>
-      <h3 align="center" class="texte aerateur procedure">5 – Module de la gestion des stocks</h3>
-      <p align="center"><img src="../images/chapitre4/truck.svg" alt="Stocks" width="60"></p>
-      <p class="texte">Les fonctionnalités regroupées dans ce module permettent de gérer les stocks, les inventaires, les réceptions, les expéditions, les livraisons et les zones de stockage &#40;abordé dans le <a href="../chapitre8" class="avoid-clicks" target="_self">chapitre 8 - Stocks, tiers et RH</a>&#41;.</p>
-      <h3 align="center" class="texte aerateur procedure">6 – Module de la gestion de la production</h3>
-      <p align="center"><img src="../images/chapitre4/cogs.svg" alt="Production" width="60"></p>
-      <p class="texte">Les fonctionnalités regroupées dans ce module permettent de gérer les activités, l'assolement, la création des cultures, l'enregistrement des interventions, les traitements phytosanitaires, les IFT, les autorisations et obligations définies par la réglementation &#40;abordé dans le <a href="../chapitre9" class="avoid-clicks" target="_self">chapitre 9 - Production</a>&#41;.</p>
-      <h3 align="center" class="texte aerateur procedure">7 – Module des ressources humaines</h3>
-      <p align="center"><img src="../images/chapitre4/cog.svg" alt="Ressources humaines" width="60"></p>
-      <p class="texte">Les fonctionnalités regroupées dans ce module permettent de gérer les équipiers, l'enregistrement des dépenses salariales et le paiement des salaires &#40;abordé dans le <a href="../chapitre8" class="avoid-clicks" target="_self">chapitre 8 - Stocks, tiers et RH</a>&#41;.</p>
-      <h3 align="center" class="texte aerateur procedure">8 – Module des outils</h3>
-      <p align="center"><img src="../images/chapitre4/magic.svg" alt="Outils" width="60"></p>
-      <p class="texte">Les fonctionnalités regroupées dans ce module permettent de paramétrer les connexions partenaires &#40;services tiers&#41;, de gérer les échanges de fichiers et le patrimoine numérique&nbsp;: imports de données, exports et génération de documents réglementaires &#40;abordé dans le <a href="../chapitre10" class="avoid-clicks" target="_self">chapitre 10 - Outils</a>&#41;.</p>
-      <h3 align="center" class="texte aerateur procedure">9 – Module de configuration</h3>
-      <p align="center"><img src="../images/chapitre4/wrench.svg" alt="Configuration" width="60"></p>
-      <p class="texte">Les fonctionnalités regroupées dans ce module permettent de compléter le paramétrage de l'application, de définir plusieurs options à destination des différents modules d'<strong>Eky</strong>agri, de créer de nouvelles variantes et des <a href="#acces" class="avoid-clicks" target="_self">accès</a> pour d'autres utilisateurs.</p>
-      <div class="info-fond aerateur-top">
-         <div class="floating-box-info">
-            <img src="../images/commun/info.svg" width="100" alt="Info"/>
-         </div>
-         <div class="info-txt">
-            <span class="titre-advice">Menu accordéon<br /></span>
-            <p class="texte-advice">La liste des fonctionnalités peut occuper une hauteur importante dans la barre latérale à gauche de la fenêtre principale. Réduisez ou développez l'affichage en cliquant sur le nom de la section.</p>
-            <br />
-            <p align="center" class="texte-advice"><img src="../images/chapitre4/accordeon.png" alt="Accordéon" class="contour-gris" width="500"></p>
-         </div>
-      </div>
-      <h6>Guide de prise en main • Interface et accès • Préférences du compte</h6>
-      <a class="slice-process" id="compte"></a>
-      <h2 class="texte aerateur">c - Préférences du compte</h2>
-      <p class="texte aerateur-haut">
-         Le processus suivant vous guide pour modifier les préférences du compte utilisateur.
-      </p>
-      <div class="floating-box process">
-         <img src="../images/commun/step1.svg" alt="1" width="52" />
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Accédez au compte</span>
-         <p>
-            Cliquez sur le lien "Configuration" dans le "Menu principal" ou cliquez sur le bouton "Configuration" de la page d'accueil&nbsp;:
-         </p>
-         <p align="center"><img src="../images/chapitre4/wrench.svg" alt="Configuration" width="60"></p>
-         <p>
-            Dans la barre latérale du module, cliquez sur "Mon compte" dans la section "Préférences" symbolisée par l'icône d'un personnage<img src="../images/commun/user.svg" alt="Utilisateur" height="20" class="align-icone icone-marge-gauche">&nbsp;.
-         </p>
-         <p class="max-img-process">
-            <img src="../images/chapitre4/compte1.png" class="contour-img" alt="Détail du compte" data-action="zoom" />
-         </p>
-      </div>
-      <br />
-      <div class="floating-box process">
-         <img src="../images/commun/step2.svg" alt="2" width="52" />
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Modifiez le profil</span>
-         <p>En option, dans la section "Profil", il est possible de changer l'identité de l'utilisateur, la langue de l'application &#40;français ou anglais&#41; et la couleur principale de l'interface.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre4/compte2.png" class="contour-img" alt="Modification du profil" data-action="zoom" />
-         </p>
-         <p>Cliquez sur <span class="btn-blue">Modifier</span> pour valider l'opération.</p>
-      </div>
-      <br />
-      <div class="floating-box process">
-         <img src="../images/commun/step3.svg" alt="3" width="52" />
-      </div>
-      <div class="process-txt">
-         <span class="titre-advice">Modifiez le mot de passe</span>
-         <p>Si cela s'avère nécessaire, dans la section "Changer de mot de passe", choisissez un nouveau mot de passe d'accès à la ferme et saisissez-le à deux reprises pour le confirmer.</p>
-         <p class="max-img-process">
-            <img src="../images/chapitre4/compte3.png" class="contour-img" alt="Modification du mot de passe" data-action="zoom" />
-         </p>
-         <p>Cliquez sur <span class="btn-blue">Modifier</span> pour valider l'opération.</p>
       </div>
       <h6>Guide de prise en main • Interface et accès • Tableaux de bord</h6>
       <a class="slice-process" id="perso"></a>
@@ -981,7 +960,7 @@
          <p class="max-img-process">
             <img src="../images/chapitre4/etiquettes1.png" class="contour-img" alt="Liste des étiquettes" data-action="zoom" />
          </p>
-		 <p>Toutes les étiquettes déjà créées sont listées ici.</p>
+         <p>Toutes les étiquettes déjà créées sont listées ici.</p>
       </div>
       <br />
       <div class="floating-box process">
@@ -989,12 +968,12 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Créez une nouvelle étiquette</span>
-		 <p>Cliquez sur le bouton<img class="btn-gris icone-marge-gauche icone-marge-droite" src="../images/commun/nouveau.svg" alt="+ Nouveau">en haut à gauche de la fenêtre principale.</p>
+         <p>Cliquez sur le bouton<img class="btn-gris icone-marge-gauche icone-marge-droite" src="../images/commun/nouveau.svg" alt="+ Nouveau">en haut à gauche de la fenêtre principale.</p>
          <p>Nommez la nouvelle étiquette et cliquez ensuite sur la pastille noire à droite de "Couleur".</p>
          <p class="max-img-process">
             <img src="../images/chapitre4/etiquettes2.png" class="contour-img" alt="Création d'une nouvelle étiquette" data-action="zoom" />
          </p>
-	     <p>Associez-lui une teinte à l'aide du "Sélecteur de couleurs" &#40;l'aspect de celui-ci peut sensiblement différer de la capture d'écran ci-dessous en fonction du système d'exploitation de votre ordinateur&#41;.</p>
+         <p>Associez-lui une teinte à l'aide du "Sélecteur de couleurs" &#40;l'aspect de celui-ci peut sensiblement différer de la capture d'écran ci-dessous en fonction du système d'exploitation de votre ordinateur&#41;.</p>
          <p class="max-img-process">
             <img src="../images/chapitre4/etiquettes3.png" class="contour-img" alt="Création d'une nouvelle étiquette" data-action="zoom" />
          </p>
@@ -1018,7 +997,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Utilisez l'étiquette</span>
-		 <p>
+         <p>
             Cliquez sur le lien "Ajouter une étiquette" lors de l'enregistrement d'une intervention.
          </p>
          <p class="max-img-process">
@@ -1036,7 +1015,7 @@
          <p class="max-img-process">
             <img src="../images/chapitre4/etiquettes7.png" class="contour-img" alt="Étiquette affichée dans la fiche d'une intervention" data-action="zoom" />
          </p>
-		 <p>Notez qu'il est possible, le cas échéant, de choisir plusieurs étiquettes dans une même intervention.</p>
+         <p>Notez qu'il est possible, le cas échéant, de choisir plusieurs étiquettes dans une même intervention.</p>
       </div>
       <h6>Guide de prise en main • Interface et accès • Champs personnalisés</h6>
       <a class="slice-process" id="champs"></a>
@@ -1683,7 +1662,7 @@
             <br /><img src="../images/chapitre4/verrouillage.png" alt="Liste des utilisateurs">
          </div>
       </div>
-	  <div class="saut-page"></div>
+      <div class="saut-page"></div>
       <div class="idea-fond aerateur-haut aerateur-bas">
          <div class="floating-box-idea">
             <img src="../images/commun/astuce.svg" width="100" alt="Astuce"/>
@@ -2330,7 +2309,7 @@
       </div>
       <h6>Guide de prise en main • Interface et accès • Accès comptables</h6>
       <a class="slice-process" id="acces-comptables"></a>
-      <h2 class="texte aerateur">i. 5 - Accès comptables</h2>
+      <h2 class="texte aerateur">h. 5 - Accès comptables</h2>
       <p class="texte">Si vous envisagez de permettre à votre comptable ou à votre centre de gestion d'accéder à l'ensemble de vos paramètres et données comptables, voici un exemple de configuration que vous pouvez définir dans l'application.</p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
@@ -2551,6 +2530,731 @@
             </div>
          </div>
       </div>
+	  <h6>Guide de prise en main • Interface et accès • Duke</h6>
+      <a class="slice-process" id="duke"></a>
+      <h2 class="texte aerateur">i - Duke, l'assistant vocal intelligent</h2>
+      <h6>Guide de prise en main • Interface et accès • Fonctionnement Duke</h6>
+	  <h3 class="texte aerateur-haut procedure" align="center">1 - Principes de fonctionnement</h3>
+	  <p class="texte">Duke est un assistant vocal intelligent qui fonctionne par reconnaissance d'intentions et d'entités. Il élimine, lorsque que l'opération est possible, l'usage de la souris et/ou du clavier pour naviguer dans l'interface de l'application. Il permet ainsi de réduire de manière significative le temps nécessaire pour réaliser l'enregistrement des interventions, pour rechercher et afficher certaines données et pour exporter des documents.</p>
+	  <p class="texte">Lorsque vous utilisez Duke, le flux audio de votre micro est traité par un moteur &#171;&nbsp;Speech to Text&nbsp;&#187;. Le rôle de cet outil est d'analyser et de transcrire les commandes audio en texte grâce à un algorithme de reconnaissance vocale. La réponse obtenue est automatiquement affichée et la requête traitée dès qu'elle est validée. Le dialogue interactif entre vous et <strong>Eky</strong>agri ou <strong>Eky</strong>viti est alors établi et fonctionnel.</p>
+	  <p class="texte aerateur-haut aerateur-bas" align="center"><img src="../images/chapitre4/schema-duke.png" width="480" alt="Schéma fonctionnement"/></p>
+	  <p class="texte">Notez que, selon votre préférence d'utilisation et les performances attendues, Duke autorise également la saisie des commandes au clavier.</p>
+      <h6>Guide de prise en main • Interface et accès • Commandes Duke</h6>
+      <a class="slice-process" id="commandes"></a>
+      <h3 class="texte aerateur-haut procedure" align="center">2 - Paramètres et commandes pour dialoguer</h3>
+	  <p class="texte">Légende des icônes utilisées dans les listes suivantes&nbsp;:</p>
+	  <div class="divTableListe marge">
+         <div class="divTableBody">
+            <div class="divTableRow">
+               <div class="divTableCellInter" style="height:18px">
+                  <img src="../images/chapitre4/cmd-ekyagri.svg" alt="Ekyagri" class="icone-marge-droite" height="18" />
+               </div>
+               <div class="divTableCellInter" style="width: auto">
+                  &nbsp;indique une commande vocale ou saisie en texte disponible dans l'offre <strong>Eky</strong>agri Gestion.
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellInter" style="height:18px">
+                  <img src="../images/chapitre4/cmd-ekyviti.svg" alt="Ekyviti" class="icone-marge-droite" height="18" />
+               </div>
+               <div class="divTableCellInter">
+                  &nbsp;indique une commande vocale ou saisie en texte disponible dans l'offre <strong>Eky</strong>viti Gestion.
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="cmd-header marge aerateur-haut">
+         <div class="divTableListe">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellDuke" style="width: 40px">
+                     <img src="../images/chapitre4/cogs.svg" alt="Interventions" width="40">
+                  </div>
+                  <div class="divTableCellInter" style="width: auto">
+                     <span class="titre-cmd">Interventions</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="cmd-sub">
+            <em>Paramètre obligatoire&nbsp;:</em>
+            <div class="divTableListe">
+               <div class="divTableBody">
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1" style="width: 25px">
+                        <img src="../images/chapitre4/cogs.svg" alt="Type d'intervention" height="20">
+                     </div>
+                     <div class="divTableCellCmd2" style="width: auto">
+                        Type d'intervention
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <br />
+            <em>Paramètres optionnels&nbsp;:</em>
+            <div class="divTableListe">
+               <div class="divTableBody">
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1" style="width: 25px">
+                        <img src="../images/chapitre4/male.svg" alt="Opérateur" height="20">
+                     </div>
+                     <div class="divTableCellCmd2" style="width: auto">
+                        Opérateur&#40;s&#41;
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                        <img src="../images/chapitre4/tractor.svg" alt="Équipement" height="20">
+                     </div>
+                     <div class="divTableCellCmd2">
+                        Équipement&#40;s&#41;
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                        <img src="../images/chapitre4/clock-o.svg" alt="Date et heure" height="20">
+                     </div>
+                     <div class="divTableCellCmd2">
+                        Date et heure
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                        <img src="../images/chapitre4/time-interval.svg" alt="Durée de travail" height="20">
+                     </div>
+                     <div class="divTableCellCmd2">
+                        Durée de travail
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                        <img src="../images/chapitre4/matter.svg" alt="Intrant" height="20">
+                     </div>
+                     <div class="divTableCellCmd2">
+                        Intrant&#40;s&#41; avec dose&#40;s&#41;
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                        <img src="../images/chapitre4/land-parcels.svg" alt="Parcelle" height="20">
+                     </div>
+                     <div class="divTableCellCmd2">
+                        Cible &#40;parcelle, groupement de parcelles&#41;
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd3" style="width: auto">
+                        <em>Exemples&nbsp;:</em>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd4" style="width: auto">
+                        <img src="../images/chapitre4/cmd-ekyagri.svg" alt="Commande" height="18" class="icone-marge-droite"><img src="../images/chapitre4/cmd-ekyviti.svg" alt="Commande" height="18" class="icone-marge-droite">"Pierre a pulvérisé 12 kg de Kumulus sur le Grandchamp avec le tracteur Renault 110"<br />
+                        <img src="../images/chapitre4/cmd-ekyagri.svg" alt="Commande" height="18" class="icone-marge-droite"><img src="../images/chapitre4/cmd-ekyviti.svg" alt="Commande" height="18" class="icone-marge-droite">"Labour pendant 3&nbsp;h sur Grandchamp par Paul et Frédéric"<br />
+                        <img src="../images/chapitre4/cmd-ekyagri.svg" alt="Commande" height="18" class="icone-marge-droite"><img src="../images/chapitre4/cmd-ekyviti.svg" alt="Commande" height="18" class="icone-marge-droite">"Enregistre une intervention" &#40;puis dialogue pour ajouter des informations&#41;<br />
+                        <img src="../images/chapitre4/cmd-ekyagri.svg" alt="Commande" height="18" class="icone-marge-droite"><img src="../images/chapitre4/cmd-ekyviti.svg" alt="Commande" height="18" class="icone-marge-droite">"Récolte"
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+	  <div class="tabs marge aerateur-haut">
+         <div class="tab">
+            <input type="checkbox" id="chck2">
+            <label class="tab-label" for="chck2">Note aux utilisateurs d'Ekyviti</label>
+            <div class="tab-content">
+               L'enregistrement des réceptions de vendange, avec les commandes propres à ce type d'intervention, est plus particulièrement expliqué dans le chapitre consacré à <strong>Eky</strong>viti &#40;en cours de rédaction&#41;.
+            </div>
+         </div>
+      </div>
+      <div class="cmd-header marge aerateur-haut">
+         <div class="divTableListe">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellDuke" style="width: 40px">
+                     <img src="../images/chapitre4/directions.svg" alt="Redirections" width="40">
+                  </div>
+                  <div class="divTableCellInter" style="width: auto">
+                     <span class="titre-cmd">Redirections</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="cmd-sub">
+            <div class="divTableListe">
+               <div class="divTableBody">
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1" style="width: 25px">
+                        <img src="../images/chapitre4/land-parcels.svg" alt="Parcelle" height="20">
+                     </div>
+                     <div class="divTableCellCmd2" style="width: auto">
+                        <strong>Vers parcellaire</strong>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd3" style="width: auto">
+                        <em>Exemples&nbsp;:</em>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd4" style="width: auto">
+                        <img src="../images/chapitre4/cmd-ekyagri.svg" alt="Commande" height="18" class="icone-marge-droite"><img src="../images/chapitre4/cmd-ekyviti.svg" alt="Commande" height="18" class="icone-marge-droite">"Montre-moi le parcellaire"<br />
+                        <img src="../images/chapitre4/cmd-ekyagri.svg" alt="Commande" height="18" class="icone-marge-droite"><img src="../images/chapitre4/cmd-ekyviti.svg" alt="Commande" height="18" class="icone-marge-droite">"Affiche-moi mes parcelles"
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1" style="width: 25px">
+                        <img src="../images/chapitre4/cogs.svg" alt="Production" height="20">
+                     </div>
+                     <div class="divTableCellCmd2" style="width: auto">
+                        <strong>Vers production</strong>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd3" style="width: auto">
+                        <em>Paramètre optionnel&nbsp;:</em>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd4" style="width: auto">
+                        • Année de production
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd3" style="width: auto">
+                        <em>Exemples&nbsp;:</em>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd4" style="width: auto">
+                        <img src="../images/chapitre4/cmd-ekyagri.svg" alt="Commande" height="18" class="icone-marge-droite"><img src="../images/chapitre4/cmd-ekyviti.svg" alt="Commande" height="18" class="icone-marge-droite">"Affiche-moi mes productions"<br />
+                        <img src="../images/chapitre4/cmd-ekyagri.svg" alt="Commande" height="18" class="icone-marge-droite"><img src="../images/chapitre4/cmd-ekyviti.svg" alt="Commande" height="18" class="icone-marge-droite">"Affiche mon assolement de 2018"
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1" style="width: 25px">
+                        <img src="../images/chapitre4/cogs.svg" alt="Activités" height="20">
+                     </div>
+                     <div class="divTableCellCmd2" style="width: auto">
+                        <strong>Vers activités</strong>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd3" style="width: auto">
+                        <em>Exemples&nbsp;:</em>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd4" style="width: auto">
+                        <img src="../images/chapitre4/cmd-ekyagri.svg" alt="Commande" height="18" class="icone-marge-droite"><img src="../images/chapitre4/cmd-ekyviti.svg" alt="Commande" height="18" class="icone-marge-droite">"Affiche-moi l'activité de tournesol"<br />
+                        <img src="../images/chapitre4/cmd-ekyagri.svg" alt="Commande" height="18" class="icone-marge-droite"><img src="../images/chapitre4/cmd-ekyviti.svg" alt="Commande" height="18" class="icone-marge-droite">"Montre-moi mon activité de blé tendre"
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1" style="width: 25px">
+                        <img src="../images/chapitre4/shopping-cart.svg" alt="Achats" height="20">
+                     </div>
+                     <div class="divTableCellCmd2" style="width: auto">
+                        <strong>Vers factures d'achat</strong>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd3" style="width: auto">
+                        <em>Paramètres optionnels&nbsp;:</em>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd4" style="width: auto">
+                        • Fournisseur<br />
+                        • Impayés uniquement
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd3" style="width: auto">
+                        <em>Exemples&nbsp;:</em>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd4" style="width: auto">
+                        <img src="../images/chapitre4/cmd-ekyagri.svg" alt="Commande" height="18" class="icone-marge-droite"><img src="../images/chapitre4/cmd-ekyviti.svg" alt="Commande" height="18" class="icone-marge-droite">"Montre-moi mes factures"<br />
+                        <img src="../images/chapitre4/cmd-ekyagri.svg" alt="Commande" height="18" class="icone-marge-droite"><img src="../images/chapitre4/cmd-ekyviti.svg" alt="Commande" height="18" class="icone-marge-droite">"Montre-moi les factures d'achats auprès de Coop"<br />
+                        <img src="../images/chapitre4/cmd-ekyagri.svg" alt="Commande" height="18" class="icone-marge-droite"><img src="../images/chapitre4/cmd-ekyviti.svg" alt="Commande" height="18" class="icone-marge-droite">"Affiche les impayés de Coop"
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1" style="width: 25px">
+                        <img src="../images/chapitre4/bar-chart.svg" alt="Ventes" height="20">
+                     </div>
+                     <div class="divTableCellCmd2" style="width: auto">
+                        <strong>Vers ventes</strong>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd3" style="width: auto">
+                        <em>Paramètres optionnels&nbsp;:</em>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd4" style="width: auto">
+                        • Impayés uniquement
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd3" style="width: auto">
+                        <em>Exemples&nbsp;:</em>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd4" style="width: auto">
+                        <img src="../images/chapitre4/cmd-ekyagri.svg" alt="Commande" height="18" class="icone-marge-droite"><img src="../images/chapitre4/cmd-ekyviti.svg" alt="Commande" height="18" class="icone-marge-droite">"Affiche-moi les ventes"<br />
+                        <img src="../images/chapitre4/cmd-ekyagri.svg" alt="Commande" height="18" class="icone-marge-droite"><img src="../images/chapitre4/cmd-ekyviti.svg" alt="Commande" height="18" class="icone-marge-droite">"Montre-moi mes ventes impayées"
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1" style="width: 25px">
+                        <img src="../images/chapitre4/tractor.svg" alt="Équipements" height="20">
+                     </div>
+                     <div class="divTableCellCmd2" style="width: auto">
+                        <strong>Vers équipements</strong>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd3" style="width: auto">
+                        <em>Exemples&nbsp;:</em>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd4" style="width: auto">
+                        <img src="../images/chapitre4/cmd-ekyagri.svg" alt="Commande" height="18" class="icone-marge-droite"><img src="../images/chapitre4/cmd-ekyviti.svg" alt="Commande" height="18" class="icone-marge-droite">"Amène-moi au tracteur Case IH 533"<br />
+                        <img src="../images/chapitre4/cmd-ekyagri.svg" alt="Commande" height="18" class="icone-marge-droite"><img src="../images/chapitre4/cmd-ekyviti.svg" alt="Commande" height="18" class="icone-marge-droite">"Affiche-moi la remorque monocoque"
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="cmd-header marge aerateur-haut">
+         <div class="divTableListe">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellDuke" style="width: 40px">
+                     <img src="../images/chapitre4/exchange.svg" alt="Export" width="40">
+                  </div>
+                  <div class="divTableCellInter" style="width: auto">
+                     <span class="titre-cmd">Exécutions d'exports</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="cmd-sub">
+            <div class="divTableListe">
+               <div class="divTableBody">
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1" style="width: 25px">
+                        <img src="../images/chapitre4/tractor.svg" alt="Équipement" height="20">
+                     </div>
+                     <div class="divTableCellCmd2" style="width: auto">
+                        <strong>Fiche de coûts d'un matériel</strong>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd3" style="width: auto">
+                        <em>Paramètre obligatoire&nbsp;:</em>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd4" style="width: auto">
+                        • Équipement
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd3" style="width: auto">
+                        <em>Exemples&nbsp;:</em>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd4" style="width: auto">
+                        <img src="../images/chapitre4/cmd-ekyagri.svg" alt="Commande" height="18" class="icone-marge-droite"><img src="../images/chapitre4/cmd-ekyviti.svg" alt="Commande" height="18" class="icone-marge-droite">"Exporte la fiche de coûts du tracteur 533"<br />
+                        <img src="../images/chapitre4/cmd-ekyagri.svg" alt="Commande" height="18" class="icone-marge-droite"><img src="../images/chapitre4/cmd-ekyviti.svg" alt="Commande" height="18" class="icone-marge-droite">"Imprime la fiche de coûts de la remorque monocoque"
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1" style="width: 25px">
+                        <img src="../images/chapitre4/cogs.svg" alt="Activité" height="20">
+                     </div>
+                     <div class="divTableCellCmd2" style="width: auto">
+                        <strong>Cahier de traçabilité d'une activité</strong>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd3" style="width: auto">
+                        <em>Paramètre obligatoire&nbsp;:</em>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd4" style="width: auto">
+                        • Type d'activité
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd3" style="width: auto">
+                        <em>Exemples&nbsp;:</em>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd4" style="width: auto">
+                        <img src="../images/chapitre4/cmd-ekyagri.svg" alt="Commande" height="18" class="icone-marge-droite"><img src="../images/chapitre4/cmd-ekyviti.svg" alt="Commande" height="18" class="icone-marge-droite">"Exporte le cahier de traçabilité du tournesol"<br />
+                        <img src="../images/chapitre4/cmd-ekyagri.svg" alt="Commande" height="18" class="icone-marge-droite"><img src="../images/chapitre4/cmd-ekyviti.svg" alt="Commande" height="18" class="icone-marge-droite">"Sors-moi le cahier de traçabilité du blé tendre"
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="cmd-header marge aerateur-haut">
+         <div class="divTableListe">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellDuke" style="width: 40px">
+                     <img src="../images/chapitre4/bug.svg" alt="Incident" height="40">
+                  </div>
+                  <div class="divTableCellInter" style="width: auto">
+                     <span class="titre-cmd">Déclarations d'incidents</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="cmd-sub">
+            <div class="divTableListe">
+               <div class="divTableBody">
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1" style="width: 25px">
+                        <img src="../images/chapitre4/tractor.svg" alt="Équipement" height="20">
+                     </div>
+                     <div class="divTableCellCmd2" style="width: auto">
+                        <strong>Matériel</strong>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd3" style="width: auto">
+                        <em>Paramètre obligatoire&nbsp;:</em>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd4" style="width: auto">
+                        • Équipement
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd3" style="width: auto">
+                        <em>Paramètres optionnels&nbsp;:</em>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd4" style="width: auto">
+                        • Zone cultivable sur laquelle le problème a eu lieu<br />
+                        • Type d'incident &#40;panne sèche, accident matériel…&#41;
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd3" style="width: auto">
+                        <em>Exemples&nbsp;:</em>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd4" style="width: auto">
+                        <img src="../images/chapitre4/cmd-ekyagri.svg" alt="Commande" height="18" class="icone-marge-droite"><img src="../images/chapitre4/cmd-ekyviti.svg" alt="Commande" height="18" class="icone-marge-droite">"Enregistre un accident avec le tracteur 533 près de Grandchamp"<br />
+                        <img src="../images/chapitre4/cmd-ekyagri.svg" alt="Commande" height="18" class="icone-marge-droite"><img src="../images/chapitre4/cmd-ekyviti.svg" alt="Commande" height="18" class="icone-marge-droite">"Panne sèche sur le Renault 656 ce matin"
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="cmd-header marge aerateur-haut">
+         <div class="divTableListe">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellDuke" style="width: 40px">
+                     <img src="../images/chapitre4/money.svg" alt="Montant" width="40">
+                  </div>
+                  <div class="divTableCellInter" style="width: auto">
+                     <span class="titre-cmd">Obtentions d'un montant ou d'un comptage</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="cmd-sub">
+            <div class="divTableListe">
+               <div class="divTableBody">
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1" style="width: 25px">
+                        <img src="../images/chapitre4/shopping-cart.svg" alt="Achats" height="20">
+                     </div>
+                     <div class="divTableCellCmd2" style="width: auto">
+                        <strong>Achats impayés</strong>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd3" style="width: auto">
+                        <em>Exemples&nbsp;:</em>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd4" style="width: auto">
+                        <img src="../images/chapitre4/cmd-ekyagri.svg" alt="Commande" height="18" class="icone-marge-droite"><img src="../images/chapitre4/cmd-ekyviti.svg" alt="Commande" height="18" class="icone-marge-droite">"Combien j'ai d'achats impayés&nbsp;?"<br />
+                        <img src="../images/chapitre4/cmd-ekyagri.svg" alt="Commande" height="18" class="icone-marge-droite"><img src="../images/chapitre4/cmd-ekyviti.svg" alt="Commande" height="18" class="icone-marge-droite">"J'ai combien d'achats impayés&nbsp;?"
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1" style="width: 25px">
+                        <img src="../images/chapitre4/shopping-cart.svg" alt="Achats" height="20">
+                     </div>
+                     <div class="divTableCellCmd2" style="width: auto">
+                        <strong>Assurances réglées</strong>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd3" style="width: auto">
+                        <em>Paramètre optionnel&nbsp;:</em>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd4" style="width: auto">
+                        • Date
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd3" style="width: auto">
+                        <em>Exemples&nbsp;:</em>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd4" style="width: auto">
+                        <img src="../images/chapitre4/cmd-ekyagri.svg" alt="Commande" height="18" class="icone-marge-droite"><img src="../images/chapitre4/cmd-ekyviti.svg" alt="Commande" height="18" class="icone-marge-droite">"J'ai réglé combien en assurance depuis le 17 octobre&nbsp;?"<br />
+                        <img src="../images/chapitre4/cmd-ekyagri.svg" alt="Commande" height="18" class="icone-marge-droite"><img src="../images/chapitre4/cmd-ekyviti.svg" alt="Commande" height="18" class="icone-marge-droite">"J'ai payé combien d'assurance l'année dernière&nbsp;?"
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1" style="width: 25px">
+                        <img src="../images/chapitre4/tractor.svg" alt="Équipement" height="20">
+                     </div>
+                     <div class="divTableCellCmd2" style="width: auto">
+                        <strong>Âge moyen du parc d'équipement</strong>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd3" style="width: auto">
+                        <em>Exemples&nbsp;:</em>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd4" style="width: auto">
+                        <img src="../images/chapitre4/cmd-ekyagri.svg" alt="Commande" height="18" class="icone-marge-droite"><img src="../images/chapitre4/cmd-ekyviti.svg" alt="Commande" height="18" class="icone-marge-droite">"Quel âge ont mes équipements en moyenne&nbsp;?"<br />
+                        <img src="../images/chapitre4/cmd-ekyagri.svg" alt="Commande" height="18" class="icone-marge-droite"><img src="../images/chapitre4/cmd-ekyviti.svg" alt="Commande" height="18" class="icone-marge-droite">"Quel est l'âge moyen de mon parc d'équipements&nbsp;?"
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1" style="width: 25px">
+                        <img src="../images/chapitre4/tractor.svg" alt="Équipement" height="20">
+                     </div>
+                     <div class="divTableCellCmd2" style="width: auto">
+                        <strong>Nombre d'équipements actifs</strong>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd3" style="width: auto">
+                        <em>Exemples&nbsp;:</em>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd4" style="width: auto">
+                        <img src="../images/chapitre4/cmd-ekyagri.svg" alt="Commande" height="18" class="icone-marge-droite"><img src="../images/chapitre4/cmd-ekyviti.svg" alt="Commande" height="18" class="icone-marge-droite">"J'ai combien d'équipements actifs sur la ferme&nbsp;?"<br />
+                        <img src="../images/chapitre4/cmd-ekyagri.svg" alt="Commande" height="18" class="icone-marge-droite"><img src="../images/chapitre4/cmd-ekyviti.svg" alt="Commande" height="18" class="icone-marge-droite">"Combien il y a d'équipements&nbsp;?"
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1" style="width: 25px">
+                        <img src="../images/chapitre4/tractor.svg" alt="Équipement" height="20">
+                     </div>
+                     <div class="divTableCellCmd2" style="width: auto">
+                        <strong>Nombre d'équipements à l'arrêt</strong>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd3" style="width: auto">
+                        <em>Exemples&nbsp;:</em>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd4" style="width: auto">
+                        <img src="../images/chapitre4/cmd-ekyagri.svg" alt="Commande" height="18" class="icone-marge-droite"><img src="../images/chapitre4/cmd-ekyviti.svg" alt="Commande" height="18" class="icone-marge-droite">"Combien j'ai d'équipements arrêtés&nbsp;?"<br />
+                        <img src="../images/chapitre4/cmd-ekyagri.svg" alt="Commande" height="18" class="icone-marge-droite"><img src="../images/chapitre4/cmd-ekyviti.svg" alt="Commande" height="18" class="icone-marge-droite">"Combien il y a d'équipements à l'arrêt&nbsp;?"
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1" style="width: 25px">
+                        <img src="../images/chapitre4/tractor.svg" alt="Équipement" height="20">
+                     </div>
+                     <div class="divTableCellCmd2" style="width: auto">
+                        <strong>Nombre d'équipements avec un incident répertorié</strong>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd3" style="width: auto">
+                        <em>Exemple&nbsp;:</em>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd4" style="width: auto">
+                        <img src="../images/chapitre4/cmd-ekyagri.svg" alt="Commande" height="18" class="icone-marge-droite"><img src="../images/chapitre4/cmd-ekyviti.svg" alt="Commande" height="18" class="icone-marge-droite">"J'ai combien d'équipements qui ont un problème&nbsp;?"
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="cmd-header marge aerateur-haut">
+         <div class="divTableListe">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellDuke" style="width: 40px">
+                     <img src="../images/chapitre4/duke.svg" alt="Micro" height="40">
+                  </div>
+                  <div class="divTableCellInter" style="width: auto">
+                     <span class="titre-cmd">Questions à Duke</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="cmd-sub">
+            <div class="divTableListe">
+               <div class="divTableBody">
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1" style="width: 25px">
+                        <img src="../images/chapitre4/life-ring.svg" alt="Aide" height="20">
+                     </div>
+                     <div class="divTableCellCmd2" style="width: auto">
+                        <strong>Support et conseil</strong>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd3" style="width: auto">
+                        <em>Exemples&nbsp;:</em>
+                     </div>
+                  </div>
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd4" style="width: auto">
+                        <img src="../images/chapitre4/cmd-ekyagri.svg" alt="Commande" height="18" class="icone-marge-droite"><img src="../images/chapitre4/cmd-ekyviti.svg" alt="Commande" height="18" class="icone-marge-droite">"J'ai besoin d'aide"<br />
+                        <img src="../images/chapitre4/cmd-ekyagri.svg" alt="Commande" height="18" class="icone-marge-droite"><img src="../images/chapitre4/cmd-ekyviti.svg" alt="Commande" height="18" class="icone-marge-droite">"Aide-moi"<br />
+                        <img src="../images/chapitre4/cmd-ekyagri.svg" alt="Commande" height="18" class="icone-marge-droite"><img src="../images/chapitre4/cmd-ekyviti.svg" alt="Commande" height="18" class="icone-marge-droite">"Qu'est-ce que tu sais faire&nbsp;?"
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
       <div class="pdf">
          <p align="right" class="texte aerateur-top aerateur-bas">Passez au <a class="avoid-clicks" href="../chapitre5">chapitre suivant</a> de ce guide.</p>
       </div>
@@ -2569,7 +3273,7 @@
          </div>
       </div>
       <div class="footer"><img src="../images/commun/frise.png" alt="Frise" /></div>
-	  <div class="navigation">
+      <div class="navigation">
          <div id="breadcrumb">
             <ul class="breadcrumb">
                <li>
