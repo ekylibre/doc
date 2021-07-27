@@ -1997,6 +1997,32 @@ a:visited {
 	max-width: 548px;
 }
 
+.url-verte {
+	text-align: center;
+	color: #1d5d10;
+	border: 1px solid #1d5d10;
+	padding: 16px;
+	font-weight: bold;
+	font-size: 16px;
+	margin: 10px auto;
+	border-radius: 4px;
+	background-color: #bcf2b1;
+	max-width: 548px;
+}
+
+.url-bordeaux {
+	text-align: center;
+	color: #781628;
+	border: 1px solid #781628;
+	padding: 16px;
+	font-weight: bold;
+	font-size: 16px;
+	margin: 10px auto;
+	border-radius: 4px;
+	background-color: #f3e2e7;
+	max-width: 548px;
+}
+
 .bleu-ekylibre {
 	color: #476ba8;
 }
