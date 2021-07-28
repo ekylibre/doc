@@ -4059,7 +4059,56 @@ input:checked ~ .tab-content-step {
 	}
 }
 
-/* Application mobile Zero */
+/* Création mot de passe (2 colonnes) */
+
+.process-pw-left {
+	margin-right: 13px;
+	margin-left: 13px;
+	margin-top: -70px;
+}
+.process-pw-right {
+	margin-right: 13px;
+	margin-left: 13px;
+	margin-top: -70px;
+}
+
+@media only screen and (min-width: 386px) {
+	.process-pw-left {
+		margin: 0 auto;
+		width: 360px;
+		margin-top: -70px;
+	}
+	
+	.process-pw-right {
+		margin: 0 auto;
+		width: 360px;
+		margin-top: -70px;
+	}
+}
+
+@media only screen and (min-width: 481px) {
+	.process-pw-left {
+		margin: 25px 0 0 105px;
+		width: auto;
+	}
+	
+	.process-pw-right {
+		margin: 25px 30px 0 10px;
+		width: auto;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.process-pw-left {
+		margin: 25px 0 0 125px;
+	}
+	
+	.process-pw-right {
+		margin: 25px 50px 0 10px;
+	}
+}
+
+/* Application mobile Zero (2 colonnes) */
 
 .colonne-right {
 	width: 100%;
