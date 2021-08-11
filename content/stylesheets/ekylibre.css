@@ -4355,14 +4355,19 @@ display: block;
 /* Dialogues Duke */
 .triangle-border {
     position: relative;
-    padding: 15px;
+    padding: 12px 12px 14px 50px;
     /*margin: 1em 0 3em;*/
     margin: 0;
     border: 3px solid #5a8f00;
     color: #333;
     background: #fff;
     border-radius: 10px;
+    background-image: url("../fr/images/ekyviti/micro.svg");
+    background-repeat: no-repeat;
+    background-position: top 12px left 12px;
+    background-size: 30px;
 }
+
 /*
 .triangle-border::before {
     content: "";
@@ -4410,6 +4415,13 @@ display: block;
     border-color: #fff transparent;
     display: block;
     width: 0;
+}
+
+.dialog {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
 }
 
 .duke-left {
