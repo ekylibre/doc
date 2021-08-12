@@ -4343,7 +4343,7 @@ input:checked ~ .tab-content-step {
 
 /* Masquage Zendesk sur impression */
 iframe {
-display: block;
+	display: block;
 }
 
 @media print {
