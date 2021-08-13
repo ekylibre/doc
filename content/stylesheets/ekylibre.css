@@ -4072,6 +4072,19 @@ input:checked ~ .tab-content-step {
 	margin-top: -70px;
 }
 
+@media print  {
+    .process-pw-left {
+	margin-right: 0px;
+	margin-left: 125px;
+	margin-top: 25px;
+	}
+	.process-pw-right {
+	margin-right: 50px;
+	margin-left: 10px;
+	margin-top: 25px;
+	}
+}
+
 @media only screen and (min-width: 386px) {
 	.process-pw-left {
 		margin: 0 auto;
