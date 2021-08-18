@@ -1414,13 +1414,13 @@
       <h6>Guide de prise en main • Ekyviti • Réception de vendange</h6>
       <a class="slice-process" id="vendange"></a>
       <h2 class="texte aerateur">e - Réception de vendange avec Duke</h2>
-	  <p align="center" class="aerateur-haut aerateur-bas texte">
+      <p align="center" class="aerateur-haut aerateur-bas texte">
          <img src="../images/ekyviti/illus-vendange.png" alt="Illustration vendange" width="450px" />
       </p>
-	  <p class="texte">Comme expliqué dans le <a class="avoid-clicks" href="../chapitre4#duke">chapitre 4 - Interface et Accès</a>, Duke est un assistant vocal intelligent qui fonctionne par reconnaissance d'intentions et d'entités. Il élimine, lorsque que l'opération est possible, l'usage de la souris et/ou du clavier pour naviguer dans l'interface de l'application. Il permet ainsi de réduire de manière significative le temps nécessaire pour réaliser l'enregistrement des interventions, pour rechercher et afficher certaines données et pour exporter des documents.</p>
-	  <p class="texte">Lorsque vous utilisez Duke, le flux audio de votre micro est traité par un moteur &#171;&nbsp;Speech to Text&nbsp;&#187;. Le rôle de cet outil est d'analyser et de transcrire les commandes audio en texte grâce à un algorithme de reconnaissance vocale. La réponse obtenue est automatiquement affichée et la requête traitée dès qu'elle est validée. Le dialogue interactif entre vous et <strong>Eky</strong>viti est alors établi et fonctionnel.</p>
-	  <p class="texte">Notez que, selon votre préférence d'utilisation et les performances attendues, Duke autorise également la saisie des commandes au clavier.</p>
-	  <div class="config margin-config config-x2-viti">
+      <p class="texte">Comme expliqué dans le <a class="avoid-clicks" href="../chapitre4#duke">chapitre 4 - Interface et Accès</a>, Duke est un assistant vocal intelligent qui fonctionne par reconnaissance d'intentions et d'entités. Il élimine, lorsque que l'opération est possible, l'usage de la souris et/ou du clavier pour naviguer dans l'interface de l'application. Il permet ainsi de réduire de manière significative le temps nécessaire pour réaliser l'enregistrement des interventions, pour rechercher et afficher certaines données et pour exporter des documents.</p>
+      <p class="texte">Lorsque vous utilisez Duke, le flux audio de votre micro est traité par un moteur &#171;&nbsp;Speech to Text&nbsp;&#187;. Le rôle de cet outil est d'analyser et de transcrire les commandes audio en texte grâce à un algorithme de reconnaissance vocale. La réponse obtenue est automatiquement affichée et la requête traitée dès qu'elle est validée. Le dialogue interactif entre vous et <strong>Eky</strong>viti est alors établi et fonctionnel.</p>
+      <p class="texte">Notez que, selon votre préférence d'utilisation et les performances attendues, Duke autorise également la saisie des commandes au clavier.</p>
+      <div class="config margin-config config-x2-viti">
          <p>
             <img src="../images/commun/parcours.svg" height="45" alt="Icône parcours"/>
          </p>
@@ -1432,7 +1432,7 @@
             production viticole
          </p>
       </div>
-	  <div class="cmd-header marge aerateur-haut aerateur-bas">
+      <div class="cmd-header marge aerateur-haut aerateur-bas">
          <div class="divTableListe">
             <div class="divTableBody">
                <div class="divTableRow">
@@ -1454,18 +1454,25 @@
                         <img src="../images/ekyviti/land-parcels.svg" alt="Parcelle" height="20">
                      </div>
                      <div class="divTableCellCmd2">
-                        Cible &#40;une parcelle, une culture, plusieurs cultures&#41;
+                        Cible &#40;une parcelle, une culture, un groupement parcellaire ou tout le domaine&#41;
                      </div>
                   </div>
-				  <div class="divTableRow">
+                  <div class="divTableRow">
                      <div class="divTableCellCmd1">
                         <img src="../images/ekyviti/tint.svg" alt="Quantité" height="20">
                      </div>
                      <div class="divTableCellCmd2">
-                        Quantité réceptionnée en hectolitres
+                        Quantité réceptionnée en tonnes ou en hectolitres
                      </div>
                   </div>
-				  <div class="divTableRow">
+                  <div class="divTableRow">
+                     <div class="divTableCellCmd1">
+                     </div>
+                     <div class="divTableCellCmd2">
+                        Un rendement de 130&nbsp;kg pour obtenir 100&nbsp;L est appliqué par défaut lors d'une conversion en hl
+                     </div>
+                  </div>
+                  <div class="divTableRow">
                      <div class="divTableCellCmd1">
                         <img src="../images/ekyviti/storage-tank.svg" alt="Cuve" height="20">
                      </div>
@@ -1473,7 +1480,7 @@
                         Cuve&#40;s&#41; de destination &#40;équipement de stockage&#41;
                      </div>
                   </div>
-				  <div class="divTableRow">
+                  <div class="divTableRow">
                      <div class="divTableCellCmd1">
                         <img src="../images/ekyviti/percent.svg" alt="Taux d'alcool" height="20">
                      </div>
@@ -1481,14 +1488,14 @@
                         Titre alcoométrique volumique potentiel &#40;TAVP&#41; en degrés
                      </div>
                   </div>
-				  <div class="divTableRow">
+                  <div class="divTableRow">
                      <div class="divTableCellCmd1">
                      </div>
                      <div class="divTableCellCmd2">
                         &nbsp;
                      </div>
                   </div>
-				  <div class="divTableRow">
+                  <div class="divTableRow">
                      <div class="divTableCellCmd1">
                         <img src="../images/ekyviti/clock-o.svg" alt="Date et heure" height="20">
                      </div>
@@ -1518,70 +1525,70 @@
                         Analyse
                      </div>
                   </div>
-				  <div class="divTableRow">
+                  <div class="divTableRow">
                      <div class="divTableCellCmd1">
                      </div>
                      <div class="divTableCellCmd2">
                         •&nbsp;TAVP jus de presse
                      </div>
                   </div>
-				  <div class="divTableRow">
+                  <div class="divTableRow">
                      <div class="divTableCellCmd1">
                      </div>
                      <div class="divTableCellCmd2">
                         •&nbsp;pH
                      </div>
                   </div>
-				  <div class="divTableRow">
+                  <div class="divTableRow">
                      <div class="divTableCellCmd1">
                      </div>
                      <div class="divTableCellCmd2">
                         •&nbsp;Température
                      </div>
                   </div>
-				  <div class="divTableRow">
+                  <div class="divTableRow">
                      <div class="divTableCellCmd1">
                      </div>
                      <div class="divTableCellCmd2">
                         •&nbsp;Azote assimilable &#40;mg/L&#41;
                      </div>
                   </div>
-				  <div class="divTableRow">
+                  <div class="divTableRow">
                      <div class="divTableCellCmd1">
                      </div>
                      <div class="divTableCellCmd2">
                         •&nbsp;Azote aminée &#40;mg/L&#41;
                      </div>
                   </div>
-				  <div class="divTableRow">
+                  <div class="divTableRow">
                      <div class="divTableCellCmd1">
                      </div>
                      <div class="divTableCellCmd2">
                         •&nbsp;Azote ammoniacal &#40;mg/L&#41;
                      </div>
                   </div>
-				  <div class="divTableRow">
+                  <div class="divTableRow">
                      <div class="divTableCellCmd1">
                      </div>
                      <div class="divTableCellCmd2">
                         •&nbsp;Acidité totale &#40;g H2SO4/L&#41;
                      </div>
                   </div>
-				  <div class="divTableRow">
+                  <div class="divTableRow">
                      <div class="divTableCellCmd1">
                      </div>
                      <div class="divTableCellCmd2">
                         •&nbsp;Acide malique &#40;g/L&#41;
                      </div>
                   </div>
-				  <div class="divTableRow">
+                  <div class="divTableRow">
                      <div class="divTableCellCmd1">
                      </div>
                      <div class="divTableCellCmd2">
                         •&nbsp;État sanitaire
                      </div>
                   </div>
-				  <div class="divTableRow">
+                  <div class="divTableRow">
                      <div class="divTableCellCmd1">
                         <img src="../images/ekyviti/type-vendange.svg" alt="Type de vendange" height="20">
                      </div>
@@ -1589,7 +1596,7 @@
                         Type de vendange &#40;mécanique ou manuelle&#41;
                      </div>
                   </div>
-				   <div class="divTableRow">
+                  <div class="divTableRow">
                      <div class="divTableCellCmd1">
                         <img src="../images/ekyviti/benne.svg" alt="Dernier chargement" height="20">
                      </div>
@@ -1597,7 +1604,7 @@
                         Dernier chargement &#40;oui ou non&#41;
                      </div>
                   </div>
-				  <div class="divTableRow">
+                  <div class="divTableRow">
                      <div class="divTableCellCmd1">
                         <img src="../images/ekyviti/time-interval.svg" alt="Durée de travail" height="20">
                      </div>
@@ -1605,7 +1612,7 @@
                         Durée de transport en minutes
                      </div>
                   </div>
-				  <div class="divTableRow">
+                  <div class="divTableRow">
                      <div class="divTableCellCmd1">
                         <img src="../images/ekyviti/benne.svg" alt="Id véhicule de transport" height="20">
                      </div>
@@ -1633,7 +1640,7 @@
             </div>
          </div>
       </div>
-	  <p class="texte">Dans le processus suivant, et afin d'illustrer le fonctionnement de Duke, les commandes sont transmises l'une après l'autre. Dès que vous serez familiarisé&#40;e&#41; avec le système, vous pourrez communiquer plusieurs informations en une seule action, comme expliqué à l'étape n<sup>o</sup>&nbsp;7 de cette procédure. Une réponse est attendue après chaque question de Duke.</p>
+      <p class="texte">Dans le processus suivant, et afin d'illustrer le fonctionnement de Duke, les commandes sont transmises l'une après l'autre. Dès que vous serez familiarisé&#40;e&#41; avec le système, vous pourrez communiquer plusieurs informations en une seule action, comme expliqué à l'étape n<sup>o</sup>&nbsp;7 de cette procédure. Une réponse est attendue après chaque question de Duke.</p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
       </div>
@@ -1643,8 +1650,9 @@
          <p align="center"><img src="../images/ekyviti/duke.svg" alt="Duke" width="60"></p>
          <p>Une fenêtre s'ouvre automatiquement pour recevoir, analyser et confirmer vos commandes vocales ou saisies au clavier.</p>
          <p align="center"><img src="../images/ekyviti/duke-vendange1.png" class="contour-img" alt="Dialogue Duke" data-action="zoom" style="max-width: 235px"/></p>
-		 <p>Cliquez ensuite alternativement sur l'icône du micro<img src="../images/ekyviti/micro-icn.svg" alt="Micro" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour activer ou suspendre l'analyse audio.</p>
+         <p>Cliquez ensuite alternativement sur l'icône du micro<img src="../images/ekyviti/micro-icn.svg" alt="Micro" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour activer ou suspendre l'analyse audio.</p>
       </div>
+	  <div class="saut-page"></div>
       <div class="floating-box process">
          <img src="../images/commun/step2.svg" alt="2" width="52" />
       </div>
@@ -1752,7 +1760,7 @@
       <div class="process-txt">
          <span class="titre-advice">Renseignez le taux d'alcool</span>
          <p>
-            Prononcez ou saisissez le taux d'alcool mesuré en degrés&nbsp;:
+            Prononcez ou saisissez le taux d'alcool mesuré en degrés &#40;TAVP&#41;&nbsp;:
          </p>
          <div class="duke-left">
             <p class="triangle-border dialog">13,5<img src="../images/ekyviti/message.svg" alt="Message" height="30"></p>
@@ -1763,13 +1771,17 @@
          <div class="duke-right">
             <p><img src="../images/ekyviti/duke-vendange7.png" class="contour-img" alt="Dialogue Duke" data-action="zoom" /></p>
          </div>
-		 <p style="clear: both"></p>
-		 <p class="marge-15">Complétez et/ou modifiez les informations récapitulées par Duke&nbsp;: type de vendange, quai de réception, pressoir, etc.</p>
+      </div>
+      <br />
+      <p style="clear: both"></p>
+      <div class="floating-box process">
+         <img src="../images/commun/step8.svg" alt="8" width="52" />
       </div>
       <div class="process-txt">
-         <p><strong>Notez qu'il est également possible de regrouper, dans une seule et même commande, différentes informations afin de réduire sensiblement le temps alloué à l'utilisation de Duke&nbsp;:</strong></p>
+         <span class="titre-advice">Complétez la réception de vendange</span>
+         <p>Complétez et/ou modifiez les informations récapitulées par Duke&nbsp;: analyse, type de vendange, quai de réception, pressoir utilisé, etc.</p>
          <div class="duke-left">
-            <p class="triangle-border dialog">réception vendange le 15 septembre à 10h de 180 hectolitres sur parcelle verrier avec taux d'alcool de 13,5 pour cuve 1<img src="../images/ekyviti/message.svg" alt="Message" height="30"></p>
+            <p class="triangle-border dialog">État sanitaire correct mais avec une légère présence de botrytys<img src="../images/ekyviti/message.svg" alt="Message" height="30"></p>
             <div class="user-duke">
                <img src="../images/ekyviti/user-solid.svg" alt="Utilisateur" />
             </div>
@@ -1777,12 +1789,26 @@
          <div class="duke-right">
             <p><img src="../images/ekyviti/duke-vendange8.png" class="contour-img" alt="Dialogue Duke" data-action="zoom" /></p>
          </div>
-		 <p style="clear: both"></p>
-		 <p>Cliquez sur "Valider" pour enregistrer la nouvelle intervention de réception de vendange.</p>
+         <p style="clear: both"></p>
+         <p class="marge-15">Cliquez sur "Valider" pour enregistrer la nouvelle intervention de réception de vendange.</p>
+      </div>
+      <div class="process-txt">
+         <p><strong>Notez qu'il est également possible de regrouper, dans une seule et même commande, différentes informations afin de réduire sensiblement le temps alloué à l'utilisation de Duke&nbsp;:</strong></p>
+         <div class="duke-left">
+            <p class="triangle-border dialog">réception vendange le 15 septembre à 16h de 180 hectolitres sur parcelle verrier avec taux d'alcool de 13,5 pour cuve 1<img src="../images/ekyviti/message.svg" alt="Message" height="30"></p>
+            <div class="user-duke">
+               <img src="../images/ekyviti/user-solid.svg" alt="Utilisateur" />
+            </div>
+         </div>
+         <div class="duke-right">
+            <p><img src="../images/ekyviti/duke-vendange9.png" class="contour-img" alt="Dialogue Duke" data-action="zoom" /></p>
+         </div>
+         <p style="clear: both"></p>
+         <p>Cliquez sur "Valider" pour enregistrer la nouvelle intervention de réception de vendange.</p>
       </div>
       <br />
-	  <div class="floating-box process">
-         <img src="../images/commun/step8.svg" alt="8" width="52" />
+      <div class="floating-box process">
+         <img src="../images/commun/step9.svg" alt="9" width="52" />
       </div>
       <div class="process-txt">
          <span class="titre-advice">Accédez aux réceptions de vendange</span>
@@ -1797,38 +1823,52 @@
          <p>Toutes les "Réceptions de vendange" déjà enregistrées sont listées ici.</p>
       </div>
       <br />
-	  <div class="floating-box process">
-         <img src="../images/commun/step9.svg" alt="9" width="52" />
+      <div class="floating-box process">
+         <img src="../images/commun/step10.svg" alt="10" width="52" />
       </div>
-	  <div class="process-txt">
+      <div class="process-txt">
          <span class="titre-advice">Consultez la réception de vendange</span>
          <p>Cliquez sur le crayon<img src="../images/ekyviti/crayon.svg" alt="crayon" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche du n<sup>o</sup> de la réception pour afficher les informations consignées dans l'intervention.</p>
          <p class="max-img-process">
             <img src="../images/ekyviti/recept-vendange2.png" class="contour-img" alt="Réception de vendange" data-action="zoom" />
          </p>
       </div>
-	  <br />
-	  <div class="floating-box process">
-         <img src="../images/commun/step10.svg" alt="10" width="52" />
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step11.svg" alt="11" width="52" />
       </div>
-	  <div class="process-txt">
+      <div class="process-txt">
          <span class="titre-advice">Complétez la réception de vendange</span>
          <p>Renseignez les champs complémentaires de votre choix en fonction du niveau de traçabilité souhaité ou si vous avez omis d'enregistrer certaines informations avec Duke.</p>
          <p class="max-img-process">
             <img src="../images/ekyviti/recept-vendange3.png" class="contour-img" alt="Réception de vendange" data-action="zoom" />
          </p>
-	  <p>Cliquez sur <span class="btn-purple">Modifier</span> pour valider l'opération.</p>
+         <p>Cliquez sur <span class="btn-purple">Modifier</span> pour valider l'opération.</p>
       </div>
-	  <br />
-	  <div class="floating-box process">
-         <img src="../images/commun/step11.svg" alt="11" width="52" />
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step12.svg" alt="12" width="52" />
       </div>
-	  <div class="process-txt">
+      <div class="process-txt">
          <span class="titre-advice">Affichez la fiche de la réception de vendange</span>
          <p>Dans la liste des réceptions de vendange, cliquez sur son numéro pour afficher la vue détaillée de l'intervention.</p>
          <p class="max-img-process">
             <img src="../images/ekyviti/recept-vendange4.png" class="contour-img" alt="Fiche réception de vendange" data-action="zoom" />
          </p>
+      </div>
+	  <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step13.svg" alt="13" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Modifiez ou complétez l'analyse</span>
+		 <p>Cliquez sur le bouton<img class="btn-gris icone-marge-gauche icone-marge-droite" src="../images/ekyviti/modifier-analyse.svg" alt="Modifier l'analyse">en haut à gauche de la fenêtre principale.</p>
+		 <p>Toutes les informations d'analyse déjà transmises avec Duke sont consignées ici.</p>
+         <p>Pour compléter l'analyse, sélectionnez un élément dans la liste déroulante, puis cliquez sur le bouton "Ajouter" pour disposer du nouveau champ à renseigner.</p>
+         <p class="max-img-process">
+            <img src="../images/ekyviti/recept-vendange5.png" class="contour-img" alt="Fiche analyse" data-action="zoom" />
+         </p>
+		 <p>Cliquez sur <span class="btn-purple">Modifier</span> pour valider l'opération.</p>
       </div>
       <h6>Guide de prise en main • Ekyviti • Connexion partenaire Baqio</h6>
       <a class="slice-process" id="baqio"></a>
