@@ -86,7 +86,8 @@
             {dates: [new Date(2021, 5, 3), new Date(2021, 5, 22)], title: "Version 3.33", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
             {dates: [new Date(2021, 5, 23), new Date(2021, 6, 6)], title: "Version 3.34", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
             {dates: [new Date(2021, 6, 7), new Date(2021, 7, 23)], title: "Version 3.35", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
-		 {dates: [new Date(2021, 7, 24), new Date(annee, mois, jour)], title: "Version 3.36", attrs: {fill: "#fea40b", stroke: "#fea40b"}}
+            {dates: [new Date(2021, 7, 24), new Date(2021, 8, 1)], title: "Version 3.36", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
+         {dates: [new Date(2021, 8, 2), new Date(annee, mois, jour)], title: "Version 3.37", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
          ];
          
          var sections = [
@@ -100,7 +101,7 @@
          	animated: true,
          	tooltips: true,
          	defaultStartDate: new Date(2019, 5, 1),
-         	endDate: new Date(2021, 8, 31),
+         	endDate: new Date(2021, 11, 31),
          	sections: sections,
          	sectionLabelAttrs: {"fill": "#3f70ce", "font-weight": "bold"},
          	labelInterval: isHalfMonth,
@@ -149,7 +150,7 @@
                      <div class="panel">
                         <div class="heading">
                            <div class="version">
-                              <h2>Note de version 3.36 du 24/08/2021</h2>
+                              <h2>Note de version 3.37 du 2/09/2021</h2>
                            </div>
                            <i class="fa fa-chevron-down"></i>
                         </div>
@@ -157,6 +158,132 @@
                            <div class="divTableNoteVersion">
                               <div class="divTableBody">
 								 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Comptabilité</strong><br /><br />
+                                       1 bug corrigé
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                        <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+                                          <li>La modification d'une ou plusieurs échéances d'un emprunt en mode "Brouillon" est correctement prise en compte lors du passage de l'emprunt vers le statut "En cours".</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Production</strong><br /><br />
+                                       4 améliorations et 1 bug corrigé
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+                                          <em>Trajets géolocalisés avec Samsys</em>
+                                          <li>Une nouvelle connexion partenaire permet, aux possesseurs d'un boitier Samsys installé sur un équipement agricole tel qu'un tracteur, d'enregistrer et de visualiser sur une carte ses trajets géolocalisés avec une précision centimétrique, grâce au réseau RTK collaboratif Centipede&nbsp;;</li>
+                                          <li>À partir d'un trajet géolocalisé à l'aide d'un capteur connecté Samsys, la sélection d'une ou plusieurs sections le composant active un nouveau bouton permettant d'enregistrer une nouvelle intervention sur une ou plusieurs parcelles/cultures, automatiquement identifiées par la géolocalisation du trajet&nbsp;;</li>
+                                          <br />
+                                          <li>Après l'ouverture d'une nouvelle activité, l'utilisateur est désormais redirigé vers la vue des activités et non plus vers la page de la campagne à laquelle elle est rattachée&nbsp;;</li>
+                                          <li>Dans la vue "Pavés" des activités, l'affichage des IFT &#40;Indicateurs de Fréquence de Traitement&#41; est supprimé lorsque l'activité n'est pas rattachée à une production végétale ou viticole.</li>
+                                       </ul>
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+                                          <li>Après l'import initial d'un fichier TelePAC, l'affichage des SNA &#40;surfaces non agricoles&#41; est désormais correctement mis à jour dans la vue "Carte" d'une campagne suivante ou après l'import d'un nouveau fichier TelePAC plus récent.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/stocks.svg" alt="Stocks" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Stocks</strong><br /><br />
+                                       2 améliorations
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+                                          <li>Lors de la création d'une facture de vente générée à partir d'une expédition, le taux de TVA déjà appliqué à une variante dans une facture précédente est automatiquement reporté dans la nouvelle&nbsp;;</li>
+                                          <li>Outre les quantités, l'impression d'un inventaire au format PDF consigne désormais, par zone de stockage, la valeur totale du stock ainsi que le calcul détaillé de chaque produit inventorié.</li>
+									   </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/configuration.svg" alt="Configuration" width="60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Configuration</strong><br /><br />
+                                       2 améliorations
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+                                          <li>Dans "Mon compte", il est désormais possible d'acheter de l'espace pour augmenter les capacités allouées pour l'enregistrement des informations dans la base de données et pour le stockage des fichiers &#40;documents générés et archivés, justificatifs d'achats, etc.&#41;&nbsp;;</li>
+										  <li>Dans "Mon compte", un nouveau bouton "Autoriser l'accès au support" permet à Ekylibre, avec l'accord de l'utilisateur, de consulter ses données pour identifier un éventuel dysfonctionnement ou répondre à une demande d'assistance.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/ekyviti.svg" alt="Ekyviti" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Ekyviti</strong><br /><br />
+                                       3 améliorations et 1 bug corrigé
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+                                          <li>Les taux de TVA, appliqués dans des pays situés hors de la zone euro, sont maintenant correctement pris en charge dans les nouvelles factures de ventes générées grâce à la solution connectée Baqio&nbsp;;</li>
+                                          <li>Dans l'en-tête de recherche, un nouveau champ permet de filtrer les "Ventes", les "Encaissements" et les "Tiers" générés par une connexion avec une solution tierce comme par exemple Baqio&nbsp;;</li>
+                                          <li>Une nouvelle colonne "Solution tierce", affichée sur demande, est maintenant disponible pour compléter les informations de la liste des "Ventes", des "Encaissements", des "Tiers", des "Trésoreries" et des "Modes d'encaissement".</li>
+                                       </ul>
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+                                          <li>Dans la vue "Pavés" des activités ouvertes durant une campagne, le calcul des IFT &#40;Indicateurs de Fréquence de Traitement&#41; est désormais affiché pour les productions viticoles.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="panel">
+                        <div class="heading">
+                           <div class="version">
+                              <h2>Note de version 3.36 du 24/08/2021</h2>
+                           </div>
+                           <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <div class="content">
+                           <div class="divTableNoteVersion">
+                              <div class="divTableBody">
+                                 <div class="divTableRow">
                                     <div class="divTableCellNoteVersion1" style="width: 60px">
                                        <img src="../images/notes-version/first-run.svg" alt="Assistant de démarrage" width="60">
                                     </div>
@@ -190,12 +317,12 @@
                                     <div class="divTableCellNoteVersion4" style="width: auto">
                                        <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
                                        <ul>
-										  <li>Dans la vue "Pavés" des activités, le calcul des surfaces assolées correspond de nouveau avec celui affiché dans la vue détaillée de chaque activité&nbsp;;</li>
+                                          <li>Dans la vue "Pavés" des activités, le calcul des surfaces assolées correspond de nouveau avec celui affiché dans la vue détaillée de chaque activité&nbsp;;</li>
                                           <li>Lors de l'impression d'une fiche d'intervention au format PDF, les quantités d'intrants appliquées sont désormais correctement reportées dans le document généré.</li>
                                        </ul>
                                     </div>
                                  </div>
-								 <div class="divTableRow">
+                                 <div class="divTableRow">
                                     <div class="divTableCellNoteVersion1">
                                        <img src="../images/notes-version/outils.svg" alt="Outils" width="60">
                                     </div>
@@ -228,35 +355,16 @@
                                     <div class="divTableCellNoteVersion4" style="width: auto">
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                                        <ul>
-										  <li>Dans le menu des natures de variantes, la liste déroulante "Articles" permet désormais de filtrer et d'importer les variantes appartenant à une nouvelle sous-nature "Produits de l'exploitation"&nbsp;;</li>
+                                          <li>Dans le menu des natures de variantes, la liste déroulante "Articles" permet désormais de filtrer et d'importer les variantes appartenant à une nouvelle sous-nature "Produits de l'exploitation"&nbsp;;</li>
                                           <li>Dans le menu des natures de variantes, le bouton "Équipements" affiche maintenant une liste déroulante permettant de filtrer et d'importer les variantes par familles d'équipements.</li>
                                        </ul>
                                     </div>
                                  </div>
-								 <!--<div class="divTableRow">
-                                    <div class="divTableCellNoteVersion1" style="width: 60px">
-                                       <img src="../images/notes-version/ekyviti.svg" alt="Ekyviti" width="60">
-                                    </div>
-                                    <div class="divTableCellNoteVersion2" style="width: auto">
-                                       <strong>Ekyviti</strong><br /><br />
-                                       1 amélioration
-                                    </div>
-                                 </div>
-                                 <div class="divTableRow">
-                                    <div class="divTableCellNoteVersion3" style="width: 60px">
-                                    </div>
-                                    <div class="divTableCellNoteVersion4" style="width: auto">
-                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
-                                       <ul>
-                                          <li>À partir d'un trajet géolocalisé à l'aide d'un capteur connecté Samsys, la sélection d'une ou plusieurs sections le composant active un nouveau bouton permettant d'enregistrer une nouvelle intervention sur une ou plusieurs parcelles/cultures, automatiquement identifiées par la géolocalisation du trajet.</li>
-                                       </ul>
-                                    </div>
-                                 </div>-->
                               </div>
                            </div>
                         </div>
                      </div>
-					 <div class="panel">
+                     <div class="panel">
                         <div class="heading">
                            <div class="version">
                               <h2>Note de version 3.35 du 7/07/2021</h2>
@@ -535,7 +643,7 @@
                                           <li>L'enregistrement ou la planification d'une intervention à partir d'un groupement parcellaire cible automatiquement toutes les parcelles ou les cultures initialement groupées&nbsp;;</li>
                                           <li>En option, chaque groupement parcellaire peut être caractérisé par un usage, comme par exemple un itinéraire technique spécifique, symbolisé par la création d'une étiquette dont on peut choisir la couleur et qui est reportée dans la fiche détaillée de l'intervention&nbsp;;</li>
                                           <br />
-                                          <li>Lors de la création d’une activité et/ou d’un équipement, possibilité de paramétrer un code utilisé pour renseigner la séquence analytique &#40;voir amélioration du module "Configuration"&#41; enregistrée lors d’un échange comptable au format Isacompta.</li>
+                                          <li>Lors de la création d'une activité et/ou d'un équipement, possibilité de paramétrer un code utilisé pour renseigner la séquence analytique &#40;voir amélioration du module "Configuration"&#41; enregistrée lors d'un échange comptable au format Isacompta.</li>
                                        </ul>
                                        <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
                                        <ul>
@@ -766,7 +874,7 @@
                                           <li>Le calcul des IFT d'une campagne précédente est possible lorsque des interventions ont été enregistrées avec des produits dont le n<sup>o</sup> d'AMM est valide et si un usage a été sélectionné&nbsp;;</li>
                                           <li>Possibilité d'éditer le bilan d'IFT de la campagne au format PDF. Les IFT de chacun des traitements contenus dans le rapport sont signés électroniquement&nbsp;;</li>
                                           <br />
-                                          <li>La création d’une intervention, depuis la fiche détaillée d’une parcelle ou d'une production végétale, mémorise désormais l’origine de cette vue initiale pour renseigner automatiquement la cible de la nouvelle intervention&nbsp;;</li>
+                                          <li>La création d'une intervention, depuis la fiche détaillée d'une parcelle ou d'une production végétale, mémorise désormais l'origine de cette vue initiale pour renseigner automatiquement la cible de la nouvelle intervention&nbsp;;</li>
                                           <li>Dans la vue "Carte" et lorsqu'une déclaration TelePAC a été importée, affichage des SNA &#40;surfaces non agricoles&#41; symbolisées par de nouveaux marqueurs de géolocalisation cliquables précisant la catégorie et le type de SNA dans une infobulle.</li>
                                        </ul>
                                     </div>
@@ -4313,12 +4421,141 @@
       <!-- Section pour la génération du PDF -->
       <div class="saut-page"></div>
       <div class="heading-print marge aerateur-haut">
-         <h2>Note de version 3.36 du 24/08/2021</h2>
+         <h2>Note de version 3.37 du 2/09/2021</h2>
       </div>
       <div class="content-print marge">
          <div class="divTableNoteVersion">
             <div class="divTableBody">
 			   <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Comptabilité</strong><br /><br />
+                     1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>La modification d'une ou plusieurs échéances d'un emprunt en mode "Brouillon" est correctement prise en compte lors du passage de l'emprunt vers le statut "En cours".</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Production</strong><br /><br />
+                     4 améliorations et 1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <em>Trajets géolocalisés avec Samsys</em>
+                        <li>Une nouvelle connexion partenaire permet, aux possesseurs d'un boitier Samsys installé sur un équipement agricole tel qu'un tracteur, d'enregistrer et de visualiser sur une carte ses trajets géolocalisés avec une précision centimétrique, grâce au réseau RTK collaboratif Centipede&nbsp;;</li>
+                        <li>À partir d'un trajet géolocalisé à l'aide d'un capteur connecté Samsys, la sélection d'une ou plusieurs sections le composant active un nouveau bouton permettant d'enregistrer une nouvelle intervention sur une ou plusieurs parcelles/cultures, automatiquement identifiées par la géolocalisation du trajet&nbsp;;</li>
+                        <br />
+                        <li>Après l'ouverture d'une nouvelle activité, l'utilisateur est désormais redirigé vers la vue des activités et non plus vers la page de la campagne à laquelle elle est rattachée&nbsp;;</li>
+                        <li>Dans la vue "Pavés" des activités, l'affichage des IFT &#40;Indicateurs de Fréquence de Traitement&#41; est supprimé lorsque l'activité n'est pas rattachée à une production végétale ou viticole.</li>
+                     </ul>
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>Après l'import initial d'un fichier TelePAC, l'affichage des SNA &#40;surfaces non agricoles&#41; est désormais correctement mis à jour dans la vue "Carte" d'une campagne suivante ou après l'import d'un nouveau fichier TelePAC plus récent.</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="content-print marge">
+         <div class="divTableNoteVersion">
+            <div class="divTableBody">
+               <div class="saut-page"></div>
+			   <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/stocks.svg" alt="Stocks" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Stocks</strong><br /><br />
+                     2 améliorations
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>Lors de la création d'une facture de vente générée à partir d'une expédition, le taux de TVA déjà appliqué à une variante dans une facture précédente est automatiquement reporté dans la nouvelle&nbsp;;</li>
+                        <li>Outre les quantités, l'impression d'un inventaire au format PDF consigne désormais, par zone de stockage, la valeur totale du stock ainsi que le calcul détaillé de chaque produit inventorié.</li>
+					 </ul>
+                  </div>
+               </div>
+			   <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/configuration.svg" alt="Configuration" width="60px">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Configuration</strong><br /><br />
+                     2 améliorations
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>Dans "Mon compte", il est désormais possible d'acheter de l'espace pour augmenter les capacités allouées pour l'enregistrement des informations dans la base de données et pour le stockage des fichiers &#40;documents générés et archivés, justificatifs d'achats, etc.&#41;&nbsp;;</li>
+						<li>Dans "Mon compte", un nouveau bouton "Autoriser l'accès au support" permet à Ekylibre, avec l'accord de l'utilisateur, de consulter ses données pour identifier un éventuel dysfonctionnement ou répondre à une demande d'assistance.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/ekyviti.svg" alt="Ekyviti" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Ekyviti</strong><br /><br />
+                     3 améliorations et 1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>Les taux de TVA, appliqués dans des pays situés hors de la zone euro, sont maintenant correctement pris en charge dans les nouvelles factures de ventes générées grâce à la solution connectée Baqio&nbsp;;</li>
+                        <li>Dans l'en-tête de recherche, un nouveau champ permet de filtrer les "Ventes", les "Encaissements" et les "Tiers" générés par une connexion avec une solution tierce comme par exemple Baqio&nbsp;;</li>
+                        <li>Une nouvelle colonne "Solution tierce", affichée sur demande, est maintenant disponible pour compléter les informations de la liste des "Ventes", des "Encaissements", des "Tiers", des "Trésoreries" et des "Modes d'encaissement".</li>
+                     </ul>
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>Dans la vue "Pavés" des activités ouvertes durant une campagne, le calcul des IFT &#40;Indicateurs de Fréquence de Traitement&#41; est désormais affiché pour les productions viticoles.</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="saut-page"></div>
+      <div class="heading-print marge aerateur-haut">
+         <h2>Note de version 3.36 du 24/08/2021</h2>
+      </div>
+      <div class="content-print marge">
+         <div class="divTableNoteVersion">
+            <div class="divTableBody">
+               <div class="divTableRow">
                   <div class="divTableCellNoteVersion1" style="width: 60px">
                      <img src="../images/notes-version/production.svg" alt="Production" width="60">
                   </div>
@@ -4357,7 +4594,7 @@
                      </ul>
                   </div>
                </div>
-			   <div class="divTableRow">
+               <div class="divTableRow">
                   <div class="divTableCellNoteVersion1">
                      <img src="../images/notes-version/outils.svg" alt="Outils" width="60">
                   </div>
@@ -4368,7 +4605,7 @@
                </div>
                <div class="divTableRow">
                   <div class="divTableCellNoteVersion3" style="width: 60px"></div>
-                     <div class="divTableCellNoteVersion4" style="width: auto">
+                  <div class="divTableCellNoteVersion4" style="width: auto">
                      <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                      <ul>
                         <li>Mise à disposition d'un nouvel outil d'import de fichiers au format TXT en provenance du logiciel Sage Coala pour réaliser le transfert des écritures comptables &#40;FEC&#41;.</li>
@@ -4398,7 +4635,7 @@
             </div>
          </div>
       </div>
-	  <div class="saut-page"></div>
+      <div class="saut-page"></div>
       <div class="heading-print marge aerateur-haut">
          <h2>Note de version 3.35 du 7/07/2021</h2>
       </div>
@@ -4680,7 +4917,7 @@
                         <li>L'enregistrement ou la planification d'une intervention à partir d'un groupement parcellaire cible automatiquement toutes les parcelles ou les cultures initialement groupées&nbsp;;</li>
                         <li>En option, chaque groupement parcellaire peut être caractérisé par un usage, comme par exemple un itinéraire technique spécifique, symbolisé par la création d'une étiquette dont on peut choisir la couleur et qui est reportée dans la fiche détaillée de l'intervention&nbsp;;</li>
                         <br />
-                        <li>Lors de la création d’une activité et/ou d’un équipement, possibilité de paramétrer un code utilisé pour renseigner la séquence analytique &#40;voir amélioration du module "Configuration"&#41; enregistrée lors d’un échange comptable au format Isacompta.</li>
+                        <li>Lors de la création d'une activité et/ou d'un équipement, possibilité de paramétrer un code utilisé pour renseigner la séquence analytique &#40;voir amélioration du module "Configuration"&#41; enregistrée lors d'un échange comptable au format Isacompta.</li>
                      </ul>
                      <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
                      <ul>
@@ -4910,7 +5147,7 @@
                         <li>Le calcul des IFT d'une campagne précédente est possible lorsque des interventions ont été enregistrées avec des produits dont le n<sup>o</sup> d'AMM est valide et si un usage a été sélectionné&nbsp;;</li>
                         <li>Possibilité d'éditer le bilan d'IFT de la campagne au format PDF. Les IFT de chacun des traitements contenus dans le rapport sont signés électroniquement&nbsp;;</li>
                         <br />
-                        <li>La création d’une intervention, depuis la fiche détaillée d’une parcelle ou d'une production végétale, mémorise désormais l’origine de cette vue initiale pour renseigner automatiquement la cible de la nouvelle intervention&nbsp;;</li>
+                        <li>La création d'une intervention, depuis la fiche détaillée d'une parcelle ou d'une production végétale, mémorise désormais l'origine de cette vue initiale pour renseigner automatiquement la cible de la nouvelle intervention&nbsp;;</li>
                         <li>Dans la vue "Carte" et lorsqu'une déclaration TelePAC a été importée, affichage des SNA &#40;surfaces non agricoles&#41; symbolisées par de nouveaux marqueurs de géolocalisation cliquables précisant la catégorie et le type de SNA dans une infobulle.</li>
                      </ul>
                   </div>
