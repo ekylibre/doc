@@ -3218,6 +3218,24 @@ span.the-btn {
 	cursor: pointer;
 }
 
+.rond-perf {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #fff;
+	background-image: url("../fr/images/commun/contour-som-x6.svg");
+    background-repeat: no-repeat;
+	margin-right: 8px;
+	line-height: 31px;
+	text-align: center;
+	letter-spacing: -1px;
+	float: left;
+	color: #333;
+	font-size: 20px;
+	margin-top: 3px;
+	cursor: pointer;
+}
+
 .bloc {
 	padding-right: 20px;
 	margin-left: 10px;
