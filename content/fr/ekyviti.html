@@ -1999,6 +1999,7 @@
          <p>Cliquez sur <span class="btn-purple">Créer</span> pour valider l'opération.</p>
       </div>
       <h6>Guide de prise en main • Ekyviti • Prérequis connexion Baqio</h6>
+	  <a class="slice-process" id="req-baqio"></a>
       <h3 align="center" class="texte aerateur procedure">2 - Prérequis pour échanger les données avec Baqio</h3>
       <p class="texte">Si vous disposez déjà d'un abonnement Baqio et que vous souscrivez ensuite à une offre <strong>Eky</strong>viti, la plupart des informations sont transmises automatiquement vers la seconde solution, avec la création des éléments comptables nécessaires à leur bon enregistrement&nbsp;: "Trésoreries", "Comptes comptables" et "Journaux". Nous vous conseillons cependant, après une synchronisation initiale, de procéder à quelques vérifications.</p>
       <p class="texte aerateur-haut">Le processus suivant vous guide pour configurer correctement <strong>Eky</strong>viti Gestion avec votre compte Baqio.</p>
@@ -2072,7 +2073,10 @@
          </p>
 		 <p>Cliquez sur <em>"Valider"</em> pour enregistrer la commande et préparer le transfert des informations de la vente vers <strong>Eky</strong>viti, avec une ventilation comptable correcte.</p>
       </div>
-	  <div class="warn-fond aerateur-haut">
+	  <h6>Guide de prise en main • Ekyviti • Synchronisation Baqio</h6>
+	  <a class="slice-process" id="synchro-baqio"></a>
+      <h3 align="center" class="texte aerateur procedure">3 - Synchronisation des ventes avec Baqio</h3>
+	  <div class="warn-fond aerateur-haut aerateur-bas">
          <div class="floating-box-warn">
             <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
          </div>
@@ -2080,6 +2084,56 @@
             <span class="titre-advice">Transfert durant un échange comptable<br /></span>
             <p class="texte-advice">Lorsque la synchronisation des données entre les solutions Baqio et <strong>Eky</strong>viti est réalisée alors qu'un échange comptable est ouvert sur une période couvrant de nouvelles ventes, un message d'alerte, confirmé par une notification, vous informe que leur enregistrement est impossible.</p>
          </div>
+      </div>
+	  <p class="texte">Le processus suivant vous guide pour mettre à jour les ventes saisies avec la solution Baqio dans <strong>Eky</strong>viti.</p>
+	  <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Lancez la synchronisation</span>
+         <p>
+            Dans la vue "Liste" des ventes, cliquez sur le bouton "Mettre à jour les ventes Baqio" en haut à gauche de la fenêtre principale. Dans cet exemple, 1298 ventes ont déjà été enregistrées dans <strong>Eky</strong>viti.
+         </p>
+         <p class="max-img-process">
+            <img src="../images/ekyviti/synchro-baqio1.png" class="contour-img" alt="Liste des ventes" data-action="zoom" />
+         </p>
+	  </div>
+	  <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Patientez durant la mise à jour</span>
+         <p>Dès que vous avez lancé la synchronisation, un <em>"spinner"</em> &#40;animation de chargement&#41; est affiché à droite du bouton qui devient inactif durant toute la durée de l'opération. Patientez quelques instants car le transfert peut prendre plus ou moins de temps en fonction du nombre de ventes et de données à traiter.</p>
+		 <p class="max-img-process">
+            <img src="../images/ekyviti/synchro-baqio2.png" class="contour-img" alt="Transfert des données" data-action="zoom" />
+         </p>
+	  </div>
+	  <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez la nouvelle notification</span>
+		 <p>Une fois que le <em>"spinner"</em> du chargement disparaît, la pastille rouge<img src="../images/commun/marker.svg" alt="Notification" height="20" class="align-icone icone-marge-gauche icone-marge-droite">en haut à droite de la cloche<img src="../images/ekyviti/bell-o-purple.svg" alt="Cloche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">vous indique qu'une opération interne a été effectuée par l'application. Cliquez sur celle-ci pour afficher la notification. En cas d'erreur, vous serez informé&#40;e&#41; de la nature de celle-ci.</p>
+		 <p class="max-img-process">
+            <img src="../images/ekyviti/synchro-baqio3.png" class="contour-img" alt="Notification Baqio" data-action="zoom" />
+         </p>
+	  </div>
+	  <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step4.svg" alt="4" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Visualisez les nouvelles ventes</span>
+		 <p>La liste des ventes est automatiquement actualisée. Dans cet exemple, 1303 ventes sont désormais enregistrées dans <strong>Eky</strong>viti. Dans le tableau, cliquez sur le titre de la colonne "Date de création" pour ordonner et afficher les ventes les plus récentes.</p>
+		 <p class="max-img-process">
+            <img src="../images/ekyviti/synchro-baqio4.png" class="contour-img" alt="Liste des ventes actualisée" data-action="zoom" />
+         </p>
+		 <p>Notez qu'une vente correspondant à l'enregistrement d'une facture d'avoir partiel ou total est affichée dans la liste avec un montant négatif. L'icône<img src="../images/ekyviti/undo.svg" class="align-icone icone-marge-gauche icone-marge-droite" height="20" alt="Annuler">permettant de la créer initialement est alors masquée.</p>
+		 <p class="max-img-process">
+            <img src="../images/ekyviti/synchro-baqio5.png" class="contour-img" alt="Avoir sur vente" data-action="zoom" />
+         </p>
       </div>
       <br />
       <div class="pdf">
