@@ -505,15 +505,6 @@ a:visited {
 	background-color: #d81e08;
 }
 
-.statut-rouge {
-	color: #f44336;
-	border: solid 1px #f44336;
-	text-transform: uppercase;
-	font-size: 14px;
-	font-weight: bold;
-	white-space: nowrap;
-}
-
 .statut-vert {
 	color: #4caf50;
 	border: solid 1px #4caf50;
@@ -532,11 +523,12 @@ a:visited {
 	white-space: nowrap;
 }
 
-.statut-warn {
-	color: #ffffff;
-	background-color: #ff8811;
+.statut-rouge {
+	color: #f44336;
+	border: solid 1px #f44336;
 	text-transform: uppercase;
 	font-size: 13px;
+	font-weight: bold;
 	white-space: nowrap;
 }
 
