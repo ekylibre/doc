@@ -61,6 +61,7 @@
                            <li><a href="../chapitre2#zones" target="_self">Création des zones cultivables</a></li>
                            <li><a href="../chapitre2#declaration" target="_self">Récupération et utilisation des données TelePAC</a></li>
 						   <li><a href="../chapitre2#rpg" target="_self">Utilisation du registre parcellaire graphique</a></li>
+						   <li><a href="../chapitre2#no-pac" target="_self">Création des zones cultivables non déclarées à la PAC</a></li>
                         </div>
                      </ul>
                   </li>
@@ -262,7 +263,7 @@
                      </div>
                      <ul style="display: block;">
                         <div class="bloc">
-                           <em>Contenu en cours de réalisation et bientôt disponible</em>
+						   <li><a href="#activites" target="_self">Paramétrage des activités</a></li>
 						   <!--
                            <li><a href="#seuil" target="_self">Seuils de commercialisation</a></li>
                            <li><a href="#budget" target="_self">Budgets prévisionnels</a></li>
@@ -338,8 +339,122 @@
             <p class="texte-advice">Ce chapitre de la documentation est en cours de rédaction et s'adresse plus particulièrement aux futurs abonnés des offres <strong>Eky</strong>viti Performance et <strong>Eky</strong>viti Performance. Il s'enrichira progressivement avec les développements en cours et la mise à disposition de nouvelles fonctionnalités.</p>
          </div>
       </div>
-	  <h6>Guide de prise en main • Performance</h6>
-      <a class="slice-process" id="performance"></a>
+	  <h6>Guide de prise en main • Performance • Paramétrage des activités</h6>
+      <a class="slice-process" id="activites"></a>
+	  <h2 class="texte aerateur">a - Paramétrage des activités</h2>
+	  <h3 align="center" class="texte aerateur procedure">A - Introduction à la notion de centre analytique</h3>
+      <p class="texte">En complément des explications délivrées dans la section <a href="../chapitre9#nelle-activite" target="_self" class="avoid-clicks">&#171;&nbsp;Procédure pour créer de nouvelles activités&nbsp;&#187;</a> du chapitre "Production", les offres <strong>Eky</strong>viti Performance et <strong>Eky</strong>viti Performance disposent d'un algorythme avancé et innovant pour réaliser le calcul, la répartition et l'affectation des recettes et des dépenses aux budgets des différentes activités.</p>
+	  <p class="texte">Dans ces deux offres, on distingue les "Activités de production", également dénommées "Activités principales", des "Activités de structure ou de support", appelées "Activités auxiliaires" dans l'interface de l'application&nbsp;:</p>
+	  <div class="affichage-mobile">
+         <p align="center">
+            <img src="../images/commun/scroll.svg" alt="Scroll" height="40" class="">
+            <br />
+            Glissez pour visualiser l'illustration
+         </p>
+      </div>
+      <div class="scroll marge">
+         <div class="tableau">
+            <p align="center" class="aerateur-haut aerateur-bas"><img src="../images/performance/schema-activites-perf.png" alt="Schéma activités" data-action="zoom" /></p>
+         </div>
+      </div>
+	  <p class="texte">Les "Activités auxiliaires" peuvent être configurées pour répartir les différents charges de l'exploitation, les frais de maintenance des équipements et les actions commerciales &#40;ventes&#41;.</p>
+	  <p class="texte">Le calcul des coûts et des marges est réalisé par la <strong>méthode ABC</strong> &#40;Activity-Based Costing&#41;. Basée sur un objectif analytique des performances, elle permet de piloter les coûts d'une exploitation par activité et de faire une analyse plus fine que le simple calcul des coûts de revient. Dans la pratique, elle passe par un fin découpage du processus de calcul et s'attache à définir du mieux possible la provenance des coûts afin d'évaluer la performance économique réalisée pour chacune des activités. Avec ce procédé, les données obtenues deviennent un véritable instrument d'aide à la prise de décision.</p>
+	  <h6>Guide de prise en main • Performance • Activités auxiliaires</h6>
+      <a class="slice-process" id="auxiliaires"></a>
+	  <h3 align="center" class="texte aerateur procedure">B - Paramétrage des activités auxiliaires</h3>
+	  <p class="texte">Le processus suivant vous guide pour créer une nouvelle activité auxiliaire, complémentaire des activités principales de l'exploitation.</p>
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Accédez aux activités</span>
+		 <p>Cliquez sur le lien "Production" dans le "Menu principal" ou sur le bouton "Production" de la page d'accueil&nbsp;:</p>
+         <p align="center"><img src="../images/performance/production.svg" alt="Production" width="60"></p>
+         <p>Puis, dans la barre latérale du module "Production", cliquez sur "Activités" dans la section "Production" symbolisée par l'icône avec des engrenages<img src="../images/chapitre9/cogs.svg" alt="Engrenages" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des activités.</p>
+         <p class="max-img-process">
+            <img src="../images/performance/activite-aux1.png" class="contour-img" alt="Liste des activités" data-action="zoom" />
+         </p>
+		 <p>Toutes les activités principales &#40;végétale, viticoles, animales&#41; déjà ouvertes pour une campagne donnée sont listées ici.</p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Créez une nouvelle activité</span>
+		 <p>Cliquez sur le bouton "Ouvrir", puis sélectionnez "Nouvelle activité" dans la liste déroulante.</p>
+         <p class="max-img-process">
+            <img src="../images/performance/activite-aux2.png" class="contour-img" alt="Nouvelle activité" data-action="zoom" />
+         </p>
+      </div>
+	  <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Choisissez une famille d'activité</span>
+		 <p>Sélectionnez l'activité "Adminitratif" dans la liste déroulante "Famille".</p>
+		 <p class="max-img-process">
+            <img src="../images/performance/activite-aux3.png" class="contour-img" alt="Sélection famille d'activité" data-action="zoom" />
+         </p>
+		 <p class="max-img-process">
+            <img src="../images/performance/activite-aux4.png" class="contour-img" alt="Validation de la famille" data-action="zoom" />
+         </p>
+         <p>Cliquez sur <span class="btn-blue">Valider</span> pour valider l'opération.</p>
+      </div>
+	  <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step4.svg" alt="4" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Renseignez la nouvelle activité auxiliaire</span>
+		 <p>Nommez la nouvelle activité, puis définissez le "Type de centre analytique" approprié en activant le bouton radio<img src="../images/commun/radio.svg" alt="Bouton radio" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche du libellé "Auxiliaire".</p>
+		 <p class="max-img-process">
+            <img src="../images/performance/activite-aux5.png" class="contour-img" alt="Sélection famille d'activité" data-action="zoom" />
+         </p>
+      </div>
+	  <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step5.svg" alt="5" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Paramétrez la clé de répartition analytique</span>
+		 <p>Sélectionnez la "Clé de répartition analytique" appropriée en activant le bouton radio<img src="../images/commun/radio.svg" alt="Bouton radio" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à gauche du mode de calcul à appliquer.</p>
+		 <p><strong>3 méthodes de répartition sont à votre disposition.</strong></p>
+		 <p>1 - Calculée au prorata de la marge brute générée par chaque activité durant une campagne&nbsp;:</p>
+		 <p class="max-img-process">
+            <img src="../images/performance/activite-aux6.png" class="contour-img" alt="Sélection marge brute" data-action="zoom" />
+         </p>
+		 <p>2 - Calculée selon un pourcentage affecté à une ou plusieurs activités de votre choix&nbsp;:</p>
+		 <p class="max-img-process">
+            <img src="../images/performance/activite-aux7.png" class="contour-img" alt="Sélection répartition par pourcentage" data-action="zoom" />
+         </p>
+		 <p>Cliquez sur "Ajouter une répartition" pour sélectionner une activité parmi celles qui sont ouvertes et saisissez un pourcentage d'affectation. Puis répétez successivement l'opération pour chaque activité concernée par le paramétrage de cette distribution.</p>
+		 <p>Notez que la valeur des pourcentages est automatiquement rectifiée après validation si la somme totale de la répartition n'est pas strictement égale à 100&nbsp;%.</p>
+		 <p class="max-img-process">
+            <img src="../images/performance/activite-aux8.png" class="contour-img" alt="Sélection répartition par pourcentage" data-action="zoom" />
+         </p>
+		 <p>3 - Calculée au prorata des temps de travail des équipements utilisés durant une campagne&nbsp;:</p>
+		 <p class="max-img-process">
+            <img src="../images/performance/activite-aux9.png" class="contour-img" alt="Sélection temps de travail" data-action="zoom" />
+         </p>
+         <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
+      </div>
+	  <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step6.svg" alt="6" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Affichez les activités</span>
+		 <p>La nouvelle activité "Exploitation" est désormais disponible et un budget par défaut et personnalisable peut maintenant lui être affecté.</p>
+		 <p class="max-img-process">
+            <img src="../images/performance/activite-aux10.png" class="contour-img" alt="Liste des activités" data-action="zoom" />
+         </p>
+	  </div>
+	  <h6>Guide de prise en main • Performance • Activités principales</h6>
+      <a class="slice-process" id="principales"></a>
+	  <h3 align="center" class="texte aerateur procedure">C - Paramétrage des activités principales</h3>
+	  <p class="texte">Le processus suivant vous guide pour compléter le paramétrage initial d'un activité principale de l'exploitation.</p>
       <div class="pdf">
          <p align="right" class="texte aerateur-top aerateur-bas">Passez au <a class="avoid-clicks" href="../ekyviti">chapitre suivant</a> de ce guide.</p>
       </div>
