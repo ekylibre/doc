@@ -378,10 +378,11 @@
                   <div class="divTableCellMenu3">
                      <form>
                         <select name="ListeUrl" SIZE="1" onChange="ChangeUrl(this.form)" style="width:210px">
-                           <option selected value="">Salaires</option>
+                           <option selected value="">Salaires et contrats de travail</option>
                            <option value="#typesalaire">- Paramétrer un type de salaire</option>
                            <option value="#creasalaire">- Enregistrer un nouveau salaire</option>
 						   <option value="#paiement">- Procéder au paiement d'un salaire</option>
+						   <option value="#contrats">- Créer un contrat de travail</option>
 						</select>
                      </form>
                   </div>
@@ -429,10 +430,11 @@
 				  <option value="#stock-perm">- Paramétrer les stocks permanents</option>
 				  <option value="#nel-inventaire">- Réaliser un inventaire des stocks</option>
                </optgroup>
-               <optgroup label="Salaires">
+               <optgroup label="Salaires et contrats de travail">
                   <option value="#typesalaire">- Paramétrer un type de salaire</option>
                   <option value="#creasalaire">- Enregistrer un nouveau salaire</option>
 				  <option value="#paiement">- Procéder au paiement d'un salaire</option>
+				  <option value="#contrats">- Créer un contrat de travail</option>
                </optgroup>
             </select>
          </form>
@@ -478,7 +480,7 @@
                <div class="divTableRow">
                   <div class="divTableCellPDF1" style="width: 234px">Tiers et équipiers&nbsp;<img src="../images/chapitre8/users.svg" alt="Tiers et équipiers" height="20" class="align-compta icone-marge-gauche"></div>
                   <div class="divTableCellPDF1" style="width: 234px">Stocks&nbsp;<img src="../images/chapitre8/truck.svg" alt="Stocks" height="22" class="align-compta icone-marge-gauche"></div>
-                  <div class="divTableCellPDF3" style="width: 234px">Salaires&nbsp;<img src="../images/chapitre8/cog.svg" alt="Salaires" height="18" class="align-icone icone-marge-gauche"></div>
+                  <div class="divTableCellPDF3" style="width: 234px">Salaires et contrats&nbsp;<img src="../images/chapitre8/cog.svg" alt="Salaires" height="18" class="align-icone icone-marge-gauche"></div>
                </div>
                <div class="divTableRow">
                   <div class="divTableCellPDF2">- Créer un nouveau contact</div>
@@ -498,7 +500,7 @@
                <div class="divTableRow">
                   <div class="divTableCellPDF2">- Convertir un contact en équipier</div>
                   <div class="divTableCellPDF2">- Paramétrer une livraison</div>
-				  <div class="divTableCellPDF5">&nbsp;</div>
+				  <div class="divTableCellPDF2">- Créer un contrat de travail</div>
                </div>
                <div class="divTableRow">
                   <div class="divTableCellPDF2">- Configurer un type d'équipier</div>
@@ -3072,6 +3074,17 @@
           });
       });
       </script>
+      <div class="warn-fond aerateur-haut aerateur-bas">
+         <div class="floating-box-warn">
+            <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
+         </div>
+         <div class="info-txt">
+            <span class="titre-advice">Contrats de travail et équipiers<br /></span>
+            <p class="texte-advice">
+               Notez que si un équipier est associé à un <a class="avoid-clicks" href="#contrats" target="_self">contrat de travail</a>, un coût de main d'œuvre horaire est généré automatiquement. Celui-ci supplante le coût d'usage enregistré dans le catalogue de prix. Il n'est donc pas nécessaire de le configurer car c'est le paramétrage du contrat qui est pris en compte dans le calcul des coûts des interventions et du budget des activités.
+            </p>
+         </div>
+      </div>
       <p class="texte">Le processus suivant vous guide pour attribuer un coût horaire estimatif de main d'œuvre à un type d'équipier.</p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
@@ -3093,7 +3106,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Sélectionnez un catalogue de prix</span>
-         <p>Cliquez sur le "Code" ou sur le "Nom" du catalogue "Coûts d'usage" pour en afficher le contenu, puis cliquez sur le bouton "Nouveau" pour définir un nouveau prix. Si le catalogue de prix "Coûts d'usage" n'est pas disponible, on vous explique <a class="avoid-clicks" href="#coutusage">comment le configurer</a>.</p>
+         <p>Cliquez sur le "Code" ou sur le "Nom" du catalogue "Coûts d'usage" pour en afficher le contenu, puis cliquez sur le bouton "Nouveau" pour définir un nouveau prix. Si le catalogue de prix "Coûts d'usage" n'est pas disponible, on vous explique <a class="avoid-clicks" href="#coutusage" target="_self">comment le configurer</a>.</p>
          <p class="max-img-process">
             <img src="../images/chapitre8/catalogue2.png" class="contour-img" alt="Liste des catalogues de prix" data-action="zoom" />
          </p>
@@ -3553,7 +3566,7 @@
          <div class="info-txt">
             <span class="titre-advice">Contrats de travail et équipiers<br /></span>
             <p class="texte-advice">
-               Notez que le tiers sélectionné lors de la création d'un contrat de travail est automatiquement converti en équipier s'il ne possède pas déjà ce statut. À partir du type de contrat et du taux horaire brut saisi, un coût d'usage est alors calculé et enregistré dans le catalogue de prix approprié. Une fois sélectionné dans l'enregistrement d'une intervention, le coût de l'équipier est directement pris en compte dans les dépenses et/ou le budget de l'activité concernée.
+               Notez que le tiers sélectionné lors de la création d'un contrat de travail est automatiquement converti en équipier s'il ne possède pas déjà ce statut. À partir du type de contrat et du taux horaire brut, un coût de main d'œuvre est alors généré qui supplante un éventuel coût d'usage existant. Il est appliqué dans le calcul des coûts des interventions et du budget des activités.
             </p>
          </div>
       </div>
