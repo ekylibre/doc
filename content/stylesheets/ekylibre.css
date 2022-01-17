@@ -1230,6 +1230,16 @@ a:visited {
 	border-top-color: #fff;
 }
 
+.divTableCellNoteVersion6,
+.divTableHeadNoteVersion6 {
+	display: table-cell;
+	text-align: left;
+	vertical-align: top;
+	background-color: #eee;
+	border-top-width: 2px;
+	border-top-color: #ccc;
+}
+
 .divTableCellNoteVersion4 li {
 	padding-right: 10px;
 }
