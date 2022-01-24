@@ -198,7 +198,7 @@
                      </div>
                      <ul style="display: block;">
                         <div class="bloc">
-                           <li><a href="#categories" target="_self">Catégories, types et variantes</a></li>
+                           <li><a href="#categories" target="_self">Catégories, profils et articles</a></li>
 						   <li><a href="#conditionnement" target="_self">Unités et conditionnements</a></li>
                            <li><a href="#stocks" target="_self">Gestion des stocks et création de matières</a></li>
                            <li><a href="#expeditions" target="_self">Expéditions, livraisons et facturation</a></li>
@@ -319,12 +319,12 @@
                   <div class="divTableCellMenu2">
                      <form>
                         <select name="ListeUrl" SIZE="1" onChange="ChangeUrl(this.form)" style="width:210px">
-                           <option selected value="">Variantes et produits</option>
-						   <option value="#categories">- Appréhender la notion de variante</option>
-                           <option value="#nelle-variante">- Créer de nouvelles variantes</option>
+                           <option selected value="">Articles et produits</option>
+						   <option value="#categories">- Appréhender la notion d'article</option>
+                           <option value="#nelle-variante">- Créer de nouveaux articles</option>
 						   <option value="#phyto">- Importer des produits phytosanitaires</option>
                            <option value="#article">- Paramétrer de nouveaux articles</option>
-						   <option value="#coop">- Créer une variante pour facture d'apport</option>
+						   <option value="#coop">- Créer un article pour facture d'apport</option>
                         </select>
                      </form>
                   </div>
@@ -334,7 +334,7 @@
                            <option selected value="">Équipements</option>
 						   <option value="#equipements">- Recenser vos machines et outils</option>
                            <option value="#nel-equipement">- Créer un nouvel équipement</option>
-                           <option value="#var-equipt">- Définir une variante d'équipement</option>
+                           <option value="#var-equipt">- Définir un équipement</option>
                         </select>
                      </form>
                   </div>
@@ -401,17 +401,17 @@
                   <option value="#coutusage">- Créer un catalogue des coûts d'usage</option>
 				  <option value="#coutequipier">- Affecter un coût horaire à un équipier</option>
                </optgroup>
-               <optgroup label="Variantes et produits">
-                  <option value="#categories">- Appréhender la notion de variante</option>
-                  <option value="#nelle-variante">- Créer de nouvelles variantes</option>
+               <optgroup label="Articles et produits">
+                  <option value="#categories">- Appréhender la notion d'article</option>
+                  <option value="#nelle-variante">- Créer de nouveaux articles</option>
 				  <option value="#phyto">- Importer des produits phytosanitaires</option>
                   <option value="#article">- Paramétrer de nouveaux articles</option>
-				  <option value="#coop">- Créer une variante pour facture d'apport</option>
+				  <option value="#coop">- Créer un article pour facture d'apport</option>
                </optgroup>
                <optgroup label="Équipements">
                   <option value="#equipements">- Recenser vos machines et outils</option>
                   <option value="#nel-equipement">- Créer un nouvel équipement</option>
-                  <option value="#var-equipt">- Définir une variante d'équipement</option>
+                  <option value="#var-equipt">- Définir un équipement</option>
                </optgroup>
                <optgroup label="Tiers et équipiers">
                   <option value="#contact">- Créer un nouveau contact</option>
@@ -450,18 +450,18 @@
                </div>
                <div class="divTableRow">
                   <div class="divTableCellPDF2">- Créer un catalogue des coûts d'usage</div>
-                  <div class="divTableCellPDF2">- Appréhender la notion de variante</div>
+                  <div class="divTableCellPDF2">- Appréhender la notion d'article</div>
 				  <div class="divTableCellPDF4">- Recenser vos machines et outils</div>
                </div>
                <div class="divTableRow">
                   <div class="divTableCellPDF2">- Affecter un coût horaire à un équipier</div>
-                  <div class="divTableCellPDF2">- Créer de nouvelles variantes</div>
+                  <div class="divTableCellPDF2">- Créer de nouveaux articles</div>
 				  <div class="divTableCellPDF4">- Créer un nouvel équipement</div>
                </div>
                <div class="divTableRow">
 				  <div class="divTableCellPDF5">&nbsp;</div>
                   <div class="divTableCellPDF2">- Importer des produits phytosanitaires</div>
-                  <div class="divTableCellPDF4">- Définir une variante d'équipement</div>
+                  <div class="divTableCellPDF4">- Définir un équipement</div>
                </div>
                <div class="divTableRow">
 				  <div class="divTableCellPDF5">&nbsp;</div>
@@ -470,7 +470,7 @@
                </div>
 			   <div class="divTableRow">
 				  <div class="divTableCellPDF5">&nbsp;</div>
-                  <div class="divTableCellPDF2">- Créer une variante pour facture d'apport</div>
+                  <div class="divTableCellPDF2">- Créer un article pour facture d'apport</div>
                   <div class="divTableCellPDF5">&nbsp;</div>
                </div>
             </div>
@@ -581,11 +581,11 @@
       </div>
       <h6>Guide de prise en main • Stocks, tiers et RH • Notions de base</h6>
       <a class="slice-process" id="categories"></a>
-      <h2 class="texte aerateur">a - Catégories, types et variantes</h2>
+      <h2 class="texte aerateur">a - Catégories, types et articles</h2>
       <p class="texte">Tous les éléments stockés dans <strong>Eky</strong>agri sont associés à une catégorie comptable qui est un profil de gestion utilisé pour enregistrer les écritures en comptabilité.</p>
-      <p class="texte">Ces éléments sont également rattachés à des types &#40;familles&#41; identifiés par un profil technique comme par exemple un service, un équipement, un produit phytosanitaire.</p>
-      <p class="texte">La variante correspond à un article de catalogue appartenant simultanément à une catégorie comptable &#40;profil de gestion&#41; et à un type de produit &#40;profil technique&#41;.</p>
-      <p class="texte">À la création du stock initial ou lors d'un achat, la variante est finalement enregistrée sous la forme d'un produit en stock avec la quantité spécifiée.</p>
+      <p class="texte">Ces éléments sont également rattachés à des profils fonctionnels identifiés par des caractéristiques techniques comme par exemple un service, un équipement, un produit phytosanitaire.</p>
+      <p class="texte">Un article correspond à un élément de catalogue appartenant simultanément à une catégorie comptable &#40;profil de gestion&#41; et à un profil fonctionnel &#40;profil technique&#41;.</p>
+      <p class="texte">À la création du stock initial ou lors d'une réception, l'article est finalement enregistré dans les stocks sous la forme d'un produit associé à un conditionnement avec la quantité spécifiée.</p>
       <div class="affichage-large"></div>
       <div class="affichage-mobile">
          <p align="center">
@@ -599,7 +599,7 @@
             <p align="center" class="aerateur-haut aerateur-bas"><img src="../images/chapitre8/tableau-produits.png" alt="Schéma produits"></p>
          </div>
       </div>
-      <p class="texte">En complément, on peut associer un prix d'achat ou un prix de vente &#40;ainsi qu'un coût d'usage dans le cas d'un équipement&#41; à chaque variante. Ces informations sont alors répertoriées dans des catalogues de prix spécifiques et disponibles pour enregistrer des commandes, des ventes et des interventions.</p>
+      <p class="texte">En complément, on peut associer un prix d'achat ou un prix de vente &#40;ainsi qu'un coût d'usage dans le cas d'un équipement&#41; à chaque article. Ces informations sont alors répertoriées dans des catalogues de prix spécifiques et disponibles pour enregistrer des commandes, des ventes et des interventions.</p>
       <div class="affichage-large"></div>
       <div class="affichage-mobile">
          <p align="center">
@@ -613,12 +613,12 @@
             <p align="center" class="aerateur-haut aerateur-bas"><img src="../images/chapitre8/schema-catalogues.png" class="contour-img" alt="Schéma catalogues"></p>
          </div>
       </div>
-      <p class="texte aerateur-haut">Dans le schéma suivant, parmi les différentes catégories disponibles dans l'application, on a choisi en exemple celle des équipements qui regroupe plusieurs types d'équipements possédant chacun des caractéristiques différentes.</p>
+      <p class="texte aerateur-haut">Dans le schéma suivant, parmi les différentes catégories disponibles dans l'application, on a choisi en exemple celle des équipements qui regroupe plusieurs profils d'équipements possédant chacun des caractéristiques différentes.</p>
       <p class="texte">Les réservoirs sont capables de stocker du grain, des préparations ou des mélanges &#40;une compétence&#41;. Ils sont associés aux indicateurs fixes ou variables "Capacité de stockage massique nominale" et/ou "Capacité de stockage volumique nominale".</p>
-      <p class="texte">Exemple de paramétrage par défaut pour le type de produit dénommé "Silo à aliments" dans l'application&nbsp;:</p>
+      <p class="texte">Exemple de paramétrage par défaut du profil fonctionnel dénommé "Silo à aliments" dans l'application&nbsp;:</p>
       <p align="center" class="marge"><img class="contour-gris" src="../images/chapitre8/competences.png" alt="Compétences type de produit" data-action="zoom" /></p>
       <p align="center" class="marge"><img class="contour-gris" src="../images/chapitre8/indicateurs.png" alt="Indicateurs type de produit" data-action="zoom" /></p>
-      <p class="texte aerateur-bas">Les différentes variantes de réservoirs disponibles vous permettront enfin de créer vos équipements en stock à partir de la liste figurant à droite du schéma.</p>
+      <p class="texte aerateur-bas">Les différentes familles de réservoirs disponibles vous permettront enfin de créer vos équipements en stock à partir de la liste figurant à droite du schéma.</p>
       <div class="affichage-large"></div>
       <div class="affichage-mobile">
          <p align="center">
@@ -639,11 +639,11 @@
             <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
          </div>
          <div class="info-txt">
-            <span class="titre-advice">Nécessité de créer de nouvelles variantes<br /></span>
-            <p class="texte-advice">Dans la majorité des cas, les variantes prédéfinies et disponibles dans l'application doivent répondre à vos attentes pour constituer vos stocks et réaliser la gestion commerciale &#40;achats et ventes&#41;. Cependant, la <strong>création de nouvelles variantes reste incontournable</strong> au regard du niveau de traçabilité que vous souhaitez obtenir, comme par exemple le calcul des <strong>temps de travaux</strong> et des <strong>coûts horaires</strong> estimatifs affectés aux <strong>équipiers</strong> et/ou aux <strong>équipements</strong>.</p>
+            <span class="titre-advice">Nécessité de créer de nouveaux articles<br /></span>
+            <p class="texte-advice">Dans la majorité des cas, les articles prédéfinis et disponibles dans l'application doivent répondre à vos attentes pour constituer vos stocks et réaliser la gestion commerciale &#40;achats et ventes&#41;. Cependant, la <strong>création de nouveaux articles reste incontournable</strong> au regard du niveau de traçabilité que vous souhaitez obtenir, comme par exemple le calcul des <strong>temps de travaux</strong> et des <strong>coûts horaires</strong> estimatifs affectés aux <strong>équipiers</strong> et/ou aux <strong>équipements</strong>.</p>
          </div>
       </div>
-      <p class="texte">Quelques exemples qui doivent vous amener à créer de nouvelles variantes&nbsp;:</p>
+      <p class="texte">Quelques exemples qui doivent vous amener à créer de nouveaux articles&nbsp;:</p>
       <div class="divTableListe marge">
          <div class="divTableBody">
             <div class="divTableRow">
@@ -675,7 +675,7 @@
             </div>
          </div>
       </div>
-      <h3 align="center" class="texte aerateur procedure">1 – Procédure pour afficher une liste de variantes</h3>
+      <h3 align="center" class="texte aerateur procedure">1 – Procédure pour afficher une liste d'articles</h3>
       <p class="texte">
          Le processus suivant vous guide pour mieux comprendre le système de classement utilisé dans l'application.
       </p>
@@ -3701,12 +3701,12 @@
                   <div class="divTableCellMenu2">
                      <form>
                         <select name="ListeUrl" SIZE="1" onChange="ChangeUrl(this.form)" style="width:210px">
-                           <option selected value="">Variantes et produits</option>
-						   <option value="#categories">- Appréhender la notion de variante</option>
-                           <option value="#nelle-variante">- Créer de nouvelles variantes</option>
+                           <option selected value="">Articles et produits</option>
+						   <option value="#categories">- Appréhender la notion d'article</option>
+                           <option value="#nelle-variante">- Créer de nouveaux articles</option>
 						   <option value="#phyto">- Importer des produits phytosanitaires</option>
                            <option value="#article">- Paramétrer de nouveaux articles</option>
-						   <option value="#coop">- Créer une variante pour facture d'apport</option>
+						   <option value="#coop">- Créer un article pour facture d'apport</option>
                         </select>
                      </form>
                   </div>
@@ -3716,7 +3716,7 @@
                            <option selected value="">Équipements</option>
 						   <option value="#equipements">- Recenser vos machines et outils</option>
                            <option value="#nel-equipement">- Créer un nouvel équipement</option>
-                           <option value="#var-equipt">- Définir une variante d'équipement</option>
+                           <option value="#var-equipt">- Définir un équipement</option>
                         </select>
                      </form>
                   </div>
