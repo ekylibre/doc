@@ -90,7 +90,8 @@
             {dates: [new Date(2021, 8, 2), new Date(2021, 8, 13)], title: "Version 3.37", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
             {dates: [new Date(2021, 8, 14), new Date(2021, 10, 21)], title: "Version 3.38", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
             {dates: [new Date(2021, 10, 22), new Date(2021, 12, 18)], title: "Version 3.39", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
-         {dates: [new Date(2021, 12, 19), new Date(annee, mois, jour)], title: "Version 4.0", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
+            {dates: [new Date(2021, 12, 19), new Date(2021, 12, 25)], title: "Version 4.0", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
+		 {dates: [new Date(2021, 12, 26), new Date(annee, mois, jour)], title: "Version 4.1", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}}
          ];
          
          var sections = [
@@ -158,6 +159,124 @@
                <main>
                   <div class="accordion-container marge">
                      <div class="panel">
+                        <div class="heading">
+                           <div class="version">
+                              <h2>Note de version 4.1 du 26/01/2022</h2>
+                           </div>
+                           <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <div class="content">
+                           <div class="divTableNoteVersion">
+                              <div class="divTableBody">
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/modules.svg" alt="Modules" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Commun à plusieurs modules</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Mise à disposition d'une nouvelle cellule "Météo avec conditions de pulvérisation" indiquant, en fonction de la température, de l'humidité, de la vitesse du vent et de la pluviométrie, si les conditions de traitement sont "Défavorables", "Possibles" ou "Idéales".</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Comptabilité</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Lors de la création d'une nouvelle "Immobilisation", il est désormais possible de renseigner, au choix de l'utilisateur, une "Durée d'amortissement" ou un "Pourcentage d'amortissement".</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+								 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/stocks.svg" alt="Stocks" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Stocks</strong><br /><br />
+                                       2 améliorations
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+                                          <li>Lors de la création d'une nouvelle matière, le champ "Nom" est désormais prérempli afin d'éviter à l'utilisateur de saisir le profil de l'article sélectionné initialement. La date de création de la nouvelle matière est maintenant requise pour disposer de celle-ci dans l'application&nbsp;;</li>
+										  <li>Afin de regrouper dans un seul endroit les commandes de paramétrage des nouveaux articles, la fonctionnalité de création des "Conditionnements" est déplacée dans la section "Catalogue d'articles" du module "Configuration".</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+								 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Production</strong><br /><br />
+                                       1 amélioration et 2 bugs corrigés
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Lors de la création d'un nouvel équipement, le champ "Nom" est désormais prérempli afin d'éviter à l'utilisateur de saisir le profil de l'article sélectionné initialement. La date de création de l'équipement est maintenant requise pour disposer de celui-ci dans l'application.</li>
+                                       </ul>
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
+                                       <ul>
+										  <li>Lors du calcul du prix d'un déplacement dans une intervention, le coût horaire appliqué est celui défini dans le catalogue de prix des déplacements et se substitue à celui enregistré dans le catalogue des coûts d'usage&nbsp;;</li>
+                                          <li>Le calcul de la superficie travaillée pour une activité pérenne prend désormais correctement en compte la campagne annuelle de production.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/configuration.svg" alt="Configuration" width="60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Configuration</strong><br /><br />
+                                       5 améliorations
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+                                          <li>La section "Produits" dans le menu des commandes est désormais intitulée "Catalogue d'articles" et reçoit la fonctionnalité de création des "Conditionnements"&nbsp;;</li>
+										  <li>Dans un objectif de clarification, les "Variantes de produits" sont renommées "Articles" et les "Types de produits" sont maintenant désignés par "Profils fonctionnels"&nbsp;;</li>
+										  <li>Le libellé de la liste déroulante "Articles", regroupant les principales sous-natures de produits, est remplacé par "Articles stockables"&nbsp;;</li>
+										  <li>Dans la vue détaillée d'un article, un nouveau bouton "Dupliquer" permet de faciliter la création d'un nouvel article aux caractéristiques identiques à celui qui est affiché, avec un numéro permettant de le distinguer de l'élément dupliqué&nbsp;;</li>
+                                          <li>Lors de l'import d'un nouvel article, le champ "Nom" est désormais prérempli afin d'éviter à l'utilisateur de saisir le profil de l'article sélectionné initialement.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+					 <div class="panel">
                         <div class="heading">
                            <div class="version">
                               <h2>Note de version 4.0 du 19/01/2022</h2>
@@ -4886,6 +5005,127 @@
          </div>
       </article>
       <!-- Section pour la génération du PDF -->
+	  <div class="saut-page"></div>
+      <div class="heading-print marge-pdf aerateur-haut">
+         <h2>Note de version 4.1 du 26/01/2022</h2>
+      </div>
+      <div class="content-print marge-pdf">
+         <div class="divTableNoteVersion-pdf">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/modules.svg" alt="Modules" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Commun à plusieurs modules</strong><br /><br />
+                     1 amélioration
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>Mise à disposition d'une nouvelle cellule "Météo avec conditions de pulvérisation" indiquant, en fonction de la température, de l'humidité, de la vitesse du vent et de la pluviométrie, si les conditions de traitement sont "Défavorables", "Possibles" ou "Idéales".</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                    <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Comptabilité</strong><br /><br />
+                     1 amélioration
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>Lors de la création d'une nouvelle "Immobilisation", il est désormais possible de renseigner, au choix de l'utilisateur, une "Durée d'amortissement" ou un "Pourcentage d'amortissement".</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/stocks.svg" alt="Stocks" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Stocks</strong><br /><br />
+                     2 améliorations
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+						<li>Lors de la création d'une nouvelle matière, le champ "Nom" est désormais prérempli afin d'éviter à l'utilisateur de saisir le profil de l'article sélectionné initialement. La date de création de la nouvelle matière est maintenant requise pour disposer de celle-ci dans l'application&nbsp;;</li>
+                        <li>Afin de regrouper dans un seul endroit les commandes de paramétrage des nouveaux articles, la fonctionnalité de création des "Conditionnements" est déplacée dans la section "Catalogue d'articles" du module "Configuration".</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Production</strong><br /><br />
+                     1 amélioration et 2 bugs corrigés
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>Lors de la création d'un nouvel équipement, le champ "Nom" est désormais prérempli afin d'éviter à l'utilisateur de saisir le profil de l'article sélectionné initialement. La date de création de l'équipement est maintenant requise pour disposer de celui-ci dans l'application.</li>
+                     </ul>
+					 <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
+                     <ul>
+						<li>Lors du calcul du prix d'un déplacement dans une intervention, le coût horaire appliqué est celui défini dans le catalogue de prix des déplacements et se substitue à celui enregistré dans le catalogue des coûts d'usage&nbsp;;</li>
+                        <li>Le calcul de la superficie travaillée pour une activité pérenne prend désormais correctement en compte la campagne annuelle de production.</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="saut-page"></div>
+      <div class="content-print marge-pdf">
+         <div class="divTableNoteVersion-pdf">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/configuration.svg" alt="Configuration" width="60px">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Configuration</strong><br /><br />
+                     5 améliorations
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>La section "Produits" dans le menu des commandes est désormais intitulée "Catalogue d'articles" et reçoit la fonctionnalité de création des "Conditionnements"&nbsp;;</li>
+						<li>Dans un objectif de clarification, les "Variantes de produits" sont renommées "Articles" et les "Types de produits" sont maintenant désignés par "Profils fonctionnels"&nbsp;;</li>
+						<li>Le libellé de la liste déroulante "Articles", regroupant les principales sous-natures de produits, est remplacé par "Articles stockables"&nbsp;;</li>
+						<li>Dans la vue détaillée d'un article, un nouveau bouton "Dupliquer" permet de faciliter la création d'un nouvel article aux caractéristiques identiques à celui qui est affiché, avec un numéro permettant de le distinguer de l'élément dupliqué&nbsp;;</li>
+                        <li>Lors de l'import d'un nouvel article, le champ "Nom" est désormais prérempli afin d'éviter à l'utilisateur de saisir le profil de l'article sélectionné initialement.</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
       <div class="saut-page"></div>
       <div class="heading-print marge-pdf aerateur-haut">
          <h2>Note de version 4.0 du 19/01/2022</h2>
