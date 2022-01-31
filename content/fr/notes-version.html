@@ -91,7 +91,8 @@
             {dates: [new Date(2021, 8, 14), new Date(2021, 10, 21)], title: "Version 3.38", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
             {dates: [new Date(2021, 10, 22), new Date(2021, 12, 18)], title: "Version 3.39", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
             {dates: [new Date(2021, 12, 19), new Date(2021, 12, 25)], title: "Version 4.0", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
-		 {dates: [new Date(2021, 12, 26), new Date(annee, mois, jour)], title: "Version 4.1", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}}
+            {dates: [new Date(2021, 12, 26), new Date(2021, 12, 31)], title: "Version 4.1", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
+		 {dates: [new Date(2022, 1, 1), new Date(annee, mois, jour)], title: "Version 4.2", attrs: {fill: "#fea40b", stroke: "#fea40b"}}
          ];
          
          var sections = [
@@ -158,6 +159,96 @@
             <section id="panel-1">
                <main>
                   <div class="accordion-container marge">
+					 <div class="panel">
+                        <div class="heading">
+                           <div class="version">
+                              <h2>Note de version 4.2 du 1<sup>er</sup>/02/2022</h2>
+                           </div>
+                           <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <div class="content">
+                           <div class="divTableNoteVersion">
+                              <div class="divTableBody">
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/modules.svg" alt="Modules" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Commun à plusieurs modules</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Les graphes contenus dans les cellules sont maintenant animés lors de l'affichage des données. Un nouveau menu permet désormais d'imprimer ou de télécharger le graphe au format PNG, JPEG, PDF ou SVG.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+								 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/stocks.svg" alt="Stocks" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Stocks</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>La vue détaillée d'une "Livraison", comprenant un ou plusieurs expéditions, affiche maintenant une nouvelle section qui comptabilise et énumère l'ensemble des "Produits à expédier".</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+								 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Production</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Dans la vue "Carte" d'une zone cultivable, d'une parcelle ou de la création d'une culture, le bouton "Importer" un fichier géographique ne prend désormais en charge que le format Keyhole Markup Language &#40;.kml&#41;.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/outils.svg" alt="Outils" width="60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Outils</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>L'import des fichiers au format CSV en provenance de Square, pour réaliser le transfert des transactions, est mis à jour afin de prendre en compte les dernières évolutions du logiciel tiers.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                      <div class="panel">
                         <div class="heading">
                            <div class="version">
@@ -5007,6 +5098,92 @@
       <!-- Section pour la génération du PDF -->
 	  <div class="saut-page"></div>
       <div class="heading-print marge-pdf aerateur-haut">
+         <h2>Note de version 4.2 du 1<sup>er</sup>/02/2022</h2>
+      </div>
+      <div class="content-print marge-pdf">
+         <div class="divTableNoteVersion-pdf">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/modules.svg" alt="Modules" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Commun à plusieurs modules</strong><br /><br />
+                     1 amélioration
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>Les graphes contenus dans les cellules sont maintenant animés lors de l'affichage des données. Un nouveau menu permet désormais d'imprimer ou de télécharger le graphe au format PNG, JPEG, PDF ou SVG.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/stocks.svg" alt="Stocks" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Stocks</strong><br /><br />
+                     1 amélioration
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+						<li>La vue détaillée d'une "Livraison", comprenant un ou plusieurs expéditions, affiche maintenant une nouvelle section qui comptabilise et énumère l'ensemble des "Produits à expédier".</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/production.svg" alt="Production" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Production</strong><br /><br />
+                     1 amélioration
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>Dans la vue "Carte" d'une zone cultivable, d'une parcelle ou de la création d'une culture, le bouton "Importer" un fichier géographique ne prend désormais en charge que le format Keyhole Markup Language &#40;.kml&#41;.</li>
+                     </ul>
+                  </div>
+               </div>
+			   <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/outils.svg" alt="Outils" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Outils</strong><br /><br />
+                     1 amélioration
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>L'import des fichiers au format CSV en provenance de Square, pour réaliser le transfert des transactions, est mis à jour afin de prendre en compte les dernières évolutions du logiciel tiers.</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+	  <div class="saut-page"></div>
+      <div class="heading-print marge-pdf">
          <h2>Note de version 4.1 du 26/01/2022</h2>
       </div>
       <div class="content-print marge-pdf">
