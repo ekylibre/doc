@@ -302,7 +302,7 @@
                   <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
                </div>
                <div class="divTableCellListe">
-                  Comment importer un <a href="#import-plan" class="avoid-clicks">plan de comptes</a>, des <a href="#import-tiers" class="avoid-clicks">tiers</a>, des <a href="#import-variants" class="avoid-clicks">variantes</a>, des <a href="#import-equipments" class="avoid-clicks">équipements</a> et des <a href="#import-zones" class="avoid-clicks">zones de stockage</a>
+                  Comment importer un <a href="#import-plan" class="avoid-clicks">plan de comptes</a>, des <a href="#import-tiers" class="avoid-clicks">tiers</a>, des <a href="#import-variants" class="avoid-clicks">articles</a>, des <a href="#import-equipments" class="avoid-clicks">équipements</a> et des <a href="#import-zones" class="avoid-clicks">zones de stockage</a>
                </div>
             </div>
             <div class="divTableRow">
@@ -452,8 +452,8 @@
       </p>
       <h6>Guide de prise en main • Outils • Intégration de données</h6>
       <a class="slice-process" id="imports"></a>
-      <h2 class="texte aerateur">b - Intégration de données dans Ekyagri</h2>
-      <p class="texte">Afin de permettre l'utilisation de données externes dans <strong>Eky</strong>agri et d'éviter une double saisie, un moteur d'échange est disponible vous permettant de réaliser des imports spécifiques aux modules ou aux fonctionnalités de l'application. Les procédures suivantes vous expliquent comment importer différents jeux de données propres à votre ferme.</p>
+      <h2 class="texte aerateur">b - Intégration de données dans Ekyagri | Ekyviti</h2>
+      <p class="texte">Afin de permettre l'utilisation de données externes dans <strong>Eky</strong>agri | <strong>Eky</strong>viti et d'éviter une double saisie, un moteur d'échange est disponible vous permettant de réaliser des imports spécifiques aux modules ou aux fonctionnalités de l'application. Les procédures suivantes vous expliquent comment importer différents jeux de données propres à votre ferme.</p>
       <a class="slice-process" id="import-plan"></a>
 	  <h6>Guide de prise en main • Imports • Import d'un plan de comptes</h6>
       <h3 align="center" class="texte aerateur procedure">1 – Procédure pour importer un plan de comptes</h3>
@@ -744,8 +744,8 @@
          </p>
       </div>
       <a class="slice-process" id="import-variants"></a>
-      <h6>Guide de prise en main • Imports • Import de variantes</h6>
-      <h3 align="center" class="texte aerateur procedure">3 – Procédure pour importer des variantes dans l'application</h3>
+      <h6>Guide de prise en main • Imports • Import d'articles</h6>
+      <h3 align="center" class="texte aerateur procedure">3 – Procédure pour importer des articles dans l'application</h3>
       <div id="cont3" class="niveau">
          <div id="gauge3" class="jauge"></div>
       </div>
@@ -782,7 +782,7 @@
          <div class="info-txt">
             <span class="titre-advice">Ordre des imports<br /></span>
             <p class="texte-advice">
-               Il est vivement conseillé de réaliser l'import des variantes avant celui des équipements. En effet, on crée le tableau des équipements à importer en fonction de leur type et de ce fait, on les rattache à la nomenclature Ekylibre téléchargeable grâce au lien ci-dessous. Ils seront identifiés avec un numéro de travail. Pour faciliter ce travail, nous vous recommandons de préparer le tableau des équipements en même temps que celui des variantes.
+               Il est vivement conseillé de réaliser l'import des articles avant celui des équipements. En effet, on crée le tableau des équipements à importer en fonction de leur type et de ce fait, on les rattache à la nomenclature Ekylibre téléchargeable grâce au lien ci-dessous. Ils seront identifiés avec un numéro de travail. Pour faciliter ce travail, nous vous recommandons de préparer le tableau des équipements en même temps que celui des articles.
             </p>
          </div>
       </div>
@@ -1135,11 +1135,11 @@
             </div>
          </div>
       </div>
-      <p class="texte">Il est possible d'importer des variantes dans <strong>Eky</strong>agri. Cette fonctionnalité nécessite de disposer d'un fichier au format ODS dont la structure doit strictement respecter les préconisations édictées ci-après.</p>
+      <p class="texte">Il est possible d'importer des articles dans <strong>Eky</strong>agri. Cette fonctionnalité nécessite de disposer d'un fichier au format ODS dont la structure doit strictement respecter les préconisations édictées ci-après.</p>
       <p class="texte">La structure de ce tableau est basée sur 10 colonnes avec les informations classées selon l'ordre suivant &#40;plusieurs feuilles sont autorisées dans un même document et le symbole<img src="../images/chapitre10/asterisk.svg" alt="Astérisque" height="20" class="align-icone icone-marge-gauche icone-marge-droite">indique une donnée obligatoire&#41;.</p>
-      <p class="texte"><strong>Nom</strong><img src="../images/chapitre10/asterisk.svg" alt="Astérisque" height="20" class="align-icone icone-marge-gauche icone-marge-droite">&#40;le nom de la variante&#41;<br />
-         <strong>Variant nomen</strong><img src="../images/chapitre10/asterisk.svg" alt="Astérisque" height="20" class="align-icone icone-marge-gauche icone-marge-droite">&#40;l'identifiant de la variante selon la nomenclature Ekylibre&#41;<br />
-         <strong>Code variant</strong> &#40;un numéro de travail pour identifier la variante&#41;<br /><strong>
+      <p class="texte"><strong>Nom</strong><img src="../images/chapitre10/asterisk.svg" alt="Astérisque" height="20" class="align-icone icone-marge-gauche icone-marge-droite">&#40;le nom de l'article&#41;<br />
+         <strong>Variant nomen</strong><img src="../images/chapitre10/asterisk.svg" alt="Astérisque" height="20" class="align-icone icone-marge-gauche icone-marge-droite">&#40;l'identifiant de l'article selon la nomenclature Ekylibre&#41;<br />
+         <strong>Code variant</strong> &#40;un numéro de travail pour identifier l'article&#41;<br /><strong>
          Variété</strong> &#40;optionnel, pour désigner par exemple un produit de récolte&#41;<br />
          <strong>Dérivé</strong> &#40;optionnel, pour désigner l'espèce&#41;<br /><strong>Prix d'achat HT<br />Prix de vente HT<br />Unité du prix<br />Indicateurs complémentaires<br />France Maaid</strong> &#40;Numéro d'AMM du produit phytosanitaire&#41;
       </p>
@@ -1152,7 +1152,7 @@
             <p class="aerateur-bas download" align="center"><img src="../images/chapitre10/download.svg" alt="Télécharger" height="20" class="align-icone icone-marge-droite">Télécharger un document modèle au format ODS</p>
          </a>
       </div>
-      <p class="texte aerateur-bas">Une fois votre fichier préparé, il est alors possible de réaliser l'intégration des nouvelles données. Le processus suivant vous guide pour importer des variantes dans l'application&nbsp;:</p>
+      <p class="texte aerateur-bas">Une fois votre fichier préparé, il est alors possible de réaliser l'intégration des nouvelles données. Le processus suivant vous guide pour importer des articles dans l'application&nbsp;:</p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
       </div>
@@ -1178,7 +1178,7 @@
          <p class="max-img-process">
             <img src="../images/chapitre10/import2.png" class="contour-img" alt="Nouvel import" data-action="zoom" />
          </p>
-         <p>Puis, dans le pavé "Ekylibre" de la section "Configuration", sélectionnez "Variants - Ekylibre" dans la liste déroulante des types de fichiers.</p>
+         <p>Puis, dans le pavé "Ekylibre" de la section "Configuration", sélectionnez "Articles - Ekylibre" dans la liste déroulante des types de fichiers.</p>
          <p class="max-img-process">
             <img src="../images/chapitre10/import-variants2.png" class="contour-img" alt="Sélection du type d'import" data-action="zoom" />
          </p>
@@ -1189,7 +1189,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Sélectionnez le fichier ODS</span>
-         <p>Cliquez sur le bouton "Parcourir" pour sélectionner le fichier ODS des variantes à importer dans l'application.</p>
+         <p>Cliquez sur le bouton "Parcourir" pour sélectionner le fichier ODS des articles à importer dans l'application.</p>
          <p class="max-img-process">
             <img src="../images/chapitre10/import-variants3.png" class="contour-img" alt="Sélection fichier CSV" data-action="zoom" />
          </p>
@@ -1200,8 +1200,8 @@
          <img src="../images/commun/step4.svg" alt="4" width="52" />
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Lancez l'import des variantes</span>
-         <p>Cliquez sur le bouton <span class="btn-blue"><i class="fas fa-cog"></i>&nbsp;&nbsp;Exécuter</span> pour valider l'import des variantes.</p>
+         <span class="titre-advice">Lancez l'import des articles</span>
+         <p>Cliquez sur le bouton <span class="btn-blue"><i class="fas fa-cog"></i>&nbsp;&nbsp;Exécuter</span> pour valider l'import des articles.</p>
          <p>En cas d'incompatibilité, l'application vous avertit immédiatement qu'une erreur est survenue.</p>
          <p class="max-img-process">
             <img src="../images/chapitre10/import-variants4.png" class="contour-img" alt="Exécution import" data-action="zoom" />
@@ -1213,7 +1213,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Patientez quelques instants</span>
-         <p>La barre de progression vous informe de l'avancée du transfert des données qui peut prendre plus ou moins de temps en fonction du nombre de variantes à traiter.</p>
+         <p>La barre de progression vous informe de l'avancée du transfert des données qui peut prendre plus ou moins de temps en fonction du nombre d'articles à traiter.</p>
          <p class="max-img-process">
             <img src="../images/chapitre10/import-variants5.png" class="contour-img" alt="Progression import" data-action="zoom" />
          </p>
@@ -1234,8 +1234,8 @@
          <img src="../images/commun/step7.svg" alt="7" width="52" />
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Vérifiez les variantes</span>
-         <p>Affichez la liste des variantes pour vérifier la disponibilité des nouvelles données importées dans votre ferme. Notez que le nombre de variantes comptabilisées a également automatiquement été crédité suite à l'import.</p>
+         <span class="titre-advice">Vérifiez les articles</span>
+         <p>Affichez la liste des articles pour vérifier la disponibilité des nouvelles données importées dans votre ferme. Notez que le nombre d'articles comptabilisés a également automatiquement été crédité suite à l'import.</p>
          <p class="max-img-process">
             <img src="../images/chapitre10/import-variants7.png" class="contour-img" alt="Affichage notifications" data-action="zoom" />
          </p>
@@ -1275,7 +1275,7 @@
       <p class="texte">Il est possible d'importer des équipements dans <strong>Eky</strong>agri. Cette fonctionnalité nécessite de disposer d'un fichier au format CSV codé en UTF-8 et dont la structure doit strictement respecter les préconisations édictées ci-après.</p>
       <p class="texte">La structure de ce tableau est basée sur 12 colonnes avec les informations classées selon l'ordre suivant &#40;le symbole<img src="../images/chapitre10/asterisk.svg" alt="Astérisque" height="20" class="align-icone icone-marge-gauche icone-marge-droite">indique une donnée obligatoire&#41;&nbsp;:</p>
       <p class="texte"><strong>Nom</strong><img src="../images/chapitre10/asterisk.svg" alt="Astérisque" height="20" class="align-icone icone-marge-gauche icone-marge-droite">&#40;le nom de l'équipement&#41;<br />
-         <strong>Variant nomen</strong><img src="../images/chapitre10/asterisk.svg" alt="Astérisque" height="20" class="align-icone icone-marge-gauche icone-marge-droite">&#40;important : soit le nom de la variante en nomenclature, soit le code de la variante qui a été affecté dans le fichier variants.ods&#41;<br />
+         <strong>Variant nomen</strong><img src="../images/chapitre10/asterisk.svg" alt="Astérisque" height="20" class="align-icone icone-marge-gauche icone-marge-droite">&#40;important : soit le nom de l'article en nomenclature, soit le code de l'article qui a été affecté dans le fichier variants.ods&#41;<br />
          <strong>Code</strong> &#40;un code optionnel pour désigner l'équipement&#41;<br /><strong>
          Code place</strong> &#40;un code optionnel de la zone de bâtiment attribué au stockage de l'équipement&#41;<br />
          <strong>Date naissance</strong> &#40;la date d'acquisition ou de mise en service de l'équipement&#41;<br /><strong>Marque<br />Modèle<br />Nom du propriétaire<br />Indicateurs</strong> &#40;les caractéristiques techniques de l'équipement : puissance, volume, largeur&#41;<strong><br />Notes<br />Prix unitaire</strong> &#40;coût d'utilisation de l'équipement et non son prix d'achat&#41;<strong><br />Indicateur de prix</strong> &#40;unité de prix du coût d'utilisation - en heure par défaut&#41;
@@ -1386,8 +1386,8 @@
          <img src="../images/commun/step8.svg" alt="8" width="52" />
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Vérifiez le catalogue de prix des coûts d'usage</span>
-         <p>Dans le module "Configuration", affichez le catalogue de prix des coûts d'usage pour vérifier l'intégrité des données importées et procéder à d'éventuelles modifications.</p>
+         <span class="titre-advice">Vérifiez le catalogue des "Prix d'usage"</span>
+         <p>Dans le module "Configuration", affichez le catalogue des "Prix d'usage" pour vérifier l'intégrité des données importées et procéder à d'éventuelles modifications.</p>
          <p class="max-img-process">
             <img src="../images/chapitre10/import-equip8.png" class="contour-img" alt="Catalogue coûts d'usage" data-action="zoom" />
          </p>
