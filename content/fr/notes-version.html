@@ -89,10 +89,10 @@
             {dates: [new Date(2021, 7, 24), new Date(2021, 8, 1)], title: "Version 3.36", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
             {dates: [new Date(2021, 8, 2), new Date(2021, 8, 13)], title: "Version 3.37", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
             {dates: [new Date(2021, 8, 14), new Date(2021, 10, 21)], title: "Version 3.38", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
-            {dates: [new Date(2021, 10, 22), new Date(2021, 12, 18)], title: "Version 3.39", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
+            {dates: [new Date(2021, 10, 22), new Date(2021, 12, 12)], title: "Version 3.39", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
             {dates: [new Date(2021, 12, 19), new Date(2021, 12, 25)], title: "Version 4.0", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
-            {dates: [new Date(2021, 12, 26), new Date(2022, 1, 1)], title: "Version 4.1", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
-		 {dates: [new Date(2022, 1, 2), new Date(annee, mois, jour)], title: "Version 4.2", attrs: {fill: "#fea40b", stroke: "#fea40b"}}
+            {dates: [new Date(2021, 12, 26), new Date(2022, 1, 2)], title: "Version 4.1", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
+		 {dates: [new Date(2022, 1, 3), new Date(annee, mois, jour)], title: "Version 4.2", attrs: {fill: "#fea40b", stroke: "#fea40b"}}
          ];
          
          var sections = [
@@ -162,7 +162,7 @@
 					 <div class="panel">
                         <div class="heading">
                            <div class="version">
-                              <h2>Note de version 4.2 du 2/02/2022</h2>
+                              <h2>Note de version 4.2 du 3/02/2022</h2>
                            </div>
                            <i class="fa fa-chevron-down"></i>
                         </div>
@@ -242,6 +242,25 @@
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                                        <ul>
                                           <li>L'import des fichiers au format CSV en provenance de Square, pour réaliser le transfert des transactions, est mis à jour afin de prendre en compte les dernières évolutions du logiciel tiers.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+								 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/ekyviti.svg" alt="Ekyviti" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Ekyviti</strong><br /><br />
+                                       1 bug corrigé
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+                                          <li>La synchronisation des encaissements enregistrés avec la solution Baqio permet désormais de conserver le pointage des écritures réalisé lors d’un précédent rapprochement bancaire.</li>
                                        </ul>
                                     </div>
                                  </div>
@@ -5097,8 +5116,8 @@
       </article>
       <!-- Section pour la génération du PDF -->
 	  <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
-         <h2>Note de version 4.2 du 2/02/2022</h2>
+      <div class="heading-print marge-pdf">
+         <h2>Note de version 4.2 du 3/02/2022</h2>
       </div>
       <div class="content-print marge-pdf">
          <div class="divTableNoteVersion-pdf">
@@ -5176,6 +5195,25 @@
                      <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                      <ul>
                         <li>L'import des fichiers au format CSV en provenance de Square, pour réaliser le transfert des transactions, est mis à jour afin de prendre en compte les dernières évolutions du logiciel tiers.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/ekyviti.svg" alt="Ekyviti" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Ekyviti</strong><br /><br />
+                     1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>La synchronisation des encaissements enregistrés avec la solution Baqio permet désormais de conserver le pointage des écritures réalisé lors d’un précédent rapprochement bancaire.</li>
                      </ul>
                   </div>
                </div>
@@ -5304,7 +5342,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 4.0 du 19/01/2022</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -5496,7 +5534,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 3.39 du 22/11/2021</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -5561,6 +5599,13 @@
                      </ul>
                   </div>
                </div>
+            </div>
+         </div>
+      </div>
+      <div class="content-print marge-pdf">
+         <div class="divTableNoteVersion-pdf">
+            <div class="divTableBody">
+               <div class="saut-page"></div>
                <div class="divTableRow">
                   <div class="divTableCellNoteVersion1" style="width: 60px">
                      <img src="../images/notes-version/stocks.svg" alt="Stocks" width="60">
@@ -5581,13 +5626,6 @@
                      </ul>
                   </div>
                </div>
-            </div>
-         </div>
-      </div>
-      <div class="saut-page"></div>
-      <div class="content-print marge-pdf">
-         <div class="divTableNoteVersion-pdf">
-            <div class="divTableBody">
                <div class="divTableRow">
                   <div class="divTableCellNoteVersion1" style="width: 60px">
                      <img src="../images/notes-version/production.svg" alt="Production" width="60">
@@ -5651,6 +5689,13 @@
                      </ul>
                   </div>
                </div>
+            </div>
+         </div>
+      </div>
+      <div class="content-print marge-pdf">
+         <div class="divTableNoteVersion-pdf">
+            <div class="divTableBody">
+               <div class="saut-page"></div>
                <div class="divTableRow">
                   <div class="divTableCellNoteVersion1" style="width: 60px">
                      <img src="../images/notes-version/ekyviti.svg" alt="Ekyviti" width="60">
@@ -5675,7 +5720,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 3.38 du 14/09/2021</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -5764,7 +5809,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 3.37 du 2/09/2021</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -5817,6 +5862,13 @@
                      </ul>
                   </div>
                </div>
+            </div>
+         </div>
+      </div>
+      <div class="content-print marge-pdf">
+         <div class="divTableNoteVersion-pdf">
+            <div class="divTableBody">
+               <div class="saut-page"></div>
                <div class="divTableRow">
                   <div class="divTableCellNoteVersion1" style="width: 60px">
                      <img src="../images/notes-version/stocks.svg" alt="Stocks" width="60">
@@ -5837,13 +5889,6 @@
                      </ul>
                   </div>
                </div>
-            </div>
-         </div>
-      </div>
-      <div class="content-print marge-pdf">
-         <div class="divTableNoteVersion-pdf">
-            <div class="divTableBody">
-               <div class="saut-page"></div>
                <div class="divTableRow">
                   <div class="divTableCellNoteVersion1">
                      <img src="../images/notes-version/configuration.svg" alt="Configuration" width="60px">
@@ -5893,7 +5938,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 3.36 du 24/08/2021</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -5980,7 +6025,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 3.35 du 7/07/2021</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -6052,7 +6097,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 3.34 du 23/05/2021</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -6107,6 +6152,13 @@
                      </ul>
                   </div>
                </div>
+            </div>
+         </div>
+      </div>
+      <div class="content-print marge-pdf">
+         <div class="divTableNoteVersion-pdf">
+            <div class="divTableBody">
+               <div class="saut-page"></div>
                <div class="divTableRow">
                   <div class="divTableCellNoteVersion1">
                      <img src="../images/notes-version/outils.svg" alt="Outils" width="60">
@@ -6126,13 +6178,6 @@
                      </ul>
                   </div>
                </div>
-            </div>
-         </div>
-      </div>
-      <div class="content-print marge-pdf">
-         <div class="divTableNoteVersion-pdf">
-            <div class="divTableBody">
-               <div class="saut-page"></div>
                <div class="divTableRow">
                   <div class="divTableCellNoteVersion1">
                      <img src="../images/notes-version/configuration.svg" alt="Configuration" width="60px">
@@ -6158,7 +6203,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 3.33 du 3/06/2021</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -6292,7 +6337,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 3.32 du 6/05/2021</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -6379,7 +6424,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 3.31 du 3/05/2021</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -6514,6 +6559,13 @@
                      </ul>
                   </div>
                </div>
+            </div>
+         </div>
+      </div>
+      <div class="content-print marge-pdf">
+         <div class="divTableNoteVersion-pdf">
+            <div class="divTableBody">
+               <div class="saut-page"></div>
                <div class="divTableRow">
                   <div class="divTableCellNoteVersion1">
                      <img src="../images/notes-version/configuration.svg" alt="Configuration" width="60px">
@@ -6541,7 +6593,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 3.30 du 25/03/2021</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -6670,7 +6722,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 3.29 du 4/03/2021</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -6760,7 +6812,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 3.28 du 18/02/2021</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -6843,7 +6895,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 3.27 du 3/02/2021</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -6918,6 +6970,13 @@
                      </ul>
                   </div>
                </div>
+            </div>
+         </div>
+      </div>
+      <div class="content-print marge-pdf">
+         <div class="divTableNoteVersion-pdf">
+            <div class="divTableBody">
+               <div class="saut-page"></div>
                <div class="divTableRow">
                   <div class="divTableCellNoteVersion1">
                      <img src="../images/notes-version/outils.svg" alt="Outils" width="60">
@@ -6940,7 +6999,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 3.26 du 22/01/2021</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -7096,7 +7155,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 3.25 du 17/12/2020</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -7257,7 +7316,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 3.24 du 3/12/2020</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -7413,7 +7472,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 3.23 du 18/11/2020</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -7496,7 +7555,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 3.22 du 10/11/2020</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -7637,7 +7696,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 3.20 du 11/09/2020</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -7719,6 +7778,13 @@
                      </ul>
                   </div>
                </div>
+            </div>
+         </div>
+      </div>
+      <div class="content-print marge-pdf">
+         <div class="divTableNoteVersion-pdf">
+            <div class="divTableBody">
+               <div class="saut-page"></div>
                <div class="divTableRow">
                   <div class="divTableCellNoteVersion1">
                      <img src="../images/notes-version/outils.svg" alt="Outils" width="60">
@@ -7741,7 +7807,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 3.19 du 26/08/2020</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -7824,6 +7890,13 @@
                      </ul>
                   </div>
                </div>
+            </div>
+         </div>
+      </div>
+      <div class="content-print marge-pdf">
+         <div class="divTableNoteVersion-pdf">
+            <div class="divTableBody">
+               <div class="saut-page"></div>
                <div class="divTableRow">
                   <div class="divTableCellNoteVersion1">
                      <img src="../images/notes-version/outils.svg" alt="Outils" width="60">
@@ -7846,7 +7919,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 3.18 du 13/08/2020</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -7962,7 +8035,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 3.17 du 4/08/2020</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -8100,7 +8173,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 3.16 du 17/07/2020</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -8238,7 +8311,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 3.15 du 6/07/2020</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -8406,7 +8479,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 3.14 du 18/06/2020</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -8546,7 +8619,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 3.13 du 12/06/2020</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -8679,7 +8752,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 3.10 du 28/04/2020</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -8730,7 +8803,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 3.9 du 17/04/2020</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -8760,7 +8833,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 3.8 du 27/03/2020</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -8818,7 +8891,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 3.7 du 10/03/2020</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -8889,7 +8962,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 3.6 du 21/02/2020</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -8958,7 +9031,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 3.5 du 19/02/2020</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -9008,7 +9081,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 3.3 du 23/01/2020</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -9168,7 +9241,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 3.1 du 12/12/2019</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -9302,7 +9375,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 3.0 du 24/10/2019</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -9382,19 +9455,6 @@
                         <li>Ajout d'une colonne "N<sup>o</sup> de référence" permettant de retracer l'historique des écritures comptables&nbsp;;</li>
                         <li>Ajout d'un sélecteur permettant d'afficher le Grand-livre général ou les Grands-livres auxiliaires des comptes clients ou fournisseurs.</li>
                      </ul>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="saut-page"></div>
-      <div class="content-print marge-pdf">
-         <div class="divTableNoteVersion-pdf">
-            <div class="divTableBody">
-               <div class="divTableRow">
-                  <div class="divTableCellNoteVersion3" style="width: 60px">
-                  </div>
-                  <div class="divTableCellNoteVersion6" style="width: auto">
                      <p class="improve"><em>Exercices comptables</em></p>
                      <ul>
                         <li>Possibilité de "Verrouiller" un exercice comptable si l'utilisateur ne réalise pas la clôture comptable avec Ekylibre&nbsp;;</li>
@@ -9435,19 +9495,6 @@
                         <li>Suppression du bouton "Comptabiliser" dans les journaux qui n'étaient plus liés à une action. Les écritures non validées sont enregistrées dans le brouillard et sont comptabilisées à la validation&nbsp;;</li>
                         <li>La saisie d'écritures dans les comptes de classes radicales est désormais interdite.</li>
                      </ul>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="saut-page"></div>
-      <div class="content-print marge-pdf">
-         <div class="divTableNoteVersion-pdf">
-            <div class="divTableBody">
-               <div class="divTableRow">
-                  <div class="divTableCellNoteVersion3" style="width: 60px">
-                  </div>
-                  <div class="divTableCellNoteVersion6" style="width: auto">
                      <p class="improve"><em>Lettrage de comptes</em></p>
                      <ul>
                         <li>Stabilisation de la fonctionnalité.</li>
@@ -9513,7 +9560,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 2.60 du 3/10/2019</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -9601,6 +9648,13 @@
                      </ul>
                   </div>
                </div>
+            </div>
+         </div>
+      </div>
+      <div class="content-print marge-pdf">
+         <div class="divTableNoteVersion-pdf">
+            <div class="divTableBody">
+               <div class="saut-page"></div>
                <div class="divTableRow">
                   <div class="divTableCellNoteVersion1">
                      <img src="../images/notes-version/outils.svg" alt="Outils" width="60">
@@ -9624,7 +9678,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 2.59 du 10/09/2019</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -9743,7 +9797,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 2.56 du 31/07/2019</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -9843,7 +9897,7 @@
          </div>
       </div>
       <div class="saut-page"></div>
-      <div class="heading-print marge-pdf aerateur-haut">
+      <div class="heading-print marge-pdf">
          <h2>Note de version 2.55 du 21/06/2019</h2>
       </div>
       <div class="content-print marge-pdf">
