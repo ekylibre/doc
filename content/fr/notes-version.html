@@ -92,7 +92,8 @@
             {dates: [new Date(2021, 10, 22), new Date(2021, 12, 18)], title: "Version 3.39", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
             {dates: [new Date(2021, 12, 19), new Date(2021, 12, 25)], title: "Version 4.0", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
             {dates: [new Date(2021, 12, 26), new Date(2022, 1, 2)], title: "Version 4.1", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
-		 {dates: [new Date(2022, 1, 3), new Date(annee, mois, jour)], title: "Version 4.2", attrs: {fill: "#fea40b", stroke: "#fea40b"}}
+            {dates: [new Date(2022, 1, 3), new Date(2022, 1, 20)], title: "Version 4.2", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
+		 {dates: [new Date(2022, 1, 21), new Date(annee, mois, jour)], title: "Version 4.3", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
          ];
          
          var sections = [
@@ -159,6 +160,119 @@
             <section id="panel-1">
                <main>
                   <div class="accordion-container marge">
+					 <div class="panel">
+                        <div class="heading">
+                           <div class="version">
+                              <h2>Note de version 4.3 du 21/02/2022</h2>
+                           </div>
+                           <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <div class="content">
+                           <div class="divTableNoteVersion">
+                              <div class="divTableBody">
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/modules.svg" alt="Modules" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Commun à plusieurs modules</strong><br /><br />
+                                       1 amélioration et 1 bug corrigé
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Dans les "Cellules" contenant un graphe, le menu permet maintenant d'afficher ou de masquer les données utilisées pour sa construction, et de les télécharger sous la forme d'un tableau au format CSV ou XLS.</li>
+                                       </ul>
+									   <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+                                          <li>Dans le formulaire des commandes &#40;module "Achats"&#41; et des réceptions &#40;module "Stocks"&#41;, les valeurs du "Stock actuel" et du "Stock après commande" sont maintenant correctement converties par rapport à l'unité de référence de l'article.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+								 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/stocks.svg" alt="Stocks" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Stocks</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>La liste des matières affiche désormais tous les produits en stock, quelle que soit la sous-nature définie par défaut pour les "Articles stockables".</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/outils.svg" alt="Outils" width="60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Outils</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Mise à disposition d'un nouvel outil d'import de fichiers au format CSV en provenance de la solution tierce LogicAll, pour réaliser le transfert de la liste des clients et du plan de comptes correspondant.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+								 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/configuration.svg" alt="Configuration" width="60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Configuration</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Dans la section "Mon compte", il est maintenant possible d'acheter des tickets permettant d'acquérir du temps consacré à la réalisation de prestations à la carte ou de développements personnalisés.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+								 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/ekyviti.svg" alt="Ekyviti" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Ekyviti</strong><br /><br />
+                                       1 bug corrigé
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+                                          <li>Les encaissements par chèque, enregistrés avec la solution Baqio, adoptent désormais par défaut et automatiquement le statut "Reçu", afin d'apparaître correctement dans la section "Affaire" des ventes correspondantes.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
 					 <div class="panel">
                         <div class="heading">
                            <div class="version">
@@ -5115,6 +5229,122 @@
          </div>
       </article>
       <!-- Section pour la génération du PDF -->
+	  <div class="saut-page"></div>
+      <div class="heading-print marge-pdf">
+         <h2>Note de version 4.3 du 21/02/2022</h2>
+      </div>
+      <div class="content-print marge-pdf">
+         <div class="divTableNoteVersion-pdf">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/modules.svg" alt="Modules" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Commun à plusieurs modules</strong><br /><br />
+                     1 amélioration et 1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>Dans les "Cellules" contenant un graphe, le menu permet maintenant d'afficher ou de masquer les données utilisées pour sa construction, et de les télécharger sous la forme d'un tableau au format CSV ou XLS.</li>
+                     </ul>
+					 <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>Dans le formulaire des commandes &#40;module "Achats"&#41; et des réceptions &#40;module "Stocks"&#41;, les valeurs du "Stock actuel" et du "Stock après commande" sont maintenant correctement converties par rapport à l'unité de référence de l'article.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/stocks.svg" alt="Stocks" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Stocks</strong><br /><br />
+                     1 amélioration
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+						<li>La liste des matières affiche désormais tous les produits en stock, quelle que soit la sous-nature définie par défaut pour les "Articles stockables".</li>
+                     </ul>
+                  </div>
+               </div>
+			   <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/outils.svg" alt="Outils" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Outils</strong><br /><br />
+                     1 amélioration
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>Mise à disposition d'un nouvel outil d'import de fichiers au format CSV en provenance de la solution tierce LogicAll, pour réaliser le transfert de la liste des clients et du plan de comptes correspondant.</li>
+                     </ul>
+                  </div>
+               </div>
+			   <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/configuration.svg" alt="Configuration" width="60px">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Configuration</strong><br /><br />
+                     1 amélioration
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>Dans la section "Mon compte", il est maintenant possible d'acheter des tickets permettant d'acquérir du temps consacré à la réalisation de prestations à la carte ou de développements personnalisés.</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="saut-page"></div>
+      <div class="content-print marge-pdf">
+         <div class="divTableNoteVersion-pdf">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/ekyviti.svg" alt="Ekyviti" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Ekyviti</strong><br /><br />
+                     1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>Les encaissements par chèque, enregistrés avec la solution Baqio, adoptent désormais par défaut et automatiquement le statut "Reçu", afin d'apparaître correctement dans la section "Affaire" des ventes correspondantes.</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
 	  <div class="saut-page"></div>
       <div class="heading-print marge-pdf">
          <h2>Note de version 4.2 du 3/02/2022</h2>
