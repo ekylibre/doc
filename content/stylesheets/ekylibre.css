@@ -541,7 +541,7 @@ a:visited {
 }
 
 .texte-tableau2 {
-	font-size: 14px;
+	font-size: 13px;
 	font-weight: bold;
 }
 
@@ -1331,7 +1331,7 @@ a:visited {
 
 .divTableCell,
 .divTableHead {
-	height: 24px;
+	height: 21px;
 	border-top-width: 3px;
 	border-top-style: solid;
 	border-top-color: #ffffff;
@@ -1345,7 +1345,7 @@ a:visited {
 	border-right-style: solid;
 	border-right-color: #ffffff;
 	display: table-cell;
-	padding: 8px 0;
+	padding: 2px 0 6px;
 	text-align: center;
 	vertical-align: middle;
 	background-color: #dddddd;
@@ -1375,7 +1375,7 @@ a:visited {
 
 .divTableCell2,
 .divTableHead2 {
-	height: 24px;
+	height: 21px;
 	border-top-width: 3px;
 	border-top-style: solid;
 	border-top-color: #ffffff;
@@ -1397,7 +1397,7 @@ a:visited {
 
 .divTableCell21,
 .divTableHead21 {
-	height: 24px;
+	height: 21px;
 	border-top-width: 3px;
 	border-top-style: solid;
 	border-top-color: #ffffff;
@@ -1411,7 +1411,7 @@ a:visited {
 	border-right-style: solid;
 	border-right-color: #ffffff;
 	display: table-cell;
-	padding: 2px 0 0 10px;
+	padding: 1px 0 0 10px;
 	text-align: center;
 	vertical-align: middle;
 	background-color: #eeeeee;
