@@ -4682,3 +4682,12 @@ iframe {
 	background-size: 38px !important;
 	background-color: #83e054;
 }
+
+/* Couleurs charges et produits */
+.txt-red {
+	color: #ff0000;
+}
+
+.txt-green {
+	color: #008f46;
+}
