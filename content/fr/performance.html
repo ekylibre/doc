@@ -317,6 +317,14 @@
                   la marge est calculée pour chaque produit vendu selon les fluctuations de rendement et de prix de vente
                </div>
             </div>
+			<div class="divTableRow">
+               <div class="divTableCellGlossaire1">
+                  MATIF
+               </div>
+               <div class="divTableCellGlossaire2">
+                  signifie marché à terme international de France. Il s'agit d'un type de marché financier destiné à garantir aux investisseurs la fluctuation des cours sur certains produits, ainsi que la variation des taux d'intérêt et du prix des matières premières
+               </div>
+            </div>
             <div class="divTableRow">
                <div class="divTableCellGlossaire1">
                   Seuil de commercialisation
@@ -327,8 +335,8 @@
             </div>
          </div>
       </div>
-	  <p class="texte aerateur" align="center"><img src="../images/performance/construction.png" width="100" alt="Construction"/></p>
-	  <div class="warn-fond aerateur-bas">
+	  <!--<p class="texte aerateur" align="center"><img src="../images/performance/construction.png" width="100" alt="Construction"/></p>-->
+	  <div class="warn-fond aerateur-haut aerateur-bas">
          <div class="floating-box-warn">
             <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
          </div>
@@ -915,6 +923,7 @@
 	  <a class="slice-process" id="seuils"></a>
 	  <h2 class="texte aerateur">c - Seuils de commercialisation</h2>
 	  <p class="texte">Les seuils de commercialisation sont calculés dynamiquement pour chaque production, en fonction du rendement visé, des charges directes &#40;engrais, semences, produits phytosanitaires…&#41; et indirectes &#40;assurance, électricité, etc…&#41; prédéfinis dans un itinéraire technique et ventilées sur les activités via une clé de répartition. Pour chaque activité, ils permettent d'obtenir un prix d'équilibre, c'est à dire un prix de vente en-dessous duquel l'exploitant ne peut pas atteindre ses objectifs en terme de rémunération et de réserves de trésorerie à constituer.</p>
+	  <p class="texte">Le processus suivant vous guide pour afficher et simuler le prix d'équilibre d'une activité.</p>
 	  <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
       </div>
@@ -924,7 +933,7 @@
          <p align="center"><img src="../images/performance/economique.svg" alt="Économique" width="60"></p>
          <p>Puis, dans la barre latérale du module "Économique", cliquez sur "Seuils de commercialisation" dans la section "Seuils de commercialisation" symbolisée par l'icône d'une balance<img src="../images/performance/scale-balanced.svg" alt="Balance" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des activités.</p>
          <p class="max-img-process">
-            <img src="../images/performance/seuils1.png" class="contour-img" alt="Seuil de commercialisation" data-action="zoom" />
+            <img src="../images/performance/seuils1.png" class="contour-img" alt="Seuils de commercialisation" data-action="zoom" />
          </p>
 		 <p>Tous les seuils de commercialisation des activités principales &#40;végétale, viticoles, animales&#41; déjà calculés sont listés ici.</p>
       </div>
@@ -934,9 +943,9 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Modifiez les salaires et les provisions</span>
-         <p>À l'aide des curseurs à glissière situés en haut de la fenêtre principale, modifiez les rémunérations, les charges fixes et les provisions/réserves annuelles de l'exploitation. Le prix d'équilibre et le graphe sont automatiquement mis à jour.</p>
+         <p>À l'aide des curseurs de défilement situés en haut de la fenêtre principale, modifiez les rémunérations, les charges fixes et les provisions/réserves annuelles de l'exploitation. Le prix d'équilibre et le graphe sont dynamiquement mis à jour, permettant de comparer le cours <span class="tooltip">MATIF<span class="tooltiptext tooltip-top">Voir glossaire</span></span> de la matière avec le seuil de commercialisation.</p>
          <p class="max-img-process">
-            <img src="../images/performance/seuils2.png" class="contour-img" alt="Seuil de commercialisation" data-action="zoom" />
+            <img src="../images/performance/seuils2.png" class="contour-img" alt="Modification des charges" data-action="zoom" />
          </p>
       </div>
 	  <br />
@@ -945,9 +954,9 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Modifiez le rendement d'une activité</span>
-         <p>À l'aide du curseur à glissière situé sous le tableau des données d'une activité, modifiez son rendement. Le prix d'équilibre et le graphe sont automatiquement mis à jour.</p>
+         <p>À l'aide du curseur de défilement situé sous le tableau récapitulatif du budget de l'activité, modifiez son rendement. Le prix d'équilibre et le graphe sont dynamiquement mis à jour, permettant de comparer le cours <span class="tooltip">MATIF<span class="tooltiptext tooltip-top">Voir glossaire</span></span> de la matière avec le seuil de commercialisation.</p>
          <p class="max-img-process">
-            <img src="../images/performance/seuils3.png" class="contour-img" alt="Seuil de commercialisation" data-action="zoom" />
+            <img src="../images/performance/seuils3.png" class="contour-img" alt="Modification du rendement" data-action="zoom" />
          </p>
 		 <p>Dès que le prix du marché est supérieur au seuil de commercialisation, il est possible de réaliser la vente des produits récoltés en sécurisant la situation économique de l'activité.</p>
       </div>
