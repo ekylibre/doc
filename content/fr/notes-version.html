@@ -93,7 +93,8 @@
             {dates: [new Date(2021, 12, 19), new Date(2021, 12, 25)], title: "Version 4.0", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
             {dates: [new Date(2021, 12, 26), new Date(2022, 1, 2)], title: "Version 4.1", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
             {dates: [new Date(2022, 1, 3), new Date(2022, 1, 20)], title: "Version 4.2", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
-		 {dates: [new Date(2022, 1, 21), new Date(annee, mois, jour)], title: "Version 4.3", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
+            {dates: [new Date(2022, 1, 21), new Date(2022, 2, 8)], title: "Version 4.3", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
+		 {dates: [new Date(2022, 2, 9), new Date(annee, mois, jour)], title: "Version 4.4", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}}
          ];
          
          var sections = [
@@ -108,7 +109,7 @@
          	animated: true,
          	tooltips: true,
          	defaultStartDate: new Date(2019, 5, 1),
-         	endDate: new Date(2022, 2, 31),
+         	endDate: new Date(2022, 5, 30),
          	sections: sections,
          	sectionLabelAttrs: {"fill": "#3f70ce", "font-weight": "bold"},
          	labelInterval: isHalfMonth,
@@ -185,7 +186,7 @@
                                     <div class="divTableCellNoteVersion4" style="width: auto">
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                                        <ul>
-                                          <li>Dans l'objectif d'améliorer l'interface utilisateur, de nombreuses icônes sont remplacées par de nouvelles, plus représentatives du module disponible ou de la fonctionnalité ciblée.</li>
+                                          <li>Dans l'objectif d'améliorer l'interface utilisateur, de nombreuses icônes sont remplacées par de nouvelles, plus représentatives du module disponible ou de la fonctionnalité ciblée. L'affichage de certaines informations est également optimisé pour faciliter leur visualisation.</li>
                                        </ul>
                                     </div>
                                  </div>
@@ -204,7 +205,7 @@
                                     <div class="divTableCellNoteVersion4" style="width: auto">
                                        <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
                                        <ul>
-                                          <li>La suppression d'un virement bancaire détruit désormais en cascade toutes les écritures comptables qui ont été générées initialement par l'opération.</li>
+                                          <li>La suppression d'un virement bancaire interne détruit désormais en cascade toutes les écritures comptables qui ont été générées initialement par l'opération.</li>
                                        </ul>
                                     </div>
                                  </div>
@@ -224,27 +225,7 @@
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                                        <ul>
                                           <li>La création d'une nouvelle activité déclenche maintenant automatiquement son ouverture pour la campagne en cours&nbsp;;</li>
-										  <li>Dans la vue détaillée d'une activité, un nouveau bouton permet désormais de calculer le budget prévisionnel pour l'activité sélectionnée.</li>
-                                       </ul>
-                                    </div>
-                                 </div>
-								 <div class="divTableRow">
-                                    <div class="divTableCellNoteVersion1" style="width: 60px">
-                                       <img src="../images/notes-version/rh2022.svg" alt="Ressources humaines" width="60">
-                                    </div>
-                                    <div class="divTableCellNoteVersion2" style="width: auto">
-                                       <strong>RH</strong><br /><br />
-                                       2 améliorations
-                                    </div>
-                                 </div>
-                                 <div class="divTableRow">
-                                    <div class="divTableCellNoteVersion3" style="width: 60px">
-                                    </div>
-                                    <div class="divTableCellNoteVersion4" style="width: auto">
-                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
-                                       <ul>
-                                          <li>Mise à disposition d'une nouvelle fonctionnalité permettant de créer des "Groupes d'équipiers", à partir des équipiers existants, afin de constituer des équipes de travailleurs&nbsp;;</li>
-										  <li>Une nouveau formulaire de saisie permet d'enregistrer le début et la fin d'une période de travail d'un équipier afin d'afficher automatiquement ce temps dans un calendrier mensuel.</li>
+										  <li>Dans la vue détaillée d'une activité, un nouveau bouton permet désormais de calculer le budget prévisionnel de référence pour l'activité sélectionnée.</li>
                                        </ul>
                                     </div>
                                  </div>
@@ -263,26 +244,7 @@
                                     <div class="divTableCellNoteVersion4" style="width: auto">
                                        <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
                                        <ul>
-                                          <li>Lors d'une synchronisation, les ventes successivement enregistrées puis annulées avec la solution tierce Baqio ne sont plus transférées dans l'application.</li>
-                                       </ul>
-                                    </div>
-                                 </div>
-								 <div class="divTableRow">
-                                    <div class="divTableCellNoteVersion1">
-                                       <img src="../images/notes-version/duke.svg" alt="Duke" width="60px">
-                                    </div>
-                                    <div class="divTableCellNoteVersion2">
-                                       <strong>Duke</strong><br /><br />
-                                       1 amélioration
-                                    </div>
-                                 </div>
-                                 <div class="divTableRow">
-                                    <div class="divTableCellNoteVersion3" style="width: 60px">
-                                    </div>
-                                    <div class="divTableCellNoteVersion4" style="width: auto">
-                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
-                                       <ul>
-                                          <li>Une nouvelle commande de reconnaissance vocale permet d'utiliser l'assistant pour réaliser la saisie des temps de travaux des équipiers.</li>
+                                          <li>Lors d'une synchronisation avec la solution tierce Baqio, les ventes qui ont été successivement enregistrées puis annulées ne sont désormais plus transférées dans l'application.</li>
                                        </ul>
                                     </div>
                                  </div>
@@ -5381,7 +5343,7 @@
                   <div class="divTableCellNoteVersion4" style="width: auto">
                      <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                      <ul>
-                        <li>Dans l'objectif d'améliorer l'interface utilisateur, de nombreuses icônes sont remplacées par de nouvelles, plus représentatives du module disponible ou de la fonctionnalité ciblée.</li>
+                        <li>Dans l'objectif d'améliorer l'interface utilisateur, de nombreuses icônes sont remplacées par de nouvelles, plus représentatives du module disponible ou de la fonctionnalité ciblée. L'affichage de certaines informations est également optimisé pour faciliter leur visualisation.</li>
                      </ul>
                   </div>
                </div>
@@ -5400,7 +5362,7 @@
                   <div class="divTableCellNoteVersion4" style="width: auto">
                      <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
                      <ul>
-                        <li>La suppression d'un virement bancaire détruit désormais en cascade toutes les écritures comptables qui ont été générées initialement par l'opération.</li>
+                        <li>La suppression d'un virement bancaire interne détruit désormais en cascade toutes les écritures comptables qui ont été générées initialement par l'opération.</li>
                      </ul>
                   </div>
                </div>
@@ -5420,29 +5382,9 @@
                      <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                      <ul>
                         <li>La création d'une nouvelle activité déclenche maintenant automatiquement son ouverture pour la campagne en cours&nbsp;;</li>
-                        <li>Dans la vue détaillée d'une activité, un nouveau bouton permet désormais de calculer le budget prévisionnel pour l'activité sélectionnée.</li>
+                        <li>Dans la vue détaillée d'une activité, un nouveau bouton permet désormais de calculer le budget prévisionnel de référence pour l'activité sélectionnée.</li>
                      </ul>
                   </div>
-               </div>
-               <div class="divTableRow">
-                  <div class="divTableCellNoteVersion1" style="width: 60px">
-                     <img src="../images/notes-version/rh2022.svg" alt="Ressources humaines" width="60">
-                  </div>
-                  <div class="divTableCellNoteVersion2" style="width: auto">
-                     <strong>RH</strong><br /><br />
-                     2 améliorations
-                  </div>
-               </div>
-               <div class="divTableRow">
-                  <div class="divTableCellNoteVersion3" style="width: 60px">
-                  </div>
-                  <div class="divTableCellNoteVersion4" style="width: auto">
-                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
-                     <ul>
-                        <li>Mise à disposition d'une nouvelle fonctionnalité permettant de créer des "Groupes d'équipiers", à partir des équipiers existants, afin de constituer des équipes de travailleurs&nbsp;;</li>
-						<li>Une nouveau formulaire de saisie permet d'enregistrer le début et la fin d'une période de travail d'un équipier afin d'afficher automatiquement ce temps dans un calendrier mensuel.</li>
-                     </ul>
-				   </div>
                </div>
 			   <div class="divTableRow">
                   <div class="divTableCellNoteVersion1" style="width: 60px">
@@ -5459,26 +5401,7 @@
                   <div class="divTableCellNoteVersion4" style="width: auto">
                      <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
                      <ul>
-                        <li>Lors d'une synchronisation, les ventes successivement enregistrées puis annulées avec la solution tierce Baqio ne sont plus transférées dans l'application.</li>
-                     </ul>
-                  </div>
-               </div>
-			   <div class="divTableRow">
-                  <div class="divTableCellNoteVersion1" style="width: 60px;">
-                     <img src="../images/notes-version/duke.svg" alt="Duke" width="60px;">
-                  </div>
-                  <div class="divTableCellNoteVersion2">
-                     <strong>Duke</strong><br /><br />
-                     1 amélioration
-                  </div>
-               </div>
-               <div class="divTableRow">
-                  <div class="divTableCellNoteVersion3" style="width: 60px">
-                  </div>
-                  <div class="divTableCellNoteVersion4" style="width: auto">
-                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
-                     <ul>
-                        <li>Une nouvelle commande de reconnaissance vocale permet d'utiliser l'assistant pour réaliser la saisie des temps de travaux des équipiers.</li>
+                        <li>Lors d'une synchronisation avec la solution tierce Baqio, les ventes qui ont été successivement enregistrées puis annulées ne sont désormais plus transférées dans l'application.</li>
                      </ul>
                   </div>
                </div>
