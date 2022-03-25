@@ -735,15 +735,15 @@ a:visited {
 	background-size: 54px;
 }
 
-.cogs-green {
-	background: url("../fr/images/commun/cogs-green.svg") no-repeat right;
+.prod-green {
+	background: url("../fr/images/commun/farm-green.svg") no-repeat right;
 	background-position: 98% 15px !important;
 	background-size: 28px !important;
 	background-color: #eee;
 }
 
-.cogs-orange {
-	background: url("../fr/images/commun/cogs-orange.svg") no-repeat right;
+.prod-orange {
+	background: url("../fr/images/commun/farm-orange.svg") no-repeat right;
 	background-position: 98% 15px !important;
 	background-size: 28px !important;
 	background-color: #eee;
@@ -791,29 +791,29 @@ a:visited {
 	background-color: #eee;
 }
 
-.truck-green {
-	background: url("../fr/images/commun/truck-green.svg") no-repeat right;
+.stocks-green {
+	background: url("../fr/images/commun/warehouse-green.svg") no-repeat right;
 	background-position: 98% 15px !important;
 	background-size: 28px !important;
 	background-color: #eee;
 }
 
-.truck-orange {
-	background: url("../fr/images/commun/truck-orange.svg") no-repeat right;
+.stocks-orange {
+	background: url("../fr/images/commun/warehouse-orange.svg") no-repeat right;
 	background-position: 98% 15px !important;
 	background-size: 28px !important;
 	background-color: #eee;
 }
 
-.money-green {
-	background: url("../fr/images/commun/money-green.svg") no-repeat right;
+.compta-green {
+	background: url("../fr/images/commun/calculator-green.svg") no-repeat right;
 	background-position: 98% 15px !important;
 	background-size: 28px !important;
 	background-color: #eee;
 }
 
-.money-orange {
-	background: url("../fr/images/commun/money-orange.svg") no-repeat right;
+.compta-orange {
+	background: url("../fr/images/commun/calculator-orange.svg") no-repeat right;
 	background-position: 98% 15px !important;
 	background-size: 28px !important;
 	background-color: #eee;
