@@ -460,6 +460,7 @@
             <img src="../images/chapitre7/societe7.png" class="contour-img" alt="Liste activités" data-action="zoom" />
          </p>
 		 <p>Cliquez sur <span class="btn-blue">Modifier</span> pour valider l'opération.</p>
+		 <a class="slice-process" id="pref-vente"></a>
       </div>
 	  <br />
       <div class="floating-box process">
@@ -467,7 +468,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">En option&nbsp;: activez la mise à jour du catalogue de prix de vente</span>
-         <p>Dans la section "Préférences de vente", cochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="18" class="align-icone icone-marge-gauche icone-marge-droite">à droite de "Mettre à jour le catalogue de prix de vente après facturation" pour actualiser automatiquement le prix d'un article associé à un conditionnement.</p>
+         <p>Dans la section "Préférences de vente", cochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="18" class="align-icone icone-marge-gauche icone-marge-droite">à droite de "Mettre à jour le catalogue de prix de vente après facturation" pour actualiser, sur demande, le prix d'un article dans un catalogue.</p>
          <p class="max-img-process">
             <img src="../images/chapitre7/societe8.png" class="contour-img" alt="Catalogue de prix de vente" data-action="zoom" />
          </p>
@@ -677,9 +678,13 @@
       </div>
       <div class="process-txt">
          <p>Cliquez sur <span class="btn-blue">Ajouter&nbsp;un&nbsp;élément</span> pour créer une première ligne de vente.</p>
-		 <p>Saisissez un mot-clef dans le champ "Variante" pour filtrer les résultats affichés et choisissez le produit vendu. Sélectionnez un conditionnement, puis renseignez la quantité, le prix unitaire HT et le taux de TVA à appliquer.</p>
+		 <p>Saisissez un mot-clef dans le champ "Article" pour filtrer les résultats affichés et choisissez le produit vendu. Sélectionnez un conditionnement, puis renseignez la quantité, le prix unitaire HT et le taux de TVA à appliquer.</p>
 		 <p class="max-img-process">
             <img src="../images/chapitre7/vente3.png" class="contour-img" alt="Créer une nouvelle vente" data-action="zoom" />
+         </p>
+		 <p>Si "Mettre à jour le catalogue de prix de vente après facturation" a été activé dans les <a href="#pref-vente" class="avoid-clicks">&#171;&nbsp;Préférences de vente&nbsp;&#187;</a> de la société, une option permet de mettre à jour ou non le montant saisi dans la ligne de vente. Cochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="18" class="align-icone icone-marge-gauche icone-marge-droite">pour enregistrer le nouveau prix de l'article et actualiser le catalogue.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre7/maj-catalogue1.png" class="contour-img" alt="Mise à jour du prix" data-action="zoom" />
          </p>
 		 <p>Notez que le délai d'encaissement affiché est celui qui est associé au <a href="#types" class="avoid-clicks">type de vente</a> sélectionné à l'étape n<sup>o</sup>&nbsp;2. Il ne peut pas être modifié lors de la saisie de la vente.</p>
 		 <p>Choisissez un conditionnement ou <a href="../chapitre8#conditionnement" target="_self" class="avoid-clicks">créez-en un nouveau</a> à la volée en sélectionnant "Ajouter un nouvel enregistrement" dans la liste déroulante "Conditionnement".</p>
@@ -697,7 +702,7 @@
          </div>
       </div>
 	  <div class="process-txt">
-         <p>Procédez de la même manière pour ajouter successivement de nouvelles lignes de vente avec les informations requises.<br />Notez que pour ajouter d'éventuels frais de port, saisissez "Transport" dans le champ "Variante" pour sélectionner cet article dans une nouvelle ligne de vente.</p>
+         <p>Procédez de la même manière pour ajouter successivement de nouvelles lignes de vente avec les informations requises.<br />Notez que pour ajouter d'éventuels frais de port, saisissez "Transport" dans le champ "Article" pour sélectionner cet article dans une nouvelle ligne de vente.</p>
          <p>Cochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="18" class="align-icone icone-marge-gauche icone-marge-droite">à droite de "Devis au format lettre" pour personnaliser le devis ou délivrer une information complémentaire.</p>
          <p>En cliquant sur le symbole<img src="../images/commun/align-justify.svg" alt="Annotation" height="20" class="align-icone icone-marge-gauche icone-marge-droite">, un champ libre est découvert pour vous permettre d'insérer une annotation à la ligne de vente.</p>
          <p>Notez que si vous avez activé la répartition des ventes dans les préférences analytiques des <a href="#societe" class="avoid-clicks" target="_self">paramètres de la société</a>, une liste déroulante vous permet de sélectionner une activité parmi celles ouvertes.</p>
