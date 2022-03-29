@@ -354,6 +354,7 @@
                            <option value="#organisation">- Paramétrer une nouvelle organisation</option>
 						   <option value="#lien">- Rattacher un contact à une organisation</option>
 						   <option value="#equipiers">- Convertir un contact en équipier</option>
+						   <option value="#group-equip">- Créer un groupe d'équipiers</option>
 						   <option value="#typeequipier">- Configurer un type d'équipier</option>
 						   <option value="#registre">- Obtenir le registre horaire des opérateurs</option>
                         </select>
@@ -416,6 +417,7 @@
                   <option value="#organisation">- Paramétrer une nouvelle organisation</option>
 				  <option value="#lien">- Rattacher un contact à une organisation</option>
 				  <option value="#equipiers">- Convertir un contact en équipier</option>
+				  <option value="#group-equip">- Créer un groupe d'équipiers</option>
 				  <option value="#typeequipier">- Configurer un type d'équipier</option>
 				  <option value="#registre">- Obtenir le registre horaire des opérateurs</option>
                </optgroup>
@@ -444,7 +446,7 @@
                <div class="divTableRow">
                   <div class="divTableCellPDF1" style="width: 234px">Catalogues de prix&nbsp;<img src="../images/chapitre8/book.svg" alt="Catalogue" height="20" class="align-compta icone-marge-gauche"></div>
                   <div class="divTableCellPDF1" style="width: 234px">Variantes et produits&nbsp;<img src="../images/chapitre8/wheat.svg" alt="Produits" height="20" class="align-icone icone-marge-gauche"></div>
-                  <div class="divTableCellPDF3" style="width: 234px">Équipements&nbsp;<img src="../images/chapitre8/tractor.svg" alt="Tracteur" height="21" class="align-compta icone-marge-gauche"></div>
+                  <div class="divTableCellPDF3" style="width: 234px">Équipements&nbsp;<img src="../images/chapitre8/tractor.svg" alt="Tracteur" height="22" class="align-compta icone-marge-gauche"></div>
                </div>
                <div class="divTableRow">
                   <div class="divTableCellPDF2">- Créer un catalogue des coûts d'usage</div>
@@ -476,9 +478,9 @@
          <div class="divTableCompta marge aerateur-haut">
             <div class="divTableBody">
                <div class="divTableRow">
-                  <div class="divTableCellPDF1" style="width: 234px">Tiers et équipiers&nbsp;<img src="../images/chapitre8/users.svg" alt="Tiers et équipiers" height="20" class="align-compta icone-marge-gauche"></div>
-                  <div class="divTableCellPDF1" style="width: 234px">Stocks&nbsp;<img src="../images/chapitre8/truck.svg" alt="Stocks" height="22" class="align-compta icone-marge-gauche"></div>
-                  <div class="divTableCellPDF3" style="width: 234px">Salaires et contrats&nbsp;<img src="../images/chapitre8/cog.svg" alt="Salaires" height="18" class="align-icone icone-marge-gauche"></div>
+                  <div class="divTableCellPDF1" style="width: 234px">Tiers et équipiers&nbsp;<img src="../images/chapitre8/users.svg" alt="Tiers et équipiers" height="18" class="align-compta icone-marge-gauche"></div>
+                  <div class="divTableCellPDF1" style="width: 234px">Stocks&nbsp;<img src="../images/chapitre8/warehouse.svg" alt="Stocks" height="23" class="align-compta icone-marge-gauche"></div>
+                  <div class="divTableCellPDF3" style="width: 234px">Salaires et contrats&nbsp;<img src="../images/chapitre8/cowboy.svg" alt="Salaires" height="20" class="align-icone icone-marge-gauche"></div>
                </div>
                <div class="divTableRow">
                   <div class="divTableCellPDF2">- Créer un nouveau contact</div>
@@ -501,17 +503,17 @@
 				  <div class="divTableCellPDF2">- Créer un contrat de travail</div>
                </div>
                <div class="divTableRow">
-                  <div class="divTableCellPDF2">- Configurer un type d'équipier</div>
+				  <div class="divTableCellPDF2">- Créer un groupe d'équipiers</div>
                   <div class="divTableCellPDF2">- Facturer une expédition</div>
 				  <div class="divTableCellPDF5">&nbsp;</div>
                </div>
                <div class="divTableRow">
-                  <div class="divTableCellPDF2">- Obtenir le registre horaire des opérateurs</div>
+				  <div class="divTableCellPDF2">- Configurer un type d'équipier</div>
                   <div class="divTableCellPDF2">- Paramétrer les stocks permanents</div>
                   <div class="divTableCellPDF5">&nbsp;</div>
                </div>
                <div class="divTableRow">
-                  <div class="divTableCellPDF5">&nbsp;</div>
+                  <div class="divTableCellPDF2">- Obtenir le registre horaire des opérateurs</div>
                   <div class="divTableCellPDF2">- Réaliser un inventaire des stocks</div>
                   <div class="divTableCellPDF5">&nbsp;</div>
                </div>
@@ -2966,6 +2968,7 @@
       <h6>Guide de prise en main • Stocks, tiers et RH • Création groupe d'équipiers</h6>
 	  <a class="slice-process" id="group-equip"></a>
       <h3 align="center" class="texte aerateur procedure">5 – Procédure de création d'un groupe d'équipiers</h3>
+	  <p class="texte">Cette fonctionnalité permet de configurer des "Groupes d'équipiers" à partir d'une sélection d'équipiers &#40;salariés, saisonniers, etc.&#41; pour constituer des équipes de travailleurs.</p>
       <p class="texte">Le processus suivant vous guide pour créer un groupe d'équipiers dans l'application.</p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
@@ -2999,7 +3002,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Configurez le nouveau groupe d'équipiers</span>
-         <p>Nommez le nouveau groupe d'équipiers. En option, attribuez-lui un numéro de travail.</p>
+         <p>Nommez le nouveau groupe d'équipiers et, en option, attribuez-lui un numéro de travail.</p>
          <p class="max-img-process">
             <img src="../images/chapitre8/group-equip3.png" class="contour-img" alt="Paramétrage du groupe d'équipiers" data-action="zoom" />
          </p>
@@ -3035,7 +3038,7 @@
       <div class="process-txt">
          <span class="titre-advice">Sélectionnez les équipiers</span>
          <p>Sélectionnez un premier équipier dans la liste déroulante à droite du libellé "Équipier".</p>
-		 <p>Puis cliquez sur le lien "Ajouter un équipier" pour ajouter autant d'équipiers que souhaité dans le nouveau groupe.</p>
+		 <p>Puis cliquez sur le lien "Ajouter un équipier" pour ajouter autant d'équipiers que vous souhaitez dans le nouveau groupe. Cliquez sur la croix<img src="../images/commun/times-blue.svg" alt="Supprimer" height="20" class="align-icone icone-marge-gauche icone-marge-droite">à droite du formulaire pour supprimer un équipier du groupe.</p>
          <p class="max-img-process">
             <img src="../images/chapitre8/group-equip7.png" class="contour-img" alt="Sélection des équipiers" data-action="zoom" />
          </p>
@@ -3855,6 +3858,7 @@
                            <option value="#organisation">- Paramétrer une nouvelle organisation</option>
 						   <option value="#lien">- Rattacher un contact à une organisation</option>
 						   <option value="#equipiers">- Convertir un contact en équipier</option>
+						   <option value="#group-equip">- Créer un groupe d'équipiers</option>
 						   <option value="#typeequipier">- Configurer un type d'équipier</option>
 						   <option value="#registre">- Obtenir le registre horaire des opérateurs</option>
                         </select>
