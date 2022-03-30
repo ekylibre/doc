@@ -4457,6 +4457,21 @@ iframe {
     background-size: 30px;
 }
 
+.triangle-border2 {
+    position: relative;
+    padding: 12px 12px 14px 50px;
+    /*margin: 1em 0 3em;*/
+    margin: 0;
+    border: 3px solid #5a8f00;
+    color: #333;
+    background: #fff;
+    border-radius: 10px;
+    background-image: url("../fr/images/commun/micro.svg");
+    background-repeat: no-repeat;
+    background-position: top 12px left 12px;
+    background-size: 30px;
+}
+
 /*
 .triangle-border::before {
     content: "";
@@ -4481,6 +4496,18 @@ iframe {
     display: block;
     width: 0;
 }
+
+.triangle-border2::before {
+    content: "";
+    position: absolute;
+    bottom: -16px;
+    left: 40px;
+    border-width: 15px 16px 0;
+    border-style: solid;
+    border-color: #5a8f00 transparent;
+    display: block;
+    width: 0;
+}
 /*
 .triangle-border::after {
     content: "";
@@ -4495,6 +4522,18 @@ iframe {
 }
 */
 .triangle-border::after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 43px;
+    border-width: 12px 13px 0;
+    border-style: solid;
+    border-color: #fff transparent;
+    display: block;
+    width: 0;
+}
+
+.triangle-border2::after {
     content: "";
     position: absolute;
     bottom: -12px;
