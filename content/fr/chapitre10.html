@@ -366,7 +366,7 @@
                   <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
                </div>
                <div class="divTableCellListe">
-                  Comment paramétrer des <a href="#connexions" class="avoid-clicks">connexions partenaires</a> pour afficher ou exploiter des données fournies par des tiers
+                  Comment paramétrer des <a href="#connexions" class="avoid-clicks">connexions partenaires</a> pour afficher ou exploiter des données fournies par des tiers&nbsp;: <a href="#openweather" class="avoid-clicks">OpenWeatherMap</a>, <a href="#samsys" class="avoid-clicks">Samsys</a> et <a href="#weenat" class="avoid-clicks">Weenat</a>.
                </div>
             </div>
          </div>
@@ -2506,9 +2506,11 @@
       <p align="center" class="aerateur-haut aerateur-bas texte">
          <img src="../images/chapitre10/illus-partners.png" alt="Illustration partenaires" width="450px" />
       </p>
-      <p class="texte"><strong>Eky</strong>agri vous permet de définir des connexions partenaires afin d'afficher, dans un indicateur, des informations en provenance d'un autre fournisseur de services en ligne. Ces connexions offrent également la possibilité d'échanger ou d'intégrer automatiquement des données enregistrées dans une solution tierce ou via des capteurs et des boîtiers connectés.</p>
+      <p class="texte"><strong>Eky</strong>agri et <strong>Eky</strong>viti vous permettent de définir des connexions partenaires afin d'afficher, dans des cellules dédiées, les informations en provenance d'un autre fournisseur de services en ligne. Ces connexions offrent également la possibilité d'échanger ou d'intégrer automatiquement des données enregistrées dans une solution tierce ou via des capteurs et des boîtiers connectés. La connexion avec la solution Baqio est documentée dans le chapitre <a href="../ekyviti#baqio" target="_self"><strong>Eky</strong>viti</a>.</p>
       <p class="texte">Notez que pour être fonctionnelles, certaines connexions partenaires sont susceptibles d'engendrer des frais liés à l'achat de matériels compatibles et/ou à la souscription d'abonnements complémentaires.</p>
-      <h3 align="center" class="texte aerateur procedure">1 – Connexion avec OpenWeatherMap</h3>
+      <h6>Guide de prise en main • Outils • Connexion OpenWeatherMap</h6>
+	  <a class="slice-process" id="openweather"></a>
+	  <h3 align="center" class="texte aerateur procedure">1 – Connexion avec OpenWeatherMap</h3>
       <div id="cont10" class="niveau">
          <div id="gauge10" class="jauge"></div>
       </div>
@@ -2622,7 +2624,7 @@
          <p align="center">
             <img src="../images/chapitre10/connexions9.png" class="contour-img" alt="Menu secondaire" data-action="zoom" />
          </p>
-         <p>Une nouvelle clef API est générée. Elle est composée de caractères alphanumériques et va permettre d'établir une connexion sécurisée entre votre ferme <strong>Eky</strong>agri et les services de prévisions météorologiques mis à disposition par OpenWeatherMap.</p>
+         <p>Une nouvelle clef API est générée. Elle est composée de caractères alphanumériques et va permettre d'établir une connexion sécurisée entre votre instance <strong>Eky</strong>agri | <strong>Eky</strong>viti et les services de prévisions météorologiques mis à disposition par OpenWeatherMap.</p>
          <p align="center">
             <img src="../images/chapitre10/connexions10.png" class="contour-img" alt="Clef API" data-action="zoom" />
          </p>
@@ -2649,7 +2651,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Créez une nouvelle connexion</span>
-         <p>Cliquez sur le bouton "Services en ligne".</p>
+         <p>Cliquez sur le bouton "Services en ligne" en bas de la fenêtre principale.</p>
          <p class="max-img-process">
             <img src="../images/chapitre10/connexions12.png" class="contour-img" alt="Création nouvelle connexion" data-action="zoom" />
          </p>
@@ -2682,7 +2684,7 @@
       </div>
 	  <h6>Guide de prise en main • Outils • Connexion Samsys</h6>
 	  <a class="slice-process" id="samsys"></a>
-	  <h3 align="center" class="texte aerateur procedure">2 – Connexion avec Samsys</h3>
+	  <h3 align="center" class="texte aerateur procedure">2 – Connexion avec la solution Samsys</h3>
       <div id="cont11" class="niveau">
          <div id="gauge11" class="jauge"></div>
       </div>
@@ -2712,14 +2714,14 @@
           });
          });
       </script>
-      <p class="texte">Le processus suivant vous guide pour établir la connexion et synchroniser les trajets géolocalisés avec la solution Samsys dans l'objectif d'enregistrer une nouvelle intervention dans <strong>Eky</strong>agri | <strong>Eky</strong>viti.</p>
+      <p class="texte">Le processus suivant vous guide pour établir la connexion et synchroniser les trajets géolocalisés avec les produits <a href="https://samsys.fr/" title="Samsys" target="_blank">Samsys</a> dans l'objectif d'enregistrer une nouvelle intervention dans <strong>Eky</strong>agri | <strong>Eky</strong>viti.</p>
 	  <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
       </div>
       <div class="process-txt">
          <span class="titre-advice">Prérequis&nbsp;: vérifiez vos ZC et vos équipements</span>
          <p>
-            Assurez-vous que toutes vos zones cultivables et vos équipements soient préalablement correctement configurés dans l'application.
+            Assurez-vous que toutes vos zones cultivables et vos équipements sont correctement configurés dans l'application.
          </p>
 		 <p class="max-img-process">
             <img src="../images/chapitre10/samsys1.png" class="contour-img" alt="Liste des ZC" data-action="zoom" />
@@ -2750,7 +2752,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Activez la connexion Samsys</span>
-         <p>Cliquez sur le pavé "Samsys", puis saisissez l'identifiant et le mot de passe de votre abonnement souscrit auprès de Samsys.</p>
+         <p>Cliquez sur le pavé "Samsys", puis saisissez l'identifiant et le mot de passe utilisés pour accéder à votre compte utilisateur sur le site internet de Samsys.</p>
          <p class="max-img-process">
             <img src="../images/chapitre10/samsys4.png" class="contour-img" alt="Création nouvelle connexion" data-action="zoom" />
          </p>
@@ -2850,7 +2852,7 @@
       </div>
 	  <h6>Guide de prise en main • Outils • Connexion Weenat</h6>
 	  <a class="slice-process" id="weenat"></a>
-	  <h3 align="center" class="texte aerateur procedure">3 – Connexion avec Weenat</h3>
+	  <h3 align="center" class="texte aerateur procedure">3 – Connexion avec la solution Weenat</h3>
       <div id="cont12" class="niveau">
          <div id="gauge12" class="jauge"></div>
       </div>
@@ -2880,14 +2882,14 @@
           });
          });
       </script>
-      <p class="texte">Le processus suivant vous guide pour établir la connexion et transférer les mesures enregistrées avec les capteurs Weenat dans <strong>Eky</strong>agri | <strong>Eky</strong>viti.</p>
+      <p class="texte">Le processus suivant vous guide pour établir la connexion et transférer les mesures des précipitations enregistrées avec les capteurs agro-météo <a href="https://weenat.com/" title="Weenat" target="_blank">Weenat</a> dans <strong>Eky</strong>agri | <strong>Eky</strong>viti.</p>
 	  <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
       </div>
       <div class="process-txt">
          <span class="titre-advice">Prérequis&nbsp;: vérifiez vos parcelles</span>
          <p>
-            Assurez-vous que toutes vos parcelles soient préalablement correctement définies dans l'application.
+            Assurez-vous que toutes vos parcelles sont présentes et correctement définies dans l'application.
          </p>
 		 <p class="max-img-process">
             <img src="../images/chapitre10/weenat1.png" class="contour-img" alt="Liste des parcelles" data-action="zoom" />
@@ -2914,7 +2916,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Activez la connexion Weenat</span>
-         <p>Cliquez sur le pavé "Weenat", puis saisissez l'identifiant et le mot de passe utilisés pour accéder à votre compte administrateur chez Weenat.</p>
+         <p>Cliquez sur le pavé "Weenat", puis saisissez l'identifiant et le mot de passe utilisés pour accéder à votre compte utilisateur sur le site internet de Weenat.</p>
          <p class="max-img-process">
             <img src="../images/chapitre10/weenat3.png" class="contour-img" alt="Création nouvelle connexion" data-action="zoom" />
          </p>
@@ -2932,7 +2934,7 @@
          <img src="../images/commun/step4.svg" alt="4" width="52" />
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Affichez votre tableau de bord</span>
+         <span class="titre-advice">Affichez le tableau de bord de la production</span>
          <p>
             Cliquez sur le lien "Production" dans le "Menu principal" ou sur le bouton "Production" de la page d'accueil&nbsp;:
          </p>
@@ -2940,13 +2942,14 @@
          <p class="max-img-process">
             <img src="../images/chapitre10/weenat5.png" class="contour-img" alt="Tableau de bord de la production" data-action="zoom" />
          </p>
+		 <p>Notez que la sélection d'un autre tableau de bord que celui de la production est autorisée.</p>
       </div>
 	  <br />
 	  <div class="floating-box process">
          <img src="../images/commun/step5.svg" alt="5" width="52" />
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Configurez votre tableau de bord</span>
+         <span class="titre-advice">Configurez le tableau de bord</span>
          <p>Cliquez sur le bouton<img class="btn-gris icone-marge-gauche icone-marge-droite" src="../images/chapitre10/configurer.svg" alt="Configurer">en haut à droite de la fenêtre principale.</p>
 		 <p>Une fois le mode "Configuration" activé, une liste déroulante contenant les différentes cellules mises à disposition apparaît.</p>
 		 <p class="max-img-process">
@@ -2969,8 +2972,8 @@
          <img src="../images/commun/step7.svg" alt="7" width="52" />
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Confirmez la mise à disposition de la cellule</span>
-		 <p>Cliquez ensuite sur le bouton<img class="btn-gris icone-marge-gauche icone-marge-droite" src="../images/commun/ajouter.svg" alt="+ Ajouter">à droite de la liste pour positionner la cellule dans la boîte supérieure du tableau de bord.</p>
+         <span class="titre-advice">Confirmez la mise en service de la cellule</span>
+		 <p>Cliquez ensuite sur le bouton<img class="btn-gris icone-marge-gauche icone-marge-droite" src="../images/commun/ajouter.svg" alt="+ Ajouter">à droite de la liste pour déclencher l'affichage de la cellule dans la boîte supérieure du tableau de bord.</p>
 		 <p class="max-img-process">
             <img src="../images/chapitre10/weenat8.png" class="contour-img" alt="Sélection cellule" data-action="zoom" />
          </p>
@@ -2980,14 +2983,17 @@
          <img src="../images/commun/step8.svg" alt="8" width="52" />
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Validez la nouvelle configuration</span>
+         <span class="titre-advice">Agencez les cellules et validez les modifications</span>
          <p>
-            Déplacez, le cas échéant, la cellule "Carte" dans une autre boîte, et cliquez sur le bouton<img class="btn-gris icone-marge-gauche icone-marge-droite" src="../images/chapitre10/configurer.svg" alt="Configurer">pour quitter le mode "Configuration" &#40;consultez la <a class="avoid-clicks" href="../chapitre4#perso" target="_self">personnalisation des tableaux de bord</a>&#41;.
+           Personnalisez la disposition des boîtes et des cellules dans le <a class="avoid-clicks" href="../chapitre4#perso" target="_self">tableau de bord</a>, en fonction de la priorité que vous accordez aux différents indicateurs.
+         </p>
+		 <p>
+           Cliquez à nouveau sur le bouton<img class="btn-gris icone-marge-gauche icone-marge-droite" src="../images/chapitre10/configurer.svg" alt="Configurer">pour quitter le mode "Configuration".
          </p>
          <p class="max-img-process">
             <img src="../images/chapitre10/weenat9.png" class="contour-img" alt="Carte avec cumul de pluie" data-action="zoom" />
          </p>
-		 <p>Rafraîchissez votre navigateur, La cellule affiche le cumul de pluie et la position d'un ou de plusieurs capteurs dans la carte.</p>
+		 <p>Rafraîchissez votre navigateur. Après chaque synchronisation, la cellule actualise et affiche le cumul des précipitations ainsi que la position d'un ou de plusieurs capteurs dans la carte.</p>
       </div>
 	  <div class="pdf">
          <p align="right" class="texte aerateur-top aerateur-bas">Passez au <a class="avoid-clicks" href="../performance">chapitre suivant</a> de ce guide.</p>
