@@ -94,8 +94,8 @@
             {dates: [new Date(2021, 12, 26), new Date(2022, 1, 2)], title: "Version 4.1", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
             {dates: [new Date(2022, 1, 3), new Date(2022, 1, 20)], title: "Version 4.2", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
             {dates: [new Date(2022, 1, 21), new Date(2022, 2, 9)], title: "Version 4.3", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
-		 {dates: [new Date(2022, 2, 10), new Date(2022, 3, 6)], title: "Version 4.4", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
-		 {dates: [new Date(2022, 3, 7), new Date(annee, mois, jour)], title: "Version 4.5", attrs: {fill: "#fea40b", stroke: "#fea40b"}}
+		 {dates: [new Date(2022, 2, 10), new Date(2022, 3, 11)], title: "Version 4.4", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
+		 {dates: [new Date(2022, 3, 12), new Date(annee, mois, jour)], title: "Version 4.5", attrs: {fill: "#fea40b", stroke: "#fea40b"}}
          ];
          
          var sections = [
@@ -165,7 +165,7 @@
 					 <div class="panel">
                         <div class="heading">
                            <div class="version">
-                              <h2>Note de version 4.5 du 7/04/2022</h2>
+                              <h2>Note de version 4.5 du 12/04/2022</h2>
                            </div>
                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
@@ -239,7 +239,7 @@
                                     </div>
                                     <div class="divTableCellNoteVersion2" style="width: auto">
                                        <strong>Production</strong><br /><br />
-                                       3 améliorations et 1 bug corrigé
+                                       2 améliorations et 1 bug corrigé
                                     </div>
                                  </div>
                                  <div class="divTableRow">
@@ -249,7 +249,6 @@
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                                        <ul>
                                           <li>Dans la vue détaillée d'une zone cultivable, 3 nouveaux indicateurs sont automatiquement renseignés pour connaître la "Zone de captage", la "Réserve utile en eau" et la "Profondeur du sol" &#40;données sources IGN et INRAE&#41;&nbsp;;</li>
-										  <li>Dans la vue détaillée d'un équipement ou d'une culture, une nouvelle section "Relevés d'indicateur" est mise à disposition pour afficher les caractéristiques d'une machine &#40;largeur, capacité de stockage volumique nominale, etc.&#41; ou la surface nette assolée&nbsp;;</li>
 										  <li>Lors de la saisie d'un intervention, il n'est plus possible de sélectionner une culture implantée sur une parcelle dont la date de fin est antérieure à la date de l'enregistrement.</li>
                                        </ul>
 									   <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
@@ -5521,7 +5520,7 @@
       <!-- Section pour la génération du PDF -->
 	  <div class="saut-page"></div>
 	  <div class="heading-print marge-pdf">
-         <h2>Note de version 4.5 du 7/04/2022</h2>
+         <h2>Note de version 4.5 du 12/04/2022</h2>
       </div>
       <div class="content-print marge-pdf">
          <div class="divTableNoteVersion-pdf">
@@ -5584,6 +5583,30 @@
 					 <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
                      <ul>
                         <li>Un bon d'expédition est désormais imprimable au format PDF sans provoquer d'erreur, dans le cas où le prix d'un produit n'est pas spécifié dans la liste des éléments du colis sortant.</li>
+                    </ul>
+                  </div>
+               </div>
+			   <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/production2022.svg" alt="Production" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Production</strong><br /><br />
+                     2 améliorations et 1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>Dans la vue détaillée d'une zone cultivable, 3 nouveaux indicateurs sont automatiquement renseignés pour connaître la "Zone de captage", la "Réserve utile en eau" et la "Profondeur du sol" &#40;données sources IGN et INRAE&#41;&nbsp;;</li>
+                        <li>Lors de la saisie d'un intervention, il n'est plus possible de sélectionner une culture implantée sur une parcelle dont la date de fin est antérieure à la date de l'enregistrement.</li>
+                     </ul>
+					 <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>Lorsqu'une intervention avec pulvérisation est planifiée, l'IFT est systématiquement calculé mais seules les interventions terminées ou validées sont maintenant prises en compte pour générer le bilan IFT et afficher les informations de traitement dans le graphe de la cellule IFT.</li>
                      </ul>
                   </div>
                </div>
@@ -5595,31 +5618,6 @@
          <div class="divTableNoteVersion-pdf">
             <div class="divTableBody">
                <div class="divTableRow">
-                  <div class="divTableCellNoteVersion1" style="width: 60px">
-                     <img src="../images/notes-version/production2022.svg" alt="Production" width="60">
-                  </div>
-                  <div class="divTableCellNoteVersion2" style="width: auto">
-                     <strong>Production</strong><br /><br />
-                     3 améliorations et 1 bug corrigé
-                  </div>
-               </div>
-               <div class="divTableRow">
-                  <div class="divTableCellNoteVersion3" style="width: 60px">
-                  </div>
-                  <div class="divTableCellNoteVersion4" style="width: auto">
-                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
-                     <ul>
-                        <li>Dans la vue détaillée d'une zone cultivable, 3 nouveaux indicateurs sont automatiquement renseignés pour connaître la "Zone de captage", la "Réserve utile en eau" et la "Profondeur du sol" &#40;données sources IGN et INRAE&#41;&nbsp;;</li>
-						<li>Dans la vue détaillée d'un équipement ou d'une culture, une nouvelle section "Relevés d'indicateur" est mise à disposition pour afficher les caractéristiques d'une machine &#40;largeur, capacité de stockage volumique nominale, etc.&#41; ou la surface nette assolée&nbsp;;</li>
-                        <li>Lors de la saisie d'un intervention, il n'est plus possible de sélectionner une culture implantée sur une parcelle dont la date de fin est antérieure à la date de l'enregistrement.</li>
-                     </ul>
-					 <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
-                     <ul>
-                        <li>Lorsqu'une intervention avec pulvérisation est planifiée, l'IFT est systématiquement calculé mais seules les interventions terminées ou validées sont maintenant prises en compte pour générer le bilan IFT et afficher les informations de traitement dans le graphe de la cellule IFT.</li>
-                     </ul>
-                  </div>
-               </div>
-			   <div class="divTableRow">
                   <div class="divTableCellNoteVersion1">
                      <img src="../images/notes-version/rh2022.svg" alt="Ressources humaines" width="60">
                   </div>
@@ -5677,14 +5675,7 @@
                      </ul>
                   </div>
                </div>
-            </div>
-         </div>
-      </div>
-      <div class="saut-page"></div>
-      <div class="content-print marge-pdf">
-         <div class="divTableNoteVersion-pdf">
-            <div class="divTableBody">
-               <div class="divTableRow">
+			   <div class="divTableRow">
                   <div class="divTableCellNoteVersion1" style="width: 60px">
                      <img src="../images/notes-version/ekyviti.svg" alt="Ekyviti" width="60">
                   </div>
