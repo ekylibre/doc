@@ -244,7 +244,7 @@
                      <ul style="display: none;">
                         <div class="bloc marge-basse">
                            <li><a href="../chapitre10#fichiers" target="_self">Importation de fichiers CSV</a></li>
-                           <li><a href="../chapitre10#imports" target="_self">Intégration de données dans <strong>Eky</strong>agri</a></li>
+                           <li><a href="../chapitre10#imports" target="_self">Import de données dans <strong>Eky</strong>agri | <strong>Eky</strong>viti</a></li>
                            <li><a href="../chapitre10#extractions" target="_self">Extraction de données au format CSV</a></li>
 						   <li><a href="../chapitre10#ged" target="_self">Gestion des documents archivés</a></li>
 						   <li><a href="../chapitre10#connexions" target="_self">Connexions partenaires</a></li>
@@ -265,7 +265,9 @@
                         <div class="bloc">
 						   <li><a href="#activites" target="_self">Paramétrage des activités</a></li>
 						   <li><a href="#budgets" target="_self">Budgets prévisionnels</a></li>
-                           <li><a href="#seuils" target="_self">Seuils de commercialisation</a></li>
+                           <li><a href="#couts-prod" target="_self">Coûts de production</a></li>
+						   <li><a href="#marges" target="_self">Marges</a></li>
+						   <li><a href="#seuils" target="_self">Seuils de commercialisation</a></li>
                         </div>
                      </ul>
                   </li>
@@ -851,8 +853,9 @@
             <img src="../images/performance/budget-aux7.png" class="contour-img" alt="Modifier une dépense" data-action="zoom" />
          </p>
       </div>
-	  <h3 align="center" class="texte aerateur procedure">E - Modifier le budget prévisionnel d'une activité principale</h3>
 	  <h6>Guide de prise en main • Performance • Modifier un budget prévisionnel</h6>
+	  <a class="slice-process" id="modif-budget"></a>
+	  <h3 align="center" class="texte aerateur procedure">E - Modifier le budget prévisionnel d'une activité principale</h3>
 	  <p class="texte">Le processus suivant vous guide pour afficher et modifier le budget prévisionnel d'une activité principale.</p>
 	  <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
@@ -928,9 +931,60 @@
             Cliquez sur <span class="btn-blue">Modifier</span> pour valider l'opération.
          </p>
       </div>
+	  <h6>Guide de prise en main • Performance • Coûts de production</h6>
+	  <a class="slice-process" id="couts-prod"></a>
+	  <h2 class="texte aerateur">c - Coûts de production</h2>
+	  <p class="texte">Les coûts de production sont calculés dynamiquement pour chaque production, en fonction du rendement visé, des charges directes &#40;engrais, semences, produits phytosanitaires…&#41; et indirectes &#40;assurance, électricité, etc…&#41; prédéfinis dans un itinéraire technique et ventilées sur les activités via une clé de répartition.</p>
+	  <p class="texte">Le processus suivant vous guide pour afficher les coûts de production des activités ouvertes durant une campagne.</p>
+	  <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52" />
+      </div>
+	  <div class="process-txt">
+         <span class="titre-advice">Accédez aux coûts de production</span>
+		 <p>Cliquez sur le lien "Économique" dans le "Menu principal" ou sur le bouton "Économique" de la page d'accueil&nbsp;:</p>
+         <p align="center"><img src="../images/performance/economique.svg" alt="Économique" width="60"></p>
+         <p>Puis, dans la barre latérale du module "Économique", cliquez sur "Coûts de production" dans la section "Coûts" symbolisée par l'icône d'une loupe<img src="../images/performance/glass-dollar.svg" alt="Loupe" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des activités.</p>
+         <p class="max-img-process">
+            <img src="../images/performance/couts-prod1.png" class="contour-img" alt="Coûts de production" data-action="zoom" />
+         </p>
+		 <p>Tous les coûts de production des activités principales &#40;végétale, viticoles, animales&#41; déjà calculés sont listés ici.</p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52" />
+      </div>
+	  <div class="process-txt">
+         <span class="titre-advice">En option &nbsp;: modifiez le budget</span>
+         <p>Cliquez sur le bouton "Modifier le budget" affiché sous le libellé de chaque activité.</p>
+         <p class="max-img-process">
+            <img src="../images/performance/couts-prod2.png" class="contour-img" alt="Coûts de production" data-action="zoom" />
+         </p>
+		 <p>Vous êtes automatiquement redirigé&#40;e&#41; vers la page de modification du budget prévisionnel de l'activité. Le cas échéant, corrigez-le comme expliqué dans la section <a href="#modif-budget" class="avoid-clicks">&#171;&nbsp;Budgets prévisionnels&nbsp;&#187;</a> de ce chapitre.</p>
+		 <p class="max-img-process">
+            <img src="../images/performance/couts-prod3.png" class="contour-img" alt="Modification du budget" data-action="zoom" />
+         </p>
+      </div>
+	  <h6>Guide de prise en main • Performance • Marges</h6>
+	  <a class="slice-process" id="marges"></a>
+	  <h2 class="texte aerateur">d - Marges</h2>
+	  <p class="texte">Les marges sont calculées dynamiquement pour chaque production, en fonction du rendement visé, des charges directes &#40;engrais, semences, produits phytosanitaires…&#41; et indirectes &#40;assurance, électricité, etc…&#41; prédéfinis dans un itinéraire technique et ventilées sur les activités via une clé de répartition.</p>
+	  <p class="texte">Le processus suivant vous guide pour afficher la marge de chaque activité ouverte durant une campagne.</p>
+	  <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52" />
+      </div>
+	  <div class="process-txt">
+         <span class="titre-advice">Accédez aux calculs des marges</span>
+		 <p>Cliquez sur le lien "Économique" dans le "Menu principal" ou sur le bouton "Économique" de la page d'accueil&nbsp;:</p>
+         <p align="center"><img src="../images/performance/economique.svg" alt="Économique" width="60"></p>
+         <p>Puis, dans la barre latérale du module "Économique", cliquez sur "Marges" dans la section "Marges" symbolisée par l'icône d'une main<img src="../images/performance/hand-dollar.svg" alt="Main" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher la liste des activités.</p>
+         <p class="max-img-process">
+            <img src="../images/performance/marges1.png" class="contour-img" alt="Marges" data-action="zoom" />
+         </p>
+		 <p>Toutes les marges des activités principales &#40;végétale, viticoles, animales&#41; déjà calculées sont listés ici.</p>
+      </div>
 	  <h6>Guide de prise en main • Performance • Seuils de commercialisation</h6>
 	  <a class="slice-process" id="seuils"></a>
-	  <h2 class="texte aerateur">c - Seuils de commercialisation</h2>
+	  <h2 class="texte aerateur">e - Seuils de commercialisation</h2>
 	  <p class="texte">Les seuils de commercialisation sont calculés dynamiquement pour chaque production, en fonction du rendement visé, des charges directes &#40;engrais, semences, produits phytosanitaires…&#41; et indirectes &#40;assurance, électricité, etc…&#41; prédéfinis dans un itinéraire technique et ventilées sur les activités via une clé de répartition. Pour chaque activité, ils permettent d'obtenir un prix d'équilibre, c'est à dire un prix de vente en-dessous duquel l'exploitant ne peut pas atteindre ses objectifs en terme de rémunération et de réserves de trésorerie à constituer.</p>
 	  <p class="texte">Le processus suivant vous guide pour afficher et simuler le prix d'équilibre d'une activité.</p>
 	  <div class="floating-box process">
