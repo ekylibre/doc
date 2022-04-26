@@ -95,7 +95,8 @@
             {dates: [new Date(2022, 1, 3), new Date(2022, 1, 20)], title: "Version 4.2", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
             {dates: [new Date(2022, 1, 21), new Date(2022, 2, 9)], title: "Version 4.3", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
 		    {dates: [new Date(2022, 2, 10), new Date(2022, 3, 13)], title: "Version 4.4", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
-		 {dates: [new Date(2022, 3, 14), new Date(annee, mois, jour)], title: "Version 4.5", attrs: {fill: "#fea40b", stroke: "#fea40b"}}
+		    {dates: [new Date(2022, 3, 14), new Date(2022, 3, 27)], title: "Version 4.5", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
+		 {dates: [new Date(2022, 3, 28), new Date(annee, mois, jour)], title: "Version 4.6", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
          ];
          
          var sections = [
@@ -162,6 +163,84 @@
             <section id="panel-1">
                <main>
                   <div class="accordion-container marge">
+					 <div class="panel">
+                        <div class="heading">
+                           <div class="version">
+                              <h2>Note de version 4.6 du 28/04/2022</h2>
+                           </div>
+                          <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="content">
+                           <div class="divTableNoteVersion">
+                              <div class="divTableBody">
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/comptabilite2022.svg" alt="Comptabilité" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Comptabilité</strong><br /><br />
+                                       1 amélioration et 1 bug corrigé
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Lorsqu'un emprunt possède le statut "En cours" ou qu'une immobilisation est définie sur "En service", il est désormais possible de modifier leurs paramètres tant que les écritures passées en comptabilité n'ont pas été validées dans le brouillard des journaux correspondants.</li>
+                                       </ul>
+									   <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+                                          <li>La consultation des écritures des comptes bancaires consignées dans le Grand-livre est maintenant opérationnelle et ne provoque plus d'erreur lors de l'exécution de la requête.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+								 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/ventes.svg" alt="Ventes" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Ventes</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+										  <li>Dans la vue d'une expédition générée à partir d'une vente, le montant affiché dans le champ du "Prix unitaire de vente HT" de chaque élément à expédier est prérempli et n'est désormais plus modifiable.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+								 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/stocks2022.svg" alt="Stocks" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Stocks</strong><br /><br />
+                                       1 amélioration et 1 bug corrigé
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Lors de la création d'un inventaire, les quantités des produits inventoriés sur une période donnée sont calculées avec davantage d'exactitude pour afficher les résultats de l'opération. Par ailleurs, le bouton "Toutes les catégories comptables" est maintenant remplacé par un simple bouton de validation.</li>
+                                       </ul>
+									   <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+                                          <li>Dans la liste des produits inventoriés, les champs des "Prix unitaire d'inventaire" affichent désormais automatiquement les prix du catalogue de stock en vigueur au moment de la création de l'inventaire.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
 					 <div class="panel">
                         <div class="heading">
                            <div class="version">
@@ -5518,6 +5597,80 @@
          </div>
       </article>
       <!-- Section pour la génération du PDF -->
+	  <div class="saut-page"></div>
+	  <div class="heading-print marge-pdf">
+         <h2>Note de version 4.6 du 28/04/2022</h2>
+      </div>
+      <div class="content-print marge-pdf">
+         <div class="divTableNoteVersion-pdf">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/comptabilite2022.svg" alt="Comptabilité" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Comptabilité</strong><br /><br />
+                     1 amélioration et 1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+						<li>Lorsqu'un emprunt possède le statut "En cours" ou qu'une immobilisation est définie sur "En service", il est désormais possible de modifier leurs paramètres tant que les écritures passées en comptabilité n'ont pas été validées dans le brouillard des journaux correspondants.</li>
+                     </ul>
+					 <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>La consultation des écritures des comptes bancaires consignées dans le Grand-livre est maintenant opérationnelle et ne provoque plus d'erreur lors de l'exécution de la requête.</li>
+                    </ul>
+                  </div>
+               </div>
+			   <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/ventes.svg" alt="Ventes" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Ventes</strong><br /><br />
+                     1 amélioration
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                      <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>Dans la vue d'une expédition générée à partir d'une vente, le montant affiché dans le champ du "Prix unitaire de vente HT" de chaque élément à expédier est prérempli et n'est désormais plus modifiable.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/stocks2022.svg" alt="Stocks" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Stocks</strong><br /><br />
+                     1 amélioration et 1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+						<li>Lors de la création d'un inventaire, les quantités des produits inventoriés sur une période donnée sont calculées avec davantage d'exactitude pour afficher les résultats de l'opération. Par ailleurs, le bouton "Toutes les catégories comptables" est maintenant remplacé par un simple bouton de validation.</li>
+                     </ul>
+					 <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>Dans la liste des produits inventoriés, les champs des "Prix unitaire d'inventaire" affichent désormais automatiquement les prix du catalogue de stock en vigueur au moment de la création de l'inventaire.</li>
+                    </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
 	  <div class="saut-page"></div>
 	  <div class="heading-print marge-pdf">
          <h2>Note de version 4.5 du 14/04/2022</h2>
