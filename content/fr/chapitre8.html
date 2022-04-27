@@ -2261,6 +2261,7 @@
 		 <p class="max-img-process">
             <img src="../images/chapitre8/inventaire1.png" class="contour-img" alt="Nouvel inventaire" data-action="zoom" />
          </p>
+		 <p>Tous les inventaires déjà créés sont listés ici.</p>
       </div>
       <br />
       <div class="floating-box process">
@@ -2278,10 +2279,10 @@
          <img src="../images/commun/step3.svg" alt="3" width="52" />
       </div>
       <div class="process-txt">
-		 <span class="titre-advice">Configurez le nouvel inventaire</span>
+		 <span class="titre-advice">Bornez le nouvel inventaire</span>
 		 <p>Sélectionnez un exercice comptable ouvert parmi les 2 proposés à la date de l'opération, puis choisissez une date butoir d'achèvement de l'inventaire avec le sélecteur de date.</p>
 		 <p class="max-img-process">
-            <img src="../images/chapitre8/inventaire3.png" class="contour-img" alt="Paramétrage inventaire" data-action="zoom" />
+            <img src="../images/chapitre8/inventaire3.png" class="contour-img" alt="Sélection date" data-action="zoom" />
          </p>
 		 <p>Si vous souhaitez créer l'inventaire en vous basant sur une catégorie comptable et unique de produits, saisissez quelques lettres contenues dans son nom pour filtrer les propositions, puis sélectionnez la catégorie de votre choix dans la liste déroulante.</p>
 		 <p class="max-img-process">
@@ -2290,19 +2291,6 @@
          <p class="max-img-process">
             <img src="../images/chapitre8/inventaire5.png" class="contour-img" alt="Création inventaire" data-action="zoom" />
          </p>
-		 <p>Cliquez sur <span class="btn-blue">Valider</span> pour lancer l'opération, puis patientez quelques instants.</p>
-	  </div>
-	  <div class="saut-page"></div>
-	  <div class="warn-fond aerateur-haut">
-         <div class="floating-box-warn">
-            <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
-         </div>
-         <div class="info-txt">
-            <span class="titre-advice">Filtrage sur une catégorie<br /></span>
-            <p class="texte-advice">La sélection d'une catégorie comptable lors de la création de l'inventaire n'a d'impact que sur l'affichage initial des produits inventoriés. L'ensemble des produits en stock est cependant pris en compte avec l'impossibilité d'enregistrer l'opération si au moins une quantité négative est détectée. Lors de la modification d'un inventaire, les produits de toutes les catégories sont en revanche affichés, de la même manière que si l'option "Catégorie comptable" n'est pas renseignée.</p>
-         </div>
-      </div>
-	  <div class="process-txt">
 		 <p>Pour créer un inventaire de tous les produits en stock, laissez le champ "Catégorie comptable" vide.</p>
          <p class="max-img-process">
             <img src="../images/chapitre8/inventaire6.png" class="contour-img" alt="Sélection catégorie" data-action="zoom" />
@@ -2323,7 +2311,7 @@
                      <img src="../images/commun/circle.svg" alt="Puce" height="15">
                   </div>
                   <div class="divTableCellPlan" style="width: auto">
-                     une dénomination significative pour l'identifier facilement comme par exemple "Inventaire semences 31/12/2020"&nbsp;;
+                     une dénomination significative pour l'identifier facilement comme par exemple "Inventaire semences 31/12/2020" ou "Stock vin bouteilles 2021"&nbsp;;
                   </div>
                </div>
                <div class="divTableRow">
@@ -2331,7 +2319,7 @@
                      <img src="../images/commun/circle.svg" alt="Puce" height="15">
                   </div>
                   <div class="divTableCellPlan">
-                     la sélection d'un journal comptable d'opérations diverses dans lequel seront consignées les variations de stocks&nbsp;;
+                     la sélection d'un journal comptable d'opérations diverses dans lequel seront consignées les écritures d'inventaire et les variations des stocks&nbsp;;
                   </div>
                </div>
                <div class="divTableRow">
@@ -2352,7 +2340,7 @@
          <p class="max-img-process">
             <img src="../images/chapitre8/inventaire8.png" class="contour-img" alt="Création journal" data-action="zoom" />
          </p>
-		 <p>Vérifiez que le bouton radio<img src="../images/commun/radio.svg" alt="Bouton radio" height="20" class="align-icone icone-marge-gauche icone-marge-droite">est bien activé pour "Opérations diverses".</p>
+		 <p>Lors de la création de ce journal, assurez-vous que le bouton radio<img src="../images/commun/radio.svg" alt="Bouton radio" height="20" class="align-icone icone-marge-gauche icone-marge-droite">est bien activé pour "Opérations diverses".</p>
       </div>
       <br />
       <div class="floating-box process">
@@ -2364,7 +2352,7 @@
          <p class="max-img-process">
             <img src="../images/chapitre8/inventaire9.png" class="contour-img" alt="Nouvel inventaire" data-action="zoom" />
          </p>
-		 <p>Corrigez, le cas échéant, les quantités après inventaire en saisissant les informations actualisées dans les champs à gauche des quantités attendues et modifiez, si nécessaire, les prix unitaires d'inventaire pour valoriser les produits en stock.</p>
+		 <p>Corrigez, le cas échéant, les quantités après inventaire en saisissant les informations actualisées dans les champs à gauche des quantités attendues et modifiez, si nécessaire, les prix unitaires d'inventaire pour valoriser ou déprécier les produits en stock.</p>
 		 <p class="max-img-process">
             <img src="../images/chapitre8/inventaire10.png" class="contour-img" alt="Nouvel inventaire" data-action="zoom" />
          </p>
@@ -2380,11 +2368,11 @@
       <div class="process-txt">
          <span class="titre-advice">Éditez l'inventaire</span>
 		 <p>Le nouvel inventaire est automatiquement affiché par l'application.</p>
-		 <p>Mettez-le à jour en cliquant sur le bouton<img class="btn-gris icone-marge-gauche icone-marge-droite" src="../images/commun/rafraichir.svg" alt="Rafraîchir">si les stocks ont été modifiés postérieurement à sa création ou corrigez les quantités inventoriées en cliquant sur le bouton<img class="btn-gris icone-marge-gauche" src="../images/commun/modifier2.svg" alt="Modifier">.</p>
+		 <p>A - Actualisez-le en cliquant sur le bouton<img class="btn-gris icone-marge-gauche icone-marge-droite" src="../images/commun/rafraichir.svg" alt="Rafraîchir">si les stocks ont été modifiés postérieurement à sa création ou corrigez les quantités inventoriées en cliquant sur le bouton<img class="btn-gris icone-marge-gauche" src="../images/commun/modifier2.svg" alt="Modifier">.</p>
          <p class="max-img-process">
             <img src="../images/chapitre8/inventaire12.png" class="contour-img" alt="Liste des inventaires" data-action="zoom" />
          </p>
-         <p>Tous les inventaires déjà réalisés sont également consignés dans la liste des "Inventaires". Mettez à jour l'inventaire en cliquant sur l'icône "Rafraîchir" <img src="../images/chapitre8/refresh.svg" alt="Mettre à jour l'inventaire" height="20" class="align-icone icone-marge-gauche icone-marge-droite">ou corrigez les quantités inventoriées en cliquant sur l'icône "Crayon"<img src="../images/commun/crayon.svg" alt="Modifier l'inventaire" height="20" class="align-icone icone-marge-gauche icone-marge-droite">.</p>
+         <p>B - Ou depuis la vue "Liste", mettez à jour l'inventaire en cliquant sur l'icône "Rafraîchir" <img src="../images/chapitre8/refresh.svg" alt="Mettre à jour l'inventaire" height="20" class="align-icone icone-marge-gauche icone-marge-droite">ou corrigez les quantités inventoriées en cliquant sur l'icône "Crayon"<img src="../images/commun/crayon.svg" alt="Modifier l'inventaire" height="20" class="align-icone icone-marge-gauche icone-marge-droite">.</p>
          <p class="max-img-process">
             <img src="../images/chapitre8/inventaire13.png" class="contour-img" alt="Liste des inventaires" data-action="zoom" />
          </p>
@@ -2395,22 +2383,23 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Reflétez l'inventaire</span>
-		 <p>Deux méthodes sont à votre disposition pour refléter l'inventaire &#40;passage des écritures comptables en mode brouillard avec un ajustement éventuel des quantités en stock&#41;&nbsp;:</p>
+		 <p>Deux méthodes sont à votre disposition pour refléter l'inventaire &#40;passage des écritures comptables en mode brouillard avec un ajustement éventuel des quantités en stock et de leur valorisation&#41;&nbsp;:</p>
 		 <p>A - Cliquez sur le bouton<img class="btn-gris icone-marge-gauche icone-marge-droite" src="../images/commun/refleter.svg" alt="Refléter">en haut de la fiche de l'inventaire.</p>
          <p class="max-img-process">
             <img src="../images/chapitre8/inventaire14.png" class="contour-img" alt="Refléter l'inventaire" data-action="zoom" />
          </p>
-		 <p>B - Ou cliquez sur l'icône "Refléter"<img src="../images/chapitre8/cog-blue.svg" alt="Refléter l'inventaire" height="20" class="align-icone icone-marge-gauche icone-marge-droite">dans la vue "Liste".</p>
+		 <p>B - Ou cliquez sur l'icône "Refléter"<img src="../images/chapitre8/cog-blue.svg" alt="Refléter l'inventaire" height="20" class="align-icone icone-marge-gauche icone-marge-droite">située à gauche du nom de l'inventaire dans la vue "Liste".</p>
          <p class="max-img-process">
             <img src="../images/chapitre8/inventaire15.png" class="contour-img" alt="Refléter l'inventaire" data-action="zoom" />
          </p>
+		 <p>Notez qu'il est impossible de refléter l'inventaire si au moins une quantité négative est détectée lors du calcul des produits en stock.</p>
 		 <p class="aerateur-haut">Une notification symbolisée par la pastille rouge<img src="../images/commun/marker.svg" alt="Notification" height="20" class="align-icone icone-marge-gauche icone-marge-droite">en haut à droite de la cloche<img src="../images/commun/bell-o-blue.svg" alt="Cloche" height="20" class="align-icone icone-marge-gauche icone-marge-droite">vous indique qu'une opération interne a été effectuée par l'application.</p>
 		 <p class="max-img-process">
-            <img src="../images/chapitre8/inventaire16.png" class="contour-img" alt="Liste des inventaires" data-action="zoom" />
+            <img src="../images/chapitre8/inventaire16.png" class="contour-img" alt="Affichage de la notification" data-action="zoom" />
          </p>
 		 <p class="aerateur-haut">Le statut de l'inventaire passe alors en mode "Reflété" avec un affichage de la date de l'opération dans la colonne correspondante et l'activation de la case<img src="../images/commun/check-square-o.svg" alt="Case cochée" height="18" class="align-icone icone-marge-gauche icone-marge-droite">dans la colonne "Changements reflétés" de la vue "Liste".</p>
 		 <p class="max-img-process">
-            <img src="../images/chapitre8/inventaire17.png" class="contour-img" alt="Liste des inventaires" data-action="zoom" />
+            <img src="../images/chapitre8/inventaire17.png" class="contour-img" alt="Nouveau statut inventaire" data-action="zoom" />
          </p>
 	   </div>
 	   <br />
@@ -2418,11 +2407,12 @@
          <img src="../images/commun/step8.svg" alt="8" width="52" />
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Consultez les éléments mis à jour</span>
+         <span class="titre-advice">Consultez les éléments comptables</span>
+		 <p>Une fois reflété, l'inventaire a généré automatiquement les nouvelles écritures dans le brouillard du journal des opérations diverses sélectionné initialement. Elles sont présentées avec un libellé unique dans la vue détaillée de l'inventaire.</p>
          <p class="max-img-process">
             <img src="../images/chapitre8/inventaire18.png" class="contour-img" alt="Inventaire reflété" data-action="zoom" />
          </p>
-		 <p>Chaque inventaire reflété génère une écriture comptable dans le brouillard du journal sélectionné lors de la création de l'inventaire. Un lien est ajouté entre le numéro de l'écriture présent dans la fiche de l'inventaire et ce journal. Notez qu'un inventaire reste modifiable et/ou supprimable tant que les écritures en mode brouillard n'ont pas été validées.</p>
+		 <p>Cette écriture est également un lien cliquable permettant d'être redirigé&#40;e&#41; vers le détail des différentes écritures d'inventaire qui la composent. Notez qu'un inventaire reste modifiable et/ou supprimable tant que les écritures en mode brouillard n'ont pas été validées.</p>
          <p class="max-img-process">
             <img src="../images/chapitre8/inventaire19.png" class="contour-img" alt="Écriture" data-action="zoom" />
          </p>
