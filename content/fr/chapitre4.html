@@ -106,6 +106,7 @@
                            <li><a href="#etiquettes" target="_self">Paramétrage des étiquettes</a></li>
                            <li><a href="#champs" target="_self">Création de champs personnalisés</a></li>
                            <li><a href="#formats" target="_self">Formats de nommage</a></li>
+                           <li><a href="#sequences" target="_self">Configuration des séquences</a></li>
                            <li><a href="#acces" target="_self">Accès et rôles d'utilisateur</a></li>
 						   <li><a href="#duke" target="_self">Duke, l'assistant vocal intelligent</a></li>
                         </div>
@@ -1345,9 +1346,110 @@
          </p>
          <p>Cliquez sur <span class="btn-blue">Mettre&nbsp;à&nbsp;jour</span> dans la <span class="tooltip">fenêtre modale<span class="tooltiptext tooltip-top">Voir glossaire</span></span> pour procéder à ce changement global et rétroactif, mais non obligatoire.</p>
       </div>
+	  <h6>Guide de prise en main • Interface et accès • Séquences</h6>
+      <a class="slice-process" id="sequences"></a>
+      <h2 class="texte aerateur">h - Configuration des séquences</h2>
+      <p class="texte">L'application vous permet de définir la façon dont les libellés des opérations sont générés pour dénommer un enregistrement dans l'application.</p>
+      <p class="texte aerateur-haut">Le processus suivant vous guide pour modifier une séquence afin de la personnaliser selon vos besoins.</p>
+      <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Accédez aux séquences</span>
+         <p>
+            Cliquez sur le lien "Configuration" dans le "Menu principal" ou sur le bouton "Configuration" de la page d'accueil&nbsp;:
+         </p>
+         <p align="center"><img src="../images/chapitre4/wrench.svg" alt="Configuration" width="60"></p>
+         <p>Dans la barre latérale du module, cliquez sur "Séquences" dans la section "Personnalisation" symbolisée par l'icône d'une clef anglaise<img src="../images/chapitre4/wrench3.svg" alt="Clef anglaise" height="20" class="align-icone icone-marge-gauche">.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre4/sequence1.png" class="contour-img" alt="Liste des séquences" data-action="zoom" />
+         </p>
+		 <p>Toutes les séquences prédéfinies sont listées ici.</p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Éditez une séquence</span>
+         <p>Dans la liste des séquences, cliquez sur l'icône symbolisant un "Crayon"<img src="../images/commun/crayon.svg" alt="Modifier l'inventaire" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher les paramètres d'une séquence de votre choix.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre4/sequence2.png" class="contour-img" alt="Edition séquence" data-action="zoom" />
+         </p>
+      </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Personnalisez la séquence</span>
+         <p>Plusieurs champs sont personnalisables, mais nous vous conseillons de ne pas tous les modifier pour éviter de potentielles erreurs de compréhension lors de l'affichage des tâches ou des enregistrements associés.</p>
+		 <p><strong>Format de numéro&nbsp;:</strong> il s'agit ici de définir les éléments utilisés pour fabriquer la chaîne alphanumérique utilisée pour dénommer une opération ou un enregistrement.</p>
+		 <p>La séquence "Achat" <strong>A[year|4][month|2][number|6]</strong> est par exemple et par défaut constituée ici de&nbsp;:</p>
+		 <div class="divTableListe">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellPlan" style="width: 10px">
+                     <img src="../images/commun/circle.svg" alt="Puce" height="15">
+                  </div>
+                  <div class="divTableCellPlan" style="width: auto">
+                     un préfixe composé d'une ou plusieurs lettres comme par exemple A &#40;personnalisable selon votre convenance&#41;&nbsp;;
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellPlan">
+                     <img src="../images/commun/circle.svg" alt="Puce" height="15">
+                  </div>
+                  <div class="divTableCellPlan">
+                     une chaîne de caractères <strong>[year|4]</strong> permettant de récupérer l'année de l'opération sur 4 chiffres&nbsp;;
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellPlan">
+                     <img src="../images/commun/circle.svg" alt="Puce" height="15">
+                  </div>
+                  <div class="divTableCellPlan">
+                     une chaîne de caractères <strong>[month|2]</strong> permettant de récupérer le mois calendaire de l'opération sur 2 chiffres&#41;&nbsp;;
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellPlan">
+                     <img src="../images/commun/circle.svg" alt="Puce" height="15">
+                  </div>
+                  <div class="divTableCellPlan">
+                     un numéro <strong>[number|6]</strong> permettant une numérotation générée et incrémentée automatiquement avec 6 chiffres &#40;personnalisable selon votre convenance&#41;.
+                  </div>
+               </div>
+            </div>
+         </div>
+		 <p><strong>Période&nbsp;:</strong> permet de définir la périodicité des changements appliqués aux éléments associés à l'affichage de la date &#40;intervalle annuel, mensuel, hebdomadaire ou non pris en charge&#41;.</p>
+		 <p><strong>Incrément&nbsp;:</strong> permet de paramétrer l'incrémentation appliquée au numéro de chaque opération ou enregistrement concerné par la tâche visée.</p>
+		 <p><strong>Début de la numérotation&nbsp;:</strong> permet de définir le premier numéro utilisé par la tâche visée &#40;ce champ est automatiquement actualisé et affiche le dernier numéro généré par l'opération&#41;.</p>
+      </div>
+       <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step4.svg" alt="4" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Validez et vérifiez la nouvelle séquence</span>
+		 <p class="max-img-process">
+            <img src="../images/chapitre4/sequence3.png" class="contour-img" alt="Séquence achat" data-action="zoom" />
+         </p>
+		 <p>Cliquez sur <span class="btn-blue">Modifier</span> pour valider l'opération.</p>
+		 <p class="aerateur-haut">Sans modification, le libellé de la commande est enregistré selon la convention prédéfinie par défaut&nbsp;: </p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre4/sequence4.png" class="contour-img" alt="Nouvelle commande" data-action="zoom" />
+         </p>
+		 <p>Si la chaîne <strong>"A[year|4][month|2][number|6]"</strong> est remplacée par la chaine <strong>"ACH[year|4][month|2][number|4]"</strong>, le libellé de la commande prend la forme suivante&nbsp;:</p>
+		 
+		 <p class="max-img-process">
+            <img src="../images/chapitre4/sequence5.png" class="contour-img" alt="Nouvelle commande" data-action="zoom" />
+         </p>
+      </div>
+      <br />
       <h6>Guide de prise en main • Interface et accès • Droits</h6>
       <a class="slice-process" id="acces"></a>
-      <h2 class="texte aerateur">h - Accès et rôles d'utilisateur</h2>
+      <h2 class="texte aerateur">i - Accès et rôles d'utilisateur</h2>
       <p class="texte">
          Dans le cadre du travail en équipe, que ce soit pour enregistrer des interventions, des factures, des réceptions de marchandises, ou pour faire valider des écritures comptables, vous êtes susceptible de partager certaines informations de votre instance <strong>Eky</strong>agri | <strong>Eky</strong>viti avec d'autres personnes &#40;techniciens, ouvriers, commerciaux, comptable, etc.&#41; qui représentent les utilisateurs.
       </p>
@@ -1665,7 +1767,7 @@
       <p class="texte">Tableau des rôles d'utilisateur</p>
       <h6>Guide de prise en main • Interface et accès • Création des utilisateurs</h6>
       <a class="slice-process" id="utilisateurs"></a>
-      <h2 class="texte aerateur">h. 1 - Création des utilisateurs</h2>
+      <h2 class="texte aerateur">i. 1 - Création des utilisateurs</h2>
       <h3 align="center" class="texte aerateur procedure">1 – Procédure de création des utilisateurs</h3>
       <p class="texte">
          Le processus suivant vous guide pour créer un nouvel utilisateur.
@@ -1815,7 +1917,7 @@
       </div>
       <h6>Guide de prise en main • Interface et accès • Rôles d'utilisateur</h6>
       <a class="slice-process" id="roles"></a>
-      <h2 class="texte aerateur">h. 2 - Utilisation des rôles d'utilisateur</h2>
+      <h2 class="texte aerateur">i. 2 - Utilisation des rôles d'utilisateur</h2>
       <h3 align="center" class="texte aerateur procedure">1 – Procédure pour importer des rôles d'utilisateur</h3>
       <p class="texte">
          Le processus suivant vous guide pour sélectionner des rôles d'utilisateur parmi ceux déjà configurés dans l'application.
@@ -1991,7 +2093,7 @@
       </div>
       <h6>Guide de prise en main • Interface et accès • Invitation d'utilisateurs</h6>
       <a class="slice-process" id="invitations"></a>
-      <h2 class="texte aerateur">h. 3 - Invitation d'utilisateurs</h2>
+      <h2 class="texte aerateur">i. 3 - Invitation d'utilisateurs</h2>
       <p class="texte">Il est possible de lancer des invitations afin de convier des utilisateurs à rejoindre votre ferme ou votre domaine.</p>
       <h3 align="center" class="texte aerateur procedure">1 – Procédure d'invitation d'un utilisateur</h3>
       <p class="texte">
@@ -2100,7 +2202,7 @@
 	  </div>
       <h6>Guide de prise en main • Interface et accès • Inscription d'utilisateurs</h6>
       <a class="slice-process" id="inscriptions"></a>
-      <h2 class="texte aerateur">h. 4 - Inscription d'utilisateurs</h2>
+      <h2 class="texte aerateur">i. 4 - Inscription d'utilisateurs</h2>
       <p class="texte">Un nouvel utilisateur connaissant l'adresse internet de votre ferme ou de votre domaine et qui souhaite accéder à vos données, peut vous soumettre sa demande en remplissant le formulaire d'inscription, et en validant sa requête après avoir cliqué sur le bouton "Inscription".</p>
       <p class="texte aerateur-haut" align="center">
          <img src="../images/chapitre4/inscription1.png"  width="500" alt="Formulaire d'inscription">
@@ -2223,7 +2325,7 @@
       </div>
 	  <h6>Guide de prise en main • Interface et accès • Duke</h6>
       <a class="slice-process" id="duke"></a>
-      <h2 class="texte aerateur">i - Duke, l'assistant vocal intelligent</h2>
+      <h2 class="texte aerateur">j - Duke, l'assistant vocal intelligent</h2>
       <h6>Guide de prise en main • Interface et accès • Fonctionnement Duke</h6>
 	  <h3 class="texte aerateur-haut procedure" align="center">1 - Principes de fonctionnement</h3>
 	  <p class="texte">Duke est un assistant vocal intelligent qui fonctionne par reconnaissance d'intentions et d'entités. Il élimine, lorsque que l'opération est possible, l'usage de la souris et/ou du clavier pour naviguer dans l'interface de l'application. Il permet ainsi de réduire de manière significative le temps nécessaire pour réaliser l'enregistrement des interventions, pour rechercher et afficher certaines données et pour exporter des documents.</p>
