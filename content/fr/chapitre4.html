@@ -1349,8 +1349,8 @@
 	  <h6>Guide de prise en main • Interface et accès • Séquences</h6>
       <a class="slice-process" id="sequences"></a>
       <h2 class="texte aerateur">h - Configuration des séquences</h2>
-      <p class="texte">L'application vous permet de définir la façon dont les libellés des opérations sont générés pour dénommer un enregistrement dans l'application.</p>
-      <p class="texte aerateur-haut">Le processus suivant vous guide pour modifier une séquence afin de la personnaliser selon vos besoins.</p>
+      <p class="texte"><strong>Eky</strong>agri | <strong>Eky</strong>viti vous permet de définir la façon dont les libellés des opérations sont générés pour dénommer un enregistrement dans l'application. Si vous estimez que certains libellés sont peu explicites, incomplets ou d'une longueur trop importante &#40;12 chiffres&#41;, il est possible, en respectant quelques précautions d'usage, de les modifier afin d'optimiser leur affichage ou pour faciliter leur lecture dans l'interface.</p>
+      <p class="texte aerateur-haut">Le processus suivant vous guide pour personnaliser une séquence selon vos besoins ou vos attentes.</p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
       </div>
@@ -1372,7 +1372,7 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Éditez une séquence</span>
-         <p>Dans la liste des séquences, cliquez sur l'icône symbolisant un "Crayon"<img src="../images/commun/crayon.svg" alt="Modifier l'inventaire" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher les paramètres d'une séquence de votre choix.</p>
+         <p>Dans la liste des séquences, cliquez sur l'icône symbolisant un "Crayon"<img src="../images/commun/crayon.svg" alt="Modifier l'inventaire" height="20" class="align-icone icone-marge-gauche icone-marge-droite">pour afficher les paramètres d'une séquence de votre choix. Dans tous les cas, ne supprimez jamais une séquence déjà configurée par défaut en utilisant la croix<img src="../images/commun/times-blue.svg" alt="Supprimer" height="20" class="align-icone icone-marge-gauche icone-marge-droite">car il vous sera peut-être difficile de retrouver les réglages d'origine.</p>
          <p class="max-img-process">
             <img src="../images/chapitre4/sequence2.png" class="contour-img" alt="Edition séquence" data-action="zoom" />
          </p>
@@ -1383,9 +1383,9 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Personnalisez la séquence</span>
-         <p>Plusieurs champs sont personnalisables, mais nous vous conseillons de ne pas tous les modifier pour éviter de potentielles erreurs de compréhension lors de l'affichage des tâches ou des enregistrements associés.</p>
+         <p>Tous les champs sont éditables, mais nous vous conseillons cependant de les modifier avec parcimonie pour éviter de potentielles incohérences lors de l'affichage des tâches ou des enregistrements qui leur sont associés.</p>
 		 <p><strong>Format de numéro&nbsp;:</strong> il s'agit ici de définir les éléments utilisés pour fabriquer la chaîne alphanumérique utilisée pour dénommer une opération ou un enregistrement.</p>
-		 <p>La séquence "Achat" <strong>A[year|4][month|2][number|6]</strong> est par exemple et par défaut constituée ici de&nbsp;:</p>
+		 <p>La séquence "Achat" <strong>A[year|4][month|2][number|6]</strong> est par exemple et par défaut constituée ici par&nbsp;:</p>
 		 <div class="divTableListe">
             <div class="divTableBody">
                <div class="divTableRow">
@@ -1393,7 +1393,7 @@
                      <img src="../images/commun/circle.svg" alt="Puce" height="15">
                   </div>
                   <div class="divTableCellPlan" style="width: auto">
-                     un préfixe composé d'une ou plusieurs lettres comme par exemple A &#40;personnalisable selon votre convenance&#41;&nbsp;;
+                     un préfixe composé d'une ou plusieurs lettres comme par exemple <strong>A</strong> &#40;personnalisable selon votre convenance&#41;&nbsp;;
                   </div>
                </div>
                <div class="divTableRow">
@@ -1423,8 +1423,8 @@
             </div>
          </div>
 		 <p><strong>Période&nbsp;:</strong> permet de définir la périodicité des changements appliqués aux éléments associés à l'affichage de la date &#40;intervalle annuel, mensuel, hebdomadaire ou non pris en charge&#41;.</p>
-		 <p><strong>Incrément&nbsp;:</strong> permet de paramétrer l'incrémentation appliquée au numéro de chaque opération ou enregistrement concerné par la tâche visée.</p>
-		 <p><strong>Début de la numérotation&nbsp;:</strong> permet de définir le premier numéro utilisé par la tâche visée &#40;ce champ est automatiquement actualisé et affiche le dernier numéro généré par l'opération&#41;.</p>
+		 <p><strong>Incrément&nbsp;:</strong> permet de paramétrer l'incrémentation appliquée au numéro de chaque opération ou des enregistrements concernés par la tâche visée.</p>
+		 <p><strong>Début de la numérotation&nbsp;:</strong> permet de définir le premier numéro utilisé par la tâche visée &#40;ce champ est ensuite automatiquement actualisé et affiche le dernier numéro généré par une opération identique&#41;.</p>
       </div>
        <br />
 	  <div class="floating-box process">
@@ -1432,15 +1432,16 @@
       </div>
       <div class="process-txt">
          <span class="titre-advice">Validez et vérifiez la nouvelle séquence</span>
+		 <p>Exemple de mise en œuvre&nbsp;: saisissez la chaîne de caractères <strong>"ACH[year|4][month|2][number|4]"</strong> dans le champ "Format du numéro".</p>
 		 <p class="max-img-process">
             <img src="../images/chapitre4/sequence3.png" class="contour-img" alt="Séquence achat" data-action="zoom" />
          </p>
 		 <p>Cliquez sur <span class="btn-blue">Modifier</span> pour valider l'opération.</p>
-		 <p class="aerateur-haut">Sans modification, le libellé de la commande est enregistré selon la convention prédéfinie par défaut&nbsp;: </p>
+		 <p class="aerateur-haut">Sans aucune modification, le libellé des nouvelles commandes est généré selon le format initial prédéfini par défaut&nbsp;: </p>
 		 <p class="max-img-process">
             <img src="../images/chapitre4/sequence4.png" class="contour-img" alt="Nouvelle commande" data-action="zoom" />
          </p>
-		 <p>Si la chaîne <strong>"A[year|4][month|2][number|6]"</strong> est remplacée par la chaine <strong>"ACH[year|4][month|2][number|4]"</strong>, le libellé de la commande prend la forme suivante&nbsp;:</p>
+		 <p>Si le format <strong>"A[year|4][month|2][number|6]"</strong> est remplacé par <strong>"ACH[year|4][month|2][number|4]"</strong>, le libellé des nouvelles commandes adopte la structure suivante&nbsp;:</p>
 		 
 		 <p class="max-img-process">
             <img src="../images/chapitre4/sequence5.png" class="contour-img" alt="Nouvelle commande" data-action="zoom" />
@@ -2296,7 +2297,7 @@
 	  </div>
       <h6>Guide de prise en main • Interface et accès • Accès comptables</h6>
       <a class="slice-process" id="acces-comptables"></a>
-      <h2 class="texte aerateur">h. 5 - Accès comptables</h2>
+      <h2 class="texte aerateur">i. 5 - Accès comptables</h2>
       <p class="texte">Si vous envisagez de permettre à votre comptable ou à votre centre de gestion d'accéder à l'ensemble de vos paramètres et données comptables, voici un exemple de configuration que vous pouvez définir dans l'application.</p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
