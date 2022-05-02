@@ -1364,7 +1364,7 @@
          <p class="max-img-process">
             <img src="../images/chapitre4/sequence1.png" class="contour-img" alt="Liste des séquences" data-action="zoom" />
          </p>
-		 <p>Toutes les séquences prédéfinies sont listées ici.</p>
+		 <p>Toutes les séquences prédéfinies ou modifiées sont listées ici.</p>
       </div>
       <br />
 	  <div class="floating-box process">
@@ -1384,7 +1384,7 @@
       <div class="process-txt">
          <span class="titre-advice">Personnalisez la séquence</span>
          <p>Tous les champs sont éditables, mais nous vous conseillons cependant de les modifier avec parcimonie pour éviter de potentielles incohérences lors de l'affichage des tâches ou des enregistrements qui leur sont associés.</p>
-		 <p><strong>Format de numéro&nbsp;:</strong> il s'agit ici de définir les éléments utilisés pour fabriquer la chaîne alphanumérique utilisée pour dénommer une opération ou un enregistrement.</p>
+		 <p><strong>Format de numéro&nbsp;:</strong> il s'agit ici de définir les éléments utilisés pour fabriquer la chaîne alphanumérique utilisée pour libeller une opération ou un enregistrement.</p>
 		 <p>La séquence "Achat" <strong>A[year|4][month|2][number|6]</strong> est par exemple et par défaut constituée ici par&nbsp;:</p>
 		 <div class="divTableListe">
             <div class="divTableBody">
@@ -1393,7 +1393,7 @@
                      <img src="../images/commun/circle.svg" alt="Puce" height="15">
                   </div>
                   <div class="divTableCellPlan" style="width: auto">
-                     un préfixe composé d'une ou plusieurs lettres comme par exemple <strong>A</strong> &#40;personnalisable selon votre convenance&#41;&nbsp;;
+                     un préfixe composé de préférence d'une ou plusieurs lettres comme par exemple <strong>A</strong> &#40;personnalisable selon votre convenance&#41;&nbsp;;
                   </div>
                </div>
                <div class="divTableRow">
@@ -1401,7 +1401,7 @@
                      <img src="../images/commun/circle.svg" alt="Puce" height="15">
                   </div>
                   <div class="divTableCellPlan">
-                     une chaîne de caractères <strong>[year|4]</strong> permettant de récupérer l'année de l'opération sur 4 chiffres&nbsp;;
+                     une commande <strong>[year|4]</strong> permettant de récupérer l'année de l'opération en cours sur 4 chiffres&nbsp;;
                   </div>
                </div>
                <div class="divTableRow">
@@ -1409,7 +1409,7 @@
                      <img src="../images/commun/circle.svg" alt="Puce" height="15">
                   </div>
                   <div class="divTableCellPlan">
-                     une chaîne de caractères <strong>[month|2]</strong> permettant de récupérer le mois calendaire de l'opération sur 2 chiffres&#41;&nbsp;;
+                     une commande <strong>[month|2]</strong> permettant de récupérer le mois calendaire de l'opération sur 2 chiffres<sup>1</sup>&nbsp;;
                   </div>
                </div>
                <div class="divTableRow">
@@ -1422,16 +1422,17 @@
                </div>
             </div>
          </div>
-		 <p><strong>Période&nbsp;:</strong> permet de définir la périodicité des changements appliqués aux éléments associés à l'affichage de la date &#40;intervalle annuel, mensuel, hebdomadaire ou non pris en charge&#41;.</p>
+		 <p><strong>Période&nbsp;:</strong> permet de définir la fréquence de réinitialisation de la numérotation appliquée aux opérations &#40;annuelle, mensuelle, hebdomadaire ou aucune&#41;.</p>
 		 <p><strong>Incrément&nbsp;:</strong> permet de paramétrer l'incrémentation appliquée au numéro de chaque opération ou des enregistrements concernés par la tâche visée.</p>
 		 <p><strong>Début de la numérotation&nbsp;:</strong> permet de définir le premier numéro utilisé par la tâche visée &#40;ce champ est ensuite automatiquement actualisé et affiche le dernier numéro généré par une opération identique&#41;.</p>
+		 <em>1 - Utilisez la commande <strong>[cweek|2]</strong> pour récupérer le numéro de la semaine en cours sur 2 chiffres.</em>
       </div>
        <br />
 	  <div class="floating-box process">
          <img src="../images/commun/step4.svg" alt="4" width="52" />
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Validez et vérifiez la nouvelle séquence</span>
+         <span class="titre-advice">Vérifiez et utilisez la nouvelle séquence</span>
 		 <p>Exemple de mise en œuvre&nbsp;: saisissez la chaîne de caractères <strong>"ACH[year|4][month|2][number|4]"</strong> dans le champ "Format du numéro".</p>
 		 <p class="max-img-process">
             <img src="../images/chapitre4/sequence3.png" class="contour-img" alt="Séquence achat" data-action="zoom" />
@@ -1442,9 +1443,12 @@
             <img src="../images/chapitre4/sequence4.png" class="contour-img" alt="Nouvelle commande" data-action="zoom" />
          </p>
 		 <p>Si le format <strong>"A[year|4][month|2][number|6]"</strong> est remplacé par <strong>"ACH[year|4][month|2][number|4]"</strong>, le libellé des nouvelles commandes adopte la structure suivante&nbsp;:</p>
-		 
 		 <p class="max-img-process">
             <img src="../images/chapitre4/sequence5.png" class="contour-img" alt="Nouvelle commande" data-action="zoom" />
+         </p>
+		 <p>Notez qu'il est également possible de prévisualiser le résultat du changement dans la colonne "Dernière valeur" de la liste des séquences &#40;sauf certaines exceptions&#41;.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre4/sequence6.png" class="contour-img" alt="Liste des séquences" data-action="zoom" />
          </p>
       </div>
       <br />
