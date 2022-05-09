@@ -94,9 +94,10 @@
             {dates: [new Date(2021, 12, 26), new Date(2022, 1, 2)], title: "Version 4.1", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
             {dates: [new Date(2022, 1, 3), new Date(2022, 1, 20)], title: "Version 4.2", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
             {dates: [new Date(2022, 1, 21), new Date(2022, 2, 9)], title: "Version 4.3", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
-		    {dates: [new Date(2022, 2, 10), new Date(2022, 3, 13)], title: "Version 4.4", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
-		    {dates: [new Date(2022, 3, 14), new Date(2022, 3, 27)], title: "Version 4.5", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
-		 {dates: [new Date(2022, 3, 28), new Date(annee, mois, jour)], title: "Version 4.6", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
+            {dates: [new Date(2022, 2, 10), new Date(2022, 3, 13)], title: "Version 4.4", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
+            {dates: [new Date(2022, 3, 14), new Date(2022, 3, 27)], title: "Version 4.5", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
+            {dates: [new Date(2022, 3, 28), new Date(2022, 4, 11)], title: "Version 4.6", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
+			{dates: [new Date(2022, 4, 12), new Date(annee, mois, jour)], title: "Version 4.7", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}}
          ];
          
          var sections = [
@@ -163,12 +164,84 @@
             <section id="panel-1">
                <main>
                   <div class="accordion-container marge">
-					 <div class="panel">
+                     <div class="panel">
+                        <div class="heading">
+                           <div class="version">
+                              <h2>Note de version 4.7 du 12/05/2022</h2>
+                           </div>
+                           <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="content">
+                           <div class="divTableNoteVersion">
+                              <div class="divTableBody">
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/comptabilite2022.svg" alt="Comptabilité" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Comptabilité</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Lorsqu'un emprunt possède le statut "En cours" ou qu'une immobilisation est définie sur "En service", il est désormais possible de modifier leurs paramètres tant que les écritures passées en comptabilité n'ont pas été validées dans le brouillard des journaux correspondants.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/production2022.svg" alt="Production" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Production</strong><br /><br />
+                                       4 améliorations
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+                                          <li>Dans la vue détaillée d'une zone cultivable, 3 nouveaux indicateurs sont automatiquement renseignés pour connaître la "Zone de captage", la "Réserve utile en eau" et la "Profondeur du sol" &#40;données sources IGN et INRAE&#41;&nbsp;;</li>
+                                          <li>Lors de la saisie d'un intervention, il n'est plus possible de sélectionner une culture implantée sur une parcelle dont la date de fin est antérieure à la date de l'enregistrement.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/ekyviti.svg" alt="Ekyviti" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Ekyviti</strong><br /><br />
+                                       5 améliorations
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+                                          <li>Lors d'une synchronisation avec la solution tierce Baqio, les remises commerciales accordées sur les ventes sont maintenant correctement prises en compte.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="panel">
                         <div class="heading">
                            <div class="version">
                               <h2>Note de version 4.6 du 28/04/2022</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -190,13 +263,13 @@
                                        <ul>
                                           <li>Lorsqu'un emprunt possède le statut "En cours" ou qu'une immobilisation est définie sur "En service", il est désormais possible de modifier leurs paramètres tant que les écritures passées en comptabilité n'ont pas été validées dans le brouillard des journaux correspondants.</li>
                                        </ul>
-									   <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
                                        <ul>
                                           <li>La consultation des écritures des comptes bancaires consignées dans le Grand-livre est maintenant opérationnelle et ne provoque plus d'erreur lors de l'exécution de la requête.</li>
                                        </ul>
                                     </div>
                                  </div>
-								 <div class="divTableRow">
+                                 <div class="divTableRow">
                                     <div class="divTableCellNoteVersion1">
                                        <img src="../images/notes-version/ventes.svg" alt="Ventes" width="60">
                                     </div>
@@ -210,11 +283,11 @@
                                     <div class="divTableCellNoteVersion4" style="width: auto">
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                                        <ul>
-										  <li>Dans la vue d'une expédition générée à partir d'une vente, le montant affiché dans le champ du "Prix unitaire de vente HT" de chaque élément à expédier est prérempli et n'est désormais plus modifiable.</li>
+                                          <li>Dans la vue d'une expédition générée à partir d'une vente, le montant affiché dans le champ du "Prix unitaire de vente HT" de chaque élément à expédier est prérempli et n'est désormais plus modifiable.</li>
                                        </ul>
                                     </div>
                                  </div>
-								 <div class="divTableRow">
+                                 <div class="divTableRow">
                                     <div class="divTableCellNoteVersion1" style="width: 60px">
                                        <img src="../images/notes-version/stocks2022.svg" alt="Stocks" width="60">
                                     </div>
@@ -231,7 +304,7 @@
                                        <ul>
                                           <li>Lors de la création d'un inventaire, les quantités des produits inventoriés sur une période donnée sont calculées avec davantage d'exactitude pour afficher les résultats de l'opération. Par ailleurs, le bouton "Toutes les catégories comptables" est maintenant remplacé par un simple bouton de validation.</li>
                                        </ul>
-									   <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
                                        <ul>
                                           <li>Dans la liste des produits inventoriés, les champs des "Prix unitaire d'inventaire" affichent désormais automatiquement les prix du catalogue de stock en vigueur au moment de la création de l'inventaire.</li>
                                        </ul>
@@ -241,12 +314,12 @@
                            </div>
                         </div>
                      </div>
-					 <div class="panel">
+                     <div class="panel">
                         <div class="heading">
                            <div class="version">
                               <h2>Note de version 4.5 du 14/04/2022</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -270,7 +343,7 @@
                                        </ul>
                                     </div>
                                  </div>
-								 <div class="divTableRow">
+                                 <div class="divTableRow">
                                     <div class="divTableCellNoteVersion1">
                                        <img src="../images/notes-version/ventes.svg" alt="Ventes" width="60">
                                     </div>
@@ -285,11 +358,11 @@
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                                        <ul>
                                           <li>Bénéficiant d'une nouvelle mise en page, les factures de vente générées au format PDF présentent le détail des différents taux de TVA appliqués, les modes de règlements utilisés et les annotations ajoutées dans les lignes de vente lors de la saisie initiale&nbsp;;</li>
-										  <li>En fonction des "Préférences de la société", une nouvelle option permet, lors de la saisie d'une ligne de vente, d'enregistrer un nouveau prix dans un catalogue pour le mettre à jour après facturation, ou d'appliquer le montant saisi dans la vente sans actualiser ce catalogue.</li>
+                                          <li>En fonction des "Préférences de la société", une nouvelle option permet, lors de la saisie d'une ligne de vente, d'enregistrer un nouveau prix dans un catalogue pour le mettre à jour après facturation, ou d'appliquer le montant saisi dans la vente sans actualiser ce catalogue.</li>
                                        </ul>
                                     </div>
                                  </div>
-								 <div class="divTableRow">
+                                 <div class="divTableRow">
                                     <div class="divTableCellNoteVersion1" style="width: 60px">
                                        <img src="../images/notes-version/stocks2022.svg" alt="Stocks" width="60">
                                     </div>
@@ -306,13 +379,13 @@
                                        <ul>
                                           <li>Lors de la création d'une expédition, il est maintenant possible de choisir un "Type de vente", parmi ceux qui ont été préalablement configurés, pour générer une facture incluant les prix du catalogue de vente rattaché au type de vente sélectionné.</li>
                                        </ul>
-									   <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
                                        <ul>
                                           <li>Un bon d'expédition est désormais imprimable au format PDF sans provoquer d'erreur, dans le cas où le prix d'un produit n'est pas spécifié dans la liste des éléments du colis sortant.</li>
                                        </ul>
                                     </div>
                                  </div>
-								 <div class="divTableRow">
+                                 <div class="divTableRow">
                                     <div class="divTableCellNoteVersion1" style="width: 60px">
                                        <img src="../images/notes-version/production2022.svg" alt="Production" width="60">
                                     </div>
@@ -328,15 +401,15 @@
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                                        <ul>
                                           <li>Dans la vue détaillée d'une zone cultivable, 3 nouveaux indicateurs sont automatiquement renseignés pour connaître la "Zone de captage", la "Réserve utile en eau" et la "Profondeur du sol" &#40;données sources IGN et INRAE&#41;&nbsp;;</li>
-										  <li>Lors de la saisie d'un intervention, il n'est plus possible de sélectionner une culture implantée sur une parcelle dont la date de fin est antérieure à la date de l'enregistrement.</li>
+                                          <li>Lors de la saisie d'un intervention, il n'est plus possible de sélectionner une culture implantée sur une parcelle dont la date de fin est antérieure à la date de l'enregistrement.</li>
                                        </ul>
-									   <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
                                        <ul>
                                           <li>Lorsqu'une intervention avec pulvérisation est planifiée, l'IFT est systématiquement calculé mais seules les interventions terminées ou validées sont maintenant prises en compte pour générer le bilan IFT et afficher les informations de traitement dans le graphe de la cellule IFT.</li>
                                        </ul>
                                     </div>
                                  </div>
-								 <div class="divTableRow">
+                                 <div class="divTableRow">
                                     <div class="divTableCellNoteVersion1" style="width: 60px">
                                        <img src="../images/notes-version/rh2022.svg" alt="Ressources humaines" width="60">
                                     </div>
@@ -352,12 +425,12 @@
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                                        <ul>
                                           <li>Mise à disposition d'une nouvelle fonctionnalité permettant de créer des "Groupes d'équipiers", à partir d'une sélection d'équipiers &#40;salariés, saisonniers, etc.&#41; pour constituer des équipes de travailleurs&nbsp;;</li>
-										  <li>En option, chaque groupe d'équipiers peut être caractérisé par un "Usage" &#40;une fonction temporaire ou permanente&#41; symbolisé par la création d'une étiquette dont on choisit la couleur et qui peut être reportée dans la fiche détaillée de l'intervention&nbsp;;</li>
-										  <li>Une nouveau formulaire de saisie permet d'enregistrer le début et la fin de la période de travail d'un équipier. Ce temps est automatiquement consigné dans un calendrier mensuel.</li>
+                                          <li>En option, chaque groupe d'équipiers peut être caractérisé par un "Usage" &#40;une fonction temporaire ou permanente&#41; symbolisé par la création d'une étiquette dont on choisit la couleur et qui peut être reportée dans la fiche détaillée de l'intervention&nbsp;;</li>
+                                          <li>Une nouveau formulaire de saisie permet d'enregistrer le début et la fin de la période de travail d'un équipier. Ce temps est automatiquement consigné dans un calendrier mensuel.</li>
                                        </ul>
                                     </div>
                                  </div>
-								 <div class="divTableRow">
+                                 <div class="divTableRow">
                                     <div class="divTableCellNoteVersion1">
                                        <img src="../images/notes-version/outils.svg" alt="Outils" width="60">
                                     </div>
@@ -376,7 +449,7 @@
                                        </ul>
                                     </div>
                                  </div>
-								 <div class="divTableRow">
+                                 <div class="divTableRow">
                                     <div class="divTableCellNoteVersion1">
                                        <img src="../images/notes-version/configuration.svg" alt="Configuration" width="60px">
                                     </div>
@@ -395,7 +468,7 @@
                                        </ul>
                                     </div>
                                  </div>
-								 <div class="divTableRow">
+                                 <div class="divTableRow">
                                     <div class="divTableCellNoteVersion1" style="width: 60px">
                                        <img src="../images/notes-version/ekyviti.svg" alt="Ekyviti" width="60">
                                     </div>
@@ -414,7 +487,7 @@
                                        </ul>
                                     </div>
                                  </div>
-								 <div class="divTableRow">
+                                 <div class="divTableRow">
                                     <div class="divTableCellNoteVersion1">
                                        <img src="../images/notes-version/duke.svg" alt="Duke" width="60px">
                                     </div>
@@ -437,12 +510,12 @@
                            </div>
                         </div>
                      </div>
-					 <div class="panel">
+                     <div class="panel">
                         <div class="heading">
                            <div class="version">
                               <h2>Note de version 4.4 du 10/03/2022</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -466,7 +539,7 @@
                                        </ul>
                                     </div>
                                  </div>
-								 <div class="divTableRow">
+                                 <div class="divTableRow">
                                     <div class="divTableCellNoteVersion1">
                                        <img src="../images/notes-version/comptabilite2022.svg" alt="Comptabilité" width="60">
                                     </div>
@@ -485,7 +558,7 @@
                                        </ul>
                                     </div>
                                  </div>
-								 <div class="divTableRow">
+                                 <div class="divTableRow">
                                     <div class="divTableCellNoteVersion1" style="width: 60px">
                                        <img src="../images/notes-version/production2022.svg" alt="Production" width="60">
                                     </div>
@@ -501,11 +574,11 @@
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                                        <ul>
                                           <li>La création d'une nouvelle activité déclenche maintenant automatiquement son ouverture pour la campagne en cours&nbsp;;</li>
-										  <li>Dans la vue détaillée d'une activité, un nouveau bouton permet désormais de calculer le budget prévisionnel de référence pour l'activité sélectionnée.</li>
+                                          <li>Dans la vue détaillée d'une activité, un nouveau bouton permet désormais de calculer le budget prévisionnel de référence pour l'activité sélectionnée.</li>
                                        </ul>
                                     </div>
                                  </div>
-								 <div class="divTableRow">
+                                 <div class="divTableRow">
                                     <div class="divTableCellNoteVersion1" style="width: 60px">
                                        <img src="../images/notes-version/ekyviti.svg" alt="Ekyviti" width="60">
                                     </div>
@@ -528,12 +601,12 @@
                            </div>
                         </div>
                      </div>
-					 <div class="panel">
+                     <div class="panel">
                         <div class="heading">
                            <div class="version">
                               <h2>Note de version 4.3 du 21/02/2022</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -555,13 +628,13 @@
                                        <ul>
                                           <li>Dans les "Cellules" contenant un graphe, le menu permet maintenant d'afficher ou de masquer les données utilisées pour sa construction, et de les télécharger sous la forme d'un tableau au format CSV ou XLS.</li>
                                        </ul>
-									   <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
                                        <ul>
                                           <li>Dans le formulaire des commandes &#40;module "Achats"&#41; et des réceptions &#40;module "Stocks"&#41;, les valeurs du "Stock actuel" et du "Stock après commande" sont maintenant correctement converties par rapport à l'unité de référence de l'article.</li>
                                        </ul>
                                     </div>
                                  </div>
-								 <div class="divTableRow">
+                                 <div class="divTableRow">
                                     <div class="divTableCellNoteVersion1" style="width: 60px">
                                        <img src="../images/notes-version/stocks.svg" alt="Stocks" width="60">
                                     </div>
@@ -599,7 +672,7 @@
                                        </ul>
                                     </div>
                                  </div>
-								 <div class="divTableRow">
+                                 <div class="divTableRow">
                                     <div class="divTableCellNoteVersion1">
                                        <img src="../images/notes-version/configuration.svg" alt="Configuration" width="60px">
                                     </div>
@@ -618,7 +691,7 @@
                                        </ul>
                                     </div>
                                  </div>
-								 <div class="divTableRow">
+                                 <div class="divTableRow">
                                     <div class="divTableCellNoteVersion1" style="width: 60px">
                                        <img src="../images/notes-version/ekyviti.svg" alt="Ekyviti" width="60">
                                     </div>
@@ -641,12 +714,12 @@
                            </div>
                         </div>
                      </div>
-					 <div class="panel">
+                     <div class="panel">
                         <div class="heading">
                            <div class="version">
                               <h2>Note de version 4.2 du 3/02/2022</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -670,7 +743,7 @@
                                        </ul>
                                     </div>
                                  </div>
-								 <div class="divTableRow">
+                                 <div class="divTableRow">
                                     <div class="divTableCellNoteVersion1" style="width: 60px">
                                        <img src="../images/notes-version/stocks.svg" alt="Stocks" width="60">
                                     </div>
@@ -689,7 +762,7 @@
                                        </ul>
                                     </div>
                                  </div>
-								 <div class="divTableRow">
+                                 <div class="divTableRow">
                                     <div class="divTableCellNoteVersion1" style="width: 60px">
                                        <img src="../images/notes-version/production.svg" alt="Production" width="60">
                                     </div>
@@ -727,7 +800,7 @@
                                        </ul>
                                     </div>
                                  </div>
-								 <div class="divTableRow">
+                                 <div class="divTableRow">
                                     <div class="divTableCellNoteVersion1" style="width: 60px">
                                        <img src="../images/notes-version/ekyviti.svg" alt="Ekyviti" width="60">
                                     </div>
@@ -755,7 +828,7 @@
                            <div class="version">
                               <h2>Note de version 4.1 du 26/01/2022</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -797,7 +870,7 @@
                                        </ul>
                                     </div>
                                  </div>
-								 <div class="divTableRow">
+                                 <div class="divTableRow">
                                     <div class="divTableCellNoteVersion1" style="width: 60px">
                                        <img src="../images/notes-version/stocks.svg" alt="Stocks" width="60">
                                     </div>
@@ -813,11 +886,11 @@
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                                        <ul>
                                           <li>Lors de la création d'une nouvelle matière, le champ "Nom" est désormais prérempli afin d'éviter à l'utilisateur de saisir le profil de l'article sélectionné initialement. La date de création de la nouvelle matière est maintenant requise pour disposer de celle-ci dans l'application&nbsp;;</li>
-										  <li>Afin de regrouper dans un seul endroit les commandes de paramétrage des nouveaux articles, la fonctionnalité de création des "Conditionnements" est déplacée dans la section "Catalogue d'articles" du module "Configuration".</li>
+                                          <li>Afin de regrouper dans un seul endroit les commandes de paramétrage des nouveaux articles, la fonctionnalité de création des "Conditionnements" est déplacée dans la section "Catalogue d'articles" du module "Configuration".</li>
                                        </ul>
                                     </div>
                                  </div>
-								 <div class="divTableRow">
+                                 <div class="divTableRow">
                                     <div class="divTableCellNoteVersion1" style="width: 60px">
                                        <img src="../images/notes-version/production.svg" alt="Production" width="60">
                                     </div>
@@ -836,7 +909,7 @@
                                        </ul>
                                        <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
                                        <ul>
-										  <li>Lors du calcul du prix d'un déplacement dans une intervention, le coût horaire appliqué est celui défini dans le catalogue de prix des déplacements et se substitue à celui enregistré dans le catalogue des coûts d'usage&nbsp;;</li>
+                                          <li>Lors du calcul du prix d'un déplacement dans une intervention, le coût horaire appliqué est celui défini dans le catalogue de prix des déplacements et se substitue à celui enregistré dans le catalogue des coûts d'usage&nbsp;;</li>
                                           <li>Le calcul de la superficie travaillée pour une activité pérenne prend désormais correctement en compte la campagne annuelle de production.</li>
                                        </ul>
                                     </div>
@@ -857,9 +930,9 @@
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                                        <ul>
                                           <li>La section "Produits", dans la barre latérale du module, est désormais intitulée "Catalogue d'articles" et reçoit la fonctionnalité de création des "Conditionnements"&nbsp;;</li>
-										  <li>Dans un objectif de clarification, les "Variantes de produits" sont renommées "Articles" et les "Types de produits" sont maintenant désignés par "Profils fonctionnels"&nbsp;;</li>
-										  <li>Le libellé de la liste déroulante "Articles", regroupant les principales sous-natures de produits, est remplacé par "Articles stockables"&nbsp;;</li>
-										  <li>Dans la vue détaillée d'un article, un nouveau bouton "Dupliquer" permet de faciliter la création d'un nouvel article aux caractéristiques identiques à celui qui est affiché, avec un numéro permettant de le distinguer de l'élément dupliqué&nbsp;;</li>
+                                          <li>Dans un objectif de clarification, les "Variantes de produits" sont renommées "Articles" et les "Types de produits" sont maintenant désignés par "Profils fonctionnels"&nbsp;;</li>
+                                          <li>Le libellé de la liste déroulante "Articles", regroupant les principales sous-natures de produits, est remplacé par "Articles stockables"&nbsp;;</li>
+                                          <li>Dans la vue détaillée d'un article, un nouveau bouton "Dupliquer" permet de faciliter la création d'un nouvel article aux caractéristiques identiques à celui qui est affiché, avec un numéro permettant de le distinguer de l'élément dupliqué&nbsp;;</li>
                                           <li>Lors de l'import d'un nouvel article, le champ "Nom" est désormais prérempli afin d'éviter à l'utilisateur de saisir le profil de l'article sélectionné initialement.</li>
                                        </ul>
                                     </div>
@@ -868,12 +941,12 @@
                            </div>
                         </div>
                      </div>
-					 <div class="panel">
+                     <div class="panel">
                         <div class="heading">
                            <div class="version">
                               <h2>Note de version 4.0 du 19/01/2022</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -1061,7 +1134,7 @@
                            <div class="version">
                               <h2>Note de version 3.39 du 22/11/2021</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -1237,7 +1310,7 @@
                            <div class="version">
                               <h2>Note de version 3.38 du 14/09/2021</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -1330,7 +1403,7 @@
                            <div class="version">
                               <h2>Note de version 3.37 du 2/09/2021</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -1456,7 +1529,7 @@
                            <div class="version">
                               <h2>Note de version 3.36 du 24/08/2021</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -1547,7 +1620,7 @@
                            <div class="version">
                               <h2>Note de version 3.35 du 7/07/2021</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -1623,7 +1696,7 @@
                            <div class="version">
                               <h2>Note de version 3.34 du 23/06/2021</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -1726,7 +1799,7 @@
                            <div class="version">
                               <h2>Note de version 3.33 du 3/06/2021</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -1857,7 +1930,7 @@
                            <div class="version">
                               <h2>Note de version 3.32 du 6/05/2021</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -1948,7 +2021,7 @@
                            <div class="version">
                               <h2>Note de version 3.31 du 3/05/2021</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -2107,7 +2180,7 @@
                            <div class="version">
                               <h2>Note de version 3.30 du 25/03/2021</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -2233,7 +2306,7 @@
                            <div class="version">
                               <h2>Note de version 3.29 du 4/03/2021</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -2327,7 +2400,7 @@
                            <div class="version">
                               <h2>Note de version 3.28 du 18/02/2021</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -2414,7 +2487,7 @@
                            <div class="version">
                               <h2>Note de version 3.27 du 3/02/2021</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -2515,7 +2588,7 @@
                            <div class="version">
                               <h2>Note de version 3.26 du 22/01/2021</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -2674,7 +2747,7 @@
                            <div class="version">
                               <h2>Note de version 3.25 du 17/12/2020</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -2832,7 +2905,7 @@
                            <div class="version">
                               <h2>Note de version 3.24 du 3/12/2020</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -2985,7 +3058,7 @@
                            <div class="version">
                               <h2>Note de version 3.23 du 18/11/2020</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -3074,7 +3147,7 @@
                            <div class="version">
                               <h2>Note de version 3.22 du 10/11/2020</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -3212,7 +3285,7 @@
                            <div class="version">
                               <h2>Note de version 3.20 du 11/09/2020</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -3320,7 +3393,7 @@
                            <div class="version">
                               <h2>Note de version 3.19 du 26/08/2020</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -3429,7 +3502,7 @@
                            <div class="version">
                               <h2>Note de version 3.18 du 13/08/2020</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -3542,7 +3615,7 @@
                            <div class="version">
                               <h2>Note de version 3.17 du 4/08/2020</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -3677,7 +3750,7 @@
                            <div class="version">
                               <h2>Note de version 3.16 du 17/07/2020</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -3812,7 +3885,7 @@
                            <div class="version">
                               <h2>Note de version 3.15 du 6/07/2020</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -3977,7 +4050,7 @@
                            <div class="version">
                               <h2>Note de version 3.14 du 18/06/2020</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -4114,7 +4187,7 @@
                            <div class="version">
                               <h2>Note de version 3.13 du 12/06/2020</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -4244,7 +4317,7 @@
                            <div class="version">
                               <h2>Note de version 3.10 du 28/04/2020</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -4299,7 +4372,7 @@
                            <div class="version">
                               <h2>Note de version 3.9 du 17/04/2020</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -4333,7 +4406,7 @@
                            <div class="version">
                               <h2>Note de version 3.8 du 27/03/2020</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -4395,7 +4468,7 @@
                            <div class="version">
                               <h2>Note de version 3.7 du 10/03/2020</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -4473,7 +4546,7 @@
                            <div class="version">
                               <h2>Note de version 3.6 du 21/02/2020</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -4546,7 +4619,7 @@
                            <div class="version">
                               <h2>Note de version 3.5 du 19/02/2020</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -4600,7 +4673,7 @@
                            <div class="version">
                               <h2>Note de version 3.3 du 23/01/2020</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -4763,7 +4836,7 @@
                            <div class="version">
                               <h2>Note de version 3.1 du 12/12/2019</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -4894,7 +4967,7 @@
                            <div class="version">
                               <h2>Note de version 3.0 du 24/10/2019</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -5083,7 +5156,7 @@
                            <div class="version">
                               <h2>Note de version 2.60 du 3/10/2019</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -5198,7 +5271,7 @@
                            <div class="version">
                               <h2>Note de version 2.59 du 10/09/2019</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -5314,7 +5387,7 @@
                            <div class="version">
                               <h2>Note de version 2.56 du 31/07/2019</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -5418,7 +5491,7 @@
                            <div class="version">
                               <h2>Note de version 2.55 du 21/06/2019</h2>
                            </div>
-                          <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
@@ -5597,8 +5670,8 @@
          </div>
       </article>
       <!-- Section pour la génération du PDF -->
-	  <div class="saut-page"></div>
-	  <div class="heading-print marge-pdf">
+      <div class="saut-page"></div>
+      <div class="heading-print marge-pdf">
          <h2>Note de version 4.6 du 28/04/2022</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -5619,15 +5692,15 @@
                   <div class="divTableCellNoteVersion4" style="width: auto">
                      <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                      <ul>
-						<li>Lorsqu'un emprunt possède le statut "En cours" ou qu'une immobilisation est définie sur "En service", il est désormais possible de modifier leurs paramètres tant que les écritures passées en comptabilité n'ont pas été validées dans le brouillard des journaux correspondants.</li>
+                        <li>Lorsqu'un emprunt possède le statut "En cours" ou qu'une immobilisation est définie sur "En service", il est désormais possible de modifier leurs paramètres tant que les écritures passées en comptabilité n'ont pas été validées dans le brouillard des journaux correspondants.</li>
                      </ul>
-					 <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
                      <ul>
                         <li>La consultation des écritures des comptes bancaires consignées dans le Grand-livre est maintenant opérationnelle et ne provoque plus d'erreur lors de l'exécution de la requête.</li>
-                    </ul>
+                     </ul>
                   </div>
                </div>
-			   <div class="divTableRow">
+               <div class="divTableRow">
                   <div class="divTableCellNoteVersion1">
                      <img src="../images/notes-version/ventes.svg" alt="Ventes" width="60">
                   </div>
@@ -5639,7 +5712,7 @@
                <div class="divTableRow">
                   <div class="divTableCellNoteVersion3" style="width: 60px"></div>
                   <div class="divTableCellNoteVersion4" style="width: auto">
-                      <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                      <ul>
                         <li>Dans la vue d'une expédition générée à partir d'une vente, le montant affiché dans le champ du "Prix unitaire de vente HT" de chaque élément à expédier est prérempli et n'est désormais plus modifiable.</li>
                      </ul>
@@ -5660,19 +5733,19 @@
                   <div class="divTableCellNoteVersion4" style="width: auto">
                      <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                      <ul>
-						<li>Lors de la création d'un inventaire, les quantités des produits inventoriés sur une période donnée sont calculées avec davantage d'exactitude pour afficher les résultats de l'opération. Par ailleurs, le bouton "Toutes les catégories comptables" est maintenant remplacé par un simple bouton de validation.</li>
+                        <li>Lors de la création d'un inventaire, les quantités des produits inventoriés sur une période donnée sont calculées avec davantage d'exactitude pour afficher les résultats de l'opération. Par ailleurs, le bouton "Toutes les catégories comptables" est maintenant remplacé par un simple bouton de validation.</li>
                      </ul>
-					 <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
                      <ul>
                         <li>Dans la liste des produits inventoriés, les champs des "Prix unitaire d'inventaire" affichent désormais automatiquement les prix du catalogue de stock en vigueur au moment de la création de l'inventaire.</li>
-                    </ul>
+                     </ul>
                   </div>
                </div>
             </div>
          </div>
       </div>
-	  <div class="saut-page"></div>
-	  <div class="heading-print marge-pdf">
+      <div class="saut-page"></div>
+      <div class="heading-print marge-pdf">
          <h2>Note de version 4.5 du 14/04/2022</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -5697,7 +5770,7 @@
                      </ul>
                   </div>
                </div>
-			   <div class="divTableRow">
+               <div class="divTableRow">
                   <div class="divTableCellNoteVersion1">
                      <img src="../images/notes-version/ventes.svg" alt="Ventes" width="60">
                   </div>
@@ -5709,7 +5782,7 @@
                <div class="divTableRow">
                   <div class="divTableCellNoteVersion3" style="width: 60px"></div>
                   <div class="divTableCellNoteVersion4" style="width: auto">
-                      <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                      <ul>
                         <li>Bénéficiant d'une nouvelle mise en page, les factures de vente générées au format PDF présentent le détail des différents taux de TVA appliqués, les modes de règlements utilisés et les annotations ajoutées dans les lignes de vente lors de la saisie initiale&nbsp;;</li>
                         <li>En fonction des "Préférences de la société", une nouvelle option permet, lors de la saisie d'une ligne de vente, d'enregistrer un nouveau prix dans un catalogue pour le mettre à jour après facturation, ou d'appliquer le montant saisi dans la vente sans actualiser ce catalogue.</li>
@@ -5731,15 +5804,15 @@
                   <div class="divTableCellNoteVersion4" style="width: auto">
                      <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                      <ul>
-						<li>Lors de la création d'une expédition, il est maintenant possible de choisir un "Type de vente", parmi ceux qui ont été préalablement configurés, pour générer une facture incluant les prix du catalogue de vente rattaché au type de vente sélectionné.</li>
+                        <li>Lors de la création d'une expédition, il est maintenant possible de choisir un "Type de vente", parmi ceux qui ont été préalablement configurés, pour générer une facture incluant les prix du catalogue de vente rattaché au type de vente sélectionné.</li>
                      </ul>
-					 <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
                      <ul>
                         <li>Un bon d'expédition est désormais imprimable au format PDF sans provoquer d'erreur, dans le cas où le prix d'un produit n'est pas spécifié dans la liste des éléments du colis sortant.</li>
-                    </ul>
+                     </ul>
                   </div>
                </div>
-			   <div class="divTableRow">
+               <div class="divTableRow">
                   <div class="divTableCellNoteVersion1" style="width: 60px">
                      <img src="../images/notes-version/production2022.svg" alt="Production" width="60">
                   </div>
@@ -5757,7 +5830,7 @@
                         <li>Dans la vue détaillée d'une zone cultivable, 3 nouveaux indicateurs sont automatiquement renseignés pour connaître la "Zone de captage", la "Réserve utile en eau" et la "Profondeur du sol" &#40;données sources IGN et INRAE&#41;&nbsp;;</li>
                         <li>Lors de la saisie d'un intervention, il n'est plus possible de sélectionner une culture implantée sur une parcelle dont la date de fin est antérieure à la date de l'enregistrement.</li>
                      </ul>
-					 <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
                      <ul>
                         <li>Lorsqu'une intervention avec pulvérisation est planifiée, l'IFT est systématiquement calculé mais seules les interventions terminées ou validées sont maintenant prises en compte pour générer le bilan IFT et afficher les informations de traitement dans le graphe de la cellule IFT.</li>
                      </ul>
@@ -5782,15 +5855,15 @@
                <div class="divTableRow">
                   <div class="divTableCellNoteVersion3" style="width: 60px"></div>
                   <div class="divTableCellNoteVersion4" style="width: auto">
-                      <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                      <ul>
                         <li>Mise à disposition d'une nouvelle fonctionnalité permettant de créer des "Groupes d'équipiers" à partir d'une sélection d'équipiers &#40;salariés, saisonniers, etc.&#41; pour constituer des équipes de travailleurs&nbsp;;</li>
-						<li>En option, chaque groupe d'équipiers peut être caractérisé par un "Usage" &#40;une fonction temporaire ou permanente&#41; symbolisé par la création d'une étiquette dont on choisit la couleur et qui peut être reportée dans la fiche détaillée de l'intervention&nbsp;;</li>
+                        <li>En option, chaque groupe d'équipiers peut être caractérisé par un "Usage" &#40;une fonction temporaire ou permanente&#41; symbolisé par la création d'une étiquette dont on choisit la couleur et qui peut être reportée dans la fiche détaillée de l'intervention&nbsp;;</li>
                         <li>Une nouveau formulaire de saisie permet d'enregistrer le début et la fin de la période de travail d'un équipier. Ce temps est automatiquement consigné dans un calendrier mensuel.</li>
                      </ul>
                   </div>
                </div>
-			   <div class="divTableRow">
+               <div class="divTableRow">
                   <div class="divTableCellNoteVersion1" style="width: 60px">
                      <img src="../images/notes-version/outils.svg" alt="Outils" width="60">
                   </div>
@@ -5809,7 +5882,7 @@
                      </ul>
                   </div>
                </div>
-			   <div class="divTableRow">
+               <div class="divTableRow">
                   <div class="divTableCellNoteVersion1">
                      <img src="../images/notes-version/configuration.svg" alt="Configuration" width="60px">
                   </div>
@@ -5828,7 +5901,7 @@
                      </ul>
                   </div>
                </div>
-			   <div class="divTableRow">
+               <div class="divTableRow">
                   <div class="divTableCellNoteVersion1" style="width: 60px">
                      <img src="../images/notes-version/ekyviti.svg" alt="Ekyviti" width="60">
                   </div>
@@ -5847,7 +5920,7 @@
                      </ul>
                   </div>
                </div>
-			   <div class="divTableRow">
+               <div class="divTableRow">
                   <div class="divTableCellNoteVersion1" style="width: 60px;">
                      <img src="../images/notes-version/duke.svg" alt="Duke" width="60px;">
                   </div>
@@ -5869,8 +5942,8 @@
             </div>
          </div>
       </div>
-	  <div class="saut-page"></div>
-	  <div class="heading-print marge-pdf">
+      <div class="saut-page"></div>
+      <div class="heading-print marge-pdf">
          <h2>Note de version 4.4 du 10/03/2022</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -5934,7 +6007,7 @@
                      </ul>
                   </div>
                </div>
-			   <div class="divTableRow">
+               <div class="divTableRow">
                   <div class="divTableCellNoteVersion1" style="width: 60px">
                      <img src="../images/notes-version/ekyviti.svg" alt="Ekyviti" width="60">
                   </div>
@@ -5980,7 +6053,7 @@
                      <ul>
                         <li>Dans les "Cellules" contenant un graphe, le menu permet maintenant d'afficher ou de masquer les données utilisées pour sa construction, et de les télécharger sous la forme d'un tableau au format CSV ou XLS.</li>
                      </ul>
-					 <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
                      <ul>
                         <li>Dans le formulaire des commandes &#40;module "Achats"&#41; et des réceptions &#40;module "Stocks"&#41;, les valeurs du "Stock actuel" et du "Stock après commande" sont maintenant correctement converties par rapport à l'unité de référence de l'article.</li>
                      </ul>
@@ -6001,11 +6074,11 @@
                   <div class="divTableCellNoteVersion4" style="width: auto">
                      <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                      <ul>
-						<li>La liste des matières affiche désormais tous les produits en stock, quelle que soit la sous-nature définie par défaut pour les "Articles stockables".</li>
+                        <li>La liste des matières affiche désormais tous les produits en stock, quelle que soit la sous-nature définie par défaut pour les "Articles stockables".</li>
                      </ul>
                   </div>
                </div>
-			   <div class="divTableRow">
+               <div class="divTableRow">
                   <div class="divTableCellNoteVersion1" style="width: 60px">
                      <img src="../images/notes-version/outils.svg" alt="Outils" width="60">
                   </div>
@@ -6024,7 +6097,7 @@
                      </ul>
                   </div>
                </div>
-			   <div class="divTableRow">
+               <div class="divTableRow">
                   <div class="divTableCellNoteVersion1">
                      <img src="../images/notes-version/configuration.svg" alt="Configuration" width="60px">
                   </div>
@@ -6072,7 +6145,7 @@
             </div>
          </div>
       </div>
-	  <div class="saut-page"></div>
+      <div class="saut-page"></div>
       <div class="heading-print marge-pdf">
          <h2>Note de version 4.2 du 3/02/2022</h2>
       </div>
@@ -6113,7 +6186,7 @@
                   <div class="divTableCellNoteVersion4" style="width: auto">
                      <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                      <ul>
-						<li>La vue détaillée d'une "Livraison", comprenant un ou plusieurs expéditions, affiche maintenant une nouvelle section qui comptabilise et énumère l'ensemble des "Produits à expédier".</li>
+                        <li>La vue détaillée d'une "Livraison", comprenant un ou plusieurs expéditions, affiche maintenant une nouvelle section qui comptabilise et énumère l'ensemble des "Produits à expédier".</li>
                      </ul>
                   </div>
                </div>
@@ -6136,7 +6209,7 @@
                      </ul>
                   </div>
                </div>
-			   <div class="divTableRow">
+               <div class="divTableRow">
                   <div class="divTableCellNoteVersion1" style="width: 60px">
                      <img src="../images/notes-version/outils.svg" alt="Outils" width="60">
                   </div>
@@ -6177,7 +6250,7 @@
             </div>
          </div>
       </div>
-	  <div class="saut-page"></div>
+      <div class="saut-page"></div>
       <div class="heading-print marge-pdf">
          <h2>Note de version 4.1 du 26/01/2022</h2>
       </div>
@@ -6205,7 +6278,7 @@
                </div>
                <div class="divTableRow">
                   <div class="divTableCellNoteVersion1">
-                    <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
+                     <img src="../images/notes-version/comptabilite.svg" alt="Comptabilité" width="60">
                   </div>
                   <div class="divTableCellNoteVersion2">
                      <strong>Comptabilité</strong><br /><br />
@@ -6236,7 +6309,7 @@
                   <div class="divTableCellNoteVersion4" style="width: auto">
                      <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                      <ul>
-						<li>Lors de la création d'une nouvelle matière, le champ "Nom" est désormais prérempli afin d'éviter à l'utilisateur de saisir le profil de l'article sélectionné initialement. La date de création de la nouvelle matière est maintenant requise pour disposer de celle-ci dans l'application&nbsp;;</li>
+                        <li>Lors de la création d'une nouvelle matière, le champ "Nom" est désormais prérempli afin d'éviter à l'utilisateur de saisir le profil de l'article sélectionné initialement. La date de création de la nouvelle matière est maintenant requise pour disposer de celle-ci dans l'application&nbsp;;</li>
                         <li>Afin de regrouper dans un seul endroit les commandes de paramétrage des nouveaux articles, la fonctionnalité de création des "Conditionnements" est déplacée dans la section "Catalogue d'articles" du module "Configuration".</li>
                      </ul>
                   </div>
@@ -6258,9 +6331,9 @@
                      <ul>
                         <li>Lors de la création d'un nouvel équipement, le champ "Nom" est désormais prérempli afin d'éviter à l'utilisateur de saisir le profil de l'article sélectionné initialement. La date de création de l'équipement est maintenant requise pour disposer de celui-ci dans l'application.</li>
                      </ul>
-					 <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
                      <ul>
-						<li>Lors du calcul du prix d'un déplacement dans une intervention, le coût horaire appliqué est celui défini dans le catalogue de prix des déplacements et se substitue à celui enregistré dans le catalogue des coûts d'usage&nbsp;;</li>
+                        <li>Lors du calcul du prix d'un déplacement dans une intervention, le coût horaire appliqué est celui défini dans le catalogue de prix des déplacements et se substitue à celui enregistré dans le catalogue des coûts d'usage&nbsp;;</li>
                         <li>Le calcul de la superficie travaillée pour une activité pérenne prend désormais correctement en compte la campagne annuelle de production.</li>
                      </ul>
                   </div>
@@ -6288,9 +6361,9 @@
                      <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                      <ul>
                         <li>La section "Produits", dans la barre latérale du module, est désormais intitulée "Catalogue d'articles" et reçoit la fonctionnalité de création des "Conditionnements"&nbsp;;</li>
-						<li>Dans un objectif de clarification, les "Variantes de produits" sont renommées "Articles" et les "Types de produits" sont maintenant désignés par "Profils fonctionnels"&nbsp;;</li>
-						<li>Le libellé de la liste déroulante "Articles", regroupant les principales sous-natures de produits, est remplacé par "Articles stockables"&nbsp;;</li>
-						<li>Dans la vue détaillée d'un article, un nouveau bouton "Dupliquer" permet de faciliter la création d'un nouvel article aux caractéristiques identiques à celui qui est affiché, avec un numéro permettant de le distinguer de l'élément dupliqué&nbsp;;</li>
+                        <li>Dans un objectif de clarification, les "Variantes de produits" sont renommées "Articles" et les "Types de produits" sont maintenant désignés par "Profils fonctionnels"&nbsp;;</li>
+                        <li>Le libellé de la liste déroulante "Articles", regroupant les principales sous-natures de produits, est remplacé par "Articles stockables"&nbsp;;</li>
+                        <li>Dans la vue détaillée d'un article, un nouveau bouton "Dupliquer" permet de faciliter la création d'un nouvel article aux caractéristiques identiques à celui qui est affiché, avec un numéro permettant de le distinguer de l'élément dupliqué&nbsp;;</li>
                         <li>Lors de l'import d'un nouvel article, le champ "Nom" est désormais prérempli afin d'éviter à l'utilisateur de saisir le profil de l'article sélectionné initialement.</li>
                      </ul>
                   </div>
