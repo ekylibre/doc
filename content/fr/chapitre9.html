@@ -328,7 +328,7 @@
                   <img src="../images/commun/caret-right.svg" alt="Flèche" height="15">
                </div>
                <div class="divTableCellListe">
-                  Comment enregistrer une intervention de <a href="#pulverisation" class="avoid-clicks">pulvérisation</a> avec des produits phytosanitaires, gérer les <a href="#znt" class="avoid-clicks">zones de non-traitement</a>, calculer les <a href="#ift" class="avoid-clicks">IFT</a> et obtenir le <a href="#bilan-ift" class="avoid-clicks">bilan d'IFT</a>
+                  Comment enregistrer une intervention de <a href="#pulverisation" class="avoid-clicks">pulvérisation</a> avec des produits phytosanitaires, consigner les <a href="#reglages" class="avoid-clicks">réglages du pulvérisateur</a>, gérer les <a href="#znt" class="avoid-clicks">zones de non-traitement</a>, calculer les <a href="#ift" class="avoid-clicks">IFT</a> et obtenir le <a href="#bilan-ift" class="avoid-clicks">bilan d'IFT</a>
                </div>
             </div>
 			<div class="divTableRow">
@@ -1443,17 +1443,31 @@
          </p>
          <p>Notez que si 3 produits sont sélectionnés et que l'interdiction de mélange ne concerne que 2 d'entre eux, la mention <span class="statut-rouge">&nbsp;Non autorisé&nbsp;</span> ne s'affiche que pour ces derniers.<br />Le troisième produit qui n'est pas concerné par l'interdiction conserve alors la mention <span class="statut-vert">&nbsp;Autorisé&nbsp;</span>.</p>
       </div>
-	  <a class="slice-intra" id="volume"></a>
+	  <a class="slice-intra" id="reglages"></a>
 	  <br />
       <div class="floating-box process">
          <img src="../images/commun/step3.svg" alt="3" width="52" />
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Renseignez les réglages de la pulvérisation</span>
-         <p>En option, et après sélection d'un pulvérisateur porté, semi-porté ou tracté, remplissez tous les champs du formulaire permettant de consigner les réglages de la pulvérisation&nbsp;: volume de bouillie surfacique, nombre et couleur des buses, largeur de traitement, pression réglée en bar, vitesse de travail et régime du moteur.</p>
+         <span class="titre-advice">Sélectionnez un équipement de pulvérisation</span>
+         <p>Après sélection d'un tracteur, choisissez, dans la liste déroulante, un pulvérisateur porté, semi-porté ou tracté parmi ceux qui sont disponibles et renseignez, en option, le nombre de rangs.</p>
 		 <p>Notez que les champs de "Capacité de stockage volumique nominale" et de "Largeur de travail" sont directement préremplis à partir des "Indicateurs clés" permettant de caractériser l'équipement choisi.</p>
          <p class="max-img-process">
-            <img src="../images/chapitre9/volume1.png" class="contour-img" alt="Volume de bouillie" data-action="zoom" />
+            <img src="../images/chapitre9/equip-pulve1.png" class="contour-img" alt="Sélection équipement" data-action="zoom" />
+         </p>
+		 <p><strong>En option&nbsp;: renseignez le volume de bouillie surfacique</strong></p>
+		 <p>Saisissez le volume de bouillie &#40;mélange d'eau claire et d'un ou de plusieurs produits phytosanitaires&#41; en l/ha dans le champ prévu à cet effet.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre9/equip-pulve2.png" class="contour-img" alt="Volume de bouillie" data-action="zoom" />
+         </p>
+		 <p>Lorsque le volume de bouillie surfacique est renseigné, il est reporté et mis en évidence dans la fiche de l'intervention avec une pastille de couleur bleue&nbsp;:</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre9/equip-pulve3.png" class="contour-img" alt="Volume de bouillie" data-action="zoom" />
+         </p>
+		 <p><strong>En option&nbsp;: renseignez les réglages de la pulvérisation</strong></p>
+		 <p>Cliquez sur le lien d'ajout d'un "Réglage de la pulvérisation" et remplissez tous les champs du formulaire permettant de consigner les réglages appliqués durant l'intervention&nbsp;: couleur/type et nombre de buses, largeur de traitement, pression réglée en bar, vitesse de travail et régime du moteur.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre9/equip-pulve4.png" class="contour-img" alt="Réglages de pulvérisation" data-action="zoom" />
          </p>
 	  </div>
 	  <a class="slice-intra" id="znt"></a>
@@ -1551,15 +1565,19 @@
          <p class="max-img-process">
             <img src="../images/chapitre9/ift1.png" class="contour-img" alt="Intervention IFT" data-action="zoom" />
          </p>
-		 <p>Cliquez sur le bouton <strong>"Fiche applicateur"</strong> pour télécharger la fiche d'intervention au format ODT avec les réglages du pulvérisateur et le dosage d'un ou de plusieurs produits appliqués durant un traitement.</p>
+		 <p class="aerateur-haut">Cliquez sur le bouton <strong>"Fiche applicateur"</strong> pour télécharger une fiche d'intervention au format ODT récapitulant les réglages du pulvérisateur, le dosage d'un ou de plusieurs produits phytosanitaires, le nombre de pulvérisations requises en fonction de la surface à traiter et de la capacité volumique de stockage de l'équipement utilisé.</p>
 		 <p class="max-img-process">
             <img src="../images/chapitre9/fiche1.png" class="contour-img" alt="Export fiche" data-action="zoom" />
          </p>
-		 <p>Cliquez sur le bouton <strong>"Fiche de chantier ETA"</strong> &#40;Entreprise de travaux agricoles&#41; pour obtenir la fiche au format ODT regroupant les mentions réglementaires obligatoires liées à un traitement phytosanitaire.</p>
+		 <p class="aerateur-haut">Cliquez sur le bouton <strong>"Fiche de chantier ETA"</strong> &#40;Entreprise de travaux agricoles&#41; pour obtenir la fiche au format ODT regroupant les mentions réglementaires obligatoires liées à un traitement phytosanitaire.</p>
 		 <p class="max-img-process">
             <img src="../images/chapitre9/fiche2.png" class="contour-img" alt="Export fiche" data-action="zoom" />
          </p>
-		 <p>Chaque valeur est également un lien web permettant de vérifier, sur le site du Ministère de l'Agriculture et de l'Alimentation, les informations du traitement et la conformité du calcul réalisé.</p>
+		 <p>Notez que ce bouton n'est affiché que si et seulement <strong>si le modèle de document correspondant a été préalablement chargé</strong> dans le module "Configuration" &gt; "Modèles de document" en cliquant sur le bouton "Charger" et que son statut est bien défini sur "Actif" avec la case cochée<img src="../images/commun/check-square-o.svg" alt="Case cochée" height="18" class="align-icone icone-marge-gauche icone-marge-droite">à gauche de son libellé.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre9/fiche3.png" class="contour-img" alt="Modèles de document" data-action="zoom" />
+         </p>
+		 <p class="aerateur-haut">Chaque valeur est également un lien web permettant de vérifier, sur le site du Ministère de l'Agriculture et de l'Alimentation, les informations du traitement et la conformité du calcul réalisé.</p>
 		 <p class="max-img-process">
             <img src="../images/chapitre9/ift2.png" class="contour-img" alt="Contrôle IFT" data-action="zoom" />
          </p>
