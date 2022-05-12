@@ -113,6 +113,29 @@ img.loading {
 	background: transparent url("../fr/images/commun/loader.gif") no-repeat scroll center center;
 }
 
+/* Icônes accueil */
+
+.divTableAccueil{
+	display: table;
+	width: auto;
+}
+
+.divTableRowAccueil {
+	display: table-row;
+}
+
+.divTableCellAccueil {
+	display: table-cell;
+	padding: 3px 10px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.divTableBodyAccueil {
+	display: table-row-group;
+}
+
 /* Réseaux sociaux */
 
 .rs {
