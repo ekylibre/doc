@@ -120,6 +120,23 @@ img.loading {
 	width: auto;
 }
 
+.divTableAccueil a {
+	text-decoration: none;
+	color: #000;
+}
+
+.divTableAccueil a:hover,
+.divTableAccueil a:active {
+	text-decoration: none;
+	color: #000;
+}
+
+.divTableAccueil a:link,
+.divTableAccueil a:visited {
+	text-decoration: none;
+	color: #000;
+}
+
 .divTableRowAccueil {
 	display: table-row;
 }
@@ -223,6 +240,100 @@ img.loading {
 	background-color: #2c3e50;
 }
 
+/*Liste vidéos*/
+
+.divTableVideo {
+	display: table;
+	max-width: 648px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.divTableVideo a {
+	text-decoration: none;
+	color: #000;
+}
+
+.divTableVideo a:hover,
+.divTableVideo a:active {
+	text-decoration: none;
+	color: #ff0000;
+}
+
+.divTableVideo a:link,
+.divTableVideo a:visited {
+	text-decoration: none;
+	color: #000;
+}
+
+.divTableCellVideo1,
+.divTableHeadVideo1 {
+	display: table-cell;
+	padding: 0;
+	text-align: left;
+	vertical-align: top;
+	white-space: nowrap;
+	background-color: #ddd;
+	border-top-width: 3px;
+	border-top-style: solid;
+	border-top-color: #fff;
+	border-bottom-width: 0;
+	border-bottom-style: solid;
+	border-bottom-color: #fff;
+	border-left-width: 0;
+	border-left-style: solid;
+	border-left-color: #fff;
+	border-right-width: 3px;
+	border-right-style: solid;
+	border-right-color: #fff;
+}
+
+.divTableCellVideo2,
+.divTableHeadVideo2 {
+	display: table-cell;
+	padding: 12px 10px;
+	font-size: 15px;
+	line-height: 0.4;
+	text-align: left;
+	vertical-align: top;
+	background-color: #eee;
+	border-top-width: 3px;
+	border-top-style: solid;
+	border-top-color: #fff;
+	border-bottom-width: 0;
+	border-bottom-style: solid;
+	border-bottom-color: #fff;
+	border-left-width: 0;
+	border-left-style: solid;
+	border-left-color: #fff;
+	border-right-width: 0;
+	border-right-style: solid;
+	border-right-color: #fff;
+}
+
+.divTableCellVideo3,
+.divTableHeadVideo3 {
+	display: table-cell;
+	padding: 0;
+	text-align: left;
+	vertical-align: top;
+	background-color: #fff;
+}
+
+.divTableCellVideo4,
+.divTableHeadVideo4 {
+	display: table-cell;
+	text-align: left;
+	vertical-align: top;
+	background-color: #eee;
+	border-top-width: 2px;
+	border-top-style: dotted;
+	border-top-color: #ccc;
+}
+
+.video {
+	margin-left: 7px;
+}
 
 /* BackToTop button css */
 
