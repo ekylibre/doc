@@ -141,12 +141,26 @@ img.loading {
 	display: table-row;
 }
 
-.divTableCellAccueil {
+.divTableCellAccueil2 {
 	display: table-cell;
 	padding: 3px 10px;
 	text-align: center;
 	font-size: 16px;
 	font-weight: bold;
+}
+
+.divTableCellAccueil1 {
+	display: none;
+}
+
+@media only screen and (min-width: 768px) {
+	.divTableCellAccueil1 {
+		display: table-cell;
+		padding: 3px 10px;
+		text-align: center;
+		font-size: 16px;
+		font-weight: bold;
+	}
 }
 
 .divTableBodyAccueil {
@@ -2733,7 +2747,7 @@ img.zoom-img {
 		position: fixed;
 		height: 50px;
 		width: 50px;
-		left: 180px;
+		left: 110px;
 		right: auto;
 		bottom: 12px;
 		background-color: #476ba8;
@@ -2749,7 +2763,7 @@ img.zoom-img {
 		position: fixed;
 		height: 50px;
 		width: 50px;
-		left: 180px;
+		left: 110px;
 		right: auto;
 		bottom: 12px;
 		background-color: #476ba8;
@@ -2765,7 +2779,7 @@ img.zoom-img {
 		position: fixed;
 		height: 50px;
 		width: 50px;
-		left: 180px;
+		left: 110px;
 		right: auto;
 		bottom: 12px;
 		background-color: #476ba8;
