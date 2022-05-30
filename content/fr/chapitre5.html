@@ -2643,7 +2643,28 @@
          });
       </script>
 	  <p class="texte">Le rapprochement bancaire est un contrôle strict qui consiste à comparer, au plus proche de la réalité, les diverses opérations figurant sur vos relevés de comptes avec celles qui sont réellement enregistrées dans votre comptabilité <strong>Eky</strong>agri | <strong>Eky</strong>viti. Il permet de vérifier la concordance des deux comptes en affectant un code unique composé de lettres à 2 ou plusieurs écritures.</p>
-      <p class="texte">Nous vous conseillons d'interroger votre organisme bancaire pour prendre connaissance du format de fichier &#40;<span class="tooltip">OFX<span class="tooltiptext tooltip-top">Voir glossaire</span></span> ou <span class="tooltip">CFONB<span class="tooltiptext tooltip-top">Voir glossaire</span></span>&#41; mis à votre disposition pour réaliser cette opération.</p>
+	  <p class="texte">Deux méthodes sont à votre disposition pour importer les lignes de vos relevés de comptes bancaires&nbsp;:</p>
+	  <div class="divTableListe marge">
+         <div class="divTableBody">
+            <div class="divTableRow">
+               <div class="divTableCellPlan" style="width: 10px">
+                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
+               </div>
+               <div class="divTableCellPlan" style="width: auto">
+                  par <strong>téléchargement et import de fichiers</strong> au format <span class="tooltip">OFX<span class="tooltiptext tooltip-top">Voir glossaire</span></span> ou <span class="tooltip">CFONB<span class="tooltiptext tooltip-top">Voir glossaire</span></span> mis à votre disposition par votre banque&nbsp;;
+               </div>
+            </div>
+            <div class="divTableRow">
+               <div class="divTableCellPlan">
+                  <img src="../images/commun/circle.svg" alt="Puce" height="15">
+               </div>
+               <div class="divTableCellPlan">
+                  par <strong>connexion et synchronisation automatique</strong> avec votre compte bancaire grâce aux codes IBAN et BIC.
+               </div>
+            </div>
+         </div>
+      </div>
+      <p class="texte">Notez que pour pour l'import de fichiers OFX ou CFONB, nous vous conseillons d'interroger préalablement votre organisme bancaire pour connaître le format disponible pour réaliser cette opération.</p>
       <div class="warn-fond aerateur-haut aerateur-bas">
          <div class="floating-box-warn">
             <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
@@ -2654,7 +2675,7 @@
          </div>
       </div>
       <p class="texte">
-         Le processus suivant vous guide pour réaliser un rapprochement bancaire avec l'import d'un fichier <span class="tooltip">OFX<span class="tooltiptext tooltip-top">Voir glossaire</span></span> ou <span class="tooltip">CFONB<span class="tooltiptext tooltip-top">Voir glossaire</span></span>.
+         Le processus suivant vous guide pour réaliser un rapprochement bancaire avec l'import d'un fichier <span class="tooltip">OFX<span class="tooltiptext tooltip-top">Voir glossaire</span></span>/<span class="tooltip">CFONB<span class="tooltiptext tooltip-top">Voir glossaire</span></span> ou après connexion et transfert des relevés de compte en ligne.
       </p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
@@ -2675,8 +2696,8 @@
          <img src="../images/commun/step2.svg" alt="2" width="52" />
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Paramétrez votre compte bancaire</span>
-         <p>Cliquez sur le bouton "Nouveau", puis sélectionnez le "Type" de trésorerie et remplissez tous les champs obligatoires signalés par une astérisque de couleur rouge avec les informations requises pour le définir correctement. Renseignez avec attention le code IBAN car c'est cet identifiant qui établira la liaison automatique entre le compte bancaire dans l'application et les informations contenues dans le fichier OFX ou CFONB.</p>
+         <span class="titre-advice">Prérequis&nbsp;: paramétrez votre compte bancaire</span>
+         <p>Cliquez sur le bouton "Nouveau", puis sélectionnez le "Type" de trésorerie et remplissez tous les champs obligatoires signalés par une astérisque de couleur rouge avec les informations requises pour le définir correctement. Renseignez avec attention les code IBAN et BIC car ce sont ces identifiants qui établiront la liaison automatique entre le compte bancaire dans l'application et les informations contenues dans le fichier OFX/CFONB ou la connexion/synchronisation automatique avec vos relevés de compte.</p>
          <p class="max-img-process">
             <img src="../images/chapitre5/rapprochement2.png" class="contour-img" alt="Paramétrage compte bancaire" data-action="zoom" />
          </p>
@@ -2686,7 +2707,7 @@
          <img src="../images/commun/step3.svg" alt="3" width="52" />
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Paramétrez les options comptables</span>
+         <span class="titre-advice">Prérequis&nbsp;: paramétrez les options comptables</span>
          <p>Dans l'optique de réaliser le rapprochement bancaire grâce à l'import d'un fichier OFX ou CFONB, 2 options sont à prendre en considération&nbsp;:</p>
          <p><strong><span class="avert">Avec un compte d'attente&nbsp;:</span></strong><br />Cochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="18" class="align-icone icone-marge-gauche icone-marge-droite">à droite de l'option "Suspendre jusqu'à réconciliation" pour utiliser un compte d'attente &#40;471XXXXX&#41;.</p>
          <p>Dans ce cas, tous les encaissements et les décaissements enregistrés dans <strong>Eky</strong>agri | <strong>Eky</strong>viti passeront par un compte d'attente de type 471XXXX &#40;attention à bien créer autant de comptes d'attente que de comptes de trésorerie&#41;. L'import du relevé de compte provoquera la création d'une écriture comptable directement dans le compte de banque. <strong>C'est la méthode que vous devez privilégier</strong>.</p>
@@ -2719,10 +2740,10 @@
          </div>
       </div>
       <div class="floating-box process">
-         <img src="../images/commun/step4.svg" alt="4" width="52" />
+         <img src="../images/commun/step4a.svg" alt="4" width="52" />
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Importez le fichier OFX ou CFONB</span>
+         <span class="titre-advice">Option 1&nbsp;: importez un fichier OFX ou CFONB</span>
          <p>Affichez à nouveau la liste des trésoreries, puis cliquez sur le bouton "Importer" pour sélectionner le type de fichier dans la liste déroulante…</p>
          <p class="max-img-process">
             <img src="../images/chapitre5/rapprochement5.png" class="contour-img" alt="Création de l'import" data-action="zoom" />
@@ -2740,6 +2761,21 @@
             <img src="../images/chapitre5/rapprochement8.png" class="contour-img" alt="Import des données" data-action="zoom" />
          </p>
       </div>
+      <br />
+	  <div class="floating-box process">
+         <img src="../images/commun/step4b.svg" alt="4" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Option 2&nbsp;: connectez un compte bancaire</span>
+         <p>Dans la vue détaillée d'une trésorerie, cliquez sur le bouton "Connecter mon compte bancaire" pour initialiser une première connexion valide entre l'application et vos relevés de compte en ligne.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre5/rapprochement2022-1.png" class="contour-img" alt="Connexion compte bancaire" data-action="zoom" />
+         </p>
+		 <p>Une fois la connexion établie, actualisez les informations du compte bancaire en cliquant sur le bouton "Synchroniser les relevés de compte", selon la fréquence de votre choix, afin de transférer les nouvelles lignes à pointer.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre5/rapprochement2022-2.png" class="contour-img" alt="Synchronisation relevés de compte" data-action="zoom" />
+         </p>
+	  </div>
       <br />
       <div class="floating-box process">
          <img src="../images/commun/step5.svg" alt="5" width="52" />
