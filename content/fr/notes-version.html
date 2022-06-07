@@ -97,8 +97,8 @@
             {dates: [new Date(2022, 2, 10), new Date(2022, 3, 13)], title: "Version 4.4", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
             {dates: [new Date(2022, 3, 14), new Date(2022, 3, 27)], title: "Version 4.5", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
             {dates: [new Date(2022, 3, 28), new Date(2022, 4, 16)], title: "Version 4.6", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
-			{dates: [new Date(2022, 4, 17), new Date(annee, 5, 5)], title: "Version 4.7", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
-			{dates: [new Date(2022, 5, 6), new Date(annee, mois, jour)], title: "Version 4.7", attrs: {fill: "#fea40b", stroke: "#fea40b"}}
+			{dates: [new Date(2022, 4, 17), new Date(annee, 5, 8)], title: "Version 4.7", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
+			{dates: [new Date(2022, 5, 9), new Date(annee, mois, jour)], title: "Version 4.8", attrs: {fill: "#fea40b", stroke: "#fea40b"}}
          ];
          
          var sections = [
@@ -168,33 +168,13 @@
                      <div class="panel">
                         <div class="heading">
                            <div class="version">
-                              <h2>Note de version 4.8 du 6/06/2022</h2>
+                              <h2>Note de version 4.8 du 9/06/2022</h2>
                            </div>
                            <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
                               <div class="divTableBody">
-								 <div class="divTableRow">
-                                    <div class="divTableCellNoteVersion1">
-                                       <img src="../images/notes-version/comptabilite2022.svg" alt="Comptabilité" width="60">
-                                    </div>
-                                    <div class="divTableCellNoteVersion2">
-                                       <strong>Comptabilité</strong><br /><br />
-                                       2 améliorations
-                                    </div>
-                                 </div>
-                                 <div class="divTableRow">
-                                    <div class="divTableCellNoteVersion3" style="width: 60px">
-                                    </div>
-                                    <div class="divTableCellNoteVersion4" style="width: auto">
-                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
-                                       <ul>
-										  <li>Grâce à un nouveau bouton "Connecter mon compte bancaire", il est désormais possible de lier une trésorerie correctement configurée avec les codes IBAN et BIC, pour importer les écritures du relevé de compte correspondant et procéder ensuite au rapprochement bancaire&nbsp;;</li>
-                                          <li>En complément, un bouton "Synchroniser les relevés de compte" permet d'actualiser, sur demande, la liste des nouvelles opérations bancaires enregistrées sur le compte avec leur transfert automatique dans l'application.</li>
-                                       </ul>
-                                    </div>
-                                 </div>
                                  <div class="divTableRow">
                                     <div class="divTableCellNoteVersion1" style="width: 60px">
                                        <img src="../images/notes-version/production2022.svg" alt="Production" width="60">
@@ -229,8 +209,8 @@
                                     <div class="divTableCellNoteVersion4" style="width: auto">
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                                        <ul>
-										  <li>Il est désormais possible d'affecter une écriture comptable à une activité principale, pour calculer et comparer les coûts de production et les marges réalisés par rapport aux coûts et marges prévus par le budget prévisionnel &#40;tâche accessible dans la section "Écritures" du module "Comptabilité"&#41;&nbsp;;</li>
-										  <li>La partie récapitulative des tableaux, réservée aux coûts de production et aux marges réalisés pour une activité principale, est maintenant automatiquement mise à jour lorsqu'une écriture comptable est affectée à celle-ci.</li>
+										  <li>Il est maintenant possible de calculer les coûts de production et les marges réalisés durant un exercice comptable, afin de les comparer avec les coûts et les marges prévus par le budget prévisionnel. Pour cela, l’utilisateur peut sélectionner, depuis le module "Comptabilité", dans la section "Écritures", une ou plusieurs écritures comptables et les affecter à une activité principale ouverte&nbsp;;</li>
+										  <li>La partie récapitulative des tableaux, réservée aux coûts de production et aux marges réalisés pour une activité principale, est automatiquement mise à jour lorsqu'une écriture comptable est affectée à celle-ci.</li>
                                        </ul>
                                     </div>
                                  </div>
@@ -5753,31 +5733,11 @@
       <!-- Section pour la génération du PDF -->
 	  <div class="saut-page"></div>
       <div class="heading-print marge-pdf">
-         <h2>Note de version 4.8 du 6/06/2022</h2>
+         <h2>Note de version 4.8 du 9/06/2022</h2>
       </div>
       <div class="content-print marge-pdf">
          <div class="divTableNoteVersion-pdf">
             <div class="divTableBody">
-               <div class="divTableRow">
-                  <div class="divTableCellNoteVersion1">
-                     <img src="../images/notes-version/comptabilite2022.svg" alt="Comptabilité" width="60">
-                  </div>
-                  <div class="divTableCellNoteVersion2">
-                     <strong>Comptabilité</strong><br /><br />
-                     2 améliorations
-                  </div>
-               </div>
-               <div class="divTableRow">
-                  <div class="divTableCellNoteVersion3" style="width: 60px">
-                  </div>
-                  <div class="divTableCellNoteVersion4" style="width: auto">
-                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
-                     <ul>
-                        <li>Grâce à un nouveau bouton "Connecter mon compte bancaire", il est désormais possible de lier une trésorerie correctement configurée avec les codes IBAN et BIC, pour importer les écritures du relevé de compte correspondant et procéder ensuite au rapprochement bancaire&nbsp;;</li>
-						<li>En complément, un bouton "Synchroniser les relevés de compte" permet d'actualiser, sur demande, la liste des nouvelles opérations bancaires enregistrées sur le compte avec leur transfert automatique dans l'application.</li>
-                     </ul>
-                  </div>
-               </div>
                <div class="divTableRow">
                   <div class="divTableCellNoteVersion1">
                      <img src="../images/notes-version/production2022.svg" alt="Production" width="60">
@@ -5811,8 +5771,8 @@
                   <div class="divTableCellNoteVersion4" style="width: auto">
                      <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                      <ul>
-                        <li>Il est désormais possible d'affecter une écriture comptable à une activité principale, pour calculer et comparer les coûts de production et les marges réalisés par rapport aux coûts et marges prévus par le budget prévisionnel &#40;tâche accessible dans la section "Écritures" du module "Comptabilité"&#41;&nbsp;;</li>
-						<li>La partie récapitulative des tableaux, réservée aux coûts de production et aux marges réalisés pour une activité principale, est maintenant automatiquement mise à jour lorsqu'une écriture comptable est affectée à celle-ci.</li>
+                        <li>Il est maintenant possible de calculer les coûts de production et les marges réalisés durant un exercice comptable, afin de les comparer avec les coûts et les marges prévus par le budget prévisionnel. Pour cela, l’utilisateur peut sélectionner, depuis le module "Comptabilité", dans la section "Écritures", une ou plusieurs écritures comptables et les affecter à une activité principale ouverte&nbsp;;</li>
+						<li>La partie récapitulative des tableaux, réservée aux coûts de production et aux marges réalisés pour une activité principale, est automatiquement mise à jour lorsqu'une écriture comptable est affectée à celle-ci.</li>
                      </ul>
                   </div>
                </div>
