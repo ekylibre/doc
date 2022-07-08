@@ -98,8 +98,8 @@
             {dates: [new Date(2022, 3, 14), new Date(2022, 3, 27)], title: "Version 4.5", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
             {dates: [new Date(2022, 3, 28), new Date(2022, 4, 16)], title: "Version 4.6", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
 			{dates: [new Date(2022, 4, 17), new Date(2022, 5, 8)], title: "Version 4.7", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
-			{dates: [new Date(2022, 5, 9), new Date(2022, 6, 6)], title: "Version 4.8", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
-			{dates: [new Date(2022, 6, 7), new Date(annee, mois, jour)], title: "Version 4.9", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
+			{dates: [new Date(2022, 5, 9), new Date(2022, 6, 11)], title: "Version 4.8", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
+			{dates: [new Date(2022, 6, 12), new Date(annee, mois, jour)], title: "Version 4.9", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
          ];
          
          var sections = [
@@ -169,7 +169,7 @@
                      <div class="panel">
                         <div class="heading">
                            <div class="version">
-                              <h2>Note de version 4.9 du 7/07/2022</h2>
+                              <h2>Note de version 4.9 du 12/07/2022</h2>
                            </div>
                            <i class="fa-solid fa-chevron-down"></i>
                         </div>
@@ -209,7 +209,7 @@
                                     <div class="divTableCellNoteVersion4" style="width: auto">
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                                        <ul>
-                                          <li>Il est maintenant possible d'affecter un ou plusieurs taux de TVA par défaut à la catégorie comptable d'un article. Seules ces taxes sont alors listées lors de la sélection de l'article dans une ligne de vente.</li>
+                                          <li>Il est maintenant possible d'affecter un ou plusieurs taux de TVA par défaut à la catégorie comptable d'un article en cliquant sur "Ajouter une taxe de vente". Seules ces taxes sont alors listées lors de la sélection de l'article dans une ligne de vente.</li>
                                        </ul>
                                     </div>
                                  </div>
@@ -227,7 +227,7 @@
                                     <div class="divTableCellNoteVersion4" style="width: auto">
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                                        <ul>
-                                          <li>Il est maintenant possible d'affecter un ou plusieurs taux de TVA par défaut à la catégorie comptable d'un article. Seules ces taxes sont alors listées lors de la sélection de l'article dans une ligne d'achat.</li>
+                                          <li>Il est maintenant possible d'affecter un ou plusieurs taux de TVA par défaut à la catégorie comptable d'un article en cliquant sur "Ajouter une taxe d'achat". Seules ces taxes sont alors listées lors de la sélection de l'article dans une ligne d'achat.</li>
                                        </ul>
                                     </div>
                                  </div>
@@ -277,7 +277,7 @@
                                     </div>
                                     <div class="divTableCellNoteVersion2" style="width: auto">
                                        <strong>RH</strong><br /><br />
-                                       1 amélioration
+                                       1 amélioration et 1 bug corrigé
                                     </div>
                                  </div>
                                  <div class="divTableRow">
@@ -287,6 +287,10 @@
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                                        <ul>
                                           <li>Lors de la configuration des "Contrats de travail", il est désormais possible d’affecter un salarié à une ou plusieurs activités en paramétrant une clé de répartition analytique. Définie, soit au prorata de la marge brute générée par chaque activité, soit par l'affectation d'un pourcentage à une sélection d'activités, cette distribution est prise en compte pour le calcul des coûts de production, des marges et des seuils de commercialisation du module "Économique".</li>
+                                       </ul>
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+										  <li>Lors de l'annulation ou la modification d'un salaire, les écritures comptables, initialement créées et encore présentes dans le brouillard, sont maintenant correctement supprimées ou actualisées.</li>
                                        </ul>
                                     </div>
                                  </div>
@@ -5828,7 +5832,7 @@
       <!-- Section pour la génération du PDF -->
 	  <div class="saut-page"></div>
       <div class="heading-print marge-pdf">
-         <h2>Note de version 4.9 du 7/07/2022</h2>
+         <h2>Note de version 4.9 du 12/07/2022</h2>
       </div>
       <div class="content-print marge-pdf">
          <div class="divTableNoteVersion-pdf">
@@ -5867,7 +5871,7 @@
                   <div class="divTableCellNoteVersion4" style="width: auto">
                      <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                      <ul>
-                        <li>Il est maintenant possible d'affecter un ou plusieurs taux de TVA par défaut à la catégorie comptable d'un article. Seules ces taxes sont alors listées lors de la sélection de l'article dans une ligne de vente.</li>
+                        <li>Il est maintenant possible d'affecter un ou plusieurs taux de TVA par défaut à la catégorie comptable d'un article en cliquant sur "Ajouter une taxe de vente". Seules ces taxes sont alors listées lors de la sélection de l'article dans une ligne de vente.</li>
                      </ul>
                   </div>
                </div>
@@ -5885,7 +5889,7 @@
                   <div class="divTableCellNoteVersion4" style="width: auto">
                      <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                      <ul>
-                        <li>Il est maintenant possible d'affecter un ou plusieurs taux de TVA par défaut à la catégorie comptable d'un article. Seules ces taxes sont alors listées lors de la sélection de l'article dans une ligne d'achat.</li>
+                        <li>Il est maintenant possible d'affecter un ou plusieurs taux de TVA par défaut à la catégorie comptable d'un article en cliquant sur "Ajouter une taxe d'achat". Seules ces taxes sont alors listées lors de la sélection de l'article dans une ligne d'achat.</li>
                      </ul>
                   </div>
                </div>
@@ -5941,7 +5945,7 @@
                   </div>
                   <div class="divTableCellNoteVersion2" style="width: auto">
                      <strong>RH</strong><br /><br />
-                     1 amélioration
+                     1 amélioration et 1 bug corrigé
                   </div>
                </div>
                <div class="divTableRow">
@@ -5951,6 +5955,10 @@
                      <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                      <ul>
                         <li>Lors de la configuration des "Contrats de travail", il est désormais possible d’affecter un salarié à une ou plusieurs activités en paramétrant une clé de répartition analytique. Définie, soit au prorata de la marge brute générée par chaque activité, soit par l'affectation d'un pourcentage à une sélection d'activités, cette distribution est prise en compte pour le calcul des coûts de production, des marges et des seuils de commercialisation du module "Économique".</li>
+                     </ul>
+					 <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>Lors de l'annulation ou la modification d'un salaire, les écritures comptables, initialement créées et encore présentes dans le brouillard, sont maintenant correctement supprimées ou actualisées.</li>
                      </ul>
                   </div>
                </div>
