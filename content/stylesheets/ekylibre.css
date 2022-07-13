@@ -3315,25 +3315,7 @@ span.the-btn {
 	height: 30px;
 	border-radius: 50%;
 	background: #fff;
-    background-image: url("../fr/images/commun/contour-som-x4.svg");
-    background-repeat: no-repeat;
-	margin-right: 8px;
-	line-height: 31px;
-	text-align: center;
-	letter-spacing: -1px;
-	float: left;
-	color: #333;
-	font-size: 20px;
-	margin-top: 3px;
-	cursor: pointer;
-}
-
-.rond-prod-viti {
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
-	background: #fff;
-	background-image: url("../fr/images/commun/contour-som-x1.svg");
+    background-image: url("../fr/images/commun/contour-som-x1.svg");
     background-repeat: no-repeat;
 	margin-right: 8px;
 	line-height: 31px;
@@ -3364,12 +3346,12 @@ span.the-btn {
 	cursor: pointer;
 }
 
-.rond-gestion-viti {
+.rond-viti {
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
 	background: #fff;
-	background-image: url("../fr/images/commun/contour-som-x5.svg");
+	background-image: url("../fr/images/commun/contour-som-x3.svg");
     background-repeat: no-repeat;
 	margin-right: 8px;
 	line-height: 31px;
@@ -3387,7 +3369,7 @@ span.the-btn {
 	height: 30px;
 	border-radius: 50%;
 	background: #fff;
-	background-image: url("../fr/images/commun/contour-som-x6.svg");
+	background-image: url("../fr/images/commun/contour-som-x4.svg");
     background-repeat: no-repeat;
 	margin-right: 8px;
 	line-height: 31px;
