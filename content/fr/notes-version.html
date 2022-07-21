@@ -99,7 +99,8 @@
             {dates: [new Date(2022, 3, 28), new Date(2022, 4, 16)], title: "Version 4.6", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
 			{dates: [new Date(2022, 4, 17), new Date(2022, 5, 8)], title: "Version 4.7", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
 			{dates: [new Date(2022, 5, 9), new Date(2022, 6, 11)], title: "Version 4.8", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
-			{dates: [new Date(2022, 6, 12), new Date(annee, mois, jour)], title: "Version 4.9", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
+			{dates: [new Date(2022, 6, 12), new Date(2022, 6, 21)], title: "Version 4.9", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
+			{dates: [new Date(2022, 6, 22), new Date(annee, mois, jour)], title: "Version 4.9", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
          ];
          
          var sections = [
@@ -166,6 +167,79 @@
             <section id="panel-1">
                <main>
                   <div class="accordion-container marge">
+					 <div class="panel">
+                        <div class="heading">
+                           <div class="version">
+                              <h2>Note de version 4.10 du 22/07/2022</h2>
+                           </div>
+                           <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="content">
+                           <div class="divTableNoteVersion">
+                              <div class="divTableBody">
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/production2022.svg" alt="Production" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Production</strong><br /><br />
+                                       2 bugs corrigés
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
+                                       <ul>
+                                          <li>Les trajets géolocalisés avec un capteur Samsys et déjà transférés dans l'application sont désormais correctement conservés, même si le boitier a été affecté ensuite à un équipement différent dans l'application tierce&nbsp;;</li>
+                                          <li>L'impression du "Registre phytosanitaire" au format PDF est maintenant possible, même si les parcelles traitées n'ont pas été générées initialement à partir de zones cultivables.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+								 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/economique.svg" alt="Économique" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Économique</strong><br /><br />
+                                       2 améliorations
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+										  <li>Il est désormais possible de sélectionner une taxe pour chaque dépense ou recette listée et affichée dans le tableau du budget prévisionnel d'une activité. Le montant de cette taxe est pris en compte pour calculer avec davantage de précision les besoins en trésorerie&nbsp;;</li>
+										  <li>Le budget de référence d'une culture pérenne prend maintenant en compte les étapes d'implantation et de croissance afin que son calcul corresponde aux campagnes de pleine production, Une mise à jour des itinéraires techniques prédéfinis pour les vignes larges, en système de production biologique, conventionnel et raisonné est également disponible.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/ekyviti.svg" alt="Ekyviti" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Ekyviti</strong><br /><br />
+                                       1 bug corrigé
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+                                          <li>Les TVA applicables aux frais de transport dans les factures de vente transférées depuis la solution tierce Baqio, sont désormais correctement importées dans les factures de vente <strong>Eky</strong>viti avec la taxe adéquate.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                      <div class="panel">
                         <div class="heading">
                            <div class="version">
@@ -5830,6 +5904,74 @@
          </div>
       </article>
       <!-- Section pour la génération du PDF -->
+	  <div class="saut-page"></div>
+      <div class="heading-print marge-pdf">
+         <h2>Note de version 4.10 du 22/07/2022</h2>
+      </div>
+      <div class="content-print marge-pdf">
+         <div class="divTableNoteVersion-pdf">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/production2022.svg" alt="Production" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Production</strong><br /><br />
+                     2 bugs corrigés
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
+                     <ul>
+                        <li>Les trajets géolocalisés avec un capteur Samsys et déjà transférés dans l'application sont désormais correctement conservés, même si le boitier a été affecté ensuite à un équipement différent dans l'application tierce&nbsp;;</li>
+						<li>L'impression du "Registre phytosanitaire" au format PDF est maintenant possible, même si les parcelles traitées n'ont pas été générées initialement à partir de zones cultivables.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/economique.svg" alt="Économique" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Économique</strong><br /><br />
+                     2 améliorations
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>Il est désormais possible de sélectionner une taxe pour chaque dépense ou recette listée et affichée dans le tableau du budget prévisionnel d'une activité. Le montant de cette taxe est pris en compte pour calculer avec davantage de précision les besoins en trésorerie&nbsp;;</li>
+						<li>Le budget de référence d'une culture pérenne prend maintenant en compte les étapes d'implantation et de croissance afin que son calcul corresponde aux campagnes de pleine production, Une mise à jour des itinéraires techniques prédéfinis pour les vignes larges, en système de production biologique, conventionnel et raisonné est également disponible.</li>
+                     </ul>
+                  </div>
+               </div>
+			   <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/ekyviti.svg" alt="Ekyviti" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Ekyviti</strong><br /><br />
+                     1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>Les TVA applicables aux frais de transport dans les factures de vente transférées depuis la solution tierce Baqio, sont désormais correctement importées dans les factures de vente <strong>Eky</strong>viti avec la taxe adéquate.</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
 	  <div class="saut-page"></div>
       <div class="heading-print marge-pdf">
          <h2>Note de version 4.9 du 12/07/2022</h2>
