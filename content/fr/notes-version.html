@@ -100,7 +100,7 @@
 			{dates: [new Date(2022, 4, 17), new Date(2022, 5, 8)], title: "Version 4.7", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
 			{dates: [new Date(2022, 5, 9), new Date(2022, 6, 11)], title: "Version 4.8", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
 			{dates: [new Date(2022, 6, 12), new Date(2022, 6, 21)], title: "Version 4.9", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
-			{dates: [new Date(2022, 6, 22), new Date(annee, mois, jour)], title: "Version 4.9", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
+			{dates: [new Date(2022, 6, 22), new Date(annee, mois, jour)], title: "Version 4.10", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
          ];
          
          var sections = [
@@ -183,13 +183,17 @@
                                     </div>
                                     <div class="divTableCellNoteVersion2" style="width: auto">
                                        <strong>Production</strong><br /><br />
-                                       2 bugs corrigés
+                                       1 amélioration et 2 bugs corrigés
                                     </div>
                                  </div>
                                  <div class="divTableRow">
                                     <div class="divTableCellNoteVersion3" style="width: 60px">
                                     </div>
                                     <div class="divTableCellNoteVersion4" style="width: auto">
+									   <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Lorsqu'un budget est défini pour une activité, les montants calculés des recettes, des dépenses et du solde sont dorénavant affichés en HT et TTC.</li>
+                                       </ul>
                                        <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
                                        <ul>
                                           <li>Les trajets géolocalisés avec un capteur Samsys et déjà transférés dans l'application sont désormais correctement conservés, même si le boitier a été affecté ensuite à un équipement différent dans l'application tierce&nbsp;;</li>
@@ -203,7 +207,7 @@
                                     </div>
                                     <div class="divTableCellNoteVersion2" style="width: auto">
                                        <strong>Économique</strong><br /><br />
-                                       2 améliorations
+                                       3 améliorations
                                     </div>
                                  </div>
                                  <div class="divTableRow">
@@ -212,6 +216,7 @@
                                     <div class="divTableCellNoteVersion4" style="width: auto">
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                                        <ul>
+										  <li>Lorsqu'une taxe d'achat ou une taxe de vente est ajoutée à la catégorie comptable d'un article, elle est automatiquement affectée à la dépense ou à la recette de l'élément concerné pour réaliser le calcul du budget prévisionnel d'une activité&nbsp;;</li>
 										  <li>Il est désormais possible de sélectionner une taxe pour chaque dépense ou recette listée et affichée dans le tableau du budget prévisionnel d'une activité. Le montant de cette taxe est pris en compte pour calculer avec davantage de précision les besoins en trésorerie&nbsp;;</li>
 										  <li>Le budget de référence d'une culture pérenne prend maintenant en compte les étapes d'implantation et de croissance afin que son calcul corresponde aux campagnes de pleine production, Une mise à jour des itinéraires techniques prédéfinis pour les vignes larges, en système de production biologique, conventionnel et raisonné est également disponible.</li>
                                        </ul>
@@ -5917,12 +5922,16 @@
                   </div>
                   <div class="divTableCellNoteVersion2">
                      <strong>Production</strong><br /><br />
-                     2 bugs corrigés
+                     1 amélioration et 2 bugs corrigés
                   </div>
                </div>
                <div class="divTableRow">
                   <div class="divTableCellNoteVersion3" style="width: 60px"></div>
                   <div class="divTableCellNoteVersion4" style="width: auto">
+					 <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>Lorsqu'un budget est défini pour une activité, les montants calculés des recettes, des dépenses et du solde sont dorénavant affichés en HT et TTC.</li>
+                     </ul>
                      <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
                      <ul>
                         <li>Les trajets géolocalisés avec un capteur Samsys et déjà transférés dans l'application sont désormais correctement conservés, même si le boitier a été affecté ensuite à un équipement différent dans l'application tierce&nbsp;;</li>
@@ -5936,7 +5945,7 @@
                   </div>
                   <div class="divTableCellNoteVersion2" style="width: auto">
                      <strong>Économique</strong><br /><br />
-                     2 améliorations
+                     3 améliorations
                   </div>
                </div>
                <div class="divTableRow">
@@ -5945,6 +5954,7 @@
                   <div class="divTableCellNoteVersion4" style="width: auto">
                      <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                      <ul>
+						<li>Lorsqu'une taxe d'achat ou une taxe de vente est ajoutée à la catégorie comptable d'un article, elle est automatiquement affectée à la dépense ou à la recette de l'élément concerné pour réaliser le calcul du budget prévisionnel d'une activité&nbsp;;</li>
                         <li>Il est désormais possible de sélectionner une taxe pour chaque dépense ou recette listée et affichée dans le tableau du budget prévisionnel d'une activité. Le montant de cette taxe est pris en compte pour calculer avec davantage de précision les besoins en trésorerie&nbsp;;</li>
 						<li>Le budget de référence d'une culture pérenne prend maintenant en compte les étapes d'implantation et de croissance afin que son calcul corresponde aux campagnes de pleine production, Une mise à jour des itinéraires techniques prédéfinis pour les vignes larges, en système de production biologique, conventionnel et raisonné est également disponible.</li>
                      </ul>
