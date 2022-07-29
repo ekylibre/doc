@@ -99,8 +99,8 @@
             {dates: [new Date(2022, 3, 28), new Date(2022, 4, 16)], title: "Version 4.6", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
 			{dates: [new Date(2022, 4, 17), new Date(2022, 5, 8)], title: "Version 4.7", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
 			{dates: [new Date(2022, 5, 9), new Date(2022, 6, 11)], title: "Version 4.8", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
-			{dates: [new Date(2022, 6, 12), new Date(2022, 6, 21)], title: "Version 4.9", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
-			{dates: [new Date(2022, 6, 22), new Date(annee, mois, jour)], title: "Version 4.10", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
+			{dates: [new Date(2022, 6, 12), new Date(2022, 6, 27)], title: "Version 4.9", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
+			{dates: [new Date(2022, 6, 28), new Date(annee, mois, jour)], title: "Version 4.10", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}}
          ];
          
          var sections = [
@@ -170,55 +170,73 @@
 					 <div class="panel">
                         <div class="heading">
                            <div class="version">
-                              <h2>Note de version 4.10 du 22/07/2022</h2>
+                              <h2>Note de version 4.10 du 28/07/2022</h2>
                            </div>
                            <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
                               <div class="divTableBody">
+								 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/comptabilite2022.svg" alt="Comptabilité" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Comptabilité</strong><br /><br />
+                                       1 bug corrigé
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+										  <li>La synchronisation des relevés de compte s'exécute désormais correctement, même si de précédents relevés ont déjà été importés manuellement sur une période identique.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
                                  <div class="divTableRow">
                                     <div class="divTableCellNoteVersion1" style="width: 60px">
                                        <img src="../images/notes-version/production2022.svg" alt="Production" width="60">
                                     </div>
                                     <div class="divTableCellNoteVersion2" style="width: auto">
                                        <strong>Production</strong><br /><br />
-                                       1 amélioration et 2 bugs corrigés
+                                       3 améliorations et 2 bugs corrigés
                                     </div>
                                  </div>
                                  <div class="divTableRow">
                                     <div class="divTableCellNoteVersion3" style="width: 60px">
                                     </div>
                                     <div class="divTableCellNoteVersion4" style="width: auto">
-									   <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+									   <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                                        <ul>
-                                          <li>Lorsqu'un budget est défini pour une activité, les montants calculés des recettes, des dépenses et du solde sont dorénavant affichés en HT et TTC.</li>
+										  <li>Les montants des recettes, des dépenses et du solde du budget prévisionnel d'une activité sont dorénavant calculés et affichés en TTC, en complément des valeurs HT&nbsp;;</li>
+										  <li>Lorsqu'une taxe d'achat ou de vente est affectée à la dépense ou à la recette du budget prévisionnel d'une activité, le montant de cette TVA est maintenant pris en compte pour calculer les besoins de trésorerie en TTC&nbsp;;</li>
+										  <li>Les itinéraires techniques prennent désormais en compte les cultures pérennes et un nouveau budget référence est mis à disposition pour la pleine production des vignes larges, en système biologique ou conventionnel.</li>
                                        </ul>
                                        <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
                                        <ul>
-                                          <li>Les trajets géolocalisés avec un capteur Samsys et déjà transférés dans l'application sont désormais correctement conservés, même si le boitier a été affecté ensuite à un équipement différent dans l'application tierce&nbsp;;</li>
-                                          <li>L'impression du "Registre phytosanitaire" au format PDF est maintenant possible, même si les parcelles traitées n'ont pas été générées initialement à partir de zones cultivables.</li>
+                                          <li>Les trajets géolocalisés avec un capteur Samsys et déjà transférés dans l'application sont désormais correctement conservés, même si le boitier a été associé ensuite à un équipement différent dans l'application tierce&nbsp;;</li>
+                                          <li>L'impression du "Registre phytosanitaire" au format PDF est maintenant possible, même lorsque les parcelles traitées ne sont pas rattachées à des zones cultivables.</li>
                                        </ul>
                                     </div>
                                  </div>
 								 <div class="divTableRow">
-                                    <div class="divTableCellNoteVersion1" style="width: 60px">
-                                       <img src="../images/notes-version/economique.svg" alt="Économique" width="60">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/configuration.svg" alt="Configuration" width="60px">
                                     </div>
-                                    <div class="divTableCellNoteVersion2" style="width: auto">
-                                       <strong>Économique</strong><br /><br />
-                                       3 améliorations
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Configuration</strong><br /><br />
+                                       1 amélioration
                                     </div>
                                  </div>
                                  <div class="divTableRow">
                                     <div class="divTableCellNoteVersion3" style="width: 60px">
                                     </div>
                                     <div class="divTableCellNoteVersion4" style="width: auto">
-                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                                        <ul>
-										  <li>Lorsqu'une taxe d'achat ou une taxe de vente est ajoutée à la catégorie comptable d'un article, elle est automatiquement affectée à la dépense ou à la recette de l'élément concerné pour réaliser le calcul du budget prévisionnel d'une activité&nbsp;;</li>
-										  <li>Il est désormais possible de sélectionner une taxe pour chaque dépense ou recette listée et affichée dans le tableau du budget prévisionnel d'une activité. Le montant de cette taxe est pris en compte pour calculer avec davantage de précision les besoins en trésorerie&nbsp;;</li>
-										  <li>Le budget de référence d'une culture pérenne prend maintenant en compte les étapes d'implantation et de croissance afin que son calcul corresponde aux campagnes de pleine production, Une mise à jour des itinéraires techniques prédéfinis pour les vignes larges, en système de production biologique, conventionnel et raisonné est également disponible.</li>
+                                          <li>De nouveaux "Rôles" d'utilisateur prédéfinis et permettant d'octroyer des accès aux modules sont mis à disposition, afin de simplifier la gestion des droits des collaborateurs.</li>
                                        </ul>
                                     </div>
                                  </div>
@@ -5911,52 +5929,71 @@
       <!-- Section pour la génération du PDF -->
 	  <div class="saut-page"></div>
       <div class="heading-print marge-pdf">
-         <h2>Note de version 4.10 du 22/07/2022</h2>
+         <h2>Note de version 4.10 du 28/07/2022</h2>
       </div>
       <div class="content-print marge-pdf">
          <div class="divTableNoteVersion-pdf">
             <div class="divTableBody">
                <div class="divTableRow">
                   <div class="divTableCellNoteVersion1">
-                     <img src="../images/notes-version/production2022.svg" alt="Production" width="60">
+                     <img src="../images/notes-version/comptabilite2022.svg" alt="Comptabilité" width="60">
                   </div>
                   <div class="divTableCellNoteVersion2">
-                     <strong>Production</strong><br /><br />
-                     1 amélioration et 2 bugs corrigés
-                  </div>
-               </div>
-               <div class="divTableRow">
-                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
-                  <div class="divTableCellNoteVersion4" style="width: auto">
-					 <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
-                     <ul>
-                        <li>Lorsqu'un budget est défini pour une activité, les montants calculés des recettes, des dépenses et du solde sont dorénavant affichés en HT et TTC.</li>
-                     </ul>
-                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
-                     <ul>
-                        <li>Les trajets géolocalisés avec un capteur Samsys et déjà transférés dans l'application sont désormais correctement conservés, même si le boitier a été affecté ensuite à un équipement différent dans l'application tierce&nbsp;;</li>
-						<li>L'impression du "Registre phytosanitaire" au format PDF est maintenant possible, même si les parcelles traitées n'ont pas été générées initialement à partir de zones cultivables.</li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="divTableRow">
-                  <div class="divTableCellNoteVersion1" style="width: 60px">
-                     <img src="../images/notes-version/economique.svg" alt="Économique" width="60">
-                  </div>
-                  <div class="divTableCellNoteVersion2" style="width: auto">
-                     <strong>Économique</strong><br /><br />
-                     3 améliorations
+                     <strong>Comptabilité</strong><br /><br />
+                     1 bug corrigé
                   </div>
                </div>
                <div class="divTableRow">
                   <div class="divTableCellNoteVersion3" style="width: 60px">
                   </div>
                   <div class="divTableCellNoteVersion4" style="width: auto">
-                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
                      <ul>
-						<li>Lorsqu'une taxe d'achat ou une taxe de vente est ajoutée à la catégorie comptable d'un article, elle est automatiquement affectée à la dépense ou à la recette de l'élément concerné pour réaliser le calcul du budget prévisionnel d'une activité&nbsp;;</li>
-                        <li>Il est désormais possible de sélectionner une taxe pour chaque dépense ou recette listée et affichée dans le tableau du budget prévisionnel d'une activité. Le montant de cette taxe est pris en compte pour calculer avec davantage de précision les besoins en trésorerie&nbsp;;</li>
-						<li>Le budget de référence d'une culture pérenne prend maintenant en compte les étapes d'implantation et de croissance afin que son calcul corresponde aux campagnes de pleine production, Une mise à jour des itinéraires techniques prédéfinis pour les vignes larges, en système de production biologique, conventionnel et raisonné est également disponible.</li>
+						<li>La synchronisation des relevés de compte s'exécute désormais correctement, même si de précédents relevés ont déjà été importés manuellement sur une période identique.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/production2022.svg" alt="Production" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Production</strong><br /><br />
+                     3 améliorations et 2 bugs corrigés
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+					 <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+						<li>Les montants des recettes, des dépenses et du solde du budget prévisionnel d'une activité sont dorénavant calculés et affichés en TTC, en complément des valeurs HT&nbsp;;</li>
+                        <li>Lorsqu'une taxe d'achat ou de vente est affectée à la dépense ou à la recette du budget prévisionnel d'une activité, le montant de cette TVA est maintenant pris en compte pour calculer les besoins de trésorerie en TTC&nbsp;;</li>
+						<li>Les itinéraires techniques prennent désormais en compte les cultures pérennes et un nouveau budget référence est mis à disposition pour la pleine production des vignes larges, en système biologique ou conventionnel.</li>
+                     </ul>
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
+                     <ul>
+                        <li>Les trajets géolocalisés avec un capteur Samsys et déjà transférés dans l'application sont désormais correctement conservés, même si le boitier a été associé ensuite à un équipement différent dans l'application tierce&nbsp;;</li>
+						<li>L'impression du "Registre phytosanitaire" au format PDF est maintenant possible, même lorsque les parcelles traitées ne sont pas rattachées à des zones cultivables.</li>
+                     </ul>
+                  </div>
+               </div>
+			   <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/configuration.svg" alt="Configuration" width="60px">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Configuration</strong><br /><br />
+                     1 amélioration
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>De nouveaux "Rôles" d'utilisateur prédéfinis et permettant d'octroyer des accès aux modules sont mis à disposition, afin de simplifier la gestion des droits des collaborateurs.</li>
                      </ul>
                   </div>
                </div>
