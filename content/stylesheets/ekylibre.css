@@ -3888,7 +3888,7 @@ label.panel-label:hover {
 
 /*Accordéons Ekyviti*/
 
-input {
+input[name="ekyviti"]{
   position: absolute;
   opacity: 0;
   z-index: -1;
@@ -4005,11 +4005,13 @@ input:checked ~ .tab-content {
 
 /*Accordéons déroulé parcellaire Ekyviti*/
 
+/*
 input {
   position: absolute;
   opacity: 0;
   z-index: -1;
-}
+}*/
+
 .tabs-step {
   overflow: hidden;
 }
@@ -4675,7 +4677,7 @@ iframe {
 	}
 }
 
-/* Search */
+/* Search (DocSearch v2)*/
 .search input {
 	position: relative;
 	opacity: 1;
