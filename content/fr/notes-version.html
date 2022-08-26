@@ -100,14 +100,15 @@
 			{dates: [new Date(2022, 4, 17), new Date(2022, 5, 8)], title: "Version 4.7", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
 			{dates: [new Date(2022, 5, 9), new Date(2022, 6, 11)], title: "Version 4.8", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
 			{dates: [new Date(2022, 6, 12), new Date(2022, 6, 27)], title: "Version 4.9", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
-			{dates: [new Date(2022, 6, 28), new Date(annee, mois, jour)], title: "Version 4.10", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}}
+			{dates: [new Date(2022, 6, 28), new Date(2022, 7, 31)], title: "Version 4.10", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
+			{dates: [new Date(2022, 8, 1), new Date(annee, mois, jour)], title: "Version 4.11", attrs: {fill: "#fea40b", stroke: "#fea40b"}}
          ];
          
          var sections = [
          	{dates: [new Date(2018, 12, 1), new Date(2019, 11, 31)], title: "2019", section: 0, attrs: {fill: "#d4e3fd"}},
          	{dates: [new Date(2019, 12, 1), new Date(2020, 11, 31)], title: "2020", section: 1, attrs: {fill: "#eaf0fa"}},
          	{dates: [new Date(2020, 12, 1), new Date(2021, 11, 31)], title: "2021", section: 2, attrs: {fill: "#d4e3fd"}},
-         {dates: [new Date(2021, 12, 1), new Date(2022, 11, 31)], title: "2022", section: 3, attrs: {fill: "#eaf0fa"}}
+         	{dates: [new Date(2021, 12, 1), new Date(2022, 11, 31)], title: "2022", section: 3, attrs: {fill: "#eaf0fa"}}
          ];
          
          var timeline = new Chronoline(document.getElementById("target"), events,
@@ -167,6 +168,119 @@
             <section id="panel-1">
                <main>
                   <div class="accordion-container marge">
+					 <div class="panel">
+                        <div class="heading">
+                           <div class="version">
+                              <h2>Note de version 4.11 du 01/09/2022</h2>
+                           </div>
+                           <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="content">
+                           <div class="divTableNoteVersion">
+                              <div class="divTableBody">
+								 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/comptabilite2022.svg" alt="Comptabilité" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Comptabilité</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+										  <li>Grâce à une nouveau bouton "Déconnecter mon compte bancaire", il est dorénavant possible de réinitialiser la liaison entre une trésorerie et la banque, lorsque l’autorisation de connexion avec l'organisme bancaire a expiré et qu'il n'est plus possible de synchroniser les relevés de compte.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+								 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/achats.svg" alt="Achats" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Achats</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Dans le tableau récapitulatif des factures d'achats, une nouvelle colonne affiche désormais le solde entre le montant de l'achat et le ou les décaissements qui lui sont associés.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/production2022.svg" alt="Production" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Production</strong><br /><br />
+                                       2 améliorations
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+									   <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+										  <li>Il est maintenant possible de rapprocher un trajet géolocalisé avec une intervention déjà planifiée afin de récupérer tous les éléments déjà saisis &#40;intrants, doses, équipiers, etc.&#41;&nbsp;:</li>
+                                       </ul>
+									   <ul><ul>
+										  <li>À partir d'un trajet géolocalisé à l'aide d'un capteur connecté Samsys, la sélection d'une ou plusieurs sections le composant active un nouveau bouton permettant de choisir une intervention parmi celles qui ont été préalablement planifiées</li>
+										  <li>La liste des interventions proposées est automatiquement filtrée selon 3 critères&nbsp;: par une ou plusieurs parcelles/cultures identifiées d'après le trajet, par les équipements utilisés et par la date de début des travaux</li>
+										  <li>Ce tri permet de faciliter la validation du rapprochement entre un trajet et une intervention planifiée&nbsp;;</li>
+                                       </ul></ul>
+									   <ul><li>Il est désormais possible d'imprimer les budgets prévisionnels de l'exploitation au format PDF. Ce nouveau document consigne le total HT de l'ensemble des dépenses, des recettes ainsi que le solde de chaque activité ouverte lorsque son budget a été préalablement défini pour une campagne donnée.</li></ul>
+                                    </div>
+                                 </div>
+								 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/outils.svg" alt="Outils" width="60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Outils</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Mise à disposition d'un nouvel outil d'import de fichiers au format TXT en provenance de la solution tierce Agrigest, pour réaliser le transfert des écritures comptables &#40;FEC&#41;.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+								 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/configuration.svg" alt="Configuration" width="60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Configuration</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Lors de la création ou la modification d'une taxe, de nouveaux champs de formulaire permettent de renseigner les codes de TVA Isacompta utilisés dans les échanges comptables.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
 					 <div class="panel">
                         <div class="heading">
                            <div class="version">
@@ -5927,6 +6041,124 @@
          </div>
       </article>
       <!-- Section pour la génération du PDF -->
+	  <div class="saut-page"></div>
+      <div class="heading-print marge-pdf">
+         <h2>Note de version 4.11 du 01/09/2022</h2>
+      </div>
+      <div class="content-print marge-pdf">
+         <div class="divTableNoteVersion-pdf">
+            <div class="divTableBody">
+			   <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/comptabilite2022.svg" alt="Comptabilité" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Comptabilité</strong><br /><br />
+                     1 amélioration
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+						<li>Grâce à une nouveau bouton "Déconnecter mon compte bancaire", il est dorénavant possible de réinitialiser la liaison entre une trésorerie et la banque, lorsque l’autorisation de connexion avec l'organisme bancaire a expiré et qu'il n'est plus possible de synchroniser les relevés de compte.</li>
+                     </ul>
+                  </div>
+               </div>
+			   <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/achats.svg" alt="Achats" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Achats</strong><br /><br />
+                     1 amélioration
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>Dans le tableau récapitulatif des factures d'achats, une nouvelle colonne affiche désormais le solde entre le montant de l'achat et le ou les décaissements qui lui sont associés.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/production2022.svg" alt="Production" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Production</strong><br /><br />
+                     2 améliorations
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+					 <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+						<li>Il est maintenant possible de rapprocher un trajet géolocalisé avec une intervention déjà planifiée afin de récupérer tous les éléments déjà saisis &#40;intrants, doses, équipiers, etc.&#41;&nbsp;:</li>
+                     </ul>
+					 <ul><ul>
+						<li>À partir d'un trajet géolocalisé à l'aide d'un capteur connecté Samsys, la sélection d'une ou plusieurs sections le composant active un nouveau bouton permettant de choisir une intervention parmi celles qui ont été préalablement planifiées</li>
+						<li>La liste des interventions proposées est automatiquement filtrée selon 3 critères&nbsp;: par une ou plusieurs parcelles/cultures identifiées d'après le trajet, par les équipements utilisés et par la date de début des travaux</li>
+						<li>Ce tri permet de faciliter la validation du rapprochement entre un trajet et une intervention planifiée&nbsp;;</li>
+                        </ul></ul>
+					 <ul>
+						<li>Il est désormais possible d'imprimer les budgets prévisionnels de l'exploitation au format PDF. Ce nouveau document consigne le total HT de l'ensemble des dépenses, des recettes ainsi que le solde de chaque activité ouverte lorsque son budget a été préalablement défini pour une campagne donnée.</li>
+					 </ul>
+                  </div>
+               </div>
+			   <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/outils.svg" alt="Outils" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Outils</strong><br /><br />
+                     1 amélioration
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>Mise à disposition d'un nouvel outil d'import de fichiers au format TXT en provenance de la solution tierce Agrigest, pour réaliser le transfert des écritures comptables &#40;FEC&#41;.</li>
+                    </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="saut-page"></div>
+      <div class="content-print marge-pdf">
+         <div class="divTableNoteVersion-pdf">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/configuration.svg" alt="Configuration" width="60px">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Configuration</strong><br /><br />
+                     1 amélioration
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>Lors de la création ou la modification d'une taxe, de nouveaux champs de formulaire permettent de renseigner les codes de TVA Isacompta utilisés dans les échanges comptables.</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
 	  <div class="saut-page"></div>
       <div class="heading-print marge-pdf">
          <h2>Note de version 4.10 du 28/07/2022</h2>
