@@ -79,6 +79,10 @@
          </div>
       </div>
       <!-- !PAGE CONTENT! -->
+	  <div id="loading">
+	  	<!--<img id="loading-image" src="../fr/images/commun/loader.gif" alt="Chargement en cours…" />background: transparent url("../fr/images/commun/loader.gif") no-repeat scroll center center;-->
+		<p><i class="fa-duotone fa-spinner-third fa-spin" style="width: 250px; font-size: 100px; top: 154px; color: #fff; z-index: 1000;"></i></p>
+	  </div>
       <div class="tooltip">
          <a style="display:block" href="../pdf/Ekylibre-Guide.pdf" target="_blank">
             <div class="btn_pdf"><span class="tooltiptext2 tooltip-top">Guide format PDF</span></div>
@@ -127,6 +131,11 @@
 	  <!--<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>-->
 	  <script src="../../javascripts/docsearch.js"></script>
 	  <script>docsearch({container: '#docsearch',appId: 'JCIFZS1SXO',apiKey:'d7102eaca1a7f74822fa7677a517411d',indexName:'ekylibre'});</script>
+	  <script>
+  	  $(window).load(function() {
+	  $('#loading').hide();
+	  });
+	  </script>
    </body>
    <script>
       $(function() {

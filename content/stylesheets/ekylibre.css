@@ -4742,3 +4742,21 @@ iframe {
 .txt-green {
 	color: #008f46;
 }
+
+/* Spinner préchargement des pages */
+#loading {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  opacity: 0.5;
+  background-color: #000;
+  z-index: 999;
+}
+
+#loading-image {
+  position: relative;
+}
