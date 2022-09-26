@@ -109,6 +109,7 @@ a:visited {
 	color: #000;
 }
 
+/* Ancien spinner chargement images */
 img.loading {
 	background: transparent url("../fr/images/commun/loader.gif") no-repeat scroll center center;
 }
@@ -4743,7 +4744,7 @@ iframe {
 	color: #008f46;
 }
 
-/* Spinner préchargement des pages */
+/* Spinner chargement des pages */
 #loading {
   position: fixed;
   display: block;
@@ -4755,8 +4756,4 @@ iframe {
   opacity: 0.5;
   background-color: #000;
   z-index: 999;
-}
-
-#loading-image {
-  position: relative;
 }

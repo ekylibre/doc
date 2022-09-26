@@ -10,6 +10,7 @@
       <title><%= @item[:title] || 'Ekylibre : guide de prise en main' %></title>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="preload" href="../images/commun/brand.svg" as="image" type="image/svg+xml"/>
       <link rel="shortcut icon" href="../images/commun/favicon.ico" />
       <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
@@ -64,12 +65,12 @@
          </div>
          <div class="affichage-large">
             <div class="top-background w3-top">
-               <div class="divTableCellMenu w3-right w3-text-white" style="width:364px"><a href="../demarrage"><img src="../images/commun/brand.svg" alt="Accueil documentation Ekylibre" width="130px" class="logo-entete"></a></div>
+               <div class="divTableCellMenu w3-right w3-text-white" style="width:364px"><a href="../demarrage"><img src="../images/commun/brand.svg" alt="Logo Ekylibre" width="130px" class="logo-entete"></a></div>
             </div>
          </div>
          <div class="affichage-mobile">
             <div class="top-background w3-top">
-               <div class="divTableCellMenu w3-right w3-text-white" style="width:200px"><a href="../demarrage"><img src="../images/commun/brand.svg" alt="Accueil documentation Ekylibre" width="130px" class="logo-entete"></a></div>
+               <div class="divTableCellMenu w3-right w3-text-white" style="width:200px"><a href="../demarrage"><img src="../images/commun/brand.svg" alt="Logo Ekylibre" width="130px" class="logo-entete"></a></div>
             </div>
          </div>
          <div class="affichage-print">
@@ -80,8 +81,7 @@
       </div>
       <!-- !PAGE CONTENT! -->
 	  <div id="loading">
-	  	<!--<img id="loading-image" src="../fr/images/commun/loader.gif" alt="Chargement en cours…" />background: transparent url("../fr/images/commun/loader.gif") no-repeat scroll center center;-->
-		<p><i class="fa-duotone fa-spinner-third fa-spin" style="width: 250px; font-size: 100px; top: 154px; color: #fff; z-index: 1000;"></i></p>
+		<p><i class="fa-duotone fa-spinner-third fa-spin" style="font-size: 100px; top: 154px; color: #fff; z-index: 1000;"></i></p>
 	  </div>
       <div class="tooltip">
          <a style="display:block" href="../pdf/Ekylibre-Guide.pdf" target="_blank">
