@@ -1192,7 +1192,7 @@
             <img src="../images/chapitre9/inter-viti.png" class="contour-img" alt="Interventions prod viticole" data-action="zoom" />
          </p>
       </div>
-      <div class="info-fond aerateur-haut aerateur-bas">
+      <div class="info-fond prod-green aerateur-haut aerateur-bas">
          <div class="floating-box-warn">
             <img src="../images/commun/info.svg" width="100" alt="Info"/>
          </div>
@@ -1226,7 +1226,7 @@
             <img src="../images/chapitre9/matieres.png" class="contour-img" alt="Récoltes de grain et de paille" data-action="zoom" />
          </p>
       </div>
-      <div class="warn-fond aerateur-haut aerateur-bas">
+      <div class="warn-fond prod-orange aerateur-haut aerateur-bas">
          <div class="floating-box-warn">
             <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
          </div>
@@ -1293,7 +1293,7 @@
             <img src="../images/chapitre9/intervention4.png" class="contour-img" alt="Validation de l'intervention" data-action="zoom" />
          </p>
       </div>
-      <div class="info-fond aerateur-haut">
+      <div class="info-fond prod-green aerateur-haut">
          <div class="floating-box-info">
             <img src="../images/commun/info.svg" width="100" alt="Info"/>
          </div>
@@ -1305,7 +1305,7 @@
             <br />La liste des interventions &#40;classées par statut&#41; est également automatiquement enrichie mais notez que si vous avez enregistré une intervention en fin d'année, elle ne sera pas visible dans cette liste l'année suivante.
          </div>
       </div>
-      <div class="warn-fond aerateur-haut aerateur-bas">
+      <div class="warn-fond prod-orange aerateur-haut aerateur-bas">
          <div class="floating-box-warn">
             <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
          </div>
@@ -1522,7 +1522,7 @@
          </p>
          <p>Notez que la sélection d'une ZNT aquatique avec une distance différente dans le menu "Fonds de carte et calques" n'impacte que son affichage dans la carte. Ce changement n'a aucune incidence sur l'analyse permettant de déterminer si l'application d'un produit phytosanitaire est autorisée ou non.</p>
       </div>
-      <div class="info-fond aerateur-haut">
+      <div class="info-fond prod-green aerateur-haut">
          <div class="floating-box-warn">
             <img src="../images/commun/info.svg" width="100" alt="Info"/>
          </div>
@@ -1561,7 +1561,7 @@
             <img src="../images/chapitre9/pulverisation17.png" class="contour-img" alt="Délai avant récolte" data-action="zoom" />
          </p>
       </div>
-      <div class="warn-fond aerateur-haut">
+      <div class="warn-fond prod-orange aerateur-haut">
          <div class="floating-box-warn">
             <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
          </div>
@@ -1755,13 +1755,14 @@
          <img src="../images/commun/step3.svg" alt="3" width="52" />
       </div>
       <div class="process-txt">
-         <span class="titre-advice">Accédez aux catalogues de prix</span>
+         <span class="titre-advice">Accédez aux "Catalogues de prix"</span>
          <p>
-            À droite de l'équipement, cliquez sur "Ajouter un prix catalogue" pour accéder aux "Catalogues de prix". Notez que, dans cet exemple, le coût estimatif de l'équipier est déjà calculé car un <a href="../chapitre8#coutequipier" target="_self" class="avoid-clicks">coût horaire de main d'œuvre</a> a préalablement été défini.
+            À droite de l'équipement, cliquez soit sur "Ajouter un prix catalogue &#40;Article&#41;" pour affecter un coût d'usage à un article référence de nature “Équipements”, soit sur "Ajouter un prix catalogue &#40;Produit&#41;" pour associer un coût horaire à une machine du parc de l’exploitation.
          </p>
          <p class="max-img-process">
             <img src="../images/chapitre9/intervention5.png" class="contour-img" alt="Détail de l'intervention" data-action="zoom" />
          </p>
+		 <p>Notez que, dans cet exemple, le coût estimatif de l'équipier est déjà calculé car un <a href="../chapitre8#coutequipier" target="_self" class="avoid-clicks">coût horaire de main d'œuvre</a> ou un <a href="../chapitre8/#contrats" target="_self" class="avoid-clicks">contrat de travail</a> a préalablement été défini.</p>
       </div>
       <br />
       <div class="floating-box process">
@@ -1770,7 +1771,7 @@
       <div class="process-txt">
          <span class="titre-advice">Sélectionnez un catalogue de prix</span>
          <p>
-            Sélectionnez le catalogue "Prix d'usage" dans la liste déroulante "Catalogue de prix". Notez que le nom de l'article, comme par exemple "Tracteur JD 125cv", est celui initialement choisi lors de la création de l'équipement et n'est pas modifiable ici.
+            Sélectionnez le catalogue "Prix d'usage" dans la liste déroulante "Catalogue de prix". Notez que le nom de l'article, comme par exemple "Tracteur JD 125cv", est celui initialement choisi lors de l'import ou de la création de l'article de référence et n'est pas modifiable ici.
          </p>
          <p class="max-img-process">
             <img src="../images/chapitre9/nouveau-prix1.png" class="contour-img" alt="Nouveau prix" data-action="zoom" />
@@ -1783,10 +1784,16 @@
       <div class="process-txt">
          <span class="titre-advice">Définissez le coût d'utilisation</span>
          <p>
-            Sélectionnez le "Conditionnement" approprié et saisissez le coût horaire d'utilisation de l'équipement avec le montant exprimé dans la même devise que celle qui a été définie lors du paramétrage initial du catalogue de prix.
+            Vérifiez que le "Conditionnement" approprié est correctement affecté par défaut. Renseignez le coût horaire d'utilisation de l'équipement avec le montant exprimé dans la même devise que celle qui a été définie lors du paramétrage initial du catalogue de prix.
          </p>
          <p class="max-img-process">
             <img src="../images/chapitre9/nouveau-prix2.png" class="contour-img" alt="Nouveau prix" data-action="zoom" />
+         </p>
+		 <p>
+            Notez que le champ "Produit" n'est affiché que si vous avez sélectionné initialement "Ajouter un prix catalogue &#40;Produit&#41;" dans la fiche détaillée de l'intervention.
+         </p>
+         <p class="max-img-process">
+            <img src="../images/chapitre9/nouveau-prix3.png" class="contour-img" alt="Nouveau prix" data-action="zoom" />
          </p>
          <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
       </div>

@@ -101,8 +101,8 @@
 			{dates: [new Date(2022, 5, 9), new Date(2022, 6, 11)], title: "Version 4.8", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
 			{dates: [new Date(2022, 6, 12), new Date(2022, 6, 27)], title: "Version 4.9", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
 			{dates: [new Date(2022, 6, 28), new Date(2022, 7, 31)], title: "Version 4.10", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
-			{dates: [new Date(2022, 8, 1), new Date(2022, 8, 28)], title: "Version 4.11", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
-			{dates: [new Date(2022, 8, 29), new Date(annee, mois, jour)], title: "Version 4.12", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
+			{dates: [new Date(2022, 8, 1), new Date(2022, 9, 4)], title: "Version 4.11", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
+			{dates: [new Date(2022, 9, 5), new Date(annee, mois, jour)], title: "Version 4.12", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
          ];
          
          var sections = [
@@ -172,7 +172,7 @@
 					 <div class="panel">
                         <div class="heading">
                            <div class="version">
-                              <h2>Note de version 4.12 du 29/09/2022</h2>
+                              <h2>Note de version 4.12 du 5/10/2022</h2>
                            </div>
                            <i class="fa-solid fa-chevron-down"></i>
                         </div>
@@ -185,7 +185,7 @@
                                     </div>
                                     <div class="divTableCellNoteVersion2" style="width: auto">
                                        <strong>Production</strong><br /><br />
-                                       2 améliorations et 1 bug corrigé
+                                       3 améliorations et 1 bug corrigé
                                     </div>
                                  </div>
                                  <div class="divTableRow">
@@ -194,7 +194,8 @@
                                     <div class="divTableCellNoteVersion4" style="width: auto">
 									   <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                                        <ul>
-										  <li>Lors de la création d’une intervention ou d'un rapprochement à partir d’un trajet géolocalisé avec un capteur connecté Samsys, et afin de prendre en compte les temps plus ou moins longs de conversion, le processus est désormais exécuté en tâche de fond. Une nouvelle notification prévient l’utilisateur une fois que l’opération est réussie &#40;avec un lien de redirection vers l'intervention&#41; ou en échec&nbsp;;</li>
+										  <li>Lors de la création d’une intervention ou d'un rapprochement à partir d’un trajet géolocalisé avec un capteur connecté Samsys, et afin de prendre en compte les temps plus ou moins longs de conversion, le processus est désormais exécuté en tâche de fond. Une nouvelle notification prévient l’utilisateur une fois que l’opération est réussie, avec un lien de redirection vers l'intervention&nbsp;;</li>
+										  <li>Dans la vue détaillée d’une intervention, il est maintenant possible d’affecter un coût d’usage, soit à un article référence de nature “Équipements”, soit à une machine du parc de l’exploitation. Le coût horaire d’un conducteur/opérateur peut être désormais renseigné, soit pour un équipier, soit en créant un nouveau contrat de travail. <br />Lorsqu'ils sont renseignés, le coût estimatif d’une intervention prend dorénavant en compte ces éléments, en complément du prix des éventuels intrants achetés pour la réaliser&nbsp;;</li>
 										  <li>Mise à disposition d'une nouvelle fonctionnalité permettant d'associer les éléments d'une analyse de sol &#40;type de sol, composition chimique&#41; à une zone cultivable afin de consigner les résultats de l’état physique, acide, organique et minéral de celle-ci.</li>
 									   </ul>
 									   <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
@@ -210,7 +211,7 @@
 					 <div class="panel">
                         <div class="heading">
                            <div class="version">
-                              <h2>Note de version 4.11 du 01/09/2022</h2>
+                              <h2>Note de version 4.11 du 1/09/2022</h2>
                            </div>
                            <i class="fa-solid fa-chevron-down"></i>
                         </div>
@@ -6082,7 +6083,7 @@
       <!-- Section pour la génération du PDF -->
 	  <div class="saut-page"></div>
       <div class="heading-print marge-pdf">
-         <h2>Note de version 4.12 du 29/09/2022</h2>
+         <h2>Note de version 4.12 du 5/10/2022</h2>
       </div>
       <div class="content-print marge-pdf">
          <div class="divTableNoteVersion-pdf">
@@ -6093,15 +6094,16 @@
                   </div>
                   <div class="divTableCellNoteVersion2">
                      <strong>Production</strong><br /><br />
-                     1 amélioration et 1 bug corrigé
+                     3 améliorations et 1 bug corrigé
                   </div>
                </div>
                <div class="divTableRow">
                   <div class="divTableCellNoteVersion3" style="width: 60px"></div>
                   <div class="divTableCellNoteVersion4" style="width: auto">
-					 <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+					 <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                      <ul>
-						<li>Lors de la création d’une intervention ou d'un rapprochement à partir d’un trajet géolocalisé avec un capteur connecté Samsys, et afin de prendre en compte les temps plus ou moins longs de conversion, le processus est désormais exécuté en tâche de fond. Une nouvelle notification prévient l’utilisateur une fois que l’opération est réussie &#40;avec un lien de redirection vers l'intervention&#41; ou en échec.</li>
+						<li>Lors de la création d’une intervention ou d'un rapprochement à partir d’un trajet géolocalisé avec un capteur connecté Samsys, et afin de prendre en compte les temps plus ou moins longs de conversion, le processus est désormais exécuté en tâche de fond. Une nouvelle notification prévient l’utilisateur une fois que l’opération est réussie, avec un lien de redirection vers l'intervention&nbsp;;</li>
+						<li>Dans la vue détaillée d’une intervention, il est maintenant possible d’affecter un coût d’usage, soit à un article référence de nature “Équipements”, soit à une machine du parc de l’exploitation. Le coût horaire d’un conducteur/opérateur peut être désormais renseigné, soit pour un équipier, soit en créant un nouveau contrat de travail. <br />Lorsqu'ils sont renseignés, le coût estimatif d’une intervention prend dorénavant en compte ces éléments, en complément du prix des éventuels intrants achetés pour la réaliser&nbsp;;</li>
 						<li>Mise à disposition d'une nouvelle fonctionnalité permettant d'associer les éléments d'une analyse de sol &#40;type de sol, composition chimique&#41; à une zone cultivable afin de consigner les résultats de l’état physique, acide, organique et minéral de celle-ci.</li>
 					 </ul>
                      <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
@@ -6115,7 +6117,7 @@
       </div>
 	  <div class="saut-page"></div>
       <div class="heading-print marge-pdf">
-         <h2>Note de version 4.11 du 01/09/2022</h2>
+         <h2>Note de version 4.11 du 1/09/2022</h2>
       </div>
       <div class="content-print marge-pdf">
          <div class="divTableNoteVersion-pdf">
