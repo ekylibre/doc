@@ -101,8 +101,8 @@
 			{dates: [new Date(2022, 5, 9), new Date(2022, 6, 11)], title: "Version 4.8", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
 			{dates: [new Date(2022, 6, 12), new Date(2022, 6, 27)], title: "Version 4.9", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
 			{dates: [new Date(2022, 6, 28), new Date(2022, 7, 31)], title: "Version 4.10", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
-			{dates: [new Date(2022, 8, 1), new Date(2022, 9, 6)], title: "Version 4.11", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
-			{dates: [new Date(2022, 9, 7), new Date(annee, mois, jour)], title: "Version 4.12", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
+			{dates: [new Date(2022, 8, 1), new Date(2022, 9, 19)], title: "Version 4.11", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
+			{dates: [new Date(2022, 9, 20), new Date(annee, mois, jour)], title: "Version 4.12", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
          ];
          
          var sections = [
@@ -169,6 +169,41 @@
             <section id="panel-1">
                <main>
                   <div class="accordion-container marge">
+					 <div class="panel">
+                        <div class="heading">
+                           <div class="version">
+                              <h2>Note de version 4.13 du 20/10/2022</h2>
+                           </div>
+                           <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="content">
+                           <div class="divTableNoteVersion">
+                              <div class="divTableBody">
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/production2022.svg" alt="Production" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Production</strong><br /><br />
+                                       3 améliorations
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+									   <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+										  <li>Nouvelle possibilité de renseigner une intervention sur une parcelle ou une culture &#40;ou toutes celles appartenant à un groupement parcellaire&#41; sans afficher la carte et avec la possibilité de renseigner, en hectare&#40;s&#41;, une zone travaillée différente de la surface initiale.<br />Les interventions avec pulvérisation de produits phytosanitaires nécessitant de respecter les contrôles obligatoires liés à la réglementation &#40;doses autorisées, ZNT, etc.&#41; et de connaître précisément les contours de la zone travaillée, les vérifications sont alors effectuées à partir de la surface totale de la parcelle ou de la culture&nbsp;;</li>
+										  <li>La sélection d'un itinéraire cultural pour une activité pérenne préremplit maintenant automatiquement la date de début de campagne annuelle de production dans le formulaire de saisie, avec la possibilité de la modifier&nbsp;;</li>
+										  <li>Afin de prendre en compte les temps plus ou moins longs de traitement lors de l'enregistrement d'une intervention, le calcul des IFT est dorénavant exécuté en tâche de fond.</li>
+									   </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
 					 <div class="panel">
                         <div class="heading">
                            <div class="version">
@@ -6100,6 +6135,36 @@
          </div>
       </article>
       <!-- Section pour la génération du PDF -->
+	  <div class="saut-page"></div>
+      <div class="heading-print marge-pdf">
+         <h2>Note de version 4.13 du 20/10/2022</h2>
+      </div>
+      <div class="content-print marge-pdf">
+         <div class="divTableNoteVersion-pdf">
+            <div class="divTableBody">
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1">
+                     <img src="../images/notes-version/production2022.svg" alt="Production" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2">
+                     <strong>Production</strong><br /><br />
+                     3 améliorations
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+					 <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+						<li>Nouvelle possibilité de renseigner une intervention sur une parcelle ou une culture &#40;ou toutes celles appartenant à un groupement parcellaire&#41; sans afficher la carte et avec la possibilité de renseigner, en hectare&#40;s&#41;, une zone travaillée différente de la surface initiale.<br />Les interventions avec pulvérisation de produits phytosanitaires nécessitant de respecter les contrôles obligatoires liées à la réglementation &#40;doses autorisées, ZNT, etc.&#41; et de connaître précisément les contours de la zone travaillée, les vérifications sont alors effectuées à partir de la surfaces totale de la parcelle ou de la culture&nbsp;;</li>
+						<li>La sélection d'un itinéraire cultural pour une activité pérenne préremplit maintenant automatiquement la date de début de campagne annuelle de production dans le formulaire de saisie, avec la possibilité de la modifier&nbsp;;</li>
+						<li>Afin de prendre en compte les temps plus ou moins longs de traitement lors de l'enregistrement d'une intervention, le calcul des IFT est dorénavant exécuté en tâche de fond.</li>
+					 </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
 	  <div class="saut-page"></div>
       <div class="heading-print marge-pdf">
          <h2>Note de version 4.12 du 7/10/2022</h2>
