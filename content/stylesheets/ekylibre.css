@@ -874,6 +874,20 @@ a:visited {
 	background-color: #eee;
 }
 
+.perf-green {
+	background: url("../fr/images/commun/perf-green.svg") no-repeat right;
+	background-position: 98% 15px !important;
+	background-size: 28px !important;
+	background-color: #eee;
+}
+
+.perf-orange {
+	background: url("../fr/images/commun/perf-orange.svg") no-repeat right;
+	background-position: 98% 15px !important;
+	background-size: 28px !important;
+	background-color: #eee;
+}
+
 .divTableCellRole2 img {
 	padding-bottom: 1px;
 	margin-top: 1px;
