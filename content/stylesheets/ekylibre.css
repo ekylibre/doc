@@ -3704,7 +3704,7 @@ label.panel-label:hover {
   #panel-1-ctrl:checked ~ #tabs-list #li-for-panel-1 label.panel-label {
     background-color: white;
     color: #3f70ce;
-    padding-top: 15px;
+    padding-top: 14px;
   }
   #panel-1-ctrl:checked ~ #tabs-list #li-for-panel-1 label.panel-label::after {
     height: 1px;
@@ -3726,7 +3726,7 @@ label.panel-label:hover {
   #panel-2-ctrl:checked ~ #tabs-list #li-for-panel-2 label.panel-label {
     background-color: white;
     color: #3f70ce;
-    padding-top: 15px;
+    padding-top: 14px;
   }
   #panel-2-ctrl:checked ~ #tabs-list #li-for-panel-2 label.panel-label::after {
     height: 1px;
@@ -3748,7 +3748,7 @@ label.panel-label:hover {
   #panel-3-ctrl:checked ~ #tabs-list #li-for-panel-3 label.panel-label {
     background-color: white;
     color: #3f70ce;
-    padding-top: 15px;
+    padding-top: 14px;
   }
   #panel-3-ctrl:checked ~ #tabs-list #li-for-panel-3 label.panel-label::after {
     height: 1px;
@@ -3770,7 +3770,7 @@ label.panel-label:hover {
   #panel-4-ctrl:checked ~ #tabs-list #li-for-panel-4 label.panel-label {
     background-color: white;
     color: #3f70ce;
-    padding-top: 15px;
+    padding-top: 14px;
   }
   #panel-4-ctrl:checked ~ #tabs-list #li-for-panel-4 label.panel-label::after {
     height: 1px;
@@ -3792,7 +3792,7 @@ label.panel-label:hover {
   #panel-5-ctrl:checked ~ #tabs-list #li-for-panel-5 label.panel-label {
     background-color: white;
     color: #3f70ce;
-    padding-top: 15px;
+    padding-top: 14px;
   }
   #panel-5-ctrl:checked ~ #tabs-list #li-for-panel-5 label.panel-label::after {
     height: 1px;
@@ -3807,7 +3807,7 @@ label.panel-label:hover {
   ul#tabs-list li {
     display: inline-block;
     text-align: center;
-    width: 100px;
+    width: 90px;
     border-right: 1px solid #ccc;
     border-left: 1px solid #ccc;
     border-top: 1px solid #ccc;
@@ -3827,7 +3827,7 @@ label.panel-label:hover {
   }
   ul#tabs-list li label.panel-label {
     position: relative;
-    padding: 15px 0;
+    padding: 11px 0;
     border-radius: 0;
   }
   ul#tabs-list li label.panel-label::after {
@@ -3844,7 +3844,7 @@ label.panel-label:hover {
             transition-duration: 200ms;
   }
   ul#tabs-list li label.panel-label:hover {
-    padding-top: 14px;
+    padding-top: 11px;
   }
   ul#tabs-list li label.panel-label:hover::after {
     height: 1px;
