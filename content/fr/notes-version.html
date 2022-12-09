@@ -34,7 +34,7 @@
       <div class="image-carre"><img class="chapitre" src="../images/notes-version/notes-version-carre.png" alt="Notes de version" /></div>
       <h1 align="center" class="majuscule aerateur">Notes de version</h1>
       <p class="texte">Les notes de version décrivent les nouvelles fonctionnalités, les améliorations, les modifications et les correctifs apportés à chaque évolution significative d'<strong>Eky</strong>agri, d'<strong>Eky</strong>viti et de l'application mobile Zero.</p>
-	  <p class="texte">La frise chronologique ci-dessous récapitule les versions successives mises à votre disposition depuis juin 2019&nbsp;:</p>
+	  <p class="texte pdf">La frise chronologique ci-dessous récapitule les versions successives mises à votre disposition depuis juin 2019&nbsp;:</p>
       <div id="main_content_wrap" class="marge chronoline pdf">
          <section id="main_content">
             <div id="target" class="timeline-tgt"></div>
@@ -104,8 +104,8 @@
 			{dates: [new Date(2022, 6, 28), new Date(2022, 7, 31)], title: "Version 4.10", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
 			{dates: [new Date(2022, 8, 1), new Date(2022, 9, 6)], title: "Version 4.11", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
 			{dates: [new Date(2022, 9, 7), new Date(2022, 10, 2)], title: "Version 4.12", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
-			{dates: [new Date(2022, 10, 3), new Date(annee, 11, 7)], title: "Version 4.13", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
-			{dates: [new Date(2022, 11, 8), new Date(annee, mois, jour)], title: "Version 4.14", attrs: {fill: "#fea40b", stroke: "#fea40b"}}
+			{dates: [new Date(2022, 10, 3), new Date(annee, 11, 14)], title: "Version 4.13", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
+			{dates: [new Date(2022, 11, 15), new Date(annee, mois, jour)], title: "Version 4.14", attrs: {fill: "#fea40b", stroke: "#fea40b"}}
          ];
          
          var sections = [
@@ -175,7 +175,7 @@
 					 <div class="panel">
                         <div class="heading">
                            <div class="version">
-                              <h2>Note de version 4.14 du 8/12/2022</h2>
+                              <h2>Note de version 4.14 du 15/12/2022</h2>
                            </div>
                            <i class="fa-solid fa-chevron-down"></i>
                         </div>
@@ -252,8 +252,8 @@
                                     <div class="divTableCellNoteVersion4" style="width: auto">
 									   <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                                        <ul>
-										  <li>Mise à disposition d'un nouvel indicateur présentant, sur un fond de carte et avec des échelles de couleurs, les coûts estimatifs des parcelles calculés à partir du prix des ressources choisies durant les interventions &#40;intrants, équipements et main d'œuvre&#41;. Il est possible d'activer ou de masquer, au choix, l'affichage de certains calques pour isoler le cumul ou une des ressources. Un export des valeurs utilisées pour afficher la carte est également disponible.</li>
-										  <li>La cellule "Carte", déjà disponible, est renommée "Production&nbsp;: carte des activités, IFT et ZNT" pour la distinguer de la nouvelle intitulée "Production&nbsp;: carte des coûts d’intervention".</li>
+										  <li>Mise à disposition d'un nouvel indicateur présentant, sur un fond de carte et avec des échelles de couleurs, les coûts estimatifs des parcelles calculés à partir du prix des ressources choisies durant les interventions &#40;intrants, équipements et main d'œuvre&#41;. Il est possible d'activer ou de masquer, via les options d'un menu, l'affichage des couches pour isoler le cumul ou une des ressources&nbsp;;</li>
+										  <li>La cellule "Carte", utilisée pour afficher les parcelles des productions végétales ou viticoles, est maintenant dénommée "Production&nbsp;: carte des activités, IFT et ZNT" afin de la différencier du nouvel indicateur intitulé "Production&nbsp;: carte des coûts d'intervention" &#40;voir ci-dessus&#41;.</li>
 									   </ul>
                                     </div>
                                  </div>
@@ -272,16 +272,16 @@
                                     <div class="divTableCellNoteVersion4" style="width: auto">
 									   <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                                        <ul>
-										  <li>Mise à disposition de 3 nouveaux indicateurs affectés au tableau de bord de la planification&nbsp;:</li>
+										  <li>Mise à disposition de 3 nouveaux indicateurs affectés au tableau de bord de la planification&nbsp;:</li><br />
 										  <ul>
-										  <li>Temps prévisionnels par activité<br>
+										  <li><em>Temps prévisionnels par activité</em><br>
 										  Cette cellule affiche, dans un graphe combiné et pour une année civile, les besoins en nombre d'heures de travail à prévoir pour chaque activité, ainsi que les cumuls de temps calculés pour les équipements et la main d'œuvre&nbsp;;</li>
-										  <li>Utilisation prévisionnelle des équipements<br>
+										  <li><em>Utilisation prévisionnelle des équipements</em><br>
 										  Cette cellule affiche, dans un graphe sectoriel, les besoins de tous les équipements dont l'utilisation est planifiée pour réaliser les interventions des activités de la production végétale ou viticole&nbsp;;</li>
-										  <li>Besoins prévisionnels en intrants<br>
+										  <li><em>Besoins prévisionnels en intrants</em><br>
 										  Cette cellule affiche, dans un graphe sectoriel, les besoins de tous les intrants dont l'usage est planifié pour réaliser les interventions des activités de la production végétale ou viticole.</li>
 										  </ul><br />
-										  <li>Il est désormais possible d'imprimer, au format PDF,  la fiche d'un seul ou de tous les itinéraires techniques associés aux activités ouvertes durant une campagne, lorsque leur budget a été préalablement généré. Ce document consigne, dans l'ordre chronologique et pour chaque activité, l'ensemble des modèles d'interventions composant un itinéraire cultural. Il énumère les temps et les besoins en équipement, en main d'œuvre, en intrant et renseigne sur les coûts estimatifs de la planification.</li>
+										  <li>Dans la section "Itinéraires culturaux", il est désormais possible d'imprimer, au format PDF,  la fiche d'un seul ou de tous les itinéraires listés pour une campagne donnée. Ce document consigne, dans l'ordre chronologique, l'ensemble des interventions composant un itinéraire technique. Il récapitule les temps/ha, les rendements, les besoins en équipements, en main d'œuvre, en intrants et renseigne sur les coûts estimatifs de la planification.</li>
 									   </ul>
                                     </div>
                                  </div>
@@ -349,9 +349,9 @@
                                     <div class="divTableCellNoteVersion4" style="width: auto">
 									   <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                                        <ul>
-										  <li>Lors de la création d’une intervention ou d'un rapprochement à partir d’un trajet géolocalisé avec un capteur connecté Samsys, et afin de prendre en compte les temps plus ou moins longs de conversion, le processus est désormais exécuté en tâche de fond. Une nouvelle notification prévient l’utilisateur une fois que l’opération est réussie, avec un lien de redirection vers l'intervention&nbsp;;</li>
-										  <li>Dans la vue détaillée d’une intervention, il est maintenant possible d’affecter un coût d’usage, soit à un article référence de nature “Équipements”, soit à une machine du parc de l’exploitation. Le coût horaire d’un conducteur/opérateur peut être désormais renseigné, soit pour un équipier, soit en créant un nouveau contrat de travail. <br />Lorsqu'ils sont renseignés, le coût estimatif d’une intervention prend dorénavant en compte ces éléments, en complément du prix des éventuels intrants achetés pour la réaliser&nbsp;;</li>
-										  <li>Mise à disposition d'une nouvelle fonctionnalité permettant d'associer les éléments d'une analyse de sol &#40;type de sol, composition chimique&#41; à une zone cultivable afin de consigner les résultats de l’état physique, acide, organique et minéral de celle-ci.</li>
+										  <li>Lors de la création d'une intervention ou d'un rapprochement à partir d'un trajet géolocalisé avec un capteur connecté Samsys, et afin de prendre en compte les temps plus ou moins longs de conversion, le processus est désormais exécuté en tâche de fond. Une nouvelle notification prévient l'utilisateur une fois que l'opération est réussie, avec un lien de redirection vers l'intervention&nbsp;;</li>
+										  <li>Dans la vue détaillée d'une intervention, il est maintenant possible d'affecter un coût d'usage, soit à un article référence de nature “Équipements”, soit à une machine du parc de l'exploitation. Le coût horaire d'un conducteur/opérateur peut être désormais renseigné, soit pour un équipier, soit en créant un nouveau contrat de travail. <br />Lorsqu'ils sont renseignés, le coût estimatif d'une intervention prend dorénavant en compte ces éléments, en complément du prix des éventuels intrants achetés pour la réaliser&nbsp;;</li>
+										  <li>Mise à disposition d'une nouvelle fonctionnalité permettant d'associer les éléments d'une analyse de sol &#40;type de sol, composition chimique&#41; à une zone cultivable afin de consigner les résultats de l'état physique, acide, organique et minéral de celle-ci.</li>
 									   </ul>
 									   <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
                                        <ul>
@@ -406,7 +406,7 @@
                                     <div class="divTableCellNoteVersion4" style="width: auto">
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                                        <ul>
-										  <li>Grâce à une nouveau bouton "Déconnecter mon compte bancaire", il est dorénavant possible de réinitialiser la liaison entre une trésorerie et la banque, lorsque l’autorisation de connexion avec l'organisme bancaire a expiré et qu'il n'est plus possible de synchroniser les relevés de compte.</li>
+										  <li>Grâce à une nouveau bouton "Déconnecter mon compte bancaire", il est dorénavant possible de réinitialiser la liaison entre une trésorerie et la banque, lorsque l'autorisation de connexion avec l'organisme bancaire a expiré et qu'il n'est plus possible de synchroniser les relevés de compte.</li>
                                        </ul>
                                     </div>
                                  </div>
@@ -615,8 +615,8 @@
                                     <div class="divTableCellNoteVersion4" style="width: auto">
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                                        <ul>
-										  <li>Grâce à un nouveau bouton "Connecter mon compte bancaire", il est désormais possible de créer, via une plateforme sécurisée, une liaison entre une trésorerie de type "Compte bancaire" et la banque de l'utilisateur afin d’importer automatiquement les relevés de compte mensuels et procéder ensuite au rapprochement bancaire. La validation de cette opération est systématiquement contrôlée par une redirection vers le formulaire d’authentification et la saisie des identifiants sur le site de la banque&nbsp;;</li>
-                                          <li>En complément, un bouton "Synchroniser les relevés de compte" permet d’actualiser, sur demande, la liste des nouvelles opérations bancaires enregistrées chaque mois sur le compte avec leur transfert automatique dans l’application.</li>
+										  <li>Grâce à un nouveau bouton "Connecter mon compte bancaire", il est désormais possible de créer, via une plateforme sécurisée, une liaison entre une trésorerie de type "Compte bancaire" et la banque de l'utilisateur afin d'importer automatiquement les relevés de compte mensuels et procéder ensuite au rapprochement bancaire. La validation de cette opération est systématiquement contrôlée par une redirection vers le formulaire d'authentification et la saisie des identifiants sur le site de la banque&nbsp;;</li>
+                                          <li>En complément, un bouton "Synchroniser les relevés de compte" permet d'actualiser, sur demande, la liste des nouvelles opérations bancaires enregistrées chaque mois sur le compte avec leur transfert automatique dans l'application.</li>
                                        </ul>
                                     </div>
                                  </div>
@@ -671,7 +671,7 @@
                                     <div class="divTableCellNoteVersion4" style="width: auto">
                                        <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
                                        <ul>
-										  <li>Dans les interventions avec utilisation de produits phytosanitaires, il est dorénavant possible d’utiliser des doses exprimées en fonction d’un volume de bouillie &#40;g/l, kg/hl, l/hl&#41; avec un contrôle automatique de la conformité des doses maximales autorisées&nbsp;;</li>
+										  <li>Dans les interventions avec utilisation de produits phytosanitaires, il est dorénavant possible d'utiliser des doses exprimées en fonction d'un volume de bouillie &#40;g/l, kg/hl, l/hl&#41; avec un contrôle automatique de la conformité des doses maximales autorisées&nbsp;;</li>
 										  <li>Tous les équipements agricoles gérés par l'application sont maintenant parfaitement compatibles avec ceux supportés par la solution tierce Samsys.</li>
                                        </ul>
                                     </div>
@@ -691,7 +691,7 @@
                                     <div class="divTableCellNoteVersion4" style="width: auto">
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                                        <ul>
-										  <li>Il est maintenant possible de calculer les coûts de production et les marges dégagées durant un exercice comptable, afin de les comparer avec les coûts et les marges prévus par le budget prévisionnel. Pour cela, l’utilisateur peut sélectionner, depuis le module "Comptabilité", dans la section "Écritures", une ou plusieurs écritures comptables et les affecter à une activité principale&nbsp;;</li>
+										  <li>Il est maintenant possible de calculer les coûts de production et les marges dégagées durant un exercice comptable, afin de les comparer avec les coûts et les marges prévus par le budget prévisionnel. Pour cela, l'utilisateur peut sélectionner, depuis le module "Comptabilité", dans la section "Écritures", une ou plusieurs écritures comptables et les affecter à une activité principale&nbsp;;</li>
 										  <li>La partie récapitulative des tableaux, réservée à l'affichage du "Réalisé" des coûts de production et des marges d'une activité principale, est automatiquement actualisée après l'affectation d'une ou plusieurs écritures comptables.</li>
                                        </ul>
                                     </div>
@@ -711,7 +711,7 @@
                                     <div class="divTableCellNoteVersion4" style="width: auto">
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                                        <ul>
-                                          <li>Lors de la configuration des "Contrats de travail", il est désormais possible d’affecter un salarié à une ou plusieurs activités en paramétrant une clé de répartition analytique. Définie, soit au prorata de la marge brute générée par chaque activité, soit par l'affectation d'un pourcentage à une sélection d'activités, cette distribution est prise en compte pour le calcul des coûts de production, des marges et des seuils de commercialisation du module "Économique".</li>
+                                          <li>Lors de la configuration des "Contrats de travail", il est désormais possible d'affecter un salarié à une ou plusieurs activités en paramétrant une clé de répartition analytique. Définie, soit au prorata de la marge brute générée par chaque activité, soit par l'affectation d'un pourcentage à une sélection d'activités, cette distribution est prise en compte pour le calcul des coûts de production, des marges et des seuils de commercialisation du module "Économique".</li>
                                        </ul>
                                        <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
                                        <ul>
@@ -1400,7 +1400,7 @@
                                     <div class="divTableCellNoteVersion4" style="width: auto">
                                        <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
                                        <ul>
-                                          <li>La synchronisation des encaissements enregistrés avec la solution Baqio permet désormais de conserver le pointage des écritures réalisé lors d’un précédent rapprochement bancaire.</li>
+                                          <li>La synchronisation des encaissements enregistrés avec la solution Baqio permet désormais de conserver le pointage des écritures réalisé lors d'un précédent rapprochement bancaire.</li>
                                        </ul>
                                     </div>
                                  </div>
@@ -4941,8 +4941,8 @@
                                     <div class="divTableCellNoteVersion4" style="width: auto">
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                                        <ul>
-                                          <li>En mode visualisation "Carte" et via le menu "Fonds de carte et calques", mise à disposition d'un nouveau sélecteur permettant de masquer ou d'afficher les ZNT aquatiques &#40;5&nbsp;m, 20&nbsp;m, 30&nbsp;m, 50&nbsp;m et 100&nbsp;m&#41;, en transparence sur le fond de carte choisi lorsque le niveau de zoom suffisant est atteint&nbsp;;</li>
-                                          <li>En mode visualisation "Carte" et via le menu "Fonds de carte et calques", les ZNT aquatiques sont maintenant affichables sur demande dans la présentation des zones cultivables, des parcelles et des cultures&nbsp;;</li>
+                                          <li>En mode visualisation "Carte" et via le menu "Fonds de carte et couches", mise à disposition d'un nouveau sélecteur permettant de masquer ou d'afficher les ZNT aquatiques &#40;5&nbsp;m, 20&nbsp;m, 30&nbsp;m, 50&nbsp;m et 100&nbsp;m&#41;, en transparence sur le fond de carte choisi lorsque le niveau de zoom suffisant est atteint&nbsp;;</li>
+                                          <li>En mode visualisation "Carte" et via le menu "Fonds de carte et couches", les ZNT aquatiques sont maintenant affichables sur demande dans la présentation des zones cultivables, des parcelles et des cultures&nbsp;;</li>
                                           <li>Nouvelle analyse permettant de déterminer si l'application d'un produit phytosanitaire est autorisée ou non en fonction de la distance ZNT aquatique minimale à respecter, d'après les données en provenance d'E-Phy et pour un usage sélectionné&nbsp;;</li>
                                           <li>Amélioration de la prise en compte de l'ensemble des messages d'avertissement pouvant apparaître dans les interventions de pulvérisation, de semis &#171;&nbsp;tout-en-un&nbsp;&#187; ou de semis avec pulvérisation, et servant de base à l'affichage de la mention "Autorisé" ou "Non autorisé".</li>
                                        </ul>
@@ -6257,7 +6257,7 @@
       <!-- Section pour la génération du PDF -->
 	  <div class="saut-page"></div>
       <div class="heading-print marge-pdf">
-         <h2>Note de version 4.14 du 8/12/2022</h2>
+         <h2>Note de version 4.14 du 15/12/2022</h2>
       </div>
       <div class="content-print marge-pdf">
          <div class="divTableNoteVersion-pdf">
@@ -6331,8 +6331,8 @@
                   <div class="divTableCellNoteVersion4" style="width: auto">
 					 <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                      <ul>
-						<li>Mise à disposition d'un nouvel indicateur présentant, sur un fond de carte et avec des échelles de couleurs, les coûts estimatifs des parcelles calculés à partir du prix des ressources choisies durant les interventions &#40;intrants, équipements et main d'œuvre&#41;. Il est possible d'activer ou de masquer, au choix, l'affichage de certains calques pour isoler le cumul ou une des ressources. Un export des valeurs utilisées pour afficher la carte est également disponible&nbsp;;</li>
-						<li>La cellule "Carte", déjà disponible, est renommée "Production&nbsp;: carte des activités, IFT et ZNT" pour la distinguer de la nouvelle intitulée "Production&nbsp;: carte des coûts d’intervention".</li>
+						<li>Mise à disposition d'un nouvel indicateur présentant, sur un fond de carte et avec des échelles de couleurs, les coûts estimatifs des parcelles calculés à partir du prix des ressources choisies durant les interventions &#40;intrants, équipements et main d'œuvre&#41;. Il est possible d'activer ou de masquer, via les options d'un menu, l'affichage des couches pour isoler le cumul ou une des ressources&nbsp;;</li>
+						<li>La cellule "Carte", utilisée pour afficher les parcelles des productions végétales ou viticoles, est maintenant dénommée "Production&nbsp;: carte des activités, IFT et ZNT" afin de la différencier du nouvel indicateur intitulé "Production&nbsp;: carte des coûts d'intervention" &#40;voir ci-dessus&#41;.</li>
                      </ul>
                   </div>
                </div>
@@ -6357,16 +6357,16 @@
                   <div class="divTableCellNoteVersion4" style="width: auto">
 					 <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                      <ul>
-						<li>Mise à disposition de 3 nouveaux indicateurs affectés au tableau de bord de la planification&nbsp;:</li>
+						<li>Mise à disposition de 3 nouveaux indicateurs affectés au tableau de bord de la planification&nbsp;:</li><br />
 						<ul>
-						<li>Temps prévisionnels par activité<br>
+						<li><em>Temps prévisionnels par activité</em><br>
 						Cette cellule affiche, dans un graphe combiné et pour une année civile, les besoins en nombre d'heures de travail à prévoir pour chaque activité, ainsi que les cumuls de temps calculés pour les équipements et la main d'œuvre&nbsp;;</li>
-						<li>Utilisation prévisionnelle des équipements<br>
+						<li><em>Utilisation prévisionnelle des équipements</em><br>
 						Cette cellule affiche, dans un graphe sectoriel, les besoins de tous les équipements dont l'utilisation est planifiée pour réaliser les interventions des activités de la production végétale ou viticole&nbsp;;</li>
-						<li>Besoins prévisionnels en intrants<br>
+						<li><em>Besoins prévisionnels en intrants</em><br>
 						Cette cellule affiche, dans un graphe sectoriel, les besoins de tous les intrants dont l'usage est planifié pour réaliser les interventions des activités de la production végétale ou viticole.</li>
 						</ul><br />
-						<li>Il est désormais possible d'imprimer, au format PDF,  la fiche d'un seul ou de tous les itinéraires techniques associés aux activités ouvertes durant une campagne, lorsque leur budget a été préalablement généré. Ce document consigne, dans l'ordre chronologique et pour chaque activité, l'ensemble des modèles d'interventions composant un itinéraire cultural. Il énumère les temps et les besoins en équipement, en main d'œuvre, en intrant et renseigne sur les coûts estimatifs de la planification.</li>
+						<li>Dans la section "Itinéraires culturaux", il est désormais possible d'imprimer, au format PDF,  la fiche d'un seul ou de tous les itinéraires listés pour une campagne donnée. Ce document consigne, dans l'ordre chronologique, l'ensemble des interventions composant un itinéraire technique. Il récapitule les temps/ha, les rendements, les besoins en équipements, en main d'œuvre, en intrants et renseigne sur les coûts estimatifs de la planification.</li>
 					 </ul>
                   </div>
                </div>
@@ -6424,9 +6424,9 @@
                   <div class="divTableCellNoteVersion4" style="width: auto">
 					 <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                      <ul>
-						<li>Lors de la création d’une intervention ou d'un rapprochement à partir d’un trajet géolocalisé avec un capteur connecté Samsys, et afin de prendre en compte les temps plus ou moins longs de conversion, le processus est désormais exécuté en tâche de fond. Une nouvelle notification prévient l’utilisateur une fois que l’opération est réussie, avec un lien de redirection vers l'intervention&nbsp;;</li>
-						<li>Dans la vue détaillée d’une intervention, il est maintenant possible d’affecter un coût d’usage, soit à un article référence de nature “Équipements”, soit à une machine du parc de l’exploitation. Le coût horaire d’un conducteur/opérateur peut être désormais renseigné, soit pour un équipier, soit en créant un nouveau contrat de travail. <br />Lorsqu'ils sont renseignés, le coût estimatif d’une intervention prend dorénavant en compte ces éléments, en complément du prix des éventuels intrants achetés pour la réaliser&nbsp;;</li>
-						<li>Mise à disposition d'une nouvelle fonctionnalité permettant d'associer les éléments d'une analyse de sol &#40;type de sol, composition chimique&#41; à une zone cultivable afin de consigner les résultats de l’état physique, acide, organique et minéral de celle-ci.</li>
+						<li>Lors de la création d'une intervention ou d'un rapprochement à partir d'un trajet géolocalisé avec un capteur connecté Samsys, et afin de prendre en compte les temps plus ou moins longs de conversion, le processus est désormais exécuté en tâche de fond. Une nouvelle notification prévient l'utilisateur une fois que l'opération est réussie, avec un lien de redirection vers l'intervention&nbsp;;</li>
+						<li>Dans la vue détaillée d'une intervention, il est maintenant possible d'affecter un coût d'usage, soit à un article référence de nature “Équipements”, soit à une machine du parc de l'exploitation. Le coût horaire d'un conducteur/opérateur peut être désormais renseigné, soit pour un équipier, soit en créant un nouveau contrat de travail. <br />Lorsqu'ils sont renseignés, le coût estimatif d'une intervention prend dorénavant en compte ces éléments, en complément du prix des éventuels intrants achetés pour la réaliser&nbsp;;</li>
+						<li>Mise à disposition d'une nouvelle fonctionnalité permettant d'associer les éléments d'une analyse de sol &#40;type de sol, composition chimique&#41; à une zone cultivable afin de consigner les résultats de l'état physique, acide, organique et minéral de celle-ci.</li>
 					 </ul>
                      <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
                      <ul>
@@ -6478,7 +6478,7 @@
                   <div class="divTableCellNoteVersion4" style="width: auto">
                      <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                      <ul>
-						<li>Grâce à une nouveau bouton "Déconnecter mon compte bancaire", il est dorénavant possible de réinitialiser la liaison entre une trésorerie et la banque, lorsque l’autorisation de connexion avec l'organisme bancaire a expiré et qu'il n'est plus possible de synchroniser les relevés de compte.</li>
+						<li>Grâce à une nouveau bouton "Déconnecter mon compte bancaire", il est dorénavant possible de réinitialiser la liaison entre une trésorerie et la banque, lorsque l'autorisation de connexion avec l'organisme bancaire a expiré et qu'il n'est plus possible de synchroniser les relevés de compte.</li>
                      </ul>
                   </div>
                </div>
@@ -6688,8 +6688,8 @@
                   <div class="divTableCellNoteVersion4" style="width: auto">
                      <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                      <ul>
-                        <li>Grâce à un nouveau bouton "Connecter mon compte bancaire", il est désormais possible de créer, via une plateforme sécurisée, une liaison entre une trésorerie de type "Compte bancaire" et la banque de l'utilisateur afin d’importer automatiquement les relevés de compte mensuels et procéder ensuite au rapprochement bancaire. La validation de cette opération est systématiquement contrôlée par une redirection vers le formulaire d’authentification et la saisie des identifiants sur le site de la banque&nbsp;;</li>
-						<li>En complément, un bouton "Synchroniser les relevés de compte" permet d’actualiser, sur demande, la liste des nouvelles opérations bancaires enregistrées chaque mois sur le compte avec leur transfert automatique dans l’application.</li>
+                        <li>Grâce à un nouveau bouton "Connecter mon compte bancaire", il est désormais possible de créer, via une plateforme sécurisée, une liaison entre une trésorerie de type "Compte bancaire" et la banque de l'utilisateur afin d'importer automatiquement les relevés de compte mensuels et procéder ensuite au rapprochement bancaire. La validation de cette opération est systématiquement contrôlée par une redirection vers le formulaire d'authentification et la saisie des identifiants sur le site de la banque&nbsp;;</li>
+						<li>En complément, un bouton "Synchroniser les relevés de compte" permet d'actualiser, sur demande, la liste des nouvelles opérations bancaires enregistrées chaque mois sur le compte avec leur transfert automatique dans l'application.</li>
                      </ul>
                   </div>
                </div>
@@ -6743,7 +6743,7 @@
                   <div class="divTableCellNoteVersion4" style="width: auto">
                      <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctifs&nbsp;:</p>
                      <ul>
-                        <li>Dans les interventions avec utilisation de produits phytosanitaires, il est dorénavant possible d’utiliser des doses exprimées en fonction d’un volume de bouillie &#40;g/l, kg/hl, l/hl&#41; avec un contrôle automatique de la conformité des doses maximales autorisées&nbsp;;</li>
+                        <li>Dans les interventions avec utilisation de produits phytosanitaires, il est dorénavant possible d'utiliser des doses exprimées en fonction d'un volume de bouillie &#40;g/l, kg/hl, l/hl&#41; avec un contrôle automatique de la conformité des doses maximales autorisées&nbsp;;</li>
 						<li>Tous les équipements agricoles gérés par l'application sont maintenant parfaitement compatibles avec ceux supportés par la solution tierce Samsys.</li>
                      </ul>
                   </div>
@@ -6770,7 +6770,7 @@
                   <div class="divTableCellNoteVersion4" style="width: auto">
                      <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                      <ul>
-                        <li>Il est maintenant possible de calculer les coûts de production et les marges dégagées durant un exercice comptable, afin de les comparer avec les coûts et les marges prévus par le budget prévisionnel. Pour cela, l’utilisateur peut sélectionner, depuis le module "Comptabilité", dans la section "Écritures", une ou plusieurs écritures comptables et les affecter à une activité principale&nbsp;;</li>
+                        <li>Il est maintenant possible de calculer les coûts de production et les marges dégagées durant un exercice comptable, afin de les comparer avec les coûts et les marges prévus par le budget prévisionnel. Pour cela, l'utilisateur peut sélectionner, depuis le module "Comptabilité", dans la section "Écritures", une ou plusieurs écritures comptables et les affecter à une activité principale&nbsp;;</li>
 						<li>La partie récapitulative des tableaux, réservée à l'affichage du "Réalisé" des coûts de production et des marges d'une activité principale, est automatiquement actualisée après l'affectation d'une ou plusieurs écritures comptables.</li>
                      </ul>
                   </div>
@@ -6790,7 +6790,7 @@
                   <div class="divTableCellNoteVersion4" style="width: auto">
                      <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                      <ul>
-                        <li>Lors de la configuration des "Contrats de travail", il est désormais possible d’affecter un salarié à une ou plusieurs activités en paramétrant une clé de répartition analytique. Définie, soit au prorata de la marge brute générée par chaque activité, soit par l'affectation d'un pourcentage à une sélection d'activités, cette distribution est prise en compte pour le calcul des coûts de production, des marges et des seuils de commercialisation du module "Économique".</li>
+                        <li>Lors de la configuration des "Contrats de travail", il est désormais possible d'affecter un salarié à une ou plusieurs activités en paramétrant une clé de répartition analytique. Définie, soit au prorata de la marge brute générée par chaque activité, soit par l'affectation d'un pourcentage à une sélection d'activités, cette distribution est prise en compte pour le calcul des coûts de production, des marges et des seuils de commercialisation du module "Économique".</li>
                      </ul>
 					 <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
                      <ul>
@@ -7475,7 +7475,7 @@
                   <div class="divTableCellNoteVersion4" style="width: auto">
                      <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
                      <ul>
-                        <li>La synchronisation des encaissements enregistrés avec la solution Baqio permet désormais de conserver le pointage des écritures réalisé lors d’un précédent rapprochement bancaire.</li>
+                        <li>La synchronisation des encaissements enregistrés avec la solution Baqio permet désormais de conserver le pointage des écritures réalisé lors d'un précédent rapprochement bancaire.</li>
                      </ul>
                   </div>
                </div>
@@ -11054,8 +11054,8 @@
                   <div class="divTableCellNoteVersion4" style="width: auto">
                      <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
                      <ul>
-                        <li>En mode visualisation "Carte" et via le menu "Fonds de carte et calques", mise à disposition d'un nouveau sélecteur permettant de masquer ou d'afficher les ZNT aquatiques &#40;5&nbsp;m, 20&nbsp;m, 30&nbsp;m, 50&nbsp;m et 100&nbsp;m&#41;, en transparence sur le fond de carte choisi lorsque le niveau de zoom suffisant est atteint&nbsp;;</li>
-                        <li>En mode visualisation "Carte" et via le menu "Fonds de carte et calques", les ZNT aquatiques sont maintenant affichables sur demande dans la présentation des zones cultivables, des parcelles et des cultures&nbsp;;</li>
+                        <li>En mode visualisation "Carte" et via le menu "Fonds de carte et couches", mise à disposition d'un nouveau sélecteur permettant de masquer ou d'afficher les ZNT aquatiques &#40;5&nbsp;m, 20&nbsp;m, 30&nbsp;m, 50&nbsp;m et 100&nbsp;m&#41;, en transparence sur le fond de carte choisi lorsque le niveau de zoom suffisant est atteint&nbsp;;</li>
+                        <li>En mode visualisation "Carte" et via le menu "Fonds de carte et couches", les ZNT aquatiques sont maintenant affichables sur demande dans la présentation des zones cultivables, des parcelles et des cultures&nbsp;;</li>
                         <li>Nouvelle analyse permettant de déterminer si l'application d'un produit phytosanitaire est autorisée ou non en fonction de la distance ZNT aquatique minimale à respecter, d'après les données en provenance d'E-Phy et pour un usage sélectionné&nbsp;;</li>
                         <li>Amélioration de la prise en compte de l'ensemble des messages d'avertissement pouvant apparaître dans les interventions de pulvérisation, de semis &#171;&nbsp;tout-en-un&nbsp;&#187; ou de semis avec pulvérisation, et servant de base à l'affichage de la mention "Autorisé" ou "Non autorisé".</li>
                      </ul>
