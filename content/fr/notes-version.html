@@ -104,8 +104,9 @@
 			{dates: [new Date(2022, 6, 28), new Date(2022, 7, 31)], title: "Version 4.10", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
 			{dates: [new Date(2022, 8, 1), new Date(2022, 9, 6)], title: "Version 4.11", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
 			{dates: [new Date(2022, 9, 7), new Date(2022, 10, 2)], title: "Version 4.12", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
-			{dates: [new Date(2022, 10, 3), new Date(annee, 11, 14)], title: "Version 4.13", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
-			{dates: [new Date(2022, 11, 15), new Date(annee, mois, jour)], title: "Version 4.14", attrs: {fill: "#fea40b", stroke: "#fea40b"}}
+			{dates: [new Date(2022, 10, 3), new Date(2022, 11, 14)], title: "Version 4.13", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
+			{dates: [new Date(2022, 11, 15), new Date(2022, 12, 4)], title: "Version 4.14", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
+			{dates: [new Date(2022, 12, 5), new Date(annee, mois, jour)], title: "Version 4.15", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
          ];
          
          var sections = [
@@ -144,6 +145,8 @@
          class="panel-radios" type="radio" name="tab-radios">
       <input id="panel-4-ctrl"
          class="panel-radios" type="radio" name="tab-radios">
+	  <input id="panel-5-ctrl"
+         class="panel-radios" type="radio" name="tab-radios">
       <input id="nav-ctrl"
          class="panel-radios" type="checkbox" name="nav-checkbox">
       <ul id="tabs-list">
@@ -151,26 +154,69 @@
          <div id="years">
             <li id="li-for-panel-1">
                <label class="panel-label"
-                  for="panel-1-ctrl">2022</label>
+                  for="panel-1-ctrl">2023</label>
             </li>
             <li id="li-for-panel-2">
                <label class="panel-label"
-                  for="panel-2-ctrl">2021</label>
+                  for="panel-2-ctrl">2022</label>
             </li>
             <li id="li-for-panel-3">
                <label class="panel-label"
-                  for="panel-3-ctrl">2020</label>
+                  for="panel-3-ctrl">2021</label>
             </li>
             <li id="li-for-panel-4">
                <label class="panel-label"
-                  for="panel-4-ctrl">2019</label>
+                  for="panel-4-ctrl">2020</label>
+            </li>
+			<li id="li-for-panel-5">
+               <label class="panel-label"
+                  for="panel-5-ctrl">2019</label>
             </li>
          </div>
          <label id="close-nav-label" for="nav-ctrl">Replier le sélecteur</label>
       </ul>
       <article id="panels">
          <div class="container">
-            <section id="panel-1">
+			<section id="panel-1">
+               <main>
+                  <div class="accordion-container marge">
+					 <div class="panel">
+                        <div class="heading">
+                           <div class="version">
+                              <h2>Note de version 4.15 du 4/01/2023</h2>
+                           </div>
+                           <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="content">
+                           <div class="divTableNoteVersion">
+                              <div class="divTableBody">
+								 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/modules.svg" alt="Modules" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Commun à tous les modules</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Dans l'objectif de bonifier la pérennité de nos solutions en ligne ainsi que leurs performances, une mise à jour du "framework" de la plateforme technique est deployée &#40;architecture utilisée pour le développement des différents outils et composants logiciels de l'application&#41;.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </main>
+            </section>
+            <section id="panel-2">
                <main>
                   <div class="accordion-container marge">
 					 <div class="panel">
@@ -1712,7 +1758,7 @@
                   </div>
                </main>
             </section>
-            <section id="panel-2">
+            <section id="panel-3">
                <main>
                   <div class="accordion-container marge">
                      <div class="panel">
@@ -3325,7 +3371,7 @@
                   </div>
                </main>
             </section>
-            <section id="panel-3">
+            <section id="panel-4">
                <main>
                   <div class="accordion-container marge">
                      <div class="panel">
@@ -5414,7 +5460,7 @@
                   </div>
                </main>
             </section>
-            <section id="panel-4">
+            <section id="panel-5">
                <main>
                   <div class="accordion-container marge">
                      <div class="panel">
@@ -6256,6 +6302,35 @@
          </div>
       </article>
       <!-- Section pour la génération du PDF -->
+	  <div class="saut-page"></div>
+      <div class="heading-print marge-pdf">
+         <h2>Note de version 4.15 du 4/01/2023</h2>
+      </div>
+      <div class="content-print marge-pdf">
+         <div class="divTableNoteVersion-pdf">
+            <div class="divTableBody">
+			   <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/modules.svg" alt="Modules" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Commun à tous les modules</strong><br /><br />
+                     1 amélioration
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>Dans l'objectif de bonifier la pérennité de nos solutions en ligne ainsi que leurs performances, une mise à jour du "framework" de la plateforme technique est deployée &#40;architecture utilisée pour le développement des différents outils et composants logiciels de l'application&#41;.</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
 	  <div class="saut-page"></div>
       <div class="heading-print marge-pdf">
          <h2>Note de version 4.14 du 15/12/2022</h2>
