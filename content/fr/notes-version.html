@@ -105,8 +105,8 @@
 			{dates: [new Date(2022, 8, 1), new Date(2022, 9, 6)], title: "Version 4.11", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
 			{dates: [new Date(2022, 9, 7), new Date(2022, 10, 2)], title: "Version 4.12", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
 			{dates: [new Date(2022, 10, 3), new Date(2022, 11, 14)], title: "Version 4.13", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
-			{dates: [new Date(2022, 11, 15), new Date(2022, 12, 4)], title: "Version 4.14", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
-			{dates: [new Date(2022, 12, 5), new Date(annee, mois, jour)], title: "Version 4.15", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
+			{dates: [new Date(2022, 11, 15), new Date(2022, 12, 8)], title: "Version 4.14", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
+			{dates: [new Date(2022, 12, 9), new Date(annee, mois, jour)], title: "Version 4.15", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
          ];
          
          var sections = [
@@ -183,7 +183,138 @@
 					 <div class="panel">
                         <div class="heading">
                            <div class="version">
-                              <h2>Note de version 4.15 du 5/01/2023</h2>
+                              <h2>Note de version 4.16 du 19/01/2023</h2>
+                           </div>
+                           <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="content">
+                           <div class="divTableNoteVersion">
+                              <div class="divTableBody">
+								 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/comptabilite2022.svg" alt="Comptabilité" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Comptabilité</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Lors de l'étape de clôture d'un exercice comptable, l'écran récapitulatif des validations préalables affiche désormais la valeur du bénéfice ou de la dette si un écart entre l'actif et le passif est détecté, alertant que le bilan n'est pas équilibré.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+								 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/achats.svg" alt="Achats" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Achats</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px"></div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Lors de la création d'une nouvelle facture générée suite au rapprochement avec une réception, il est maintenant possible d'ajouter des éléments complémentaires dans le formulaire de saisie des lignes d'achat, même s'ils n'étaient pas inclus dans la commande initiale &#40;frais de port, etc.&#41;.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+								 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/production2022.svg" alt="Production" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Production</strong><br /><br />
+                                       1 amélioration et 1 bug corrigé
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+									   <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+										  <li>Mise à disposition d'un nouveau type d'intervention dénommé "Plantation &#171;&nbsp;tout-en-un&nbsp;&#187;" permettant de sélectionner des "Produits phytosanitaires" et des "Engrais" lors de l'implantation d'une culture de plantes sur une ou plusieurs parcelles.</li>
+                                       </ul>
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+                                          <li>Pour les interventions avec intrants, et après modification de la surface travaillée initiale, la quantité de produits utilisés en kg/ha ou en l/ha est à nouveau correctement calculée et reportée dans la fiche détaillée de l'intervention.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+								 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/rh2022.svg" alt="Ressources humaines" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>RH</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Lors du processus de création d'un salaire ou d'un paiement de salaire, un nouveau badge est affiché dans l'interface, afin de connaitre le statut "Brouillard" ou "Confirmées" des écritures comptables qui sont associées à ces opérations.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+								 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/configuration.svg" alt="Configuration" width="60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Configuration</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Lors de la création d'un nouvel article de nature stockable, il est dorénavant possible de générer, en option, un stock initial de la matière correspondante avec une quantité égale à zéro, associée à l'unité définie par défaut.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/ekyviti.svg" alt="Ekyviti" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Ekyviti</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Mise à disposition d'un nouvel outil d'import de fichiers au format KML en provenance du logiciel Process2Wine, pour réaliser le transfert des parcelles de la production viticole avec une ouverture et un paramétrage automatique de l'activité "Vigne" si nécessaire.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+					 <div class="panel">
+                        <div class="heading">
+                           <div class="version">
+                              <h2>Note de version 4.15 du 9/01/2023</h2>
                            </div>
                            <i class="fa-solid fa-chevron-down"></i>
                         </div>
@@ -6304,7 +6435,7 @@
       <!-- Section pour la génération du PDF -->
 	  <div class="saut-page"></div>
       <div class="heading-print marge-pdf">
-         <h2>Note de version 4.15 du 5/01/2023</h2>
+         <h2>Note de version 4.15 du 9/01/2023</h2>
       </div>
       <div class="content-print marge-pdf">
          <div class="divTableNoteVersion-pdf">
