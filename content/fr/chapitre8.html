@@ -656,20 +656,18 @@
       <p class="texte">Quelques exemples qui doivent vous amener à créer de nouveaux articles&nbsp;:</p>
       <div class="divTableListe marge">
          <div class="divTableBody">
-			<!--
             <div class="divTableRow">
                <div class="divTableCellListe" style="width: 14px">
                   1.
                </div>
                <div class="divTableCellListe">
-                  Vous avez besoin de spécifier et/ou de corriger la dénomination et/ou le conditionnement d'un intrant &#40;semence disponible en sac de 30 kg au lieu de 25 kg&#41;&nbsp;;<br />
+                  Vous vendez un produit de récolte, soit au poids &#40;Kilogramme&#41;, soit à la pièce &#40;Unité&#41; et vous avez besoin de différencier ces 2 offres, indépendamment de la sélection d'un conditionnement&nbsp;;<br />
                   <p align="center"><img src="../images/chapitre8/schema-variante1.png" height="100" alt="Variante de semence"/></p>
                </div>
             </div>
-			-->
             <div class="divTableRow">
                <div class="divTableCellListe" style="width: 14px">
-                  1.
+                  2.
                </div>
                <div class="divTableCellListe">
                   Vous utilisez des équipements d'un même type &#40;comme par exemple plusieurs tracteurs&#41; et vous souhaitez comptabiliser leurs temps de travaux et pouvoir attribuer un coût horaire différent à chacun d'eux&nbsp;;<br />
@@ -678,10 +676,10 @@
             </div>
             <div class="divTableRow">
                <div class="divTableCellListe" style="width: 14px">
-                  2.
+                  3.
                </div>
                <div class="divTableCellListe">
-                  Vous souhaitez affecter des coûts horaires de main-d'œuvre différents à vos équipiers pour estimer le coût des interventions &#40;procédure expliquée plus loin dans ce chapitre&#41;.<br />
+                  Vous souhaitez affecter des coûts horaires de main-d'œuvre différents à vos équipiers pour estimer le coût des interventions, sans utiliser l'option de configuration des contrats de travail individuels.<br />
                   <p align="center"><img src="../images/chapitre8/schema-variante3.png" height="100" alt="Variante d'équipier'"/></p>
                </div>
             </div>
@@ -735,6 +733,15 @@
       <a class="slice-process" id="nelle-variante"></a>
       <h3 align="center" class="texte aerateur procedure">2 – Procédure pour créer un nouvel article</h3>
 	  <p class="texte">Deux procédures sont à votre disposition pour vous permettre de créer un nouvel article dans l'application&nbsp;: soit directement d'après une nature ou une sous-nature de produit, soit à partir d'un type de produit fonctionnel. Quelle que soit la méthode utilisée, le nouvel article présentera les mêmes caractéritiques et sera disponible pour créer un stock initial ou pour enregistrer les achats et les opérations de gestion commerciale.</p>
+	  <div class="warn-fond aerateur-haut aerateur-bas">
+         <div class="floating-box-warn">
+            <img src="../images/commun/attention.svg" width="100" alt="Attention"/>
+         </div>
+         <div class="info-txt">
+            <span class="titre-advice">Choix de l'unité par défaut<br /></span>
+            <p class="texte-advice">Lors de la création d'un nouvel article, soyez cohérent et rigoureux quant à la sélection de l'unité par défaut, afin de bénéficier du fonctionnement optimal de la solution. Ne choisissez pas "Unité" pour configurer un nouveau produit de récolte alors que vous comptez vendre les marchandises en "Kilogramme" et non à la pièce, car ce type de conversion est impossible.</p>
+         </div>
+      </div>
 	  <p class="texte aerateur-haut">Le processus suivant vous guide pour créer un nouvel article &#40;une semence&#41; à partir de la sous-nature "Semences et plants".</p>
       <div class="floating-box process">
          <img src="../images/commun/step1.svg" alt="1" width="52" />
@@ -792,6 +799,7 @@
          <span class="titre-advice">Renseignez le nouvel article</span>
          <p>Sélectionnez sa catégorie et sa variété dans les listes déroulantes, puis saisissez sa dénomination pour la définir correctement. Renseignez, le cas échéant, la section des indicateurs.<br />Assurez-vous que la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="18" class="align-icone icone-marge-gauche icone-marge-droite">à droite de l'option "Actif" est cochée pour disposer du nouvel article.<br /> Notez que le champ optionnel GTIN fait référence au Global Trade Item Number, un code international unique qui permet d'identifier un produit.
          </p>
+		 <p>En option, cochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="18" class="align-icone icone-marge-gauche icone-marge-droite">à droite du libellé "Créer un stock initial à zéro" pour générer, facilement et de façon automatique, le stock de la <a href="#nelle-matiere" target="_self" class="avoid-clicks">nouvelle matière</a> avec une quantité égale à 0.</p>
          <p class="max-img-process">
             <img src="../images/chapitre8/semence5.png" class="contour-img" alt="Nouvel article" data-action="zoom" />
          </p>
@@ -846,6 +854,7 @@
          <span class="titre-advice">Renseignez le nouvel article</span>
          <p>Sélectionnez sa catégorie et sa variété dans les listes déroulantes, puis saisissez sa dénomination pour la définir correctement. Renseignez, le cas échéant, la section des indicateurs. <br />Assurez-vous que la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="18" class="align-icone icone-marge-gauche icone-marge-droite">à droite de l'option "Actif" est cochée pour disposer du nouvel article.<br />Notez que le champ optionnel GTIN fait référence au Global Trade Item Number, un code international unique qui permet d'identifier un produit.
          </p>
+		 <p>En option, cochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="18" class="align-icone icone-marge-gauche icone-marge-droite">à droite du libellé "Créer un stock initial à zéro" pour générer, facilement et de façon automatique, le stock de la <a href="#nelle-matiere" target="_self" class="avoid-clicks">nouvelle matière</a> avec une quantité égale à 0.</p>
          <p class="max-img-process">
             <img src="../images/chapitre8/variante4.png" class="contour-img" alt="Nouvel article" data-action="zoom" />
          </p>
@@ -927,6 +936,7 @@
       <div class="process-txt">
          <span class="titre-advice">Validez l'import de l'article</span>
          <p>Cette étape intermédiaire permet, le cas échéant, de renommer le produit selon vos préférences.</p>
+		 <p>En option, cochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="18" class="align-icone icone-marge-gauche icone-marge-droite">à droite du libellé "Créer un stock initial à zéro" pour générer, facilement et de façon automatique, le stock de la <a href="#nelle-matiere" target="_self" class="avoid-clicks">nouvelle matière</a> avec une quantité égale à 0.</p>
          <p class="max-img-process">
             <img src="../images/chapitre8/phyto6.png" class="contour-img" alt="Détail produit phytosanitaire" data-action="zoom" />
          </p>
@@ -1304,6 +1314,7 @@
             <img src="../images/chapitre8/categorie8.png" class="contour-img" alt="Nouveau type de produit" data-action="zoom" />
          </p>
          <p>Sélectionnez la catégorie précédemment définie, nommez l'article et renseignez l'unité par défaut. En option, saisissez le nom personnalisable de l'unité. Le conditionnement sera défini plus tard, lors d'une vente ou d'un approvisionnement.</p>
+		 <p>En option, cochez la case<img src="../images/commun/check-square.svg" alt="Case à cocher" height="18" class="align-icone icone-marge-gauche icone-marge-droite">à droite du libellé "Créer un stock initial à zéro" pour générer, facilement et de façon automatique, le stock de la <a href="#nelle-matiere" target="_self" class="avoid-clicks">nouvelle matière</a> avec une quantité égale à 0.</p>
          <p class="max-img-process">
             <img src="../images/chapitre8/categorie9.png" class="contour-img" alt="Nouvel article" data-action="zoom" />
          </p>
@@ -1430,7 +1441,7 @@
             <img src="../images/chapitre8/var-coop10.png" class="contour-img" alt="Articles" data-action="zoom" />
          </p>
 		 <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
-		 <p class="aerateur-haut">La nouvelle "Prestation de séchage &#40;coop&#41;" est maintenant disponible et s'ajoute à la "Prestation de séchage &#40;production végétale&#41;" déjà existante par défaut dans l'application.</p>
+		 <p class="aerateur-haut">La nouvelle "Prestation de séchage &#40;coop&#41;" est maintenant disponible et s'ajoute à la "Prestation de séchage &#40;production végétale&#41;" déjà existante par défaut dans l'application &#40;ancienne nomenclature&#41;.</p>
 		 <p class="max-img-process">
             <img src="../images/chapitre8/var-coop11.png" class="contour-img" alt="Liste des articles" data-action="zoom" />
          </p>
@@ -1750,7 +1761,7 @@
 		 <p class="max-img-process">
             <img src="../images/chapitre8/stock-zero1.png" class="contour-img" alt="Sélection matière" data-action="zoom" />
          </p>
-		 <p>… filtrez les matières en stock grâce à la barre de recherche et définissez la nouvelle quantité souhaitée en cliquant sur l'icône symbolisant un "Crayon"<img src="../images/commun/crayon.svg" alt="Crayon" height="20" class="align-icone icone-marge-gauche">.</p>
+		 <p>… déployez l'en-tête de recherche, filtrez la liste des matières avec le bouton radio<img src="../images/commun/radio.svg" alt="Bouton radio" height="20" class="align-icone icone-marge-gauche icone-marge-droite">de l'état du stock activé pour "Tous", et cliquez sur l'icône symbolisant un "Crayon" pour définir la quantité souhaitée.<img src="../images/commun/crayon.svg" alt="Crayon" height="20" class="align-icone icone-marge-gauche">.</p>
 		 <p class="max-img-process">
             <img src="../images/chapitre8/stock-zero2.png" class="contour-img" alt="Modification matière" data-action="zoom" />
          </p>
