@@ -376,6 +376,7 @@
                            <option selected value="">Stocks</option>
 						   <option value="#stocks">- Aborder la gestion des stocks</option>
 						   <option value="#nelle-matiere">- Créer un stock initial de matières</option>
+						   <option value="#fusion-matieres">- Fusionner des matières ensemble</option>
                            <option value="#nelle-expedition">- Enregistrer une expédition</option>
                            <option value="#livraison">- Paramétrer une livraison</option>
                            <option value="#facture">- Facturer une expédition</option>
@@ -434,6 +435,7 @@
                <optgroup label="Stocks">
                   <option value="#stocks">- Aborder la gestion des stocks</option>
 				  <option value="#nelle-matiere">- Créer un stock initial de matières</option>
+				  <option value="#fusion-matieres">- Fusionner des matières ensemble</option>
                   <option value="#nelle-expedition">- Enregistrer une expédition</option>
                   <option value="#livraison">- Paramétrer une livraison</option>
                   <option value="#facture">- Facturer une expédition</option>
@@ -1818,9 +1820,64 @@
             <img src="../images/chapitre8/matieres8.png" class="contour-img" alt="Mouvements stock" data-action="zoom" />
          </p>
       </div>
+	  <h6>Guide de prise en main • Stocks, tiers et RH • Fusionner des matières</h6>
+	  <a class="slice-process" id="fusion-matieres"></a>
+      <h3 align="center" class="texte aerateur procedure">2 – Procédure pour fusionner des matières ensemble</h3>
+	  <div class="config margin-config config-x4 aerateur">
+         <p>
+            <img src="../images/commun/parcours.svg" height="45" alt="Icône parcours"/>
+         </p>
+         <p class="majuscule">
+            procédure à savoir pour
+            <img class="align-icone icone-marge-gauche" src="../images/commun/tacheD.svg" width="20" alt="D" />
+         </p>
+      </div>
+	  <p class="texte">Le processus suivant vous guide pour fusionner plusieurs matières en une seule, avec une mise à jour des stocks.</p>
+	  <div class="floating-box process">
+         <img src="../images/commun/step1.svg" alt="1" width="52" />
+      </div>
+	  <div class="process-txt">
+         <span class="titre-advice">Accédez aux matières en stock</span>
+         <p>
+            Cliquez sur le lien "Stocks" dans le "Menu principal" ou sur le bouton "Stocks" de la page d'accueil&nbsp;:
+         </p>
+         <p align="center"><img src="../images/chapitre8/stocks.svg" alt="Stocks" width="60"></p>
+         <p>Puis, dans la barre latérale du module, cliquez sur "Matières" dans la section "Stocks" symbolisée par l'icône d'un entrepôt<img src="../images/chapitre8/warehouse.svg" alt="Entrepôt" height="20" class="align-icone icone-marge-gauche">.</p>
+         <p class="max-img-process">
+            <img src="../images/chapitre8/fusion-mat1.png" class="contour-img" alt="Liste des matières" data-action="zoom" />
+         </p>
+		 <p>Toutes les matières déjà créées ou réceptionnées sont listées ici.</p>
+      </div>
+      <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step2.svg" alt="2" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Sélectionnez des matières identiques</span>
+		 <p>Cochez les cases<img src="../images/commun/check-square.svg" alt="Case à cocher" height="18" class="align-icone icone-marge-gauche icone-marge-droite">situées à gauche de chaque ligne des matières définies à partir d'un même article de nature stockable.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre8/fusion-mat2.png" class="contour-img" alt="Liste des matières" data-action="zoom" />
+         </p>
+		 <p>Notez que la fusion est impossible lorsque les matières selectionnées sont stockées dans des <strong>lieux de stockage différents</strong> &#40;s'ils ont été renseignés&#41; ou si leur <strong>conditionnement n'est pas le même</strong>&nbsp;:</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre8/fusion-mat3.png" class="contour-img" alt="Liste des matières" data-action="zoom" />
+         </p>
+	  </div>
+	  <br />
+      <div class="floating-box process">
+         <img src="../images/commun/step3.svg" alt="3" width="52" />
+      </div>
+      <div class="process-txt">
+         <span class="titre-advice">Fusionnez les matières choisies</span>
+		 <p>Cliquez sur <span class="btn-blue">Fusionner</span> pour valider l'opération lorsque les conditions requises sont remplies.</p>
+		 <p>Tous les éléments fusionnés sont alors supprimés de la liste et une nouvelle matière est générée avec un nouveau "Numéro". Elle hérite de la dénomination de la première matière sélectionnée et sa quantité en stock est automatiquement calculée et affichée dans la liste.</p>
+		 <p class="max-img-process">
+            <img src="../images/chapitre8/fusion-mat4.png" class="contour-img" alt="Liste des matières" data-action="zoom" />
+         </p>
+	  </div>
 	  <h6>Guide de prise en main • Stocks, tiers et RH • Enregistrer une réception</h6>
 	  <a class="slice-process" id="recept-stocks"></a>
-      <h3 align="center" class="texte aerateur procedure">2 – Procédure pour enregistrer une réception</h3>
+      <h3 align="center" class="texte aerateur procedure">3 – Procédure pour enregistrer une réception</h3>
 	  <div class="config margin-config config-x4 aerateur">
          <p>
             <img src="../images/commun/parcours.svg" height="45" alt="Icône parcours"/>
@@ -3677,7 +3734,7 @@
             <img src="../images/chapitre8/salaire8.png" class="contour-img" alt="Validation changement de statut" data-action="zoom" />
          </p>
 		 <p>Notez que cette opération n'est pas définitive et il reste possible de repasser le statut du salaire en mode "Brouillon" en cliquant sur le bouton <span class="step step-orange">&nbsp;Brouillon&nbsp;</span> dans la barre des étapes.</p>
-		 <p class="aerateur-haut">Le statut du salaire bascule en mode "Facturé" et un badge <span class="statut-vert">&nbsp;Brouillard&nbsp;</span> est affiché pour indiquer…</p>
+		 <p class="aerateur-haut">Le statut du salaire bascule en mode "Facturé" et une vignette <span class="statut-vert">&nbsp;Brouillard&nbsp;</span> est alors affichée pour indiquer…</p>
 		 <p class="max-img-process">
             <img src="../images/chapitre8/salaire9.png" class="contour-img" alt="Salaire en mode facturé" data-action="zoom" />
          </p>
@@ -3693,7 +3750,7 @@
             <img src="../images/chapitre8/salaire10.png" class="contour-img" alt="Salaire en mode facturé" data-action="zoom" />
          </p>
 		 <p>Une fois les écritures validées, il n'est plus possible de corriger/supprimer le salaire ou de modifier son statut.</p>
-		 <p>Dans la vue du salaire, le badge <span class="statut-vert">&nbsp;Brouillard&nbsp;</span> est alors remplacé par le badge <span class="statut-orange">&nbsp;Confirmées&nbsp;</span>.</p>
+		 <p>Dans la vue du salaire, la vignette <span class="statut-vert">&nbsp;Brouillard&nbsp;</span> est alors remplacée par la vignette <span class="statut-orange">&nbsp;Confirmées&nbsp;</span></p>
 		 <p class="max-img-process">
             <img src="../images/chapitre8/salaire11.png" class="contour-img" alt="Salaire en mode facturé" data-action="zoom" />
          </p>
@@ -3748,7 +3805,7 @@
             <img src="../images/chapitre8/paiement4.png" class="contour-img" alt="Sélection type de salaire" data-action="zoom" />
          </p>
 		 <p>Cliquez sur <span class="btn-blue">Créer</span> pour valider l'opération.</p>
-		 <p class="aerateur-haut">Dans la vue du paiement de salaire, un badge <span class="statut-vert">&nbsp;Brouillard&nbsp;</span> est affiché pour indiquer que les écritures comptables ont été générées.</p>
+		 <p class="aerateur-haut">Dans la vue du paiement de salaire, une vignette <span class="statut-vert">&nbsp;Brouillard&nbsp;</span> est alors affichée pour indiquer que les écritures comptables ont été générées.</p>
 		 <p class="max-img-process">
             <img src="../images/chapitre8/paiement5.png" class="contour-img" alt="Paiement de salaire" data-action="zoom" />
          </p>
@@ -3768,7 +3825,7 @@
             <img src="../images/chapitre8/paiement7.png" class="contour-img" alt="Journal de banque" data-action="zoom" />
          </p>
 		 <p>Une fois les écritures validées, il est encore possible de corriger/supprimer le paiement de salaire mais les écritures validées restent consignées dans le journal concerné.</p>
-		 <p>Dans la vue du paiement, le badge <span class="statut-vert">&nbsp;Brouillard&nbsp;</span> est alors remplacé par le badge <span class="statut-orange">&nbsp;Confirmées&nbsp;</span>.</p>
+		 <p>Dans la vue du paiement, la vignette <span class="statut-vert">&nbsp;Brouillard&nbsp;</span> est alors remplacée par la vignette <span class="statut-orange">&nbsp;Confirmées&nbsp;</span></p>
 		 <p class="max-img-process">
             <img src="../images/chapitre8/paiement8.png" class="contour-img" alt="Paiement de salaire" data-action="zoom" />
          </p>
@@ -4039,6 +4096,7 @@
                            <option selected value="">Stocks</option>
 						   <option value="#stocks">- Aborder la gestion des stocks</option>
 						   <option value="#nelle-matiere">- Créer un stock initial de matières</option>
+						   <option value="#fusion-matieres">- Fusionner des matières ensemble</option>
                            <option value="#nelle-expedition">- Enregistrer une expédition</option>
                            <option value="#livraison">- Paramétrer une livraison</option>
                            <option value="#facture">- Facturer une expédition</option>

@@ -106,7 +106,8 @@
 			{dates: [new Date(2022, 9, 7), new Date(2022, 10, 2)], title: "Version 4.12", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
 			{dates: [new Date(2022, 10, 3), new Date(2022, 11, 14)], title: "Version 4.13", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
 			{dates: [new Date(2022, 11, 15), new Date(2022, 12, 8)], title: "Version 4.14", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
-			{dates: [new Date(2022, 12, 9), new Date(annee, mois, jour)], title: "Version 4.15", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
+			{dates: [new Date(2022, 12, 9), new Date(2022, 12, 29)], title: "Version 4.15", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
+			{dates: [new Date(2022, 12, 30), new Date(annee, mois, jour)], title: "Version 4.16", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}}
          ];
          
          var sections = [
@@ -183,7 +184,7 @@
 					 <div class="panel">
                         <div class="heading">
                            <div class="version">
-                              <h2>Note de version 4.16 du 26/01/2023</h2>
+                              <h2>Note de version 4.16 du 30/01/2023</h2>
                            </div>
                            <i class="fa-solid fa-chevron-down"></i>
                         </div>
@@ -196,7 +197,7 @@
                                     </div>
                                     <div class="divTableCellNoteVersion2">
                                        <strong>Comptabilité</strong><br /><br />
-                                       1 amélioration
+                                       1 amélioration et 1 bug corrigé
                                     </div>
                                  </div>
                                  <div class="divTableRow">
@@ -206,6 +207,10 @@
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                                        <ul>
                                           <li>Lors de l'étape de clôture d'un exercice comptable, l'écran récapitulatif des validations préalables affiche désormais la valeur du bénéfice ou de la dette si un écart entre l'actif et le passif est détecté, confirmant que le bilan n'est pas équilibré.</li>
+                                       </ul>
+									   <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+										  <li>Correction de la synchronisation des relevés de compte bancaire pour certaines banques, après la modification par celles-ci de leur interface d'échange de données.</li>
                                        </ul>
                                     </div>
                                  </div>
@@ -266,7 +271,7 @@
                                     <div class="divTableCellNoteVersion4" style="width: auto">
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                                        <ul>
-                                          <li>Lors du processus de création d'un salaire ou d'un paiement de salaire, un nouveau badge est affiché dans l'interface, afin de connaitre le statut "Brouillard" ou "Confirmées" des écritures comptables qui sont associées à ces opérations.</li>
+                                          <li>Lors du processus de création d'un salaire ou d'un paiement de salaire, une nouvelle vignette est affichée dans l'interface, afin de connaitre le statut "Brouillard" ou "Confirmées" des écritures comptables qui sont associées à ces opérations.</li>
                                        </ul>
                                     </div>
                                  </div>
@@ -6436,7 +6441,7 @@
       <!-- Section pour la génération du PDF -->
 	  <div class="saut-page"></div>
       <div class="heading-print marge-pdf">
-         <h2>Note de version 4.16 du 26/01/2023</h2>
+         <h2>Note de version 4.16 du 30/01/2023</h2>
       </div>
       <div class="content-print marge-pdf">
          <div class="divTableNoteVersion-pdf">
@@ -6447,7 +6452,7 @@
                   </div>
                   <div class="divTableCellNoteVersion2" style="width: auto">
                      <strong>Comptabilité</strong><br /><br />
-                     1 amélioration
+                     1 amélioration et 1 bug corrigé
                   </div>
                </div>
                <div class="divTableRow">
@@ -6457,6 +6462,10 @@
                      <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                      <ul>
                         <li>Lors de l'étape de clôture d'un exercice comptable, l'écran récapitulatif des validations préalables affiche désormais la valeur du bénéfice ou de la dette si un écart entre l'actif et le passif est détecté, confirmant que le bilan n'est pas équilibré.</li>
+                     </ul>
+					 <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+					 <ul>
+						<li>Correction de la synchronisation des relevés de compte bancaire pour certaines banques, après la modification par celles-ci de leur interface d'échange de données.</li>
                      </ul>
                   </div>
                </div>
@@ -6518,7 +6527,7 @@
                   <div class="divTableCellNoteVersion4" style="width: auto">
                      <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                      <ul>
-                        <li>Lors du processus de création d'un salaire ou d'un paiement de salaire, un nouveau badge est affiché dans l'interface, afin de connaitre le statut "Brouillard" ou "Confirmées" des écritures comptables qui sont associées à ces opérations.</li>
+                        <li>Lors du processus de création d'un salaire ou d'un paiement de salaire, une nouvelle vignette est affichée dans l'interface, afin de connaitre le statut "Brouillard" ou "Confirmées" des écritures comptables qui sont associées à ces opérations.</li>
                      </ul>
                   </div>
                </div>
