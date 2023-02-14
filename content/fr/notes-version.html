@@ -184,6 +184,98 @@
 					 <div class="panel">
                         <div class="heading">
                            <div class="version">
+                              <h2>Note de version 4.17 du 16/02/2023</h2>
+                           </div>
+                           <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="content">
+                           <div class="divTableNoteVersion">
+                              <div class="divTableBody">
+								 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/production2022.svg" alt="Production" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Production</strong><br /><br />
+                                       1 bug corrigé
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+									   <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+										  <li>Lorsque la réception d'une marchandise est enregistrée avec un montant égal à 0 &#40;réception validée sans rapprochement avec une commande initiale&#41;, le coût estimatif des interventions faisant référence à ce produit est dorénavant calculé à partir d'un prix catalogue s'il a été renseigné.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+								 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/stocks2022.svg" alt="Stocks" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Stocks</strong><br /><br />
+                                       1 bug corrigé
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+                                          <li>Lors de la création d’un inventaire, et si une quantité de matière inventoriée négative est détectée, celle-ci est automatiquement ajustée à 0 ainsi que la valeur à reporter dans le compte de stock correspondant.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+								 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/configuration.svg" alt="Configuration" width="60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Configuration</strong><br /><br />
+                                       3 améliorations
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+                                          <li>À la création d'un nouvel article stockable de sous-nature "Semences et plants", la liste des unités par défaut proposées est maintenant filtrée afin de réduire les risques d'erreur lors de leur sélection&nbsp;;</li>
+										  <li>Dans la section "Indicateurs" d'une semence, le poids de mille grains doit être renseigné pour calculer et obtenir la conversion automatique les autres indicateurs "Nombre de grains" et "Masse nette"&nbsp;;</li>
+										  <li>Le bouton permettant la configuration de nouveaux profils fonctionnels est désormais masqué afin d'éliminer les difficultés rencontrées par les utilisateurs lors du paramétrage des compétences, des indicateurs fixes et variables. L'import de profils de référence reste disponible et demeure l'action à privilégier.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+								 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/ekyviti.svg" alt="Ekyviti" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Ekyviti</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Il est maintenant possible de synchroniser les ventes facturées avec la solution tierce Baqio sur un point de vente, avec un transfert de la copie des tickets de caisse générés au format PDF en tant que pièces comptables.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+					 <div class="panel">
+                        <div class="heading">
+                           <div class="version">
                               <h2>Note de version 4.16 du 30/01/2023</h2>
                            </div>
                            <i class="fa-solid fa-chevron-down"></i>
@@ -271,7 +363,7 @@
                                     <div class="divTableCellNoteVersion4" style="width: auto">
                                        <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                                        <ul>
-                                          <li>Lors du processus de création d'un salaire ou d'un paiement de salaire, une nouvelle vignette est affichée dans l'interface, afin de connaitre le statut "Brouillard" ou "Confirmées" des écritures comptables qui sont associées à ces opérations.</li>
+                                          <li>Lors du processus de création d'un salaire ou d'un paiement de salaire, une nouvelle vignette est affichée dans l'interface, afin de connaître le statut "Brouillard" ou "Confirmées" des écritures comptables qui sont associées à ces opérations.</li>
                                        </ul>
                                     </div>
                                  </div>
@@ -6441,6 +6533,94 @@
       <!-- Section pour la génération du PDF -->
 	  <div class="saut-page"></div>
       <div class="heading-print marge-pdf">
+         <h2>Note de version 4.17 du 16/02/2023</h2>
+      </div>
+      <div class="content-print marge-pdf">
+         <div class="divTableNoteVersion-pdf">
+            <div class="divTableBody">
+			   <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/production2022.svg" alt="Production" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Production</strong><br /><br />
+                     1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+					 <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+					 <ul>
+                        <li>Lorsque la réception d'une marchandise est enregistrée avec un montant égal à 0 &#40;réception validée sans rapprochement avec une commande initiale&#41;, le coût estimatif des interventions faisant référence à ce produit est dorénavant calculé à partir d'un prix catalogue s'il a été renseigné.</li>
+                     </ul>
+                  </div>
+               </div>
+			   <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/stocks2022.svg" alt="Stocks" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Stocks</strong><br /><br />
+                     1 bug corrigé
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                     <ul>
+                        <li>Lors de la création d’un inventaire, et si une quantité de matière inventoriée négative est détectée, celle-ci est automatiquement ajustée à 0 ainsi que la valeur à reporter dans le compte de stock correspondant.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/configuration.svg" alt="Configuration" width="60px">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Configuration</strong><br /><br />
+                     3 améliorations
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+						<li>À la création d'un nouvel article stockable de sous-nature "Semences et plants", la liste des unités par défaut proposées est maintenant filtrée afin de réduire les risques d'erreur lors de leur sélection&nbsp;;</li>
+						<li>Dans la section "Indicateurs" d'une semence, le poids de mille grains doit être renseigné pour calculer et obtenir la conversion automatique les autres indicateurs "Nombre de grains" et "Masse nette"&nbsp;;</li>
+						<li>Le bouton permettant la configuration de nouveaux profils fonctionnels est désormais masqué afin d'éliminer les difficultés rencontrées par les utilisateurs lors du paramétrage des compétences, des indicateurs fixes et variables. L'import de profils de référence reste disponible et demeure l'action à privilégier.</li>
+                     </ul>
+                  </div>
+               </div>
+			   <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/ekyviti.svg" alt="Ekyviti" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Ekyviti</strong><br /><br />
+                     1 amélioration
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                     <ul>
+                        <li>Il est maintenant possible de synchroniser les ventes facturées avec la solution tierce Baqio sur un point de vente, avec un transfert de la copie des tickets de caisse générés au format PDF en tant que pièces comptables.</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+	  <div class="saut-page"></div>
+      <div class="heading-print marge-pdf">
          <h2>Note de version 4.16 du 30/01/2023</h2>
       </div>
       <div class="content-print marge-pdf">
@@ -6527,7 +6707,7 @@
                   <div class="divTableCellNoteVersion4" style="width: auto">
                      <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
                      <ul>
-                        <li>Lors du processus de création d'un salaire ou d'un paiement de salaire, une nouvelle vignette est affichée dans l'interface, afin de connaitre le statut "Brouillard" ou "Confirmées" des écritures comptables qui sont associées à ces opérations.</li>
+                        <li>Lors du processus de création d'un salaire ou d'un paiement de salaire, une nouvelle vignette est affichée dans l'interface, afin de connaître le statut "Brouillard" ou "Confirmées" des écritures comptables qui sont associées à ces opérations.</li>
                      </ul>
                   </div>
                </div>
