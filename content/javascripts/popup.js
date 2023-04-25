@@ -1,8 +1,8 @@
-// Adaptation : Ekylibre (https://doc.ekylibre.com/v2/fr/)
+// Adaptation : Ekylibre (https://documentation.ekylibre.com/fr/)
 
 jQuery(function ($) {
 
-	//When you click on a link with class of poplight and the href starts with a # 
+	//When you click on a link with class of poplight and the href starts with a #
 	$('a.poplight').on('click', function () {
 		var popID = $(this).data('rel'); //Get Popup Name
 		var popWidth = $(this).data('width'); //Gets Popup Width
@@ -11,7 +11,7 @@ jQuery(function ($) {
 		$('#' + popID).fadeIn().css({
 			'width': popWidth
 		}).prepend('<a href="#" class="close"><img src="../images/commun/close-pop-up.svg" width="20" class="btn_close" title="Fermer la modale" alt="Fermer" /></a>');
-        
+
 		//Define margin for center alignment (vertical + horizontal) - we add 80 to the height/width to accomodate for the padding + border width defined in the css
 		var popMargTop = ($('#' + popID).height() + 50) / 2;
 		var popMargLeft = ($('#' + popID).width() + 18) / 2;
@@ -27,7 +27,7 @@ jQuery(function ($) {
 		$('html').css({'overflow-y': 'hidden'});
 		$('#fade').css({
 			'filter': 'alpha(opacity=20)'
-		}).fadeIn(); //Fade in the fade layer 
+		}).fadeIn(); //Fade in the fade layer
 
 		return false;
 	});

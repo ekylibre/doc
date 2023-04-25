@@ -1,7 +1,7 @@
 // chronoline.js v0.1.6
 // by Kevin Leung for Zanbato, https://zanbato.com
 // MIT license at https://github.com/StoicLoofah/chronoline.js/blob/master/LICENSE.md
-// Adaptation par Ekylibre, https://doc.ekylibre.com
+// Adaptation par Ekylibre, https://documentation.ekylibre.com
 
     if (!Date.now) {
         Date.now = function now() {
@@ -168,7 +168,7 @@ function Chronoline(domElement, events, options) {
             stroke: '#476ba8',
             "stroke-width": 2
         },
-        
+
         eventLabels: {
             "font-size": 12,
             fill: "#000",
@@ -589,7 +589,7 @@ function Chronoline(domElement, events, options) {
                 addElemClass(t.paperType, elem.node, 'chronoline-event');
 
                 elem.attr('title', myEvent.title);
-                
+
                 if(t.tooltips){
                     var description = myEvent.description;
                     var title = myEvent.title;
