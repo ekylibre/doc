@@ -20,10 +20,14 @@ Go to output of your working directory
 
 Go to http://localhost:3000/fr/demarrage/
 
-## deploy live version
+## deploy live version using rsync and ssh
 
 You must have the right configuration in your .ssh/config for the documentation server
 
 `cd doc`
 
 `bundler exec nanoc deploy`
+
+## deploy live version using docker compose
+
+Clone the repository on your host and run docker compose up
