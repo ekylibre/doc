@@ -108,8 +108,8 @@
 			{dates: [new Date(2022, 11, 15), new Date(2022, 12, 8)], title: "Version 4.14", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
 			{dates: [new Date(2022, 12, 9), new Date(2022, 12, 29)], title: "Version 4.15", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
 			{dates: [new Date(2022, 12, 30), new Date(2023, 1, 15)], title: "Version 4.16", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
-			{dates: [new Date(2023, 1, 16), new Date(2023, 2, 27)], title: "Version 4.17", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
-			{dates: [new Date(2023, 2, 28), new Date(annee, mois, jour)], title: "Version 4.18", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
+			{dates: [new Date(2023, 1, 16), new Date(2023, 3, 26)], title: "Version 4.17", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
+			{dates: [new Date(2023, 3, 27), new Date(annee, mois, jour)], title: "Version 4.18", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
          ];
          
          var sections = [
@@ -186,13 +186,34 @@
 					 <div class="panel">
                         <div class="heading">
                            <div class="version">
-                              <h2>Note de version 4.18 du 28/03/2023</h2>
+                              <h2>Note de version 4.18 du 27/04/2023</h2>
                            </div>
                            <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="content">
                            <div class="divTableNoteVersion">
                               <div class="divTableBody">
+								 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/production2022.svg" alt="Production" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Production</strong><br /><br />
+                                       3 améliorations
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+									   <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+										  <li>Dans la section "Itinéraires culturaux" d'une activité principale, la liste des itinéraires techniques proposés est désormais automatiquement filtrée à partir des itinéraires culturaux précédemment importés ou créés via le module "Planification"&nbsp;;</li>
+										  <li>Dans la section "Trajets géolocalisés", et afin d'éviter de potentiels problèmes de synchronisation, seuls les nouveaux trajets enregistrés durant les dernières 48 heures sont désormais pris en compte&nbsp;;</li>
+										  <li>Il est maintenant possible de sélectionner un ou plusieurs trajets géolocalisés et de les supprimer grâce à la mise à disposition d'un nouveau bouton permettant d'exécuter cette tâche.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
 								 <div class="divTableRow">
                                     <div class="divTableCellNoteVersion1" style="width: 60px">
                                        <img src="../images/notes-version/planification.svg" alt="Planification" width="60">
@@ -6570,11 +6591,32 @@
       <!-- Section pour la génération du PDF -->
 	  <div class="saut-page"></div>
       <div class="heading-print marge-pdf">
-         <h2>Note de version 4.18 du 28/03/2023</h2>
+         <h2>Note de version 4.18 du 24/04/2023</h2>
       </div>
       <div class="content-print marge-pdf">
          <div class="divTableNoteVersion-pdf">
             <div class="divTableBody">
+			   <div class="divTableRow">
+                  <div class="divTableCellNoteVersion1" style="width: 60px">
+                     <img src="../images/notes-version/production2022.svg" alt="Production" width="60">
+                  </div>
+                  <div class="divTableCellNoteVersion2" style="width: auto">
+                     <strong>Production</strong><br /><br />
+                     3 améliorations
+                  </div>
+               </div>
+               <div class="divTableRow">
+                  <div class="divTableCellNoteVersion3" style="width: 60px">
+                  </div>
+                  <div class="divTableCellNoteVersion4" style="width: auto">
+                     <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                     <ul>
+                        <li>Dans la section "Itinéraires culturaux" d'une activité principale, la liste des itinéraires techniques proposés est désormais automatiquement filtrée à partir des itinéraires culturaux précédemment importés ou créés via le module "Planification"&nbsp;;</li>
+						<li>Dans la section "Trajets géolocalisés", et afin d'éviter de potentiels problèmes de synchronisation, seuls les nouveaux trajets enregistrés durant les dernières 48 heures sont désormais pris en compte&nbsp;;</li>
+						<li>Il est maintenant possible de sélectionner un ou plusieurs trajets géolocalisés et de les supprimer grâce à la mise à disposition d'un nouveau bouton permettant d'exécuter cette tâche.</li>
+                     </ul>
+                  </div>
+               </div>
 			   <div class="divTableRow">
                   <div class="divTableCellNoteVersion1" style="width: 60px">
                      <img src="../images/notes-version/planification.svg" alt="Planification" width="60">
