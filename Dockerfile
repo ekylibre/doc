@@ -1,4 +1,4 @@
-FROM ruby:3.2.1 AS builder
+FROM ruby:3.0 AS builder
 RUN bundle config --global frozen 1
 
 WORKDIR /app
