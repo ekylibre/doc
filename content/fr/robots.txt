@@ -1,4 +1,4 @@
 # Algolia-Crawler-Verif: 40BDA05103314254
 User-agent: *
 Allow: /
-Sitemap: https://doc.ekylibre.com/v2/fr/sitemap.xml
+Sitemap: https://documentation.ekylibre.com/fr/sitemap.xml

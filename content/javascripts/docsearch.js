@@ -1,7 +1,7 @@
 /**
  * Skipped minification because the original files appears to be already minified.
  * Original file: /npm/@docsearch/js@3.2.0/dist/umd/index.js
- * Adaptation française par Ekylibre, https://doc.ekylibre.com
+ * Adaptation française par Ekylibre, https://documentation.ekylibre.com
  *
  * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
  */

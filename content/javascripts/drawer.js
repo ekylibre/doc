@@ -4,7 +4,7 @@
  * http://git.blivesta.com/drawer
  * License : MIT
  * Author : blivesta <design@blivesta.com> (http://blivesta.com/)
- * Adaptation : Ekylibre (https://doc.ekylibre.com/v2/fr/)
+ * Adaptation : Ekylibre (https://documentation.ekylibre.com/v2/fr/)
  */
 
 ;(function umd(factory) {

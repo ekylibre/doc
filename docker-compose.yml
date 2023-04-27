@@ -3,6 +3,7 @@ version: "3.7"
 services:
   doc:
     build: .
+    restart: always
     ports:
     - "3002:80"
     labels:
