@@ -1,5 +1,10 @@
 #!/usr/bin/env ruby
 
+compile '/**/*.md' do
+  filter :kramdown
+  layout '/start.*'
+end
+
 compile '/**/*.html' do
   layout '/default.*'
 end
