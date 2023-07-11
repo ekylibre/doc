@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="An open-source monitoring system with a dimensional data model, flexible query language, efficient time series database and modern alerting approach.">
+    <meta name="keywords" content="prometheus, monitoring, monitoring system, time series, time series database, alerting, metrics, telemetry">
+    <meta name="author" content="Prometheus">
+    <meta name="twitter:card" content="summary">
+    <meta property="og:description" content="An open-source monitoring system with a dimensional data model, flexible query language, efficient time series database and modern alerting approach.">
+    <meta property="og:image" content="https://prometheus.io/assets/favicons/android-chrome-192x192.png">
+
+    <link rel="alternate" type="application/atom+xml" title="Prometheus Blog » Feed" href="/blog/feed.xml">
+
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/assets/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/assets/favicons/android-chrome-manifest.json">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/assets/favicons/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <meta property="og:title" content="Prometheus - Monitoring system &amp; time series database">
+    <title>Prometheus - Monitoring system &amp; time series database</title>
+    
+
+    <!-- Bootstrap core CSS -->
+    <link href="../stylesheets/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../stylesheets/docs.css" rel="stylesheet">
+    <link href="../stylesheets/routing-tree-editor.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../stylesheets/fontawesome.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,300italic,400' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+
+  <div class="">
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="nav navbar-nav navbar-right main-nav">
+            <li><a href="https://github.com/prometheus"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://twitter.com/PrometheusIO"><i class="fab fa-twitter"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <h3 id="faq">FAQ</h3>
+
+<h2 id="comment-importer-son-parcellaire-dans-ekylibre-">Comment importer son parcellaire dans Ekylibre ?</h2>
+
+<p>Le parcellaire s’importe lors de la première utilisation dans l’assistant de démarrage. L’import TelePAC dans cet assistant de démarrage permet de créer le parcellaire et l’assolement de manière automatique.
+Si, après cette étape, vous avez besoin de compléter votre parcellaire, trois possibilités s’offrent à vous :</p>
+
+<ul>
+  <li>en important le fichier de déclaration TelePAC au format <code>xml</code></li>
+  <li>en les dessinant à la main</li>
+  <li>en important un fichier géographique</li>
+</ul>
+
+<h2 id="est-il-possible-de-planifier-des-interventions-">Est-il possible de planifier des interventions ?</h2>
+
+<p>Oui, vous pouvez planifier des interventions. Pour cela, rendez-vous dans le module <strong>“Production”</strong>, puis dans <strong>“Interventions”</strong>. Cliquez ensuite sur <strong>“Demander une intervention”</strong>⋅</p>
+
+<h2 id="est-ce-que-ekylibre-est-adapt--la-viticulture-">Est-ce que Ekylibre est adapté à la viticulture ?</h2>
+
+<p>Avec Ekylibre vous pourrez gérer votre vigne et votre production de raisin, les ventes, achats, et la comptabilité relative à votre activité. Nous nous arrêtons cependant à la porte du chai pour le moment.</p>
+
+<h2 id="est-il-possible-de-grer-ses-stocks-avec-ekylibre-">Est-il possible de gérer ses stocks avec Ekylibre ?</h2>
+
+<p>Oui, Ekylibre vous permet de gérer vos stocks grâce à un menu dédié. Vos stocks dans Ekylibre se synchronisent automatiquement lorsque vous enregistrez des ventes ou achats, ou bien lorsque vous utilisez des produits au cours d’interventions agricoles.</p>
+
+<h2 id="comment-afficher-le-logo-de-ma-socit-sur-les-factures-">Comment afficher le logo de ma société sur les factures ?</h2>
+
+<p>Rendez-vous dans le menu <strong>“Configuration”</strong> puis <strong>“Société”</strong>. Cliquez sur <strong>“Choisir un fichier”</strong> en face de <strong>“Photo”</strong> pour rechercher le logo de votre exploitation sur votre ordinateur (au format <code>jpeg</code> ou <code>png</code>).</p>
+
+<h2 id="comment-personnaliser-les-devis-commandes-et-factures--limage-de-ma-socitexploitation-">Comment personnaliser les devis, commandes et factures à l’image de ma société/exploitation ?</h2>
+
+<p>Nous proposons des prestations de personnalisation. Pour plus d’informations, contactez notre équipe support sur le chat ou par email à <strong>support@ekylibre.com</strong>. Nous vous répondrons dans les meilleurs délais.</p>
+
+<h2 id="comment-imprimer-un-document-">Comment imprimer un document ?</h2>
+
+<p>Vous pouvez éditer le registre d’élevage, la fiche animal, le carnet vétérinaire, le registre des interventions, le cahier de traçabilité, le registre phytosanitaire.</p>
+
+<p>Allez dans le module <strong>“Outils”</strong>, puis sur <strong>“Exports”</strong> à gauche. Choisissez ensuite le(s) document(s) que vous souhaitez exporter.
+Sélectionnez la campagne ou saisissez les dates qui peuvent vous être demandées. Cliquez sur <strong>Rechercher</strong>, puis sur <strong>Imprimer</strong>
+Dès que le document est prêt, la cloche de notification s’affiche en rouge. Cliquez dessus pour avoir votre document.</p>
+
+<h2 id="est-ce-que-je-peux-importer-dans-ekylibre-ce-que-mon-comptable-a-saisi-sur-son-logiciel-comptable-">Est-ce que je peux importer dans Ekylibre ce que mon comptable a saisi sur son logiciel comptable ?</h2>
+
+<p>Certains fichiers provenant d’autres logiciels comptables peuvent en effet être importés dans Ekylibre. Pour plus d’informations, contactez notre équipe support sur le chat ou par email à <strong>support@ekylibre.com</strong>.</p>
+
+<h2 id="comment-calculer-ses-cots-de-production-avec-ekylibre-">Comment calculer ses coûts de production avec Ekylibre ?</h2>
+
+<p>Ekylibre calcule automatiquement les coûts de production en fonction des données saisies dans les interventions. Pour cela, vous devez avoir saisi les factures d’achat des approvisionnements ou les coûts d’usage de vos approvisionnements, de votre matériel et de la main d’oeuvre.</p>
+
+<h2 id="o-dois-je-saisir-ma-comptabilit-">Où dois-je saisir ma comptabilité ?</h2>
+
+<p>Bien qu’il soit possible de saisir sa comptabilité par le menu <strong>“Comptabilité”</strong>, il est préférable de saisir ses ventes et ses achats afin de profiter pleinement des fonctionnalités d’Ekylibre.</p>
+
+<p>En deux mots, les écritures comptables seront automatiquement générées par la saisie de vos différentes factures d’achats et de ventes.</p>
+
+<blockquote>
+  <p>Dois-je lettrer les comptes dans Ekylibre ?</p>
+</blockquote>
+
+<ul>
+  <li>
+    <p>Si vous saisissez vos factures dans le module <strong>“Ventes/Achats”</strong> et que vous enregistrez vos décaissements et encaissements, le lettrage est automatique.</p>
+  </li>
+  <li>
+    <p>Si vous saisissez votre comptabilité dans <strong>“Comptabilité”</strong>, vous devez lettrer manuellement les comptes en passant par le menu <strong>“Comptabilité”</strong> puis <strong>“Lettrage des comptes”</strong></p>
+  </li>
+</ul>
+
+<h2 id="est-il-possible-de-faire-son-plan-prvisionnel-de-fumure-">Est-il possible de faire son plan prévisionnel de fumure ?</h2>
+
+<p>Non, pour le moment Ekylibre ne permet pas de faire le plan prévisionnel de fumure, mais cela fait partie des évolutions prévues.</p>
+
+<h2 id="comment-importer-mes-relevs-de-comptes-">Comment importer mes relevés de comptes ?</h2>
+
+<p>Vous pouvez importer les relevés de comptes fournis par votre banque au format <code>ofx</code>. Le rapprochement bancaire est ensuite automatique.
+Pour l’import, allez dans le module <strong>“Comptabilité”</strong> puis <strong>“Trésorerie”</strong> et <strong>“Importer”</strong>.</p>
+
+<h2 id="comment-crer-les-personnes-qui-travaillent-sur-mon-exploitation-">Comment créer les personnes qui travaillent sur mon exploitation ?</h2>
+
+<p>Commencez par créer un tiers (un contact et pas une organisation) en cochant “Employé”.</p>
+
+<p>Dans la Fiche du tiers, un bouton <strong>“Ajouter un équipier”</strong> apparaît.
+Cliquez dessus en choisissant son rôle. Renseignez les informations demandées puis enregistrez. Votre équipier est alors créé. Il est alors possible de sélectionner cette personne pour réaliser une intervention sur votre exploitation.</p>
+
+<h2 id="puis-je-connatre-lhistorique-des-transactions-avec-mes-clients-et-fournisseurs-">Puis-je connaître l’historique des transactions avec mes clients et fournisseurs ?</h2>
+
+<p>Dans le menu <strong>Tiers</strong>, cliquez sur <strong>Tiers</strong> puis sur le nom du client ou du fournisseur dont vous souhaitez connaître l’historique.</p>
+
+<p>Dans la vue “pavé”, vous retrouverez toutes les transactions que vous avez pu avoir avec lui.</p>
+
+  <hr>
+  <footer>
+    <p class="pull-left">
+      &copy; Prometheus Authors 2014-2023 | Documentation Distributed under CC-BY-4.0
+    </p>
+    <p class="pull-left">
+       &copy; 2023 The Linux Foundation. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our <a href="https://www.linuxfoundation.org/trademark-usage">Trademark Usage</a> page.
+    </p>
+  </footer>
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="../javascripts/jquery.js"</script>
+  <script src="../javascripts/bootstrap.min.js"></script>
+</body>
+</html>

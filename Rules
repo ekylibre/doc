@@ -1,12 +1,23 @@
 #!/usr/bin/env ruby
+passthrough '/fonts/**'
+passthrough '/javascripts/**'
+passthrough '/stylesheets/**'
+passthrough '/fr/images/**/*'
+passthrough '/fr/imports/**'
+passthrough '/fr/*.txt'
+passthrough '/fr/*.xml'
 
 compile '/**/*.md' do
   filter :kramdown
   layout '/start.*'
 end
 
-compile '/**/*.html' do
+compile '/fr/**/*.html' do
   layout '/default.*'
+end
+
+compile '/index.*' do
+  layout '/start.*'
 end
 
 # This is an example rule that matches Markdown (.md) files, and filters them
@@ -18,6 +29,7 @@ end
 #  layout '/default.*'
 #end
 
+
 route '/**/*.{html,md}' do
   if item.identifier =~ '/index.*'
     '/index.html'
@@ -25,6 +37,7 @@ route '/**/*.{html,md}' do
     item.identifier.without_ext + '/index.html'
   end
 end
+
 
 compile '/**/*' do
   write item.identifier.to_s
