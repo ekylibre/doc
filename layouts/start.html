@@ -33,11 +33,11 @@
     <meta name="theme-color" content="#ffffff">
 
     <% if @item[:title] %>
-    <meta property="og:title" content="<%= @item[:title] %> | Prometheus">
-    <title><%= @item[:title] %> | Prometheus</title>
+    <meta property="og:title" content="<%= @item[:title] %> | Ekylibre">
+    <title><%= @item[:title] %> | Ekylibre</title>
     <% else %>
-    <meta property="og:title" content="Prometheus - Monitoring system &amp; time series database">
-    <title>Prometheus - Monitoring system &amp; time series database</title>
+    <meta property="og:title" content="Ekylibre - Farm management information system">
+    <title>Ekylibre - Farm management information system</title>
     <% end %>
 
     <!-- Bootstrap core CSS -->
@@ -67,8 +67,12 @@
         </div>
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="nav navbar-nav navbar-right main-nav">
-            <li><a href="https://github.com/prometheus"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://twitter.com/PrometheusIO"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/fr/demarrage">User Doc FR</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="https://demo-innovation.ekylibre.io">Demo</a></li>
+            <li><a href="https://github.com/ekylibre"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://twitter.com/ekylibre"><i class="fab fa-twitter"></i></a></li>
           </ul>
         </div>
       </div>
@@ -78,10 +82,10 @@
   <hr>
   <footer>
     <p class="pull-left">
-      &copy; Prometheus Authors 2014-<%= Date.today.year %> | Documentation Distributed under CC-BY-4.0
+      &copy; Ekylibre Authors 2014-<%= Date.today.year %> | Documentation Distributed under CC-BY-4.0
     </p>
     <p class="pull-left">
-       &copy; <%= Date.today.year %> The Linux Foundation. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our <a href="https://www.linuxfoundation.org/trademark-usage">Trademark Usage</a> page.
+       &copy; <%= Date.today.year %> Ekylibre SAS. All rights reserved. Ekylibre SAS has registered trademarks and uses trademarks.
     </p>
   </footer>
   <!-- Bootstrap core JavaScript

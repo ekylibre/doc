@@ -7,9 +7,22 @@ passthrough '/fr/imports/**'
 passthrough '/fr/*.txt'
 passthrough '/fr/*.xml'
 
-compile '/**/*.md' do
+compile '/fr/**/*.md' do
   filter :kramdown
   layout '/start.*'
+end
+
+compile '/techdoc/**/*.md' do
+  filter :redcarpet, options: {filter_html: true, autolink: true, no_intraemphasis: true, fenced_code_blocks: true, gh_blockcode: true, tables: true}, renderer_options: {with_toc_data: true}
+  filter :normalize_links, item[:repo_docs] if item[:repo_docs]
+  filter :version_warning, item[:repo_docs] if item[:repo_docs]
+  filter :add_anchors
+  filter :bootstrappify
+  filter :admonition
+  filter :colorize_syntax, :default_colorizer => :pygmentsrb
+  filter :config_linker if item[:title] == 'Configuration'
+  filter :toc, style: item[:toc]
+  layout '/docs.*'
 end
 
 compile '/fr/**/*.html' do
@@ -17,6 +30,10 @@ compile '/fr/**/*.html' do
 end
 
 compile '/index.*' do
+  layout '/start.*'
+end
+
+compile '/faq.*' do
   layout '/start.*'
 end
 

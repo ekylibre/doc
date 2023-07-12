@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="An open-source monitoring system with a dimensional data model, flexible query language, efficient time series database and modern alerting approach.">
+    <meta name="keywords" content="prometheus, monitoring, monitoring system, time series, time series database, alerting, metrics, telemetry">
+    <meta name="author" content="Prometheus">
+    <meta name="twitter:card" content="summary">
+    <meta property="og:description" content="An open-source monitoring system with a dimensional data model, flexible query language, efficient time series database and modern alerting approach.">
+    <meta property="og:image" content="https://prometheus.io/assets/favicons/android-chrome-192x192.png">
+
+    <link rel="alternate" type="application/atom+xml" title="Prometheus Blog » Feed" href="/blog/feed.xml">
+
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/assets/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/assets/favicons/android-chrome-manifest.json">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/assets/favicons/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <meta property="og:title" content="Ekylibre - Farm management information system">
+    <title>Ekylibre - Farm management information system</title>
+    
+
+    <!-- Bootstrap core CSS -->
+    <link href="../stylesheets/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../stylesheets/docs.css" rel="stylesheet">
+    <link href="../stylesheets/routing-tree-editor.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../stylesheets/fontawesome.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,300italic,400' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+
+  <div class="">
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="nav navbar-nav navbar-right main-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/fr/demarrage">User Doc FR</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="https://demo-innovation.ekylibre.io">Demo</a></li>
+            <li><a href="https://github.com/ekylibre"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://twitter.com/ekylibre"><i class="fab fa-twitter"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6 doc-content download">
+      <h2>Comment importer son parcellaire dans Ekylibre ?</h2>
+
+        <p>Le parcellaire s’importe lors de la première utilisation dans l’assistant de démarrage. L’import TelePAC dans cet assistant de démarrage permet de créer le parcellaire et l'assolement de manière automatique.
+        Si, après cette étape, vous avez besoin de compléter votre parcellaire, trois possibilités s’offrent à vous :
+        </p>
+        <ul>
+          <li>en important le fichier de déclaration TelePAC au format <span class="label label-primary">xml</span></li>
+          <li>en les dessinant à la main</li>
+          <li>en important un fichier géographique</li>
+        </ul>
+
+      <h2>Est-il possible de planifier des interventions ?</h2>
+
+        <p>Oui, vous pouvez planifier des interventions.
+           Pour cela, rendez-vous dans le module <span class="btn btn-primary">Production</span>,
+           puis dans <span class="btn btn-info">Interventions</span>.
+           Cliquez ensuite sur <span class="btn btn-default">Demander une intervention</span>⋅
+        </p>
+
+      <h2>Est-ce que Ekylibre est adapté à la viticulture ?</h2>
+
+      Avec Ekylibre vous pourrez gérer votre vigne et votre production de raisin,
+      les ventes, achats, et la comptabilité relative à votre activité.
+      Nous nous arrêtons cependant à la porte du chai pour le moment.
+
+      <h2>Est-il possible de gérer ses stocks avec Ekylibre ?</h2>
+
+      Oui, Ekylibre vous permet de gérer vos stocks grâce à un menu dédié.
+      Vos stocks dans Ekylibre se synchronisent automatiquement lorsque vous
+      enregistrez des ventes ou achats,
+      ou bien lorsque vous utilisez des produits au cours d’interventions agricoles.
+
+      <h2>Comment afficher le logo de ma société sur les factures ?</h2>
+
+      Rendez-vous dans le menu <span class="btn btn-primary">Configuration</span> puis <span class="btn btn-info">Société</span>.
+      Cliquez sur <span class="btn btn-default">Choisir un fichier</span> en face de
+      "Photo" pour rechercher le logo de votre exploitation sur votre ordinateur (au format <span class="label label-primary">jpeg</span> ou <span class="label label-primary">png</span>).
+
+      <h2>Comment personnaliser les devis, commandes et factures à l’image de ma société/exploitation ?</h2>
+
+      Nous proposons des prestations de personnalisation.
+      Pour plus d’informations, contactez notre équipe support sur le chat ou par
+      email. Nous vous répondrons dans les meilleurs délais.
+
+      <h2>Comment imprimer un document ?</h2>
+
+      Vous pouvez éditer le registre d'élevage, la fiche animal, le carnet vétérinaire, le registre des interventions, le cahier de traçabilité, le registre phytosanitaire.
+
+      Allez dans le module <span class="btn btn-primary">Outils</span>, puis sur <span class="btn btn-info">Exports</span> à gauche.
+      Choisissez ensuite le(s) document(s) que vous souhaitez exporter.
+      Sélectionnez la campagne ou saisissez les dates qui peuvent vous être demandées.
+      Cliquez sur <span class="btn btn-default">Rechercher</span>, puis sur <span class="btn btn-default">Imprimer</span>
+      Dès que le document est prêt, la cloche de notification s’affiche en rouge. Cliquez dessus pour avoir votre document.
+
+      <h2>Est-ce que je peux importer dans Ekylibre ce que mon comptable a saisi sur son logiciel comptable ?</h2>
+
+      Certains fichiers provenant d’autres logiciels comptables peuvent en effet être importés dans Ekylibre. Pour plus d’informations,
+      contactez notre équipe support sur le chat ou par email.
+  </div>
+  <div class="col-md-6 doc-content download">
+        <h2>Comment calculer ses coûts de production avec Ekylibre ?</h2>
+
+        Ekylibre calcule automatiquement les coûts de production en fonction des données saisies dans les interventions.
+        Pour cela, vous devez avoir saisi les factures d’achat des approvisionnements ou les coûts d’usage de vos approvisionnements, de votre matériel et de la main d’oeuvre.
+
+        <h2>Où dois-je saisir ma comptabilité ?</h2>
+
+        Bien qu’il soit possible de saisir sa comptabilité par le menu <span class="btn btn-primary">Comptabilité</span>,
+          il est préférable de saisir ses ventes et ses achats afin de profiter pleinement des fonctionnalités d’Ekylibre.
+
+        En deux mots, les écritures comptables seront automatiquement générées par la saisie de vos différentes factures d'achats et de ventes.
+
+        <h2>Dois-je lettrer les comptes dans Ekylibre ?</h2>
+
+        <ul>
+        <li>Non, Si vous saisissez vos factures dans le module <span class="btn btn-primary">Ventes/Achats</span>
+          et que vous enregistrez vos décaissements et encaissements, le lettrage est automatique.</li>
+
+        <li>Oui, Si vous saisissez votre comptabilité dans <span class="btn btn-primary">Comptabilité</span>,
+          vous devez lettrer manuellement les comptes en passant par
+          le menu <span class="btn btn-primary">Comptabilité</span>
+          puis <span class="btn btn-info">Lettrage des comptes</span></li>
+        </ul>
+
+        <h2>Est-il possible de faire son plan prévisionnel de fumure ?</h2>
+
+        Non, pour le moment Ekylibre ne permet pas de faire le plan prévisionnel de fumure, mais cela fait partie des évolutions prévues.
+
+        <h2>Comment importer mes relevés de comptes ?</h2>
+
+        <ul>
+        <li>Manuellement, vous pouvez importer les relevés de comptes fournis par votre banque au format <span class="label label-primary">ofx</span>.
+        Le rapprochement bancaire est ensuite automatique.
+        Pour l’import, allez dans le module <span class="btn btn-primary">Comptabilité</span>
+          puis <span class="btn btn-info">Trésorerie</span> et
+            <span class="btn btn-default">Importer</span>.</li>
+        <li>Automatiquement, en utilisant le bouton <span class="btn btn-default">Connecter mon compte bancaire</span> sur la fiche d'un compte de trésorerie.</li>
+        </ul>
+
+        <h2>Comment créer les personnes qui travaillent sur mon exploitation ?</h2>
+
+        Commencez par créer un tiers (un contact et pas une organisation) en cochant "Employé".
+
+        Dans la Fiche du tiers, un bouton <span class="btn btn-default">Ajouter un équipier</span> apparaît.
+        Cliquez dessus en choisissant son rôle. Renseignez les informations demandées puis enregistrez.
+        Votre équipier est alors créé. Il est alors possible de sélectionner cette personne pour réaliser une intervention sur votre exploitation.
+
+        <h2>Puis-je connaître l’historique des transactions avec mes clients et fournisseurs ?</h2>
+
+        Dans le menu <span class="btn btn-primary">Tiers</span>, cliquez sur <span class="btn btn-info">Tiers</span> puis sur le nom du client ou du fournisseur dont vous souhaitez connaître l’historique.
+
+        Dans la vue “pavé”, vous retrouverez toutes les transactions que vous avez pu avoir avec lui.
+    </div>
+    </div>
+</div>
+
+  <hr>
+  <footer>
+    <p class="pull-left">
+      &copy; Ekylibre Authors 2014-2023 | Documentation Distributed under CC-BY-4.0
+    </p>
+    <p class="pull-left">
+       &copy; 2023 Ekylibre SAS. All rights reserved. Ekylibre SAS has registered trademarks and uses trademarks.
+    </p>
+  </footer>
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="../javascripts/jquery.js"</script>
+  <script src="../javascripts/bootstrap.min.js"></script>
+</body>
+</html>
