@@ -1,6 +1,8 @@
 # Documentation of Ekylibre
 
-Documentation for the V2 of Ekylibre using Nanoc
+This project containt the following informations
+
+* User Documentation for Ekylibre solution
 
 ## compile the documentation (HTML and PDF)
 
@@ -18,16 +20,12 @@ Go to output of your working directory
 
 `bundler exec nanoc live`
 
-Go to http://localhost:3000/fr/demarrage/
+Go to http://localhost:3000
 
-## deploy live version using rsync and ssh
+## deploy live version using gitlab pages
 
 You must have the right configuration in your .ssh/config for the documentation server
 
 `cd doc`
 
 `bundler exec nanoc deploy`
-
-## deploy live version using docker compose
-
-Clone the repository on your host and run docker compose up
