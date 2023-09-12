@@ -206,7 +206,9 @@
 			{dates: [new Date(2022, 12, 9), new Date(2022, 12, 29)], title: "Version 4.15", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
 			{dates: [new Date(2022, 12, 30), new Date(2023, 1, 15)], title: "Version 4.16", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
 			{dates: [new Date(2023, 1, 16), new Date(2023, 3, 26)], title: "Version 4.17", attrs: {fill: "#fea40b", stroke: "#fea40b"}},
-			{dates: [new Date(2023, 3, 27), new Date(2023, 5, 30)], title: "Version 4.18", attrs: {fill: "#fa5554", stroke: "#fa5554"}}
+			{dates: [new Date(2023, 3, 27), new Date(2023, 5, 30)], title: "Version 4.18", attrs: {fill: "#fa5554", stroke: "#fa5554"}},
+         {dates: [new Date(2023, 6, 1), new Date(2023, 9, 11)], title: "Version 4.19", attrs: {fill: "#5b57e5", stroke: "#5b57e5"}},
+         {dates: [new Date(2023, 9, 12), new Date(2023, 11, 30)], title: "Version 4.20", attrs: {fill: "#fea40b", stroke: "#fea40b"}}
          ];
          
          var sections = [
@@ -214,7 +216,7 @@
          	{dates: [new Date(2019, 12, 1), new Date(2020, 11, 31)], title: "2020", section: 1, attrs: {fill: "#eaf0fa"}},
          	{dates: [new Date(2020, 12, 1), new Date(2021, 11, 31)], title: "2021", section: 2, attrs: {fill: "#d4e3fd"}},
          	{dates: [new Date(2021, 12, 1), new Date(2022, 11, 31)], title: "2022", section: 3, attrs: {fill: "#eaf0fa"}},
-			{dates: [new Date(2022, 12, 1), new Date(2023, 11, 31)], title: "2023", section: 4, attrs: {fill: "#d4e3fd"}}
+			   {dates: [new Date(2022, 12, 1), new Date(2023, 11, 31)], title: "2023", section: 4, attrs: {fill: "#d4e3fd"}}
          ];
          
          var timeline = new Chronoline(document.getElementById("target"), events,
@@ -280,9 +282,108 @@
 			<section id="panel-1">
                <main>
                   <div class="accordion-container marge">
+                     <div class="panel">
+                        <div class="heading">
+                           <div id="4.20" class="version">
+                              <h2>Note de version 4.20 du 12/09/2023</h2>
+                           </div>
+                           <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="content">
+                           <div class="divTableNoteVersion">
+                              <div class="divTableBody">
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/comptabilite2022.svg" alt="Comptabilité" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Comptabilité</strong><br /><br />
+                                       1 amélioration et 1 bug corrigé
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Amélioration&nbsp;:</p>
+                                       <ul>
+                                          <li>Ajout du plan comptable agricole unifié 2023, dans les préférences et dans les exercices comptables.</li>
+                                       </ul>
+									               <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+										            <li>Correction de la synchronisation des relevés de compte bancaire quand l'autorisation bancaire est présente mais avec un délai expiré</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+								         <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/production2022.svg" alt="Production" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>Production</strong><br /><br />
+                                       2 améliorations et 1 bug corrigé
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+									            <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+                                          <li>Import TéléPAC 2023 disponible&nbsp;;</li>
+                                          <li>Ajout du calcul automatique des longueurs de haies sur les zones cultivables.</li>
+                                       </ul>
+                                       <p class="improve"><img src="../images/notes-version/bug.svg" alt="Correctif bug" height="20" class="align-icone icone-marge-droite">Correctif&nbsp;:</p>
+                                       <ul>
+                                          <li>Correction du nommage automatique des parcelles.</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1" style="width: 60px">
+                                       <img src="../images/notes-version/durabilite.svg" alt="Durabilité" width="60">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2" style="width: auto">
+                                       <strong>IDEA</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+									            <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+                                          <li>Ajout de l'indicateur A4&nbsp;;</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion1">
+                                       <img src="../images/notes-version/configuration.svg" alt="Configuration" width="60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion2">
+                                       <strong>Configuration</strong><br /><br />
+                                       1 amélioration
+                                    </div>
+                                 </div>
+                                 <div class="divTableRow">
+                                    <div class="divTableCellNoteVersion3" style="width: 60px">
+                                    </div>
+                                    <div class="divTableCellNoteVersion4" style="width: auto">
+                                       <p class="improve"><img src="../images/notes-version/check.svg" alt="Amélioration" height="20" class="align-icone icone-marge-droite">Améliorations&nbsp;:</p>
+                                       <ul>
+                                          <li>Le Lexicon a été mis à jour en version 5.0.14</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
 					 <div class="panel">
                         <div class="heading">
-                           <div class="version">
+                           <div id="4.18" class="version">
                               <h2>Note de version 4.18 du 27/04/2023</h2>
                            </div>
                            <i class="fa-solid fa-chevron-down"></i>
