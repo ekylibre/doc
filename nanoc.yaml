@@ -89,6 +89,10 @@ checks:
     #   exclude_files: ['blog/page']
     exclude_files: []
 
+algolia:
+  application_id: '0CZWEL7F2G'
+  api_key: '61ff5ce704903af39e0cff0f80e7acc8'
+  index: 'ekylibre'
 
 deploy:
   default:

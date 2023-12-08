@@ -26,6 +26,7 @@ compile '/techdoc/**/*.md' do
 end
 
 compile '/fr/**/*.html' do
+  filter :algolia
   layout '/default.*'
 end
 
@@ -54,7 +55,6 @@ route '/**/*.{html,md}' do
     item.identifier.without_ext + '/index.html'
   end
 end
-
 
 compile '/**/*' do
   write item.identifier.to_s
