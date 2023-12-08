@@ -1,4 +1,5 @@
 crash.log
+.env
 output/
 tmp/
 .DS_Store
