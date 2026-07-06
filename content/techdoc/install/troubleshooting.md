@@ -249,6 +249,8 @@ bin/rake tenant:init TENANT=my-farm
 ./docker/prod/scripts/tenant-init.sh my-farm admin@my-farm.com 'MotDePasse!'
 ```
 
+Dans le cas de l'installation d'un seul tenant, vous pouvez utiliser la variable `HOST_SUBDOMAIN_NAME` pour forcer la résolution du tenant sans passer par le sous-domaine de l'URL.
+
 ### Sidekiq ne traite pas les jobs
 
 Vérifier qu'il tourne :
